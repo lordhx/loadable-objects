@@ -45069,7 +45069,7 @@
         },
         {
           "XmlUI": "",
-          "LuaScript": "DOORWAY_GUIDS = { \"5c61d9\", \"72ac0c\", \"6bb83e\" }\nLOCATION_POSITIONS = { {-30.22, 1.64, 7.57}, {-36.77, 1.65, -0.03}, {-30.22, 1.63, -7.70} }\nWITCH_HOUSE_GUID = \"7bea34\"\nUNKNOWN_PLACES = {\n    guid = \"2ebf66\",\n    position = Vector({-17.12, 1.66, 7.57}),\n    rotation = {0, 270, 0}\n}\nASSEMBLY = {\n    position = Vector({ x=68, y=0, z=36 }),\n    rotation = { x=0, y=270, z=180 }\n}\nSET_ASIDE_POSITION = {-4.94, 1.66, 14.62}\nNO_VP_GUIDS = { \"9a471d\", \"ea7a2b\", \"713ec2\", \"b538f8\" }\n\nfunction onLoad()\n    self.createButton({\n        label=\"Set Up\",\n        click_function=\"setup\",\n        function_owner=self,\n        position={0,0.1,0.4},\n        height=120,\n        width=400,\n        scale={x=1.75, y=1.75, z=1.75},\n        font_size=100\n    })\n\n    math.randomseed(os.time())\nend\n\nfunction getAssemblyDeck()\n    local objs = Physics.cast({\n        origin = ASSEMBLY.position,\n        direction = { x=0, y=1, z=0 },\n        type = 3,\n        size = { x=1, y=1, z=1 },\n        orientation = ASSEMBLY.rotation\n    })\n\n    for i,v in ipairs(objs) do\n        if v.hit_object.tag == \"Deck\" then\n            return v.hit_object\n        end\n    end\n\n    return nil\nend\n\nfunction setup(obj, color, alt_click)\n    if DISABLED then return end\n    DISABLED = true\n    for i,guid in ipairs(DOORWAY_GUIDS) do\n        local card = getObjectFromGUID(guid)\n        card.setPosition(ASSEMBLY.position)\n    end\n    vpMode = alt_click\n    Wait.time(setup_2, 1)\nend\n\nfunction setup_2()\n    local deck = getAssemblyDeck()\n    deck.shuffle()\n\n    for i=#LOCATION_POSITIONS,2,-1 do\n        deck.takeObject({\n            position = LOCATION_POSITIONS[i],\n            rotation = UNKNOWN_PLACES.rotation,\n            smooth = false\n        })\n    end\n    deck.remainder.setPosition(LOCATION_POSITIONS[1])\n\n    places = getObjectFromGUID(UNKNOWN_PLACES.guid)\n    places.shuffle()\n\n    if vpMode then\n        for i=1,4 do\n            places.takeObject({\n                guid = NO_VP_GUIDS[i],\n                position = SET_ASIDE_POSITION,\n                rotation = UNKNOWN_PLACES.rotation,\n                smooth = false\n            })\n        end\n    else\n        for i=1,4 do\n            places.takeObject({\n                position = SET_ASIDE_POSITION,\n                rotation = UNKNOWN_PLACES.rotation,\n                smooth = false\n            })\n        end\n    end\n\n    for i=1,3 do\n        places.takeObject({\n            position = ASSEMBLY.position,\n            rotation = UNKNOWN_PLACES.rotation,\n            smooth = false\n        })\n    end\n\n    local witch_house = getObjectFromGUID(WITCH_HOUSE_GUID)\n    witch_house.flip()\n    witch_house.setPosition(UNKNOWN_PLACES.position + Vector(0, 0.5, 0))\n\n    Wait.time(setup_3, 1)\nend\n\nfunction setup_3()\n    places.shuffle()\n    deck = getAssemblyDeck()\n    deck.shuffle()\n    Wait.time(setup_4, 1)\nend\n\nfunction setup_4()\n    deck.setPosition(UNKNOWN_PLACES.position + Vector(0, 1, 0))\nend\n",
+          "LuaScript": "DOORWAY_GUIDS = { \"5c61d9\", \"72ac0c\", \"6bb83e\" }\nLOCATION_POSITIONS = { { -30.22, 2, 7.57 }, { -36.77, 2, -0.03 }, { -30.22, 2, -7.70 } }\nWITCH_HOUSE_GUID = \"7bea34\"\nUNKNOWN_PLACES = {\n  guid = \"2ebf66\",\n  position = Vector({ -17.12, 5, 7.57 }),\n  rotation = { 0, 270, 0 }\n}\nNOTECARD_GUID = \"972877\"\n\nfunction onLoad()\n  self.createButton({\n    label = \"Set Up\",\n    click_function = \"setup\",\n    function_owner = self,\n    position = { 0, 0.1, 0 },\n    height = 140,\n    width = 450,\n    scale = { x = 1.75, y = 1.75, z = 1.75 },\n    font_size = 110\n  })\n  math.randomseed(os.time())\nend\n\nfunction shuffle(tbl)\n  for i = #tbl, 2, -1 do\n    local j = math.random(i)\n    tbl[i], tbl[j] = tbl[j], tbl[i]\n  end\n  return tbl\nend\n\nfunction setup(obj, color, alt_click)\n  if DISABLED then return end\n  DISABLED = true\n\n  for i, guid in ipairs(shuffle(DOORWAY_GUIDS)) do\n    local card = getObjectFromGUID(guid)\n    card.setPosition(LOCATION_POSITIONS[i])\n  end\n\n  places = getObjectFromGUID(UNKNOWN_PLACES.guid)\n  places.shuffle()\n\n  -- remove 4 random locations\n  for i = 1, 4 do\n    places.takeObject({\n      position = {-4.94, 2 + 0.1 * i, 14.62},\n      rotation = UNKNOWN_PLACES.rotation,\n      smooth = false\n    })\n  end\n\n  for i = 1, 3 do\n    places.takeObject({\n      position = UNKNOWN_PLACES.position + Vector(0, 0.1 * i, 0),\n      rotation = UNKNOWN_PLACES.rotation,\n      smooth = false\n    })\n  end\n\n  local witch_house = getObjectFromGUID(WITCH_HOUSE_GUID)\n  witch_house.flip()\n  places.putObject(witch_house)\n  -- this shuffle needs to happen before the other 3 cards drop down\n  places.shuffle()\n  getObjectFromGUID(NOTECARD_GUID).destruct()\nend",
           "Description": "Randomizes Decrepit Door locations and assembles the Unknown Places deck.",
           "GMNotes": "",
           "Grid": true,
@@ -45112,15 +45112,15 @@
           },
           "Value": 0,
           "Transform": {
-            "posX": -17.1200962,
-            "scaleX": 1.0712,
-            "posY": 1.60646248,
+            "posX": -17.12,
+            "scaleX": 1.07,
+            "posY": 1.61,
             "scaleY": 1.0,
-            "posZ": 3.86000586,
-            "rotX": 359.9201,
-            "rotZ": 0.0168449134,
-            "rotY": 269.998627,
-            "scaleZ": 1.0712
+            "posZ": 3.86,
+            "rotX": 0,
+            "rotZ": 0,
+            "rotY": 270,
+            "scaleZ": 1.07
           },
           "Sticky": true
         },
