@@ -43459,7 +43459,7 @@
         },
         {
           "XmlUI": "",
-          "LuaScript": "CHEST_GUID = \"ad0d44\"\nLOWER_DEPTHS = { guid=\"9651f8\", position={-36.77, 1.64, -7.70} }\nFINAL_DEPTHS = { guid=\"921379\", position={-43.37, 1.65, -7.70} }\nTT_DECK_GUID = \"b7548e\"\nTT_POSITIONS = {\n    {-30.22, 3, 7.57},\n    {-30.22, 1.64, -0.03},\n    {-30.22, 1.63, -15.28},\n    {-36.77, 1.65, 7.57},\n    {-36.77, 1.65, -0.03},\n    {-36.77, 1.64, -15.28},\n    {-43.37, 1.66, 7.57},\n    {-43.37, 1.66, -0.03},\n    {-43.37, 1.65, -15.28}\n}\nROTATION = {0, 270, 0}\n\nfunction onLoad()\n    self.createButton({\n        label=\"Place Sunken\\nGrotto and Tidal\\nTunnel Locations\",\n        click_function=\"setup\",\n        function_owner=self,\n        position={0,0.1,0},\n        height=300,\n        width=475,\n        scale={x=1.75, y=1.75, z=1.75},\n        font_size=60\n    })\n\n    math.randomseed(os.time())\nend\n\nfunction setup(obj, color, alt_click)\n    if DISABLED then return end\n    DISABLED = true\n\n    local chest = getObjectFromGUID(CHEST_GUID)\n\n    chest.takeObject({\n        guid = LOWER_DEPTHS.guid,\n        position = LOWER_DEPTHS.position,\n        rotation = ROTATION,\n        smooth = false\n    })\n\n    chest.takeObject({\n        guid = FINAL_DEPTHS.guid,\n        position = FINAL_DEPTHS.position,\n        rotation = ROTATION,\n        smooth = false\n    })\n\n    chest.takeObject({\n        guid = TT_DECK_GUID,\n        position = TT_POSITIONS[1],\n        rotation = ROTATION,\n        smooth = false,\n        callback_function = placeTidalTunnels\n    })\nend\n\nfunction placeTidalTunnels(deck)\n    Wait.frames(function ()\n        deck.shuffle()\n        resetSpawnStatus(deck)\n        local objs = deck.getObjects()\n        for i=#objs-1,1,-1 do\n            deck.takeObject({\n                index = i,\n                position = TT_POSITIONS[i+1],\n                rotation = ROTATION,\n                smooth = false\n            })\n        end\n    end)\nend\n\nfunction resetSpawnStatus(deck)\n    local playarea = getObjectFromGUID(\"721ba2\")\n    local spawnedGuids = playarea.getVar(\"SPAWNED_LOCATION_GUIDS\")\n    local cards = deck.getObjects()\n    for i,card in ipairs(cards) do\n        spawnedGuids[card.guid] = nil\n    end\n    playarea.setVar(\"SPAWNED_LOCATION_GUIDS\", spawnedGuids)\nend\n",
+          "LuaScript": "CHEST_GUID = \"ad0d44\"\nLOWER_DEPTHS = { guid = \"9651f8\", position = { -36.77, 1.64, -7.70 } }\nFINAL_DEPTHS = { guid = \"921379\", position = { -43.37, 1.65, -7.70 } }\nTT_DECK_GUID = \"b7548e\"\nTT_POSITIONS = {\n  { -30.22, 3, 7.57 },\n  { -30.22, 1.64, -0.03 },\n  { -30.22, 1.63, -15.28 },\n  { -36.77, 1.65, 7.57 },\n  { -36.77, 1.65, -0.03 },\n  { -36.77, 1.64, -15.28 },\n  { -43.37, 1.66, 7.57 },\n  { -43.37, 1.66, -0.03 },\n  { -43.37, 1.65, -15.28 }\n}\nROTATION = { 0, 270, 0 }\n\nfunction onLoad()\n  self.createButton({\n    label = \"Place Sunken\\nGrotto and Tidal\\nTunnel Locations\",\n    click_function = \"setup\",\n    function_owner = self,\n    position = { 0, 0.1, 0 },\n    height = 300,\n    width = 475,\n    scale = { x = 1.75, y = 1.75, z = 1.75 },\n    font_size = 60\n  })\nend\n\nfunction setup(obj, color, alt_click)\n  if DISABLED then return end\n  DISABLED = true\n\n  local chest = getObjectFromGUID(CHEST_GUID)\n\n  chest.takeObject({\n    guid = LOWER_DEPTHS.guid,\n    position = LOWER_DEPTHS.position,\n    rotation = ROTATION,\n    smooth = false\n  })\n\n  chest.takeObject({\n    guid = FINAL_DEPTHS.guid,\n    position = FINAL_DEPTHS.position,\n    rotation = ROTATION,\n    smooth = false\n  })\n\n  chest.takeObject({\n    guid = TT_DECK_GUID,\n    position = TT_POSITIONS[1],\n    rotation = ROTATION,\n    smooth = false,\n    callback_function = placeTidalTunnels\n  })\nend\n\nfunction placeTidalTunnels(deck)\n  Wait.frames(function()\n    deck.shuffle()\n    resetSpawnStatus()\n    local objs = deck.getObjects()\n    for i = #objs - 1, 1, -1 do\n      deck.takeObject({\n        index = i,\n        position = TT_POSITIONS[i + 1],\n        rotation = ROTATION,\n        smooth = false\n      })\n    end\n  end)\nend\n\nfunction resetSpawnStatus()\n  local tokenSpawntracker = getObjectFromGUID(\"e3ffc9\")\n  if tokenSpawntracker then\n    tokenSpawntracker.call(\"resetAllLocations\")\n  end\nend\n",
           "Description": "Places Sunken Grotto and Tidal Tunnel locations after \nAgenda 2 or Act 2 advances.",
           "GMNotes": "",
           "Grid": true,
@@ -43502,15 +43502,15 @@
           },
           "Value": 0,
           "Transform": {
-            "posX": -6.60106945,
-            "scaleX": 0.850716,
-            "posY": 1.58760965,
+            "posX": -6.6,
+            "scaleX": 0.85,
+            "posY": 1.59,
             "scaleY": 1.0,
-            "posZ": -10.5434933,
-            "rotX": 359.919739,
-            "rotZ": 0.016841311,
-            "rotY": 270.000732,
-            "scaleZ": 0.850716
+            "posZ": -10.5,
+            "rotX": 0,
+            "rotZ": 0,
+            "rotY": 270,
+            "scaleZ": 0.85
           },
           "Sticky": true
         },
