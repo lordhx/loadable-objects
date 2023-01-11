@@ -36963,7 +36963,7 @@
                 },
                 {
                   "XmlUI": "",
-                  "LuaScript": "ENCOUNTER_DECK_POS = {-3.8, 1, 5.7}\nMIN_VALUE = 1\n\nfunction onload()\n    val = 1\n\n    self.createButton({\n        label=\"Rotate\",\n        click_function=\"doRotation\",\n        function_owner=self,\n        position={0,0.1,-0.4},\n        height=120,\n        width=450,\n        scale={x=1.75, y=1.75, z=1.75},\n        font_size=100\n    })\n\n    self.createButton({\n        label=val,\n        click_function=\"add_subtract\",\n        function_owner=self,\n        position={0,0.1,0.4},\n        height=120,\n        width=250,\n        scale={x=1.75, y=1.75, z=1.75},\n        font_size=100\n    })\nend\n\nfunction add_subtract(_obj, _color, alt_click)\n    local mod = alt_click and -1 or 1\n    new_value = math.max(val + mod, MIN_VALUE)\n    if val ~= new_value then\n        val = new_value\n        self.editButton({\n            index = 1,\n            label = tostring(val)\n        })\n    end\nend\n\nfunction doRotation(_obj, _color, alt_click)\n    if IS_ROTATING then return end\n\n    IS_ROTATING = true\n    local body = getObjectFromGUID(\"a2f955\")\n    if body == nil then\n        printToColor(\"Place Atlach-Nacha first, then try again\", _color)\n    end\n\n    local objs = Physics.cast({\n        origin = body.getPosition(),\n        direction = {0,1,0},\n        type = 2,\n        size = { 6, 6, 6 },\n        max_distance = 0\n    })\n\n    local numAttachments = 0\n    for i,v in ipairs(objs) do\n        local obj = v.hit_object\n        if obj.getGUID() ~= \"a2f955\" and (obj.tag == \"Card\" or obj.getName() == \"Damage\") then\n            numAttachments = numAttachments + 1\n            body.addAttachment(obj)\n        end\n    end\n\n    local r = body.getRotation()\n    body.setRotationSmooth({ r.x, r.y + (45 * val), r.z }, false, true)\n\n    Wait.time(|| detachLegs(body, numAttachments), 1)\nend\n\nfunction detachLegs(body, numAttachments)\n    for i = numAttachments-1,0,-1 do\n        body.removeAttachment(i)\n    end\n    Wait.time(function() IS_ROTATING = false end, 1)\nend\n",
+                  "LuaScript": "ENCOUNTER_DECK_POS = { -3.8, 1, 5.7 }\nMIN_VALUE = 1\n\nfunction onload()\n  val = 1\n\n  self.createButton({\n    label = \"Rotate\",\n    click_function = \"doRotation\",\n    function_owner = self,\n    position = { 0, 0.1, -0.4 },\n    height = 120,\n    width = 450,\n    scale = { x = 1.75, y = 1.75, z = 1.75 },\n    font_size = 100\n  })\n\n  self.createButton({\n    label = val,\n    click_function = \"add_subtract\",\n    function_owner = self,\n    position = { 0, 0.1, 0.4 },\n    height = 120,\n    width = 250,\n    scale = { x = 1.75, y = 1.75, z = 1.75 },\n    font_size = 100\n  })\nend\n\nfunction add_subtract(_obj, _color, alt_click)\n  local mod = alt_click and -1 or 1\n  new_value = math.max(val + mod, MIN_VALUE)\n  if val ~= new_value then\n    val = new_value\n    self.editButton({\n      index = 1,\n      label = tostring(val)\n    })\n  end\nend\n\nfunction doRotation(_obj, _color, alt_click)\n  if IS_ROTATING then return end\n\n  IS_ROTATING = true\n  local body = getObjectFromGUID(\"a2f955\")\n  if body == nil then\n    printToColor(\"Place Atlach-Nacha first, then try again\", _color)\n  end\n\n  local objs = Physics.cast({\n    origin = body.getPosition(),\n    direction = { 0, 1, 0 },\n    type = 2,\n    size = { 6, 6, 6 },\n    max_distance = 0\n  })\n\n  local numAttachments = 0\n  for i, v in ipairs(objs) do\n    local obj = v.hit_object\n    if obj.getGUID() ~= \"a2f955\" and (obj.tag == \"Card\" or obj.getGMNotes() == \"damage\") then\n      numAttachments = numAttachments + 1\n      body.addAttachment(obj)\n    end\n  end\n\n  local r = body.getRotation()\n  body.setRotationSmooth({ r.x, r.y + (45 * val), r.z }, false, true)\n\n  Wait.time(function() detachLegs(body, numAttachments) end, 0.5)\nend\n\nfunction detachLegs(body, numAttachments)\n  for i = numAttachments - 1, 0, -1 do\n    body.removeAttachment(i)\n  end\n  Wait.time(function() IS_ROTATING = false end, 0.5)\nend\n",
                   "Description": "Rotates Atlach-Nacha with her legs, damage tokens, and card attachments by the number of spaces displayed. Left-click the number to increase, right-click to decrease, then click Rotate.",
                   "GMNotes": "",
                   "Grid": true,
@@ -37006,14 +37006,14 @@
                   },
                   "Value": 0,
                   "Transform": {
-                    "posX": -25.8364,
+                    "posX": -25.84,
                     "scaleX": 1.0,
-                    "posY": 1.61921763,
+                    "posY": 1.6,
                     "scaleY": 1.0,
-                    "posZ": 5.9048996,
-                    "rotX": 359.9201,
-                    "rotZ": 0.0168431811,
-                    "rotY": 269.999847,
+                    "posZ": 5.9,
+                    "rotX": 0,
+                    "rotZ": 0,
+                    "rotY": 270,
                     "scaleZ": 1.0
                   },
                   "Sticky": true
