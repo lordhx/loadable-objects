@@ -16191,7 +16191,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Ocean. Island.",
-              "GMNotes": "{\n  \"id\": \"07163\",\n  \"type\": \"Scenario\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"07170\",\n  \"type\": \"Location\",\n  \"traits\": \"Ocean. Island.\",\n  \"cycle\": \"The Innsmouth Conspiracy\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Heart\",\n    \"connections\": \"Triangle|Diamond|Star\"\n  }\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": true,
@@ -16212,7 +16212,8 @@
                 }
               },
               "Tags": [
-                "PlayerCard"
+                "Location",
+                "ScenarioCard"
               ],
               "Nickname": "Devil Reef",
               "GridProjection": false,
@@ -16252,7 +16253,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Ocean. Island.",
-              "GMNotes": "{\n  \"id\": \"07163\",\n  \"type\": \"Scenario\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"07169\",\n  \"type\": \"Location\",\n  \"traits\": \"Ocean. Island.\",\n  \"cycle\": \"The Innsmouth Conspiracy\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Plus|Diamond\"\n  }\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": true,
@@ -16273,7 +16274,8 @@
                 }
               },
               "Tags": [
-                "PlayerCard"
+                "Location",
+                "ScenarioCard"
               ],
               "Nickname": "Devil Reef",
               "GridProjection": false,
@@ -16313,7 +16315,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Ocean. Island.",
-              "GMNotes": "{\n  \"id\": \"07163\",\n  \"type\": \"Scenario\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"07173\",\n  \"type\": \"Location\",\n  \"traits\": \"Ocean. Island.\",\n  \"cycle\": \"The Innsmouth Conspiracy\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Triangle|Square|Star\"\n  }\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": true,
@@ -16334,7 +16336,8 @@
                 }
               },
               "Tags": [
-                "PlayerCard"
+                "Location",
+                "ScenarioCard"
               ],
               "Nickname": "Devil Reef",
               "GridProjection": false,
@@ -16374,7 +16377,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Ocean. Island.",
-              "GMNotes": "{\n  \"id\": \"07163\",\n  \"type\": \"Scenario\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"07172\",\n  \"type\": \"Location\",\n  \"traits\": \"Ocean. Island.\",\n  \"cycle\": \"The Innsmouth Conspiracy\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Triangle|Heart|Square\"\n  }\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": true,
@@ -16395,7 +16398,8 @@
                 }
               },
               "Tags": [
-                "PlayerCard"
+                "Location",
+                "ScenarioCard"
               ],
               "Nickname": "Devil Reef",
               "GridProjection": false,
@@ -16435,7 +16439,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Ocean. Island.",
-              "GMNotes": "{\n  \"id\": \"07163\",\n  \"type\": \"Scenario\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"07171\",\n  \"type\": \"Location\",\n  \"traits\": \"Ocean. Island.\",\n  \"cycle\": \"The Innsmouth Conspiracy\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Plus|Heart\"\n  }\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": true,
@@ -16456,7 +16460,8 @@
                 }
               },
               "Tags": [
-                "PlayerCard"
+                "Location",
+                "ScenarioCard"
               ],
               "Nickname": "Devil Reef",
               "GridProjection": false,
