@@ -74,61 +74,64 @@
   },
   "ContainedObjects": [
     {
-      "XmlUI": "",
-      "LuaScript": "-- Bundled by luabundle {\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"__root\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"core/AgendaDeck\")\nend)\n__bundle_register(\"core/AgendaDeck\", function(require, _LOADED, __bundle_register, __bundle_modules)\nMIN_VALUE = -99\r\nMAX_VALUE = 999\r\n\r\nfunction onload(saved_data)\r\n    light_mode = false\r\n    val = 0\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        val = loaded_data[2]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, val}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0.5, 0.5, 0.5, 95}\r\n\r\n    if light_mode then\r\n        f_color = {1,1,1,95}\r\n    else\r\n        f_color = {0,0,0,100}\r\n    end\r\n\r\n\r\n\r\n    self.createButton({\r\n      label=tostring(val),\r\n      click_function=\"add_subtract\",\r\n      function_owner=self,\r\n      position={0,0.05,0},\r\n      height=600,\r\n      width=1000,\r\n      alignment = 3,\r\n      scale={x=1.5, y=1.5, z=1.5},\r\n      font_size=600,\r\n      font_color=f_color,\r\n      color={0,0,0,0}\r\n      })\r\n\r\n\r\n\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark ]\"\r\n    else\r\n        lightButtonText = \"[ Set light ]\"\r\n    end\r\n\r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n\r\n    updateSave()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction editName(_obj, _string, value)\r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction add_subtract(_obj, _color, alt_click)\r\n    mod = alt_click and -1 or 1\r\n    new_value = math.min(math.max(val + mod, MIN_VALUE), MAX_VALUE)\r\n    if val ~= new_value then\r\n        val = new_value\r\n      updateVal()\r\n        updateSave()\r\n    end\r\nend\r\n\r\nfunction updateVal()\r\n\r\n    self.editButton({\r\n        index = 0,\r\n        label = tostring(val),\r\n\r\n        })\r\nend\r\n\r\nfunction reset_val()\r\n    val = 0\r\n    updateVal()\r\n    updateSave()\r\nend\r\n\r\nfunction setTooltips()\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editButton({\r\n        index = 0,\r\n        value = tostring(val),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value)\r\n    reloadAll()\r\nend\r\n\nend)\nreturn __bundle_require(\"__root\")",
+      "Nickname": "Alarm Level",
       "Description": "",
       "GMNotes": "",
-      "Grid": true,
-      "Autoraise": true,
-      "HideWhenFaceDown": false,
-      "Snap": false,
-      "Name": "Custom_Token",
-      "LuaScriptState": "[true,1]",
-      "Locked": true,
-      "MeasureMovement": false,
-      "Nickname": "Alarm Level",
-      "GridProjection": false,
-      "Hands": false,
-      "LayoutGroupSortIndex": 0,
-      "Tooltip": true,
-      "GUID": "23735e",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "b": 0.0,
-        "g": 0.0
-      },
       "AltLookAngle": {
         "x": 0.0,
         "y": 0.0,
         "z": 0.0
       },
-      "DragSelectable": true,
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
       "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
       "CustomImage": {
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949592555964782208/CC876694A6684B3C2680CE2FE3259F574AE0AD97/",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
         "CustomToken": {
           "Thickness": 0.1,
+          "MergeDistancePixels": 5.0,
           "StandUp": false,
-          "Stackable": false,
-          "MergeDistancePixels": 5.0
-        },
-        "WidthScale": 0.0,
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949592555964782208/CC876694A6684B3C2680CE2FE3259F574AE0AD97/",
-        "ImageScalar": 1.0,
-        "ImageSecondaryURL": ""
+          "Stackable": false
+        }
       },
-      "Value": 0,
+      "LuaScript": "-- Alarm Level Counter\r\n-- made by:     Chr1Z\r\n\r\nfunction onSave() return JSON.encode(val) end\r\n\r\nfunction onLoad(saved_data)\r\n    if saved_data ~= nil then\r\n        val = JSON.decode(saved_data)\r\n    else\r\n        val = 1\r\n    end\r\n\r\n    self.createButton({\r\n        label = tostring(val),\r\n        click_function = \"add_subtract\",\r\n        function_owner = self,\r\n        position = { 0, 0.06, 0 },\r\n        height = 600,\r\n        width = 1000,\r\n        scale = { 1.5, 1.5, 1.5 },\r\n        font_size = 750,\r\n        font_color = { 1, 1, 1, 100 },\r\n        color = { 0, 0, 0, 0 }\r\n    })\r\nend\r\n\r\nfunction add_subtract(_, _, alt_click)\r\n    local new_val = math.min(math.max(val + (alt_click and -1 or 1), 1), 10)\r\n\r\n    if new_val == val then\r\n        printToAll(\"Alarm level can only be between 0 and 11!\", \"Orange\")\r\n    else\r\n        val = new_val\r\n        self.editButton({ index = 0, label = tostring(val) })\r\n    end\r\nend",
+      "LuaScriptState": "1",
+      "XmlUI": "",
+      "Name": "Custom_Token",
+      "GUID": "23735e",
       "Transform": {
         "posX": -51.94,
-        "scaleX": 0.415559769,
-        "posY": 1.67954433,
+        "scaleX": 0.42,
+        "posY": 1.68,
         "scaleY": 1.0,
-        "posZ": -26.1110058,
-        "rotX": 0.03202818,
-        "rotZ": 0.0554401875,
-        "rotY": 270.000061,
-        "scaleZ": 0.415559769
-      },
-      "Sticky": true
+        "posZ": -26.1,
+        "rotX": 0,
+        "rotZ": 0,
+        "rotY": 270,
+        "scaleZ": 0.42
+      }
     },
     {
       "XmlUI": "",
@@ -182,118 +185,124 @@
       "Sticky": true
     },
     {
-      "XmlUI": "",
-      "LuaScript": "-- Bundled by luabundle {\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"__root\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"core/AgendaDeck\")\nend)\n__bundle_register(\"core/AgendaDeck\", function(require, _LOADED, __bundle_register, __bundle_modules)\nMIN_VALUE = -99\r\nMAX_VALUE = 999\r\n\r\nfunction onload(saved_data)\r\n    light_mode = false\r\n    val = 0\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        val = loaded_data[2]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, val}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0.5, 0.5, 0.5, 95}\r\n\r\n    if light_mode then\r\n        f_color = {1,1,1,95}\r\n    else\r\n        f_color = {0,0,0,100}\r\n    end\r\n\r\n\r\n\r\n    self.createButton({\r\n      label=tostring(val),\r\n      click_function=\"add_subtract\",\r\n      function_owner=self,\r\n      position={0,0.05,0},\r\n      height=600,\r\n      width=1000,\r\n      alignment = 3,\r\n      scale={x=1.5, y=1.5, z=1.5},\r\n      font_size=600,\r\n      font_color=f_color,\r\n      color={0,0,0,0}\r\n      })\r\n\r\n\r\n\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark ]\"\r\n    else\r\n        lightButtonText = \"[ Set light ]\"\r\n    end\r\n\r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n\r\n    updateSave()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction editName(_obj, _string, value)\r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction add_subtract(_obj, _color, alt_click)\r\n    mod = alt_click and -1 or 1\r\n    new_value = math.min(math.max(val + mod, MIN_VALUE), MAX_VALUE)\r\n    if val ~= new_value then\r\n        val = new_value\r\n      updateVal()\r\n        updateSave()\r\n    end\r\nend\r\n\r\nfunction updateVal()\r\n\r\n    self.editButton({\r\n        index = 0,\r\n        label = tostring(val),\r\n\r\n        })\r\nend\r\n\r\nfunction reset_val()\r\n    val = 0\r\n    updateVal()\r\n    updateSave()\r\nend\r\n\r\nfunction setTooltips()\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editButton({\r\n        index = 0,\r\n        value = tostring(val),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value)\r\n    reloadAll()\r\nend\r\n\nend)\nreturn __bundle_require(\"__root\")",
+      "Nickname": "Alarm Level",
       "Description": "",
       "GMNotes": "",
-      "Grid": true,
-      "Autoraise": true,
-      "HideWhenFaceDown": false,
-      "Snap": false,
-      "Name": "Custom_Token",
-      "LuaScriptState": "[true,1]",
-      "Locked": true,
-      "MeasureMovement": false,
-      "Nickname": "Alarm Level",
-      "GridProjection": false,
-      "Hands": false,
-      "LayoutGroupSortIndex": 0,
-      "Tooltip": true,
-      "GUID": "8985d8",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "b": 0.0,
-        "g": 0.0
-      },
       "AltLookAngle": {
         "x": 0.0,
         "y": 0.0,
         "z": 0.0
       },
-      "DragSelectable": true,
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
       "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
       "CustomImage": {
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949592555964782208/CC876694A6684B3C2680CE2FE3259F574AE0AD97/",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
         "CustomToken": {
           "Thickness": 0.1,
+          "MergeDistancePixels": 5.0,
           "StandUp": false,
-          "Stackable": false,
-          "MergeDistancePixels": 5.0
-        },
-        "WidthScale": 0.0,
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949592555964782208/CC876694A6684B3C2680CE2FE3259F574AE0AD97/",
-        "ImageScalar": 1.0,
-        "ImageSecondaryURL": ""
+          "Stackable": false
+        }
       },
-      "Value": 0,
+      "LuaScript": "-- Alarm Level Counter\r\n-- made by:     Chr1Z\r\n\r\nfunction onSave() return JSON.encode(val) end\r\n\r\nfunction onLoad(saved_data)\r\n    if saved_data ~= nil then\r\n        val = JSON.decode(saved_data)\r\n    else\r\n        val = 1\r\n    end\r\n\r\n    self.createButton({\r\n        label = tostring(val),\r\n        click_function = \"add_subtract\",\r\n        function_owner = self,\r\n        position = { 0, 0.06, 0 },\r\n        height = 600,\r\n        width = 1000,\r\n        scale = { 1.5, 1.5, 1.5 },\r\n        font_size = 750,\r\n        font_color = { 1, 1, 1, 100 },\r\n        color = { 0, 0, 0, 0 }\r\n    })\r\nend\r\n\r\nfunction add_subtract(_, _, alt_click)\r\n    local new_val = math.min(math.max(val + (alt_click and -1 or 1), 1), 10)\r\n\r\n    if new_val == val then\r\n        printToAll(\"Alarm level can only be between 0 and 11!\", \"Orange\")\r\n    else\r\n        val = new_val\r\n        self.editButton({ index = 0, label = tostring(val) })\r\n    end\r\nend",
+      "LuaScriptState": "1",
+      "XmlUI": "",
+      "Name": "Custom_Token",
+      "GUID": "8985d8",
       "Transform": {
-        "posX": -35.6000023,
-        "scaleX": 0.415559769,
-        "posY": 1.59290218,
+        "posX": -35.6,
+        "scaleX": 0.42,
+        "posY": 1.59,
         "scaleY": 1.0,
-        "posZ": 23.4358063,
-        "rotX": 359.979919,
-        "rotZ": 359.920166,
-        "rotY": 359.9798,
-        "scaleZ": 0.415559769
-      },
-      "Sticky": true
+        "posZ": 23.44,
+        "rotX": 0,
+        "rotZ": 0,
+        "rotY": 0,
+        "scaleZ": 0.42
+      }
     },
     {
-      "XmlUI": "",
-      "LuaScript": "-- Bundled by luabundle {\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"__root\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"core/AgendaDeck\")\nend)\n__bundle_register(\"core/AgendaDeck\", function(require, _LOADED, __bundle_register, __bundle_modules)\nMIN_VALUE = -99\r\nMAX_VALUE = 999\r\n\r\nfunction onload(saved_data)\r\n    light_mode = false\r\n    val = 0\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        val = loaded_data[2]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, val}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0.5, 0.5, 0.5, 95}\r\n\r\n    if light_mode then\r\n        f_color = {1,1,1,95}\r\n    else\r\n        f_color = {0,0,0,100}\r\n    end\r\n\r\n\r\n\r\n    self.createButton({\r\n      label=tostring(val),\r\n      click_function=\"add_subtract\",\r\n      function_owner=self,\r\n      position={0,0.05,0},\r\n      height=600,\r\n      width=1000,\r\n      alignment = 3,\r\n      scale={x=1.5, y=1.5, z=1.5},\r\n      font_size=600,\r\n      font_color=f_color,\r\n      color={0,0,0,0}\r\n      })\r\n\r\n\r\n\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark ]\"\r\n    else\r\n        lightButtonText = \"[ Set light ]\"\r\n    end\r\n\r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n\r\n    updateSave()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction editName(_obj, _string, value)\r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction add_subtract(_obj, _color, alt_click)\r\n    mod = alt_click and -1 or 1\r\n    new_value = math.min(math.max(val + mod, MIN_VALUE), MAX_VALUE)\r\n    if val ~= new_value then\r\n        val = new_value\r\n      updateVal()\r\n        updateSave()\r\n    end\r\nend\r\n\r\nfunction updateVal()\r\n\r\n    self.editButton({\r\n        index = 0,\r\n        label = tostring(val),\r\n\r\n        })\r\nend\r\n\r\nfunction reset_val()\r\n    val = 0\r\n    updateVal()\r\n    updateSave()\r\nend\r\n\r\nfunction setTooltips()\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editButton({\r\n        index = 0,\r\n        value = tostring(val),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value)\r\n    reloadAll()\r\nend\r\n\nend)\nreturn __bundle_require(\"__root\")",
+      "Nickname": "Alarm Level",
       "Description": "",
       "GMNotes": "",
-      "Grid": true,
-      "Autoraise": true,
-      "HideWhenFaceDown": false,
-      "Snap": false,
-      "Name": "Custom_Token",
-      "LuaScriptState": "[true,1]",
-      "Locked": true,
-      "MeasureMovement": false,
-      "Nickname": "Alarm Level",
-      "GridProjection": false,
-      "Hands": false,
-      "LayoutGroupSortIndex": 0,
-      "Tooltip": true,
-      "GUID": "8eaf3c",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "b": 0.0,
-        "g": 0.0
-      },
       "AltLookAngle": {
         "x": 0.0,
         "y": 0.0,
         "z": 0.0
       },
-      "DragSelectable": true,
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
       "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
       "CustomImage": {
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949592555964782208/CC876694A6684B3C2680CE2FE3259F574AE0AD97/",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
         "CustomToken": {
           "Thickness": 0.1,
+          "MergeDistancePixels": 5.0,
           "StandUp": false,
-          "Stackable": false,
-          "MergeDistancePixels": 5.0
-        },
-        "WidthScale": 0.0,
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949592555964782208/CC876694A6684B3C2680CE2FE3259F574AE0AD97/",
-        "ImageScalar": 1.0,
-        "ImageSecondaryURL": ""
+          "Stackable": false
+        }
       },
-      "Value": 0,
+      "LuaScript": "-- Alarm Level Counter\r\n-- made by:     Chr1Z\r\n\r\nfunction onSave() return JSON.encode(val) end\r\n\r\nfunction onLoad(saved_data)\r\n    if saved_data ~= nil then\r\n        val = JSON.decode(saved_data)\r\n    else\r\n        val = 1\r\n    end\r\n\r\n    self.createButton({\r\n        label = tostring(val),\r\n        click_function = \"add_subtract\",\r\n        function_owner = self,\r\n        position = { 0, 0.06, 0 },\r\n        height = 600,\r\n        width = 1000,\r\n        scale = { 1.5, 1.5, 1.5 },\r\n        font_size = 750,\r\n        font_color = { 1, 1, 1, 100 },\r\n        color = { 0, 0, 0, 0 }\r\n    })\r\nend\r\n\r\nfunction add_subtract(_, _, alt_click)\r\n    local new_val = math.min(math.max(val + (alt_click and -1 or 1), 1), 10)\r\n\r\n    if new_val == val then\r\n        printToAll(\"Alarm level can only be between 0 and 11!\", \"Orange\")\r\n    else\r\n        val = new_val\r\n        self.editButton({ index = 0, label = tostring(val) })\r\n    end\r\nend",
+      "LuaScriptState": "1",
+      "XmlUI": "",
+      "Name": "Custom_Token",
+      "GUID": "8eaf3c",
       "Transform": {
-        "posX": -15.44314,
-        "scaleX": 0.415559769,
+        "posX": -15.44,
+        "scaleX": 0.42,
         "posY": 1.69,
         "scaleY": 1.0,
-        "posZ": -23.6686058,
-        "rotX": 1.02256807E-8,
-        "rotZ": 1.28988361E-7,
-        "rotY": 180.000076,
-        "scaleZ": 0.415559769
-      },
-      "Sticky": true
+        "posZ": -23.67,
+        "rotX": 0,
+        "rotZ": 0,
+        "rotY": 180,
+        "scaleZ": 0.42
+      }
     },
     {
       "XmlUI": "",
@@ -17464,61 +17473,64 @@
       "Sticky": true
     },
     {
-      "XmlUI": "",
-      "LuaScript": "-- Bundled by luabundle {\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"__root\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"core/AgendaDeck\")\nend)\n__bundle_register(\"core/AgendaDeck\", function(require, _LOADED, __bundle_register, __bundle_modules)\nMIN_VALUE = -99\r\nMAX_VALUE = 999\r\n\r\nfunction onload(saved_data)\r\n    light_mode = false\r\n    val = 0\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        val = loaded_data[2]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, val}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0.5, 0.5, 0.5, 95}\r\n\r\n    if light_mode then\r\n        f_color = {1,1,1,95}\r\n    else\r\n        f_color = {0,0,0,100}\r\n    end\r\n\r\n\r\n\r\n    self.createButton({\r\n      label=tostring(val),\r\n      click_function=\"add_subtract\",\r\n      function_owner=self,\r\n      position={0,0.05,0},\r\n      height=600,\r\n      width=1000,\r\n      alignment = 3,\r\n      scale={x=1.5, y=1.5, z=1.5},\r\n      font_size=600,\r\n      font_color=f_color,\r\n      color={0,0,0,0}\r\n      })\r\n\r\n\r\n\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark ]\"\r\n    else\r\n        lightButtonText = \"[ Set light ]\"\r\n    end\r\n\r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n\r\n    updateSave()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction editName(_obj, _string, value)\r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction add_subtract(_obj, _color, alt_click)\r\n    mod = alt_click and -1 or 1\r\n    new_value = math.min(math.max(val + mod, MIN_VALUE), MAX_VALUE)\r\n    if val ~= new_value then\r\n        val = new_value\r\n      updateVal()\r\n        updateSave()\r\n    end\r\nend\r\n\r\nfunction updateVal()\r\n\r\n    self.editButton({\r\n        index = 0,\r\n        label = tostring(val),\r\n\r\n        })\r\nend\r\n\r\nfunction reset_val()\r\n    val = 0\r\n    updateVal()\r\n    updateSave()\r\nend\r\n\r\nfunction setTooltips()\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editButton({\r\n        index = 0,\r\n        value = tostring(val),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value)\r\n    reloadAll()\r\nend\r\n\nend)\nreturn __bundle_require(\"__root\")",
+      "Nickname": "Alarm Level",
       "Description": "",
       "GMNotes": "",
-      "Grid": true,
-      "Autoraise": true,
-      "HideWhenFaceDown": false,
-      "Snap": false,
-      "Name": "Custom_Token",
-      "LuaScriptState": "[true,1]",
-      "Locked": true,
-      "MeasureMovement": false,
-      "Nickname": "Alarm Level",
-      "GridProjection": false,
-      "Hands": false,
-      "LayoutGroupSortIndex": 0,
-      "Tooltip": true,
-      "GUID": "e1845d",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "b": 0.0,
-        "g": 0.0
-      },
       "AltLookAngle": {
         "x": 0.0,
         "y": 0.0,
         "z": 0.0
       },
-      "DragSelectable": true,
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
       "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
       "CustomImage": {
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949592555964782208/CC876694A6684B3C2680CE2FE3259F574AE0AD97/",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
         "CustomToken": {
           "Thickness": 0.1,
+          "MergeDistancePixels": 5.0,
           "StandUp": false,
-          "Stackable": false,
-          "MergeDistancePixels": 5.0
-        },
-        "WidthScale": 0.0,
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949592555964782208/CC876694A6684B3C2680CE2FE3259F574AE0AD97/",
-        "ImageScalar": 1.0,
-        "ImageSecondaryURL": ""
+          "Stackable": false
+        }
       },
-      "Value": 0,
+      "LuaScript": "-- Alarm Level Counter\r\n-- made by:     Chr1Z\r\n\r\nfunction onSave() return JSON.encode(val) end\r\n\r\nfunction onLoad(saved_data)\r\n    if saved_data ~= nil then\r\n        val = JSON.decode(saved_data)\r\n    else\r\n        val = 1\r\n    end\r\n\r\n    self.createButton({\r\n        label = tostring(val),\r\n        click_function = \"add_subtract\",\r\n        function_owner = self,\r\n        position = { 0, 0.06, 0 },\r\n        height = 600,\r\n        width = 1000,\r\n        scale = { 1.5, 1.5, 1.5 },\r\n        font_size = 750,\r\n        font_color = { 1, 1, 1, 100 },\r\n        color = { 0, 0, 0, 0 }\r\n    })\r\nend\r\n\r\nfunction add_subtract(_, _, alt_click)\r\n    local new_val = math.min(math.max(val + (alt_click and -1 or 1), 1), 10)\r\n\r\n    if new_val == val then\r\n        printToAll(\"Alarm level can only be between 0 and 11!\", \"Orange\")\r\n    else\r\n        val = new_val\r\n        self.editButton({ index = 0, label = tostring(val) })\r\n    end\r\nend",
+      "LuaScriptState": "1",
+      "XmlUI": "",
+      "Name": "Custom_Token",
+      "GUID": "e1845d",
       "Transform": {
-        "posX": -51.9422531,
-        "scaleX": 0.415559769,
-        "posY": 1.68278015,
+        "posX": -51.94,
+        "scaleX": 0.42,
+        "posY": 1.68,
         "scaleY": 1.0,
-        "posZ": 5.92466831,
-        "rotX": 359.920074,
-        "rotZ": 0.0168632288,
-        "rotY": 270.000061,
-        "scaleZ": 0.415559769
-      },
-      "Sticky": true
+        "posZ": 5.92,
+        "rotX": 0,
+        "rotZ": 0,
+        "rotY": 270,
+        "scaleZ": 0.42
+      }
     }
   ],
   "DragSelectable": true,
