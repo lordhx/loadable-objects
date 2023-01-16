@@ -9,7 +9,7 @@
   "Snap": true,
   "MeshIndex": -1,
   "Name": "Custom_Model_Bag",
-  "LuaScriptState": "{\"ml\":{\"5a6ca1\":{\"lock\":true,\"pos\":{\"x\":2.75125026702881,\"y\":1.27430498600006,\"z\":71.3502731323242},\"rot\":{\"x\":0.0650593191385269,\"y\":270.014068603516,\"z\":1.72222244145814E-05}},\"6b4f22\":{\"lock\":false,\"pos\":{\"x\":-1.46599805355072,\"y\":1.57899904251099,\"z\":-26.9300003051758},\"rot\":{\"x\":-2.3202953514101E-07,\"y\":269.999633789063,\"z\":-9.45610949543152E-08}},\"7d88fc\":{\"lock\":false,\"pos\":{\"x\":13.0799589157104,\"y\":1.38603448867798,\"z\":72.8025131225586},\"rot\":{\"x\":359.934814453125,\"y\":89.9913101196289,\"z\":5.45348193554673E-05}},\"7f515b\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":27.9860000610352},\"rot\":{\"x\":2.676086907627E-08,\"y\":269.999938964844,\"z\":-2.29366065696013E-07}},\"806c38\":{\"lock\":false,\"pos\":{\"x\":12.2490310668945,\"y\":1.48149907588959,\"z\":-28.0143337249756},\"rot\":{\"x\":2.39074164909425E-08,\"y\":270.065673828125,\"z\":-7.62032925649692E-08}},\"897309\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149919509888,\"z\":3.98600006103516},\"rot\":{\"x\":-3.67395841749385E-07,\"y\":270.022552490234,\"z\":4.67901060119402E-07}},\"ad0e70\":{\"lock\":false,\"pos\":{\"x\":3.87701344490051,\"y\":1.45653510093689,\"z\":-35.9665451049805},\"rot\":{\"x\":2.0213208244968E-06,\"y\":90.0000381469727,\"z\":-5.54928192286752E-07}},\"bcde29\":{\"lock\":false,\"pos\":{\"x\":12.2519931793213,\"y\":1.48149907588959,\"z\":11.9860334396362},\"rot\":{\"x\":3.41768284783939E-08,\"y\":270.031066894531,\"z\":-6.93897135306543E-08}},\"bfdc5d\":{\"lock\":false,\"pos\":{\"x\":12.2489471435547,\"y\":1.48149907588959,\"z\":35.9851913452148},\"rot\":{\"x\":-1.60663180537313E-08,\"y\":269.996459960938,\"z\":8.67960459061123E-09}},\"c9578f\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":-36.0139999389648},\"rot\":{\"x\":-1.36203439637939E-08,\"y\":270.024597167969,\"z\":-1.31557072791111E-07}},\"c98a8a\":{\"lock\":false,\"pos\":{\"x\":12.2495489120483,\"y\":1.4814989566803,\"z\":-20.0142040252686},\"rot\":{\"x\":2.79536127578695E-08,\"y\":270.033264160156,\"z\":-1.05192043520219E-07}},\"caee08\":{\"lock\":false,\"pos\":{\"x\":12.2496786117554,\"y\":1.48149907588959,\"z\":-12.0141382217407},\"rot\":{\"x\":2.04312726737044E-08,\"y\":270.02490234375,\"z\":1.13150697700348E-08}},\"d7a48c\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":-4.01399993896484},\"rot\":{\"x\":-1.75013203929097E-09,\"y\":269.977661132813,\"z\":1.66571552995265E-07}},\"dec1c6\":{\"lock\":false,\"pos\":{\"x\":0.255993455648422,\"y\":1.48149931430817,\"z\":28.7803783416748},\"rot\":{\"x\":1.91669698779151E-07,\"y\":270.009429931641,\"z\":-7.73738833004245E-08}},\"f1bddd\":{\"lock\":true,\"pos\":{\"x\":-6.20291376113892,\"y\":1.36413764953613,\"z\":62.0012741088867},\"rot\":{\"x\":359.934844970703,\"y\":90.0040512084961,\"z\":2.78743918897817E-05}},\"fffd49\":{\"lock\":false,\"pos\":{\"x\":12.2499771118164,\"y\":1.48149907588959,\"z\":19.9860095977783},\"rot\":{\"x\":2.49150797770881E-08,\"y\":269.994537353516,\"z\":-1.86124644585561E-08}}}}",
+  "LuaScriptState": "{\"ml\":{\"5a6ca1\":{\"lock\":true,\"pos\":{\"x\":41,\"y\":1.48,\"z\":0},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"6b4f22\":{\"lock\":false,\"pos\":{\"x\":-1.46599805355072,\"y\":1.57899904251099,\"z\":-26.9300003051758},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"7d88fc\":{\"lock\":false,\"pos\":{\"x\":53.15,\"y\":1.58,\"z\":1.71},\"rot\":{\"x\":0,\"y\":90,\"z\":0}},\"7f515b\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":27.9860000610352},\"rot\":{\"x\":2.676086907627E-08,\"y\":269.999938964844,\"z\":-2.29366065696013E-07}},\"806c38\":{\"lock\":false,\"pos\":{\"x\":12.2490310668945,\"y\":1.48149907588959,\"z\":-28.0143337249756},\"rot\":{\"x\":2.39074164909425E-08,\"y\":270.065673828125,\"z\":-7.62032925649692E-08}},\"897309\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149919509888,\"z\":3.98600006103516},\"rot\":{\"x\":-3.67395841749385E-07,\"y\":270.022552490234,\"z\":4.67901060119402E-07}},\"ad0e70\":{\"lock\":false,\"pos\":{\"x\":3.87701344490051,\"y\":1.45653510093689,\"z\":-35.9665451049805},\"rot\":{\"x\":2.0213208244968E-06,\"y\":90.0000381469727,\"z\":-5.54928192286752E-07}},\"bcde29\":{\"lock\":false,\"pos\":{\"x\":12.2519931793213,\"y\":1.48149907588959,\"z\":11.9860334396362},\"rot\":{\"x\":3.41768284783939E-08,\"y\":270.031066894531,\"z\":-6.93897135306543E-08}},\"bfdc5d\":{\"lock\":false,\"pos\":{\"x\":12.2489471435547,\"y\":1.48149907588959,\"z\":35.9851913452148},\"rot\":{\"x\":-1.60663180537313E-08,\"y\":269.996459960938,\"z\":8.67960459061123E-09}},\"c9578f\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":-36.0139999389648},\"rot\":{\"x\":-1.36203439637939E-08,\"y\":270.024597167969,\"z\":-1.31557072791111E-07}},\"c98a8a\":{\"lock\":false,\"pos\":{\"x\":12.2495489120483,\"y\":1.4814989566803,\"z\":-20.0142040252686},\"rot\":{\"x\":2.79536127578695E-08,\"y\":270.033264160156,\"z\":-1.05192043520219E-07}},\"caee08\":{\"lock\":false,\"pos\":{\"x\":12.2496786117554,\"y\":1.48149907588959,\"z\":-12.0141382217407},\"rot\":{\"x\":2.04312726737044E-08,\"y\":270.02490234375,\"z\":1.13150697700348E-08}},\"d7a48c\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":-4.01399993896484},\"rot\":{\"x\":-1.75013203929097E-09,\"y\":269.977661132813,\"z\":1.66571552995265E-07}},\"dec1c6\":{\"lock\":false,\"pos\":{\"x\":0.255993455648422,\"y\":1.48149931430817,\"z\":28.7803783416748},\"rot\":{\"x\":1.91669698779151E-07,\"y\":270.009429931641,\"z\":-7.73738833004245E-08}},\"f1bddd\":{\"lock\":true,\"pos\":{\"x\":32.85,\"y\":1.58,\"z\":-10.8},\"rot\":{\"x\":0,\"y\":90,\"z\":0}},\"fffd49\":{\"lock\":false,\"pos\":{\"x\":12.2499771118164,\"y\":1.48149907588959,\"z\":19.9860095977783},\"rot\":{\"x\":2.49150797770881E-08,\"y\":269.994537353516,\"z\":-1.86124644585561E-08}}}}",
   "Locked": false,
   "MeasureMovement": false,
   "CustomMesh": {
@@ -342,21 +342,21 @@
           "Stackable": false,
           "Stretch": true
         },
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1974294597230327410/A4C76EFBAF6022BC6D07B7428E979BD11F9D500A/",
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/1974294597254505991/160A161B6BD329200D1F85E63BAA1E69A38A927B/",
         "ImageScalar": 1.0,
         "ImageSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1974294597230327710/5F1A5C2B45BD5C2C4F4D76DEEF99C32EEF6EC057/"
       },
       "Value": 0,
       "Transform": {
         "posX": 2.75125027,
-        "scaleX": 17.0,
+        "scaleX": 20,
         "posY": 1.274305,
         "scaleY": 1.0,
         "posZ": 71.35027,
-        "rotX": 0.06505931,
-        "rotZ": 1.721889E-5,
-        "rotY": 270.014069,
-        "scaleZ": 17.0
+        "rotX": 0,
+        "rotZ": 0,
+        "rotY": 270,
+        "scaleZ": 20
       },
       "Sticky": true
     },
@@ -841,7 +841,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Paracausal Symbiote",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"09544\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": false,
@@ -861,6 +861,10 @@
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387458474/047266E9298C296F9A05DF7F5D63448A43DE1A0C/"
                 }
               },
+              "Tags": [
+                "Asset",
+                "PlayerCard"
+              ],
               "Nickname": "The Last Blossom",
               "GridProjection": false,
               "Hands": true,
@@ -19553,9 +19557,9 @@
       "Tooltip": true,
       "GUID": "ad0e70",
       "ColorDiffuse": {
-        "r": 0.02148666,
-        "b": 0.02148666,
-        "g": 0.00100758043
+        "r": 1,
+        "b": 0,
+        "g": 0
       },
       "PhysicsMaterial": {
         "StaticFriction": 0.6,
@@ -19745,7 +19749,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Coral Prism",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09659\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -19765,6 +19769,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328388051798/76225F57795BEA55DAAFC5BDD6FE20B03BE817E1/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Light of Pharos",
                   "GridProjection": false,
                   "Hands": true,
@@ -19803,7 +19811,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Translocated Lens",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09634\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -19823,6 +19831,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387921536/56AB6918516FF87D12E1DB3D2F0078D96DB85F2D/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Sable Glass",
                   "GridProjection": false,
                   "Hands": true,
@@ -19861,7 +19873,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Reflects Only Violence",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09768\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -19881,6 +19893,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387696186/7B0C58300B54A2A584F5B92EE8887B7A1E8145FD/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Mirroring Blade",
                   "GridProjection": false,
                   "Hands": true,
@@ -19919,7 +19935,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Paracausal Symbiote",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09544\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": true,
@@ -19939,6 +19955,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387458474/047266E9298C296F9A05DF7F5D63448A43DE1A0C/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Last Blossom",
                   "GridProjection": false,
                   "Hands": true,
@@ -19977,7 +19997,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Harvester of Woe",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09680\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -19997,6 +20017,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1938266093883144543/321B70E2509F1852398770FBCEDC5FBAF016DA3D/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Shade Reaper",
                   "GridProjection": false,
                   "Hands": true,
@@ -20035,7 +20059,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Macabre Ruby Marble",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09519\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -20055,6 +20079,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387191646/A3B395B219DBBBA73897963D084401A7A667CFCB/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Eye of Ravens",
                   "GridProjection": false,
                   "Hands": true,
@@ -20093,7 +20121,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Broken Statuette",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09565\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -20113,6 +20141,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387565374/C512EAC507739BE15BA2B07B062E8A1549477260/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Weeping Lady",
                   "GridProjection": false,
                   "Hands": true,
@@ -20151,7 +20183,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Talisman of Infinite Darkness",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09590\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -20171,6 +20203,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387354245/5782347BBAAE7DBE252EE3FE0CE40F3A8D8E8398/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Twisted Antiprism",
                   "GridProjection": false,
                   "Hands": true,
@@ -20209,7 +20245,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Silent Cacophony",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09770\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -20229,6 +20265,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387696186/7B0C58300B54A2A584F5B92EE8887B7A1E8145FD/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Ruinous Chime",
                   "GridProjection": false,
                   "Hands": true,
@@ -20267,7 +20307,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Infernal Mechanism",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09769\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -20287,6 +20327,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387696186/7B0C58300B54A2A584F5B92EE8887B7A1E8145FD/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Bale Engine",
                   "GridProjection": false,
                   "Hands": true,
@@ -20325,7 +20369,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Symbol of Providence",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"88045\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -20345,6 +20389,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1874087305860121579/39578AC78E34DAA169AB4DE4246BB1E002528B8C/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Wellspring of Fortune",
                   "GridProjection": false,
                   "Hands": true,
@@ -21253,7 +21301,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Silent Cacophony",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09770\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -21273,6 +21321,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387696186/7B0C58300B54A2A584F5B92EE8887B7A1E8145FD/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Ruinous Chime",
                   "GridProjection": false,
                   "Hands": true,
@@ -21311,7 +21363,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Infernal Mechanism",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09769\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -21331,6 +21383,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387696186/7B0C58300B54A2A584F5B92EE8887B7A1E8145FD/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Bale Engine",
                   "GridProjection": false,
                   "Hands": true,
@@ -21369,7 +21425,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Reflects Only Violence",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"09768\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
@@ -21389,6 +21445,10 @@
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387696186/7B0C58300B54A2A584F5B92EE8887B7A1E8145FD/"
                     }
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "Nickname": "The Mirroring Blade",
                   "GridProjection": false,
                   "Hands": true,
@@ -26495,7 +26555,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Talisman of Infinite Darkness",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"09590\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": false,
@@ -26515,6 +26575,10 @@
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387354245/5782347BBAAE7DBE252EE3FE0CE40F3A8D8E8398/"
                 }
               },
+              "Tags": [
+                "Asset",
+                "PlayerCard"
+              ],
               "Nickname": "The Twisted Antiprism",
               "GridProjection": false,
               "Hands": true,
@@ -30984,7 +31048,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Macabre Ruby Marble",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"09519\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": false,
@@ -31004,6 +31068,10 @@
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387191646/A3B395B219DBBBA73897963D084401A7A667CFCB/"
                 }
               },
+              "Tags": [
+                "Asset",
+                "PlayerCard"
+              ],
               "Nickname": "The Eye of Ravens",
               "GridProjection": false,
               "Hands": true,
@@ -55916,7 +55984,7 @@
           "XmlUI": "",
           "LuaScript": "",
           "Description": "Harvester of Woe",
-          "GMNotes": "null",
+          "GMNotes": "{\n  \"id\": \"09680\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
           "Grid": true,
           "Autoraise": true,
           "HideWhenFaceDown": false,
@@ -55936,6 +56004,10 @@
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/1938266093883144543/321B70E2509F1852398770FBCEDC5FBAF016DA3D/"
             }
           },
+          "Tags": [
+            "Asset",
+            "PlayerCard"
+          ],
           "Nickname": "The Shade Reaper",
           "GridProjection": false,
           "Hands": true,
@@ -59846,7 +59918,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Coral Prism",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"09659\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": false,
@@ -59866,6 +59938,10 @@
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328388051798/76225F57795BEA55DAAFC5BDD6FE20B03BE817E1/"
                 }
               },
+              "Tags": [
+                "Asset",
+                "PlayerCard"
+              ],
               "Nickname": "The Light of Pharos",
               "GridProjection": false,
               "Hands": true,
@@ -62663,7 +62739,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Coral Prism",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"09659\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": false,
@@ -62683,6 +62759,10 @@
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328388051798/76225F57795BEA55DAAFC5BDD6FE20B03BE817E1/"
                 }
               },
+              "Tags": [
+                "Asset",
+                "PlayerCard"
+              ],
               "Nickname": "The Light of Pharos",
               "GridProjection": false,
               "Hands": true,
@@ -66684,7 +66764,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Coral Prism",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"09659\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": false,
@@ -66704,6 +66784,10 @@
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328388051798/76225F57795BEA55DAAFC5BDD6FE20B03BE817E1/"
                 }
               },
+              "Tags": [
+                "Asset",
+                "PlayerCard"
+              ],
               "Nickname": "The Light of Pharos",
               "GridProjection": false,
               "Hands": true,
@@ -76810,7 +76894,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Translocated Lens",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"09634\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": false,
@@ -76830,6 +76914,10 @@
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387921536/56AB6918516FF87D12E1DB3D2F0078D96DB85F2D/"
                 }
               },
+              "Tags": [
+                "Asset",
+                "PlayerCard"
+              ],
               "Nickname": "The Sable Glass",
               "GridProjection": false,
               "Hands": true,
@@ -83715,7 +83803,7 @@
               "XmlUI": "",
               "LuaScript": "",
               "Description": "Broken Statuette",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"09565\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\"\n}",
               "Grid": true,
               "Autoraise": true,
               "HideWhenFaceDown": false,
@@ -83735,6 +83823,10 @@
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/1941643328387565374/C512EAC507739BE15BA2B07B062E8A1549477260/"
                 }
               },
+              "Tags": [
+                "Asset",
+                "PlayerCard"
+              ],
               "Nickname": "The Weeping Lady",
               "GridProjection": false,
               "Hands": true,
