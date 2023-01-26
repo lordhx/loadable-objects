@@ -43608,15 +43608,15 @@
   "IgnoreFoW": false,
   "Value": 0,
   "Transform": {
-    "posX": 40.214,
-    "scaleX": 1.0,
-    "posY": 1.48553014,
-    "scaleY": 0.139652729,
-    "posZ": 14.497,
-    "rotX": 5.462978E-7,
-    "rotZ": 1.87367224E-8,
-    "rotY": 270.0,
-    "scaleZ": 1.0
+    "posX": 52,
+    "scaleX": 1,
+    "posY": 1.5,
+    "scaleY": 0.14,
+    "posZ": -87,
+    "rotX": 0,
+    "rotZ": 0,
+    "rotY": 270,
+    "scaleZ": 1
   },
   "Sticky": true
 }

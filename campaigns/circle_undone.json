@@ -47355,15 +47355,15 @@
   "IgnoreFoW": false,
   "Value": 0,
   "Transform": {
-    "posX": 58.453,
-    "scaleX": 1.0,
-    "posY": 1.4855299,
-    "scaleY": 0.139652729,
-    "posZ": -27.881,
-    "rotX": 4.58295943E-7,
-    "rotZ": -1.541602E-9,
-    "rotY": 270.0,
-    "scaleZ": 1.0
+    "posX": 13,
+    "scaleX": 1,
+    "posY": 1.5,
+    "scaleY": 0.14,
+    "posZ": -55,
+    "rotX": 0,
+    "rotZ": 0,
+    "rotY": 270,
+    "scaleZ": 1
   },
   "Sticky": true
 }

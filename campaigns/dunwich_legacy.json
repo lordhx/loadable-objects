@@ -34353,15 +34353,15 @@
   "IgnoreFoW": false,
   "Value": 0,
   "Transform": {
-    "posX": 58.548,
-    "scaleX": 1.0,
-    "posY": 1.4814986,
-    "scaleY": 0.139652729,
-    "posZ": 14.4640007,
-    "rotX": -1.1578863E-7,
-    "rotZ": 2.1400826E-8,
-    "rotY": 270.0,
-    "scaleZ": 1.0
+    "posX": 52,
+    "scaleX": 1,
+    "posY": 1.5,
+    "scaleY": 0.14,
+    "posZ": -55,
+    "rotX": 0,
+    "rotZ": 0,
+    "rotY": 270,
+    "scaleZ": 1
   },
   "Sticky": true
 }

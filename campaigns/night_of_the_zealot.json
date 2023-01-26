@@ -10951,15 +10951,15 @@
   "IgnoreFoW": false,
   "Value": 0,
   "Transform": {
-    "posX": 58.53,
-    "scaleX": 1.0,
-    "posY": 1.4814986,
-    "scaleY": 0.139652729,
-    "posZ": 28.525,
-    "rotX": -2.192786E-8,
-    "rotZ": 9.50820755E-9,
-    "rotY": 270.0,
-    "scaleZ": 1.0
+    "posX": 65,
+    "scaleX": 1,
+    "posY": 1.5,
+    "scaleY": 0.14,
+    "posZ": -55,
+    "rotX": 0,
+    "rotZ": 0,
+    "rotY": 270,
+    "scaleZ": 1
   },
   "Sticky": true
 }

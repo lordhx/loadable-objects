@@ -37846,15 +37846,15 @@
   "IgnoreFoW": false,
   "Value": 0,
   "Transform": {
-    "posX": 66.992,
-    "scaleX": 2.00002885,
-    "posY": 1.85204494,
-    "scaleY": 0.10587021,
-    "posZ": 14.5020018,
-    "rotX": -6.051899E-7,
-    "rotZ": 7.32718348E-8,
-    "rotY": 270.0,
-    "scaleZ": 1.69295752
+    "posX": 52,
+    "scaleX": 2,
+    "posY": 1.88,
+    "scaleY": 0.11,
+    "posZ": -71,
+    "rotX": 0,
+    "rotZ": 0,
+    "rotY": 270,
+    "scaleZ": 1.7
   },
   "Sticky": true
 }

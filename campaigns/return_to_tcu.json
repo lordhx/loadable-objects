@@ -54994,15 +54994,15 @@
   "IgnoreFoW": false,
   "Value": 0,
   "Transform": {
-    "posX": 66.907,
-    "scaleX": 2.0,
-    "posY": 1.85204494,
-    "scaleY": 0.10587021,
-    "posZ": -27.912,
-    "rotX": -6.372347E-7,
-    "rotZ": 8.863561E-8,
-    "rotY": 270.0,
-    "scaleZ": 1.69295752
+    "posX": 13,
+    "scaleX": 2,
+    "posY": 1.88,
+    "scaleY": 0.11,
+    "posZ": -71,
+    "rotX": 0,
+    "rotZ": 0,
+    "rotY": 270,
+    "scaleZ": 1.7
   },
   "Sticky": true
 }

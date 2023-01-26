@@ -70098,15 +70098,15 @@
   "IgnoreFoW": false,
   "Value": 0,
   "Transform": {
-    "posX": 40.292,
-    "scaleX": 1.0,
-    "posY": 1.48553014,
-    "scaleY": 0.139652729,
-    "posZ": 0.378999054,
-    "rotX": 2.42567424E-8,
-    "rotZ": -5.9377237E-7,
-    "rotY": 270.0,
-    "scaleZ": 1.0
+    "posX": 39,
+    "scaleX": 1,
+    "posY": 1.5,
+    "scaleY": 0.14,
+    "posZ": -87,
+    "rotX": 0,
+    "rotZ": 0,
+    "rotY": 270,
+    "scaleZ": 1
   },
   "Sticky": true
 }
