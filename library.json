@@ -13,7 +13,7 @@
     {"name":"Return to The Dunwich Legacy", "url":"campaigns/return_to_tdl.json", "replace":"ce9130"},
     {"name":"Return to The Path to Carcosa", "url":"campaigns/return_to_tptc.json", "replace":"e9889a"},
     {"name":"Return to The Forgotten Age", "url":"campaigns/return_to_tfa.json", "replace":"479ff3"},
-    {"name":"Return to The Circle Undone", "url":"campaigns/return_to_tcu.json", "replace":"3261ca"}
+    {"name":"Return to The Circle Undone", "url":"campaigns/return_to_tcu.json", "replace":"757324"}
   ],
   "scenarios" : [
     {"name":"The Blob that Ate Everything", "url":"scenarios/blob_that_ate_everything.json", "replace":"4dee5a"},
