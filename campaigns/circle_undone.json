@@ -47309,6 +47309,9 @@
       "HideWhenFaceDown": false,
       "Snap": true,
       "Name": "Custom_PDF",
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
       "LuaScriptState": "",
       "Locked": false,
       "MeasureMovement": false,
