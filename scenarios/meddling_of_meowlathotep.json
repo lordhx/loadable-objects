@@ -3701,7 +3701,7 @@
       "XmlUI": "",
       "LuaScript": "",
       "Description": "The Good Boy",
-      "GMNotes": "{\n  \"id\": \"80013\",\n  \"type\": \"Investigator\",\n  \"traits\": \"Drifter.\",\n  \"willpowerIcons\": 2,\n  \"intellectIcons\": 4,\n  \"combatIcons\": 4,\n  \"agilityIcons\": 2\n}",
+      "GMNotes": "{\n  \"id\": \"80013\",\n  \"type\": \"Investigator\",\n  \"class\": \"Survivor\",\n  \"traits\": \"Drifter.\",\n  \"willpowerIcons\": 2,\n  \"intellectIcons\": 4,\n  \"combatIcons\": 4,\n  \"agilityIcons\": 2\n}",
       "Grid": true,
       "Autoraise": true,
       "HideWhenFaceDown": false,
