@@ -30475,12 +30475,12 @@
       "HideWhenFaceDown": false,
       "Snap": true,
       "Name": "Custom_PDF",
-      "Tags": [
-        "CleanUpHelper_ignore"
-      ],
       "LuaScriptState": "",
       "Locked": false,
       "MeasureMovement": false,
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
       "Nickname": "The Forgotten Age Campaign Guide",
       "GridProjection": false,
       "Hands": false,
@@ -35125,12 +35125,12 @@
       "HideWhenFaceDown": false,
       "Snap": true,
       "Name": "Custom_PDF",
-      "Tags": [
-        "CleanUpHelper_ignore"
-      ],
       "LuaScriptState": "",
       "Locked": false,
       "MeasureMovement": false,
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
       "Nickname": "Return To The Forgotten Age Insert",
       "GridProjection": false,
       "Hands": false,
@@ -58082,7 +58082,7 @@
                   "XmlUI": "",
                   "LuaScript": "",
                   "Description": "Ancient. Pnakotus.",
-                  "GMNotes": "{\n  \"id\": \"53057\",\n  \"type\": \"Location\",\n  \"traits\": \"Ancient. Pnakotus.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Heart\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Heart\",\n    \"connections\": \"Plus|Hourglass\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"53057\",\n  \"type\": \"Location\",\n  \"traits\": \"Ancient. Pnakotus.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Heart\",\n    \"connections\": \"Plus|Hourglass\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Heart\",\n    \"connections\": \"Plus|Hourglass\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
                   "Grid": true,
                   "Autoraise": true,
                   "HideWhenFaceDown": false,
