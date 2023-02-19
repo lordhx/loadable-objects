@@ -7832,7 +7832,7 @@
       "Snap": true,
       "MeshIndex": -1,
       "Name": "Custom_Model_Bag",
-      "LuaScriptState": "{\"ml\":{\"076b61\":{\"lock\":false,\"pos\":{\"x\":-31.9575824737549,\"y\":1.66336166858673,\"z\":0.0345288477838039},\"rot\":{\"x\":0.801109313964844,\"y\":269.987915039063,\"z\":0.00707567343488336}},\"19e7d8\":{\"lock\":false,\"pos\":{\"x\":-30.2242164611816,\"y\":1.63722372055054,\"z\":-0.0299990326166153},\"rot\":{\"x\":359.920562744141,\"y\":270.000518798828,\"z\":0.0176045913249254}},\"1aa7cb\":{\"lock\":false,\"pos\":{\"x\":-17.1199169158936,\"y\":1.61892199516296,\"z\":-0.0297970715910196},\"rot\":{\"x\":359.920135498047,\"y\":270.001556396484,\"z\":0.0167074911296368}},\"23b896\":{\"lock\":false,\"pos\":{\"x\":-23.6766166687012,\"y\":1.63030028343201,\"z\":7.57000207901001},\"rot\":{\"x\":359.920104980469,\"y\":269.999084472656,\"z\":0.0168416313827038}},\"28e161\":{\"lock\":false,\"pos\":{\"x\":-3.92750549316406,\"y\":1.71067988872528,\"z\":5.75700187683105},\"rot\":{\"x\":359.919738769531,\"y\":269.999603271484,\"z\":180.016815185547}},\"377b20\":{\"lock\":false,\"pos\":{\"x\":-30.2243175506592,\"y\":1.63494288921356,\"z\":-7.69999742507935},\"rot\":{\"x\":359.920104980469,\"y\":269.999267578125,\"z\":0.0168412197381258}},\"50a9d7\":{\"lock\":false,\"pos\":{\"x\":-20.4664993286133,\"y\":1.61215877532959,\"z\":7.36460018157959},\"rot\":{\"x\":0.0798943638801575,\"y\":90.0003051757813,\"z\":359.983123779297}},\"5f4d79\":{\"lock\":false,\"pos\":{\"x\":-21.121000289917,\"y\":1.60995018482208,\"z\":-3.25570034980774},\"rot\":{\"x\":0.06840780377388,\"y\":135.000396728516,\"z\":0.0445858277380466}},\"692e5f\":{\"lock\":false,\"pos\":{\"x\":-17.1201171875,\"y\":1.61667001247406,\"z\":-7.69999647140503},\"rot\":{\"x\":359.920104980469,\"y\":269.998077392578,\"z\":0.0168429240584373}},\"6a2978\":{\"lock\":false,\"pos\":{\"x\":-23.6765003204346,\"y\":1.61334490776062,\"z\":-3.82999992370605},\"rot\":{\"x\":0.0168396029621363,\"y\":179.999755859375,\"z\":0.0799403935670853}},\"7234af\":{\"lock\":false,\"pos\":{\"x\":-17.1199989318848,\"y\":1.60420215129852,\"z\":-3.82999968528748},\"rot\":{\"x\":0.0168400723487139,\"y\":179.999450683594,\"z\":0.0799458548426628}},\"75ffdc\":{\"lock\":false,\"pos\":{\"x\":-26.9897003173828,\"y\":1.61804449558258,\"z\":-3.55959987640381},\"rot\":{\"x\":0.0253676623106003,\"y\":30.0002193450928,\"z\":359.922393798828}},\"775f4f\":{\"lock\":false,\"pos\":{\"x\":-26.9925003051758,\"y\":1.62123584747314,\"z\":7.28630018234253},\"rot\":{\"x\":0.0798941627144814,\"y\":89.9998092651367,\"z\":359.983123779297}},\"8112ff\":{\"lock\":false,\"pos\":{\"x\":-3.6920006275177,\"y\":1.58224987983704,\"z\":-14.9167041778564},\"rot\":{\"x\":359.919738769531,\"y\":270.021057128906,\"z\":0.0168084446340799}},\"83358c\":{\"lock\":false,\"pos\":{\"x\":-27.0804004669189,\"y\":1.62024259567261,\"z\":3.49000072479248},\"rot\":{\"x\":359.955413818359,\"y\":224.999893188477,\"z\":0.0683783441781998}},\"a22908\":{\"lock\":false,\"pos\":{\"x\":-3.95581722259521,\"y\":1.59753918647766,\"z\":-10.4411993026733},\"rot\":{\"x\":359.919738769531,\"y\":270.000183105469,\"z\":0.0168378315865994}},\"af8db2\":{\"lock\":false,\"pos\":{\"x\":-23.6763172149658,\"y\":1.62806689739227,\"z\":-0.0277968645095825},\"rot\":{\"x\":359.920104980469,\"y\":269.999206542969,\"z\":0.0168413165956736}},\"b3f79e\":{\"lock\":false,\"pos\":{\"x\":-11.8946933746338,\"y\":1.59565806388855,\"z\":-8.11061096191406},\"rot\":{\"x\":359.920104980469,\"y\":270.00048828125,\"z\":0.0168422311544418}},\"b5b8db\":{\"lock\":false,\"pos\":{\"x\":-15.6844148635864,\"y\":1.66888844966888,\"z\":-0.0290974024683237},\"rot\":{\"x\":0.0791712552309036,\"y\":269.986694335938,\"z\":359.983001708984}},\"c6f13f\":{\"lock\":false,\"pos\":{\"x\":-2.72462439537048,\"y\":1.6159462928772,\"z\":0.373405307531357},\"rot\":{\"x\":0.0168283060193062,\"y\":180.005096435547,\"z\":0.0802579522132874}},\"d2ad6e\":{\"lock\":false,\"pos\":{\"x\":-17.1200180053711,\"y\":1.62115752696991,\"z\":7.57000350952148},\"rot\":{\"x\":359.920104980469,\"y\":269.99658203125,\"z\":0.0168450437486172}},\"d716a1\":{\"lock\":false,\"pos\":{\"x\":-27.2073001861572,\"y\":1.61935830116272,\"z\":-0.121600218117237},\"rot\":{\"x\":0.0798944160342216,\"y\":89.9999084472656,\"z\":359.983123779297}},\"d85d68\":{\"lock\":false,\"pos\":{\"x\":-23.6765003204346,\"y\":1.61560475826263,\"z\":3.8600001335144},\"rot\":{\"x\":0.0168399680405855,\"y\":179.999450683594,\"z\":0.0799410417675972}},\"d9c370\":{\"lock\":false,\"pos\":{\"x\":-30.2241992950439,\"y\":1.62473499774933,\"z\":3.86000037193298},\"rot\":{\"x\":0.0168398097157478,\"y\":179.999588012695,\"z\":0.0799403339624405}},\"e1b8fc\":{\"lock\":false,\"pos\":{\"x\":-23.6766166687012,\"y\":1.62581253051758,\"z\":-7.69999647140503},\"rot\":{\"x\":359.920104980469,\"y\":269.999206542969,\"z\":0.0168413668870926}},\"e1f778\":{\"lock\":false,\"pos\":{\"x\":-17.1198997497559,\"y\":1.60646188259125,\"z\":3.86000037193298},\"rot\":{\"x\":0.0168397314846516,\"y\":179.999618530273,\"z\":0.0799399092793465}},\"e4821e\":{\"lock\":false,\"pos\":{\"x\":1.696,\"y\":1.56,\"z\":14.24},\"rot\":{\"x\":0,\"y\":45,\"z\":0}},\"f859a4\":{\"lock\":false,\"pos\":{\"x\":-2.68841671943665,\"y\":1.59734857082367,\"z\":-5.04849672317505},\"rot\":{\"x\":0.0168380346149206,\"y\":179.998397827148,\"z\":0.0802551358938217}},\"fac63b\":{\"lock\":false,\"pos\":{\"x\":-30.2243175506592,\"y\":1.63943064212799,\"z\":7.57000398635864},\"rot\":{\"x\":359.920104980469,\"y\":269.999267578125,\"z\":0.016841247677803}}}}",
+      "LuaScriptState": "{\"ml\":{\"076b61\":{\"lock\":false,\"pos\":{\"x\":-32,\"y\":1.67,\"z\":0},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"69032d\":{\"lock\":false,\"pos\":{\"x\":-3.93,\"y\":1.67,\"z\":-5.76},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"19e7d8\":{\"lock\":false,\"pos\":{\"x\":-30.2242164611816,\"y\":1.63722372055054,\"z\":-0.0299990326166153},\"rot\":{\"x\":359.920562744141,\"y\":270.000518798828,\"z\":0.0176045913249254}},\"1aa7cb\":{\"lock\":false,\"pos\":{\"x\":-17.1199169158936,\"y\":1.61892199516296,\"z\":-0.0297970715910196},\"rot\":{\"x\":359.920135498047,\"y\":270.001556396484,\"z\":0.0167074911296368}},\"23b896\":{\"lock\":false,\"pos\":{\"x\":-23.6766166687012,\"y\":1.63030028343201,\"z\":7.57000207901001},\"rot\":{\"x\":359.920104980469,\"y\":269.999084472656,\"z\":0.0168416313827038}},\"28e161\":{\"lock\":false,\"pos\":{\"x\":-3.92750549316406,\"y\":1.71067988872528,\"z\":5.75700187683105},\"rot\":{\"x\":359.919738769531,\"y\":269.999603271484,\"z\":180.016815185547}},\"377b20\":{\"lock\":false,\"pos\":{\"x\":-30.2243175506592,\"y\":1.63494288921356,\"z\":-7.69999742507935},\"rot\":{\"x\":359.920104980469,\"y\":269.999267578125,\"z\":0.0168412197381258}},\"50a9d7\":{\"lock\":false,\"pos\":{\"x\":-20.4664993286133,\"y\":1.61215877532959,\"z\":7.36460018157959},\"rot\":{\"x\":0.0798943638801575,\"y\":90.0003051757813,\"z\":359.983123779297}},\"5f4d79\":{\"lock\":false,\"pos\":{\"x\":-21.121000289917,\"y\":1.60995018482208,\"z\":-3.25570034980774},\"rot\":{\"x\":0.06840780377388,\"y\":135.000396728516,\"z\":0.0445858277380466}},\"692e5f\":{\"lock\":false,\"pos\":{\"x\":-17.1201171875,\"y\":1.61667001247406,\"z\":-7.69999647140503},\"rot\":{\"x\":359.920104980469,\"y\":269.998077392578,\"z\":0.0168429240584373}},\"6a2978\":{\"lock\":false,\"pos\":{\"x\":-23.6765003204346,\"y\":1.61334490776062,\"z\":-3.82999992370605},\"rot\":{\"x\":0.0168396029621363,\"y\":179.999755859375,\"z\":0.0799403935670853}},\"7234af\":{\"lock\":false,\"pos\":{\"x\":-17.1199989318848,\"y\":1.60420215129852,\"z\":-3.82999968528748},\"rot\":{\"x\":0.0168400723487139,\"y\":179.999450683594,\"z\":0.0799458548426628}},\"75ffdc\":{\"lock\":false,\"pos\":{\"x\":-26.9897003173828,\"y\":1.61804449558258,\"z\":-3.55959987640381},\"rot\":{\"x\":0.0253676623106003,\"y\":30.0002193450928,\"z\":359.922393798828}},\"775f4f\":{\"lock\":false,\"pos\":{\"x\":-26.9925003051758,\"y\":1.62123584747314,\"z\":7.28630018234253},\"rot\":{\"x\":0.0798941627144814,\"y\":89.9998092651367,\"z\":359.983123779297}},\"8112ff\":{\"lock\":false,\"pos\":{\"x\":-3.6920006275177,\"y\":1.58224987983704,\"z\":-14.9167041778564},\"rot\":{\"x\":359.919738769531,\"y\":270.021057128906,\"z\":0.0168084446340799}},\"83358c\":{\"lock\":false,\"pos\":{\"x\":-27.0804004669189,\"y\":1.62024259567261,\"z\":3.49000072479248},\"rot\":{\"x\":359.955413818359,\"y\":224.999893188477,\"z\":0.0683783441781998}},\"a22908\":{\"lock\":false,\"pos\":{\"x\":-3.95581722259521,\"y\":1.59753918647766,\"z\":-10.4411993026733},\"rot\":{\"x\":359.919738769531,\"y\":270.000183105469,\"z\":0.0168378315865994}},\"af8db2\":{\"lock\":false,\"pos\":{\"x\":-23.6763172149658,\"y\":1.62806689739227,\"z\":-0.0277968645095825},\"rot\":{\"x\":359.920104980469,\"y\":269.999206542969,\"z\":0.0168413165956736}},\"b3f79e\":{\"lock\":false,\"pos\":{\"x\":-11.8946933746338,\"y\":1.59565806388855,\"z\":-8.11061096191406},\"rot\":{\"x\":359.920104980469,\"y\":270.00048828125,\"z\":0.0168422311544418}},\"b5b8db\":{\"lock\":false,\"pos\":{\"x\":-15.6844148635864,\"y\":1.66888844966888,\"z\":-0.0290974024683237},\"rot\":{\"x\":0.0791712552309036,\"y\":269.986694335938,\"z\":359.983001708984}},\"c6f13f\":{\"lock\":false,\"pos\":{\"x\":-2.72462439537048,\"y\":1.6159462928772,\"z\":0.373405307531357},\"rot\":{\"x\":0.0168283060193062,\"y\":180.005096435547,\"z\":0.0802579522132874}},\"d2ad6e\":{\"lock\":false,\"pos\":{\"x\":-17.1200180053711,\"y\":1.62115752696991,\"z\":7.57000350952148},\"rot\":{\"x\":359.920104980469,\"y\":269.99658203125,\"z\":0.0168450437486172}},\"d716a1\":{\"lock\":false,\"pos\":{\"x\":-27.2073001861572,\"y\":1.61935830116272,\"z\":-0.121600218117237},\"rot\":{\"x\":0.0798944160342216,\"y\":89.9999084472656,\"z\":359.983123779297}},\"d85d68\":{\"lock\":false,\"pos\":{\"x\":-23.6765003204346,\"y\":1.61560475826263,\"z\":3.8600001335144},\"rot\":{\"x\":0.0168399680405855,\"y\":179.999450683594,\"z\":0.0799410417675972}},\"d9c370\":{\"lock\":false,\"pos\":{\"x\":-30.2241992950439,\"y\":1.62473499774933,\"z\":3.86000037193298},\"rot\":{\"x\":0.0168398097157478,\"y\":179.999588012695,\"z\":0.0799403339624405}},\"e1b8fc\":{\"lock\":false,\"pos\":{\"x\":-23.6766166687012,\"y\":1.62581253051758,\"z\":-7.69999647140503},\"rot\":{\"x\":359.920104980469,\"y\":269.999206542969,\"z\":0.0168413668870926}},\"e1f778\":{\"lock\":false,\"pos\":{\"x\":-17.1198997497559,\"y\":1.60646188259125,\"z\":3.86000037193298},\"rot\":{\"x\":0.0168397314846516,\"y\":179.999618530273,\"z\":0.0799399092793465}},\"e4821e\":{\"lock\":false,\"pos\":{\"x\":1.696,\"y\":1.56,\"z\":14.24},\"rot\":{\"x\":0,\"y\":45,\"z\":0}},\"f859a4\":{\"lock\":false,\"pos\":{\"x\":-2.68841671943665,\"y\":1.59734857082367,\"z\":-5.04849672317505},\"rot\":{\"x\":0.0168380346149206,\"y\":179.998397827148,\"z\":0.0802551358938217}},\"fac63b\":{\"lock\":false,\"pos\":{\"x\":-30.2243175506592,\"y\":1.63943064212799,\"z\":7.57000398635864},\"rot\":{\"x\":359.920104980469,\"y\":269.999267578125,\"z\":0.016841247677803}}}}",
       "Locked": false,
       "MeasureMovement": false,
       "CustomMesh": {
@@ -7898,8 +7898,8 @@
       "ContainedObjects": [
         {
           "XmlUI": "",
-          "LuaScript": "LOCATIONS = {\n    {\n        name = \"Downtown\",\n        guids = { \"1aa7cb\", \"b5b8db\" },\n        position = Vector({-17.12, 1.62, -0.03})\n    },\n    {\n        name = \"Southside\",\n        guids = { \"076b61\", \"19e7d8\" },\n        position = Vector({-30.22, 1.64, -0.03})\n    }\n}\n\nACOLYTE_SPAWNS = {\n    {-33.72, 1.64, -0.02}, {-13.78, 1.61, 0.01}, {-23.79, 1.63, -10.13}\n}\n\nENCOUNTER_DECK_GUID = \"28e161\"\n\nSET_ASIDE = {\n    position = Vector({-5.75, 1.54, 19.25}),\n    rotation = { x=0, y=270, z=0 }\n}\n\nfunction onLoad()\n    self.createButton({\n        label=\"Set Up\",\n        click_function=\"setup\",\n        function_owner=self,\n        position={0,0.1,-00},\n        height=120,\n        width=500,\n        scale={x=1.75, y=1.75, z=1.75},\n        font_size=80\n    })\n\n    COUNTER = getObjectFromGUID('f182ee')\n    math.randomseed(os.time())\nend\n\nfunction setup(_obj, _color, alt_click)\n    if SETUP_DONE then return end\n    SETUP_DONE = true\n    for i,loc in ipairs(LOCATIONS) do\n        local chosen = math.random(2)\n        local guid = loc.guids[chosen]\n        local card = getObjectFromGUID(loc.guids[3 - chosen])\n        card.setPosition(SET_ASIDE.position)\n        card.setRotation({0, 270, 0})\n        card = getObjectFromGUID(guid)\n        card.setPosition(loc.position)\n        card.setRotation({0, 270, 0})\n    end\n\n    local numPlayers = COUNTER.getVar('val')\n    if numPlayers > 1 then\n        local deck = getObjectFromGUID(ENCOUNTER_DECK_GUID)\n        local objs = deck.getObjects()\n        local indexes = {}\n        for i,card in ipairs(objs) do\n            if card.name == \"Acolyte\" then\n                table.insert(indexes, card.index)\n            end\n        end\n        for i=numPlayers-1,1,-1 do\n            deck.takeObject({\n                index = indexes[i],\n                position = ACOLYTE_SPAWNS[i],\n                rotation = {0, 270, 0},\n                smooth = false\n            })\n            Global.call(\"spawnToken\", { Vector(ACOLYTE_SPAWNS[i]) + Vector({ 0, 1, 0}), \"doom\" })\n        end\n    end\nend\n",
-          "Description": "Randomizes locations and spawns cultists.",
+          "LuaScript": "LOCATIONS = {\n  {\n    name = \"Downtown\",\n    guids = { \"1aa7cb\", \"b5b8db\" },\n    position = Vector({ -17.12, 1.62, -0.03 })\n  },\n  {\n    name = \"Southside\",\n    guids = { \"076b61\", \"19e7d8\" },\n    position = Vector({ -30.22, 1.64, -0.03 })\n  }\n}\n\nACOLYTE_SPAWNS = {\n  { -33.72, 1.64, -0.02 }, { -13.78, 1.61, 0.01 }, { -23.79, 1.63, -10.13 }\n}\n\nENCOUNTER_DECK_GUID = \"28e161\"\nCULTISTS_GUID = \"69032d\"\n\nSET_ASIDE = {\n  position = Vector({ -5.75, 1.54, 19.25 }),\n  rotation = { x = 0, y = 270, z = 0 }\n}\n\nfunction onLoad()\n  self.createButton({\n    label = \"Set Up\",\n    click_function = \"setup\",\n    function_owner = self,\n    position = { 0, 0.1, -00 },\n    height = 120,\n    width = 500,\n    scale = { x = 1.75, y = 1.75, z = 1.75 },\n    font_size = 80\n  })\n\n  COUNTER = getObjectFromGUID('f182ee')\n  math.randomseed(os.time())\nend\n\nfunction setup(_obj, _color, alt_click)\n  if SETUP_DONE then return end\n  SETUP_DONE = true\n  for i, loc in ipairs(LOCATIONS) do\n    local chosen = math.random(2)\n    local guid = loc.guids[chosen]\n    local card = getObjectFromGUID(loc.guids[3 - chosen])\n    card.setPosition(SET_ASIDE.position)\n    card.setRotation({ 0, 270, 0 })\n    card = getObjectFromGUID(guid)\n    card.setPosition(loc.position)\n    card.setRotation({ 0, 270, 0 })\n  end\n\n  local numPlayers = COUNTER.getVar('val')\n  if numPlayers > 1 then\n    local deck = getObjectFromGUID(ENCOUNTER_DECK_GUID)\n    local indexes = {}\n    for i, card in ipairs(deck.getObjects()) do\n      if card.name == \"Acolyte\" then\n        table.insert(indexes, card.index)\n      end\n    end\n    for i = numPlayers - 1, 1, -1 do\n      deck.takeObject({\n        index = indexes[i],\n        position = ACOLYTE_SPAWNS[i],\n        rotation = { 0, 270, 0 },\n        smooth = false\n      })\n    end\n  end\n\n  local CULTIST_DECK = getObjectFromGUID(CULTISTS_GUID)\n  CULTIST_DECK.shuffle()\nend\n",
+          "Description": "Randomizes locations, spawns cultists and shuffles the cultist deck.",
           "GMNotes": "",
           "Grid": true,
           "Autoraise": true,
@@ -10306,377 +10306,6 @@
             {
               "XmlUI": "",
               "LuaScript": "",
-              "Description": "",
-              "GMNotes": "",
-              "Grid": true,
-              "Autoraise": true,
-              "HideWhenFaceDown": true,
-              "Snap": true,
-              "Name": "Deck",
-              "LuaScriptState": "",
-              "Locked": false,
-              "MeasureMovement": false,
-              "CustomDeck": {
-                "2317": {
-                  "NumWidth": 10,
-                  "BackIsHidden": true,
-                  "Type": 0,
-                  "UniqueBack": false,
-                  "NumHeight": 7,
-                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-                  "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
-                }
-              },
-              "Nickname": "Cultist Deck",
-              "GridProjection": false,
-              "Hands": false,
-              "LayoutGroupSortIndex": 0,
-              "SidewaysCard": false,
-              "Tooltip": true,
-              "GUID": "69032d",
-              "ColorDiffuse": {
-                "r": 0.713235259,
-                "b": 0.713235259,
-                "g": 0.713235259
-              },
-              "AltLookAngle": {
-                "x": 0.0,
-                "y": 0.0,
-                "z": 0.0
-              },
-              "DeckIDs": [
-                231709,
-                231708,
-                231707,
-                231706,
-                231705
-              ],
-              "ContainedObjects": [
-                {
-                  "XmlUI": "",
-                  "LuaScript": "",
-                  "Description": "The Mortician",
-                  "GMNotes": "{\n  \"id\": \"01141\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
-                  "Grid": true,
-                  "Autoraise": true,
-                  "HideWhenFaceDown": true,
-                  "Snap": true,
-                  "Name": "Card",
-                  "LuaScriptState": "",
-                  "Locked": false,
-                  "MeasureMovement": false,
-                  "CustomDeck": {
-                    "2317": {
-                      "NumWidth": 10,
-                      "BackIsHidden": true,
-                      "Type": 0,
-                      "UniqueBack": false,
-                      "NumHeight": 7,
-                      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-                      "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
-                    }
-                  },
-                  "Tags": [
-                    "ScenarioCard"
-                  ],
-                  "Nickname": "Ruth Turner",
-                  "GridProjection": false,
-                  "Hands": true,
-                  "LayoutGroupSortIndex": 0,
-                  "SidewaysCard": false,
-                  "Tooltip": true,
-                  "GUID": "ab3719",
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "b": 0.713235259,
-                    "g": 0.713235259
-                  },
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "CardID": 231709,
-                  "DragSelectable": true,
-                  "IgnoreFoW": false,
-                  "Value": 0,
-                  "Transform": {
-                    "posX": -6.18538,
-                    "scaleX": 1.0,
-                    "posY": 1.72525084,
-                    "scaleY": 1.0,
-                    "posZ": -7.613346,
-                    "rotX": 359.936371,
-                    "rotZ": 180.013824,
-                    "rotY": 270.0,
-                    "scaleZ": 1.0
-                  },
-                  "Sticky": true
-                },
-                {
-                  "XmlUI": "",
-                  "LuaScript": "",
-                  "Description": "The Collector",
-                  "GMNotes": "{\n  \"id\": \"01140\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
-                  "Grid": true,
-                  "Autoraise": true,
-                  "HideWhenFaceDown": true,
-                  "Snap": true,
-                  "Name": "Card",
-                  "LuaScriptState": "",
-                  "Locked": false,
-                  "MeasureMovement": false,
-                  "CustomDeck": {
-                    "2317": {
-                      "NumWidth": 10,
-                      "BackIsHidden": true,
-                      "Type": 0,
-                      "UniqueBack": false,
-                      "NumHeight": 7,
-                      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-                      "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
-                    }
-                  },
-                  "Tags": [
-                    "ScenarioCard"
-                  ],
-                  "Nickname": "Victoria Devereux",
-                  "GridProjection": false,
-                  "Hands": true,
-                  "LayoutGroupSortIndex": 0,
-                  "SidewaysCard": false,
-                  "Tooltip": true,
-                  "GUID": "ec86a2",
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "b": 0.713235259,
-                    "g": 0.713235259
-                  },
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "CardID": 231708,
-                  "DragSelectable": true,
-                  "IgnoreFoW": false,
-                  "Value": 0,
-                  "Transform": {
-                    "posX": -6.151805,
-                    "scaleX": 1.0,
-                    "posY": 1.71143651,
-                    "scaleY": 1.0,
-                    "posZ": -8.111477,
-                    "rotX": 359.944366,
-                    "rotZ": 180.000565,
-                    "rotY": 270.016357,
-                    "scaleZ": 1.0
-                  },
-                  "Sticky": true
-                },
-                {
-                  "XmlUI": "",
-                  "LuaScript": "",
-                  "Description": "The Occult Professor",
-                  "GMNotes": "{\n  \"id\": \"01139\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
-                  "Grid": true,
-                  "Autoraise": true,
-                  "HideWhenFaceDown": true,
-                  "Snap": true,
-                  "Name": "Card",
-                  "LuaScriptState": "",
-                  "Locked": false,
-                  "MeasureMovement": false,
-                  "CustomDeck": {
-                    "2317": {
-                      "NumWidth": 10,
-                      "BackIsHidden": true,
-                      "Type": 0,
-                      "UniqueBack": false,
-                      "NumHeight": 7,
-                      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-                      "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
-                    }
-                  },
-                  "Tags": [
-                    "ScenarioCard"
-                  ],
-                  "Nickname": "Peter Warren",
-                  "GridProjection": false,
-                  "Hands": true,
-                  "LayoutGroupSortIndex": 0,
-                  "SidewaysCard": false,
-                  "Tooltip": true,
-                  "GUID": "ad2df0",
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "b": 0.713235259,
-                    "g": 0.713235259
-                  },
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "CardID": 231707,
-                  "DragSelectable": true,
-                  "IgnoreFoW": false,
-                  "Value": 0,
-                  "Transform": {
-                    "posX": -6.05293274,
-                    "scaleX": 1.0,
-                    "posY": 1.72509432,
-                    "scaleY": 1.0,
-                    "posZ": -7.78916073,
-                    "rotX": 359.937225,
-                    "rotZ": 180.015381,
-                    "rotY": 269.999817,
-                    "scaleZ": 1.0
-                  },
-                  "Sticky": true
-                },
-                {
-                  "XmlUI": "",
-                  "LuaScript": "",
-                  "Description": "The Undertaker",
-                  "GMNotes": "{\n  \"id\": \"01138\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
-                  "Grid": true,
-                  "Autoraise": true,
-                  "HideWhenFaceDown": true,
-                  "Snap": true,
-                  "Name": "Card",
-                  "LuaScriptState": "",
-                  "Locked": false,
-                  "MeasureMovement": false,
-                  "CustomDeck": {
-                    "2317": {
-                      "NumWidth": 10,
-                      "BackIsHidden": true,
-                      "Type": 0,
-                      "UniqueBack": false,
-                      "NumHeight": 7,
-                      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-                      "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
-                    }
-                  },
-                  "Tags": [
-                    "ScenarioCard"
-                  ],
-                  "Nickname": "Herman Collins",
-                  "GridProjection": false,
-                  "Hands": true,
-                  "LayoutGroupSortIndex": 0,
-                  "SidewaysCard": false,
-                  "Tooltip": true,
-                  "GUID": "a12fd2",
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "b": 0.713235259,
-                    "g": 0.713235259
-                  },
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "CardID": 231706,
-                  "DragSelectable": true,
-                  "IgnoreFoW": false,
-                  "Value": 0,
-                  "Transform": {
-                    "posX": -5.95645571,
-                    "scaleX": 1.0,
-                    "posY": 1.70735312,
-                    "scaleY": 1.0,
-                    "posZ": -8.194746,
-                    "rotX": 359.924164,
-                    "rotZ": 180.026428,
-                    "rotY": 269.999878,
-                    "scaleZ": 1.0
-                  },
-                  "Sticky": true
-                },
-                {
-                  "XmlUI": "",
-                  "LuaScript": "",
-                  "Description": "The Cannibal",
-                  "GMNotes": "{\n  \"id\": \"01137\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
-                  "Grid": true,
-                  "Autoraise": true,
-                  "HideWhenFaceDown": true,
-                  "Snap": true,
-                  "Name": "Card",
-                  "LuaScriptState": "",
-                  "Locked": false,
-                  "MeasureMovement": false,
-                  "CustomDeck": {
-                    "2317": {
-                      "NumWidth": 10,
-                      "BackIsHidden": true,
-                      "Type": 0,
-                      "UniqueBack": false,
-                      "NumHeight": 7,
-                      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-                      "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
-                    }
-                  },
-                  "Tags": [
-                    "ScenarioCard"
-                  ],
-                  "Nickname": "\"Wolf-Man\" Drew",
-                  "GridProjection": false,
-                  "Hands": true,
-                  "LayoutGroupSortIndex": 0,
-                  "SidewaysCard": false,
-                  "Tooltip": true,
-                  "GUID": "ab3719",
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "b": 0.713235259,
-                    "g": 0.713235259
-                  },
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "CardID": 231705,
-                  "DragSelectable": true,
-                  "IgnoreFoW": false,
-                  "Value": 0,
-                  "Transform": {
-                    "posX": -6.351678,
-                    "scaleX": 1.0,
-                    "posY": 1.56253266,
-                    "scaleY": 1.0,
-                    "posZ": -7.93774748,
-                    "rotX": 359.92038,
-                    "rotZ": 180.018967,
-                    "rotY": 269.999969,
-                    "scaleZ": 1.0
-                  },
-                  "Sticky": true
-                }
-              ],
-              "DragSelectable": true,
-              "IgnoreFoW": false,
-              "Value": 0,
-              "Transform": {
-                "posX": 19.812727,
-                "scaleX": 1.0,
-                "posY": 3.61132216,
-                "scaleY": 1.0,
-                "posZ": 22.2482414,
-                "rotX": 359.919983,
-                "rotZ": 180.017044,
-                "rotY": 270.000061,
-                "scaleZ": 1.0
-              },
-              "Sticky": true
-            },
-            {
-              "XmlUI": "",
-              "LuaScript": "",
               "Description": "Humanoid. Monster. Ghoul. Elite.",
               "GMNotes": "{\n  \"id\": \"01116\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "Grid": true,
@@ -10749,6 +10378,377 @@
             "rotZ": 0.0686723739,
             "rotY": 224.998016,
             "scaleZ": 2.0
+          },
+          "Sticky": true
+        },
+        {
+          "XmlUI": "",
+          "LuaScript": "",
+          "Description": "",
+          "GMNotes": "",
+          "Grid": true,
+          "Autoraise": true,
+          "HideWhenFaceDown": true,
+          "Snap": true,
+          "Name": "Deck",
+          "LuaScriptState": "",
+          "Locked": false,
+          "MeasureMovement": false,
+          "CustomDeck": {
+            "2317": {
+              "NumWidth": 10,
+              "BackIsHidden": true,
+              "Type": 0,
+              "UniqueBack": false,
+              "NumHeight": 7,
+              "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
+              "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
+            }
+          },
+          "Nickname": "Cultist Deck",
+          "GridProjection": false,
+          "Hands": false,
+          "LayoutGroupSortIndex": 0,
+          "SidewaysCard": false,
+          "Tooltip": true,
+          "GUID": "69032d",
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "b": 0.713235259,
+            "g": 0.713235259
+          },
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "DeckIDs": [
+            231709,
+            231708,
+            231707,
+            231706,
+            231705
+          ],
+          "ContainedObjects": [
+            {
+              "XmlUI": "",
+              "LuaScript": "",
+              "Description": "The Mortician",
+              "GMNotes": "{\n  \"id\": \"01141\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "Grid": true,
+              "Autoraise": true,
+              "HideWhenFaceDown": true,
+              "Snap": true,
+              "Name": "Card",
+              "LuaScriptState": "",
+              "Locked": false,
+              "MeasureMovement": false,
+              "CustomDeck": {
+                "2317": {
+                  "NumWidth": 10,
+                  "BackIsHidden": true,
+                  "Type": 0,
+                  "UniqueBack": false,
+                  "NumHeight": 7,
+                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
+                  "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
+                }
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "Nickname": "Ruth Turner",
+              "GridProjection": false,
+              "Hands": true,
+              "LayoutGroupSortIndex": 0,
+              "SidewaysCard": false,
+              "Tooltip": true,
+              "GUID": "ab3719",
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "b": 0.713235259,
+                "g": 0.713235259
+              },
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "CardID": 231709,
+              "DragSelectable": true,
+              "IgnoreFoW": false,
+              "Value": 0,
+              "Transform": {
+                "posX": -6.18538,
+                "scaleX": 1.0,
+                "posY": 1.72525084,
+                "scaleY": 1.0,
+                "posZ": -7.613346,
+                "rotX": 359.936371,
+                "rotZ": 180.013824,
+                "rotY": 270.0,
+                "scaleZ": 1.0
+              },
+              "Sticky": true
+            },
+            {
+              "XmlUI": "",
+              "LuaScript": "",
+              "Description": "The Collector",
+              "GMNotes": "{\n  \"id\": \"01140\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "Grid": true,
+              "Autoraise": true,
+              "HideWhenFaceDown": true,
+              "Snap": true,
+              "Name": "Card",
+              "LuaScriptState": "",
+              "Locked": false,
+              "MeasureMovement": false,
+              "CustomDeck": {
+                "2317": {
+                  "NumWidth": 10,
+                  "BackIsHidden": true,
+                  "Type": 0,
+                  "UniqueBack": false,
+                  "NumHeight": 7,
+                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
+                  "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
+                }
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "Nickname": "Victoria Devereux",
+              "GridProjection": false,
+              "Hands": true,
+              "LayoutGroupSortIndex": 0,
+              "SidewaysCard": false,
+              "Tooltip": true,
+              "GUID": "ec86a2",
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "b": 0.713235259,
+                "g": 0.713235259
+              },
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "CardID": 231708,
+              "DragSelectable": true,
+              "IgnoreFoW": false,
+              "Value": 0,
+              "Transform": {
+                "posX": -6.151805,
+                "scaleX": 1.0,
+                "posY": 1.71143651,
+                "scaleY": 1.0,
+                "posZ": -8.111477,
+                "rotX": 359.944366,
+                "rotZ": 180.000565,
+                "rotY": 270.016357,
+                "scaleZ": 1.0
+              },
+              "Sticky": true
+            },
+            {
+              "XmlUI": "",
+              "LuaScript": "",
+              "Description": "The Occult Professor",
+              "GMNotes": "{\n  \"id\": \"01139\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "Grid": true,
+              "Autoraise": true,
+              "HideWhenFaceDown": true,
+              "Snap": true,
+              "Name": "Card",
+              "LuaScriptState": "",
+              "Locked": false,
+              "MeasureMovement": false,
+              "CustomDeck": {
+                "2317": {
+                  "NumWidth": 10,
+                  "BackIsHidden": true,
+                  "Type": 0,
+                  "UniqueBack": false,
+                  "NumHeight": 7,
+                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
+                  "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
+                }
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "Nickname": "Peter Warren",
+              "GridProjection": false,
+              "Hands": true,
+              "LayoutGroupSortIndex": 0,
+              "SidewaysCard": false,
+              "Tooltip": true,
+              "GUID": "ad2df0",
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "b": 0.713235259,
+                "g": 0.713235259
+              },
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "CardID": 231707,
+              "DragSelectable": true,
+              "IgnoreFoW": false,
+              "Value": 0,
+              "Transform": {
+                "posX": -6.05293274,
+                "scaleX": 1.0,
+                "posY": 1.72509432,
+                "scaleY": 1.0,
+                "posZ": -7.78916073,
+                "rotX": 359.937225,
+                "rotZ": 180.015381,
+                "rotY": 269.999817,
+                "scaleZ": 1.0
+              },
+              "Sticky": true
+            },
+            {
+              "XmlUI": "",
+              "LuaScript": "",
+              "Description": "The Undertaker",
+              "GMNotes": "{\n  \"id\": \"01138\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "Grid": true,
+              "Autoraise": true,
+              "HideWhenFaceDown": true,
+              "Snap": true,
+              "Name": "Card",
+              "LuaScriptState": "",
+              "Locked": false,
+              "MeasureMovement": false,
+              "CustomDeck": {
+                "2317": {
+                  "NumWidth": 10,
+                  "BackIsHidden": true,
+                  "Type": 0,
+                  "UniqueBack": false,
+                  "NumHeight": 7,
+                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
+                  "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
+                }
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "Nickname": "Herman Collins",
+              "GridProjection": false,
+              "Hands": true,
+              "LayoutGroupSortIndex": 0,
+              "SidewaysCard": false,
+              "Tooltip": true,
+              "GUID": "a12fd2",
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "b": 0.713235259,
+                "g": 0.713235259
+              },
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "CardID": 231706,
+              "DragSelectable": true,
+              "IgnoreFoW": false,
+              "Value": 0,
+              "Transform": {
+                "posX": -5.95645571,
+                "scaleX": 1.0,
+                "posY": 1.70735312,
+                "scaleY": 1.0,
+                "posZ": -8.194746,
+                "rotX": 359.924164,
+                "rotZ": 180.026428,
+                "rotY": 269.999878,
+                "scaleZ": 1.0
+              },
+              "Sticky": true
+            },
+            {
+              "XmlUI": "",
+              "LuaScript": "",
+              "Description": "The Cannibal",
+              "GMNotes": "{\n  \"id\": \"01137\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "Grid": true,
+              "Autoraise": true,
+              "HideWhenFaceDown": true,
+              "Snap": true,
+              "Name": "Card",
+              "LuaScriptState": "",
+              "Locked": false,
+              "MeasureMovement": false,
+              "CustomDeck": {
+                "2317": {
+                  "NumWidth": 10,
+                  "BackIsHidden": true,
+                  "Type": 0,
+                  "UniqueBack": false,
+                  "NumHeight": 7,
+                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
+                  "BackURL": "https://i.imgur.com/sRsWiSG.jpg/"
+                }
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "Nickname": "\"Wolf-Man\" Drew",
+              "GridProjection": false,
+              "Hands": true,
+              "LayoutGroupSortIndex": 0,
+              "SidewaysCard": false,
+              "Tooltip": true,
+              "GUID": "ab3719",
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "b": 0.713235259,
+                "g": 0.713235259
+              },
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "CardID": 231705,
+              "DragSelectable": true,
+              "IgnoreFoW": false,
+              "Value": 0,
+              "Transform": {
+                "posX": -6.351678,
+                "scaleX": 1.0,
+                "posY": 1.56253266,
+                "scaleY": 1.0,
+                "posZ": -7.93774748,
+                "rotX": 359.92038,
+                "rotZ": 180.018967,
+                "rotY": 269.999969,
+                "scaleZ": 1.0
+              },
+              "Sticky": true
+            }
+          ],
+          "DragSelectable": true,
+          "IgnoreFoW": false,
+          "Value": 0,
+          "Transform": {
+            "posX": 19.812727,
+            "scaleX": 1.0,
+            "posY": 3.61132216,
+            "scaleY": 1.0,
+            "posZ": 22.2482414,
+            "rotX": 359.919983,
+            "rotZ": 180.017044,
+            "rotY": 270.000061,
+            "scaleZ": 1.0
           },
           "Sticky": true
         },
