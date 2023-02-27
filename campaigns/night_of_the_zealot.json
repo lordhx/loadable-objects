@@ -5021,7 +5021,7 @@
           "XmlUI": "",
           "LuaScript": "",
           "Description": "The Gathering",
-          "GMNotes": "null",
+          "GMNotes": "{\n  \"id\": \"01104\",\n  \"type\": \"ScenarioReference\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Night of the Zealot\",\n  \"tokens\": {\n    \"front\": {\n      \"Skull\": {\n        \"modifier\": -999,\n        \"description\": \"-X. X is the number of Ghoul enemies at your location.\"\n      },\n      \"Cultist\": {\n        \"modifier\": -1,\n        \"description\": \"-1. If you fail, take 1 horror.\"\n      },\n      \"Tablet\": {\n        \"modifier\": -2,\n        \"description\": \"-2. If there is a Ghoul enemy at your location, take 1 damage.\"\n      }\n    },\n    \"back\": {\n      \"Skull\": {\n        \"modifier\": -2,\n        \"description\": \"-2. If you fail, after this skill test, search the encounter deck and discard pile for a Ghoul enemy, and draw it. Shuffle the encounter deck.\"\n      },\n      \"Cultist\": {\n        \"modifier\": 0,\n        \"description\": \"Reveal another token. If you fail, take 2 horror.\"\n      },\n      \"Tablet\": {\n        \"modifier\": -4,\n        \"description\": \"-4. If there is a Ghoul enemy at your location, take 1 damage and 1 horror.\"\n      }\n    }\n  }\n}",
           "Grid": true,
           "Autoraise": true,
           "HideWhenFaceDown": false,
