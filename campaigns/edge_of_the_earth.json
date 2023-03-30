@@ -82,8 +82,11 @@
         "scaleY": 1.0,
         "scaleZ": 7.0
       },
-      "Nickname": "Edge of the Earth Campaign Log",
-      "Description": "",
+      "Nickname": "Edge of the Earth - Campaign Log",
+      "Tags": [
+        "CampaignLog"
+      ],
+      "Description": "Page 1",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0.0,
@@ -139,8 +142,11 @@
             "scaleY": 1.0,
             "scaleZ": 7.0
           },
-          "Nickname": "Edge of the Earth Campaign Log",
-          "Description": "",
+          "Nickname": "Edge of the Earth - Campaign Log",
+          "Tags": [
+            "CampaignLog"
+          ],
+          "Description": "Page 2",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -18369,7 +18375,7 @@
         "scaleY": 1.0,
         "scaleZ": 2.925337
       },
-      "Nickname": "Campaign Guide",
+      "Nickname": "Edge of the Earth - Campaign Guide",
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -18383,6 +18389,7 @@
         "b": 1.0
       },
       "Tags": [
+        "CampaignGuide",
         "CleanUpHelper_ignore"
       ],
       "LayoutGroupSortIndex": 0,

@@ -15672,8 +15672,11 @@
         "scaleY": 1.0,
         "scaleZ": 7.0
       },
-      "Nickname": "Dunwich Legacy Campaign Log",
-      "Description": "",
+      "Nickname": "The Dunwich Legacy - Campaign Log",
+      "Tags": [
+        "CampaignLog"
+      ],
+      "Description": "Page 1",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0.0,
@@ -15729,8 +15732,11 @@
             "scaleY": 1.0,
             "scaleZ": 7.0
           },
-          "Nickname": "Dunwich Legacy Campaign Log",
-          "Description": "",
+          "Nickname": "The Dunwich Legacy - Campaign Log",
+          "Tags": [
+            "CampaignLog"
+          ],
+          "Description": "Page 2",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -15788,7 +15794,7 @@
         "scaleY": 1.0,
         "scaleZ": 2.18
       },
-      "Nickname": "The Dunwich Legacy Campaign Guide",
+      "Nickname": "The Dunwich Legacy - Campaign Guide",
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -15802,6 +15808,7 @@
         "b": 1.0
       },
       "Tags": [
+        "CampaignGuide",
         "CleanUpHelper_ignore"
       ],
       "LayoutGroupSortIndex": 0,
@@ -15819,7 +15826,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomPDF": {
-        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1656727981628092620/E5CB963C2F7EFDD5053EECA4803E37D00053AAEA/",
+        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/2037356364974804847/4E75E4E3F7857563D84F6648F21B24B8B500E6CF/",
         "PDFPassword": "",
         "PDFPage": 0,
         "PDFPageOffset": 0

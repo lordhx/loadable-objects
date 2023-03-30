@@ -30247,7 +30247,7 @@
         "scaleY": 1.0,
         "scaleZ": 2.18
       },
-      "Nickname": "The Dream-Eaters Campaign Guide",
+      "Nickname": "The Dream-Eaters - Campaign Guide",
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -30261,6 +30261,7 @@
         "b": 1.0
       },
       "Tags": [
+        "CampaignGuide",
         "CleanUpHelper_ignore"
       ],
       "LayoutGroupSortIndex": 0,
@@ -34647,7 +34648,10 @@
         "scaleY": 1.0,
         "scaleZ": 7.0
       },
-      "Nickname": "The Dream-Quest Campaign Log",
+      "Nickname": "The Dream-Quest - Campaign Log",
+      "Tags": [
+        "CampaignLog"
+      ],
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -34704,7 +34708,10 @@
             "scaleY": 1.0,
             "scaleZ": 7.0
           },
-          "Nickname": "The Web of Dreams Campaign Log",
+          "Nickname": "The Web of Dreams - Campaign Log",
+          "Tags": [
+            "CampaignLog"
+          ],
           "Description": "",
           "GMNotes": "",
           "AltLookAngle": {

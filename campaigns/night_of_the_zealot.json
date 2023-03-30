@@ -4917,7 +4917,7 @@
         "scaleY": 1.0,
         "scaleZ": 2.18
       },
-      "Nickname": "Night of the Zealot Campaign Guide",
+      "Nickname": "Night of the Zealot - Campaign Guide",
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -4931,6 +4931,7 @@
         "b": 1.0
       },
       "Tags": [
+        "CampaignGuide",
         "CleanUpHelper_ignore"
       ],
       "LayoutGroupSortIndex": 0,
@@ -10924,7 +10925,10 @@
         "scaleY": 1.0,
         "scaleZ": 7.0
       },
-      "Nickname": "Night of the Zealot Campaign Log",
+      "Nickname": "Night of the Zealot - Campaign Log",
+      "Tags": [
+        "CampaignLog"
+      ],
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {

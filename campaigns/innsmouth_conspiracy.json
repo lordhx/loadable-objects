@@ -24175,7 +24175,7 @@
         "scaleY": 1.0,
         "scaleZ": 2.18
       },
-      "Nickname": "The Innsmouth Conspiracy Campaign Guide",
+      "Nickname": "The Innsmouth Conspiracy - Campaign Guide",
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -24189,6 +24189,7 @@
         "b": 1.0
       },
       "Tags": [
+        "CampaignGuide",
         "CleanUpHelper_ignore"
       ],
       "LayoutGroupSortIndex": 0,
@@ -43519,8 +43520,11 @@
         "scaleY": 1.0,
         "scaleZ": 7.0
       },
-      "Nickname": "The Innsmouth Conspiracy Campaign Log",
-      "Description": "",
+      "Nickname": "The Innsmouth Conspiracy - Campaign Log",
+      "Tags": [
+        "CampaignLog"
+      ],
+      "Description": "Page 1",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0.0,
@@ -43576,8 +43580,11 @@
             "scaleY": 1.0,
             "scaleZ": 7.0
           },
-          "Nickname": "The Innsmouth Conspiracy Campaign Log",
-          "Description": "",
+          "Nickname": "The Innsmouth Conspiracy - Campaign Log",
+          "Tags": [
+            "CampaignLog"
+          ],
+          "Description": "Page 2",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,

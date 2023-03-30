@@ -82,8 +82,11 @@
         "scaleY": 1.0,
         "scaleZ": 7.0
       },
-      "Nickname": "The Circle Undone Campaign Log 1",
-      "Description": "",
+      "Nickname": "The Circle Undone - Campaign Log",
+      "Tags": [
+        "CampaignLog"
+      ],
+      "Description": "Page 1",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0.0,
@@ -139,8 +142,11 @@
             "scaleY": 1.0,
             "scaleZ": 7.0
           },
-          "Nickname": "The Circle Undone Campaign Log 2",
-          "Description": "",
+          "Nickname": "The Circle Undone - Campaign Log",
+          "Tags": [
+            "CampaignLog"
+          ],
+          "Description": "Page 2",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -18959,7 +18965,7 @@
         "scaleY": 1.0,
         "scaleZ": 2.18
       },
-      "Nickname": "The Circle Undone Campaign Guide",
+      "Nickname": "The Circle Undone - Campaign Guide",
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -18973,6 +18979,7 @@
         "b": 1.0
       },
       "Tags": [
+        "CampaignGuide",
         "CleanUpHelper_ignore"
       ],
       "LayoutGroupSortIndex": 0,

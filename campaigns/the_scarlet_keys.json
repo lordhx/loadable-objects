@@ -390,6 +390,9 @@
         "scaleZ": 3.25
       },
       "Nickname": "The Scarlet Keys - Campaign Log",
+      "Tags": [
+        "CampaignLog"
+      ],
       "Description": "Page 1",
       "GMNotes": "",
       "AltLookAngle": {
@@ -447,6 +450,9 @@
             "scaleZ": 3.25
           },
           "Nickname": "The Scarlet Keys - Campaign Log",
+          "Tags": [
+            "CampaignLog"
+          ],
           "Description": "Page 2",
           "GMNotes": "",
           "AltLookAngle": {
@@ -70413,7 +70419,7 @@
         "scaleY": 1.0,
         "scaleZ": 2.18
       },
-      "Nickname": "The Scarlet Keys Campaign Guide",
+      "Nickname": "The Scarlet Keys - Campaign Guide",
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -70427,6 +70433,7 @@
         "b": 1.0
       },
       "Tags": [
+        "CampaignGuide",
         "CleanUpHelper_ignore"
       ],
       "LayoutGroupSortIndex": 0,

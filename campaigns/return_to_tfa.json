@@ -10475,8 +10475,11 @@
         "scaleY": 1.0,
         "scaleZ": 7.0
       },
-      "Nickname": "Forgotten Age Campaign Log",
-      "Description": "",
+      "Nickname": "The Forgotten Age - Campaign Log",
+      "Tags": [
+        "CampaignLog"
+      ],
+      "Description": "Page 1",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0.0,
@@ -10532,8 +10535,11 @@
             "scaleY": 1.0,
             "scaleZ": 7.0
           },
-          "Nickname": "Forgotten Age Campaign Log",
-          "Description": "",
+          "Nickname": "The Forgotten Age - Campaign Log",
+          "Tags": [
+            "CampaignLog"
+          ],
+          "Description": "Page 2",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -30512,7 +30518,7 @@
         "scaleY": 1.0,
         "scaleZ": 2.18
       },
-      "Nickname": "The Forgotten Age Campaign Guide",
+      "Nickname": "The Forgotten Age - Campaign Guide",
       "Description": "",
       "GMNotes": "",
       "AltLookAngle": {
@@ -30526,6 +30532,7 @@
         "b": 1.0
       },
       "Tags": [
+        "CampaignGuide",
         "CleanUpHelper_ignore"
       ],
       "LayoutGroupSortIndex": 0,
@@ -30543,7 +30550,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomPDF": {
-        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1656727981628101540/A1216220894D14E96675B131773ECF913D8D79CC/",
+        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/2037356364974805402/7DBBA475923B8F7B957ECEAE40118CB2A6CEECA5/",
         "PDFPassword": "",
         "PDFPage": 0,
         "PDFPageOffset": 0
