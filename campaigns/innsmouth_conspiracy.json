@@ -15442,7 +15442,7 @@
               },
               "Nickname": "Devil Reef",
               "Description": "Ocean. Island.",
-              "GMNotes": "{\n  \"id\": \"07171\",\n  \"type\": \"Location\",\n  \"traits\": \"Ocean. Island.\",\n  \"cycle\": \"The Innsmouth Conspiracy\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Plus|Heart\"\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07171\",\n  \"type\": \"Location\",\n  \"traits\": \"Ocean. Island.\",\n  \"cycle\": \"The Innsmouth Conspiracy\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Star\",\n    \"connections\": \"Triangle|Plus|Heart\"\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
