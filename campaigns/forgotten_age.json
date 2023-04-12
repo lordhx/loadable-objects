@@ -2,12 +2,12 @@
   "GUID": "0bcf19",
   "Name": "Custom_Model_Bag",
   "Transform": {
-    "posX": 26.0000019,
-    "posY": 1.48553991,
+    "posX": 26.0,
+    "posY": 1.48554,
     "posZ": -55.0,
-    "rotX": 3.57096582E-07,
+    "rotX": 5.50560344E-07,
     "rotY": 270.0,
-    "rotZ": -8.113724E-08,
+    "rotZ": 4.14416057E-09,
     "scaleX": 1.0,
     "scaleY": 0.14,
     "scaleZ": 1.0
@@ -26,7 +26,7 @@
     "b": 1.0
   },
   "Tags": [
-	"CampaignBox"
+    "CampaignBox"
   ],
   "LayoutGroupSortIndex": 0,
   "Value": 0,
@@ -9688,12 +9688,12 @@
       "GUID": "11f5c8",
       "Name": "Custom_Model_Bag",
       "Transform": {
-        "posX": 12.2499151,
+        "posX": 12.2498789,
         "posY": 1.48149908,
-        "posZ": 19.9864979,
-        "rotX": 1.98102484E-07,
-        "rotY": 270.0198,
-        "rotZ": -3.93719915E-07,
+        "posZ": 19.9865074,
+        "rotX": -3.058307E-07,
+        "rotY": 270.02002,
+        "rotZ": -1.0837241E-06,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -14650,14 +14650,14 @@
       "GUID": "267216",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": 0,
-        "posY": 1.5,
-        "posZ": 0,
-        "rotX": 0,
-        "rotY": 270,
-        "rotZ": 0,
+        "posX": 0.2701388,
+        "posY": 1.58100057,
+        "posZ": 28.7770481,
+        "rotX": 8.37857144E-08,
+        "rotY": 270.003479,
+        "rotZ": 7.10982064E-08,
         "scaleX": 2.2,
-        "scaleY": 1,
+        "scaleY": 1.0,
         "scaleZ": 2.2
       },
       "Nickname": "The Forgotten Age - Campaign Guide",
@@ -23271,20 +23271,17 @@
       "GUID": "48b154",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.35348988,
-        "posY": 1.4814992,
-        "posZ": -26.6032124,
-        "rotX": 4.2943455E-08,
-        "rotY": 270.002,
-        "rotZ": 3.52328016E-07,
+        "posX": -1.35350251,
+        "posY": 1.48149931,
+        "posZ": -26.6032066,
+        "rotX": -2.861084E-07,
+        "rotY": 270.0021,
+        "rotZ": 2.828513E-07,
         "scaleX": 7.0,
         "scaleY": 1.0,
         "scaleZ": 7.0
       },
       "Nickname": "The Forgotten Age - Campaign Log",
-      "Tags": [
-        "CampaignLog"
-      ],
       "Description": "Page 1",
       "GMNotes": "",
       "AltLookAngle": {
@@ -23297,6 +23294,9 @@
         "g": 1.0,
         "b": 1.0
       },
+      "Tags": [
+        "CampaignLog"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -23342,9 +23342,6 @@
             "scaleZ": 7.0
           },
           "Nickname": "The Forgotten Age - Campaign Log",
-          "Tags": [
-            "CampaignLog"
-          ],
           "Description": "Page 2",
           "GMNotes": "",
           "AltLookAngle": {
@@ -23357,6 +23354,9 @@
             "g": 1.0,
             "b": 1.0
           },
+          "Tags": [
+            "CampaignLog"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23396,7 +23396,7 @@
         "posX": 3.22422528,
         "posY": 1.56982613,
         "posZ": -35.4555664,
-        "rotX": 5.30261239E-08,
+        "rotX": 3.77310727E-07,
         "rotY": 270.0275,
         "rotZ": 180.0,
         "scaleX": 1.0,
@@ -23416,6 +23416,9 @@
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -23489,6 +23492,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23536,6 +23542,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23583,6 +23592,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23630,6 +23642,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23677,6 +23692,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23724,6 +23742,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23771,6 +23792,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23818,6 +23842,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23865,6 +23892,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23912,6 +23942,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -23959,6 +23992,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -24006,6 +24042,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -24053,6 +24092,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -24100,6 +24142,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -33125,9 +33170,9 @@
         "posX": 12.2505293,
         "posY": 1.4814992,
         "posZ": -20.0137177,
-        "rotX": 1.30537536E-08,
+        "rotX": -1.23679813E-08,
         "rotY": 270.009766,
-        "rotZ": -2.12322817E-07,
+        "rotZ": -5.7669763E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -37917,9 +37962,9 @@
         "posX": 12.2504292,
         "posY": 1.4814992,
         "posZ": -36.0138321,
-        "rotX": 1.350683E-07,
+        "rotX": 1.53356922E-07,
         "rotY": 270.004517,
-        "rotZ": -2.002598E-07,
+        "rotZ": -2.12998458E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -41866,11 +41911,11 @@
       "Name": "Bag",
       "Transform": {
         "posX": -1.44,
-        "posY": 1.296465,
+        "posY": 1.29646516,
         "posZ": -36.12,
-        "rotX": -8.79623144E-07,
-        "rotY": 90.00007,
-        "rotZ": 2.5940146E-08,
+        "rotX": -2.77093045E-06,
+        "rotY": 90.00008,
+        "rotZ": -3.56096024E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -41888,6 +41933,9 @@
         "g": 0.366520882,
         "b": 0.0
       },
+      "Tags": [
+        "CleanUpHelper_ignore"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -41938,6 +41986,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -42001,6 +42052,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42059,6 +42113,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42117,6 +42174,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42175,6 +42235,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42235,6 +42298,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -42298,6 +42364,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42356,6 +42425,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42414,6 +42486,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42472,6 +42547,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42532,6 +42610,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -42595,6 +42676,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42653,6 +42737,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42711,6 +42798,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42769,6 +42859,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42829,6 +42922,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -42912,6 +43008,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -42970,6 +43069,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43028,6 +43130,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43086,6 +43191,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43144,6 +43252,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43202,6 +43313,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43260,6 +43374,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43318,6 +43435,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43376,6 +43496,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43434,6 +43557,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43492,6 +43618,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43550,6 +43679,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43608,6 +43740,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43666,6 +43801,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43724,6 +43862,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43782,6 +43923,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43840,6 +43984,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43898,6 +44045,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -43956,6 +44106,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44014,6 +44167,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44072,6 +44228,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44130,6 +44289,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44188,6 +44350,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44246,6 +44411,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44306,6 +44474,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -44369,6 +44540,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44427,6 +44601,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44485,6 +44662,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44543,6 +44723,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44603,6 +44786,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -44666,6 +44852,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44724,6 +44913,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44782,6 +44974,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44840,6 +45035,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -44900,6 +45098,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -44963,6 +45164,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45021,6 +45225,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45079,6 +45286,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45137,6 +45347,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45197,6 +45410,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -45260,6 +45476,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45318,6 +45537,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45376,6 +45598,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45434,6 +45659,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45494,6 +45722,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -45557,6 +45788,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45615,6 +45849,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45673,6 +45910,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45731,6 +45971,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45791,6 +46034,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -45866,6 +46112,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45924,6 +46173,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -45982,6 +46234,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46040,6 +46295,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46098,6 +46356,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46156,6 +46417,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46214,6 +46478,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46272,6 +46539,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46330,6 +46600,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46388,6 +46661,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46446,6 +46722,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46504,6 +46783,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46562,6 +46844,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46620,6 +46905,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46678,6 +46966,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46736,6 +47027,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46796,6 +47090,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -46871,6 +47168,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46929,6 +47229,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -46987,6 +47290,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47045,6 +47351,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47103,6 +47412,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47161,6 +47473,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47219,6 +47534,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47277,6 +47595,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47335,6 +47656,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47393,6 +47717,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47451,6 +47778,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47509,6 +47839,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47567,6 +47900,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47625,6 +47961,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47683,6 +48022,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47741,6 +48083,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47801,6 +48146,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -47864,6 +48212,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47922,6 +48273,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -47980,6 +48334,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48038,6 +48395,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48098,6 +48458,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -48161,6 +48524,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48219,6 +48585,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48277,6 +48646,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48335,6 +48707,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48395,6 +48770,9 @@
             "g": 0.713235259,
             "b": 0.713235259
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -48458,6 +48836,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48516,6 +48897,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48574,6 +48958,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48632,6 +49019,9 @@
                 "g": 0.713235259,
                 "b": 0.713235259
               },
+              "Tags": [
+                "CleanUpHelper_ignore"
+              ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
               "Locked": false,
@@ -48692,6 +49082,9 @@
             "g": 0.7867647,
             "b": 0.7867647
           },
+          "Tags": [
+            "CleanUpHelper_ignore"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": true,
@@ -48825,9 +49218,9 @@
         "posX": 12.2494135,
         "posY": 1.48149908,
         "posZ": 35.9863968,
-        "rotX": -2.83874044E-07,
+        "rotX": -2.71273166E-07,
         "rotY": 270.10318,
-        "rotZ": 9.61519E-07,
+        "rotZ": 9.804406E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
