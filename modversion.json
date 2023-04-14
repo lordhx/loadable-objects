@@ -1,42 +1,36 @@
 {
   "latestVersion": "3.1.0",
-  "releaseNotes": [
-    {
-      "3.1.0": [
-        {
-          "_comment": "maximum 3 entries for Highlights",
-          "Highlights": [
-            "updated Victory Display",
-            "added custom player color support"
-          ],
-          "Details": [
-            "added Family Inheritance context menu functions",
-            "updated Victory Display (now with automatic counting!)",
-            "added Chaos Token metadata (description and modifier)",
-            "improved loading time (Data Helper clean-up)",
-            "fixed a bug with Bless/Curse manager image",
-            "made action tokens colourblind-friendly",
-            "added complete support for custom player colors (right-click the upkeep button to test this!)",
-            "added more Hotkeys ('Game Keys')",
-            "added SoundCube (contains sounds for Title Splash Screen and Clean up Helper)",
-            "added automatic discarding of tokens on the discard pile",
-            "added FFG's Buyer's Guide as overview",
-            "made discard buttons easier clickable",
-            "gave White/Orange their own Token Remover",
-            "added percentages to the Token Arranger (see context menu)",
-            "updated Navigation Overlay",
-            "updated Attachment Helper",
-            "fixed a bunch of misc. bugs"
-          ]
-        }
+  "releaseNotes": {
+    "3.1.0": {
+      "_comment": "maximum 3 entries for Highlights",
+      "Highlights": [
+        "updated Victory Display",
+        "added custom player color support"
       ],
-      "0.0.0": [
-        {
-          "_comment": "maximum 3 entries for Highlights",
-          "Highlights": [],
-          "Details": []
-        }
+      "Details": [
+        "added Family Inheritance context menu functions",
+        "updated Victory Display (now with automatic counting!)",
+        "added Chaos Token metadata (description and modifier)",
+        "improved loading time (Data Helper clean-up)",
+        "fixed a bug with Bless/Curse manager image",
+        "made action tokens colourblind-friendly",
+        "added complete support for custom player colors (right-click the upkeep button to test this!)",
+        "added more Hotkeys ('Game Keys')",
+        "added SoundCube (contains sounds for Title Splash Screen and Clean up Helper)",
+        "added automatic discarding of tokens on the discard pile",
+        "added FFG's Buyer's Guide as overview",
+        "made discard buttons easier clickable",
+        "gave White/Orange their own Token Remover",
+        "added percentages to the Token Arranger (see context menu)",
+        "updated Navigation Overlay",
+        "updated Attachment Helper",
+        "fixed a bunch of misc. bugs"
       ]
+    },
+    "0.0.0": {
+      "_comment": "maximum 3 entries for Highlights",
+      "Highlights": [],
+      "Details": []
     }
-  ]
+  }
 }
