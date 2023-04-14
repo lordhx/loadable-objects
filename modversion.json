@@ -29,6 +29,13 @@
             "fixed a bunch of misc. bugs"
           ]
         }
+      ],
+      "0.0.0": [
+        {
+          "_comment": "maximum 3 entries for Highlights",
+          "Highlights": [],
+          "Details": []
+        }
       ]
     }
   ]
