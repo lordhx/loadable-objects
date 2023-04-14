@@ -33,24 +33,8 @@
     {"name":"Challenge Scenario: Red Tide Rising", "url":"scenarios/challenge_red_tide_rising.json", "replace":"5302f2"},
     {"name":"Barkham Horror: The Meddling of Meowlathotep", "url":"scenarios/meddling_of_meowlathotep.json"}
   ],
-  "investigators": [
-    {"name":"Core Investigators", "url":"investigators/core_investigators.json", "replace":"2585f4"},
-    {"name":"The Dunwich Legacy", "url":"investigators/dunwich_legacy.json", "replace":"5889dd"},
-    {"name":"The Path to Carcosa", "url":"investigators/path_to_carcosa.json", "replace":"899c3a"},
-    {"name":"The Forgotten Age", "url":"investigators/forgotten_age.json", "replace":"03b888"},
-    {"name":"The Circle Undone", "url":"investigators/circle_undone.json", "replace":"0dcbe8"},
-    {"name":"The Dream-Eaters", "url":"investigators/dream-eaters.json", "replace":"a34f34"},
-    {"name":"The Innsmouth Conspiracy", "url":"investigators/innsmouth_conspiracy.json", "replace":"10bd18"},
-    {"name":"Edge of the Earth", "url":"investigators/edge_of_the_earth.json", "replace":"a32f43"},
-    {"name":"The Scarlet Keys", "url":"investigators/scarlet_keys.json", "replace":"a4fd1b"},
-    {"name":"Starter Decks", "url":"investigators/starter_decks.json", "replace":"35fb9c"},
-    {"name":"Promo Investigators", "url":"investigators/promos.json", "replace":"5fe24e"}
-  ],
   "extras" : [
-    {"name":"Player Cards by Cycle", "url":"extras/cards_by_cycle.json"},
-    {"name":"Encounter Sets", "url":"extras/encounter_sets.json", "replace":"304ffc"},
-    {"name":"Tarot Deck", "url":"extras/tarot_deck.json"},
-    {"name":"Secret Objectives ﹠ Ultimatums", "url":"extras/objectives_ultimatums.json"}
+    {"name":"Encounter Sets", "url":"extras/encounter_sets.json", "replace":"304ffc"}
   ],
   "community" : [
     {"name":"Fan Investigators: Aespa Investigators", "url":"fancreations/investigators_aespa.json", "replace":"ec74df"},
@@ -104,6 +88,7 @@
     {"name":"Fan Campaign: Parallel Universe", "url":"fancreations/campaign_parallel_universe.json", "replace":"28e0a1"},
     {"name":"Fan Campaign: Pokemon Eldritch Edition", "url":"fancreations/campaign_pokemon_eldrich_edition.json", "replace":"75fe78"},
     {"name":"Fan Campaign: Strange Aeons", "url":"fancreations/campaign_strange_aeons.json", "replace":"2abdd6"},
+    {"name":"Fan Campaign: The Approaching Storm", "url":"fancreations/campaign_approaching_storm.json", "replace":"ab6b9a"},
     {"name":"Fan Campaign: The Color Out of Oz", "url":"fancreations/campaign_color_out_of_oz.json", "replace":"be7d21"},
     {"name":"Fan Campaign: The Crown of Egil", "url":"fancreations/campaign_crown_of_egil.json", "replace":"7458b7"},
     {"name":"Fan Campaign: The Dying Star", "url":"fancreations/campaign_dying_star.json", "replace":"bcfff6"},
@@ -131,7 +116,6 @@
     {"name":"Fan Scenario: Masks of Nyarlathotep – New York", "url":"fancreations/scenario_masks_of_nyarlathotep.json", "replace":"94a1f8"},
     {"name":"Fan Scenario: Miskatonic Mouse", "url":"fancreations/scenario_miskatonic_mouse.json", "replace":"6defb8"},
     {"name":"Fan Scenario: Stranger Things", "url":"fancreations/scenario_stranger_things.json", "replace":"408301"},
-    {"name":"Fan Campaign: The Approaching Storm", "url":"fancreations/campaign_approaching_storm.json", "replace":"ab6b9a"},
     {"name":"Fan Scenario: The Collector", "url":"fancreations/scenario_the_collector.json", "replace":"9810eb"},
     {"name":"Fan Scenario: The Colour out of Space", "url":"fancreations/scenario_color_out_of_space.json", "replace":"5b81ff"},
     {"name":"Fan Scenario: The Curse of Amulotep", "url":"fancreations/scenario_the_curse_of_amulotep.json", "replace":"0d7a8d"},
