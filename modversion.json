@@ -2,13 +2,13 @@
   "latestVersion": "3.1.0",
   "releaseNotes": {
     "3.1.0": {
-      "_comment": "maximum 3 entries for Highlights",
-      "Highlights": [
+      "_comment": "maximum 3 entries for highlights",
+      "highlights": [
         "Improved load times",
         "Automated Victory Display",
         "Added custom player color support"
       ],
-      "Details": [
+      "details": [
         "added Family Inheritance context menu functions",
         "updated Victory Display (now with automatic counting!)",
         "added Chaos Token metadata (description and modifier)",
@@ -29,9 +29,9 @@
       ]
     },
     "0.0.0": {
-      "_comment": "maximum 3 entries for Highlights",
-      "Highlights": [],
-      "Details": []
+      "_comment": "maximum 3 entries for highlights",
+      "highlights": [],
+      "details": []
     }
   }
 }
