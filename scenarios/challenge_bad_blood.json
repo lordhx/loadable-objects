@@ -4,10 +4,10 @@
   "Transform": {
     "posX": 12.2499809,
     "posY": 1.48149908,
-    "posZ": 3.9863565,
-    "rotX": 6.08635E-08,
+    "posZ": 3.98635626,
+    "rotX": -3.15826782E-07,
     "rotY": 269.999878,
-    "rotZ": 1.01594912E-06,
+    "rotZ": 7.967888E-09,
     "scaleX": 2.21,
     "scaleY": 0.46,
     "scaleZ": 2.42
@@ -74,10 +74,10 @@
       "Transform": {
         "posX": -36.773243,
         "posY": 1.53360486,
-        "posZ": -7.70000553,
-        "rotX": -2.59715662E-08,
+        "posZ": -7.70001,
+        "rotX": -1.84570315E-08,
         "rotY": 269.999329,
-        "rotZ": -1.113046E-08,
+        "rotZ": 7.963624E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -134,12 +134,12 @@
       "GUID": "00d19a",
       "Name": "Custom_Token",
       "Transform": {
-        "posX": -38.7165642,
-        "posY": 1.57000029,
-        "posZ": -9.523726,
-        "rotX": -7.06347055E-05,
-        "rotY": 270.002655,
-        "rotZ": 2.68014828E-05,
+        "posX": -38.71656,
+        "posY": 1.57000017,
+        "posZ": -9.52373,
+        "rotX": 6.96664356E-05,
+        "rotY": 270.002747,
+        "rotZ": -2.814472E-07,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -191,12 +191,12 @@
       "GUID": "0678e8",
       "Name": "Card",
       "Transform": {
-        "posX": -23.6765442,
-        "posY": 1.53372288,
-        "posZ": 7.569989,
-        "rotX": 0.00176290923,
-        "rotY": 269.998779,
-        "rotZ": 0.003857552,
+        "posX": -23.676527,
+        "posY": 1.53373456,
+        "posZ": 7.570002,
+        "rotX": 0.0018518517,
+        "rotY": 269.999451,
+        "rotZ": 0.00419071876,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -253,12 +253,12 @@
       "GUID": "06d6fe",
       "Name": "Custom_Token",
       "Transform": {
-        "posX": -25.428215,
-        "posY": 1.58449006,
-        "posZ": 5.99203157,
-        "rotX": 0.0107220635,
-        "rotY": 270.00177,
-        "rotZ": 1.42031753,
+        "posX": -25.4281654,
+        "posY": 1.58446836,
+        "posZ": 5.99192333,
+        "rotX": 0.00717762159,
+        "rotY": 269.999329,
+        "rotZ": 1.42157936,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -310,12 +310,12 @@
       "GUID": "165dac",
       "Name": "Card",
       "Transform": {
-        "posX": -2.68853831,
+        "posX": -2.68853879,
         "posY": 1.59660506,
-        "posZ": -5.04851437,
-        "rotX": -1.15573584E-07,
+        "posZ": -5.04851675,
+        "rotX": 3.91017743E-08,
         "rotY": 179.999619,
-        "rotZ": 6.282404E-08,
+        "rotZ": 1.01323669E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -372,11 +372,11 @@
       "Name": "Custom_Token",
       "Transform": {
         "posX": -18.636034,
-        "posY": 1.58378267,
-        "posZ": -1.67347419,
-        "rotX": 0.00119106763,
-        "rotY": 269.995667,
-        "rotZ": 1.35236073,
+        "posY": 1.58377755,
+        "posZ": -1.67347753,
+        "rotX": 0.00393354846,
+        "rotY": 269.9955,
+        "rotZ": 1.35531759,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -428,12 +428,12 @@
       "GUID": "2a3c87",
       "Name": "Card",
       "Transform": {
-        "posX": -23.6765881,
-        "posY": 1.53371918,
-        "posZ": -7.70001173,
-        "rotX": 0.00168613682,
-        "rotY": 269.998871,
-        "rotZ": 0.00372872385,
+        "posX": -23.67659,
+        "posY": 1.53373456,
+        "posZ": -7.699992,
+        "rotX": 0.00185910147,
+        "rotY": 269.999084,
+        "rotZ": 0.00418523373,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -490,12 +490,12 @@
       "GUID": "30ed35",
       "Name": "Custom_Token",
       "Transform": {
-        "posX": -18.59408,
-        "posY": 1.58442247,
-        "posZ": -9.291749,
-        "rotX": 0.00170295825,
+        "posX": -18.5940742,
+        "posY": 1.58442211,
+        "posZ": -9.291754,
+        "rotX": 0.00200423365,
         "rotY": 269.9763,
-        "rotZ": 1.41999924,
+        "rotZ": 1.41983759,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -547,12 +547,12 @@
       "GUID": "377b20",
       "Name": "Card",
       "Transform": {
-        "posX": -30.22428,
-        "posY": 1.5337038,
-        "posZ": -0.0300049223,
-        "rotX": 0.00150205777,
-        "rotY": 269.998016,
-        "rotZ": 0.00344527676,
+        "posX": -30.22424,
+        "posY": 1.5337007,
+        "posZ": -0.0300264526,
+        "rotX": 0.00131694472,
+        "rotY": 269.9989,
+        "rotZ": 0.003148698,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -609,12 +609,12 @@
       "GUID": "3b4478",
       "Name": "Custom_Token",
       "Transform": {
-        "posX": -32.1028,
-        "posY": 1.58382583,
-        "posZ": -1.61110258,
-        "rotX": 1.09637654,
-        "rotY": 269.990479,
-        "rotZ": 0.7321401,
+        "posX": -32.1023445,
+        "posY": 1.58382237,
+        "posZ": -1.61140454,
+        "rotX": 0.8444183,
+        "rotY": 269.9914,
+        "rotZ": 0.9080159,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -667,11 +667,11 @@
       "Name": "Custom_Token",
       "Transform": {
         "posX": -12.8404636,
-        "posY": 1.57000017,
-        "posZ": 6.038361,
-        "rotX": -5.888719E-05,
-        "rotY": 269.9815,
-        "rotZ": 8.478283E-05,
+        "posY": 1.57000053,
+        "posZ": 6.0383606,
+        "rotX": -6.175902E-05,
+        "rotY": 269.981537,
+        "rotZ": 5.35749241E-05,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -726,9 +726,9 @@
         "posX": -3.38745141,
         "posY": 1.58300042,
         "posZ": -15.0346537,
-        "rotX": -2.07107888E-07,
+        "rotX": -2.22896887E-07,
         "rotY": 270.001251,
-        "rotZ": 3.92769522E-07,
+        "rotZ": 3.61287135E-07,
         "scaleX": 2.2,
         "scaleY": 1.0,
         "scaleZ": 2.2
@@ -780,12 +780,12 @@
       "GUID": "73f813",
       "Name": "Card",
       "Transform": {
-        "posX": -23.67655,
-        "posY": 1.53377879,
-        "posZ": -0.0299916584,
-        "rotX": 0.00238949037,
-        "rotY": 269.996338,
-        "rotZ": 0.005920422,
+        "posX": -23.6765442,
+        "posY": 1.53377652,
+        "posZ": -0.0299884491,
+        "rotX": 0.00224374956,
+        "rotY": 269.996552,
+        "rotZ": 0.00582745858,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -842,12 +842,12 @@
       "GUID": "847357",
       "Name": "Card",
       "Transform": {
-        "posX": -3.955938,
+        "posX": -3.95593977,
         "posY": 1.59660506,
-        "posZ": -10.4411716,
-        "rotX": -2.76848823E-07,
+        "posZ": -10.4411774,
+        "rotX": 3.5321964E-08,
         "rotY": 269.999634,
-        "rotZ": 3.27724877E-07,
+        "rotZ": 4.47614568E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -900,12 +900,12 @@
       "GUID": "88a71f",
       "Name": "Card",
       "Transform": {
-        "posX": -15.3432045,
+        "posX": -15.3431988,
         "posY": 1.53360486,
-        "posZ": 2.30416083,
-        "rotX": -3.51608833E-07,
-        "rotY": 269.991547,
-        "rotZ": 5.18842342E-07,
+        "posZ": 2.30416179,
+        "rotX": -1.6876589E-08,
+        "rotY": 269.991516,
+        "rotZ": 3.19109361E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -961,12 +961,12 @@
       "GUID": "88e9a0",
       "Name": "Custom_Token",
       "Transform": {
-        "posX": -25.3410969,
-        "posY": 1.58625841,
-        "posZ": -1.504114,
-        "rotX": 0.411869764,
-        "rotY": 269.9967,
-        "rotZ": 1.38336706,
+        "posX": -25.3410988,
+        "posY": 1.58625567,
+        "posZ": -1.50410414,
+        "rotX": 0.417133957,
+        "rotY": 269.9972,
+        "rotZ": 1.3818357,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -1018,12 +1018,12 @@
       "GUID": "927692",
       "Name": "Card",
       "Transform": {
-        "posX": -30.2243233,
-        "posY": 1.53370428,
-        "posZ": -7.700032,
-        "rotX": 0.00146708835,
-        "rotY": 269.998474,
-        "rotZ": 0.00345764449,
+        "posX": -30.2243214,
+        "posY": 1.53370023,
+        "posZ": -7.70003366,
+        "rotX": 0.00131933147,
+        "rotY": 269.998566,
+        "rotZ": 0.00313099357,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1080,12 +1080,12 @@
       "GUID": "9c1b91",
       "Name": "Bag",
       "Transform": {
-        "posX": -11.8489418,
+        "posX": -11.8489323,
         "posY": 1.33496583,
-        "posZ": 8.030435,
-        "rotX": 1.0193562E-05,
-        "rotY": -0.000359698839,
-        "rotZ": -9.008011E-06,
+        "posZ": 8.030439,
+        "rotX": 5.96306563E-06,
+        "rotY": -0.000347025634,
+        "rotZ": -3.238355E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1120,7 +1120,7 @@
       "MaterialIndex": -1,
       "MeshIndex": -1,
       "Bag": {
-        "Order": 0
+        "Order": 2
       },
       "LuaScript": "",
       "LuaScriptState": "",
@@ -1130,19 +1130,19 @@
           "GUID": "9bec2d",
           "Name": "Card",
           "Transform": {
-            "posX": -4.8823967,
-            "posY": 3.648637,
-            "posZ": 14.0777111,
-            "rotX": 0.8103584,
-            "rotY": 270.036865,
-            "rotZ": 183.7795,
+            "posX": -0.412863284,
+            "posY": 3.91704226,
+            "posZ": -13.1325712,
+            "rotX": 1.56416058E-06,
+            "rotY": 270.0,
+            "rotZ": 180.0,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
           "Nickname": "Missing Persons",
           "Description": "Act 1c",
-          "GMNotes": "{\n  \"id\": \"04126a\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 1,\n  \"cycle\": \"Standalone\"\n}",
+          "GMNotes": "{\n  \"id\": \"04126a\",\n  \"type\": \"Location\",\n  \"clueThresholdPerInvestigator\": 1,\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"FromEasttown\",\n    \"connections\": \"Crescent\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -1154,6 +1154,7 @@
             "b": 0.713235259
           },
           "Tags": [
+            "Location",
             "ScenarioCard"
           ],
           "LayoutGroupSortIndex": 0,
@@ -1168,9 +1169,71 @@
           "Sticky": true,
           "Tooltip": true,
           "GridProjection": false,
-          "HideWhenFaceDown": false,
+          "HideWhenFaceDown": true,
           "Hands": true,
           "CardID": 234523,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "2345": {
+              "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1467561769777202805/81C13FF317351E1956828A006E42B5F958402706/",
+              "BackURL": "http://cloud-3.steamusercontent.com/ugc/1467561769777204414/069B45DA5FC54E05F7D416CA87A45E9FF478C840/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": true,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "5611a1",
+          "Name": "Card",
+          "Transform": {
+            "posX": 1.64666176,
+            "posY": 3.13099527,
+            "posZ": -2.12859,
+            "rotX": -8.238003E-08,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "Trial of the Huntress",
+          "Description": "Act 1e",
+          "GMNotes": "{\n  \"id\": \"04133a\",\n  \"type\": \"Location\",\n  \"clueThresholdPerInvestigator\": 2,\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "Location",
+            "ScenarioCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 234530,
           "SidewaysCard": false,
           "CustomDeck": {
             "2345": {
@@ -1310,67 +1373,6 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": ""
-        },
-        {
-          "GUID": "5611a1",
-          "Name": "Card",
-          "Transform": {
-            "posX": -4.74724436,
-            "posY": 3.65845847,
-            "posZ": 14.1668177,
-            "rotX": 0.305003971,
-            "rotY": 270.0117,
-            "rotZ": 183.575653,
-            "scaleX": 1.0,
-            "scaleY": 1.0,
-            "scaleZ": 1.0
-          },
-          "Nickname": "Trial of the Huntress",
-          "Description": "Act 1e",
-          "GMNotes": "{\n  \"id\": \"04133a\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 2,\n  \"cycle\": \"Standalone\"\n}",
-          "AltLookAngle": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
-          },
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "Tags": [
-            "ScenarioCard"
-          ],
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": true,
-          "CardID": 234530,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "2345": {
-              "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1467561769777202805/81C13FF317351E1956828A006E42B5F958402706/",
-              "BackURL": "http://cloud-3.steamusercontent.com/ugc/1467561769777204414/069B45DA5FC54E05F7D416CA87A45E9FF478C840/",
-              "NumWidth": 10,
-              "NumHeight": 7,
-              "BackIsHidden": true,
-              "UniqueBack": true,
-              "Type": 0
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
         }
       ]
     },
@@ -1378,12 +1380,12 @@
       "GUID": "a00323",
       "Name": "Card",
       "Transform": {
-        "posX": -2.72485614,
+        "posX": -2.72485662,
         "posY": 1.59660506,
-        "posZ": 0.3726969,
-        "rotX": -6.857731E-08,
+        "posZ": 0.372697443,
+        "rotX": 2.65154618E-08,
         "rotY": 180.003357,
-        "rotZ": 5.623409E-08,
+        "rotZ": -2.01040677E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1439,12 +1441,12 @@
       "GUID": "b5637e",
       "Name": "Custom_Token",
       "Transform": {
-        "posX": -25.1551628,
-        "posY": 1.58568931,
-        "posZ": -9.201916,
-        "rotX": 0.00193811953,
-        "rotY": 270.0077,
-        "rotZ": 1.54373753,
+        "posX": -25.1553841,
+        "posY": 1.58593583,
+        "posZ": -9.201865,
+        "rotX": 0.121466309,
+        "rotY": 270.0114,
+        "rotZ": 1.50616109,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -1496,10 +1498,10 @@
       "GUID": "b8619a",
       "Name": "Deck",
       "Transform": {
-        "posX": -3.927906,
+        "posX": -3.927907,
         "posY": 1.74835181,
-        "posZ": 5.752363,
-        "rotX": -4.330101E-07,
+        "posZ": 5.7523675,
+        "rotX": -1.29659725E-07,
         "rotY": 269.999359,
         "rotZ": 180.0,
         "scaleX": 1.0,
@@ -1561,9 +1563,9 @@
         540003,
         540003,
         540003,
+        540025,
+        540025,
         540026,
-        540025,
-        540025,
         540026
       ],
       "CustomDeck": {
@@ -3177,67 +3179,6 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1e04da",
-          "Name": "Card",
-          "Transform": {
-            "posX": -3.855868,
-            "posY": 1.880945,
-            "posZ": 7.92808056,
-            "rotX": 357.8972,
-            "rotY": 269.903046,
-            "rotZ": 356.962067,
-            "scaleX": 1.0,
-            "scaleY": 1.0,
-            "scaleZ": 1.0
-          },
-          "Nickname": "On Wings of Darkness",
-          "Description": "",
-          "GMNotes": "{\n  \"id\": \"01173\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
-          "AltLookAngle": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
-          },
-          "ColorDiffuse": {
-            "r": 0.713235259,
-            "g": 0.713235259,
-            "b": 0.713235259
-          },
-          "Tags": [
-            "ScenarioCard"
-          ],
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "CardID": 540026,
-          "SidewaysCard": false,
-          "CustomDeck": {
-            "5400": {
-              "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://i.imgur.com/sRsWiSG.jpg/",
-              "NumWidth": 10,
-              "NumHeight": 7,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "ab3719",
           "Name": "Card",
           "Transform": {
@@ -3419,6 +3360,67 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": ""
+        },
+        {
+          "GUID": "1e04da",
+          "Name": "Card",
+          "Transform": {
+            "posX": -3.855868,
+            "posY": 1.880945,
+            "posZ": 7.92808056,
+            "rotX": 357.8972,
+            "rotY": 269.903046,
+            "rotZ": 356.962067,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "On Wings of Darkness",
+          "Description": "",
+          "GMNotes": "{\n  \"id\": \"01173\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ScenarioCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 540026,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "5400": {
+              "FaceURL": "http://cloud-3.steamusercontent.com/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
+              "BackURL": "https://i.imgur.com/sRsWiSG.jpg/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
         }
       ]
     },
@@ -3426,12 +3428,12 @@
       "GUID": "c5f67a",
       "Name": "Card",
       "Transform": {
-        "posX": -17.1200657,
-        "posY": 1.533699,
-        "posZ": -7.70000553,
-        "rotX": 0.00139111187,
-        "rotY": 269.9991,
-        "rotZ": 0.00296932762,
+        "posX": -17.1200581,
+        "posY": 1.53369892,
+        "posZ": -7.70000839,
+        "rotX": 0.00138129725,
+        "rotY": 269.999146,
+        "rotZ": 0.00298386463,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3491,9 +3493,9 @@
         "posX": -1.46557248,
         "posY": 1.48149931,
         "posZ": -26.9304314,
-        "rotX": -3.2791948E-07,
+        "rotX": 2.11740712E-07,
         "rotY": 269.998657,
-        "rotZ": 5.97733E-07,
+        "rotZ": 5.658632E-07,
         "scaleX": 2.48152614,
         "scaleY": 1.0,
         "scaleZ": 2.48152614
@@ -3539,12 +3541,12 @@
       "GUID": "ef5528",
       "Name": "Custom_Token",
       "Transform": {
-        "posX": -31.8566742,
-        "posY": 1.583766,
-        "posZ": -9.341699,
-        "rotX": 0.006205654,
-        "rotY": 269.991821,
-        "rotZ": 1.349352,
+        "posX": -31.8566723,
+        "posY": 1.58375788,
+        "posZ": -9.341706,
+        "rotX": 0.007758241,
+        "rotY": 269.991577,
+        "rotZ": 1.35138774,
         "scaleX": 0.3331147,
         "scaleY": 1.0,
         "scaleZ": 0.3331147
@@ -3596,12 +3598,12 @@
       "GUID": "f61f6c",
       "Name": "Card",
       "Transform": {
-        "posX": -17.1200123,
-        "posY": 1.53370082,
-        "posZ": -0.0300357249,
-        "rotX": 0.0015150347,
-        "rotY": 269.9981,
-        "rotZ": 0.00374271953,
+        "posX": -17.1200047,
+        "posY": 1.533692,
+        "posZ": -0.0300330557,
+        "rotX": 0.00116949819,
+        "rotY": 269.998169,
+        "rotZ": 0.0029060333,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
