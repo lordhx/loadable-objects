@@ -14878,7 +14878,7 @@
                   },
                   "Nickname": "Secrets of the Sea (v. I)",
                   "Description": "Agenda 1",
-                  "GMNotes": "{\n  \"id\": \"07164\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 9,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"07164\",\n  \"type\": \"Agenda\",\n  \"victory\": 1,\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 9,\n  \"cycle\": \"Standalone\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
