@@ -4220,18 +4220,18 @@
           "GUID": "b0b20f",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803633,
-            "posZ": 14.2400036,
-            "rotX": -1.7515579E-07,
-            "rotY": 45.0000038,
-            "rotZ": -2.05927833E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "Where Doom Awaits",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -4239,9 +4239,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -4260,7 +4260,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -7014,18 +7014,18 @@
           "GUID": "69b78e",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803633,
-            "posZ": 14.2400036,
-            "rotX": -2.38022736E-07,
-            "rotY": 45.0000038,
-            "rotZ": -2.095979E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "Blood on the Altar",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -7033,9 +7033,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -7054,7 +7054,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -12767,18 +12767,18 @@
           "GUID": "9abec6",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803633,
-            "posZ": 14.2400036,
-            "rotX": -2.40693765E-07,
-            "rotY": 45.0000038,
-            "rotZ": -2.76036531E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "Extracurricular Activity",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -12786,9 +12786,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -12807,7 +12807,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -14774,18 +14774,18 @@
           "GUID": "72053e",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803633,
-            "posZ": 14.2400036,
-            "rotX": -2.53024439E-07,
-            "rotY": 45.0000038,
-            "rotZ": -2.354508E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "Lost in Time and Space",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -14793,9 +14793,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -14814,7 +14814,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -17939,18 +17939,18 @@
           "GUID": "0727ee",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803633,
-            "posZ": 14.2400036,
-            "rotX": -2.32938945E-07,
-            "rotY": 45.0000038,
-            "rotZ": -2.63976773E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The Miskatonic Museum",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -17958,9 +17958,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -17979,7 +17979,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -25240,18 +25240,18 @@
           "GUID": "6a83c1",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803633,
-            "posZ": 14.2400036,
-            "rotX": -2.340185E-07,
-            "rotY": 45.0000038,
-            "rotZ": -2.62089884E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "Undimensioned and Unseen",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -25259,9 +25259,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -25280,7 +25280,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -30074,18 +30074,18 @@
           "GUID": "f58e95",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803633,
-            "posZ": 14.2400036,
-            "rotX": -2.47126479E-07,
-            "rotY": 45.0000038,
-            "rotZ": -2.034686E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The Essex County Express",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -30093,9 +30093,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -30114,7 +30114,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -32520,18 +32520,18 @@
           "GUID": "52f8d5",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803633,
-            "posZ": 14.2400036,
-            "rotX": -2.50752038E-07,
-            "rotY": 45.0000038,
-            "rotZ": -2.34095651E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The House Always Wins",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -32539,9 +32539,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -32560,7 +32560,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",

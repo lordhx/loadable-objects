@@ -606,18 +606,18 @@
           "GUID": "350b61",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69550061,
-            "posY": 1.55803561,
-            "posZ": 14.278904,
-            "rotX": -2.04995831E-06,
-            "rotY": 224.997971,
-            "rotZ": 6.47489571E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The Labyrinths of Lunacy Single Group B",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -625,9 +625,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -646,7 +646,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -6601,18 +6601,18 @@
           "GUID": "a45247",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69600058,
-            "posY": 1.55803609,
-            "posZ": 14.2400036,
-            "rotX": -9.175706E-07,
-            "rotY": 45.0000038,
-            "rotZ": -3.68661034E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The Labyrinths of Lunacy Single Group A",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -6620,9 +6620,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -6641,7 +6641,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -8559,18 +8559,18 @@
           "GUID": "412475",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69553709,
-            "posY": 1.55803585,
-            "posZ": 14.2788973,
-            "rotX": 7.856031E-06,
-            "rotY": 224.998,
-            "rotZ": -5.81763651E-08,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The Labyrinths of Lunacy Single Group C",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -8578,9 +8578,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -8599,7 +8599,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -12698,18 +12698,18 @@
           "GUID": "17a731",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69553709,
-            "posY": 1.55803609,
-            "posZ": 14.2788954,
-            "rotX": 2.53082567E-06,
-            "rotY": 224.997986,
-            "rotZ": 1.395072E-06,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The Labyrinths of Lunacy Epic Group A",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -12717,9 +12717,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -12738,7 +12738,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -19609,18 +19609,18 @@
           "GUID": "fce372",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69643712,
-            "posY": 1.55803609,
-            "posZ": 14.2787971,
-            "rotX": -2.34633353E-06,
-            "rotY": 225.00737,
-            "rotZ": -7.843991E-07,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The Labyrinths of Lunacy Epic Group C",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -19628,9 +19628,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -19649,7 +19649,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
@@ -21397,18 +21397,18 @@
           "GUID": "04a162",
           "Name": "Custom_Model_Bag",
           "Transform": {
-            "posX": 1.69553709,
-            "posY": 1.55803609,
-            "posZ": 14.2789965,
-            "rotX": -1.86826071E-06,
-            "rotY": 224.998,
-            "rotZ": -1.24008648E-06,
+            "posX": 1.69,
+            "posY": 1.56,
+            "posZ": 14.24,
+            "rotX": 0,
+            "rotY": 225,
+            "rotZ": 0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
           },
           "Nickname": "Set-aside",
-          "Description": "The Labyrinths of Lunacy Epic Group B",
+          "Description": "",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0.0,
@@ -21416,9 +21416,9 @@
             "z": 0.0
           },
           "ColorDiffuse": {
-            "r": 0.02148666,
-            "g": 0.00100758043,
-            "b": 0.02148666
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -21437,7 +21437,7 @@
           "MaterialIndex": -1,
           "MeshIndex": -1,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/764975951334964971/3078F312706FC974833ECD2A359B87FD4F283509/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/2038485431565955058/F72FECE5488594A28292C06997A2E28A8B8961C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960553/C518D80E31E27DB23EEAC8CF9253E59798865790/",
             "NormalURL": "http://cloud-3.steamusercontent.com/ugc/764975951334960069/E70E4A58A1B7827F1E5E2AF9FF44DF0BD5DA33F7/",
             "ColliderURL": "",
