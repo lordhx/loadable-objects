@@ -49496,7 +49496,7 @@
               },
               "Nickname": "Buried Miner",
               "Description": "Monster. Geist. Elite.",
-              "GMNotes": "{\n  \"id\": \"09675\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
+              "GMNotes": "{\r\n  \"id\": \"09675\",\r\n  \"type\": \"Enemy\",\r\n  \"traits\": \"Monster. Geist. Elite.\",\r\n  \"locationFront\": {\r\n    \"victory\": 0,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  },\r\n  \"locationBack\": {\r\n    \"victory\": 1,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  }\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -49557,7 +49557,7 @@
               },
               "Nickname": "Buried Miner",
               "Description": "Monster. Geist. Elite.",
-              "GMNotes": "{\n  \"id\": \"09675\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
+              "GMNotes": "{\r\n  \"id\": \"09675\",\r\n  \"type\": \"Enemy\",\r\n  \"traits\": \"Monster. Geist. Elite.\",\r\n  \"locationFront\": {\r\n    \"victory\": 0,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  },\r\n  \"locationBack\": {\r\n    \"victory\": 1,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  }\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
