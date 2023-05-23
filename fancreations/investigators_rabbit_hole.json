@@ -2,12 +2,12 @@
   "GUID": "b7ff06",
   "Name": "Custom_Model_Bag",
   "Transform": {
-    "posX": 14.7260942,
-    "posY": 1.26937759,
-    "posZ": 53.9083939,
-    "rotX": 0.0208087359,
-    "rotY": 269.999969,
-    "rotZ": 0.0167714525,
+    "posX": 43.27,
+    "posY": 1.48,
+    "posZ": 4.80,
+    "rotX": 0,
+    "rotY": 270,
+    "rotZ": 0,
     "scaleX": 2.21,
     "scaleY": 0.46,
     "scaleZ": 2.42
@@ -15,6 +15,11 @@
   "Nickname": "Rabbit Hole Expansion",
   "Description": "Mint Tea Fan",
   "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
   "ColorDiffuse": {
     "r": 1.0,
     "g": 1.0,
@@ -60,670 +65,19 @@
     "Order": 0
   },
   "LuaScript": "-- Utility memory bag by Directsun\r\n-- Version 2.5.2\r\n-- Fork of Memory Bag 2.0 by MrStump\r\n\r\nfunction updateSave()\r\n    local data_to_save = {[\"ml\"]=memoryList}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction combineMemoryFromBagsWithin()\r\n  local bagObjList = self.getObjects()\r\n  for _, bagObj in ipairs(bagObjList) do\r\n    local data = bagObj.lua_script_state\r\n      if data ~= nil then\r\n        local j = JSON.decode(data)\r\n        if j ~= nil and j.ml ~= nil then\r\n          for guid, entry in pairs(j.ml) do\r\n            memoryList[guid] = entry\r\n          end\r\n        end\r\n      end\r\n    end\r\nend\r\n\r\nfunction updateMemoryWithMoves()\r\n    memoryList = memoryListBackup\r\n    --get the first transposed object's coordinates\r\n    local obj = getObjectFromGUID(moveGuid)\r\n\r\n    -- p1 is where needs to go, p2 is where it was\r\n    local refObjPos = memoryList[moveGuid].pos\r\n    local deltaPos = findOffsetDistance(obj.getPosition(), refObjPos, nil)\r\n    local movedRotation = obj.getRotation()\r\n    for guid, entry in pairs(memoryList) do\r\n        memoryList[guid].pos.x = entry.pos.x - deltaPos.x\r\n        memoryList[guid].pos.y = entry.pos.y - deltaPos.y\r\n        memoryList[guid].pos.z = entry.pos.z - deltaPos.z\r\n        -- memoryList[guid].rot.x = movedRotation.x\r\n        -- memoryList[guid].rot.y = movedRotation.y\r\n        -- memoryList[guid].rot.z = movedRotation.z\r\n    end\r\n\r\n    --theList[obj.getGUID()] = {\r\n    --    pos={x=round(pos.x,4), y=round(pos.y,4), z=round(pos.z,4)},\r\n    --    rot={x=round(rot.x,4), y=round(rot.y,4), z=round(rot.z,4)},\r\n    --    lock=obj.getLock()\r\n    --}\r\n    moveList = {}\r\nend\r\n\r\nfunction onload(saved_data)\r\n    fresh = true\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        --Set up information off of loaded_data\r\n        memoryList = loaded_data.ml\r\n    else\r\n        --Set up information for if there is no saved saved data\r\n        memoryList = {}\r\n    end\r\n\r\n    moveList = {}\r\n    moveGuid = nil\r\n\r\n    if next(memoryList) == nil then\r\n        createSetupButton()\r\n    else\r\n        fresh = false\r\n        createMemoryActionButtons()\r\n    end\r\nend\r\n\r\n\r\n--Beginning Setup\r\n\r\n\r\n--Make setup button\r\nfunction createSetupButton()\r\n    self.createButton({\r\n        label=\"Setup\", click_function=\"buttonClick_setup\", function_owner=self,\r\n        position={0,0.1,-2.1}, rotation={0,0,0}, height=220, width=500,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\nend\r\n\r\n--Triggered by Transpose button\r\nfunction buttonClick_transpose()\r\n    moveGuid = nil\r\n    broadcastToAll(\"Select one object and move it- all objects will move relative to the new location\", {0.75, 0.75, 1})\r\n    memoryListBackup = duplicateTable(memoryList)\r\n    memoryList = {}\r\n    moveList = {}\r\n    self.clearButtons()\r\n    createButtonsOnAllObjects(true)\r\n    createSetupActionButtons(true)\r\nend\r\n\r\n--Triggered by setup button,\r\nfunction buttonClick_setup()\r\n    memoryListBackup = duplicateTable(memoryList)\r\n    memoryList = {}\r\n    self.clearButtons()\r\n    createButtonsOnAllObjects(false)\r\n    createSetupActionButtons(false)\r\nend\r\n\r\nfunction getAllObjectsInMemory()\r\n  local objTable = {}\r\n  local curObj = {}\r\n\r\n  for guid in pairs(memoryListBackup) do\r\n    curObj = getObjectFromGUID(guid)\r\n    table.insert(objTable, curObj)\r\n  end\r\n\r\n  return objTable\r\n  -- return getAllObjects()\r\nend\r\n\r\n--Creates selection buttons on objects\r\nfunction createButtonsOnAllObjects(move)\r\n    local howManyButtons = 0\r\n\r\n    local objsToHaveButtons = {}\r\n    if move == true then\r\n      objsToHaveButtons = getAllObjectsInMemory()\r\n    else\r\n      objsToHaveButtons = getAllObjects()\r\n    end\r\n\r\n    for _, obj in ipairs(objsToHaveButtons) do\r\n        if obj ~= self then\r\n            local dummyIndex = howManyButtons\r\n            --On a normal bag, the button positions aren't the same size as the bag.\r\n            globalScaleFactor = 1 * 1/self.getScale().x\r\n            --Super sweet math to set button positions\r\n            local selfPos = self.getPosition()\r\n            local objPos = obj.getPosition()\r\n            local deltaPos = findOffsetDistance(selfPos, objPos, obj)\r\n            local objPos = rotateLocalCoordinates(deltaPos, self)\r\n            objPos.x = -objPos.x * globalScaleFactor\r\n            objPos.y = objPos.y * globalScaleFactor + 2\r\n            objPos.z = objPos.z * globalScaleFactor * 0.9\r\n            --Offset rotation of bag\r\n            local rot = self.getRotation()\r\n            rot.y = -rot.y + 180\r\n            --Create function\r\n            local funcName = \"selectButton_\" .. howManyButtons\r\n            local func = function() buttonClick_selection(dummyIndex, obj, move) end\r\n            local color = {0.75,0.25,0.25,0.6}\r\n            local colorMove = {0,0,1,0.6}\r\n            if move == true then\r\n              color = colorMove\r\n            end\r\n            self.setVar(funcName, func)\r\n            self.createButton({\r\n                click_function=funcName, function_owner=self,\r\n                position=objPos, rotation=rot, height=500, width=500,\r\n                color=color,\r\n            })\r\n            howManyButtons = howManyButtons + 1\r\n        end\r\n    end\r\nend\r\n\r\n--Creates submit and cancel buttons\r\nfunction createSetupActionButtons(move)\r\n    self.createButton({\r\n        label=\"Cancel\", click_function=\"buttonClick_cancel\", function_owner=self,\r\n      position={-0.6,0.1,-2.1}, rotation={0,0,0}, height=220, width=550,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n\r\n    self.createButton({\r\n        label=\"Submit\", click_function=\"buttonClick_submit\", function_owner=self,\r\n        position={-0.6,0.3,-2.5}, rotation={0,0,0}, height=220, width=550,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n\r\n    if move == false then\r\n      self.createButton({\r\n          label=\"Add\", click_function=\"buttonClick_add\", function_owner=self,\r\n          position={0.6,0.3,-2.1}, rotation={0,0,0}, height=220, width=550,\r\n          font_size=130, color={0,0,0}, font_color={0.25,1,0.25}\r\n      })\r\n\r\n        if fresh == false then\r\n            self.createButton({\r\n                label=\"Set New\", click_function=\"buttonClick_setNew\", function_owner=self,\r\n                position={0.6,0.3,-2.9}, rotation={0,0,0}, height=220, width=550,\r\n                font_size=130, color={0,0,0}, font_color={0.75,0.75,1}\r\n            })\r\n            self.createButton({\r\n                label=\"Remove\", click_function=\"buttonClick_remove\", function_owner=self,\r\n                position={0.6,0.3,-2.5}, rotation={0,0,0}, height=220, width=550,\r\n                font_size=130, color={0,0,0}, font_color={1,0.25,0.25}\r\n            })\r\n        end\r\n    end\r\n\r\n    self.createButton({\r\n        label=\"Reset\", click_function=\"buttonClick_reset\", function_owner=self,\r\n        position={-0.6,0.3,-2.9}, rotation={0,0,0}, height=220, width=550,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\nend\r\n\r\n\r\n--During Setup\r\n\r\n\r\n--Checks or unchecks buttons\r\nfunction buttonClick_selection(index, obj, move)\r\n    local colorMove = {0,0,1,0.6}\r\n    local color = {0,1,0,0.6}\r\n\r\n    previousGuid = selectedGuid\r\n    selectedGuid = obj.getGUID()\r\n\r\n    theList = memoryList\r\n    if move == true then\r\n       theList = moveList\r\n       if previousGuid ~= nil and previousGuid ~= selectedGuid then\r\n         local prevObj = getObjectFromGUID(previousGuid)\r\n         prevObj.highlightOff()\r\n         self.editButton({index=previousIndex, color=colorMove})\r\n         theList[previousGuid] = nil\r\n       end\r\n       previousIndex = index\r\n    end\r\n\r\n    if theList[selectedGuid] == nil then\r\n        self.editButton({index=index, color=color})\r\n        --Adding pos/rot to memory table\r\n        local pos, rot = obj.getPosition(), obj.getRotation()\r\n        --I need to add it like this or it won't save due to indexing issue\r\n        theList[obj.getGUID()] = {\r\n            pos={x=round(pos.x,4), y=round(pos.y,4), z=round(pos.z,4)},\r\n            rot={x=round(rot.x,4), y=round(rot.y,4), z=round(rot.z,4)},\r\n            lock=obj.getLock()\r\n        }\r\n        obj.highlightOn({0,1,0})\r\n    else\r\n      color = {0.75,0.25,0.25,0.6}\r\n      if move == true then\r\n        color = colorMove\r\n      end\r\n        self.editButton({index=index, color=color})\r\n        theList[obj.getGUID()] = nil\r\n        obj.highlightOff()\r\n    end\r\nend\r\n\r\n--Cancels selection process\r\nfunction buttonClick_cancel()\r\n    memoryList = memoryListBackup\r\n    moveList = {}\r\n    self.clearButtons()\r\n    if next(memoryList) == nil then\r\n        createSetupButton()\r\n    else\r\n        createMemoryActionButtons()\r\n    end\r\n    removeAllHighlights()\r\n    broadcastToAll(\"Selection Canceled\", {1,1,1})\r\n    moveGuid = nil\r\nend\r\n\r\n--Saves selections\r\nfunction buttonClick_submit()\r\n    fresh = false\r\n    if next(moveList) ~= nil then\r\n        for guid in pairs(moveList) do\r\n            moveGuid = guid\r\n        end\r\n        if memoryListBackup[moveGuid] == nil then\r\n            broadcastToAll(\"Item selected for moving is not already in memory\", {1, 0.25, 0.25})\r\n        else\r\n            broadcastToAll(\"Moving all items in memory relative to new objects position!\", {0.75, 0.75, 1})\r\n            self.clearButtons()\r\n            createMemoryActionButtons()\r\n            local count = 0\r\n            for guid in pairs(moveList) do\r\n                moveGuid = guid\r\n                count = count + 1\r\n                local obj = getObjectFromGUID(guid)\r\n                if obj ~= nil then obj.highlightOff() end\r\n            end\r\n            updateMemoryWithMoves()\r\n            updateSave()\r\n            buttonClick_place()\r\n        end\r\n    elseif next(memoryList) == nil and moveGuid == nil then\r\n      memoryList = memoryListBackup\r\n      broadcastToAll(\"No selections made.\", {0.75, 0.25, 0.25})\r\n    end\r\n    combineMemoryFromBagsWithin()\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for guid in pairs(memoryList) do\r\n        count = count + 1\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then obj.highlightOff() end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    updateSave()\r\n    moveGuid = nil\r\nend\r\n\r\nfunction combineTables(first_table, second_table)\r\n  for k,v in pairs(second_table) do first_table[k] = v end\r\nend\r\n\r\nfunction buttonClick_add()\r\n    fresh = false\r\n    combineTables(memoryList, memoryListBackup)\r\n    broadcastToAll(\"Adding internal bags and selections to existing memory\", {0.25, 0.75, 0.25})\r\n    combineMemoryFromBagsWithin()\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for guid in pairs(memoryList) do\r\n        count = count + 1\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then obj.highlightOff() end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    updateSave()\r\nend\r\n\r\nfunction buttonClick_remove()\r\n        broadcastToAll(\"Removing Selected Entries From Memory\", {1.0, 0.25, 0.25})\r\n        self.clearButtons()\r\n        createMemoryActionButtons()\r\n        local count = 0\r\n        for guid in pairs(memoryList) do\r\n            count = count + 1\r\n            memoryListBackup[guid] = nil\r\n            local obj = getObjectFromGUID(guid)\r\n            if obj ~= nil then obj.highlightOff() end\r\n        end\r\n        broadcastToAll(count..\" Objects Removed\", {1,1,1})\r\n        memoryList = memoryListBackup\r\n        updateSave()\r\nend\r\n\r\nfunction buttonClick_setNew()\r\n    broadcastToAll(\"Setting new position relative to items in memory\", {0.75, 0.75, 1})\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for _, obj in ipairs(getAllObjects()) do\r\n        guid = obj.guid\r\n        if memoryListBackup[guid] ~= nil then\r\n            count = count + 1\r\n            memoryListBackup[guid].pos = obj.getPosition()\r\n            memoryListBackup[guid].rot = obj.getRotation()\r\n            memoryListBackup[guid].lock = obj.getLock()\r\n        end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    memoryList = memoryListBackup\r\n    updateSave()\r\nend\r\n\r\n--Resets bag to starting status\r\nfunction buttonClick_reset()\r\n    fresh = true\r\n    memoryList = {}\r\n    self.clearButtons()\r\n    createSetupButton()\r\n    removeAllHighlights()\r\n    broadcastToAll(\"Tool Reset\", {1,1,1})\r\n    updateSave()\r\nend\r\n\r\n\r\n--After Setup\r\n\r\n\r\n--Creates recall and place buttons\r\nfunction createMemoryActionButtons()\r\n    self.createButton({\r\n        label=\"Place\", click_function=\"buttonClick_place\", function_owner=self,\r\n        position={0.6,0.1,2.1}, rotation={0,0,0}, height=220, width=500,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n    self.createButton({\r\n        label=\"Recall\", click_function=\"buttonClick_recall\", function_owner=self,\r\n        position={-0.6,0.1,2.1}, rotation={0,0,0}, height=220, width=500,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n    self.createButton({\r\n        label=\"Setup\", click_function=\"buttonClick_setup\", function_owner=self,\r\n        position={0,0.1,-2.1}, rotation={0,0,0}, height=220, width=500,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n---    self.createButton({\r\n---      label=\"Move\", click_function=\"buttonClick_transpose\", function_owner=self,\r\n---      position={-2.8,0.3,0}, rotation={0,0,0}, height=350, width=800,\r\n---      font_size=250, color={0,0,0}, font_color={0.75,0.75,1}\r\n---    })\r\nend\r\n\r\n--Sends objects from bag/table to their saved position/rotation\r\nfunction buttonClick_place()\r\n    local bagObjList = self.getObjects()\r\n    for guid, entry in pairs(memoryList) do\r\n        local obj = getObjectFromGUID(guid)\r\n        --If obj is out on the table, move it to the saved pos/rot\r\n        if obj ~= nil then\r\n            obj.setPositionSmooth(entry.pos)\r\n            obj.setRotationSmooth(entry.rot)\r\n            obj.setLock(entry.lock)\r\n        else\r\n            --If obj is inside of the bag\r\n            for _, bagObj in ipairs(bagObjList) do\r\n                if bagObj.guid == guid then\r\n                    local item = self.takeObject({\r\n                        guid=guid, position=entry.pos, rotation=entry.rot, smooth=false\r\n                    })\r\n                    item.setLock(entry.lock)\r\n                    break\r\n                end\r\n            end\r\n        end\r\n    end\r\n    broadcastToAll(\"Objects Placed\", {1,1,1})\r\nend\r\n\r\n--Recalls objects to bag from table\r\nfunction buttonClick_recall()\r\n    for guid, entry in pairs(memoryList) do\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then self.putObject(obj) end\r\n    end\r\n    broadcastToAll(\"Objects Recalled\", {1,1,1})\r\nend\r\n\r\n\r\n--Utility functions\r\n\r\n\r\n--Find delta (difference) between 2 x/y/z coordinates\r\nfunction findOffsetDistance(p1, p2, obj)\r\n    local yOffset = 0\r\n    if obj ~= nil then\r\n        local bounds = obj.getBounds()\r\n        yOffset = (bounds.size.y - bounds.offset.y)\r\n    end\r\n    local deltaPos = {}\r\n    deltaPos.x = (p2.x-p1.x)\r\n    deltaPos.y = (p2.y-p1.y) + yOffset\r\n    deltaPos.z = (p2.z-p1.z)\r\n    return deltaPos\r\nend\r\n\r\n--Used to rotate a set of coordinates by an angle\r\nfunction rotateLocalCoordinates(desiredPos, obj)\r\n\tlocal objPos, objRot = obj.getPosition(), obj.getRotation()\r\n    local angle = math.rad(objRot.y)\r\n\tlocal x = desiredPos.x * math.cos(angle) - desiredPos.z * math.sin(angle)\r\n\tlocal z = desiredPos.x * math.sin(angle) + desiredPos.z * math.cos(angle)\r\n\t--return {x=objPos.x+x, y=objPos.y+desiredPos.y, z=objPos.z+z}\r\n    return {x=x, y=desiredPos.y, z=z}\r\nend\r\n\r\nfunction rotateMyCoordinates(desiredPos, obj)\r\n\tlocal angle = math.rad(obj.getRotation().y)\r\n  local x = desiredPos.x * math.sin(angle)\r\n\tlocal z = desiredPos.z * math.cos(angle)\r\n    return {x=x, y=desiredPos.y, z=z}\r\nend\r\n\r\n--Coroutine delay, in seconds\r\nfunction wait(time)\r\n    local start = os.time()\r\n    repeat coroutine.yield(0) until os.time() > start + time\r\nend\r\n\r\n--Duplicates a table (needed to prevent it making reference to the same objects)\r\nfunction duplicateTable(oldTable)\r\n    local newTable = {}\r\n    for k, v in pairs(oldTable) do\r\n        newTable[k] = v\r\n    end\r\n    return newTable\r\nend\r\n\r\n--Moves scripted highlight from all objects\r\nfunction removeAllHighlights()\r\n    for _, obj in ipairs(getAllObjects()) do\r\n        obj.highlightOff()\r\n    end\r\nend\r\n\r\n--Round number (num) to the Nth decimal (dec)\r\nfunction round(num, dec)\r\n  local mult = 10^(dec or 0)\r\n  return math.floor(num * mult + 0.5) / mult\r\nend",
-  "LuaScriptState": "{\"ml\":{\"00dd71\":{\"lock\":false,\"pos\":{\"x\":-26.2173,\"y\":1.3086,\"z\":-72.6577},\"rot\":{\"x\":0.0208,\"y\":269.9999,\"z\":0.0168}},\"02c883\":{\"lock\":false,\"pos\":{\"x\":32.9852867126465,\"y\":1.29030799865723,\"z\":-84.2082672119141},\"rot\":{\"x\":0.0208085179328918,\"y\":269.999694824219,\"z\":0.0167710538953543}},\"02fc01\":{\"lock\":false,\"pos\":{\"x\":40.2900657653809,\"y\":1.29565036296844,\"z\":-75.0199737548828},\"rot\":{\"x\":0.0208079405128956,\"y\":270.002380371094,\"z\":0.016771974042058}},\"04b54a\":{\"lock\":false,\"pos\":{\"x\":32.9853057861328,\"y\":1.28963470458984,\"z\":-86.5082473754883},\"rot\":{\"x\":0.0208087041974068,\"y\":269.999176025391,\"z\":0.0167708452790976}},\"099880\":{\"lock\":false,\"pos\":{\"x\":52.9442138671875,\"y\":1.30697846412659,\"z\":-52.020336151123},\"rot\":{\"x\":0.0208041202276945,\"y\":270.0146484375,\"z\":0.0167763698846102}},\"0a5bc6\":{\"lock\":false,\"pos\":{\"x\":32.9852905273438,\"y\":1.30107951164246,\"z\":-47.4095573425293},\"rot\":{\"x\":0.0208172313868999,\"y\":269.969665527344,\"z\":0.0167601872235537}},\"0d6af3\":{\"lock\":false,\"pos\":{\"x\":32.9853057861328,\"y\":1.29300093650818,\"z\":-75.0083694458008},\"rot\":{\"x\":0.0208143349736929,\"y\":269.979888916016,\"z\":0.0167639516294003}},\"10020b\":{\"lock\":false,\"pos\":{\"x\":40.2900772094727,\"y\":1.30238282680511,\"z\":-52.0199775695801},\"rot\":{\"x\":0.0208036676049232,\"y\":270.016662597656,\"z\":0.0167774055153131}},\"19633b\":{\"lock\":false,\"pos\":{\"x\":58.0997085571289,\"y\":1.29873728752136,\"z\":-86.5708847045898},\"rot\":{\"x\":0.0208085551857948,\"y\":269.999694824219,\"z\":0.0167710352689028}},\"1dae6f\":{\"lock\":false,\"pos\":{\"x\":49.278491973877,\"y\":1.29555189609528,\"z\":-86.5086517333984},\"rot\":{\"x\":0.0208086501806974,\"y\":269.999603271484,\"z\":0.0167709235101938}},\"1f94f7\":{\"lock\":false,\"pos\":{\"x\":52.9442329406738,\"y\":1.30832493305206,\"z\":-47.4203338623047},\"rot\":{\"x\":0.020806897431612,\"y\":270.005187988281,\"z\":0.016773022711277}},\"23c1b4\":{\"lock\":false,\"pos\":{\"x\":-16.8891,\"y\":1.349,\"z\":-70.5804},\"rot\":{\"x\":0.0208,\"y\":269.9834,\"z\":0.0168}},\"267a1b\":{\"lock\":false,\"pos\":{\"x\":52.9442253112793,\"y\":1.30159246921539,\"z\":-70.4201965332031},\"rot\":{\"x\":0.0208076927810907,\"y\":270.002288818359,\"z\":0.0167718902230263}},\"268843\":{\"lock\":false,\"pos\":{\"x\":25.6118,\"y\":1.4599,\"z\":-36.9581},\"rot\":{\"x\":359.9201,\"y\":270.0034,\"z\":0.0169}},\"269ab3\":{\"lock\":false,\"pos\":{\"x\":29.3400764465332,\"y\":1.29369676113129,\"z\":-68.1084594726563},\"rot\":{\"x\":0.020807845517993,\"y\":270.002258300781,\"z\":0.016771798953414}},\"2be496\":{\"lock\":false,\"pos\":{\"x\":49.2784957885742,\"y\":1.30161106586456,\"z\":-65.8086547851563},\"rot\":{\"x\":0.0208078343421221,\"y\":270.002349853516,\"z\":0.0167720001190901}},\"2cb6e7\":{\"lock\":false,\"pos\":{\"x\":32.969612121582,\"y\":1.28895890712738,\"z\":-88.7976989746094},\"rot\":{\"x\":0.0208085589110851,\"y\":270,\"z\":0.0167711675167084}},\"2f3aba\":{\"lock\":false,\"pos\":{\"x\":32.9852867126465,\"y\":1.2923276424408,\"z\":-77.3083038330078},\"rot\":{\"x\":0.0208077318966389,\"y\":270.002258300781,\"z\":0.0167720075696707}},\"337650\":{\"lock\":false,\"pos\":{\"x\":49.2784957885742,\"y\":1.29622519016266,\"z\":-84.2086486816406},\"rot\":{\"x\":0.0208088215440512,\"y\":269.999420166016,\"z\":0.0167708713561296}},\"33eb6e\":{\"lock\":false,\"pos\":{\"x\":49.2784957885742,\"y\":1.30632376670837,\"z\":-49.7088050842285},\"rot\":{\"x\":0.0208075325936079,\"y\":270.003967285156,\"z\":0.0167726073414087}},\"340ad1\":{\"lock\":false,\"pos\":{\"x\":49.2784957885742,\"y\":1.30699694156647,\"z\":-47.4087791442871},\"rot\":{\"x\":0.020807271823287,\"y\":270.003662109375,\"z\":0.0167726241052151}},\"349045\":{\"lock\":false,\"pos\":{\"x\":29.3400764465332,\"y\":1.29100382328033,\"z\":-77.3084869384766},\"rot\":{\"x\":0.0208077188581228,\"y\":270.00244140625,\"z\":0.0167720038443804}},\"3752df\":{\"lock\":false,\"pos\":{\"x\":52.9442253112793,\"y\":1.29889953136444,\"z\":-79.620231628418},\"rot\":{\"x\":0.0208082459867001,\"y\":270.001159667969,\"z\":0.016771487891674}},\"395a86\":{\"lock\":false,\"pos\":{\"x\":-26.2173,\"y\":1.308,\"z\":-74.9452},\"rot\":{\"x\":0.0208,\"y\":269.9999,\"z\":0.0168}},\"3d228c\":{\"lock\":false,\"pos\":{\"x\":40.290111541748,\"y\":1.2922842502594,\"z\":-86.519889831543},\"rot\":{\"x\":0.0208086185157299,\"y\":269.999420166016,\"z\":0.0167709197849035}},\"3d5eba\":{\"lock\":false,\"pos\":{\"x\":32.9853057861328,\"y\":1.29434740543365,\"z\":-70.4082565307617},\"rot\":{\"x\":0.0208110846579075,\"y\":269.991394042969,\"z\":0.0167681761085987}},\"3e7287\":{\"lock\":false,\"pos\":{\"x\":32.9853057861328,\"y\":1.29502069950104,\"z\":-68.1082534790039},\"rot\":{\"x\":0.020812900736928,\"y\":269.984924316406,\"z\":0.0167657155543566}},\"3f0180\":{\"lock\":false,\"pos\":{\"x\":29.3400592803955,\"y\":1.29908239841461,\"z\":-49.7096290588379},\"rot\":{\"x\":0.0208098068833351,\"y\":269.99609375,\"z\":0.0167696662247181}},\"412cf1\":{\"lock\":false,\"pos\":{\"x\":49.2784957885742,\"y\":1.30295753479004,\"z\":-61.2087898254395},\"rot\":{\"x\":0.0208124928176403,\"y\":269.986267089844,\"z\":0.0167661942541599}},\"41ee84\":{\"lock\":false,\"pos\":{\"x\":36.6243591308594,\"y\":1.29297626018524,\"z\":-79.608268737793},\"rot\":{\"x\":0.0208076797425747,\"y\":270.002807617188,\"z\":0.0167722273617983}},\"43ad41\":{\"lock\":false,\"pos\":{\"x\":52.9441375732422,\"y\":1.29755306243896,\"z\":-84.2202224731445},\"rot\":{\"x\":0.0208086110651493,\"y\":269.999877929688,\"z\":0.016771350055933}},\"43c2c3\":{\"lock\":false,\"pos\":{\"x\":52.9442291259766,\"y\":1.30293905735016,\"z\":-65.8201904296875},\"rot\":{\"x\":0.0208077672868967,\"y\":270.00244140625,\"z\":0.0167718306183815}},\"459f81\":{\"lock\":false,\"pos\":{\"x\":45.6394691467285,\"y\":1.29759645462036,\"z\":-75.0087127685547},\"rot\":{\"x\":0.0208079051226377,\"y\":270.002746582031,\"z\":0.0167721528559923}},\"4634ae\":{\"lock\":false,\"pos\":{\"x\":40.2742729187012,\"y\":1.29160833358765,\"z\":-88.8093566894531},\"rot\":{\"x\":0.0208088494837284,\"y\":269.999267578125,\"z\":0.0167710669338703}},\"465927\":{\"lock\":false,\"pos\":{\"x\":49.2785148620605,\"y\":1.30363082885742,\"z\":-58.9087753295898},\"rot\":{\"x\":0.0208077151328325,\"y\":270.002380371094,\"z\":0.0167719814926386}},\"473c08\":{\"lock\":false,\"pos\":{\"x\":52.9442253112793,\"y\":1.29957282543182,\"z\":-77.3202285766602},\"rot\":{\"x\":0.0208078902214766,\"y\":270.002258300781,\"z\":0.0167719908058643}},\"48009b\":{\"lock\":false,\"pos\":{\"x\":45.6394691467285,\"y\":1.29423034191132,\"z\":-86.5085906982422},\"rot\":{\"x\":0.0208089146763086,\"y\":269.999267578125,\"z\":0.0167709197849035}},\"487284\":{\"lock\":false,\"pos\":{\"x\":36.6086502075195,\"y\":1.29028046131134,\"z\":-88.7977523803711},\"rot\":{\"x\":0.0208086613565683,\"y\":269.9990234375,\"z\":0.0167708974331617}},\"4b6428\":{\"lock\":false,\"pos\":{\"x\":58.0996742248535,\"y\":1.30479645729065,\"z\":-65.8708190917969},\"rot\":{\"x\":0.0208076778799295,\"y\":270.002380371094,\"z\":0.0167720541357994}},\"4c0584\":{\"lock\":false,\"pos\":{\"x\":33.201171875,\"y\":1.28776490688324,\"z\":-93.1638031005859},\"rot\":{\"x\":0.0208169016987085,\"y\":269.971801757813,\"z\":0.0167610067874193}},\"4d182c\":{\"lock\":false,\"pos\":{\"x\":58.0995712280273,\"y\":1.29941058158875,\"z\":-84.270866394043},\"rot\":{\"x\":0.0208090059459209,\"y\":269.999145507813,\"z\":0.0167708732187748}},\"4d5596\":{\"lock\":false,\"pos\":{\"x\":58.0996742248535,\"y\":1.3021035194397,\"z\":-75.0709533691406},\"rot\":{\"x\":0.0208080522716045,\"y\":270.001251220703,\"z\":0.0167717095464468}},\"4f1c7e\":{\"lock\":false,\"pos\":{\"x\":32.9853057861328,\"y\":1.29569387435913,\"z\":-65.8082504272461},\"rot\":{\"x\":0.0208077598363161,\"y\":270.002380371094,\"z\":0.0167720690369606}},\"5cbb02\":{\"lock\":false,\"pos\":{\"x\":58.0996894836426,\"y\":1.3074893951416,\"z\":-56.6709594726563},\"rot\":{\"x\":0.0208077803254128,\"y\":270.002288818359,\"z\":0.016772024333477}},\"5ccbc7\":{\"lock\":false,\"pos\":{\"x\":32.9852867126465,\"y\":1.29771363735199,\"z\":-58.9083366394043},\"rot\":{\"x\":0.0208077672868967,\"y\":270.002349853516,\"z\":0.0167721454054117}},\"5db5fb\":{\"lock\":false,\"pos\":{\"x\":58.099681854248,\"y\":1.31018245220184,\"z\":-47.4709625244141},\"rot\":{\"x\":0.0208116956055164,\"y\":269.989166259766,\"z\":0.0167670231312513}},\"5ff300\":{\"lock\":false,\"pos\":{\"x\":45.6394691467285,\"y\":1.29490351676941,\"z\":-84.2085876464844},\"rot\":{\"x\":0.0208088960498571,\"y\":269.999053955078,\"z\":0.0167708117514849}},\"639ceb\":{\"lock\":false,\"pos\":{\"x\":36.624340057373,\"y\":1.29364931583405,\"z\":-77.3083343505859},\"rot\":{\"x\":0.0208080504089594,\"y\":270.001586914063,\"z\":0.0167716555297375}},\"68fe73\":{\"lock\":false,\"pos\":{\"x\":49.2784957885742,\"y\":1.30093789100647,\"z\":-68.1086578369141},\"rot\":{\"x\":0.0208076797425747,\"y\":270.002410888672,\"z\":0.0167721286416054}},\"6bbf22\":{\"lock\":false,\"pos\":{\"x\":40.2900543212891,\"y\":1.2976701259613,\"z\":-68.1198654174805},\"rot\":{\"x\":0.0208079926669598,\"y\":270.002349853516,\"z\":0.0167719889432192}},\"70235c\":{\"lock\":false,\"pos\":{\"x\":29.3400764465332,\"y\":1.29840910434723,\"z\":-52.0096168518066},\"rot\":{\"x\":0.0208064876496792,\"y\":270.007263183594,\"z\":0.0167736392468214}},\"75f24b\":{\"lock\":false,\"pos\":{\"x\":58.099681854248,\"y\":1.30950915813446,\"z\":-49.7709503173828},\"rot\":{\"x\":0.0208070166409016,\"y\":270.004638671875,\"z\":0.0167729146778584}},\"788f24\":{\"lock\":false,\"pos\":{\"x\":40.2899627685547,\"y\":1.29295754432678,\"z\":-84.2198944091797},\"rot\":{\"x\":0.0208088979125023,\"y\":269.998901367188,\"z\":0.016770713031292}},\"7cb35b\":{\"lock\":false,\"pos\":{\"x\":40.2900505065918,\"y\":1.29430389404297,\"z\":-79.6199035644531},\"rot\":{\"x\":0.0208076313138008,\"y\":270.002807617188,\"z\":0.0167723186314106}},\"7d5da5\":{\"lock\":false,\"pos\":{\"x\":36.6243591308594,\"y\":1.29432249069214,\"z\":-75.0083999633789},\"rot\":{\"x\":0.0208078008145094,\"y\":270.00244140625,\"z\":0.0167720336467028}},\"7ea4af\":{\"lock\":false,\"pos\":{\"x\":32.9853057861328,\"y\":1.30040621757507,\"z\":-49.709545135498},\"rot\":{\"x\":0.0208124816417694,\"y\":269.987060546875,\"z\":0.016766419634223}},\"7f2a9e\":{\"lock\":false,\"pos\":{\"x\":32.9852867126465,\"y\":1.29973292350769,\"z\":-52.0095558166504},\"rot\":{\"x\":0.0208073686808348,\"y\":270.004211425781,\"z\":0.0167726278305054}},\"7fd726\":{\"lock\":false,\"pos\":{\"x\":52.9442329406738,\"y\":1.30495870113373,\"z\":-58.9203338623047},\"rot\":{\"x\":0.0208077188581228,\"y\":270.002380371094,\"z\":0.0167720317840576}},\"83824b\":{\"lock\":false,\"pos\":{\"x\":-26.2173,\"y\":1.3093,\"z\":-70.3702},\"rot\":{\"x\":0.0208,\"y\":270.0191,\"z\":0.0168}},\"886a80\":{\"lock\":false,\"pos\":{\"x\":40.2900695800781,\"y\":1.29497718811035,\"z\":-77.3198776245117},\"rot\":{\"x\":0.0208077095448971,\"y\":270.002380371094,\"z\":0.0167721137404442}},\"8b4374\":{\"lock\":false,\"pos\":{\"x\":36.6243591308594,\"y\":1.2956690788269,\"z\":-70.4082870483398},\"rot\":{\"x\":0.0208064690232277,\"y\":270.007598876953,\"z\":0.0167738925665617}},\"8b8aa1\":{\"lock\":false,\"pos\":{\"x\":29.3400764465332,\"y\":1.2930234670639,\"z\":-70.4084625244141},\"rot\":{\"x\":0.0208078846335411,\"y\":270.002380371094,\"z\":0.0167720504105091}},\"911810\":{\"lock\":false,\"pos\":{\"x\":52.9284477233887,\"y\":1.29620397090912,\"z\":-88.809684753418},\"rot\":{\"x\":0.0208090245723724,\"y\":269.998962402344,\"z\":0.0167707987129688}},\"97fcaf\":{\"lock\":false,\"pos\":{\"x\":40.2900695800781,\"y\":1.29699695110321,\"z\":-70.4198455810547},\"rot\":{\"x\":0.0208094101399183,\"y\":269.996856689453,\"z\":0.0167702175676823}},\"98fdce\":{\"lock\":false,\"pos\":{\"x\":40.2901344299316,\"y\":1.30373060703278,\"z\":-47.415901184082},\"rot\":{\"x\":0.0208132360130548,\"y\":269.983825683594,\"z\":0.0167652443051338}},\"9c599b\":{\"lock\":false,\"pos\":{\"x\":29.6464405059814,\"y\":1.28647398948669,\"z\":-93.163818359375},\"rot\":{\"x\":0.0208141412585974,\"y\":269.98095703125,\"z\":0.0167641583830118}},\"9d3cb8\":{\"lock\":false,\"pos\":{\"x\":40.2900276184082,\"y\":1.30305814743042,\"z\":-49.7128028869629},\"rot\":{\"x\":0.020798534154892,\"y\":270.034362792969,\"z\":0.0167835876345634}},\"9d50cf\":{\"lock\":false,\"pos\":{\"x\":36.6243591308594,\"y\":1.296342253685,\"z\":-68.108283996582},\"rot\":{\"x\":0.0208082608878613,\"y\":270.000854492188,\"z\":0.0167714674025774}},\"9f71b2\":{\"lock\":false,\"pos\":{\"x\":49.2785148620605,\"y\":1.30565047264099,\"z\":-52.0087585449219},\"rot\":{\"x\":0.020803464576602,\"y\":270.017059326172,\"z\":0.016777329146862}},\"9facb8\":{\"lock\":false,\"pos\":{\"x\":49.2785148620605,\"y\":1.29757165908813,\"z\":-79.6086196899414},\"rot\":{\"x\":0.0208079144358635,\"y\":270.00244140625,\"z\":0.0167720317840576}},\"9feaf2\":{\"lock\":false,\"pos\":{\"x\":29.3400802612305,\"y\":1.29975557327271,\"z\":-47.4096183776855},\"rot\":{\"x\":0.0208071246743202,\"y\":270.004577636719,\"z\":0.0167729370296001}},\"a06986\":{\"lock\":false,\"pos\":{\"x\":-16.8891,\"y\":1.3493,\"z\":-69.5747},\"rot\":{\"x\":0.0208,\"y\":269.989,\"z\":0.0168}},\"a46c2b\":{\"lock\":false,\"pos\":{\"x\":29.3400764465332,\"y\":1.29706299304962,\"z\":-56.6083946228027},\"rot\":{\"x\":0.0208078809082508,\"y\":270.002349853516,\"z\":0.0167719107121229}},\"a6306e\":{\"lock\":false,\"pos\":{\"x\":49.2785148620605,\"y\":1.30430400371552,\"z\":-56.608772277832},\"rot\":{\"x\":0.0208077989518642,\"y\":270.002380371094,\"z\":0.0167720001190901}},\"a8db40\":{\"lock\":false,\"pos\":{\"x\":45.6394691467285,\"y\":1.30298244953156,\"z\":-56.6086692810059},\"rot\":{\"x\":0.0208078250288963,\"y\":270.002349853516,\"z\":0.0167721584439278}},\"a9a0c8\":{\"lock\":false,\"pos\":{\"x\":49.2628059387207,\"y\":1.29487609863281,\"z\":-88.7981033325195},\"rot\":{\"x\":0.0208089780062437,\"y\":269.998779296875,\"z\":0.0167707093060017}},\"ad0691\":{\"lock\":false,\"pos\":{\"x\":40.2900619506836,\"y\":1.30103635787964,\"z\":-56.6199951171875},\"rot\":{\"x\":0.0208078436553478,\"y\":270.002380371094,\"z\":0.0167722105979919}},\"ad7249\":{\"lock\":false,\"pos\":{\"x\":-26.2173,\"y\":1.31,\"z\":-68.0826},\"rot\":{\"x\":0.0208,\"y\":269.9904,\"z\":0.0168}},\"ad95fd\":{\"lock\":false,\"pos\":{\"x\":36.6243591308594,\"y\":1.3017281293869,\"z\":-49.7084465026855},\"rot\":{\"x\":0.0208177231252193,\"y\":269.96923828125,\"z\":0.0167600549757481}},\"b06863\":{\"lock\":false,\"pos\":{\"x\":-19.2959,\"y\":1.3122,\"z\":-69.0607},\"rot\":{\"x\":0.0208,\"y\":269.9965,\"z\":0.0168}},\"b0dd94\":{\"lock\":false,\"pos\":{\"x\":40.2900695800781,\"y\":1.29968988895416,\"z\":-61.2199897766113},\"rot\":{\"x\":0.0208128429949284,\"y\":269.986083984375,\"z\":0.0167661905288696}},\"b221a7\":{\"lock\":false,\"pos\":{\"x\":29.3400592803955,\"y\":1.29436993598938,\"z\":-65.808479309082},\"rot\":{\"x\":0.0208077821880579,\"y\":270.002380371094,\"z\":0.0167720317840576}},\"b3d984\":{\"lock\":false,\"pos\":{\"x\":36.624340057373,\"y\":1.30105495452881,\"z\":-52.0084228515625},\"rot\":{\"x\":0.0208045300096273,\"y\":270.013397216797,\"z\":0.0167760979384184}},\"b47adf\":{\"lock\":false,\"pos\":{\"x\":58.0996742248535,\"y\":1.30412328243256,\"z\":-68.1708221435547},\"rot\":{\"x\":0.0208166688680649,\"y\":269.972290039063,\"z\":0.0167610011994839}},\"b826dd\":{\"lock\":false,\"pos\":{\"x\":49.2785148620605,\"y\":1.30026459693909,\"z\":-70.4086456298828},\"rot\":{\"x\":0.020807733759284,\"y\":270.002532958984,\"z\":0.0167719628661871}},\"bae0d4\":{\"lock\":false,\"pos\":{\"x\":36.6243591308594,\"y\":1.29701554775238,\"z\":-65.8082809448242},\"rot\":{\"x\":0.020808219909668,\"y\":270.000854492188,\"z\":0.0167713537812233}},\"bb7677\":{\"lock\":false,\"pos\":{\"x\":-22.6157,\"y\":1.311,\"z\":-69.0756},\"rot\":{\"x\":0.0208,\"y\":270.0023,\"z\":0.0168}},\"bf9817\":{\"lock\":false,\"pos\":{\"x\":36.624340057373,\"y\":1.29903519153595,\"z\":-58.9084396362305},\"rot\":{\"x\":0.0208145510405302,\"y\":269.979431152344,\"z\":0.0167637746781111}},\"c24c0f\":{\"lock\":false,\"pos\":{\"x\":26.107120513916,\"y\":1.28520059585571,\"z\":-93.1228866577148},\"rot\":{\"x\":0.020803477615118,\"y\":270.016937255859,\"z\":0.0167773775756359}},\"c27ee4\":{\"lock\":false,\"pos\":{\"x\":52.9442367553711,\"y\":1.30563199520111,\"z\":-56.6203308105469},\"rot\":{\"x\":0.0208133868873119,\"y\":269.9833984375,\"z\":0.0167651195079088}},\"c6629b\":{\"lock\":false,\"pos\":{\"x\":52.944221496582,\"y\":1.30024600028992,\"z\":-75.0203247070313},\"rot\":{\"x\":0.0208077225834131,\"y\":270.002410888672,\"z\":0.0167720802128315}},\"c9bc29\":{\"lock\":false,\"pos\":{\"x\":-16.8891,\"y\":1.3496,\"z\":-68.5691},\"rot\":{\"x\":0.0208,\"y\":270.0074,\"z\":0.0168}},\"cc9f3e\":{\"lock\":false,\"pos\":{\"x\":52.944206237793,\"y\":1.30428540706635,\"z\":-61.2203483581543},\"rot\":{\"x\":0.0208137333393097,\"y\":269.982269287109,\"z\":0.0167646743357182}},\"ccd2d7\":{\"lock\":false,\"pos\":{\"x\":29.3400802612305,\"y\":1.29638969898224,\"z\":-58.9083938598633},\"rot\":{\"x\":0.0208111088722944,\"y\":269.991333007813,\"z\":0.0167681202292442}},\"d5060d\":{\"lock\":false,\"pos\":{\"x\":32.9852867126465,\"y\":1.2916544675827,\"z\":-79.6082611083984},\"rot\":{\"x\":0.0208071451634169,\"y\":270.004455566406,\"z\":0.016772773116827}},\"d5a551\":{\"lock\":false,\"pos\":{\"x\":58.0996742248535,\"y\":1.3014303445816,\"z\":-77.3708572387695},\"rot\":{\"x\":0.0208079069852829,\"y\":270.002288818359,\"z\":0.0167720541357994}},\"d7edae\":{\"lock\":false,\"pos\":{\"x\":41.3516998291016,\"y\":1.43921434879303,\"z\":-32.6269416809082},\"rot\":{\"x\":359.920135498047,\"y\":270.003204345703,\"z\":0.0168775394558907}},\"d92dde\":{\"lock\":false,\"pos\":{\"x\":40.2900581359863,\"y\":1.30036306381226,\"z\":-58.9199981689453},\"rot\":{\"x\":0.0208116788417101,\"y\":269.988830566406,\"z\":0.0167670734226704}},\"dc8ab9\":{\"lock\":false,\"pos\":{\"x\":29.3400592803955,\"y\":1.29167699813843,\"z\":-75.0085983276367},\"rot\":{\"x\":0.0208077263087034,\"y\":270.002380371094,\"z\":0.0167721174657345}},\"dd5a8d\":{\"lock\":false,\"pos\":{\"x\":29.3400764465332,\"y\":1.29571652412415,\"z\":-61.2084007263184},\"rot\":{\"x\":0.0208144672214985,\"y\":269.979370117188,\"z\":0.0167636964470148}},\"e10da6\":{\"lock\":false,\"pos\":{\"x\":36.624340057373,\"y\":1.29095637798309,\"z\":-86.50830078125},\"rot\":{\"x\":0.0208088885992765,\"y\":269.998687744141,\"z\":0.016770800575614}},\"e338d7\":{\"lock\":false,\"pos\":{\"x\":-26.2173,\"y\":1.3113,\"z\":-63.5077},\"rot\":{\"x\":0.0208,\"y\":270.0022,\"z\":0.0168}},\"e4fc98\":{\"lock\":false,\"pos\":{\"x\":32.9853057861328,\"y\":1.29704034328461,\"z\":-61.2083282470703},\"rot\":{\"x\":0.0208131168037653,\"y\":269.984497070313,\"z\":0.016765546053648}},\"e5bd5d\":{\"lock\":false,\"pos\":{\"x\":49.2784957885742,\"y\":1.29891812801361,\"z\":-75.0087738037109},\"rot\":{\"x\":0.0208078045397997,\"y\":270.002319335938,\"z\":0.0167719461023808}},\"e618ab\":{\"lock\":false,\"pos\":{\"x\":36.624340057373,\"y\":1.29162955284119,\"z\":-84.2082977294922},\"rot\":{\"x\":0.0208089463412762,\"y\":269.998657226563,\"z\":0.0167708601802588}},\"e7c879\":{\"lock\":false,\"pos\":{\"x\":49.2784957885742,\"y\":1.29824483394623,\"z\":-77.3086853027344},\"rot\":{\"x\":0.0208076257258654,\"y\":270.00244140625,\"z\":0.0167721770703793}},\"e910b0\":{\"lock\":false,\"pos\":{\"x\":-16.8891,\"y\":1.3499,\"z\":-67.5635},\"rot\":{\"x\":0.0208,\"y\":269.9978,\"z\":0.0168}},\"e969d6\":{\"lock\":false,\"pos\":{\"x\":36.624340057373,\"y\":1.29836189746857,\"z\":-61.2084426879883},\"rot\":{\"x\":0.0208120793104172,\"y\":269.987731933594,\"z\":0.0167666524648666}},\"ebc809\":{\"lock\":false,\"pos\":{\"x\":-26.2173,\"y\":1.3106,\"z\":-65.7951},\"rot\":{\"x\":0.0208,\"y\":269.9984,\"z\":0.0168}},\"ed565f\":{\"lock\":false,\"pos\":{\"x\":52.9442481994629,\"y\":1.29687976837158,\"z\":-86.520263671875},\"rot\":{\"x\":0.0208090785890818,\"y\":269.998687744141,\"z\":0.0167706850916147}},\"ef4d67\":{\"lock\":false,\"pos\":{\"x\":32.9852867126465,\"y\":1.29838681221008,\"z\":-56.6083335876465},\"rot\":{\"x\":0.0208145845681429,\"y\":269.979370117188,\"z\":0.0167634636163712}},\"f328e1\":{\"lock\":false,\"pos\":{\"x\":52.9442367553711,\"y\":1.30765187740326,\"z\":-49.7196083068848},\"rot\":{\"x\":0.0208082105964422,\"y\":270.001281738281,\"z\":0.0167715921998024}},\"f883a7\":{\"lock\":false,\"pos\":{\"x\":40.2900733947754,\"y\":1.29834342002869,\"z\":-65.8198394775391},\"rot\":{\"x\":0.0208077020943165,\"y\":270.002410888672,\"z\":0.0167720913887024}},\"f8e834\":{\"lock\":false,\"pos\":{\"x\":36.624340057373,\"y\":1.29970848560333,\"z\":-56.6084365844727},\"rot\":{\"x\":0.0208153408020735,\"y\":269.976440429688,\"z\":0.016762575134635}},\"f9302c\":{\"lock\":false,\"pos\":{\"x\":40.2985038757324,\"y\":1.2903425693512,\"z\":-93.1637954711914},\"rot\":{\"x\":0.0208130273967981,\"y\":269.984436035156,\"z\":0.0167654659599066}},\"f93232\":{\"lock\":false,\"pos\":{\"x\":29.3400592803955,\"y\":1.28898406028748,\"z\":-84.2084732055664},\"rot\":{\"x\":0.0208086147904396,\"y\":269.999938964844,\"z\":0.0167710352689028}},\"fa6c1a\":{\"lock\":false,\"pos\":{\"x\":36.7542610168457,\"y\":1.28905892372131,\"z\":-93.1517944335938},\"rot\":{\"x\":0.0208184327930212,\"y\":269.96630859375,\"z\":0.0167590919882059}},\"faed96\":{\"lock\":false,\"pos\":{\"x\":36.6243591308594,\"y\":1.30240142345428,\"z\":-47.4084205627441},\"rot\":{\"x\":0.0208073873072863,\"y\":270.004211425781,\"z\":0.0167727507650852}},\"fde4dd\":{\"lock\":false,\"pos\":{\"x\":52.9442291259766,\"y\":1.30226576328278,\"z\":-68.1201934814453},\"rot\":{\"x\":0.0208078939467669,\"y\":270.002471923828,\"z\":0.0167719721794128}}}}",
+  "LuaScriptState": "{\"ml\":{\"02c883\":{\"lock\":false,\"pos\":{\"x\":27.1277561187744,\"y\":1.49510383605957,\"z\":1.21214985847473},\"rot\":{\"x\":-4.14149461391844E-08,\"y\":270.003662109375,\"z\":5.72798626308213E-07}},\"02fc01\":{\"lock\":false,\"pos\":{\"x\":34.4325332641602,\"y\":1.49510383605957,\"z\":10.4004344940186},\"rot\":{\"x\":-3.51651635810413E-07,\"y\":270.006134033203,\"z\":-1.37707513658825E-06}},\"04b54a\":{\"lock\":false,\"pos\":{\"x\":27.1277751922607,\"y\":1.49510383605957,\"z\":-1.08783030509949},\"rot\":{\"x\":-1.95590700968751E-07,\"y\":270.003204345703,\"z\":4.27597939278712E-07}},\"099880\":{\"lock\":false,\"pos\":{\"x\":47.0866737365723,\"y\":1.49510383605957,\"z\":33.4000701904297},\"rot\":{\"x\":-6.0487245434615E-08,\"y\":270.017944335938,\"z\":-2.57313132578929E-07}},\"0a5bc6\":{\"lock\":false,\"pos\":{\"x\":27.1277523040771,\"y\":1.49510383605957,\"z\":38.010856628418},\"rot\":{\"x\":-1.31120231117166E-07,\"y\":269.973205566406,\"z\":-2.51859148647782E-07}},\"0d6af3\":{\"lock\":false,\"pos\":{\"x\":27.1277713775635,\"y\":1.49510383605957,\"z\":10.4120464324951},\"rot\":{\"x\":-1.70637164842447E-07,\"y\":269.983764648438,\"z\":-1.10898531602288E-06}},\"10020b\":{\"lock\":false,\"pos\":{\"x\":34.4325408935547,\"y\":1.49510383605957,\"z\":33.4004364013672},\"rot\":{\"x\":2.94697488634199E-10,\"y\":270.020141601563,\"z\":-4.76610694022384E-07}},\"19633b\":{\"lock\":false,\"pos\":{\"x\":52.2421760559082,\"y\":1.49510383605957,\"z\":-1.15047526359558},\"rot\":{\"x\":-2.02476357458181E-07,\"y\":270.003356933594,\"z\":-1.42171018069348E-06}},\"1dae6f\":{\"lock\":false,\"pos\":{\"x\":43.4209594726563,\"y\":1.49510383605957,\"z\":-1.08824229240417},\"rot\":{\"x\":-1.29027569073514E-07,\"y\":270.003356933594,\"z\":-1.19638616524753E-06}},\"1f94f7\":{\"lock\":false,\"pos\":{\"x\":47.0866928100586,\"y\":1.49510383605957,\"z\":38.0000686645508},\"rot\":{\"x\":-8.62802025380915E-08,\"y\":270.008422851563,\"z\":-3.10692087168718E-07}},\"267a1b\":{\"lock\":false,\"pos\":{\"x\":47.0866889953613,\"y\":1.49510383605957,\"z\":15.0002040863037},\"rot\":{\"x\":-1.26414967382971E-08,\"y\":270.005828857422,\"z\":-1.78239517367729E-07}},\"268843\":{\"lock\":false,\"pos\":{\"x\":80.106575012207,\"y\":1.16996228694916,\"z\":-31.0283088684082},\"rot\":{\"x\":-3.25647124554962E-05,\"y\":270.003326416016,\"z\":-4.41103082948757E-07}},\"269ab3\":{\"lock\":false,\"pos\":{\"x\":23.4825420379639,\"y\":1.49510383605957,\"z\":17.3119640350342},\"rot\":{\"x\":-1.35618094532219E-07,\"y\":270.006072998047,\"z\":-1.57821511947986E-06}},\"2be496\":{\"lock\":false,\"pos\":{\"x\":43.4209594726563,\"y\":1.49510383605957,\"z\":19.6117534637451},\"rot\":{\"x\":-4.45780194979761E-08,\"y\":270.005859375,\"z\":-3.12673137159436E-07}},\"2cb6e7\":{\"lock\":false,\"pos\":{\"x\":27.11208152771,\"y\":1.49510383605957,\"z\":-3.37727427482605},\"rot\":{\"x\":-1.83306610779255E-07,\"y\":270.004028320313,\"z\":-1.65376332006417E-06}},\"2f3aba\":{\"lock\":false,\"pos\":{\"x\":27.1277523040771,\"y\":1.49510383605957,\"z\":8.11211204528809},\"rot\":{\"x\":-3.95111356965572E-07,\"y\":270.006164550781,\"z\":-4.46490787453513E-07}},\"337650\":{\"lock\":false,\"pos\":{\"x\":43.4209594726563,\"y\":1.49510383605957,\"z\":1.21176064014435},\"rot\":{\"x\":1.98981069843285E-07,\"y\":270.003173828125,\"z\":-6.27183283086197E-07}},\"33eb6e\":{\"lock\":false,\"pos\":{\"x\":43.420955657959,\"y\":1.49510383605957,\"z\":35.7116012573242},\"rot\":{\"x\":-1.25642216630695E-08,\"y\":270.007263183594,\"z\":-3.49934651922013E-07}},\"340ad1\":{\"lock\":false,\"pos\":{\"x\":43.420955657959,\"y\":1.49510383605957,\"z\":38.0116271972656},\"rot\":{\"x\":-1.63163605293448E-07,\"y\":270.006958007813,\"z\":-4.23588659259622E-07}},\"349045\":{\"lock\":false,\"pos\":{\"x\":23.4825458526611,\"y\":1.49510383605957,\"z\":8.11192893981934},\"rot\":{\"x\":-9.1995076445528E-08,\"y\":270.00634765625,\"z\":-1.3672664636033E-06}},\"3752df\":{\"lock\":false,\"pos\":{\"x\":47.0866928100586,\"y\":1.49510383605957,\"z\":5.80017900466919},\"rot\":{\"x\":-5.68015785518128E-08,\"y\":270.004791259766,\"z\":-1.56182125010673E-07}},\"3d228c\":{\"lock\":false,\"pos\":{\"x\":34.4325790405273,\"y\":1.49510383605957,\"z\":-1.09947276115417},\"rot\":{\"x\":-4.88786113805872E-08,\"y\":270.003295898438,\"z\":-8.49700597882475E-07}},\"3d5eba\":{\"lock\":false,\"pos\":{\"x\":27.1277713775635,\"y\":1.49510383605957,\"z\":15.0121593475342},\"rot\":{\"x\":-1.66343312457684E-07,\"y\":269.995178222656,\"z\":-1.49097672874632E-06}},\"3e7287\":{\"lock\":false,\"pos\":{\"x\":27.1277713775635,\"y\":1.49510383605957,\"z\":17.312162399292},\"rot\":{\"x\":-1.327327368017E-07,\"y\":269.988708496094,\"z\":-1.60687545758265E-06}},\"3f0180\":{\"lock\":false,\"pos\":{\"x\":23.4825229644775,\"y\":1.49510383605957,\"z\":35.7107849121094},\"rot\":{\"x\":-9.80724976784586E-08,\"y\":269.999725341797,\"z\":-1.5915345841222E-07}},\"412cf1\":{\"lock\":false,\"pos\":{\"x\":43.4209594726563,\"y\":1.49510383605957,\"z\":24.2116222381592},\"rot\":{\"x\":-1.73780762224851E-07,\"y\":269.989685058594,\"z\":-9.79096199671403E-08}},\"41ee84\":{\"lock\":false,\"pos\":{\"x\":30.76682472229,\"y\":1.49510383605957,\"z\":5.81214952468872},\"rot\":{\"x\":1.74874131175784E-07,\"y\":270.006683349609,\"z\":-3.06766395397062E-07}},\"43ad41\":{\"lock\":false,\"pos\":{\"x\":47.0866050720215,\"y\":1.49510383605957,\"z\":1.20018696784973},\"rot\":{\"x\":-1.18194655840398E-07,\"y\":270.003570556641,\"z\":-1.58367606672982E-06}},\"43c2c3\":{\"lock\":false,\"pos\":{\"x\":47.0866928100586,\"y\":1.49510383605957,\"z\":19.6002178192139},\"rot\":{\"x\":2.63335682149091E-08,\"y\":270.005920410156,\"z\":-1.54792166995321E-06}},\"459f81\":{\"lock\":false,\"pos\":{\"x\":39.7819366455078,\"y\":1.49510383605957,\"z\":10.4116954803467},\"rot\":{\"x\":-2.07794755624491E-07,\"y\":270.006439208984,\"z\":-1.43364388804912E-06}},\"4634ae\":{\"lock\":false,\"pos\":{\"x\":34.4167442321777,\"y\":1.49510383605957,\"z\":-3.38893961906433},\"rot\":{\"x\":-5.7812663101231E-08,\"y\":270.003204345703,\"z\":-1.49852280628693E-06}},\"465927\":{\"lock\":false,\"pos\":{\"x\":43.4209785461426,\"y\":1.49510383605957,\"z\":26.5116367340088},\"rot\":{\"x\":-4.63688252239081E-08,\"y\":270.005798339844,\"z\":-1.75424020198989E-07}},\"473c08\":{\"lock\":false,\"pos\":{\"x\":47.0866928100586,\"y\":1.49510383605957,\"z\":8.10017967224121},\"rot\":{\"x\":-1.18988987196644E-06,\"y\":270.005859375,\"z\":-1.81488303496735E-07}},\"48009b\":{\"lock\":false,\"pos\":{\"x\":39.7819366455078,\"y\":1.49510383605957,\"z\":-1.08817362785339},\"rot\":{\"x\":2.76182589686869E-07,\"y\":270.003112792969,\"z\":-1.47134232975077E-06}},\"487284\":{\"lock\":false,\"pos\":{\"x\":30.7511177062988,\"y\":1.49510383605957,\"z\":-3.37733507156372},\"rot\":{\"x\":-2.08990996952707E-07,\"y\":270.003021240234,\"z\":-6.96206427619472E-07}},\"4b6428\":{\"lock\":false,\"pos\":{\"x\":52.2421340942383,\"y\":1.49510383605957,\"z\":19.5495891571045},\"rot\":{\"x\":-3.19562644790494E-07,\"y\":270.005798339844,\"z\":-1.40502777412621E-06}},\"4c0584\":{\"lock\":false,\"pos\":{\"x\":27.3436450958252,\"y\":1.49510383605957,\"z\":-7.74337720870972},\"rot\":{\"x\":-2.76829325684957E-07,\"y\":269.975891113281,\"z\":-1.57578801918135E-06}},\"4d182c\":{\"lock\":false,\"pos\":{\"x\":52.2420387268066,\"y\":1.49510383605957,\"z\":1.149542927742},\"rot\":{\"x\":4.08675830954053E-08,\"y\":270.002777099609,\"z\":-4.73463643402283E-07}},\"4d5596\":{\"lock\":false,\"pos\":{\"x\":52.2421379089355,\"y\":1.49510383605957,\"z\":10.3494472503662},\"rot\":{\"x\":-7.79895401592512E-08,\"y\":270.004760742188,\"z\":-1.80070446731406E-06}},\"4f1c7e\":{\"lock\":false,\"pos\":{\"x\":27.1277713775635,\"y\":1.49510383605957,\"z\":19.6121654510498},\"rot\":{\"x\":-1.91020802731146E-07,\"y\":270.006103515625,\"z\":-1.55970792548032E-06}},\"5cbb02\":{\"lock\":false,\"pos\":{\"x\":52.2421493530273,\"y\":1.49510383605957,\"z\":28.7494487762451},\"rot\":{\"x\":1.30792550123715E-08,\"y\":270.005554199219,\"z\":-4.40059352513344E-07}},\"5ccbc7\":{\"lock\":false,\"pos\":{\"x\":27.1277523040771,\"y\":1.49510383605957,\"z\":26.5120792388916},\"rot\":{\"x\":-4.78308095352986E-08,\"y\":270.005981445313,\"z\":-1.34516290017928E-06}},\"5db5fb\":{\"lock\":false,\"pos\":{\"x\":52.2421379089355,\"y\":1.49510383605957,\"z\":37.9494400024414},\"rot\":{\"x\":-1.20186296470592E-08,\"y\":269.992340087891,\"z\":-1.5801106201252E-06}},\"5ff300\":{\"lock\":false,\"pos\":{\"x\":39.7819366455078,\"y\":1.49510383605957,\"z\":1.21182179450989},\"rot\":{\"x\":6.49021458798416E-08,\"y\":270.002838134766,\"z\":-1.75392005985486E-06}},\"639ceb\":{\"lock\":false,\"pos\":{\"x\":30.7668056488037,\"y\":1.49510383605957,\"z\":8.11208152770996},\"rot\":{\"x\":-1.17492800200125E-06,\"y\":270.005432128906,\"z\":-5.33185087192578E-08}},\"68fe73\":{\"lock\":false,\"pos\":{\"x\":43.4209594726563,\"y\":1.49510383605957,\"z\":17.3117504119873},\"rot\":{\"x\":-1.30738158077293E-07,\"y\":270.005981445313,\"z\":-1.54630640736286E-06}},\"6bbf22\":{\"lock\":false,\"pos\":{\"x\":34.4325218200684,\"y\":1.49510383605957,\"z\":17.3005504608154},\"rot\":{\"x\":-5.64233602062814E-08,\"y\":270.006042480469,\"z\":-3.39476088129231E-07}},\"70235c\":{\"lock\":false,\"pos\":{\"x\":23.4825401306152,\"y\":1.49510383605957,\"z\":33.4107971191406},\"rot\":{\"x\":-5.41037792345378E-09,\"y\":270.010925292969,\"z\":-4.72354003022701E-07}},\"75f24b\":{\"lock\":false,\"pos\":{\"x\":52.2421379089355,\"y\":1.49510383605957,\"z\":35.6494522094727},\"rot\":{\"x\":-9.70936326893934E-08,\"y\":270.007873535156,\"z\":-1.57503916398127E-06}},\"788f24\":{\"lock\":false,\"pos\":{\"x\":34.432430267334,\"y\":1.49510383605957,\"z\":1.20052266120911},\"rot\":{\"x\":-2.22732463583952E-08,\"y\":270.002777099609,\"z\":-8.9318547225048E-07}},\"7cb35b\":{\"lock\":false,\"pos\":{\"x\":34.4325180053711,\"y\":1.49510383605957,\"z\":5.80051469802856},\"rot\":{\"x\":-9.9206708625843E-08,\"y\":270.006652832031,\"z\":-3.01636873700772E-07}},\"7d5da5\":{\"lock\":false,\"pos\":{\"x\":30.7668228149414,\"y\":1.49510383605957,\"z\":10.412015914917},\"rot\":{\"x\":-6.287688734119E-07,\"y\":270.006286621094,\"z\":-3.71382498087769E-07}},\"7ea4af\":{\"lock\":false,\"pos\":{\"x\":27.1277675628662,\"y\":1.49510383605957,\"z\":35.7108688354492},\"rot\":{\"x\":-6.91909676220348E-08,\"y\":269.990661621094,\"z\":-1.84910518896686E-07}},\"7f2a9e\":{\"lock\":false,\"pos\":{\"x\":27.1277523040771,\"y\":1.49510383605957,\"z\":33.4108581542969},\"rot\":{\"x\":-4.34519762393393E-08,\"y\":270.007751464844,\"z\":-1.67066127687576E-06}},\"7fd726\":{\"lock\":false,\"pos\":{\"x\":47.0866928100586,\"y\":1.49510383605957,\"z\":26.5000743865967},\"rot\":{\"x\":-1.64149597026153E-07,\"y\":270.005737304688,\"z\":-1.50718005897943E-06}},\"886a80\":{\"lock\":false,\"pos\":{\"x\":34.4325370788574,\"y\":1.49510383605957,\"z\":8.10053062438965},\"rot\":{\"x\":-1.11585245576862E-06,\"y\":270.006164550781,\"z\":1.10953273235737E-07}},\"8b4374\":{\"lock\":false,\"pos\":{\"x\":30.76682472229,\"y\":1.49510383605957,\"z\":15.0121212005615},\"rot\":{\"x\":-2.35461811826099E-07,\"y\":270.011352539063,\"z\":-1.33333594476426E-06}},\"8b8aa1\":{\"lock\":false,\"pos\":{\"x\":23.4825439453125,\"y\":1.49510383605957,\"z\":15.0119533538818},\"rot\":{\"x\":-2.53659123927719E-07,\"y\":270.006195068359,\"z\":-1.45052081279573E-06}},\"911810\":{\"lock\":false,\"pos\":{\"x\":47.0709114074707,\"y\":1.49510383605957,\"z\":-3.38927555084229},\"rot\":{\"x\":3.54519073653137E-07,\"y\":270.002685546875,\"z\":-1.71473161003632E-07}},\"97fcaf\":{\"lock\":false,\"pos\":{\"x\":34.4325332641602,\"y\":1.49510383605957,\"z\":15.0005626678467},\"rot\":{\"x\":-2.12879712080394E-07,\"y\":270.000579833984,\"z\":-1.44761702358664E-06}},\"98fdce\":{\"lock\":false,\"pos\":{\"x\":34.4325981140137,\"y\":1.49510383605957,\"z\":38.004508972168},\"rot\":{\"x\":-1.49480072764163E-07,\"y\":269.987243652344,\"z\":-2.68615593768118E-07}},\"9c599b\":{\"lock\":false,\"pos\":{\"x\":23.788911819458,\"y\":1.49510383605957,\"z\":-7.74339246749878},\"rot\":{\"x\":-8.75613523021457E-07,\"y\":269.985076904297,\"z\":4.60214465647368E-07}},\"9d3cb8\":{\"lock\":false,\"pos\":{\"x\":34.4324913024902,\"y\":1.49510383605957,\"z\":35.7076110839844},\"rot\":{\"x\":-1.11338636088476E-07,\"y\":270.031036376953,\"z\":-2.46139279624913E-07}},\"9d50cf\":{\"lock\":false,\"pos\":{\"x\":30.7668209075928,\"y\":1.49510383605957,\"z\":17.3121318817139},\"rot\":{\"x\":1.32222439219731E-07,\"y\":270.004577636719,\"z\":-3.53319222767823E-07}},\"9f71b2\":{\"lock\":false,\"pos\":{\"x\":43.4209747314453,\"y\":1.49510383605957,\"z\":33.4116516113281},\"rot\":{\"x\":-1.40170513418525E-07,\"y\":270.020416259766,\"z\":-1.46124227740074E-06}},\"9facb8\":{\"lock\":false,\"pos\":{\"x\":43.4209823608398,\"y\":1.49510383605957,\"z\":5.81179094314575},\"rot\":{\"x\":-9.27222814084416E-08,\"y\":270.006134033203,\"z\":-1.70852911196562E-06}},\"9feaf2\":{\"lock\":false,\"pos\":{\"x\":23.4825420379639,\"y\":1.49510383605957,\"z\":38.0107955932617},\"rot\":{\"x\":-1.84210087184056E-08,\"y\":270.008148193359,\"z\":-9.97713527794986E-07}},\"a46c2b\":{\"lock\":false,\"pos\":{\"x\":23.4825420379639,\"y\":1.49510383605957,\"z\":28.8120212554932},\"rot\":{\"x\":-2.49770295113194E-07,\"y\":270.006042480469,\"z\":-1.20489937671664E-06}},\"a6306e\":{\"lock\":false,\"pos\":{\"x\":43.4209785461426,\"y\":1.49510383605957,\"z\":28.8116397857666},\"rot\":{\"x\":-2.42879309553246E-07,\"y\":270.005767822266,\"z\":-1.50601113091398E-06}},\"a8db40\":{\"lock\":false,\"pos\":{\"x\":39.7819328308105,\"y\":1.49510383605957,\"z\":28.8117427825928},\"rot\":{\"x\":-6.23391329668266E-08,\"y\":270.005798339844,\"z\":-2.354101269475E-07}},\"a9a0c8\":{\"lock\":false,\"pos\":{\"x\":43.4052734375,\"y\":1.49510383605957,\"z\":-3.37769412994385},\"rot\":{\"x\":3.12678963609869E-07,\"y\":270.002593994141,\"z\":-1.41378198037501E-08}},\"ad0691\":{\"lock\":false,\"pos\":{\"x\":34.4325256347656,\"y\":1.49510383605957,\"z\":28.8004207611084},\"rot\":{\"x\":-4.47920811552649E-08,\"y\":270.005920410156,\"z\":-1.63713013989764E-06}},\"ad95fd\":{\"lock\":false,\"pos\":{\"x\":30.7668228149414,\"y\":1.49510383605957,\"z\":35.7119674682617},\"rot\":{\"x\":-7.77582513933339E-08,\"y\":269.972717285156,\"z\":-5.08595121573308E-09}},\"b0dd94\":{\"lock\":false,\"pos\":{\"x\":34.4325370788574,\"y\":1.49510383605957,\"z\":24.2004222869873},\"rot\":{\"x\":-2.40058994904757E-07,\"y\":269.989654541016,\"z\":-1.4354491213453E-06}},\"b221a7\":{\"lock\":false,\"pos\":{\"x\":23.4825267791748,\"y\":1.49510383605957,\"z\":19.6119441986084},\"rot\":{\"x\":-1.42348909548673E-07,\"y\":270.006134033203,\"z\":-1.48785738929291E-06}},\"b3d984\":{\"lock\":false,\"pos\":{\"x\":30.7667999267578,\"y\":1.49510383605957,\"z\":33.411994934082},\"rot\":{\"x\":-3.90818314599528E-07,\"y\":270.016967773438,\"z\":8.99016697530897E-07}},\"b47adf\":{\"lock\":false,\"pos\":{\"x\":52.2421379089355,\"y\":1.49510383605957,\"z\":17.2495861053467},\"rot\":{\"x\":-2.46900754063972E-07,\"y\":269.975738525391,\"z\":-1.13103780563506E-07}},\"b826dd\":{\"lock\":false,\"pos\":{\"x\":43.4209785461426,\"y\":1.49510383605957,\"z\":15.0117626190186},\"rot\":{\"x\":-1.63533997010745E-07,\"y\":270.006134033203,\"z\":-1.60750118993747E-06}},\"bae0d4\":{\"lock\":false,\"pos\":{\"x\":30.7668209075928,\"y\":1.49510383605957,\"z\":19.6121349334717},\"rot\":{\"x\":-9.87307799960035E-08,\"y\":270.004577636719,\"z\":-1.6931063555603E-06}},\"bf9817\":{\"lock\":false,\"pos\":{\"x\":30.7668056488037,\"y\":1.49510383605957,\"z\":26.5119724273682},\"rot\":{\"x\":-1.34796437123441E-07,\"y\":269.983062744141,\"z\":-1.66636232279416E-06}},\"c24c0f\":{\"lock\":false,\"pos\":{\"x\":20.2495937347412,\"y\":1.49510383605957,\"z\":-7.70246076583862},\"rot\":{\"x\":-1.98183673916219E-08,\"y\":270.021087646484,\"z\":-3.96201613739322E-07}},\"c27ee4\":{\"lock\":false,\"pos\":{\"x\":47.0866966247559,\"y\":1.49510383605957,\"z\":28.8000774383545},\"rot\":{\"x\":-3.08983516106309E-07,\"y\":269.986755371094,\"z\":-1.42305111694441E-06}},\"c6629b\":{\"lock\":false,\"pos\":{\"x\":47.0866851806641,\"y\":1.49510383605957,\"z\":10.4000835418701},\"rot\":{\"x\":-1.78399091055326E-07,\"y\":270.005981445313,\"z\":-3.62586654034658E-08}},\"cc9f3e\":{\"lock\":false,\"pos\":{\"x\":47.086669921875,\"y\":1.49510383605957,\"z\":24.2000637054443},\"rot\":{\"x\":-6.77103102475485E-08,\"y\":269.985656738281,\"z\":-2.64707779251694E-07}},\"ccd2d7\":{\"lock\":false,\"pos\":{\"x\":23.4825458526611,\"y\":1.49510383605957,\"z\":26.5120220184326},\"rot\":{\"x\":-2.40093982029066E-07,\"y\":269.995025634766,\"z\":-1.41458906455227E-06}},\"d5060d\":{\"lock\":false,\"pos\":{\"x\":27.1277561187744,\"y\":1.49510383605957,\"z\":5.81215715408325},\"rot\":{\"x\":3.66555994446571E-08,\"y\":270.008361816406,\"z\":-3.20467137271407E-07}},\"d5a551\":{\"lock\":false,\"pos\":{\"x\":52.2421379089355,\"y\":1.49510383605957,\"z\":8.0495433807373},\"rot\":{\"x\":-1.9507253057327E-07,\"y\":270.005828857422,\"z\":-1.42986277751334E-06}},\"d7edae\":{\"lock\":false,\"pos\":{\"x\":80.106575012207,\"y\":1.16996240615845,\"z\":-31.8225593566895},\"rot\":{\"x\":2.03620402317028E-06,\"y\":270.003967285156,\"z\":-4.8903848437476E-07}},\"d92dde\":{\"lock\":false,\"pos\":{\"x\":34.4325218200684,\"y\":1.49510383605957,\"z\":26.5004138946533},\"rot\":{\"x\":-1.45011416208263E-08,\"y\":269.992370605469,\"z\":-4.0525972622163E-07}},\"dc8ab9\":{\"lock\":false,\"pos\":{\"x\":23.4825267791748,\"y\":1.49510383605957,\"z\":10.4118175506592},\"rot\":{\"x\":4.16389127622097E-08,\"y\":270.006256103516,\"z\":-1.40959414807185E-07}},\"dd5a8d\":{\"lock\":false,\"pos\":{\"x\":23.4825420379639,\"y\":1.49510383605957,\"z\":24.2120189666748},\"rot\":{\"x\":-3.93296701872714E-08,\"y\":269.983062744141,\"z\":-1.54590873080451E-06}},\"e10da6\":{\"lock\":false,\"pos\":{\"x\":30.766809463501,\"y\":1.49510383605957,\"z\":-1.08788371086121},\"rot\":{\"x\":-8.92096494453654E-08,\"y\":270.002624511719,\"z\":-6.296251058302E-07}},\"e4fc98\":{\"lock\":false,\"pos\":{\"x\":27.1277675628662,\"y\":1.49510383605957,\"z\":24.2120876312256},\"rot\":{\"x\":6.88144163873972E-09,\"y\":269.988098144531,\"z\":-1.13542306223735E-07}},\"e5bd5d\":{\"lock\":false,\"pos\":{\"x\":43.4209632873535,\"y\":1.49510383605957,\"z\":10.4116344451904},\"rot\":{\"x\":-1.61757597538781E-07,\"y\":270.005950927734,\"z\":-1.56916080129577E-08}},\"e618ab\":{\"lock\":false,\"pos\":{\"x\":30.7668113708496,\"y\":1.49510383605957,\"z\":1.21211957931519},\"rot\":{\"x\":4.9723274742064E-07,\"y\":270.002563476563,\"z\":-2.64069115019083E-07}},\"e7c879\":{\"lock\":false,\"pos\":{\"x\":43.4209632873535,\"y\":1.49510383605957,\"z\":8.11172294616699},\"rot\":{\"x\":-1.05802234884322E-06,\"y\":270.006103515625,\"z\":-1.30375397588978E-07}},\"e969d6\":{\"lock\":false,\"pos\":{\"x\":30.7668056488037,\"y\":1.49510383605957,\"z\":24.2119731903076},\"rot\":{\"x\":-4.85512181569447E-08,\"y\":269.991333007813,\"z\":-4.01975285058143E-07}},\"ed565f\":{\"lock\":false,\"pos\":{\"x\":47.0867118835449,\"y\":1.49510383605957,\"z\":-1.09985435009003},\"rot\":{\"x\":-1.77332459827539E-08,\"y\":270.002410888672,\"z\":-5.19741035986954E-07}},\"ef4d67\":{\"lock\":false,\"pos\":{\"x\":27.1277523040771,\"y\":1.49510383605957,\"z\":28.8120822906494},\"rot\":{\"x\":-1.79864485971848E-07,\"y\":269.982971191406,\"z\":-1.54573513100331E-06}},\"f328e1\":{\"lock\":false,\"pos\":{\"x\":47.0866966247559,\"y\":1.49510383605957,\"z\":35.700798034668},\"rot\":{\"x\":-1.44728161899366E-07,\"y\":270.004577636719,\"z\":-1.55116538280708E-06}},\"f883a7\":{\"lock\":false,\"pos\":{\"x\":34.4325408935547,\"y\":1.49510383605957,\"z\":19.6005764007568},\"rot\":{\"x\":-7.77135227281178E-08,\"y\":270.006072998047,\"z\":-1.72705608747492E-06}},\"f8e834\":{\"lock\":false,\"pos\":{\"x\":30.7668056488037,\"y\":1.49510383605957,\"z\":28.811975479126},\"rot\":{\"x\":1.39229543449915E-08,\"y\":269.980010986328,\"z\":-2.4950801957857E-07}},\"f9302c\":{\"lock\":false,\"pos\":{\"x\":34.440975189209,\"y\":1.49510383605957,\"z\":-7.74337768554688},\"rot\":{\"x\":7.9320926715809E-07,\"y\":269.988403320313,\"z\":3.6135295999884E-07}},\"f93232\":{\"lock\":false,\"pos\":{\"x\":23.4825305938721,\"y\":1.49510383605957,\"z\":1.21195149421692},\"rot\":{\"x\":1.37717989900921E-07,\"y\":270.003967285156,\"z\":3.86364177984433E-07}},\"fa6c1a\":{\"lock\":false,\"pos\":{\"x\":30.8967304229736,\"y\":1.49510383605957,\"z\":-7.73136854171753},\"rot\":{\"x\":-1.45768126458279E-07,\"y\":269.970367431641,\"z\":-1.62071739850944E-06}},\"faed96\":{\"lock\":false,\"pos\":{\"x\":30.7668209075928,\"y\":1.49510383605957,\"z\":38.0119934082031},\"rot\":{\"x\":-1.01386007145265E-07,\"y\":270.007690429688,\"z\":-2.862549308702E-07}},\"fde4dd\":{\"lock\":false,\"pos\":{\"x\":47.0866928100586,\"y\":1.49510383605957,\"z\":17.3002147674561},\"rot\":{\"x\":-1.84464184371791E-07,\"y\":270.005981445313,\"z\":-1.5133857687033E-06}}}}",
   "XmlUI": "",
   "ContainedObjects": [
-    {
-      "GUID": "a06986",
-      "Name": "Custom_Token",
-      "Transform": {
-        "posX": -16.8891,
-        "posY": 1.34932029,
-        "posZ": -69.5747,
-        "rotX": 0.0208121,
-        "rotY": 269.988983,
-        "rotZ": 0.0167519841,
-        "scaleX": 0.2590727,
-        "scaleY": 1.0,
-        "scaleZ": 0.2590727
-      },
-      "Nickname": "Political Capital",
-      "Description": "Left click - Increase\nRight click - Decrease",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "Tags": [
-        "scesetup_memory_object"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": false,
-      "Sticky": true,
-      "Tooltip": false,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomImage": {
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949599153663401115/EAA6D40FC6E15204BBE551BCDED35CC8C75111BF/",
-        "ImageSecondaryURL": "",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomToken": {
-          "Thickness": 0.1,
-          "MergeDistancePixels": 5.0,
-          "StandUp": false,
-          "Stackable": false
-        }
-      },
-      "LuaScript": "MIN_VALUE = -99\r\nMAX_VALUE = 999\r\n\r\nfunction onload(saved_data)\r\n    light_mode = true\r\n    val = 0\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        val = loaded_data[2]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, val}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0,0,0,100}\r\n\n    if light_mode then\r\n        f_color = {1,1,1,100}\r\n    else\r\n        f_color = {0,0,0,100}\r\n    end\r\n\r\n\r\n\r\n    self.createButton({\r\n      label=tostring(val),\r\n      click_function=\"add_subtract\",\r\n      function_owner=self,\r\n      position={0,0.05,0.1},\r\n      height=600,\r\n      width=1000,\r\n      alignment = 3,\r\n      scale={x=1.5, y=1.5, z=1.5},\r\n      font_size=600,\r\n      font_color=f_color,\r\n      color={1,1,1,0}\r\n      })\r\n\r\n\r\n\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark ]\"\r\n    else\r\n        lightButtonText = \"[ Set light ]\"\r\n    end\r\n \r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n\r\n    updateSave()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction editName(_obj, _string, value) \r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction add_subtract(_obj, _color, alt_click)\r\n    mod = alt_click and -1 or 1\r\n    new_value = math.min(math.max(val + mod, MIN_VALUE), MAX_VALUE)\r\n    if val ~= new_value then\r\n        val = new_value\r\n      updateVal()\r\n        updateSave()\r\n    end\r\nend\r\n\r\nfunction updateVal()\r\n\r\n    self.editButton({\r\n        index = 0,\r\n        label = tostring(val),\r\n\r\n        })\r\nend\r\n\r\nfunction reset_val()\r\n    val = 0\r\n    updateVal()\r\n    updateSave()\r\nend\r\n\r\nfunction setTooltips()\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editButton({\r\n        index = 0,\r\n        value = tostring(val),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value) \r\n    reloadAll()\r\nend",
-      "LuaScriptState": "[true,0]",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "e338d7",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -26.2173,
-        "posY": 1.31131315,
-        "posZ": -63.5077,
-        "rotX": 0.0208080038,
-        "rotY": 270.0022,
-        "rotZ": 0.0167719778,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Voice of Authority",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "CardID": 615200,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6152": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650051004/DA88678BC90302EABDFC3042BFEA2B743BB26EE4/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1648842893716351530/B1BF31EBC5D92EC3A51B6D3B56ABFB232D2636C5/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "ebc809",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -26.2173,
-        "posY": 1.31064367,
-        "posZ": -65.7951,
-        "rotX": 0.0208089519,
-        "rotY": 269.9984,
-        "rotZ": 0.0167705677,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Adherent",
-      "Description": "Rallying the Righteous Calls to Action",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "CardID": 615300,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6153": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650056508/9253055533E0275608B3C5D37FC5BCB1D6B8CCC9/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650057024/A71CFC9310F70B02D3082DAFE97BC9954E410775/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "ad7249",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -26.2173,
-        "posY": 1.30997407,
-        "posZ": -68.0826,
-        "rotX": 0.0208114162,
-        "rotY": 269.9904,
-        "rotZ": 0.0167675987,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Adherent",
-      "Description": "Fostering Education Paves Way for the Future",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "CardID": 615400,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6154": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650058308/671E7139D8CC71280847BDE5EC07B03B6DCD311C/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650059229/AD7F27EA3E7D155B7479B2EAE7A71EB25FF6F365/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "83824b",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -26.2173,
-        "posY": 1.30930448,
-        "posZ": -70.3702,
-        "rotX": 0.0208030082,
-        "rotY": 270.0191,
-        "rotZ": 0.0167780779,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Adherent",
-      "Description": "Galvanizing Speech Emboldens the Masses",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "CardID": 615500,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6155": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650060476/26DBBA6557B5436FB6C67A4577DFA42AA7F76417/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650060933/6DC21ECBE07B466C13E5E81462B3698DE0F088D6/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "00dd71",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -26.2173,
-        "posY": 1.30863488,
-        "posZ": -72.6577,
-        "rotX": 0.0208086651,
-        "rotY": 269.999939,
-        "rotZ": 0.0167710371,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Adherent",
-      "Description": "Canvassing the Neighborhood Spreads the Word",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "CardID": 615600,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6156": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650062734/09F8CFDC25D57377597DD2874BBD0A6700BBDE70/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650063155/66FCD3839857BA2B78B65A275045C6BAEFA05087/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "395a86",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -26.2173,
-        "posY": 1.30796528,
-        "posZ": -74.9452,
-        "rotX": 0.0208086111,
-        "rotY": 269.999939,
-        "rotZ": 0.0167713333,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Contravention",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "CardID": 615700,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6157": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650064950/C0E67C8C5355282BACB25C8039E1A6CB932CAEB0/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1648842893716351530/B1BF31EBC5D92EC3A51B6D3B56ABFB232D2636C5/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "e910b0",
-      "Name": "Custom_Token",
-      "Transform": {
-        "posX": -16.8891,
-        "posY": 1.34990919,
-        "posZ": -67.5635,
-        "rotX": 0.0208104346,
-        "rotY": 269.9978,
-        "rotZ": 0.01676704,
-        "scaleX": 0.2590727,
-        "scaleY": 1.0,
-        "scaleZ": 0.2590727
-      },
-      "Nickname": "Political Capital",
-      "Description": "Left click - Increase\nRight click - Decrease",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "Tags": [
-        "scesetup_memory_object"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": false,
-      "Sticky": true,
-      "Tooltip": false,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomImage": {
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949599153663401115/EAA6D40FC6E15204BBE551BCDED35CC8C75111BF/",
-        "ImageSecondaryURL": "",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomToken": {
-          "Thickness": 0.1,
-          "MergeDistancePixels": 5.0,
-          "StandUp": false,
-          "Stackable": false
-        }
-      },
-      "LuaScript": "MIN_VALUE = -99\r\nMAX_VALUE = 999\r\n\r\nfunction onload(saved_data)\r\n    light_mode = true\r\n    val = 0\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        val = loaded_data[2]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, val}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0,0,0,100}\r\n\n    if light_mode then\r\n        f_color = {1,1,1,100}\r\n    else\r\n        f_color = {0,0,0,100}\r\n    end\r\n\r\n\r\n\r\n    self.createButton({\r\n      label=tostring(val),\r\n      click_function=\"add_subtract\",\r\n      function_owner=self,\r\n      position={0,0.05,0.1},\r\n      height=600,\r\n      width=1000,\r\n      alignment = 3,\r\n      scale={x=1.5, y=1.5, z=1.5},\r\n      font_size=600,\r\n      font_color=f_color,\r\n      color={1,1,1,0}\r\n      })\r\n\r\n\r\n\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark ]\"\r\n    else\r\n        lightButtonText = \"[ Set light ]\"\r\n    end\r\n \r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n\r\n    updateSave()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction editName(_obj, _string, value) \r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction add_subtract(_obj, _color, alt_click)\r\n    mod = alt_click and -1 or 1\r\n    new_value = math.min(math.max(val + mod, MIN_VALUE), MAX_VALUE)\r\n    if val ~= new_value then\r\n        val = new_value\r\n      updateVal()\r\n        updateSave()\r\n    end\r\nend\r\n\r\nfunction updateVal()\r\n\r\n    self.editButton({\r\n        index = 0,\r\n        label = tostring(val),\r\n\r\n        })\r\nend\r\n\r\nfunction reset_val()\r\n    val = 0\r\n    updateVal()\r\n    updateSave()\r\nend\r\n\r\nfunction setTooltips()\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editButton({\r\n        index = 0,\r\n        value = tostring(val),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value) \r\n    reloadAll()\r\nend",
-      "LuaScriptState": "[true,0]",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "b06863",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -19.2959,
-        "posY": 1.3122015,
-        "posZ": -69.0607,
-        "rotX": 0.0208098348,
-        "rotY": 269.99646,
-        "rotZ": 0.0167696364,
-        "scaleX": 0.6,
-        "scaleY": 1.0,
-        "scaleZ": 0.6
-      },
-      "Nickname": "Charlie Kane",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 615900,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6159": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650078146/6EAF28DDC0034E0671CA81E128AAF9356BEA1F28/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650078462/CD6822895043D21D84EB2961DD6F04046FA4F7C5/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "c9bc29",
-      "Name": "Custom_Token",
-      "Transform": {
-        "posX": -16.8891,
-        "posY": 1.3496145,
-        "posZ": -68.5691,
-        "rotX": 0.020805914,
-        "rotY": 270.0074,
-        "rotZ": 0.0167772677,
-        "scaleX": 0.2590727,
-        "scaleY": 1.0,
-        "scaleZ": 0.2590727
-      },
-      "Nickname": "Political Capital",
-      "Description": "Left click - Increase\nRight click - Decrease",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "Tags": [
-        "scesetup_memory_object"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": false,
-      "Sticky": true,
-      "Tooltip": false,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomImage": {
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949599153663401115/EAA6D40FC6E15204BBE551BCDED35CC8C75111BF/",
-        "ImageSecondaryURL": "",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomToken": {
-          "Thickness": 0.1,
-          "MergeDistancePixels": 5.0,
-          "StandUp": false,
-          "Stackable": false
-        }
-      },
-      "LuaScript": "MIN_VALUE = -99\r\nMAX_VALUE = 999\r\n\r\nfunction onload(saved_data)\r\n    light_mode = true\r\n    val = 0\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        val = loaded_data[2]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, val}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0,0,0,100}\r\n\n    if light_mode then\r\n        f_color = {1,1,1,100}\r\n    else\r\n        f_color = {0,0,0,100}\r\n    end\r\n\r\n\r\n\r\n    self.createButton({\r\n      label=tostring(val),\r\n      click_function=\"add_subtract\",\r\n      function_owner=self,\r\n      position={0,0.05,0.1},\r\n      height=600,\r\n      width=1000,\r\n      alignment = 3,\r\n      scale={x=1.5, y=1.5, z=1.5},\r\n      font_size=600,\r\n      font_color=f_color,\r\n      color={1,1,1,0}\r\n      })\r\n\r\n\r\n\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark ]\"\r\n    else\r\n        lightButtonText = \"[ Set light ]\"\r\n    end\r\n \r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n\r\n    updateSave()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction editName(_obj, _string, value) \r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction add_subtract(_obj, _color, alt_click)\r\n    mod = alt_click and -1 or 1\r\n    new_value = math.min(math.max(val + mod, MIN_VALUE), MAX_VALUE)\r\n    if val ~= new_value then\r\n        val = new_value\r\n      updateVal()\r\n        updateSave()\r\n    end\r\nend\r\n\r\nfunction updateVal()\r\n\r\n    self.editButton({\r\n        index = 0,\r\n        label = tostring(val),\r\n\r\n        })\r\nend\r\n\r\nfunction reset_val()\r\n    val = 0\r\n    updateVal()\r\n    updateSave()\r\nend\r\n\r\nfunction setTooltips()\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editButton({\r\n        index = 0,\r\n        value = tostring(val),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value) \r\n    reloadAll()\r\nend",
-      "LuaScriptState": "[true,0]",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "23c1b4",
-      "Name": "Custom_Token",
-      "Transform": {
-        "posX": -16.8891,
-        "posY": 1.349026,
-        "posZ": -70.5804,
-        "rotX": 0.0208100751,
-        "rotY": 269.983429,
-        "rotZ": 0.0167570766,
-        "scaleX": 0.2590727,
-        "scaleY": 1.0,
-        "scaleZ": 0.2590727
-      },
-      "Nickname": "Political Capital",
-      "Description": "Left click - Increase\nRight click - Decrease",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "Tags": [
-        "scesetup_memory_object"
-      ],
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": false,
-      "Sticky": true,
-      "Tooltip": false,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomImage": {
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/949599153663401115/EAA6D40FC6E15204BBE551BCDED35CC8C75111BF/",
-        "ImageSecondaryURL": "",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomToken": {
-          "Thickness": 0.1,
-          "MergeDistancePixels": 5.0,
-          "StandUp": false,
-          "Stackable": false
-        }
-      },
-      "LuaScript": "MIN_VALUE = -99\r\nMAX_VALUE = 999\r\n\r\nfunction onload(saved_data)\r\n    light_mode = true\r\n    val = 0\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        val = loaded_data[2]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, val}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0,0,0,100}\r\n\n    if light_mode then\r\n        f_color = {1,1,1,100}\r\n    else\r\n        f_color = {0,0,0,100}\r\n    end\r\n\r\n\r\n\r\n    self.createButton({\r\n      label=tostring(val),\r\n      click_function=\"add_subtract\",\r\n      function_owner=self,\r\n      position={0,0.05,0.1},\r\n      height=600,\r\n      width=1000,\r\n      alignment = 3,\r\n      scale={x=1.5, y=1.5, z=1.5},\r\n      font_size=600,\r\n      font_color=f_color,\r\n      color={1,1,1,0}\r\n      })\r\n\r\n\r\n\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark ]\"\r\n    else\r\n        lightButtonText = \"[ Set light ]\"\r\n    end\r\n \r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n\r\n    updateSave()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction editName(_obj, _string, value) \r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction add_subtract(_obj, _color, alt_click)\r\n    mod = alt_click and -1 or 1\r\n    new_value = math.min(math.max(val + mod, MIN_VALUE), MAX_VALUE)\r\n    if val ~= new_value then\r\n        val = new_value\r\n      updateVal()\r\n        updateSave()\r\n    end\r\nend\r\n\r\nfunction updateVal()\r\n\r\n    self.editButton({\r\n        index = 0,\r\n        label = tostring(val),\r\n\r\n        })\r\nend\r\n\r\nfunction reset_val()\r\n    val = 0\r\n    updateVal()\r\n    updateSave()\r\nend\r\n\r\nfunction setTooltips()\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editButton({\r\n        index = 0,\r\n        value = tostring(val),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value) \r\n    reloadAll()\r\nend",
-      "LuaScriptState": "[true,0]",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "268843",
-      "Name": "Custom_Model",
-      "Transform": {
-        "posX": 25.6118,
-        "posY": 1.45988226,
-        "posZ": -36.9581223,
-        "rotX": 359.9201,
-        "rotY": 270.003326,
-        "rotZ": 0.0168576725,
-        "scaleX": 0.250000358,
-        "scaleY": 0.250000358,
-        "scaleZ": 0.250000358
-      },
-      "Nickname": "Rabbit Hole Data Helper",
-      "Description": "Include this for spawning the correct tokens for Rabbit Hole Expansion",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.09555697,
-        "g": 0.8066202,
-        "b": 0.172214121
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomMesh": {
-        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/943949966265929204/A38BB5D72419E6298385556D931877C0A1A55C17/",
-        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/254843371583187306/6844B833AD55B9A34095067B201B311E1348325F/",
-        "NormalURL": "",
-        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/943949966265929204/A38BB5D72419E6298385556D931877C0A1A55C17/",
-        "Convex": true,
-        "MaterialIndex": 2,
-        "TypeIndex": 0,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 0.7222887,
-            "g": 0.507659256,
-            "b": 0.339915335
-          },
-          "SpecularIntensity": 0.4,
-          "SpecularSharpness": 7.0,
-          "FresnelStrength": 0.0
-        },
-        "CastShadows": true
-      },
-      "LuaScript": "-- set true to enable debug logging\r\nDEBUG = false\r\n\r\nfunction log(message)\r\n  if DEBUG then\r\n    print(message)\r\n  end\r\nend\r\n\r\n--[[\r\nKnown locations and clues. We check this to determine if we should\r\natttempt to spawn clues, first we look for <LOCATION_NAME>_<GUID> and if\r\nwe find nothing we look for <LOCATION_NAME>\r\nformat is [location_guid -> clueCount]\r\n]]\r\nLOCATIONS_DATA_JSON = [[\r\n{\r\n  \"San Francisco\": {\"type\": \"fixed\", \"value\": 1, \"clueSide\": \"back\"},\r\n  \"\tArkham\": {\"type\": \"perPlayer\", \"value\": 1, \"clueSide\": \"back\"},\r\n  \"Buenos Aires\": {\"type\": \"fixed\", \"value\": 2, \"clueSide\": \"back\"},\r\n  \"\tLondon\": {\"type\": \"perPlayer\", \"value\": 2, \"clueSide\": \"front\"},\r\n  \"Rome\": {\"type\": \"perPlayer\", \"value\": 3, \"clueSide\": \"front\"},\r\n  \"Istanbul\": {\"type\": \"perPlayer\", \"value\": 4, \"clueSide\": \"front\"},\r\n  \"Tokyo_123abc\": {\"type\": \"perPlayer\", \"value\": 0, \"clueSide\": \"back\"},\r\n  \"Tokyo_456efg\": {\"type\": \"perPlayer\", \"value\": 4, \"clueSide\": \"back\"},\r\n  \"Tokyo\": {\"type\": \"fixed\", \"value\": 2, \"clueSide\": \"back\"},\r\n  \"Shanghai_123\": {\"type\": \"fixed\", \"value\": 12, \"clueSide\": \"front\"},\r\n  \"Sydney\": {\"type\": \"fixed\", \"value\": 0, \"clueSide\": \"front\"}\r\n}\r\n]]\r\n\r\n\r\nPLAYER_CARD_DATA_JSON = [[\r\n{\r\r\n  \"Ambush (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"Book of Psalms (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Extra Ammunition (4)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"M1918 BAR (5)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 8\r\n},\r\n  \"Mk 1 Grenades (0)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 1\r\n},\n  \"Painkillers (1)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\n  \".35 Winchester (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 5\r\n},\r\n  \"Venturer (1)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Archaic Glyphs (3):Eldtown Shards\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"Cryptographic Cipher (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"Farsight (0)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 2\r\n},\r\n  \"Fingerprint Kit (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \".25 Automatic (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Fence (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 1\r\n},\r\n  \"Forbidden Knowledge (1)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Grimm's Fairy Tale (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Old Keyring (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"Stray Cat (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 9\r\n},\r\n  \"Baseball Bat (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 2\r\n}\r\n}\r\n]]\r\n\r\nHIDDEN_CARD_DATA = {\r\n  \"Unpleasant Card (Doom)\",\r\n  \"Unpleasant Card (Gloom)\",\r\n  \"The Case of the Scarlet DOOOOOM!\"\r\n}\r\n\r\nLOCATIONS_DATA = JSON.decode(LOCATIONS_DATA_JSON)\r\nPLAYER_CARD_DATA = JSON.decode(PLAYER_CARD_DATA_JSON)\r\n\r\nfunction onload(save_state)\r\n  local playArea = getObjectFromGUID('721ba2')\r\n  playArea.call(\"updateLocations\", {self.getGUID()})\r\n  local playerMatWhite = getObjectFromGUID('8b081b')\r\n  playerMatWhite.call(\"updatePlayerCards\", {self.getGUID()})\r\n  local playerMatOrange = getObjectFromGUID('bd0ff4')\r\n  playerMatOrange.call(\"updatePlayerCards\", {self.getGUID()})\r\n  local playerMatGreen = getObjectFromGUID('383d8b')\r\n  playerMatGreen.call(\"updatePlayerCards\", {self.getGUID()})\r\n  local playerMatRed = getObjectFromGUID('0840d5')\r\n  playerMatRed.call(\"updatePlayerCards\", {self.getGUID()})\r\n  local dataHelper = getObjectFromGUID('708279')\r\n  dataHelper.call(\"updateHiddenCards\", {self.getGUID()})\r\nend\r\n",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
     {
       "GUID": "02c883",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9852867,
-        "posY": 1.290308,
-        "posZ": -84.20827,
-        "rotX": 0.02080875,
-        "rotY": 269.9997,
-        "rotZ": 0.016771283,
+        "posX": 27.1277561,
+        "posY": 1.49510384,
+        "posZ": 1.21214986,
+        "rotX": -1.44888745E-07,
+        "rotY": 270.003662,
+        "rotZ": 5.11338065E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -731,6 +85,11 @@
       "Nickname": "Meat Cleaver (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -771,12 +130,12 @@
       "GUID": "02fc01",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2900658,
-        "posY": 1.29565048,
-        "posZ": -75.01997,
-        "rotX": 0.0208077431,
-        "rotY": 270.00238,
-        "rotZ": 0.0167719349,
+        "posX": 34.4325333,
+        "posY": 1.49510384,
+        "posZ": 10.4004345,
+        "rotX": -6.133022E-08,
+        "rotY": 270.0061,
+        "rotZ": -3.95373036E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -784,6 +143,11 @@
       "Nickname": "Astronomical Atlas (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -824,12 +188,12 @@
       "GUID": "04b54a",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9853058,
-        "posY": 1.28963482,
-        "posZ": -86.50825,
-        "rotX": 0.0208086856,
-        "rotY": 269.999176,
-        "rotZ": 0.0167707745,
+        "posX": 27.1277752,
+        "posY": 1.49510384,
+        "posZ": -1.08783031,
+        "rotX": 2.50056644E-07,
+        "rotY": 270.0032,
+        "rotZ": 1.755076E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -837,6 +201,11 @@
       "Nickname": "Old Keyring (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -877,12 +246,12 @@
       "GUID": "099880",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442139,
-        "posY": 1.30697846,
-        "posZ": -52.0203362,
-        "rotX": 0.0208042543,
-        "rotY": 270.014648,
-        "rotZ": 0.0167763084,
+        "posX": 47.0866737,
+        "posY": 1.49510384,
+        "posZ": 33.40007,
+        "rotX": -1.05166777E-07,
+        "rotY": 270.017944,
+        "rotZ": 3.15948547E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -890,6 +259,11 @@
       "Nickname": "Ambush (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -930,12 +304,12 @@
       "GUID": "0a5bc6",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.98529,
-        "posY": 1.30107951,
-        "posZ": -47.4095573,
-        "rotX": 0.0208175778,
-        "rotY": 269.969666,
-        "rotZ": 0.016760245,
+        "posX": 27.1277523,
+        "posY": 1.49510384,
+        "posZ": 38.0108566,
+        "rotX": -2.07763222E-07,
+        "rotY": 269.9732,
+        "rotZ": -4.48473045E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -943,6 +317,11 @@
       "Nickname": "Book of Psalms (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -983,12 +362,12 @@
       "GUID": "0d6af3",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9853058,
-        "posY": 1.29300094,
-        "posZ": -75.00837,
-        "rotX": 0.020814389,
-        "rotY": 269.9799,
-        "rotZ": 0.0167637449,
+        "posX": 27.1277714,
+        "posY": 1.49510384,
+        "posZ": 10.4120464,
+        "rotX": -1.27484441E-07,
+        "rotY": 269.983765,
+        "rotZ": -2.43027216E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -996,6 +375,11 @@
       "Nickname": "Olive McBride (3)",
       "Description": "Will Try Anything Once",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1036,12 +420,12 @@
       "GUID": "10020b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2900772,
-        "posY": 1.30238283,
-        "posZ": -52.0199776,
-        "rotX": 0.0208037216,
-        "rotY": 270.016663,
-        "rotZ": 0.0167773571,
+        "posX": 34.43254,
+        "posY": 1.49510384,
+        "posZ": 33.4004364,
+        "rotX": 1.13938562E-07,
+        "rotY": 270.020142,
+        "rotZ": -3.216248E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1049,6 +433,11 @@
       "Nickname": "Painkillers (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1089,12 +478,12 @@
       "GUID": "19633b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.09971,
-        "posY": 1.29873729,
-        "posZ": -86.5708847,
-        "rotX": 0.0208086558,
-        "rotY": 269.9997,
-        "rotZ": 0.0167709887,
+        "posX": 52.2421761,
+        "posY": 1.49510384,
+        "posZ": -1.15047526,
+        "rotX": -5.654263E-09,
+        "rotY": 270.003357,
+        "rotZ": -2.91820925E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1102,6 +491,11 @@
       "Nickname": "Predestined (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1142,12 +536,12 @@
       "GUID": "1dae6f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.278492,
-        "posY": 1.2955519,
-        "posZ": -86.50865,
-        "rotX": 0.0208088178,
-        "rotY": 269.9996,
-        "rotZ": 0.0167709552,
+        "posX": 43.42096,
+        "posY": 1.49510384,
+        "posZ": -1.08824229,
+        "rotX": 2.84412653E-08,
+        "rotY": 270.003357,
+        "rotZ": -1.78439322E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1155,6 +549,11 @@
       "Nickname": "A Chance Encounter (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1195,12 +594,12 @@
       "GUID": "1f94f7",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442329,
-        "posY": 1.30832493,
-        "posZ": -47.4203339,
-        "rotX": 0.0208072346,
-        "rotY": 270.0052,
-        "rotZ": 0.0167729314,
+        "posX": 47.0866928,
+        "posY": 1.49510384,
+        "posZ": 38.00007,
+        "rotX": 2.34256376E-07,
+        "rotY": 270.008423,
+        "rotZ": -1.74573955E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1208,6 +607,11 @@
       "Nickname": "Emergency Aid (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1248,12 +652,12 @@
       "GUID": "267a1b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442253,
-        "posY": 1.30159247,
-        "posZ": -70.4202,
-        "rotX": 0.0208078269,
-        "rotY": 270.0023,
-        "rotZ": 0.0167719834,
+        "posX": 47.08669,
+        "posY": 1.49510384,
+        "posZ": 15.0002041,
+        "rotX": 2.08038138E-08,
+        "rotY": 270.005829,
+        "rotZ": -1.09284372E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1261,6 +665,11 @@
       "Nickname": "Breaking and Entering (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1298,15 +707,80 @@
       "XmlUI": ""
     },
     {
+      "GUID": "268843",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 80.106575,
+        "posY": 1.16996253,
+        "posZ": -31.0283184,
+        "rotX": 3.97179122E-07,
+        "rotY": 270.003662,
+        "rotZ": 6.417276E-07,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "Rabbit Hole Data Helper",
+      "Description": "Include this for spawning the correct tokens for Rabbit Hole Expansion",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.09555679,
+        "g": 0.8066202,
+        "b": 0.172213942
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/943949966265929204/A38BB5D72419E6298385556D931877C0A1A55C17/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/254843371583187306/6844B833AD55B9A34095067B201B311E1348325F/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/943949966265929204/A38BB5D72419E6298385556D931877C0A1A55C17/",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.7222887,
+            "g": 0.507659256,
+            "b": 0.339915335
+          },
+          "SpecularIntensity": 0.4,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "-- set true to enable debug logging\r\nDEBUG = false\r\n\r\nfunction log(message)\r\n  if DEBUG then\r\n    print(message)\r\n  end\r\nend\r\n\r\n--[[\r\nKnown locations and clues. We check this to determine if we should\r\natttempt to spawn clues, first we look for <LOCATION_NAME>_<GUID> and if\r\nwe find nothing we look for <LOCATION_NAME>\r\nformat is [location_guid -> clueCount]\r\n]]\r\nLOCATIONS_DATA_JSON = [[\r\n{\r\n  \"San Francisco\": {\"type\": \"fixed\", \"value\": 1, \"clueSide\": \"back\"},\r\n  \"\tArkham\": {\"type\": \"perPlayer\", \"value\": 1, \"clueSide\": \"back\"},\r\n  \"Buenos Aires\": {\"type\": \"fixed\", \"value\": 2, \"clueSide\": \"back\"},\r\n  \"\tLondon\": {\"type\": \"perPlayer\", \"value\": 2, \"clueSide\": \"front\"},\r\n  \"Rome\": {\"type\": \"perPlayer\", \"value\": 3, \"clueSide\": \"front\"},\r\n  \"Istanbul\": {\"type\": \"perPlayer\", \"value\": 4, \"clueSide\": \"front\"},\r\n  \"Tokyo_123abc\": {\"type\": \"perPlayer\", \"value\": 0, \"clueSide\": \"back\"},\r\n  \"Tokyo_456efg\": {\"type\": \"perPlayer\", \"value\": 4, \"clueSide\": \"back\"},\r\n  \"Tokyo\": {\"type\": \"fixed\", \"value\": 2, \"clueSide\": \"back\"},\r\n  \"Shanghai_123\": {\"type\": \"fixed\", \"value\": 12, \"clueSide\": \"front\"},\r\n  \"Sydney\": {\"type\": \"fixed\", \"value\": 0, \"clueSide\": \"front\"}\r\n}\r\n]]\r\n\r\n\r\nPLAYER_CARD_DATA_JSON = [[\r\n{\r\r\n  \"Ambush (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"Book of Psalms (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Extra Ammunition (4)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"M1918 BAR (5)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 8\r\n},\r\n  \"Mk 1 Grenades (0)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 1\r\n},\n  \"Painkillers (1)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\n  \".35 Winchester (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 5\r\n},\r\n  \"Venturer (1)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Archaic Glyphs (3):Eldtown Shards\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"Cryptographic Cipher (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"Farsight (0)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 2\r\n},\r\n  \"Fingerprint Kit (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \".25 Automatic (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Fence (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 1\r\n},\r\n  \"Forbidden Knowledge (1)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Grimm's Fairy Tale (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 4\r\n},\r\n  \"Old Keyring (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 3\r\n},\r\n  \"Stray Cat (3)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 9\r\n},\r\n  \"Baseball Bat (2)\": {\r\n    \"tokenType\": \"resource\",\r\n    \"tokenCount\": 2\r\n}\r\n}\r\n]]\r\n\r\nHIDDEN_CARD_DATA = {\r\n  \"Unpleasant Card (Doom)\",\r\n  \"Unpleasant Card (Gloom)\",\r\n  \"The Case of the Scarlet DOOOOOM!\"\r\n}\r\n\r\nLOCATIONS_DATA = JSON.decode(LOCATIONS_DATA_JSON)\r\nPLAYER_CARD_DATA = JSON.decode(PLAYER_CARD_DATA_JSON)\r\n\r\nfunction onload(save_state)\r\n  local playArea = getObjectFromGUID('721ba2')\r\n  playArea.call(\"updateLocations\", {self.getGUID()})\r\n  local playerMatWhite = getObjectFromGUID('8b081b')\r\n  playerMatWhite.call(\"updatePlayerCards\", {self.getGUID()})\r\n  local playerMatOrange = getObjectFromGUID('bd0ff4')\r\n  playerMatOrange.call(\"updatePlayerCards\", {self.getGUID()})\r\n  local playerMatGreen = getObjectFromGUID('383d8b')\r\n  playerMatGreen.call(\"updatePlayerCards\", {self.getGUID()})\r\n  local playerMatRed = getObjectFromGUID('0840d5')\r\n  playerMatRed.call(\"updatePlayerCards\", {self.getGUID()})\r\n  local dataHelper = getObjectFromGUID('708279')\r\n  dataHelper.call(\"updateHiddenCards\", {self.getGUID()})\r\nend\r\n",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "269ab3",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.3400764,
-        "posY": 1.29369676,
-        "posZ": -68.10846,
-        "rotX": 0.0208077375,
-        "rotY": 270.002258,
-        "rotZ": 0.0167719964,
+        "posX": 23.482542,
+        "posY": 1.49510384,
+        "posZ": 17.311964,
+        "rotX": -1.03071987E-08,
+        "rotY": 270.006073,
+        "rotZ": -4.012655E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1314,6 +788,11 @@
       "Nickname": "The Skeleton Key (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1354,12 +833,12 @@
       "GUID": "2be496",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2784958,
-        "posY": 1.30161107,
-        "posZ": -65.8086548,
-        "rotX": 0.0208080243,
-        "rotY": 270.00235,
-        "rotZ": 0.01677201,
+        "posX": 43.42096,
+        "posY": 1.49510384,
+        "posZ": 19.6117535,
+        "rotX": -1.05909947E-08,
+        "rotY": 270.005859,
+        "rotZ": 2.0210825E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1367,6 +846,11 @@
       "Nickname": "Cheat Death (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1407,12 +891,12 @@
       "GUID": "2cb6e7",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9696121,
-        "posY": 1.28895891,
-        "posZ": -88.7977,
-        "rotX": 0.0208083633,
-        "rotY": 270.0,
-        "rotZ": 0.016771242,
+        "posX": 27.1120815,
+        "posY": 1.49510384,
+        "posZ": -3.37727427,
+        "rotX": -5.24535828E-08,
+        "rotY": 270.004028,
+        "rotZ": -3.992247E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1420,6 +904,11 @@
       "Nickname": "Stray Cat (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1460,12 +949,12 @@
       "GUID": "2f3aba",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9852867,
-        "posY": 1.29232764,
-        "posZ": -77.3083038,
-        "rotX": 0.0208076946,
-        "rotY": 270.002258,
-        "rotZ": 0.0167721249,
+        "posX": 27.1277523,
+        "posY": 1.49510384,
+        "posZ": 8.112112,
+        "rotX": -8.460765E-07,
+        "rotY": 270.006165,
+        "rotZ": -5.30325E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1473,6 +962,11 @@
       "Nickname": "Spirit Athame (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1513,12 +1007,12 @@
       "GUID": "337650",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2784958,
-        "posY": 1.29622519,
-        "posZ": -84.20865,
-        "rotX": 0.0208088029,
-        "rotY": 269.99942,
-        "rotZ": 0.01677093,
+        "posX": 43.42096,
+        "posY": 1.49510384,
+        "posZ": 1.21176064,
+        "rotX": -2.86743553E-08,
+        "rotY": 270.003174,
+        "rotZ": -9.673729E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1526,6 +1020,11 @@
       "Nickname": "Keep Faith (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1566,12 +1065,12 @@
       "GUID": "33eb6e",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2784958,
-        "posY": 1.30632377,
-        "posZ": -49.7088051,
-        "rotX": 0.0208073054,
-        "rotY": 270.003967,
-        "rotZ": 0.0167726837,
+        "posX": 43.4209557,
+        "posY": 1.49510384,
+        "posZ": 35.7116,
+        "rotX": 4.24811546E-08,
+        "rotY": 270.007263,
+        "rotZ": -2.102624E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1579,6 +1078,11 @@
       "Nickname": "Extra Ammunition (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1619,12 +1123,12 @@
       "GUID": "340ad1",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2784958,
-        "posY": 1.306997,
-        "posZ": -47.40878,
-        "rotX": 0.0208074413,
-        "rotY": 270.003662,
-        "rotZ": 0.0167724434,
+        "posX": 43.4209557,
+        "posY": 1.49510384,
+        "posZ": 38.0116272,
+        "rotX": -6.35948751E-08,
+        "rotY": 270.006958,
+        "rotZ": -9.02672E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1632,6 +1136,11 @@
       "Nickname": "Galvanize (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1672,12 +1181,12 @@
       "GUID": "349045",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.3400764,
-        "posY": 1.29100382,
-        "posZ": -77.30849,
-        "rotX": 0.0208078939,
-        "rotY": 270.002441,
-        "rotZ": 0.0167720355,
+        "posX": 23.4825459,
+        "posY": 1.49510384,
+        "posZ": 8.111929,
+        "rotX": -9.068424E-07,
+        "rotY": 270.006348,
+        "rotZ": -5.283794E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1685,6 +1194,11 @@
       "Nickname": "Nkosi Mabati (5)",
       "Description": "Enigmatic Warlock",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1725,12 +1239,12 @@
       "GUID": "3752df",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442253,
-        "posY": 1.29889953,
-        "posZ": -79.62023,
-        "rotX": 0.02080811,
-        "rotY": 270.00116,
-        "rotZ": 0.016771704,
+        "posX": 47.0866928,
+        "posY": 1.49510384,
+        "posZ": 5.800179,
+        "rotX": -1.326791E-07,
+        "rotY": 270.0048,
+        "rotZ": 1.82165749E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1738,6 +1252,11 @@
       "Nickname": "Uncage the Soul (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1778,12 +1297,12 @@
       "GUID": "3d228c",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.29011,
-        "posY": 1.29228437,
-        "posZ": -86.51989,
-        "rotX": 0.0208086725,
-        "rotY": 269.99942,
-        "rotZ": 0.0167708825,
+        "posX": 34.43258,
+        "posY": 1.49510384,
+        "posZ": -1.09947264,
+        "rotX": 3.974476E-08,
+        "rotY": 270.0033,
+        "rotZ": -4.64161E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1791,6 +1310,11 @@
       "Nickname": "Knife (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1831,12 +1355,12 @@
       "GUID": "3d5eba",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9853058,
-        "posY": 1.29434752,
-        "posZ": -70.40826,
-        "rotX": 0.0208111312,
-        "rotY": 269.9914,
-        "rotZ": 0.0167679917,
+        "posX": 27.1277714,
+        "posY": 1.49510384,
+        "posZ": 15.0121593,
+        "rotX": -7.47481153E-08,
+        "rotY": 269.995178,
+        "rotZ": -3.82009944E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1844,6 +1368,11 @@
       "Nickname": "Priest of Two-Faiths (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1884,12 +1413,12 @@
       "GUID": "3e7287",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9853058,
-        "posY": 1.2950207,
-        "posZ": -68.10825,
-        "rotX": 0.0208130348,
-        "rotY": 269.984924,
-        "rotZ": 0.0167656429,
+        "posX": 27.1277714,
+        "posY": 1.49510384,
+        "posZ": 17.3121624,
+        "rotX": 5.36450173E-09,
+        "rotY": 269.9887,
+        "rotZ": -4.37434522E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1897,6 +1426,11 @@
       "Nickname": "Fence (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1937,12 +1471,12 @@
       "GUID": "3f0180",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.34006,
-        "posY": 1.2990824,
-        "posZ": -49.70963,
-        "rotX": 0.020809859,
-        "rotY": 269.9961,
-        "rotZ": 0.01676975,
+        "posX": 23.482523,
+        "posY": 1.49510384,
+        "posZ": 35.7107849,
+        "rotX": -1.55471454E-07,
+        "rotY": 269.999725,
+        "rotZ": -1.63006092E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1950,6 +1484,11 @@
       "Nickname": "Something Worth Fighting For (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1990,12 +1529,12 @@
       "GUID": "412cf1",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2784958,
-        "posY": 1.30295753,
-        "posZ": -61.20879,
-        "rotX": 0.0208124649,
-        "rotY": 269.986267,
-        "rotZ": 0.0167661533,
+        "posX": 43.42096,
+        "posY": 1.49510384,
+        "posZ": 24.2116222,
+        "rotX": -1.14262548E-07,
+        "rotY": 269.9897,
+        "rotZ": 1.89000353E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2003,6 +1542,11 @@
       "Nickname": "Practice Makes Perfect (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2043,12 +1587,12 @@
       "GUID": "41ee84",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62436,
-        "posY": 1.292976,
-        "posZ": -79.60827,
-        "rotX": 0.0208079517,
-        "rotY": 270.0028,
-        "rotZ": 0.0167722926,
+        "posX": 30.7668247,
+        "posY": 1.49510384,
+        "posZ": 5.81214952,
+        "rotX": 2.65758882E-09,
+        "rotY": 270.0067,
+        "rotZ": -1.90755244E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2056,6 +1600,11 @@
       "Nickname": "Arcane Research (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2096,12 +1645,12 @@
       "GUID": "43ad41",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9441376,
-        "posY": 1.29755306,
-        "posZ": -84.22022,
-        "rotX": 0.0208085775,
-        "rotY": 269.999878,
-        "rotZ": 0.0167713072,
+        "posX": 47.0866051,
+        "posY": 1.49510384,
+        "posZ": 1.200187,
+        "rotX": 4.85713958E-09,
+        "rotY": 270.003571,
+        "rotZ": -3.25884059E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2109,6 +1658,11 @@
       "Nickname": "Nothing Left to Lose (0)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2149,12 +1703,12 @@
       "GUID": "43c2c3",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.94423,
-        "posY": 1.302939,
-        "posZ": -65.82019,
-        "rotX": 0.02080785,
-        "rotY": 270.002441,
-        "rotZ": 0.016771974,
+        "posX": 47.0866928,
+        "posY": 1.49510384,
+        "posZ": 19.6002178,
+        "rotX": -2.607777E-07,
+        "rotY": 270.00592,
+        "rotZ": -1.88950224E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2162,6 +1716,11 @@
       "Nickname": "Faustian Bargain (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2202,12 +1761,12 @@
       "GUID": "459f81",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 45.63947,
-        "posY": 1.29759645,
-        "posZ": -75.00871,
-        "rotX": 0.0208077356,
-        "rotY": 270.002747,
-        "rotZ": 0.0167722721,
+        "posX": 39.7819366,
+        "posY": 1.49510384,
+        "posZ": 10.4116955,
+        "rotX": -1.24507773E-08,
+        "rotY": 270.006439,
+        "rotZ": -5.272055E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2215,6 +1774,11 @@
       "Nickname": "Storm of Spirits (5)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2255,12 +1819,12 @@
       "GUID": "4634ae",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2742729,
-        "posY": 1.29160833,
-        "posZ": -88.80936,
-        "rotX": 0.0208088625,
-        "rotY": 269.999268,
-        "rotZ": 0.0167708453,
+        "posX": 34.4167442,
+        "posY": 1.49510384,
+        "posZ": -3.38893962,
+        "rotX": 3.361286E-07,
+        "rotY": 270.0032,
+        "rotZ": 2.72895289E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2268,6 +1832,11 @@
       "Nickname": "Baseball Bat (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2308,12 +1877,12 @@
       "GUID": "465927",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2785149,
-        "posY": 1.30363083,
-        "posZ": -58.9087753,
-        "rotX": 0.020807771,
-        "rotY": 270.00238,
-        "rotZ": 0.0167720187,
+        "posX": 43.42098,
+        "posY": 1.49510384,
+        "posZ": 26.5116367,
+        "rotX": -2.4092293E-07,
+        "rotY": 270.0058,
+        "rotZ": 1.68215976E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2321,6 +1890,11 @@
       "Nickname": "Connect the Dots (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2361,12 +1935,12 @@
       "GUID": "473c08",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442253,
-        "posY": 1.29957283,
-        "posZ": -77.32023,
-        "rotX": 0.0208078,
-        "rotY": 270.002258,
-        "rotZ": 0.0167720634,
+        "posX": 47.0866928,
+        "posY": 1.49510384,
+        "posZ": 8.10018,
+        "rotX": -1.83139875E-07,
+        "rotY": 270.005859,
+        "rotZ": -1.27774229E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2374,6 +1948,11 @@
       "Nickname": "Spectral Razor (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2414,12 +1993,12 @@
       "GUID": "48009b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 45.63947,
-        "posY": 1.29423034,
-        "posZ": -86.50859,
-        "rotX": 0.0208088718,
-        "rotY": 269.999268,
-        "rotZ": 0.0167709514,
+        "posX": 39.7819366,
+        "posY": 1.49510384,
+        "posZ": -1.08817363,
+        "rotX": -2.033629E-07,
+        "rotY": 270.0031,
+        "rotZ": -2.270413E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2427,6 +2006,11 @@
       "Nickname": "Fight or Flight (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2467,12 +2051,12 @@
       "GUID": "487284",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.60865,
-        "posY": 1.29028046,
-        "posZ": -88.79775,
-        "rotX": 0.0208088811,
-        "rotY": 269.999023,
-        "rotZ": 0.0167708248,
+        "posX": 30.7511177,
+        "posY": 1.49510384,
+        "posZ": -3.377335,
+        "rotX": 5.080576E-08,
+        "rotY": 270.003,
+        "rotZ": -1.53374131E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2480,6 +2064,11 @@
       "Nickname": "Mariner's Compass (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2520,12 +2109,12 @@
       "GUID": "4b6428",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.0996742,
-        "posY": 1.30479646,
-        "posZ": -65.87082,
-        "rotX": 0.0208077654,
-        "rotY": 270.00238,
-        "rotZ": 0.0167720355,
+        "posX": 52.2421341,
+        "posY": 1.49510384,
+        "posZ": 19.54959,
+        "rotX": -2.75232026E-07,
+        "rotY": 270.0058,
+        "rotZ": -1.0564866E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2533,6 +2122,11 @@
       "Nickname": "Daredevil (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2573,12 +2167,12 @@
       "GUID": "4c0584",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 33.20117,
-        "posY": 1.28776491,
-        "posZ": -93.1638,
-        "rotX": 0.0208169259,
-        "rotY": 269.9718,
-        "rotZ": 0.01676109,
+        "posX": 27.3436451,
+        "posY": 1.49510384,
+        "posZ": -7.743377,
+        "rotX": -1.59182633E-07,
+        "rotY": 269.9759,
+        "rotZ": -3.73382932E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2586,6 +2180,11 @@
       "Nickname": "Pack Leader (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2626,12 +2225,12 @@
       "GUID": "4d182c",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.09957,
-        "posY": 1.29941058,
-        "posZ": -84.27087,
-        "rotX": 0.0208089761,
-        "rotY": 269.999146,
-        "rotZ": 0.0167708434,
+        "posX": 52.24204,
+        "posY": 1.49510384,
+        "posZ": 1.149543,
+        "rotX": -1.59279423E-07,
+        "rotY": 270.002777,
+        "rotZ": 3.40717818E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2639,6 +2238,11 @@
       "Nickname": "\"Not without a fight!\" (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2679,12 +2283,12 @@
       "GUID": "4d5596",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.0996742,
-        "posY": 1.30210352,
-        "posZ": -75.07095,
-        "rotX": 0.02080801,
-        "rotY": 270.001251,
-        "rotZ": 0.0167716779,
+        "posX": 52.2421379,
+        "posY": 1.49510384,
+        "posZ": 10.3494473,
+        "rotX": 1.00116914E-07,
+        "rotY": 270.004761,
+        "rotZ": -4.923894E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2692,6 +2296,11 @@
       "Nickname": "Seal of the Elder Sign (0)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2732,12 +2341,12 @@
       "GUID": "4f1c7e",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9853058,
-        "posY": 1.29569387,
-        "posZ": -65.80825,
-        "rotX": 0.02080767,
-        "rotY": 270.00238,
-        "rotZ": 0.0167720113,
+        "posX": 27.1277714,
+        "posY": 1.49510384,
+        "posZ": 19.6121655,
+        "rotX": -4.097193E-08,
+        "rotY": 270.0061,
+        "rotZ": -2.89315267E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2745,6 +2354,11 @@
       "Nickname": "Cat Burglar (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2785,12 +2399,12 @@
       "GUID": "5cbb02",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.09969,
-        "posY": 1.30748951,
-        "posZ": -56.67096,
-        "rotX": 0.0208080057,
-        "rotY": 270.0023,
-        "rotZ": 0.016771853,
+        "posX": 52.24215,
+        "posY": 1.49510384,
+        "posZ": 28.7494488,
+        "rotX": 3.790387E-08,
+        "rotY": 270.005554,
+        "rotZ": -1.231039E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2798,6 +2412,11 @@
       "Nickname": "The Eye of Truth (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2838,12 +2457,12 @@
       "GUID": "5ccbc7",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9852867,
-        "posY": 1.29771364,
-        "posZ": -58.9083366,
-        "rotX": 0.0208077151,
-        "rotY": 270.00235,
-        "rotZ": 0.0167721026,
+        "posX": 27.1277523,
+        "posY": 1.49510384,
+        "posZ": 26.51208,
+        "rotX": -7.68340342E-08,
+        "rotY": 270.005981,
+        "rotZ": -2.761507E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2851,6 +2470,11 @@
       "Nickname": "Archaic Glyphs (3)",
       "Description": "Eltdown Shards",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2891,12 +2515,12 @@
       "GUID": "5db5fb",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.09968,
-        "posY": 1.31018245,
-        "posZ": -47.4709625,
-        "rotX": 0.0208116341,
-        "rotY": 269.989166,
-        "rotZ": 0.01676711,
+        "posX": 52.2421379,
+        "posY": 1.49510384,
+        "posZ": 37.94944,
+        "rotX": 1.40680669E-07,
+        "rotY": 269.99234,
+        "rotZ": -7.109315E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2904,6 +2528,11 @@
       "Nickname": "Inspiring Presence (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2944,12 +2573,12 @@
       "GUID": "5ff300",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 45.63947,
-        "posY": 1.29490352,
-        "posZ": -84.20859,
-        "rotX": 0.0208086316,
-        "rotY": 269.999054,
-        "rotZ": 0.0167708974,
+        "posX": 39.7819366,
+        "posY": 1.49510384,
+        "posZ": 1.21182179,
+        "rotX": 2.35688319E-07,
+        "rotY": 270.002838,
+        "rotZ": 4.67822669E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2957,6 +2586,11 @@
       "Nickname": "Waylay (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -2997,12 +2631,12 @@
       "GUID": "639ceb",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62434,
-        "posY": 1.29364932,
-        "posZ": -77.3083344,
-        "rotX": 0.0208079442,
-        "rotY": 270.0016,
-        "rotZ": 0.0167717654,
+        "posX": 30.7668056,
+        "posY": 1.49510384,
+        "posZ": 8.112082,
+        "rotX": -2.01343013E-07,
+        "rotY": 270.005432,
+        "rotZ": -1.22002945E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3010,6 +2644,11 @@
       "Nickname": "Alyssa Graham (3)",
       "Description": "Speaker to the Dead",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3050,12 +2689,12 @@
       "GUID": "68fe73",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2784958,
-        "posY": 1.30093789,
-        "posZ": -68.10866,
-        "rotX": 0.02080783,
-        "rotY": 270.0024,
-        "rotZ": 0.0167718679,
+        "posX": 43.42096,
+        "posY": 1.49510384,
+        "posZ": 17.31175,
+        "rotX": 2.37421744E-07,
+        "rotY": 270.005981,
+        "rotZ": -5.53576342E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3063,6 +2702,11 @@
       "Nickname": "Followed (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3103,12 +2747,12 @@
       "GUID": "6bbf22",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2900543,
-        "posY": 1.29767013,
-        "posZ": -68.1198654,
-        "rotX": 0.0208079312,
-        "rotY": 270.00235,
-        "rotZ": 0.0167720672,
+        "posX": 34.43252,
+        "posY": 1.49510384,
+        "posZ": 17.30055,
+        "rotX": 6.689169E-08,
+        "rotY": 270.006042,
+        "rotZ": -1.16226753E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3116,6 +2760,11 @@
       "Nickname": "Leather Jacket (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3156,12 +2805,12 @@
       "GUID": "70235c",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.3400764,
-        "posY": 1.2984091,
-        "posZ": -52.0096169,
-        "rotX": 0.0208065584,
-        "rotY": 270.007263,
-        "rotZ": 0.0167736616,
+        "posX": 23.48254,
+        "posY": 1.49510384,
+        "posZ": 33.4107971,
+        "rotX": -3.602139E-08,
+        "rotY": 270.010925,
+        "rotZ": -2.11820375E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3169,6 +2818,11 @@
       "Nickname": "M1918 BAR (5)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3209,12 +2863,12 @@
       "GUID": "75f24b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.09968,
-        "posY": 1.30950916,
-        "posZ": -49.77095,
-        "rotX": 0.02080729,
-        "rotY": 270.004639,
-        "rotZ": 0.01677287,
+        "posX": 52.2421379,
+        "posY": 1.49510384,
+        "posZ": 35.6494522,
+        "rotX": -8.627231E-08,
+        "rotY": 270.007874,
+        "rotZ": -1.069309E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3222,6 +2876,11 @@
       "Nickname": "Intrepid (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3262,12 +2921,12 @@
       "GUID": "788f24",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2899628,
-        "posY": 1.29295743,
-        "posZ": -84.2198944,
-        "rotX": 0.0208088439,
-        "rotY": 269.9989,
-        "rotZ": 0.0167706963,
+        "posX": 34.43243,
+        "posY": 1.49510384,
+        "posZ": 1.20052266,
+        "rotX": -1.47042158E-07,
+        "rotY": 270.002777,
+        "rotZ": -1.18456107E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3275,6 +2934,11 @@
       "Nickname": "Fire Axe (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3315,12 +2979,12 @@
       "GUID": "7cb35b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.29005,
-        "posY": 1.29430389,
-        "posZ": -79.6199,
-        "rotX": 0.0208076462,
-        "rotY": 270.0028,
-        "rotZ": 0.0167722553,
+        "posX": 34.432518,
+        "posY": 1.49510384,
+        "posZ": 5.8005147,
+        "rotX": 7.741619E-08,
+        "rotY": 270.006653,
+        "rotZ": -5.99311036E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3328,6 +2992,11 @@
       "Nickname": "Forbidden Knowledge (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3368,12 +3037,12 @@
       "GUID": "7d5da5",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62436,
-        "posY": 1.29432249,
-        "posZ": -75.0084,
-        "rotX": 0.0208078716,
-        "rotY": 270.002441,
-        "rotZ": 0.01677211,
+        "posX": 30.7668228,
+        "posY": 1.49510384,
+        "posZ": 10.4120159,
+        "rotX": -1.4905433E-07,
+        "rotY": 270.0063,
+        "rotZ": -5.089651E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3381,6 +3050,11 @@
       "Nickname": "Scroll of Prophecies (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3421,12 +3095,12 @@
       "GUID": "7ea4af",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9853058,
-        "posY": 1.30040622,
-        "posZ": -49.7095451,
-        "rotX": 0.0208124276,
-        "rotY": 269.987061,
-        "rotZ": 0.0167663023,
+        "posX": 27.1277676,
+        "posY": 1.49510384,
+        "posZ": 35.71087,
+        "rotX": -7.295317E-08,
+        "rotY": 269.990662,
+        "rotZ": -3.46034454E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3434,6 +3108,11 @@
       "Nickname": "Relentless (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3474,12 +3153,12 @@
       "GUID": "7f2a9e",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9852867,
-        "posY": 1.29973292,
-        "posZ": -52.0095558,
-        "rotX": 0.02080735,
-        "rotY": 270.0042,
-        "rotZ": 0.0167728066,
+        "posX": 27.1277523,
+        "posY": 1.49510384,
+        "posZ": 33.41086,
+        "rotX": -9.20840151E-08,
+        "rotY": 270.007751,
+        "rotZ": -2.18885035E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3487,6 +3166,11 @@
       "Nickname": "Tetsuo Mori (2)",
       "Description": "Too Noble for His Own Good",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3527,12 +3211,12 @@
       "GUID": "7fd726",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442329,
-        "posY": 1.3049587,
-        "posZ": -58.9203339,
-        "rotX": 0.0208078045,
-        "rotY": 270.00238,
-        "rotZ": 0.0167720281,
+        "posX": 47.0866928,
+        "posY": 1.49510384,
+        "posZ": 26.5000744,
+        "rotX": -2.27144071E-07,
+        "rotY": 270.005737,
+        "rotZ": -2.98003357E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3540,6 +3224,11 @@
       "Nickname": "Deep Knowledge (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3580,12 +3269,12 @@
       "GUID": "886a80",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.29007,
-        "posY": 1.29497719,
-        "posZ": -77.31988,
-        "rotX": 0.020807799,
-        "rotY": 270.00238,
-        "rotZ": 0.0167719778,
+        "posX": 34.4325371,
+        "posY": 1.49510384,
+        "posZ": 8.100531,
+        "rotX": 4.03707247E-07,
+        "rotY": 270.006165,
+        "rotZ": 1.15952571E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3593,6 +3282,11 @@
       "Nickname": "Familiar Spirit (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3633,12 +3327,12 @@
       "GUID": "8b4374",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62436,
-        "posY": 1.29566908,
-        "posZ": -70.40829,
-        "rotX": 0.0208065137,
-        "rotY": 270.0076,
-        "rotZ": 0.01677394,
+        "posX": 30.7668247,
+        "posY": 1.49510384,
+        "posZ": 15.0121212,
+        "rotX": -4.44591564E-08,
+        "rotY": 270.011353,
+        "rotZ": -3.97966545E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3646,6 +3340,11 @@
       "Nickname": ".25 Automatic (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3686,12 +3385,12 @@
       "GUID": "8b8aa1",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.3400764,
-        "posY": 1.29302347,
-        "posZ": -70.40846,
-        "rotX": 0.0208078027,
-        "rotY": 270.00238,
-        "rotZ": 0.0167720914,
+        "posX": 23.4825439,
+        "posY": 1.49510384,
+        "posZ": 15.0119534,
+        "rotX": -9.657093E-08,
+        "rotY": 270.0062,
+        "rotZ": -3.23959E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3699,6 +3398,11 @@
       "Nickname": "Leo de Luca (5)",
       "Description": "The Louisiana Lion",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3739,12 +3443,12 @@
       "GUID": "911810",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9284477,
-        "posY": 1.296204,
-        "posZ": -88.8096848,
-        "rotX": 0.0208088867,
-        "rotY": 269.998962,
-        "rotZ": 0.0167708639,
+        "posX": 47.07091,
+        "posY": 1.49510384,
+        "posZ": -3.38927555,
+        "rotX": 1.06006333E-07,
+        "rotY": 270.002655,
+        "rotZ": -3.852399E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3752,6 +3456,11 @@
       "Nickname": "Grit Your Teeth (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3792,12 +3501,12 @@
       "GUID": "97fcaf",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.29007,
-        "posY": 1.296997,
-        "posZ": -70.4198456,
-        "rotX": 0.0208094139,
-        "rotY": 269.996857,
-        "rotZ": 0.0167700555,
+        "posX": 34.4325333,
+        "posY": 1.49510384,
+        "posZ": 15.0005627,
+        "rotX": -5.40427827E-08,
+        "rotY": 270.00058,
+        "rotZ": -2.04447417E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3805,6 +3514,11 @@
       "Nickname": "Adaptable (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3845,12 +3559,12 @@
       "GUID": "98fdce",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2901344,
-        "posY": 1.30373061,
-        "posZ": -47.4159,
-        "rotX": 0.02081317,
-        "rotY": 269.983826,
-        "rotZ": 0.0167653747,
+        "posX": 34.4326,
+        "posY": 1.49510384,
+        "posZ": 38.00451,
+        "rotX": -3.28512364E-08,
+        "rotY": 269.987244,
+        "rotZ": -1.05600051E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3858,6 +3572,11 @@
       "Nickname": "Mk 1 Grenades (0)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3898,12 +3617,12 @@
       "GUID": "9c599b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.64644,
-        "posY": 1.286474,
-        "posZ": -93.16382,
-        "rotX": 0.0208140481,
-        "rotY": 269.980957,
-        "rotZ": 0.0167642068,
+        "posX": 23.7889118,
+        "posY": 1.49510384,
+        "posZ": -7.74339247,
+        "rotX": -2.67482818E-07,
+        "rotY": 269.985077,
+        "rotZ": 3.68517533E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3911,6 +3630,11 @@
       "Nickname": "The Red-Gloved Man (2)",
       "Description": "He Was Never Here",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -3951,12 +3675,12 @@
       "GUID": "9d3cb8",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2900276,
-        "posY": 1.30305815,
-        "posZ": -49.7128029,
-        "rotX": 0.0207985174,
-        "rotY": 270.034363,
-        "rotZ": 0.0167838056,
+        "posX": 34.43249,
+        "posY": 1.49510384,
+        "posZ": 35.70761,
+        "rotX": -2.2937849E-08,
+        "rotY": 270.031036,
+        "rotZ": -1.73939156E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3964,6 +3688,11 @@
       "Nickname": "Police Badge (0)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4004,12 +3733,12 @@
       "GUID": "9d50cf",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62436,
-        "posY": 1.29634225,
-        "posZ": -68.108284,
-        "rotX": 0.0208083373,
-        "rotY": 270.000854,
-        "rotZ": 0.0167714786,
+        "posX": 30.76682,
+        "posY": 1.49510384,
+        "posZ": 17.3121319,
+        "rotX": 5.66247138E-08,
+        "rotY": 270.004578,
+        "rotZ": 9.535357E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4017,6 +3746,11 @@
       "Nickname": "Trench Knife (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4057,12 +3791,12 @@
       "GUID": "9f71b2",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2785149,
-        "posY": 1.30565047,
-        "posZ": -52.00876,
-        "rotX": 0.0208036117,
-        "rotY": 270.017059,
-        "rotZ": 0.0167773012,
+        "posX": 43.4209747,
+        "posY": 1.49510384,
+        "posZ": 33.41165,
+        "rotX": -6.071696E-08,
+        "rotY": 270.020416,
+        "rotZ": -1.96163214E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4070,6 +3804,11 @@
       "Nickname": "Radiant Smite (5)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4110,12 +3849,12 @@
       "GUID": "9facb8",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2785149,
-        "posY": 1.29757166,
-        "posZ": -79.60862,
-        "rotX": 0.0208076891,
-        "rotY": 270.002441,
-        "rotZ": 0.0167721119,
+        "posX": 43.4209824,
+        "posY": 1.49510384,
+        "posZ": 5.811791,
+        "rotX": -1.22140619E-07,
+        "rotY": 270.0061,
+        "rotZ": -1.8185257E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4123,6 +3862,11 @@
       "Nickname": "Drawn to the Flame (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4163,12 +3907,12 @@
       "GUID": "9feaf2",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.34008,
-        "posY": 1.29975557,
-        "posZ": -47.40962,
-        "rotX": 0.02080737,
-        "rotY": 270.004578,
-        "rotZ": 0.01677278,
+        "posX": 23.482542,
+        "posY": 1.49510384,
+        "posZ": 38.0107956,
+        "rotX": -7.165232E-08,
+        "rotY": 270.008148,
+        "rotZ": -2.11256008E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4176,6 +3920,11 @@
       "Nickname": "Brother Xavier (3)",
       "Description": "Pure of Spirit",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4216,12 +3965,12 @@
       "GUID": "a46c2b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.3400764,
-        "posY": 1.297063,
-        "posZ": -56.6083946,
-        "rotX": 0.0208079256,
-        "rotY": 270.00235,
-        "rotZ": 0.01677201,
+        "posX": 23.482542,
+        "posY": 1.49510384,
+        "posZ": 28.8120213,
+        "rotX": -4.133057E-08,
+        "rotY": 270.006042,
+        "rotZ": -3.41583274E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4229,6 +3978,11 @@
       "Nickname": "Fingerprint Kit (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4269,12 +4023,12 @@
       "GUID": "a6306e",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2785149,
-        "posY": 1.304304,
-        "posZ": -56.6087723,
-        "rotX": 0.020808,
-        "rotY": 270.00238,
-        "rotZ": 0.0167721659,
+        "posX": 43.42098,
+        "posY": 1.49510384,
+        "posZ": 28.81164,
+        "rotX": -2.12764348E-07,
+        "rotY": 270.005768,
+        "rotZ": -2.16858229E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4282,6 +4036,11 @@
       "Nickname": "Guidance (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4322,12 +4081,12 @@
       "GUID": "a8db40",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 45.63947,
-        "posY": 1.30298245,
-        "posZ": -56.60867,
-        "rotX": 0.0208080076,
-        "rotY": 270.00235,
-        "rotZ": 0.01677206,
+        "posX": 39.7819328,
+        "posY": 1.49510384,
+        "posZ": 28.8117428,
+        "rotX": -2.450979E-07,
+        "rotY": 270.0058,
+        "rotZ": 1.75117378E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4335,6 +4094,11 @@
       "Nickname": "Gaze of Ouraxsh (5)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4375,12 +4139,12 @@
       "GUID": "a9a0c8",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2628059,
-        "posY": 1.2948761,
-        "posZ": -88.7981,
-        "rotX": 0.020808978,
-        "rotY": 269.998779,
-        "rotZ": 0.016770605,
+        "posX": 43.4052734,
+        "posY": 1.49510384,
+        "posZ": -3.37769413,
+        "rotX": -1.11906495E-07,
+        "rotY": 270.0026,
+        "rotZ": 1.46604961E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4388,6 +4152,11 @@
       "Nickname": "A Glimmer of Hope (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4428,12 +4197,12 @@
       "GUID": "ad0691",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.290062,
-        "posY": 1.30103636,
-        "posZ": -56.6199951,
-        "rotX": 0.0208078735,
-        "rotY": 270.00238,
-        "rotZ": 0.01677215,
+        "posX": 34.4325256,
+        "posY": 1.49510384,
+        "posZ": 28.80042,
+        "rotX": -1.88129988E-07,
+        "rotY": 270.00592,
+        "rotZ": -2.43255926E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4441,6 +4210,11 @@
       "Nickname": "Farsight (0)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4481,12 +4255,12 @@
       "GUID": "ad95fd",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62436,
-        "posY": 1.30172813,
-        "posZ": -49.7084465,
-        "rotX": 0.0208174568,
-        "rotY": 269.969238,
-        "rotZ": 0.0167601164,
+        "posX": 30.7668228,
+        "posY": 1.49510384,
+        "posZ": 35.7119675,
+        "rotX": -2.22387058E-07,
+        "rotY": 269.972717,
+        "rotZ": 2.5517798E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4494,6 +4268,11 @@
       "Nickname": "Handcuffs (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4534,12 +4313,12 @@
       "GUID": "b0dd94",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.29007,
-        "posY": 1.29968989,
-        "posZ": -61.21999,
-        "rotX": 0.0208126977,
-        "rotY": 269.986084,
-        "rotZ": 0.0167662781,
+        "posX": 34.4325371,
+        "posY": 1.49510384,
+        "posZ": 24.2004223,
+        "rotX": -9.862964E-08,
+        "rotY": 269.989624,
+        "rotZ": -2.46203683E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4547,6 +4326,11 @@
       "Nickname": "Dr. William T. Maleson (2)",
       "Description": "Working on Something Big",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4587,12 +4371,12 @@
       "GUID": "b221a7",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.34006,
-        "posY": 1.29436994,
-        "posZ": -65.80848,
-        "rotX": 0.0208076686,
-        "rotY": 270.00238,
-        "rotZ": 0.01677213,
+        "posX": 23.4825268,
+        "posY": 1.49510384,
+        "posZ": 19.6119442,
+        "rotX": -6.42382E-08,
+        "rotY": 270.0061,
+        "rotZ": -3.81977685E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4600,6 +4384,11 @@
       "Nickname": "Investments (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4640,12 +4429,12 @@
       "GUID": "b3d984",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62434,
-        "posY": 1.301055,
-        "posZ": -52.0084229,
-        "rotX": 0.0208045356,
-        "rotY": 270.0134,
-        "rotZ": 0.0167760681,
+        "posX": 30.7668,
+        "posY": 1.49510384,
+        "posZ": 33.4119949,
+        "rotX": -4.52562645E-08,
+        "rotY": 270.016968,
+        "rotZ": 1.63071931E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4653,6 +4442,11 @@
       "Nickname": ".35 Winchester (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4693,12 +4487,12 @@
       "GUID": "b47adf",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.0996742,
-        "posY": 1.30412328,
-        "posZ": -68.17082,
-        "rotX": 0.0208165552,
-        "rotY": 269.9723,
-        "rotZ": 0.0167610589,
+        "posX": 52.2421379,
+        "posY": 1.49510384,
+        "posZ": 17.2495861,
+        "rotX": -1.817009E-07,
+        "rotY": 269.975739,
+        "rotZ": 1.05640332E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4706,6 +4500,11 @@
       "Nickname": "Opportunist (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4746,12 +4545,12 @@
       "GUID": "b826dd",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2785149,
-        "posY": 1.3002646,
-        "posZ": -70.4086456,
-        "rotX": 0.0208076648,
-        "rotY": 270.002533,
-        "rotZ": 0.0167721286,
+        "posX": 43.42098,
+        "posY": 1.49510384,
+        "posZ": 15.0117626,
+        "rotX": -5.256658E-08,
+        "rotY": 270.0061,
+        "rotZ": -4.01641159E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4759,6 +4558,11 @@
       "Nickname": "Black Market (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4799,12 +4603,12 @@
       "GUID": "bae0d4",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62436,
-        "posY": 1.29701555,
-        "posZ": -65.80828,
-        "rotX": 0.0208082926,
-        "rotY": 270.000854,
-        "rotZ": 0.0167714022,
+        "posX": 30.76682,
+        "posY": 1.49510384,
+        "posZ": 19.6121349,
+        "rotX": -1.53535815E-08,
+        "rotY": 270.004578,
+        "rotZ": -3.54118328E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4812,6 +4616,11 @@
       "Nickname": "Knuckleduster (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4852,12 +4661,12 @@
       "GUID": "bf9817",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62434,
-        "posY": 1.29903519,
-        "posZ": -58.90844,
-        "rotX": 0.0208145268,
-        "rotY": 269.979431,
-        "rotZ": 0.0167637225,
+        "posX": 30.7668056,
+        "posY": 1.49510384,
+        "posZ": 26.5119724,
+        "rotX": -8.212168E-08,
+        "rotY": 269.983063,
+        "rotZ": -4.59995277E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4865,6 +4674,11 @@
       "Nickname": "Hawk-Eye Folding Camera (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4905,12 +4719,12 @@
       "GUID": "c24c0f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 26.10712,
-        "posY": 1.2852006,
-        "posZ": -93.12289,
-        "rotX": 0.0208036657,
-        "rotY": 270.016937,
-        "rotZ": 0.0167772826,
+        "posX": 20.2495937,
+        "posY": 1.49510384,
+        "posZ": -7.702461,
+        "rotX": 2.53606434E-08,
+        "rotY": 270.0211,
+        "rotZ": -2.09477491E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4918,6 +4732,11 @@
       "Nickname": "Backpack (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -4958,12 +4777,12 @@
       "GUID": "c27ee4",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442368,
-        "posY": 1.305632,
-        "posZ": -56.62033,
-        "rotX": 0.0208133142,
-        "rotY": 269.9834,
-        "rotZ": 0.0167652182,
+        "posX": 47.0866966,
+        "posY": 1.49510384,
+        "posZ": 28.8000774,
+        "rotX": -9.89281048E-08,
+        "rotY": 269.986755,
+        "rotZ": -1.96049527E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4971,6 +4790,11 @@
       "Nickname": "Astounding Revelation (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5011,12 +4835,12 @@
       "GUID": "c6629b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.94422,
-        "posY": 1.300246,
-        "posZ": -75.0203247,
-        "rotX": 0.0208076313,
-        "rotY": 270.0024,
-        "rotZ": 0.0167721454,
+        "posX": 47.0866852,
+        "posY": 1.49510384,
+        "posZ": 10.4000835,
+        "rotX": -1.45790338E-07,
+        "rotY": 270.005981,
+        "rotZ": 2.612168E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5024,6 +4848,11 @@
       "Nickname": "Banish (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5064,12 +4893,12 @@
       "GUID": "cc9f3e",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442062,
-        "posY": 1.30428541,
-        "posZ": -61.22035,
-        "rotX": 0.0208136328,
-        "rotY": 269.982269,
-        "rotZ": 0.01676464,
+        "posX": 47.08667,
+        "posY": 1.49510384,
+        "posZ": 24.2000637,
+        "rotX": -1.38925074E-07,
+        "rotY": 269.985657,
+        "rotZ": 5.58796351E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5077,6 +4906,11 @@
       "Nickname": "Working a Hunch (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5117,12 +4951,12 @@
       "GUID": "ccd2d7",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.34008,
-        "posY": 1.2963897,
-        "posZ": -58.9083939,
-        "rotX": 0.0208112244,
-        "rotY": 269.991333,
-        "rotZ": 0.0167679787,
+        "posX": 23.4825459,
+        "posY": 1.49510384,
+        "posZ": 26.512022,
+        "rotX": 4.79970375E-08,
+        "rotY": 269.995026,
+        "rotZ": -4.4449834E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5130,6 +4964,11 @@
       "Nickname": "Ancient Stone (4)",
       "Description": "Promethean Potential",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5170,12 +5009,12 @@
       "GUID": "d5060d",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9852867,
-        "posY": 1.29165447,
-        "posZ": -79.60826,
-        "rotX": 0.0208071154,
-        "rotY": 270.004456,
-        "rotZ": 0.0167728812,
+        "posX": 27.1277561,
+        "posY": 1.49510384,
+        "posZ": 5.812157,
+        "rotX": -5.207338E-08,
+        "rotY": 270.008362,
+        "rotZ": 9.029565E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5183,6 +5022,11 @@
       "Nickname": "Abyssal Tome (5)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5223,12 +5067,12 @@
       "GUID": "d5a551",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 58.0996742,
-        "posY": 1.30143034,
-        "posZ": -77.37086,
-        "rotX": 0.0208080355,
-        "rotY": 270.0023,
-        "rotZ": 0.0167719871,
+        "posX": 52.2421379,
+        "posY": 1.49510384,
+        "posZ": 8.049543,
+        "rotX": -4.13215879E-08,
+        "rotY": 270.005829,
+        "rotZ": -3.1724565E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5236,6 +5080,11 @@
       "Nickname": "Fearless (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5276,12 +5125,12 @@
       "GUID": "d7edae",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 41.3517036,
-        "posY": 1.43921435,
-        "posZ": -32.6269646,
-        "rotX": 359.920135,
-        "rotY": 270.0032,
-        "rotZ": 0.0168719757,
+        "posX": 80.106575,
+        "posY": 1.16996253,
+        "posZ": -31.8225689,
+        "rotX": 1.14233146E-07,
+        "rotY": 270.003845,
+        "rotZ": -3.821713E-07,
         "scaleX": 0.250000358,
         "scaleY": 0.250000358,
         "scaleZ": 0.250000358
@@ -5289,10 +5138,15 @@
       "Nickname": "Rabbit Hole Data Helper",
       "Description": "Include this for spawning the correct tokens for Rabbit Hole Expansion",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
-        "r": 0.09555697,
+        "r": 0.09555679,
         "g": 0.8066202,
-        "b": 0.172214121
+        "b": 0.172213942
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -5336,12 +5190,12 @@
       "GUID": "d92dde",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.29006,
-        "posY": 1.30036306,
-        "posZ": -58.92,
-        "rotX": 0.0208116267,
-        "rotY": 269.988831,
-        "rotZ": 0.0167671982,
+        "posX": 34.43252,
+        "posY": 1.49510384,
+        "posZ": 26.5004139,
+        "rotX": -6.159256E-08,
+        "rotY": 269.992371,
+        "rotZ": -8.53285442E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5349,6 +5203,11 @@
       "Nickname": "Charles Ross, Esq. (1)",
       "Description": "Acquisitions and Solicitation",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5389,12 +5248,12 @@
       "GUID": "dc8ab9",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.34006,
-        "posY": 1.291677,
-        "posZ": -75.0086,
-        "rotX": 0.020807771,
-        "rotY": 270.00238,
-        "rotZ": 0.0167719889,
+        "posX": 23.4825268,
+        "posY": 1.49510384,
+        "posZ": 10.4118176,
+        "rotX": 7.47965743E-08,
+        "rotY": 270.006256,
+        "rotZ": -1.10133321E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5402,6 +5261,11 @@
       "Nickname": "Book of Shadows (5)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5442,12 +5306,12 @@
       "GUID": "dd5a8d",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.3400764,
-        "posY": 1.29571652,
-        "posZ": -61.2084,
-        "rotX": 0.0208145976,
-        "rotY": 269.97937,
-        "rotZ": 0.01676362,
+        "posX": 23.482542,
+        "posY": 1.49510384,
+        "posZ": 24.212019,
+        "rotX": 5.78563242E-09,
+        "rotY": 269.983063,
+        "rotZ": -4.322381E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5455,6 +5319,11 @@
       "Nickname": "Quick Study (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5495,12 +5364,12 @@
       "GUID": "e10da6",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62434,
-        "posY": 1.29095638,
-        "posZ": -86.5083,
-        "rotX": 0.0208090954,
-        "rotY": 269.9987,
-        "rotZ": 0.01677069,
+        "posX": 30.76681,
+        "posY": 1.49510384,
+        "posZ": -1.08788371,
+        "rotX": 9.561826E-08,
+        "rotY": 270.002625,
+        "rotZ": -4.470556E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5508,6 +5377,11 @@
       "Nickname": "Madame Labranche (2)",
       "Description": "Mysterious Benefactress",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5548,12 +5422,12 @@
       "GUID": "e4fc98",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9853058,
-        "posY": 1.29704034,
-        "posZ": -61.20833,
-        "rotX": 0.02081327,
-        "rotY": 269.9845,
-        "rotZ": 0.0167653859,
+        "posX": 27.1277676,
+        "posY": 1.49510384,
+        "posZ": 24.2120876,
+        "rotX": -1.3390104E-07,
+        "rotY": 269.9881,
+        "rotZ": 1.05335971E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5561,6 +5435,11 @@
       "Nickname": "Celaeno Fragments (3)",
       "Description": "Book of Books",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5601,12 +5480,12 @@
       "GUID": "e5bd5d",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2784958,
-        "posY": 1.29891813,
-        "posZ": -75.00877,
-        "rotX": 0.0208078045,
-        "rotY": 270.002319,
-        "rotZ": 0.01677192,
+        "posX": 43.4209633,
+        "posY": 1.49510384,
+        "posZ": 10.4116344,
+        "rotX": -5.831998E-08,
+        "rotY": 270.005951,
+        "rotZ": -7.61656338E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5614,6 +5493,11 @@
       "Nickname": "Open Gate (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5654,12 +5538,12 @@
       "GUID": "e618ab",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62434,
-        "posY": 1.29162955,
-        "posZ": -84.2083,
-        "rotX": 0.0208089761,
-        "rotY": 269.998657,
-        "rotZ": 0.01677074,
+        "posX": 30.7668114,
+        "posY": 1.49510384,
+        "posZ": 1.21211958,
+        "rotX": -1.44662337E-07,
+        "rotY": 270.002563,
+        "rotZ": 5.68866376E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5667,6 +5551,11 @@
       "Nickname": "Grimm's Fairy Tale (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5707,12 +5596,12 @@
       "GUID": "e7c879",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 49.2784958,
-        "posY": 1.29824483,
-        "posZ": -77.3086853,
-        "rotX": 0.0208078455,
-        "rotY": 270.002441,
-        "rotZ": 0.0167720374,
+        "posX": 43.4209633,
+        "posY": 1.49510384,
+        "posZ": 8.111723,
+        "rotX": -2.657658E-07,
+        "rotY": 270.0061,
+        "rotZ": 1.21328853E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5720,6 +5609,11 @@
       "Nickname": "Bind Monster (4)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5760,12 +5654,12 @@
       "GUID": "e969d6",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62434,
-        "posY": 1.2983619,
-        "posZ": -61.2084427,
-        "rotX": 0.0208120048,
-        "rotY": 269.987732,
-        "rotZ": 0.01676668,
+        "posX": 30.7668056,
+        "posY": 1.49510384,
+        "posZ": 24.2119732,
+        "rotX": 9.78859447E-08,
+        "rotY": 269.991333,
+        "rotZ": -1.40377E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5773,6 +5667,11 @@
       "Nickname": "Laboratory Assistant (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5813,12 +5712,12 @@
       "GUID": "ed565f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.94425,
-        "posY": 1.29687977,
-        "posZ": -86.52026,
-        "rotX": 0.02080906,
-        "rotY": 269.9987,
-        "rotZ": 0.0167706851,
+        "posX": 47.08671,
+        "posY": 1.49510384,
+        "posZ": -1.09985447,
+        "rotX": 1.73306276E-07,
+        "rotY": 270.0024,
+        "rotZ": -2.27636448E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5826,6 +5725,11 @@
       "Nickname": "Belly of the Beast (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5866,12 +5770,12 @@
       "GUID": "ef4d67",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.9852867,
-        "posY": 1.29838681,
-        "posZ": -56.6083336,
-        "rotX": 0.0208145715,
-        "rotY": 269.97937,
-        "rotZ": 0.0167637113,
+        "posX": 27.1277523,
+        "posY": 1.49510384,
+        "posZ": 28.8120823,
+        "rotX": -6.867784E-08,
+        "rotY": 269.982971,
+        "rotZ": -3.69315217E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5879,6 +5783,11 @@
       "Nickname": "Research Librarian (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5919,12 +5828,12 @@
       "GUID": "f328e1",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.9442368,
-        "posY": 1.30765188,
-        "posZ": -49.71961,
-        "rotX": 0.02080799,
-        "rotY": 270.001282,
-        "rotZ": 0.01677155,
+        "posX": 47.0866966,
+        "posY": 1.49510384,
+        "posZ": 35.700798,
+        "rotX": 1.00165716E-08,
+        "rotY": 270.004578,
+        "rotZ": -3.007096E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5932,6 +5841,11 @@
       "Nickname": "Prepared for the Worst (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -5972,12 +5886,12 @@
       "GUID": "f883a7",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2900734,
-        "posY": 1.29834342,
-        "posZ": -65.81984,
-        "rotX": 0.0208078455,
-        "rotY": 270.0024,
-        "rotZ": 0.0167719238,
+        "posX": 34.43254,
+        "posY": 1.49510384,
+        "posZ": 19.6005764,
+        "rotX": 2.2207905E-10,
+        "rotY": 270.006073,
+        "rotZ": -4.16394471E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5985,6 +5899,11 @@
       "Nickname": "Fine Clothes (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -6025,12 +5944,12 @@
       "GUID": "f8e834",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62434,
-        "posY": 1.29970849,
-        "posZ": -56.6084366,
-        "rotX": 0.0208153445,
-        "rotY": 269.97644,
-        "rotZ": 0.0167625528,
+        "posX": 30.7668056,
+        "posY": 1.49510384,
+        "posZ": 28.8119755,
+        "rotX": -4.55964E-08,
+        "rotY": 269.98,
+        "rotZ": 5.848264E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6038,6 +5957,11 @@
       "Nickname": "Cryptographic Cipher (3)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -6078,12 +6002,12 @@
       "GUID": "f9302c",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 40.2985039,
-        "posY": 1.29034257,
-        "posZ": -93.1637955,
-        "rotX": 0.02081304,
-        "rotY": 269.984436,
-        "rotZ": 0.0167655852,
+        "posX": 34.4409752,
+        "posY": 1.49510384,
+        "posZ": -7.74337769,
+        "rotX": 4.18290149E-08,
+        "rotY": 269.9884,
+        "rotZ": 6.21464E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6091,6 +6015,11 @@
       "Nickname": "Charisma (0)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -6131,12 +6060,12 @@
       "GUID": "f93232",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 29.34006,
-        "posY": 1.28898406,
-        "posZ": -84.20847,
-        "rotX": 0.0208084881,
-        "rotY": 269.999939,
-        "rotZ": 0.016771175,
+        "posX": 23.48253,
+        "posY": 1.49510384,
+        "posZ": 1.21195149,
+        "rotX": 1.74150557E-07,
+        "rotY": 270.003967,
+        "rotZ": -3.00275332E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6144,6 +6073,11 @@
       "Nickname": "Yaotl (3)",
       "Description": "Lost Son of Eztli",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -6184,12 +6118,12 @@
       "GUID": "fa6c1a",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.75426,
-        "posY": 1.28905892,
-        "posZ": -93.1517944,
-        "rotX": 0.02081838,
-        "rotY": 269.9663,
-        "rotZ": 0.016758984,
+        "posX": 30.89673,
+        "posY": 1.49510384,
+        "posZ": -7.73136854,
+        "rotX": -2.46834713E-08,
+        "rotY": 269.970337,
+        "rotZ": -2.77655E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6197,6 +6131,11 @@
       "Nickname": "Kukri (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -6237,12 +6176,12 @@
       "GUID": "faed96",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 36.62436,
-        "posY": 1.30240142,
-        "posZ": -47.40842,
-        "rotX": 0.0208074357,
-        "rotY": 270.0042,
-        "rotZ": 0.0167726725,
+        "posX": 30.76682,
+        "posY": 1.49510384,
+        "posZ": 38.0119934,
+        "rotX": 1.71848547E-09,
+        "rotY": 270.0077,
+        "rotZ": -1.06907542E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6250,6 +6189,11 @@
       "Nickname": "Venturer (1)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -6290,12 +6234,12 @@
       "GUID": "fde4dd",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 52.94423,
-        "posY": 1.30226576,
-        "posZ": -68.12019,
-        "rotX": 0.0208078325,
-        "rotY": 270.002472,
-        "rotZ": 0.0167721771,
+        "posX": 47.0866928,
+        "posY": 1.49510384,
+        "posZ": 17.3002148,
+        "rotX": -2.194629E-07,
+        "rotY": 270.005981,
+        "rotZ": -3.48457377E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6303,6 +6247,11 @@
       "Nickname": "Narrow Escape (2)",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -6328,59 +6277,6 @@
         "6105": {
           "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1862800022614061386/94A35B45383840829364E068B47726546A0AEB60/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1648842893716351530/B1BF31EBC5D92EC3A51B6D3B56ABFB232D2636C5/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "bb7677",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 1.83284318,
-        "posY": 1.33769631,
-        "posZ": -12.0103912,
-        "rotX": -0.00359908282,
-        "rotY": 269.9983,
-        "rotZ": 350.215027,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Charlie Kane",
-      "Description": "The Politician",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "CardID": 615200,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6152": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1841412461229084369/1196BE9C5795C60246E3DCD7F323CC31AB5C23F3/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1841412363650049619/07EA45ADCDA0F18A0484628B7FCFAE1A354BDF17/",
           "NumWidth": 1,
           "NumHeight": 1,
           "BackIsHidden": true,
