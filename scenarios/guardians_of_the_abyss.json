@@ -2189,7 +2189,7 @@
                   },
                   "Nickname": "Mist-Filled Caverns",
                   "Description": "Otherworld. Dreamlands.",
-                  "GMNotes": "{\n  \"id\": \"83026\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Dreamlands.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"83026b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Dreamlands.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2251,7 +2251,7 @@
                   },
                   "Nickname": "Stairway to Sarkomand",
                   "Description": "Otherworld. Dreamlands.",
-                  "GMNotes": "{\n  \"id\": \"83025\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Dreamlands.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"83025b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Dreamlands.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2313,7 +2313,7 @@
                   },
                   "Nickname": "Tunnels under Ngranek",
                   "Description": "Otherworld. Dreamlands.",
-                  "GMNotes": "{\n  \"id\": \"83024\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Dreamlands.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"83024b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Dreamlands.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2375,7 +2375,7 @@
                   },
                   "Nickname": "The Great Abyss",
                   "Description": "Otherworld. Dreamlands.",
-                  "GMNotes": "{\n  \"id\": \"83023\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Dreamlands.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"victory\": 1,\n    \"icons\": \"Square\",\n    \"connections\": \"SlantedEquals|Triangle|Diamond|Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"83023b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Dreamlands.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"victory\": 1,\n    \"icons\": \"Square\",\n    \"connections\": \"SlantedEquals|Triangle|Diamond|Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2437,7 +2437,7 @@
                   },
                   "Nickname": "A Dream Betwixt",
                   "Description": "Otherworld. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"83022\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Extradimensional.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"SlantedEquals\",\n    \"connections\": \"Square\"\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"83022b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld. Extradimensional.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"SlantedEquals\",\n    \"connections\": \"Square\"\n  }\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2876,7 +2876,7 @@
               },
               "Nickname": "Nadia Nimr ",
               "Description": "Humanoid. Cultist.  Brotherhood.",
-              "GMNotes": "{\n  \"id\": \"83033\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Brotherhood.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"83033a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Brotherhood.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4922,7 +4922,7 @@
               },
               "Nickname": "Nadia Nimr ",
               "Description": "Humanoid. Cultist.  Brotherhood.",
-              "GMNotes": "{\n  \"id\": \"83033\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Brotherhood.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"83033a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Brotherhood.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,

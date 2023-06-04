@@ -3329,7 +3329,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07209\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07209b\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3453,7 +3453,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07208\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07208c\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3577,7 +3577,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07208c\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07208a\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3639,7 +3639,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07207\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07207b\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3701,7 +3701,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07207b\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07207a\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3763,7 +3763,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07206\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07206b\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3825,7 +3825,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07206b\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07206a\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3887,7 +3887,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07205\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 3,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07205b\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 3,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3949,7 +3949,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07205b\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07205a\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4011,7 +4011,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07204\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07204c\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4135,7 +4135,7 @@
               },
               "Nickname": "Old Innsmouth Road",
               "Description": "Road.",
-              "GMNotes": "{\n  \"id\": \"07204c\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07204a\",\n  \"type\": \"Location\",\n  \"traits\": \"Road.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10004,7 +10004,7 @@
               },
               "Nickname": "Unfathomable Depths",
               "Description": "Cave. Y’ha-nthlei.",
-              "GMNotes": "{\n  \"id\": \"07177\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave. Y\\u0027ha-nthlei.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07177a\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave. Y\\u0027ha-nthlei.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10372,7 +10372,7 @@
               },
               "Nickname": "Unfathomable Depths",
               "Description": "Cave. Y’ha-nthlei.",
-              "GMNotes": "{\n  \"id\": \"07175\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave. Y\\u0027ha-nthlei.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07175b\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave. Y\\u0027ha-nthlei.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10434,7 +10434,7 @@
               },
               "Nickname": "Unfathomable Depths",
               "Description": "Cave. Y’ha-nthlei.",
-              "GMNotes": "{\n  \"id\": \"07175b\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave. Y\\u0027ha-nthlei.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07175a\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave. Y\\u0027ha-nthlei.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10820,7 +10820,7 @@
               },
               "Nickname": "Tidal Tunnel",
               "Description": "Cave.",
-              "GMNotes": "{\n  \"id\": \"07174\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07174a\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10944,7 +10944,7 @@
               },
               "Nickname": "Tidal Tunnel",
               "Description": "Cave.",
-              "GMNotes": "{\n  \"id\": \"07174\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07174b\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -15004,7 +15004,7 @@
               },
               "Nickname": "Unfathomable Depths",
               "Description": "Cave. Y’ha-nthlei.",
-              "GMNotes": "{\n  \"id\": \"07176\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave. Y\\u0027ha-nthlei.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"07176a\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave. Y\\u0027ha-nthlei.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
