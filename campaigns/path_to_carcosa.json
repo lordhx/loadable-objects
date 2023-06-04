@@ -16566,7 +16566,7 @@
                       },
                       "Nickname": "Search For the Stranger (v. II)",
                       "Description": "Act 2",
-                      "GMNotes": "{\n  \"id\": \"03322c\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
+                      "GMNotes": "{\n  \"id\": \"03322a\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -17062,7 +17062,7 @@
                   },
                   "Nickname": "Search For the Stranger (v. II)",
                   "Description": "Act 2",
-                  "GMNotes": "{\n  \"id\": \"03322c\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"03322a\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -23789,7 +23789,7 @@
                       },
                       "Nickname": "The Ritual Begins",
                       "Description": "Agenda 1c",
-                      "GMNotes": "{\n  \"id\": \"03278a\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 5,\n  \"cycle\": \"Standalone\"\n}",
+                      "GMNotes": "{\n  \"id\": \"03278\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 5,\n  \"cycle\": \"Standalone\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -25519,7 +25519,7 @@
                       },
                       "Nickname": "The Ritual Begins",
                       "Description": "Agenda 1c",
-                      "GMNotes": "{\n  \"id\": \"03278a\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 5,\n  \"cycle\": \"Standalone\"\n}",
+                      "GMNotes": "{\n  \"id\": \"03278\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 5,\n  \"cycle\": \"Standalone\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,

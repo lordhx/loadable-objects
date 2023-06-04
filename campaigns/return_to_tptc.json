@@ -1023,7 +1023,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Echoes of the Past",
-          "GMNotes": "{\n  \"id\": \"\",\n  \"cycle\": \"Standalone\"\n}",
+          "GMNotes": "null",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
