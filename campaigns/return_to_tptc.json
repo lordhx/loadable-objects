@@ -40175,7 +40175,7 @@
               },
               "Nickname": "Empire of the Dead",
               "Description": "Agenda 1",
-              "GMNotes": "{\n  \"id\": \"03241\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"03241\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 6,\n  \"victory\": 2,\n  \"cycle\": \"The Path to Carcoa\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
