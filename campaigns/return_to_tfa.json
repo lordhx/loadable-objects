@@ -3028,7 +3028,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Doom of Eztli",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53017\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -8024,7 +8024,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Heart of the Elders, Part 2",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53048\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -12922,7 +12922,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Turn Back Time",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53066\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -15608,7 +15608,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Threads of Fate",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53028\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -15986,7 +15986,7 @@
               },
               "Nickname": "Strange Relics",
               "Description": "Act 2e",
-              "GMNotes": "{\n  \"id\": \"04137b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Conspirator. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04137a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Conspirator. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -16169,7 +16169,7 @@
               },
               "Nickname": "Trial of the Huntress",
               "Description": "Act 1e",
-              "GMNotes": "{\n  \"id\": \"04133b\",\n  \"type\": \"Location\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"04133a\",\n  \"type\": \"Location\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -16549,7 +16549,7 @@
               },
               "Nickname": "Harlan's Curse",
               "Description": "Act 2a",
-              "GMNotes": "{\n  \"id\": \"04122b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cursed. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04122\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cursed. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -16793,7 +16793,7 @@
               },
               "Nickname": "The Relic is Missing!",
               "Description": "Act 1a",
-              "GMNotes": "{\n  \"id\": \"04117b\",\n  \"type\": \"Location\",\n  \"traits\": \"Miskatonic. Exhibit.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Plus\",\n    \"connections\": \"Diamond\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"04117a\",\n  \"type\": \"Location\",\n  \"traits\": \"Miskatonic. Exhibit.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Plus\",\n    \"connections\": \"Diamond\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -17055,7 +17055,7 @@
               },
               "Nickname": "Friends in High Places",
               "Description": "Act 2c",
-              "GMNotes": "{\n  \"id\": \"04130b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Conspirator. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04130a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Conspirator. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -17177,7 +17177,7 @@
               },
               "Nickname": "At the Station",
               "Description": "Act 2c",
-              "GMNotes": "{\n  \"id\": \"04127\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"FromNorthside\",\n    \"connections\": \"Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"04128a\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"FromNorthside\",\n    \"connections\": \"Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -17239,7 +17239,7 @@
               },
               "Nickname": "At the Station",
               "Description": "Act 2c",
-              "GMNotes": "{\n  \"id\": \"04128a\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04127\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -17685,7 +17685,7 @@
               },
               "Nickname": "Seeking Trouble",
               "Description": "Act 2",
-              "GMNotes": "{\n  \"id\": \"53034b\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Tilde\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      },\n      {\n        \"count\": 4,\n        \"type\": \"Resource\",\n        \"token\": \"resource\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"53034\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Tilde\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      },\n      {\n        \"count\": 4,\n        \"type\": \"Resource\",\n        \"token\": \"resource\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -22934,7 +22934,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Heart of the Elders, Part 1",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53045\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -26601,7 +26601,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Shattered Aeons",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53061\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -28112,7 +28112,7 @@
               },
               "Nickname": "Alejandro Vela",
               "Description": "Or, Is He?",
-              "GMNotes": "{\n  \"id\": \"04051\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 2,\n  \"traits\": \"Ally. Wayfarer.\",\n  \"willpowerIcons\": 1,\n  \"intellectIcons\": 1,\n  \"wildIcons\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04326b\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 2,\n  \"traits\": \"Ally. Wayfarer.\",\n  \"willpowerIcons\": 1,\n  \"intellectIcons\": 1,\n  \"wildIcons\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -28174,7 +28174,7 @@
               },
               "Nickname": "Ichtaca",
               "Description": "Scion of Yig",
-              "GMNotes": "{\n  \"id\": \"04052\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Eztli. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04325b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Eztli. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -33764,7 +33764,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Untamed Wilds",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53016\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -41863,7 +41863,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Boundary Beyond",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53038\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -42013,7 +42013,7 @@
           },
           "Nickname": "Scenario",
           "Description": "The Depths of Yoth - Hard/Expert",
-          "GMNotes": "{\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"description\":\"Reveal another token. If you fail, each Serpent enemy at your location or a connecting location heals 2 damage.\",\"modifier\":0},\"Elder Thing\":{\"description\":\"-4. If there are 3 or more vengeance points in the victory display, you automatically fail this test, instead.\",\"modifier\":-4},\"Skull\":{\"description\":\"-X. X is the current depth level. If you fail, take 1 horror.\",\"modifier\":-999},\"Tablet\":{\"description\":\"Reveal another token. If you fail, place 1 clue on your location (from the token pool).\",\"modifier\":0}}}}}",
+          "GMNotes": "{\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"description\":\"Reveal another token. If you fail, each Serpent enemy at your location or a connecting location heals 2 damage.\",\"modifier\":0},\"Elder Thing\":{\"description\":\"-4. If there are 3 or more vengeance points in the victory display, you automatically fail this test, instead.\",\"modifier\":-4},\"Skull\":{\"description\":\"-X. X is the current depth level. If you fail, take 1 horror.\",\"modifier\":-999},\"Tablet\":{\"description\":\"Reveal another token. If you fail, place 1 clue on your location (from the token pool).\",\"modifier\":0}}},\"id\":\"04277\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -46666,7 +46666,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Depths of Yoth",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53059\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -46724,7 +46724,7 @@
           },
           "Nickname": "Scenario",
           "Description": "The Depths of Yoth - Easy/Standard",
-          "GMNotes": "{\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"description\":\"Reveal another token. If you fail, each Serpent enemy at your location or a connecting location heals 2 damage.\",\"modifier\":0},\"Elder Thing\":{\"description\":\"-2. If there are 3 or more vengeance points in the victory display, you automatically fail this test, instead.\",\"modifier\":-2},\"Skull\":{\"description\":\"-X. X is the current depth level.\",\"modifier\":-999},\"Tablet\":{\"description\":\"Reveal another token. If you fail, place 1 clue on your location (from the token pool).\",\"modifier\":0}}}}}",
+          "GMNotes": "{\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"description\":\"Reveal another token. If you fail, each Serpent enemy at your location or a connecting location heals 2 damage.\",\"modifier\":0},\"Elder Thing\":{\"description\":\"-2. If there are 3 or more vengeance points in the victory display, you automatically fail this test, instead.\",\"modifier\":-2},\"Skull\":{\"description\":\"-X. X is the current depth level.\",\"modifier\":-999},\"Tablet\":{\"description\":\"Reveal another token. If you fail, place 1 clue on your location (from the token pool).\",\"modifier\":0}}},\"id\":\"04277\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -54479,7 +54479,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The City of Archives",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"53053\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
