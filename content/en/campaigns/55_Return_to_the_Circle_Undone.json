@@ -460,7 +460,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Disappearance at the Twilight Estate",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54016\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -6354,7 +6354,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to For the Greater Good",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54042\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -15237,7 +15237,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Wages of Sin",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54034\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -17977,7 +17977,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178e\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -18038,7 +18038,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178e\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178k\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -18282,7 +18282,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178e\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178g\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -18343,7 +18343,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178e\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178i\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -18404,7 +18404,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178e\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -25194,7 +25194,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Witching Hour",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54017\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -25401,7 +25401,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Before the Black Throne",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54056\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -35719,7 +35719,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to In the Clutches of Chaos",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54049\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -43604,7 +43604,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Secret Name",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54029\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -46235,7 +46235,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to At Death's Doorstep",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54024\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -46914,7 +46914,7 @@
               },
               "Nickname": "Josef Meiger",
               "Description": "Lodge Host",
-              "GMNotes": "{\n  \"id\": \"05085\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05085b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -52462,7 +52462,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Union and Disillusion",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"54046\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -54140,7 +54140,7 @@
               },
               "Nickname": "Josef Meiger",
               "Description": "Lodge Host",
-              "GMNotes": "{\n  \"id\": \"05085\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05085b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,

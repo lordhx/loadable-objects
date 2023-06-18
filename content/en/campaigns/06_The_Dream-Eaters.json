@@ -11702,7 +11702,7 @@
               },
               "Nickname": "The House With No Name",
               "Description": "Agenda 1",
-              "GMNotes": "{\n  \"id\": \"06169b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Abomination. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"06169a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Abomination. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -20048,7 +20048,7 @@
               },
               "Nickname": "The Infestation Begins",
               "Description": "",
-              "GMNotes": "null",
+              "GMNotes": "{\"id\": \"06078\"}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
