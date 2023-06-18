@@ -1023,7 +1023,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Echoes of the Past",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"52028\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -5952,7 +5952,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Last King",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"52021\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -11104,7 +11104,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Curtain Call",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"52014\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -16568,7 +16568,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to A Phantom of Truth",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"52040\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -19793,7 +19793,7 @@
               },
               "Nickname": "Shores of Hali",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"03325\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"03325b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -21435,7 +21435,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Dim Carcosa",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"52059\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -28218,7 +28218,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Black Stars Rise",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"52054\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -33316,7 +33316,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Unspeakable Oath",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"52034\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -38608,7 +38608,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Pallid Mask",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"52048\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,

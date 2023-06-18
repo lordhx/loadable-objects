@@ -8501,7 +8501,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178a\",\n  \"type\": \"Treachery\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178g\",\n  \"type\": \"Treachery\",\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8623,7 +8623,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178e\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8684,7 +8684,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8745,7 +8745,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178k\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8806,7 +8806,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178i\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -21647,7 +21647,7 @@
               },
               "Nickname": "Josef Meiger",
               "Description": "Lodge Host",
-              "GMNotes": "{\n  \"id\": \"05085\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05085b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -40181,7 +40181,7 @@
               },
               "Nickname": "Josef Meiger",
               "Description": "Lodge Host",
-              "GMNotes": "{\n  \"id\": \"05085\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05085b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,

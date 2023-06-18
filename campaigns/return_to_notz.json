@@ -394,7 +394,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Gathering",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"50011\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -4021,7 +4021,7 @@
                   },
                   "Nickname": "Predator or Prey?",
                   "Description": "Agenda 1",
-                  "GMNotes": "{\n  \"id\": \"50026a\",\n  \"type\": \"Agenda\",\n  \"victory\": 2,\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01121a\",\n  \"type\": \"Agenda\",\n  \"victory\": 2,\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -6913,7 +6913,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Devourer Below",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"50032a\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -9590,7 +9590,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Midnight Masks",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"50025\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -11860,7 +11860,7 @@
                   },
                   "Nickname": "Predator or Prey?",
                   "Description": "Agenda 1",
-                  "GMNotes": "{\n  \"id\": \"50026a\",\n  \"type\": \"Agenda\",\n  \"victory\": 2,\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01121a\",\n  \"type\": \"Agenda\",\n  \"victory\": 2,\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,

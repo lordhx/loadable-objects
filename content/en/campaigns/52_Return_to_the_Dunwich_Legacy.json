@@ -4697,7 +4697,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Blood on the Altar",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"51032\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -9435,7 +9435,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Where Doom Awaits",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"51047\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -14908,7 +14908,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Lost in Time and Space",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"51053\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -18960,7 +18960,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Miskatonic Museum",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"51020\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -20562,7 +20562,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Undimensioned and Unseen",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"51041\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -28356,7 +28356,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to Extracurricular Activities",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"51012\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -33310,7 +33310,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The Essex County Express",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"51025\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -33747,7 +33747,7 @@
               },
               "Nickname": "Where There's Smoke",
               "Description": "Agenda 0",
-              "GMNotes": "{\n  \"id\": \"51026\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"51026b\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -37526,7 +37526,7 @@
           },
           "Nickname": "Setup",
           "Description": "Return to The House Always Wins",
-          "GMNotes": "null",
+          "GMNotes": "{\"id\":\"51015\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
