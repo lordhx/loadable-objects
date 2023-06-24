@@ -39647,7 +39647,7 @@
               },
               "Nickname": "Wooden Sledge",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"08115\",\n  \"type\": \"Asset\",\n  \"class\": \"Rogue|Survivor\",\n  \"cost\": 3,\n  \"level\": 4,\n  \"traits\": \"Item. Charm. Cursed.\",\n  \"wildIcons\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"08615\",\n  \"type\": \"Asset\",\n  \"class\": \"Rogue|Survivor\",\n  \"cost\": 3,\n  \"level\": 4,\n  \"traits\": \"Item. Charm. Cursed.\",\n  \"wildIcons\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
