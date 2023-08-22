@@ -6,11 +6,11 @@
             "posY": 1.48149908,
             "posZ": -28.1949577,
             "rotX": 0,
-            "rotY": 180.0,
+            "rotY": 270,
             "rotZ": 0,
-            "scaleX": 2.21,
-            "scaleY": 0.46,
-            "scaleZ": 2.42
+            "scaleX": 2,
+            "scaleY": 0.11,
+            "scaleZ": 1.69
           },
           "Nickname": "The (Unofficial) Return to The Innsmouth Conspiracy ",
           "Description": "v3",
@@ -45,12 +45,12 @@
             "Order": 0
           },
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/RobMayer/TTSLibrary/master/advboxes/tuckbox_h_MSH.obj",
-            "DiffuseURL": "https://i.imgur.com/pKWVnxO.png",
+            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/2021606446230436832/9485F353EEE9717261DC545E0AE772A33A9E7E73/",
+            "MaterialIndex": 3,
+            "MeshURL": "http://pastebin.com/raw.php?i=uWAmuNZ2",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 3,
             "TypeIndex": 6,
             "CustomShader": {
               "SpecularColor": {
