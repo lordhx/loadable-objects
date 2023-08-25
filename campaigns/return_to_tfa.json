@@ -4209,7 +4209,7 @@
               },
               "Nickname": "Chamber of Time",
               "Description": "Rearranged by Time",
-              "GMNotes": "{\n  \"id\": \"53027\",\n  \"type\": \"Location\",\n  \"traits\": \"Forgotten. Ruins.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"victory\": 2,\n    \"vengeance\": 2,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Tilde|Triangle|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"53027\",\n  \"type\": \"Location\",\n  \"traits\": \"Forgotten. Ruins.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"victory\": 2,\n    \"vengeance\": 2,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Tilde|Triangle|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      },\n      {\n        \"count\": 1,\n        \"type\": \"Doom\",\n        \"token\": \"doom\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -14411,7 +14411,7 @@
               },
               "Nickname": "Chamber of Time",
               "Description": "Rearranged by Time",
-              "GMNotes": "{\n  \"id\": \"53027\",\n  \"type\": \"Location\",\n  \"traits\": \"Forgotten. Ruins.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Tilde|Triangle|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"53027\",\n  \"type\": \"Location\",\n  \"traits\": \"Forgotten. Ruins.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"victory\": 2,\n    \"vengeance\": 2,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Tilde|Triangle|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      },\n      {\n        \"count\": 1,\n        \"type\": \"Doom\",\n        \"token\": \"doom\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
