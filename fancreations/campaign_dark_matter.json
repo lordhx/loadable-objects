@@ -33154,7 +33154,7 @@
           },
           "Nickname": "Flight Deck",
           "Description": "",
-          "GMNotes": "{\n  \"id\": \"DM126\",\n  \"type\": \"Location\",\n  \"traits\": \"Nostalgia II.\",\n  \"locationFront\": {\n    \"victory\": 1,\n    \"icons\": \"Tee\",\n    \"connections\": \"Clover|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  },\n  \"locationBack\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Clover|SlantedEquals\"\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"DM126\",\n  \"type\": \"Location\",\n  \"traits\": \"Nostalgia II.\",\n  \"locationFront\": {\n    \"victory\": 1,\n    \"icons\": \"Tee\",\n    \"connections\": \"Clover|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  },\n  \"locationBack\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Clover|SlantedEquals\"\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
