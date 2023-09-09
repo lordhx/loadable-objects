@@ -46853,7 +46853,7 @@
               },
               "Tags": [
                 "Asset",
-                "PlayerCard"
+                "ScenarioCard"
               ],
               "LayoutGroupSortIndex": 0,
               "Value": 0,
@@ -46874,7 +46874,7 @@
               "CustomDeck": {
                 "3125": {
                   "FaceURL": "http://cloud-3.steamusercontent.com/ugc/786356000879761873/F22612DB451928DCA4344F3F125F5A8CE128A817/",
-                  "BackURL": "https://i.imgur.com/EcbhVuh.jpg/",
+                  "BackURL": "https://i.imgur.com/sRsWiSG.jpg/",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
