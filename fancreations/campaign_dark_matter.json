@@ -25820,7 +25820,7 @@
               },
               "Nickname": "Agenda 2",
               "Description": "",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"DM016\",\n  \"type\": \"Enemy\",\n  \"traits\": \"AI. Machine. Elite.\",\n  \"victory\": 1\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
