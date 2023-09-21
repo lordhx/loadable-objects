@@ -2,12 +2,12 @@
   "GUID": "300fcc",
   "Name": "Custom_Model_Bag",
   "Transform": {
-    "posX": 26.0,
-    "posY": 1.48554,
-    "posZ": -87.0,
-    "rotX": 4.133024E-07,
-    "rotY": 270.0,
-    "rotZ": -8.209591E-08,
+    "posX": 26,
+    "posY": 1.485,
+    "posZ": -87,
+    "rotX": 0,
+    "rotY": 270,
+    "rotZ": 0,
     "scaleX": 1.0,
     "scaleY": 0.14,
     "scaleZ": 1.0
@@ -68,9 +68,60 @@
     "Order": 0
   },
   "LuaScript": "-- Utility memory bag by Directsun\r\n-- Version 2.5.2\r\n-- Fork of Memory Bag 2.0 by MrStump\r\n\r\nfunction updateSave()\r\n    local data_to_save = {[\"ml\"]=memoryList}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction combineMemoryFromBagsWithin()\r\n  local bagObjList = self.getObjects()\r\n  for _, bagObj in ipairs(bagObjList) do\r\n    local data = bagObj.lua_script_state\r\n      if data ~= nil then\r\n        local j = JSON.decode(data)\r\n        if j ~= nil and j.ml ~= nil then\r\n          for guid, entry in pairs(j.ml) do\r\n            memoryList[guid] = entry\r\n          end\r\n        end\r\n      end\r\n    end\r\nend\r\n\r\nfunction updateMemoryWithMoves()\r\n    memoryList = memoryListBackup\r\n    --get the first transposed object's coordinates\r\n    local obj = getObjectFromGUID(moveGuid)\r\n\r\n    -- p1 is where needs to go, p2 is where it was\r\n    local refObjPos = memoryList[moveGuid].pos\r\n    local deltaPos = findOffsetDistance(obj.getPosition(), refObjPos, nil)\r\n    local movedRotation = obj.getRotation()\r\n    for guid, entry in pairs(memoryList) do\r\n        memoryList[guid].pos.x = entry.pos.x - deltaPos.x\r\n        memoryList[guid].pos.y = entry.pos.y - deltaPos.y\r\n        memoryList[guid].pos.z = entry.pos.z - deltaPos.z\r\n        -- memoryList[guid].rot.x = movedRotation.x\r\n        -- memoryList[guid].rot.y = movedRotation.y\r\n        -- memoryList[guid].rot.z = movedRotation.z\r\n    end\r\n\r\n    --theList[obj.getGUID()] = {\r\n    --    pos={x=round(pos.x,4), y=round(pos.y,4), z=round(pos.z,4)},\r\n    --    rot={x=round(rot.x,4), y=round(rot.y,4), z=round(rot.z,4)},\r\n    --    lock=obj.getLock()\r\n    --}\r\n    moveList = {}\r\nend\r\n\r\nfunction onload(saved_data)\r\n    fresh = true\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        --Set up information off of loaded_data\r\n        memoryList = loaded_data.ml\r\n    else\r\n        --Set up information for if there is no saved saved data\r\n        memoryList = {}\r\n    end\r\n\r\n    moveList = {}\r\n    moveGuid = nil\r\n\r\n    if next(memoryList) == nil then\r\n        createSetupButton()\r\n    else\r\n        fresh = false\r\n        createMemoryActionButtons()\r\n    end\r\nend\r\n\r\n\r\n--Beginning Setup\r\n\r\n\r\n--Make setup button\r\nfunction createSetupButton()\r\n    self.createButton({\r\n        label=\"Setup\", click_function=\"buttonClick_setup\", function_owner=self,\r\n        position={0,0.1,-6}, rotation={0,0,0}, height=500, width=1200,\r\n        font_size=350, color={0,0,0}, font_color={1,1,1}\r\n    })\r\nend\r\n\r\n--Triggered by Transpose button\r\nfunction buttonClick_transpose()\r\n    moveGuid = nil\r\n    broadcastToAll(\"Select one object and move it- all objects will move relative to the new location\", {0.75, 0.75, 1})\r\n    memoryListBackup = duplicateTable(memoryList)\r\n    memoryList = {}\r\n    moveList = {}\r\n    self.clearButtons()\r\n    createButtonsOnAllObjects(true)\r\n    createSetupActionButtons(true)\r\nend\r\n\r\n--Triggered by setup button,\r\nfunction buttonClick_setup()\r\n    memoryListBackup = duplicateTable(memoryList)\r\n    memoryList = {}\r\n    self.clearButtons()\r\n    createButtonsOnAllObjects(false)\r\n    createSetupActionButtons(false)\r\nend\r\n\r\nfunction getAllObjectsInMemory()\r\n  local objTable = {}\r\n  local curObj = {}\r\n\r\n  for guid in pairs(memoryListBackup) do\r\n    curObj = getObjectFromGUID(guid)\r\n    table.insert(objTable, curObj)\r\n  end\r\n\r\n  return objTable\r\n  -- return getAllObjects()\r\nend\r\n\r\n--Creates selection buttons on objects\r\nfunction createButtonsOnAllObjects(move)\r\n    local howManyButtons = 0\r\n\r\n    local objsToHaveButtons = {}\r\n    if move == true then\r\n      objsToHaveButtons = getAllObjectsInMemory()\r\n    else\r\n      objsToHaveButtons = getAllObjects()\r\n    end\r\n\r\n    for _, obj in ipairs(objsToHaveButtons) do\r\n        if obj ~= self then\r\n            local dummyIndex = howManyButtons\r\n            --On a normal bag, the button positions aren't the same size as the bag.\r\n            globalScaleFactor = 1 * 1/self.getScale().x\r\n            --Super sweet math to set button positions\r\n            local selfPos = self.getPosition()\r\n            local objPos = obj.getPosition()\r\n            local deltaPos = findOffsetDistance(selfPos, objPos, obj)\r\n            local objPos = rotateLocalCoordinates(deltaPos, self)\r\n            objPos.x = -objPos.x * globalScaleFactor\r\n            objPos.y = objPos.y * globalScaleFactor + 4\r\n            objPos.z = objPos.z * globalScaleFactor\r\n            --Offset rotation of bag\r\n            local rot = self.getRotation()\r\n            rot.y = -rot.y + 180\r\n            --Create function\r\n            local funcName = \"selectButton_\" .. howManyButtons\r\n            local func = function() buttonClick_selection(dummyIndex, obj, move) end\r\n            local color = {0.75,0.25,0.25,0.6}\r\n            local colorMove = {0,0,1,0.6}\r\n            if move == true then\r\n              color = colorMove\r\n            end\r\n            self.setVar(funcName, func)\r\n            self.createButton({\r\n                click_function=funcName, function_owner=self,\r\n                position=objPos, rotation=rot, height=1000, width=1000,\r\n                color=color,\r\n            })\r\n            howManyButtons = howManyButtons + 1\r\n        end\r\n    end\r\nend\r\n\r\n--Creates submit and cancel buttons\r\nfunction createSetupActionButtons(move)\r\n    self.createButton({\r\n        label=\"Cancel\", click_function=\"buttonClick_cancel\", function_owner=self,\r\n      position={-1.25,0.1,-6}, rotation={0,0,0}, height=500, width=1200,\r\n        font_size=350, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n\r\n    self.createButton({\r\n        label=\"Submit\", click_function=\"buttonClick_submit\", function_owner=self,\r\n        position={-1.25,0.3,-7}, rotation={0,0,0}, height=500, width=1200,\r\n        font_size=350, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n\r\n    if move == false then\r\n      self.createButton({\r\n          label=\"Add\", click_function=\"buttonClick_add\", function_owner=self,\r\n          position={1.25,0.3,-6}, rotation={0,0,0}, height=500, width=1200,\r\n          font_size=350, color={0,0,0}, font_color={0.25,1,0.25}\r\n      })\r\n\r\n        if fresh == false then\r\n            self.createButton({\r\n                label=\"Set New\", click_function=\"buttonClick_setNew\", function_owner=self,\r\n                position={1.25,0.3,-8}, rotation={0,0,0}, height=500, width=1200,\r\n                font_size=350, color={0,0,0}, font_color={0.75,0.75,1}\r\n            })\r\n            self.createButton({\r\n                label=\"Remove\", click_function=\"buttonClick_remove\", function_owner=self,\r\n                position={1.25,0.3,-7}, rotation={0,0,0}, height=500, width=1200,\r\n                font_size=350, color={0,0,0}, font_color={1,0.25,0.25}\r\n            })\r\n        end\r\n    end\r\n\r\n    self.createButton({\r\n        label=\"Reset\", click_function=\"buttonClick_reset\", function_owner=self,\r\n        position={-1.25,0.3,-8}, rotation={0,0,0}, height=500, width=1200,\r\n        font_size=350, color={0,0,0}, font_color={1,1,1}\r\n    })\r\nend\r\n\r\n\r\n--During Setup\r\n\r\n\r\n--Checks or unchecks buttons\r\nfunction buttonClick_selection(index, obj, move)\r\n    local colorMove = {0,0,1,0.6}\r\n    local color = {0,1,0,0.6}\r\n\r\n    previousGuid = selectedGuid\r\n    selectedGuid = obj.getGUID()\r\n\r\n    theList = memoryList\r\n    if move == true then\r\n       theList = moveList\r\n       if previousGuid ~= nil and previousGuid ~= selectedGuid then\r\n         local prevObj = getObjectFromGUID(previousGuid)\r\n         prevObj.highlightOff()\r\n         self.editButton({index=previousIndex, color=colorMove})\r\n         theList[previousGuid] = nil\r\n       end\r\n       previousIndex = index\r\n    end\r\n\r\n    if theList[selectedGuid] == nil then\r\n        self.editButton({index=index, color=color})\r\n        --Adding pos/rot to memory table\r\n        local pos, rot = obj.getPosition(), obj.getRotation()\r\n        --I need to add it like this or it won't save due to indexing issue\r\n        theList[obj.getGUID()] = {\r\n            pos={x=round(pos.x,4), y=round(pos.y,4), z=round(pos.z,4)},\r\n            rot={x=round(rot.x,4), y=round(rot.y,4), z=round(rot.z,4)},\r\n            lock=obj.getLock()\r\n        }\r\n        obj.highlightOn({0,1,0})\r\n    else\r\n      color = {0.75,0.25,0.25,0.6}\r\n      if move == true then\r\n        color = colorMove\r\n      end\r\n        self.editButton({index=index, color=color})\r\n        theList[obj.getGUID()] = nil\r\n        obj.highlightOff()\r\n    end\r\nend\r\n\r\n--Cancels selection process\r\nfunction buttonClick_cancel()\r\n    memoryList = memoryListBackup\r\n    moveList = {}\r\n    self.clearButtons()\r\n    if next(memoryList) == nil then\r\n        createSetupButton()\r\n    else\r\n        createMemoryActionButtons()\r\n    end\r\n    removeAllHighlights()\r\n    broadcastToAll(\"Selection Canceled\", {1,1,1})\r\n    moveGuid = nil\r\nend\r\n\r\n--Saves selections\r\nfunction buttonClick_submit()\r\n    fresh = false\r\n    if next(moveList) ~= nil then\r\n        for guid in pairs(moveList) do\r\n            moveGuid = guid\r\n        end\r\n        if memoryListBackup[moveGuid] == nil then\r\n            broadcastToAll(\"Item selected for moving is not already in memory\", {1, 0.25, 0.25})\r\n        else\r\n            broadcastToAll(\"Moving all items in memory relative to new objects position!\", {0.75, 0.75, 1})\r\n            self.clearButtons()\r\n            createMemoryActionButtons()\r\n            local count = 0\r\n            for guid in pairs(moveList) do\r\n                moveGuid = guid\r\n                count = count + 1\r\n                local obj = getObjectFromGUID(guid)\r\n                if obj ~= nil then obj.highlightOff() end\r\n            end\r\n            updateMemoryWithMoves()\r\n            updateSave()\r\n            buttonClick_place()\r\n        end\r\n    elseif next(memoryList) == nil and moveGuid == nil then\r\n      memoryList = memoryListBackup\r\n      broadcastToAll(\"No selections made.\", {0.75, 0.25, 0.25})\r\n    end\r\n    combineMemoryFromBagsWithin()\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for guid in pairs(memoryList) do\r\n        count = count + 1\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then obj.highlightOff() end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    updateSave()\r\n    moveGuid = nil\r\nend\r\n\r\nfunction combineTables(first_table, second_table)\r\n  for k,v in pairs(second_table) do first_table[k] = v end\r\nend\r\n\r\nfunction buttonClick_add()\r\n    fresh = false\r\n    combineTables(memoryList, memoryListBackup)\r\n    broadcastToAll(\"Adding internal bags and selections to existing memory\", {0.25, 0.75, 0.25})\r\n    combineMemoryFromBagsWithin()\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for guid in pairs(memoryList) do\r\n        count = count + 1\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then obj.highlightOff() end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    updateSave()\r\nend\r\n\r\nfunction buttonClick_remove()\r\n        broadcastToAll(\"Removing Selected Entries From Memory\", {1.0, 0.25, 0.25})\r\n        self.clearButtons()\r\n        createMemoryActionButtons()\r\n        local count = 0\r\n        for guid in pairs(memoryList) do\r\n            count = count + 1\r\n            memoryListBackup[guid] = nil\r\n            local obj = getObjectFromGUID(guid)\r\n            if obj ~= nil then obj.highlightOff() end\r\n        end\r\n        broadcastToAll(count..\" Objects Removed\", {1,1,1})\r\n        memoryList = memoryListBackup\r\n        updateSave()\r\nend\r\n\r\nfunction buttonClick_setNew()\r\n    broadcastToAll(\"Setting new position relative to items in memory\", {0.75, 0.75, 1})\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for _, obj in ipairs(getAllObjects()) do\r\n        guid = obj.guid\r\n        if memoryListBackup[guid] ~= nil then\r\n            count = count + 1\r\n            memoryListBackup[guid].pos = obj.getPosition()\r\n            memoryListBackup[guid].rot = obj.getRotation()\r\n            memoryListBackup[guid].lock = obj.getLock()\r\n        end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    memoryList = memoryListBackup\r\n    updateSave()\r\nend\r\n\r\n--Resets bag to starting status\r\nfunction buttonClick_reset()\r\n    fresh = true\r\n    memoryList = {}\r\n    self.clearButtons()\r\n    createSetupButton()\r\n    removeAllHighlights()\r\n    broadcastToAll(\"Tool Reset\", {1,1,1})\r\n    updateSave()\r\nend\r\n\r\n\r\n--After Setup\r\n\r\n\r\n--Creates recall and place buttons\r\nfunction createMemoryActionButtons()\r\n    self.createButton({\r\n        label=\"Place\", click_function=\"buttonClick_place\", function_owner=self,\r\n        position={1.35,1,6}, rotation={0,0,0}, height=500, width=1200,\r\n        font_size=350, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n    self.createButton({\r\n        label=\"Recall\", click_function=\"buttonClick_recall\", function_owner=self,\r\n        position={-1.25,1,6}, rotation={0,0,0}, height=500, width=1200,\r\n        font_size=350, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n    self.createButton({\r\n        label=\"Setup\", click_function=\"buttonClick_setup\", function_owner=self,\r\n        position={0,0.1,-6}, rotation={0,0,0}, height=500, width=1200,\r\n        font_size=350, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n---    self.createButton({\r\n---      label=\"Move\", click_function=\"buttonClick_transpose\", function_owner=self,\r\n---      position={-2.8,0.3,0}, rotation={0,0,0}, height=350, width=800,\r\n---      font_size=250, color={0,0,0}, font_color={0.75,0.75,1}\r\n---    })\r\nend\r\n\r\n--Sends objects from bag/table to their saved position/rotation\r\nfunction buttonClick_place()\r\n    local bagObjList = self.getObjects()\r\n    for guid, entry in pairs(memoryList) do\r\n        local obj = getObjectFromGUID(guid)\r\n        --If obj is out on the table, move it to the saved pos/rot\r\n        if obj ~= nil then\r\n            obj.setPositionSmooth(entry.pos)\r\n            obj.setRotationSmooth(entry.rot)\r\n            obj.setLock(entry.lock)\r\n        else\r\n            --If obj is inside of the bag\r\n            for _, bagObj in ipairs(bagObjList) do\r\n                if bagObj.guid == guid then\r\n                    local item = self.takeObject({\r\n                        guid=guid, position=entry.pos, rotation=entry.rot, smooth=false\r\n                    })\r\n                    item.setLock(entry.lock)\r\n                    break\r\n                end\r\n            end\r\n        end\r\n    end\r\n    broadcastToAll(\"Objects Placed\", {1,1,1})\r\nend\r\n\r\n--Recalls objects to bag from table\r\nfunction buttonClick_recall()\r\n    for guid, entry in pairs(memoryList) do\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then self.putObject(obj) end\r\n    end\r\n    broadcastToAll(\"Objects Recalled\", {1,1,1})\r\nend\r\n\r\n\r\n--Utility functions\r\n\r\n\r\n--Find delta (difference) between 2 x/y/z coordinates\r\nfunction findOffsetDistance(p1, p2, obj)\r\n    local yOffset = 0\r\n    if obj ~= nil then\r\n        local bounds = obj.getBounds()\r\n        yOffset = (bounds.size.y - bounds.offset.y)\r\n    end\r\n    local deltaPos = {}\r\n    deltaPos.x = (p2.x-p1.x)\r\n    deltaPos.y = (p2.y-p1.y) + yOffset\r\n    deltaPos.z = (p2.z-p1.z)\r\n    return deltaPos\r\nend\r\n\r\n--Used to rotate a set of coordinates by an angle\r\nfunction rotateLocalCoordinates(desiredPos, obj)\r\n\tlocal objPos, objRot = obj.getPosition(), obj.getRotation()\r\n    local angle = math.rad(objRot.y)\r\n\tlocal x = desiredPos.x * math.cos(angle) - desiredPos.z * math.sin(angle)\r\n\tlocal z = desiredPos.x * math.sin(angle) + desiredPos.z * math.cos(angle)\r\n\t--return {x=objPos.x+x, y=objPos.y+desiredPos.y, z=objPos.z+z}\r\n    return {x=x, y=desiredPos.y, z=z}\r\nend\r\n\r\nfunction rotateMyCoordinates(desiredPos, obj)\r\n\tlocal angle = math.rad(obj.getRotation().y)\r\n  local x = desiredPos.x * math.sin(angle)\r\n\tlocal z = desiredPos.z * math.cos(angle)\r\n    return {x=x, y=desiredPos.y, z=z}\r\nend\r\n\r\n--Coroutine delay, in seconds\r\nfunction wait(time)\r\n    local start = os.time()\r\n    repeat coroutine.yield(0) until os.time() > start + time\r\nend\r\n\r\n--Duplicates a table (needed to prevent it making reference to the same objects)\r\nfunction duplicateTable(oldTable)\r\n    local newTable = {}\r\n    for k, v in pairs(oldTable) do\r\n        newTable[k] = v\r\n    end\r\n    return newTable\r\nend\r\n\r\n--Moves scripted highlight from all objects\r\nfunction removeAllHighlights()\r\n    for _, obj in ipairs(getAllObjects()) do\r\n        obj.highlightOff()\r\n    end\r\nend\r\n\r\n--Round number (num) to the Nth decimal (dec)\r\nfunction round(num, dec)\r\n  local mult = 10^(dec or 0)\r\n  return math.floor(num * mult + 0.5) / mult\r\nend",
-  "LuaScriptState": "{\"ml\":{\"5a6ca1\":{\"lock\":true,\"pos\":{\"x\":41,\"y\":1.48,\"z\":0},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"6b4f22\":{\"lock\":false,\"pos\":{\"x\":-1.46599805355072,\"y\":1.57899904251099,\"z\":-26.9300003051758},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"7d88fc\":{\"lock\":false,\"pos\":{\"x\":53.15,\"y\":1.58,\"z\":1.71},\"rot\":{\"x\":0,\"y\":90,\"z\":0}},\"7f515b\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":27.9860000610352},\"rot\":{\"x\":2.676086907627E-08,\"y\":269.999938964844,\"z\":-2.29366065696013E-07}},\"806c38\":{\"lock\":false,\"pos\":{\"x\":12.2490310668945,\"y\":1.48149907588959,\"z\":-28.0143337249756},\"rot\":{\"x\":2.39074164909425E-08,\"y\":270.065673828125,\"z\":-7.62032925649692E-08}},\"897309\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149919509888,\"z\":3.98600006103516},\"rot\":{\"x\":-3.67395841749385E-07,\"y\":270.022552490234,\"z\":4.67901060119402E-07}},\"ad0e70\":{\"lock\":false,\"pos\":{\"x\":3.87701344490051,\"y\":1.45653510093689,\"z\":-35.9665451049805},\"rot\":{\"x\":2.0213208244968E-06,\"y\":90.0000381469727,\"z\":-5.54928192286752E-07}},\"bcde29\":{\"lock\":false,\"pos\":{\"x\":12.2519931793213,\"y\":1.48149907588959,\"z\":11.9860334396362},\"rot\":{\"x\":3.41768284783939E-08,\"y\":270.031066894531,\"z\":-6.93897135306543E-08}},\"bfdc5d\":{\"lock\":false,\"pos\":{\"x\":12.2489471435547,\"y\":1.48149907588959,\"z\":35.9851913452148},\"rot\":{\"x\":-1.60663180537313E-08,\"y\":269.996459960938,\"z\":8.67960459061123E-09}},\"c9578f\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":-36.0139999389648},\"rot\":{\"x\":-1.36203439637939E-08,\"y\":270.024597167969,\"z\":-1.31557072791111E-07}},\"c98a8a\":{\"lock\":false,\"pos\":{\"x\":12.2495489120483,\"y\":1.4814989566803,\"z\":-20.0142040252686},\"rot\":{\"x\":2.79536127578695E-08,\"y\":270.033264160156,\"z\":-1.05192043520219E-07}},\"caee08\":{\"lock\":false,\"pos\":{\"x\":12.2496786117554,\"y\":1.48149907588959,\"z\":-12.0141382217407},\"rot\":{\"x\":2.04312726737044E-08,\"y\":270.02490234375,\"z\":1.13150697700348E-08}},\"d7a48c\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48,\"z\":-4},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"dec1c6\":{\"lock\":false,\"pos\":{\"x\":-1.5,\"y\":1.48,\"z\":50},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"f1bddd\":{\"lock\":true,\"pos\":{\"x\":32.85,\"y\":1.58,\"z\":-10.8},\"rot\":{\"x\":0,\"y\":90,\"z\":0}},\"fffd49\":{\"lock\":false,\"pos\":{\"x\":12.2499771118164,\"y\":1.48149907588959,\"z\":19.9860095977783},\"rot\":{\"x\":2.49150797770881E-08,\"y\":269.994537353516,\"z\":-1.86124644585561E-08}}}}",
+  "LuaScriptState": "{\"ml\":{\"5a6ca1\":{\"lock\":true,\"pos\":{\"x\":41,\"y\":1.48,\"z\":0},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"6b4f22\":{\"lock\":false,\"pos\":{\"x\":-1.46599805355072,\"y\":1.57899904251099,\"z\":-26.9300003051758},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"7d88fc\":{\"lock\":false,\"pos\":{\"x\":53.15,\"y\":1.58,\"z\":1.71},\"rot\":{\"x\":0,\"y\":90,\"z\":0}},\"7f515b\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":27.9860000610352},\"rot\":{\"x\":2.676086907627E-08,\"y\":269.999938964844,\"z\":-2.29366065696013E-07}},\"806c38\":{\"lock\":false,\"pos\":{\"x\":12.2490310668945,\"y\":1.48149907588959,\"z\":-28.0143337249756},\"rot\":{\"x\":2.39074164909425E-08,\"y\":270.065673828125,\"z\":-7.62032925649692E-08}},\"897309\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149919509888,\"z\":3.98600006103516},\"rot\":{\"x\":-3.67395841749385E-07,\"y\":270.022552490234,\"z\":4.67901060119402E-07}},\"ad0e70\":{\"lock\":false,\"pos\":{\"x\":3.87701344490051,\"y\":1.45653510093689,\"z\":-35.9665451049805},\"rot\":{\"x\":2.0213208244968E-06,\"y\":90.0000381469727,\"z\":-5.54928192286752E-07}},\"b13c30\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.4815,\"z\":50},\"rot\":{\"x\":0,\"y\":269.9909,\"z\":0}},\"bcde29\":{\"lock\":false,\"pos\":{\"x\":12.2519931793213,\"y\":1.48149907588959,\"z\":11.9860334396362},\"rot\":{\"x\":3.41768284783939E-08,\"y\":270.031066894531,\"z\":-6.93897135306543E-08}},\"bfdc5d\":{\"lock\":false,\"pos\":{\"x\":12.2489471435547,\"y\":1.48149907588959,\"z\":35.9851913452148},\"rot\":{\"x\":-1.60663180537313E-08,\"y\":269.996459960938,\"z\":8.67960459061123E-09}},\"c9578f\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48149907588959,\"z\":-36.0139999389648},\"rot\":{\"x\":-1.36203439637939E-08,\"y\":270.024597167969,\"z\":-1.31557072791111E-07}},\"c98a8a\":{\"lock\":false,\"pos\":{\"x\":12.2495489120483,\"y\":1.4814989566803,\"z\":-20.0142040252686},\"rot\":{\"x\":2.79536127578695E-08,\"y\":270.033264160156,\"z\":-1.05192043520219E-07}},\"caee08\":{\"lock\":false,\"pos\":{\"x\":12.2496786117554,\"y\":1.48149907588959,\"z\":-12.0141382217407},\"rot\":{\"x\":2.04312726737044E-08,\"y\":270.02490234375,\"z\":1.13150697700348E-08}},\"d7a48c\":{\"lock\":false,\"pos\":{\"x\":12.25,\"y\":1.48,\"z\":-4},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"dec1c6\":{\"lock\":false,\"pos\":{\"x\":-1.5,\"y\":1.48,\"z\":50},\"rot\":{\"x\":0,\"y\":270,\"z\":0}},\"f1bddd\":{\"lock\":true,\"pos\":{\"x\":32.85,\"y\":1.58,\"z\":-10.8},\"rot\":{\"x\":0,\"y\":90,\"z\":0}},\"fffd49\":{\"lock\":false,\"pos\":{\"x\":12.2499771118164,\"y\":1.48149907588959,\"z\":19.9860095977783},\"rot\":{\"x\":2.49150797770881E-08,\"y\":269.994537353516,\"z\":-1.86124644585561E-08}}}}",
   "XmlUI": "",
   "ContainedObjects": [
+    {
+      "GUID": "b13c30",
+      "Name": "Custom_PDF",
+      "Transform": {
+        "posX": 12.25,
+        "posY": 1.482,
+        "posZ": 50.0,
+        "rotX": 0,
+        "rotY": 270,
+        "rotZ": 0,
+        "scaleX": 1.2,
+        "scaleY": 1.0,
+        "scaleZ": 1.2
+      },
+      "Nickname": "The Scarlet Keys - Dossiers",
+      "Description": "by SolarJ",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomPDF": {
+        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/2088037711705655457/7AFE889CBC02602F40A4BD5F4DABA4F0C4DE1FE5/",
+        "PDFPassword": "",
+        "PDFPage": 0,
+        "PDFPageOffset": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
     {
       "GUID": "5a6ca1",
       "Name": "Custom_Tile",
@@ -393,9 +444,6 @@
         "scaleZ": 3.25
       },
       "Nickname": "The Scarlet Keys - Campaign Log",
-      "Tags": [
-        "CampaignLog"
-      ],
       "Description": "Page 1",
       "GMNotes": "",
       "AltLookAngle": {
@@ -408,6 +456,9 @@
         "g": 1.0,
         "b": 1.0
       },
+      "Tags": [
+        "CampaignLog"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -453,9 +504,6 @@
             "scaleZ": 3.25
           },
           "Nickname": "The Scarlet Keys - Campaign Log",
-          "Tags": [
-            "CampaignLog"
-          ],
           "Description": "Page 2",
           "GMNotes": "",
           "AltLookAngle": {
@@ -468,6 +516,9 @@
             "g": 1.0,
             "b": 1.0
           },
+          "Tags": [
+            "CampaignLog"
+          ],
           "LayoutGroupSortIndex": 0,
           "Value": 0,
           "Locked": false,
@@ -524,8 +575,8 @@
       },
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.0999993,
-        "b": 0.0939992741
+        "g": 0.09999924,
+        "b": 0.0939992145
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -674,9 +725,9 @@
         "posX": 12.25,
         "posY": 1.48149908,
         "posZ": 27.986,
-        "rotX": 3.67891531E-08,
-        "rotY": 269.999939,
-        "rotZ": -1.96551312E-07,
+        "rotX": 0,
+        "rotY": 270,
+        "rotZ": 0,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -2798,9 +2849,9 @@
             "posX": 1.69,
             "posY": 1.56,
             "posZ": 14.24,
-            "rotX": 0,
-            "rotY": 225,
-            "rotZ": 0,
+            "rotX": 0.0,
+            "rotY": 225.0,
+            "rotZ": 0.0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
@@ -4562,9 +4613,9 @@
         "posX": 12.2490311,
         "posY": 1.48149908,
         "posZ": -28.0143337,
-        "rotX": -3.0844312E-08,
+        "rotX": 2.97971514E-08,
         "rotY": 270.065674,
-        "rotZ": -1.4900202E-07,
+        "rotZ": -6.678848E-08,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -7287,9 +7338,9 @@
             "posX": 1.69,
             "posY": 1.56,
             "posZ": 14.24,
-            "rotX": 0,
-            "rotY": 225,
-            "rotZ": 0,
+            "rotX": 0.0,
+            "rotY": 225.0,
+            "rotZ": 0.0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
@@ -9121,9 +9172,9 @@
         "posX": 12.25,
         "posY": 1.4814992,
         "posZ": 3.986,
-        "rotX": -3.26040436E-07,
+        "rotX": -3.20553028E-07,
         "rotY": 270.022552,
-        "rotZ": 4.31709054E-07,
+        "rotZ": 4.021586E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -11656,9 +11707,9 @@
                 "posX": 1.69,
                 "posY": 1.56,
                 "posZ": 14.24,
-                "rotX": 0,
-                "rotY": 225,
-                "rotZ": 0,
+                "rotX": 0.0,
+                "rotY": 225.0,
+                "rotZ": 0.0,
                 "scaleX": 2.0,
                 "scaleY": 2.0,
                 "scaleZ": 2.0
@@ -15155,9 +15206,9 @@
                 "posX": 1.69,
                 "posY": 1.56,
                 "posZ": 14.24,
-                "rotX": 0,
-                "rotY": 225,
-                "rotZ": 0,
+                "rotX": 0.0,
+                "rotY": 225.0,
+                "rotZ": 0.0,
                 "scaleX": 2.0,
                 "scaleY": 2.0,
                 "scaleZ": 2.0
@@ -19720,9 +19771,9 @@
         "posX": 12.2519932,
         "posY": 1.48149908,
         "posZ": 11.9860334,
-        "rotX": -4.16655865E-09,
+        "rotX": 1.39077949E-08,
         "rotY": 270.031067,
-        "rotZ": -2.07664215E-07,
+        "rotZ": -4.13517E-08,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -23354,9 +23405,9 @@
             "posX": 1.69,
             "posY": 1.56,
             "posZ": 14.24,
-            "rotX": 0,
-            "rotY": 225,
-            "rotZ": 0,
+            "rotX": 0.0,
+            "rotY": 225.0,
+            "rotZ": 0.0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
@@ -24854,9 +24905,9 @@
         "posX": 12.2489471,
         "posY": 1.48149908,
         "posZ": 35.98519,
-        "rotX": 1.31991236E-08,
+        "rotX": 2.72442371E-08,
         "rotY": 269.99646,
-        "rotZ": -1.98459517E-07,
+        "rotZ": -2.31308775E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -27735,9 +27786,9 @@
             "posX": 1.69,
             "posY": 1.56,
             "posZ": 14.24,
-            "rotX": 0,
-            "rotY": 225,
-            "rotZ": 0,
+            "rotX": 0.0,
+            "rotY": 225.0,
+            "rotZ": 0.0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
@@ -29934,9 +29985,9 @@
         "posX": 12.25,
         "posY": 1.48149908,
         "posZ": -36.014,
-        "rotX": 2.56680952E-08,
+        "rotX": -9.45738E-09,
         "rotY": 270.0246,
-        "rotZ": -1.37464482E-07,
+        "rotZ": -1.39551375E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -34760,9 +34811,9 @@
                 "posX": 1.69,
                 "posY": 1.56,
                 "posZ": 14.24,
-                "rotX": 0,
-                "rotY": 225,
-                "rotZ": 0,
+                "rotX": 0.0,
+                "rotY": 225.0,
+                "rotZ": 0.0,
                 "scaleX": 2.0,
                 "scaleY": 2.0,
                 "scaleZ": 2.0
@@ -37990,9 +38041,9 @@
                 "posX": 1.69,
                 "posY": 1.56,
                 "posZ": 14.24,
-                "rotX": 0,
-                "rotY": 225,
-                "rotZ": 0,
+                "rotX": 0.0,
+                "rotY": 225.0,
+                "rotZ": 0.0,
                 "scaleX": 2.0,
                 "scaleY": 2.0,
                 "scaleZ": 2.0
@@ -45384,9 +45435,9 @@
                 "posX": 1.69,
                 "posY": 1.56,
                 "posZ": 14.24,
-                "rotX": 0,
-                "rotY": 225,
-                "rotZ": 0,
+                "rotX": 0.0,
+                "rotY": 225.0,
+                "rotZ": 0.0,
                 "scaleX": 2.0,
                 "scaleY": 2.0,
                 "scaleZ": 2.0
@@ -48748,9 +48799,9 @@
         "posX": 12.2495489,
         "posY": 1.481499,
         "posZ": -20.014204,
-        "rotX": 2.13777742E-08,
+        "rotX": 2.70685589E-08,
         "rotY": 270.033264,
-        "rotZ": -1.42410272E-07,
+        "rotZ": -1.05448905E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -49611,9 +49662,9 @@
             "posX": 1.69,
             "posY": 1.56,
             "posZ": 14.24,
-            "rotX": 0,
-            "rotY": 225,
-            "rotZ": 0,
+            "rotX": 0.0,
+            "rotY": 225.0,
+            "rotZ": 0.0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
@@ -52838,9 +52889,9 @@
         "posX": 12.2496786,
         "posY": 1.48149908,
         "posZ": -12.0141382,
-        "rotX": -9.641146E-09,
+        "rotX": 2.01856682E-08,
         "rotY": 270.0249,
-        "rotZ": -1.97022715E-07,
+        "rotZ": 1.34157752E-08,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -64262,11 +64313,11 @@
       "Name": "Custom_Model_Bag",
       "Transform": {
         "posX": 12.25,
-        "posY": 1.48149908,
-        "posZ": -4.014,
-        "rotX": -6.878374E-08,
-        "rotY": 269.977661,
-        "rotZ": -2.37035749E-07,
+        "posY": 1.4814992,
+        "posZ": -3.99999976,
+        "rotX": -2.15103412E-07,
+        "rotY": 270.0,
+        "rotZ": 1.884556E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -69516,9 +69567,9 @@
             "posX": 1.69,
             "posY": 1.56,
             "posZ": 14.24,
-            "rotX": 0,
-            "rotY": 225,
-            "rotZ": 0,
+            "rotX": 0.0,
+            "rotY": 225.0,
+            "rotZ": 0.0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
@@ -70412,14 +70463,14 @@
       "GUID": "dec1c6",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": 0,
-        "posY": 1.5,
-        "posZ": 0,
-        "rotX": 0,
-        "rotY": 270,
-        "rotZ": 0,
+        "posX": -1.49976468,
+        "posY": 1.48149931,
+        "posZ": 49.9999237,
+        "rotX": -1.10106718E-07,
+        "rotY": 270.002,
+        "rotZ": -1.05837408E-07,
         "scaleX": 2.2,
-        "scaleY": 1,
+        "scaleY": 1.0,
         "scaleZ": 2.2
       },
       "Nickname": "The Scarlet Keys - Campaign Guide",
@@ -70487,8 +70538,8 @@
       },
       "ColorDiffuse": {
         "r": 0.856,
-        "g": 0.0999993,
-        "b": 0.0939992741
+        "g": 0.09999924,
+        "b": 0.0939992145
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -70696,9 +70747,9 @@
         "posX": 12.2499771,
         "posY": 1.48149908,
         "posZ": 19.98601,
-        "rotX": 2.08113882E-08,
+        "rotX": 2.11688249E-08,
         "rotY": 269.994537,
-        "rotZ": -1.78068561E-07,
+        "rotZ": -1.15817137E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -75131,9 +75182,9 @@
             "posX": 1.69,
             "posY": 1.56,
             "posZ": 14.24,
-            "rotX": 0,
-            "rotY": 225,
-            "rotZ": 0,
+            "rotX": 0.0,
+            "rotY": 225.0,
+            "rotZ": 0.0,
             "scaleX": 2.0,
             "scaleY": 2.0,
             "scaleZ": 2.0
