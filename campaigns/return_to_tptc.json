@@ -1393,7 +1393,7 @@
           },
           "Nickname": "Entry Hall",
           "Description": "Ground Floor.",
-          "GMNotes": "{\n  \"id\": \"03127\",\n  \"type\": \"Location\",\n  \"traits\": \"Ground Floor.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square|GroundFloor\",\n    \"connections\": \"Circle|GroundFloor\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square|GroundFloor\",\n    \"connections\": \"Circle|GroundFloor\"\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"03127\",\n  \"type\": \"Location\",\n  \"traits\": \"Ground Floor.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square|GroundFloor\",\n    \"connections\": \"Circle|GroundFloor|Apostrophe\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square|GroundFloor\",\n    \"connections\": \"Circle|GroundFloor|Apostrophe\"\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,

@@ -2864,7 +2864,7 @@
       },
       "Nickname": "Clover Club Bar",
       "Description": "Clover Club.",
-      "GMNotes": "{\n  \"id\": \"02072\",\n  \"type\": \"Location\",\n  \"traits\": \"Clover Club.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Circle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Circle\"\n  }\n}",
+      "GMNotes": "{\n  \"id\": \"02072\",\n  \"type\": \"Location\",\n  \"traits\": \"Clover Club.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Circle|Heart\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Circle|Heart\"\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
         "y": 0.0,
