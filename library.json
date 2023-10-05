@@ -147,6 +147,8 @@
     {"name":"Fan Scenario: The Nephew Calls", "url":"fancreations/scenario_the_nephew_calls.json", "replace":"3ddd12"},
     {"name":"Fan Scenario: The Pensher Wyrm", "url":"fancreations/scenario_the_pensher_wyrm.json", "replace":"504f38"},
     {"name":"Fan Scenario: The Red Room", "url":"fancreations/scenario_the_red_room.json", "replace":"fa4327"},
+    {"name":"Fan Scenario: Return to the Consternation on the Constellation", "url":"fancreations/scenario_return_to_consternation_on_the_constellation.json", "replace":"34ec55"},
+    {"name":"Fan Scenario: Return to the Wendigo", "url":"fancreations/scenario_return_to_the_wendigo.json", "replace":"33f0f3"},
     {"name":"Fan Scenario: The Stolen Baillius", "url":"fancreations/scenario_stolen_bacillus.json", "replace":"bfefd4"},
     {"name":"Fan Scenario: The Strange Case of Dr. Jekyll and Mr. Hyde", "url":"fancreations/scenario_jekyll.json", "replace":"695a4d"},
     {"name":"Fan Scenario: Stranger Things", "url":"fancreations/scenario_stranger_things.json", "replace":"408301"},
