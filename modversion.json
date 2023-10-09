@@ -1,8 +1,8 @@
 {
-  "latestVersion": "3.2.0",
+  "latestVersion": "3.3.0",
   "releaseHighlights": [
-    "Added Subject 5U-21 and Parallel Pete",
-    "Added new types of resource tokens",
-    "Added new hotkeys and campaign exporter"
+    "Added support for 2023-08-30 taboo list",
+    "Added previewed cards from Feast of Hemlock Vale",
+    "Various QoL changes"
   ]
 }
