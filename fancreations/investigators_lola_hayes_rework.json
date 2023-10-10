@@ -2,12 +2,12 @@
   "GUID": "3b81fc",
   "Name": "Custom_Model_Bag",
   "Transform": {
-    "posX": -43.0403633,
-    "posY": 1.296544,
-    "posZ": -46.6131859,
-    "rotX": 0.0209295116,
-    "rotY": 269.5856,
-    "rotZ": 0.0166201666,
+    "posX": 36.25666,
+    "posY": 1.481499,
+    "posZ": 2.080185,
+    "rotX": 4.70526174E-07,
+    "rotY": 270.021973,
+    "rotZ": -2.73091729E-07,
     "scaleX": 2.21,
     "scaleY": 0.46,
     "scaleZ": 2.42
@@ -15,6 +15,11 @@
   "Nickname": "Lola Hayes Rework",
   "Description": "By Mint Tea Fan",
   "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
   "ColorDiffuse": {
     "r": 1.0,
     "g": 1.0,
@@ -60,383 +65,19 @@
     "Order": 0
   },
   "LuaScript": "-- Utility memory bag by Directsun\r\n-- Version 2.5.2\r\n-- Fork of Memory Bag 2.0 by MrStump\r\n\r\nfunction updateSave()\r\n    local data_to_save = {[\"ml\"]=memoryList}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction combineMemoryFromBagsWithin()\r\n  local bagObjList = self.getObjects()\r\n  for _, bagObj in ipairs(bagObjList) do\r\n    local data = bagObj.lua_script_state\r\n      if data ~= nil then\r\n        local j = JSON.decode(data)\r\n        if j ~= nil and j.ml ~= nil then\r\n          for guid, entry in pairs(j.ml) do\r\n            memoryList[guid] = entry\r\n          end\r\n        end\r\n      end\r\n    end\r\nend\r\n\r\nfunction updateMemoryWithMoves()\r\n    memoryList = memoryListBackup\r\n    --get the first transposed object's coordinates\r\n    local obj = getObjectFromGUID(moveGuid)\r\n\r\n    -- p1 is where needs to go, p2 is where it was\r\n    local refObjPos = memoryList[moveGuid].pos\r\n    local deltaPos = findOffsetDistance(obj.getPosition(), refObjPos, nil)\r\n    local movedRotation = obj.getRotation()\r\n    for guid, entry in pairs(memoryList) do\r\n        memoryList[guid].pos.x = entry.pos.x - deltaPos.x\r\n        memoryList[guid].pos.y = entry.pos.y - deltaPos.y\r\n        memoryList[guid].pos.z = entry.pos.z - deltaPos.z\r\n        -- memoryList[guid].rot.x = movedRotation.x\r\n        -- memoryList[guid].rot.y = movedRotation.y\r\n        -- memoryList[guid].rot.z = movedRotation.z\r\n    end\r\n\r\n    --theList[obj.getGUID()] = {\r\n    --    pos={x=round(pos.x,4), y=round(pos.y,4), z=round(pos.z,4)},\r\n    --    rot={x=round(rot.x,4), y=round(rot.y,4), z=round(rot.z,4)},\r\n    --    lock=obj.getLock()\r\n    --}\r\n    moveList = {}\r\nend\r\n\r\nfunction onload(saved_data)\r\n    fresh = true\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        --Set up information off of loaded_data\r\n        memoryList = loaded_data.ml\r\n    else\r\n        --Set up information for if there is no saved saved data\r\n        memoryList = {}\r\n    end\r\n\r\n    moveList = {}\r\n    moveGuid = nil\r\n\r\n    if next(memoryList) == nil then\r\n        createSetupButton()\r\n    else\r\n        fresh = false\r\n        createMemoryActionButtons()\r\n    end\r\nend\r\n\r\n\r\n--Beginning Setup\r\n\r\n\r\n--Make setup button\r\nfunction createSetupButton()\r\n    self.createButton({\r\n        label=\"Setup\", click_function=\"buttonClick_setup\", function_owner=self,\r\n        position={0,0.1,-2.1}, rotation={0,0,0}, height=220, width=500,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\nend\r\n\r\n--Triggered by Transpose button\r\nfunction buttonClick_transpose()\r\n    moveGuid = nil\r\n    broadcastToAll(\"Select one object and move it- all objects will move relative to the new location\", {0.75, 0.75, 1})\r\n    memoryListBackup = duplicateTable(memoryList)\r\n    memoryList = {}\r\n    moveList = {}\r\n    self.clearButtons()\r\n    createButtonsOnAllObjects(true)\r\n    createSetupActionButtons(true)\r\nend\r\n\r\n--Triggered by setup button,\r\nfunction buttonClick_setup()\r\n    memoryListBackup = duplicateTable(memoryList)\r\n    memoryList = {}\r\n    self.clearButtons()\r\n    createButtonsOnAllObjects(false)\r\n    createSetupActionButtons(false)\r\nend\r\n\r\nfunction getAllObjectsInMemory()\r\n  local objTable = {}\r\n  local curObj = {}\r\n\r\n  for guid in pairs(memoryListBackup) do\r\n    curObj = getObjectFromGUID(guid)\r\n    table.insert(objTable, curObj)\r\n  end\r\n\r\n  return objTable\r\n  -- return getAllObjects()\r\nend\r\n\r\n--Creates selection buttons on objects\r\nfunction createButtonsOnAllObjects(move)\r\n    local howManyButtons = 0\r\n\r\n    local objsToHaveButtons = {}\r\n    if move == true then\r\n      objsToHaveButtons = getAllObjectsInMemory()\r\n    else\r\n      objsToHaveButtons = getAllObjects()\r\n    end\r\n\r\n    for _, obj in ipairs(objsToHaveButtons) do\r\n        if obj ~= self then\r\n            local dummyIndex = howManyButtons\r\n            --On a normal bag, the button positions aren't the same size as the bag.\r\n            globalScaleFactor = 1 * 1/self.getScale().x\r\n            --Super sweet math to set button positions\r\n            local selfPos = self.getPosition()\r\n            local objPos = obj.getPosition()\r\n            local deltaPos = findOffsetDistance(selfPos, objPos, obj)\r\n            local objPos = rotateLocalCoordinates(deltaPos, self)\r\n            objPos.x = -objPos.x * globalScaleFactor\r\n            objPos.y = objPos.y * globalScaleFactor + 2\r\n            objPos.z = objPos.z * globalScaleFactor * 0.9\r\n            --Offset rotation of bag\r\n            local rot = self.getRotation()\r\n            rot.y = -rot.y + 180\r\n            --Create function\r\n            local funcName = \"selectButton_\" .. howManyButtons\r\n            local func = function() buttonClick_selection(dummyIndex, obj, move) end\r\n            local color = {0.75,0.25,0.25,0.6}\r\n            local colorMove = {0,0,1,0.6}\r\n            if move == true then\r\n              color = colorMove\r\n            end\r\n            self.setVar(funcName, func)\r\n            self.createButton({\r\n                click_function=funcName, function_owner=self,\r\n                position=objPos, rotation=rot, height=500, width=500,\r\n                color=color,\r\n            })\r\n            howManyButtons = howManyButtons + 1\r\n        end\r\n    end\r\nend\r\n\r\n--Creates submit and cancel buttons\r\nfunction createSetupActionButtons(move)\r\n    self.createButton({\r\n        label=\"Cancel\", click_function=\"buttonClick_cancel\", function_owner=self,\r\n      position={-0.6,0.1,-2.1}, rotation={0,0,0}, height=220, width=550,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n\r\n    self.createButton({\r\n        label=\"Submit\", click_function=\"buttonClick_submit\", function_owner=self,\r\n        position={-0.6,0.3,-2.5}, rotation={0,0,0}, height=220, width=550,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n\r\n    if move == false then\r\n      self.createButton({\r\n          label=\"Add\", click_function=\"buttonClick_add\", function_owner=self,\r\n          position={0.6,0.3,-2.1}, rotation={0,0,0}, height=220, width=550,\r\n          font_size=130, color={0,0,0}, font_color={0.25,1,0.25}\r\n      })\r\n\r\n        if fresh == false then\r\n            self.createButton({\r\n                label=\"Set New\", click_function=\"buttonClick_setNew\", function_owner=self,\r\n                position={0.6,0.3,-2.9}, rotation={0,0,0}, height=220, width=550,\r\n                font_size=130, color={0,0,0}, font_color={0.75,0.75,1}\r\n            })\r\n            self.createButton({\r\n                label=\"Remove\", click_function=\"buttonClick_remove\", function_owner=self,\r\n                position={0.6,0.3,-2.5}, rotation={0,0,0}, height=220, width=550,\r\n                font_size=130, color={0,0,0}, font_color={1,0.25,0.25}\r\n            })\r\n        end\r\n    end\r\n\r\n    self.createButton({\r\n        label=\"Reset\", click_function=\"buttonClick_reset\", function_owner=self,\r\n        position={-0.6,0.3,-2.9}, rotation={0,0,0}, height=220, width=550,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\nend\r\n\r\n\r\n--During Setup\r\n\r\n\r\n--Checks or unchecks buttons\r\nfunction buttonClick_selection(index, obj, move)\r\n    local colorMove = {0,0,1,0.6}\r\n    local color = {0,1,0,0.6}\r\n\r\n    previousGuid = selectedGuid\r\n    selectedGuid = obj.getGUID()\r\n\r\n    theList = memoryList\r\n    if move == true then\r\n       theList = moveList\r\n       if previousGuid ~= nil and previousGuid ~= selectedGuid then\r\n         local prevObj = getObjectFromGUID(previousGuid)\r\n         prevObj.highlightOff()\r\n         self.editButton({index=previousIndex, color=colorMove})\r\n         theList[previousGuid] = nil\r\n       end\r\n       previousIndex = index\r\n    end\r\n\r\n    if theList[selectedGuid] == nil then\r\n        self.editButton({index=index, color=color})\r\n        --Adding pos/rot to memory table\r\n        local pos, rot = obj.getPosition(), obj.getRotation()\r\n        --I need to add it like this or it won't save due to indexing issue\r\n        theList[obj.getGUID()] = {\r\n            pos={x=round(pos.x,4), y=round(pos.y,4), z=round(pos.z,4)},\r\n            rot={x=round(rot.x,4), y=round(rot.y,4), z=round(rot.z,4)},\r\n            lock=obj.getLock()\r\n        }\r\n        obj.highlightOn({0,1,0})\r\n    else\r\n      color = {0.75,0.25,0.25,0.6}\r\n      if move == true then\r\n        color = colorMove\r\n      end\r\n        self.editButton({index=index, color=color})\r\n        theList[obj.getGUID()] = nil\r\n        obj.highlightOff()\r\n    end\r\nend\r\n\r\n--Cancels selection process\r\nfunction buttonClick_cancel()\r\n    memoryList = memoryListBackup\r\n    moveList = {}\r\n    self.clearButtons()\r\n    if next(memoryList) == nil then\r\n        createSetupButton()\r\n    else\r\n        createMemoryActionButtons()\r\n    end\r\n    removeAllHighlights()\r\n    broadcastToAll(\"Selection Canceled\", {1,1,1})\r\n    moveGuid = nil\r\nend\r\n\r\n--Saves selections\r\nfunction buttonClick_submit()\r\n    fresh = false\r\n    if next(moveList) ~= nil then\r\n        for guid in pairs(moveList) do\r\n            moveGuid = guid\r\n        end\r\n        if memoryListBackup[moveGuid] == nil then\r\n            broadcastToAll(\"Item selected for moving is not already in memory\", {1, 0.25, 0.25})\r\n        else\r\n            broadcastToAll(\"Moving all items in memory relative to new objects position!\", {0.75, 0.75, 1})\r\n            self.clearButtons()\r\n            createMemoryActionButtons()\r\n            local count = 0\r\n            for guid in pairs(moveList) do\r\n                moveGuid = guid\r\n                count = count + 1\r\n                local obj = getObjectFromGUID(guid)\r\n                if obj ~= nil then obj.highlightOff() end\r\n            end\r\n            updateMemoryWithMoves()\r\n            updateSave()\r\n            buttonClick_place()\r\n        end\r\n    elseif next(memoryList) == nil and moveGuid == nil then\r\n      memoryList = memoryListBackup\r\n      broadcastToAll(\"No selections made.\", {0.75, 0.25, 0.25})\r\n    end\r\n    combineMemoryFromBagsWithin()\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for guid in pairs(memoryList) do\r\n        count = count + 1\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then obj.highlightOff() end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    updateSave()\r\n    moveGuid = nil\r\nend\r\n\r\nfunction combineTables(first_table, second_table)\r\n  for k,v in pairs(second_table) do first_table[k] = v end\r\nend\r\n\r\nfunction buttonClick_add()\r\n    fresh = false\r\n    combineTables(memoryList, memoryListBackup)\r\n    broadcastToAll(\"Adding internal bags and selections to existing memory\", {0.25, 0.75, 0.25})\r\n    combineMemoryFromBagsWithin()\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for guid in pairs(memoryList) do\r\n        count = count + 1\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then obj.highlightOff() end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    updateSave()\r\nend\r\n\r\nfunction buttonClick_remove()\r\n        broadcastToAll(\"Removing Selected Entries From Memory\", {1.0, 0.25, 0.25})\r\n        self.clearButtons()\r\n        createMemoryActionButtons()\r\n        local count = 0\r\n        for guid in pairs(memoryList) do\r\n            count = count + 1\r\n            memoryListBackup[guid] = nil\r\n            local obj = getObjectFromGUID(guid)\r\n            if obj ~= nil then obj.highlightOff() end\r\n        end\r\n        broadcastToAll(count..\" Objects Removed\", {1,1,1})\r\n        memoryList = memoryListBackup\r\n        updateSave()\r\nend\r\n\r\nfunction buttonClick_setNew()\r\n    broadcastToAll(\"Setting new position relative to items in memory\", {0.75, 0.75, 1})\r\n    self.clearButtons()\r\n    createMemoryActionButtons()\r\n    local count = 0\r\n    for _, obj in ipairs(getAllObjects()) do\r\n        guid = obj.guid\r\n        if memoryListBackup[guid] ~= nil then\r\n            count = count + 1\r\n            memoryListBackup[guid].pos = obj.getPosition()\r\n            memoryListBackup[guid].rot = obj.getRotation()\r\n            memoryListBackup[guid].lock = obj.getLock()\r\n        end\r\n    end\r\n    broadcastToAll(count..\" Objects Saved\", {1,1,1})\r\n    memoryList = memoryListBackup\r\n    updateSave()\r\nend\r\n\r\n--Resets bag to starting status\r\nfunction buttonClick_reset()\r\n    fresh = true\r\n    memoryList = {}\r\n    self.clearButtons()\r\n    createSetupButton()\r\n    removeAllHighlights()\r\n    broadcastToAll(\"Tool Reset\", {1,1,1})\r\n    updateSave()\r\nend\r\n\r\n\r\n--After Setup\r\n\r\n\r\n--Creates recall and place buttons\r\nfunction createMemoryActionButtons()\r\n    self.createButton({\r\n        label=\"Place\", click_function=\"buttonClick_place\", function_owner=self,\r\n        position={0.6,0.1,2.1}, rotation={0,0,0}, height=220, width=500,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n    self.createButton({\r\n        label=\"Recall\", click_function=\"buttonClick_recall\", function_owner=self,\r\n        position={-0.6,0.1,2.1}, rotation={0,0,0}, height=220, width=500,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n    self.createButton({\r\n        label=\"Setup\", click_function=\"buttonClick_setup\", function_owner=self,\r\n        position={0,0.1,-2.1}, rotation={0,0,0}, height=220, width=500,\r\n        font_size=130, color={0,0,0}, font_color={1,1,1}\r\n    })\r\n---    self.createButton({\r\n---      label=\"Move\", click_function=\"buttonClick_transpose\", function_owner=self,\r\n---      position={-2.8,0.3,0}, rotation={0,0,0}, height=350, width=800,\r\n---      font_size=250, color={0,0,0}, font_color={0.75,0.75,1}\r\n---    })\r\nend\r\n\r\n--Sends objects from bag/table to their saved position/rotation\r\nfunction buttonClick_place()\r\n    local bagObjList = self.getObjects()\r\n    for guid, entry in pairs(memoryList) do\r\n        local obj = getObjectFromGUID(guid)\r\n        --If obj is out on the table, move it to the saved pos/rot\r\n        if obj ~= nil then\r\n            obj.setPositionSmooth(entry.pos)\r\n            obj.setRotationSmooth(entry.rot)\r\n            obj.setLock(entry.lock)\r\n        else\r\n            --If obj is inside of the bag\r\n            for _, bagObj in ipairs(bagObjList) do\r\n                if bagObj.guid == guid then\r\n                    local item = self.takeObject({\r\n                        guid=guid, position=entry.pos, rotation=entry.rot, smooth=false\r\n                    })\r\n                    item.setLock(entry.lock)\r\n                    break\r\n                end\r\n            end\r\n        end\r\n    end\r\n    broadcastToAll(\"Objects Placed\", {1,1,1})\r\nend\r\n\r\n--Recalls objects to bag from table\r\nfunction buttonClick_recall()\r\n    for guid, entry in pairs(memoryList) do\r\n        local obj = getObjectFromGUID(guid)\r\n        if obj ~= nil then self.putObject(obj) end\r\n    end\r\n    broadcastToAll(\"Objects Recalled\", {1,1,1})\r\nend\r\n\r\n\r\n--Utility functions\r\n\r\n\r\n--Find delta (difference) between 2 x/y/z coordinates\r\nfunction findOffsetDistance(p1, p2, obj)\r\n    local yOffset = 0\r\n    if obj ~= nil then\r\n        local bounds = obj.getBounds()\r\n        yOffset = (bounds.size.y - bounds.offset.y)\r\n    end\r\n    local deltaPos = {}\r\n    deltaPos.x = (p2.x-p1.x)\r\n    deltaPos.y = (p2.y-p1.y) + yOffset\r\n    deltaPos.z = (p2.z-p1.z)\r\n    return deltaPos\r\nend\r\n\r\n--Used to rotate a set of coordinates by an angle\r\nfunction rotateLocalCoordinates(desiredPos, obj)\r\n\tlocal objPos, objRot = obj.getPosition(), obj.getRotation()\r\n    local angle = math.rad(objRot.y)\r\n\tlocal x = desiredPos.x * math.cos(angle) - desiredPos.z * math.sin(angle)\r\n\tlocal z = desiredPos.x * math.sin(angle) + desiredPos.z * math.cos(angle)\r\n\t--return {x=objPos.x+x, y=objPos.y+desiredPos.y, z=objPos.z+z}\r\n    return {x=x, y=desiredPos.y, z=z}\r\nend\r\n\r\nfunction rotateMyCoordinates(desiredPos, obj)\r\n\tlocal angle = math.rad(obj.getRotation().y)\r\n  local x = desiredPos.x * math.sin(angle)\r\n\tlocal z = desiredPos.z * math.cos(angle)\r\n    return {x=x, y=desiredPos.y, z=z}\r\nend\r\n\r\n--Coroutine delay, in seconds\r\nfunction wait(time)\r\n    local start = os.time()\r\n    repeat coroutine.yield(0) until os.time() > start + time\r\nend\r\n\r\n--Duplicates a table (needed to prevent it making reference to the same objects)\r\nfunction duplicateTable(oldTable)\r\n    local newTable = {}\r\n    for k, v in pairs(oldTable) do\r\n        newTable[k] = v\r\n    end\r\n    return newTable\r\nend\r\n\r\n--Moves scripted highlight from all objects\r\nfunction removeAllHighlights()\r\n    for _, obj in ipairs(getAllObjects()) do\r\n        obj.highlightOff()\r\n    end\r\nend\r\n\r\n--Round number (num) to the Nth decimal (dec)\r\nfunction round(num, dec)\r\n  local mult = 10^(dec or 0)\r\n  return math.floor(num * mult + 0.5) / mult\r\nend",
-  "LuaScriptState": "{\"ml\":{\"019d9e\":{\"lock\":false,\"pos\":{\"x\":3.92140436172485,\"y\":1.32441914081573,\"z\":-56.127498626709},\"rot\":{\"x\":0.0208086241036654,\"y\":269.999938964844,\"z\":0.0167712103575468}},\"01a7a5\":{\"lock\":false,\"pos\":{\"x\":3.91159868240356,\"y\":1.32307767868042,\"z\":-60.6982879638672},\"rot\":{\"x\":0.0208087172359228,\"y\":269.999237060547,\"z\":0.0167708788067102}},\"04433a\":{\"lock\":false,\"pos\":{\"x\":3.91359901428223,\"y\":1.32242023944855,\"z\":-62.9467010498047},\"rot\":{\"x\":0.0208111461251974,\"y\":269.990447998047,\"z\":0.016767643392086}},\"08377f\":{\"lock\":false,\"pos\":{\"x\":26.8402538299561,\"y\":1.29663550853729,\"z\":-54.9671783447266},\"rot\":{\"x\":0.0208040289580822,\"y\":270.015258789063,\"z\":0.0167765878140926}},\"092130\":{\"lock\":false,\"pos\":{\"x\":20.0669174194336,\"y\":1.28966176509857,\"z\":-70.3879547119141},\"rot\":{\"x\":0.0208053421229124,\"y\":270.010559082031,\"z\":0.0167750436812639}},\"0b0905\":{\"lock\":false,\"pos\":{\"x\":32.6690406799316,\"y\":1.29989576339722,\"z\":-51.0611038208008},\"rot\":{\"x\":0.020814960822463,\"y\":269.978942871094,\"z\":0.0167634170502424}},\"1610e2\":{\"lock\":false,\"pos\":{\"x\":0.80540007352829,\"y\":1.32463753223419,\"z\":-51.5153007507324},\"rot\":{\"x\":0.0208076592534781,\"y\":270.003326416016,\"z\":0.0167723167687655}},\"1da0bd\":{\"lock\":false,\"pos\":{\"x\":28.7816009521484,\"y\":1.29809892177582,\"z\":-52.3765258789063},\"rot\":{\"x\":0.0208089668303728,\"y\":269.999755859375,\"z\":0.0167711842805147}},\"1dae6f\":{\"lock\":false,\"pos\":{\"x\":16.9045181274414,\"y\":1.28851318359375,\"z\":-70.3879547119141},\"rot\":{\"x\":0.0208083521574736,\"y\":270.000183105469,\"z\":0.0167712047696114}},\"201fbe\":{\"lock\":false,\"pos\":{\"x\":26.8402519226074,\"y\":1.29891097545624,\"z\":-47.1935005187988},\"rot\":{\"x\":0.0208150669932365,\"y\":269.979064941406,\"z\":0.0167634598910809}},\"20afe9\":{\"lock\":false,\"pos\":{\"x\":10.4299964904785,\"y\":1.32745599746704,\"z\":-53.8278999328613},\"rot\":{\"x\":0.0208124592900276,\"y\":269.986633300781,\"z\":0.0167665015906096}},\"267353\":{\"lock\":false,\"pos\":{\"x\":26.8577270507813,\"y\":1.29627370834351,\"z\":-56.2250061035156},\"rot\":{\"x\":0.0208085533231497,\"y\":270.003143310547,\"z\":0.0167724750936031}},\"277df0\":{\"lock\":false,\"pos\":{\"x\":31.3143997192383,\"y\":1.34831249713898,\"z\":-76.6369018554688},\"rot\":{\"x\":359.979187011719,\"y\":90,\"z\":359.983215332031}},\"28fa8c\":{\"lock\":false,\"pos\":{\"x\":26.8402538299561,\"y\":1.29701471328735,\"z\":-53.6715660095215},\"rot\":{\"x\":0.0208039302378893,\"y\":270.016815185547,\"z\":0.0167771484702826}},\"2af612\":{\"lock\":false,\"pos\":{\"x\":32.5227279663086,\"y\":1.29066693782806,\"z\":-82.408088684082},\"rot\":{\"x\":0.0208137892186642,\"y\":269.982452392578,\"z\":0.0167644675821066}},\"2c10a3\":{\"lock\":false,\"pos\":{\"x\":7.19640016555786,\"y\":1.32562005519867,\"z\":-56.0881004333496},\"rot\":{\"x\":0.0208085477352142,\"y\":270.000122070313,\"z\":0.0167710706591606}},\"2cad41\":{\"lock\":false,\"pos\":{\"x\":3.94159841537476,\"y\":1.32711923122406,\"z\":-46.9281005859375},\"rot\":{\"x\":0.0208085142076015,\"y\":270.000030517578,\"z\":0.0167710427194834}},\"2e8dc6\":{\"lock\":false,\"pos\":{\"x\":13.6491117477417,\"y\":1.32728123664856,\"z\":-58.4188995361328},\"rot\":{\"x\":0.0208082180470228,\"y\":270.000823974609,\"z\":0.0167720895260572}},\"2ec821\":{\"lock\":false,\"pos\":{\"x\":16.9171943664551,\"y\":1.29402875900269,\"z\":-51.5610733032227},\"rot\":{\"x\":0.0208085905760527,\"y\":270.000091552734,\"z\":0.0167714469134808}},\"354f96\":{\"lock\":false,\"pos\":{\"x\":16.9165992736816,\"y\":1.29269909858704,\"z\":-56.1026000976563},\"rot\":{\"x\":0.0208092220127583,\"y\":269.998504638672,\"z\":0.016770526766777}},\"372afe\":{\"lock\":false,\"pos\":{\"x\":30.7249565124512,\"y\":1.29994642734528,\"z\":-48.4757537841797},\"rot\":{\"x\":0.0208042897284031,\"y\":270.014526367188,\"z\":0.0167763214558363}},\"3d460f\":{\"lock\":false,\"pos\":{\"x\":16.9165992736816,\"y\":1.29202950000763,\"z\":-58.3900985717773},\"rot\":{\"x\":0.0208089109510183,\"y\":269.998596191406,\"z\":0.0167707242071629}},\"3fc00d\":{\"lock\":false,\"pos\":{\"x\":30.724967956543,\"y\":1.29805028438568,\"z\":-54.9538269042969},\"rot\":{\"x\":0.0208141542971134,\"y\":269.98046875,\"z\":0.016763960942626}},\"457038\":{\"lock\":false,\"pos\":{\"x\":9.8939,\"y\":1.3046,\"z\":-84.7891},\"rot\":{\"x\":0.0208,\"y\":269.9995,\"z\":0.0168}},\"46aed1\":{\"lock\":false,\"pos\":{\"x\":7.19506025314331,\"y\":1.3242734670639,\"z\":-60.686767578125},\"rot\":{\"x\":0.0208175648003817,\"y\":269.969879150391,\"z\":0.0167602878063917}},\"4e3ae1\":{\"lock\":false,\"pos\":{\"x\":30.732702255249,\"y\":1.29768180847168,\"z\":-56.2220039367676},\"rot\":{\"x\":0.0208154134452343,\"y\":269.979309082031,\"z\":0.016763849183917}},\"4f6abf\":{\"lock\":false,\"pos\":{\"x\":10.4300012588501,\"y\":1.32812559604645,\"z\":-51.5404014587402},\"rot\":{\"x\":0.0208124294877052,\"y\":269.986633300781,\"z\":0.0167664848268032}},\"50de30\":{\"lock\":false,\"pos\":{\"x\":16.9101371765137,\"y\":1.29136085510254,\"z\":-60.6665916442871},\"rot\":{\"x\":0.0208124835044146,\"y\":269.986663818359,\"z\":0.0167663432657719}},\"538240\":{\"lock\":false,\"pos\":{\"x\":7.19640016555786,\"y\":1.32628965377808,\"z\":-53.8004989624023},\"rot\":{\"x\":0.0208130516111851,\"y\":269.984344482422,\"z\":0.0167655516415834}},\"539944\":{\"lock\":false,\"pos\":{\"x\":0.805399954319,\"y\":1.3253071308136,\"z\":-49.2277984619141},\"rot\":{\"x\":0.0208076443523169,\"y\":270.003326416016,\"z\":0.0167723558843136}},\"53cd6f\":{\"lock\":false,\"pos\":{\"x\":32.6690406799316,\"y\":1.30103349685669,\"z\":-47.1742553710938},\"rot\":{\"x\":0.0208085607737303,\"y\":269.999938964844,\"z\":0.0167712345719337}},\"567067\":{\"lock\":false,\"pos\":{\"x\":24.8910350799561,\"y\":1.29668068885803,\"z\":-52.3944778442383},\"rot\":{\"x\":0.0208136718720198,\"y\":269.983703613281,\"z\":0.016765246167779}},\"5887cc\":{\"lock\":false,\"pos\":{\"x\":10.4300003051758,\"y\":1.32678639888763,\"z\":-56.1153984069824},\"rot\":{\"x\":0.0208131149411201,\"y\":269.984985351563,\"z\":0.0167656149715185}},\"59a93c\":{\"lock\":false,\"pos\":{\"x\":32.6690406799316,\"y\":1.29875802993774,\"z\":-54.9479560852051},\"rot\":{\"x\":0.0208093468099833,\"y\":269.998657226563,\"z\":0.016770675778389}},\"5c93be\":{\"lock\":false,\"pos\":{\"x\":26.8402538299561,\"y\":1.2973940372467,\"z\":-52.3759536743164},\"rot\":{\"x\":0.0208146534860134,\"y\":269.979309082031,\"z\":0.0167635530233383}},\"5cf33e\":{\"lock\":false,\"pos\":{\"x\":22.9711456298828,\"y\":1.29711759090424,\"z\":-48.5198287963867},\"rot\":{\"x\":0.0208153817802668,\"y\":269.979431152344,\"z\":0.0167637132108212}},\"5eed1b\":{\"lock\":false,\"pos\":{\"x\":13.6441535949707,\"y\":1.32661664485931,\"z\":-60.683422088623},\"rot\":{\"x\":0.0208078343421221,\"y\":270.001647949219,\"z\":0.0167719144374132}},\"610887\":{\"lock\":false,\"pos\":{\"x\":3.94160199165344,\"y\":1.32578003406525,\"z\":-51.503101348877},\"rot\":{\"x\":0.020808532834053,\"y\":270.000030517578,\"z\":0.0167709905654192}},\"61f8a6\":{\"lock\":false,\"pos\":{\"x\":24.8910350799561,\"y\":1.29592216014862,\"z\":-54.9857063293457},\"rot\":{\"x\":0.020809119567275,\"y\":269.999755859375,\"z\":0.0167707949876785}},\"66e42b\":{\"lock\":false,\"pos\":{\"x\":32.6701850891113,\"y\":1.2983855009079,\"z\":-56.2220077514648},\"rot\":{\"x\":0.0208164118230343,\"y\":269.979187011719,\"z\":0.0167614296078682}},\"6930e1\":{\"lock\":false,\"pos\":{\"x\":32.6690406799316,\"y\":1.30065429210663,\"z\":-48.4698715209961},\"rot\":{\"x\":0.0208149738609791,\"y\":269.978820800781,\"z\":0.0167630799114704}},\"6eae6f\":{\"lock\":false,\"pos\":{\"x\":24.8910350799561,\"y\":1.2978184223175,\"z\":-48.5076332092285},\"rot\":{\"x\":0.0208147242665291,\"y\":269.979156494141,\"z\":0.0167633779346943}},\"702b7f\":{\"lock\":false,\"pos\":{\"x\":28.7816009521484,\"y\":1.29847812652588,\"z\":-51.0809097290039},\"rot\":{\"x\":0.0208146013319492,\"y\":269.979949951172,\"z\":0.0167636647820473}},\"728070\":{\"lock\":false,\"pos\":{\"x\":28.7816009521484,\"y\":1.29771959781647,\"z\":-53.6721382141113},\"rot\":{\"x\":0.0208139438182116,\"y\":269.981689453125,\"z\":0.0167642738670111}},\"747a1a\":{\"lock\":false,\"pos\":{\"x\":13.6926002502441,\"y\":1.32997536659241,\"z\":-49.268798828125},\"rot\":{\"x\":0.0208125244826078,\"y\":269.985687255859,\"z\":0.0167662650346756}},\"7b8100\":{\"lock\":false,\"pos\":{\"x\":28.7816028594971,\"y\":1.29734039306641,\"z\":-54.9677543640137},\"rot\":{\"x\":0.0208123810589314,\"y\":269.988464355469,\"z\":0.0167666897177696}},\"83355d\":{\"lock\":false,\"pos\":{\"x\":3.92138934135437,\"y\":1.32374942302704,\"z\":-58.4151992797852},\"rot\":{\"x\":0.0208090618252754,\"y\":269.998565673828,\"z\":0.016770638525486}},\"8504ab\":{\"lock\":false,\"pos\":{\"x\":10.4300098419189,\"y\":1.32611680030823,\"z\":-58.4029006958008},\"rot\":{\"x\":0.0208084844052792,\"y\":270.000610351563,\"z\":0.0167714990675449}},\"865252\":{\"lock\":false,\"pos\":{\"x\":7.19640064239502,\"y\":1.32695925235748,\"z\":-51.512996673584},\"rot\":{\"x\":0.0208087414503098,\"y\":269.999603271484,\"z\":0.0167712774127722}},\"8bc619\":{\"lock\":false,\"pos\":{\"x\":3.94160175323486,\"y\":1.32644963264465,\"z\":-49.2155990600586},\"rot\":{\"x\":0.0208086743950844,\"y\":269.999938964844,\"z\":0.0167715176939964}},\"8dd1fd\":{\"lock\":false,\"pos\":{\"x\":28.7816009521484,\"y\":1.29885733127594,\"z\":-49.7852935791016},\"rot\":{\"x\":0.0208091344684362,\"y\":269.999725341797,\"z\":0.0167707242071629}},\"8deccc\":{\"lock\":false,\"pos\":{\"x\":20.0669212341309,\"y\":1.28899216651917,\"z\":-72.6754608154297},\"rot\":{\"x\":0.0208084657788277,\"y\":269.999938964844,\"z\":0.01677106320858}},\"8f0604\":{\"lock\":false,\"pos\":{\"x\":7.19640016555786,\"y\":1.32495045661926,\"z\":-58.3755989074707},\"rot\":{\"x\":0.0208089333027601,\"y\":269.998352050781,\"z\":0.0167706366628408}},\"93db19\":{\"lock\":false,\"pos\":{\"x\":16.9171943664551,\"y\":1.29469835758209,\"z\":-49.2735748291016},\"rot\":{\"x\":0.0208091661334038,\"y\":269.998504638672,\"z\":0.0167706552892923}},\"94d024\":{\"lock\":false,\"pos\":{\"x\":26.8402538299561,\"y\":1.29815244674683,\"z\":-49.784725189209},\"rot\":{\"x\":0.0208147075027227,\"y\":269.978881835938,\"z\":0.0167633537203074}},\"96dc11\":{\"lock\":false,\"pos\":{\"x\":24.8910350799561,\"y\":1.29630148410797,\"z\":-53.6900901794434},\"rot\":{\"x\":0.0208087246865034,\"y\":269.999603271484,\"z\":0.0167706422507763}},\"97cea6\":{\"lock\":false,\"pos\":{\"x\":16.9165992736816,\"y\":1.29336869716644,\"z\":-53.8151016235352},\"rot\":{\"x\":0.0208125412464142,\"y\":269.985687255859,\"z\":0.0167660545557737}},\"9ab998\":{\"lock\":false,\"pos\":{\"x\":28.7952156066895,\"y\":1.29697644710541,\"z\":-56.2279357910156},\"rot\":{\"x\":0.020817743614316,\"y\":269.972412109375,\"z\":0.0167611576616764}},\"9bff41\":{\"lock\":false,\"pos\":{\"x\":7.19640016555786,\"y\":1.3282984495163,\"z\":-46.9379997253418},\"rot\":{\"x\":0.0208084564656019,\"y\":270.000122070313,\"z\":0.0167712401598692}},\"9cc9af\":{\"lock\":false,\"pos\":{\"x\":0.805400013923645,\"y\":1.32396793365479,\"z\":-53.8028984069824},\"rot\":{\"x\":0.020807733759284,\"y\":270.003326416016,\"z\":0.0167724657803774}},\"a05b8d\":{\"lock\":false,\"pos\":{\"x\":16.4209995269775,\"y\":1.3429182767868,\"z\":-76.586799621582},\"rot\":{\"x\":359.979187011719,\"y\":90,\"z\":359.983215332031}},\"a10a31\":{\"lock\":false,\"pos\":{\"x\":32.6804161071777,\"y\":1.29751312732697,\"z\":-59.215015411377},\"rot\":{\"x\":0.0208155456930399,\"y\":269.981842041016,\"z\":0.0167625844478607}},\"a3752c\":{\"lock\":false,\"pos\":{\"x\":10.387900352478,\"y\":1.32476484775543,\"z\":-62.9693984985352},\"rot\":{\"x\":0.020808681845665,\"y\":269.999389648438,\"z\":0.016770713031292}},\"a55c84\":{\"lock\":false,\"pos\":{\"x\":26.8402538299561,\"y\":1.29777324199677,\"z\":-51.0803375244141},\"rot\":{\"x\":0.020805923268199,\"y\":270.010009765625,\"z\":0.0167744476348162}},\"a5a5fd\":{\"lock\":false,\"pos\":{\"x\":30.7249565124512,\"y\":1.29956722259521,\"z\":-49.771369934082},\"rot\":{\"x\":0.0208145789802074,\"y\":269.979766845703,\"z\":0.0167636070400476}},\"a60082\":{\"lock\":false,\"pos\":{\"x\":28.7816009521484,\"y\":1.29961585998535,\"z\":-47.1940612792969},\"rot\":{\"x\":0.0208149310201406,\"y\":269.97900390625,\"z\":0.0167631097137928}},\"a967e3\":{\"lock\":false,\"pos\":{\"x\":12.1245756149292,\"y\":1.33488047122955,\"z\":-70.378303527832},\"rot\":{\"x\":0.0208136178553104,\"y\":270.000091552734,\"z\":0.016780586913228}},\"a9e612\":{\"lock\":false,\"pos\":{\"x\":16.9171943664551,\"y\":1.29536783695221,\"z\":-46.9860725402832},\"rot\":{\"x\":0.0208084676414728,\"y\":270.000244140625,\"z\":0.0167712941765785}},\"aa5286\":{\"lock\":false,\"pos\":{\"x\":13.6491041183472,\"y\":1.32795083522797,\"z\":-56.1313018798828},\"rot\":{\"x\":0.0208084750920534,\"y\":270.000213623047,\"z\":0.0167714338749647}},\"ac8f67\":{\"lock\":false,\"pos\":{\"x\":3.73846220970154,\"y\":1.32018744945526,\"z\":-70.3570785522461},\"rot\":{\"x\":0.0208128094673157,\"y\":269.985595703125,\"z\":0.0167657602578402}},\"acc4c9\":{\"lock\":false,\"pos\":{\"x\":7.16750001907349,\"y\":1.32360279560089,\"z\":-62.9438018798828},\"rot\":{\"x\":0.0208174455910921,\"y\":269.969665527344,\"z\":0.0167602431029081}},\"acc5be\":{\"lock\":false,\"pos\":{\"x\":7.40836000442505,\"y\":1.32151699066162,\"z\":-70.3684768676758},\"rot\":{\"x\":0.0208131205290556,\"y\":269.985595703125,\"z\":0.0167659465223551}},\"af1d2c\":{\"lock\":false,\"pos\":{\"x\":24.9203586578369,\"y\":1.29557001590729,\"z\":-56.2253341674805},\"rot\":{\"x\":0.0208083875477314,\"y\":270.003814697266,\"z\":0.016772897914052}},\"b102c3\":{\"lock\":false,\"pos\":{\"x\":13.6926031112671,\"y\":1.3306450843811,\"z\":-46.981201171875},\"rot\":{\"x\":0.0208124853670597,\"y\":269.98583984375,\"z\":0.016766170039773}},\"b45739\":{\"lock\":false,\"pos\":{\"x\":30.7249660491943,\"y\":1.30032575130463,\"z\":-47.1801376342773},\"rot\":{\"x\":0.0208088774234056,\"y\":270.000061035156,\"z\":0.0167707931250334}},\"b4fc98\":{\"lock\":false,\"pos\":{\"x\":24.8910350799561,\"y\":1.29819762706757,\"z\":-47.2120208740234},\"rot\":{\"x\":0.0208147577941418,\"y\":269.979248046875,\"z\":0.0167634952813387}},\"b811d0\":{\"lock\":false,\"pos\":{\"x\":0.805443644523621,\"y\":1.32597672939301,\"z\":-46.9402770996094},\"rot\":{\"x\":0.0208076387643814,\"y\":270.003326416016,\"z\":0.0167725309729576}},\"bb0dc0\":{\"lock\":false,\"pos\":{\"x\":13.6490983963013,\"y\":1.32928991317749,\"z\":-51.5563011169434},\"rot\":{\"x\":0.0208125729113817,\"y\":269.985473632813,\"z\":0.0167664997279644}},\"bb684e\":{\"lock\":false,\"pos\":{\"x\":16.90452003479,\"y\":1.28784370422363,\"z\":-72.6754608154297},\"rot\":{\"x\":0.0208063833415508,\"y\":270.007385253906,\"z\":0.0167737808078527}},\"bb9641\":{\"lock\":false,\"pos\":{\"x\":3.94159984588623,\"y\":1.32511055469513,\"z\":-53.790599822998},\"rot\":{\"x\":0.0208085346966982,\"y\":269.999969482422,\"z\":0.016771050170064}},\"be227d\":{\"lock\":false,\"pos\":{\"x\":26.8402538299561,\"y\":1.29853177070618,\"z\":-48.4891090393066},\"rot\":{\"x\":0.0208148397505283,\"y\":269.97900390625,\"z\":0.0167632717639208}},\"c04c67\":{\"lock\":false,\"pos\":{\"x\":22.9711456298828,\"y\":1.2974967956543,\"z\":-47.2242164611816},\"rot\":{\"x\":0.0208151061087847,\"y\":269.9794921875,\"z\":0.0167640075087547}},\"c5fe5b\":{\"lock\":false,\"pos\":{\"x\":30.7249565124512,\"y\":1.29918801784515,\"z\":-51.0669860839844},\"rot\":{\"x\":0.0208045765757561,\"y\":270.014007568359,\"z\":0.0167757961899042}},\"c7e3cf\":{\"lock\":false,\"pos\":{\"x\":30.7249565124512,\"y\":1.2988086938858,\"z\":-52.3625946044922},\"rot\":{\"x\":0.0208087284117937,\"y\":270.000427246094,\"z\":0.0167715139687061}},\"c95de1\":{\"lock\":false,\"pos\":{\"x\":32.6690406799316,\"y\":1.29951655864716,\"z\":-52.3567237854004},\"rot\":{\"x\":0.0208092629909515,\"y\":269.999328613281,\"z\":0.0167707335203886}},\"d3d7fb\":{\"lock\":false,\"pos\":{\"x\":32.6690406799316,\"y\":1.29913723468781,\"z\":-53.6523399353027},\"rot\":{\"x\":0.0208131466060877,\"y\":269.984558105469,\"z\":0.0167652778327465}},\"d4d2be\":{\"lock\":false,\"pos\":{\"x\":16.8868007659912,\"y\":1.29069018363953,\"z\":-62.9289016723633},\"rot\":{\"x\":0.0208124555647373,\"y\":269.986694335938,\"z\":0.0167663060128689}},\"d914f0\":{\"lock\":false,\"pos\":{\"x\":13.6254997253418,\"y\":1.32594740390778,\"z\":-62.9463005065918},\"rot\":{\"x\":0.0208080448210239,\"y\":270.001037597656,\"z\":0.0167718194425106}},\"d9a805\":{\"lock\":false,\"pos\":{\"x\":7.1963963508606,\"y\":1.32762885093689,\"z\":-49.2254981994629},\"rot\":{\"x\":0.0208086986094713,\"y\":269.999694824219,\"z\":0.0167712010443211}},\"dc6a2c\":{\"lock\":false,\"pos\":{\"x\":16.8998126983643,\"y\":1.28918170928955,\"z\":-68.0983200073242},\"rot\":{\"x\":0.0208083353936672,\"y\":270.000823974609,\"z\":0.0167713705450296}},\"ddccf9\":{\"lock\":false,\"pos\":{\"x\":10.4736042022705,\"y\":1.32881104946136,\"z\":-49.2528991699219},\"rot\":{\"x\":0.0208082124590874,\"y\":270.001403808594,\"z\":0.0167717784643173}},\"e0bf2d\":{\"lock\":false,\"pos\":{\"x\":10.4073514938354,\"y\":1.32543790340424,\"z\":-60.6943244934082},\"rot\":{\"x\":0.0208086241036654,\"y\":269.999328613281,\"z\":0.0167709402740002}},\"e26ddc\":{\"lock\":false,\"pos\":{\"x\":24.8910350799561,\"y\":1.29705989360809,\"z\":-51.0988616943359},\"rot\":{\"x\":0.020804088562727,\"y\":270.015869140625,\"z\":0.0167766455560923}},\"e4377f\":{\"lock\":false,\"pos\":{\"x\":10.4736042022705,\"y\":1.32948064804077,\"z\":-46.9654006958008},\"rot\":{\"x\":0.0208080131560564,\"y\":270.001159667969,\"z\":0.0167716033756733}},\"e86c65\":{\"lock\":false,\"pos\":{\"x\":13.6491041183472,\"y\":1.32862043380737,\"z\":-53.8437995910645},\"rot\":{\"x\":0.0208083018660545,\"y\":270.000183105469,\"z\":0.0167718604207039}},\"ebc4d9\":{\"lock\":false,\"pos\":{\"x\":28.7816009521484,\"y\":1.29923665523529,\"z\":-48.4896774291992},\"rot\":{\"x\":0.0208100229501724,\"y\":269.996398925781,\"z\":0.0167694911360741}},\"ef116e\":{\"lock\":false,\"pos\":{\"x\":30.7249565124512,\"y\":1.29842948913574,\"z\":-53.6582107543945},\"rot\":{\"x\":0.0208146367222071,\"y\":269.979614257813,\"z\":0.0167634822428226}},\"f317ac\":{\"lock\":false,\"pos\":{\"x\":32.6690406799316,\"y\":1.30027496814728,\"z\":-49.7654914855957},\"rot\":{\"x\":0.0208088103681803,\"y\":269.999816894531,\"z\":0.0167712401598692}},\"fa142f\":{\"lock\":false,\"pos\":{\"x\":24.8910350799561,\"y\":1.29743921756744,\"z\":-49.8032493591309},\"rot\":{\"x\":0.020805774256587,\"y\":270.010162353516,\"z\":0.0167744141072035}}}}",
+  "LuaScriptState": "{\"ml\":{\"019d9e\":{\"lock\":false,\"pos\":{\"x\":22.726131439209,\"y\":1.49510383605957,\"z\":30.3781108856201},\"rot\":{\"x\":-2.43147411538303E-07,\"y\":270.002624511719,\"z\":1.47463458688435E-06}},\"01a7a5\":{\"lock\":false,\"pos\":{\"x\":22.7163276672363,\"y\":1.49510383605957,\"z\":25.8073215484619},\"rot\":{\"x\":-2.50825820558021E-07,\"y\":270.001983642578,\"z\":-9.82996994025598E-07}},\"04433a\":{\"lock\":false,\"pos\":{\"x\":22.7183265686035,\"y\":1.49510383605957,\"z\":23.5589122772217},\"rot\":{\"x\":-2.62327375821769E-07,\"y\":269.993225097656,\"z\":1.439711581952E-06}},\"08377f\":{\"lock\":false,\"pos\":{\"x\":45.6450691223145,\"y\":1.49510383605957,\"z\":31.5385913848877},\"rot\":{\"x\":6.50997606044257E-07,\"y\":270.027496337891,\"z\":1.01178045497363E-06}},\"092130\":{\"lock\":false,\"pos\":{\"x\":38.8607749938965,\"y\":1.49510383605957,\"z\":14.2539043426514},\"rot\":{\"x\":-3.49109086528188E-07,\"y\":270.014526367188,\"z\":1.13263433831889E-06}},\"0b0905\":{\"lock\":false,\"pos\":{\"x\":51.4738502502441,\"y\":1.49510383605957,\"z\":35.4446907043457},\"rot\":{\"x\":-2.83420490632125E-07,\"y\":269.990844726563,\"z\":-1.18402176951804E-07}},\"143ad5\":{\"lock\":false,\"pos\":{\"x\":29.2059478759766,\"y\":1.49510383605957,\"z\":21.2758522033691},\"rot\":{\"x\":-3.75883871583937E-07,\"y\":270.001861572266,\"z\":2.57719449336946E-07}},\"1610e2\":{\"lock\":false,\"pos\":{\"x\":19.6101264953613,\"y\":1.49510383605957,\"z\":34.9903450012207},\"rot\":{\"x\":-2.33186767673033E-07,\"y\":270.006011962891,\"z\":1.6114036043291E-06}},\"1da0bd\":{\"lock\":false,\"pos\":{\"x\":47.5864143371582,\"y\":1.49510383605957,\"z\":34.1292762756348},\"rot\":{\"x\":-1.86773704058396E-07,\"y\":270.011810302734,\"z\":-1.6488598930664E-07}},\"1dae6f\":{\"lock\":false,\"pos\":{\"x\":35.6983757019043,\"y\":1.49510383605957,\"z\":14.2539119720459},\"rot\":{\"x\":-1.43405870289826E-07,\"y\":270.004211425781,\"z\":-7.20382786312257E-07}},\"201fbe\":{\"lock\":false,\"pos\":{\"x\":45.6450653076172,\"y\":1.49510383605957,\"z\":39.3122978210449},\"rot\":{\"x\":-4.6071286874394E-07,\"y\":269.990997314453,\"z\":6.24004144356149E-07}},\"20afe9\":{\"lock\":false,\"pos\":{\"x\":29.2347221374512,\"y\":1.49510383605957,\"z\":32.6777458190918},\"rot\":{\"x\":-9.17178368808891E-08,\"y\":269.9892578125,\"z\":1.47395235217118E-06}},\"267353\":{\"lock\":false,\"pos\":{\"x\":45.662540435791,\"y\":1.49510383605957,\"z\":30.2807636260986},\"rot\":{\"x\":-2.94544300061261E-08,\"y\":270.015411376953,\"z\":3.83618100840977E-07}},\"277df0\":{\"lock\":false,\"pos\":{\"x\":50.1081886291504,\"y\":1.55149900913239,\"z\":8.00482845306396},\"rot\":{\"x\":3.562877850527E-07,\"y\":90.0000762939453,\"z\":-2.81097641163797E-07}},\"28fa8c\":{\"lock\":false,\"pos\":{\"x\":45.6450691223145,\"y\":1.49510383605957,\"z\":32.8342399597168},\"rot\":{\"x\":-7.3799913025141E-07,\"y\":270.029052734375,\"z\":1.82754229172133E-06}},\"2af612\":{\"lock\":false,\"pos\":{\"x\":51.3166656494141,\"y\":1.49510383605957,\"z\":2.23390078544617},\"rot\":{\"x\":-4.24976974500169E-07,\"y\":269.995544433594,\"z\":-3.12261192902952E-07}},\"2c10a3\":{\"lock\":false,\"pos\":{\"x\":26.0011253356934,\"y\":1.49510383605957,\"z\":30.4175090789795},\"rot\":{\"x\":-1.8974991178311E-07,\"y\":270.002807617188,\"z\":1.24429777770274E-06}},\"2cad41\":{\"lock\":false,\"pos\":{\"x\":22.7463226318359,\"y\":1.49510383605957,\"z\":39.5775413513184},\"rot\":{\"x\":-3.07382606479223E-07,\"y\":270.002655029297,\"z\":-9.30594580950128E-07}},\"2e8dc6\":{\"lock\":false,\"pos\":{\"x\":32.4538345336914,\"y\":1.49510383605957,\"z\":28.086706161499},\"rot\":{\"x\":-3.31245303186734E-07,\"y\":270.00341796875,\"z\":-7.03883927144489E-07}},\"2ec821\":{\"lock\":false,\"pos\":{\"x\":35.7219352722168,\"y\":1.49510383605957,\"z\":34.9445991516113},\"rot\":{\"x\":-2.25657146302183E-07,\"y\":270.00390625,\"z\":-4.79334460123937E-07}},\"354f96\":{\"lock\":false,\"pos\":{\"x\":35.7213401794434,\"y\":1.49510383605957,\"z\":30.4030437469482},\"rot\":{\"x\":-2.98135915954845E-07,\"y\":270.002319335938,\"z\":-8.19543799934763E-07}},\"372afe\":{\"lock\":false,\"pos\":{\"x\":49.5297660827637,\"y\":1.49510383605957,\"z\":38.0300407409668},\"rot\":{\"x\":-6.00773375936114E-07,\"y\":270.026275634766,\"z\":8.54153768159449E-07}},\"3d460f\":{\"lock\":false,\"pos\":{\"x\":35.7213401794434,\"y\":1.49510383605957,\"z\":28.1155452728271},\"rot\":{\"x\":-4.44307659108745E-07,\"y\":270.002410888672,\"z\":1.33359958454093E-06}},\"3fc00d\":{\"lock\":false,\"pos\":{\"x\":49.5297813415527,\"y\":1.49510383605957,\"z\":31.5519390106201},\"rot\":{\"x\":-3.65426728876628E-07,\"y\":269.992523193359,\"z\":4.53184327398048E-07}},\"457038\":{\"lock\":false,\"pos\":{\"x\":28.6876697540283,\"y\":1.48149943351746,\"z\":-0.147399172186852},\"rot\":{\"x\":1.71464890286188E-07,\"y\":269.99951171875,\"z\":-8.12967329011371E-08}},\"46aed1\":{\"lock\":false,\"pos\":{\"x\":25.9997863769531,\"y\":1.49510383605957,\"z\":25.8188419342041},\"rot\":{\"x\":-2.50428797698987E-07,\"y\":269.972534179688,\"z\":1.49099810187181E-06}},\"4705ae\":{\"lock\":false,\"pos\":{\"x\":49.5494422912598,\"y\":1.49510383605957,\"z\":28.9938526153564},\"rot\":{\"x\":-3.37143148954056E-07,\"y\":270,\"z\":9.28380814002594E-07}},\"4e3ae1\":{\"lock\":false,\"pos\":{\"x\":49.5375175476074,\"y\":1.49510383605957,\"z\":30.2837619781494},\"rot\":{\"x\":-6.18310366462538E-07,\"y\":269.991455078125,\"z\":7.53087249449891E-07}},\"4f6abf\":{\"lock\":false,\"pos\":{\"x\":29.2347259521484,\"y\":1.49510383605957,\"z\":34.9652366638184},\"rot\":{\"x\":-6.40198862811303E-08,\"y\":269.989166259766,\"z\":1.25750375445932E-06}},\"50296c\":{\"lock\":false,\"pos\":{\"x\":51.4868431091309,\"y\":1.49510383605957,\"z\":28.9938526153564},\"rot\":{\"x\":-3.98882889385277E-07,\"y\":270,\"z\":9.90269086287299E-07}},\"50de30\":{\"lock\":false,\"pos\":{\"x\":35.7148780822754,\"y\":1.49510383605957,\"z\":25.8390522003174},\"rot\":{\"x\":-1.67092906622202E-07,\"y\":269.990539550781,\"z\":1.00335580555111E-06}},\"538240\":{\"lock\":false,\"pos\":{\"x\":26.0011291503906,\"y\":1.49510383605957,\"z\":32.7051467895508},\"rot\":{\"x\":-3.42451954793432E-07,\"y\":269.986968994141,\"z\":1.68682686307875E-06}},\"539944\":{\"lock\":false,\"pos\":{\"x\":19.6101264953613,\"y\":1.49510383605957,\"z\":37.2778434753418},\"rot\":{\"x\":-2.1159604557397E-07,\"y\":270.006011962891,\"z\":1.58553109486093E-06}},\"53cd6f\":{\"lock\":false,\"pos\":{\"x\":51.4738502502441,\"y\":1.49510383605957,\"z\":39.3315391540527},\"rot\":{\"x\":-5.7291356370115E-07,\"y\":270.01171875,\"z\":1.48761682794429E-06}},\"567067\":{\"lock\":false,\"pos\":{\"x\":43.6958503723145,\"y\":1.49510383605957,\"z\":34.1113243103027},\"rot\":{\"x\":-4.97087398798612E-07,\"y\":269.996032714844,\"z\":1.6037421346482E-07}},\"5887cc\":{\"lock\":false,\"pos\":{\"x\":29.2347259521484,\"y\":1.49510383605957,\"z\":30.3902072906494},\"rot\":{\"x\":-1.81762445095046E-07,\"y\":269.987518310547,\"z\":1.51777248902363E-06}},\"59a93c\":{\"lock\":false,\"pos\":{\"x\":51.4738540649414,\"y\":1.49510383605957,\"z\":31.5578060150146},\"rot\":{\"x\":6.47576541723538E-07,\"y\":270.010620117188,\"z\":1.16755381895928E-06}},\"5c93be\":{\"lock\":false,\"pos\":{\"x\":45.6450691223145,\"y\":1.49510383605957,\"z\":34.1298484802246},\"rot\":{\"x\":-8.00889154106699E-07,\"y\":269.991607666016,\"z\":5.65498226023919E-07}},\"5cf33e\":{\"lock\":false,\"pos\":{\"x\":41.7759590148926,\"y\":1.49510383605957,\"z\":37.9859733581543},\"rot\":{\"x\":-8.33817580314644E-07,\"y\":269.991760253906,\"z\":9.28950896650349E-07}},\"5eed1b\":{\"lock\":false,\"pos\":{\"x\":32.4488754272461,\"y\":1.49510383605957,\"z\":25.8221836090088},\"rot\":{\"x\":-4.17874616687186E-07,\"y\":270.004241943359,\"z\":-8.23824052531563E-07}},\"610887\":{\"lock\":false,\"pos\":{\"x\":22.7463302612305,\"y\":1.49510383605957,\"z\":35.0025444030762},\"rot\":{\"x\":-4.19029191789377E-07,\"y\":270.002685546875,\"z\":2.08884003427556E-07}},\"61f8a6\":{\"lock\":false,\"pos\":{\"x\":43.6958503723145,\"y\":1.49510383605957,\"z\":31.5200634002686},\"rot\":{\"x\":-4.4953819156035E-07,\"y\":270.012054443359,\"z\":4.21349113821634E-07}},\"66e42b\":{\"lock\":false,\"pos\":{\"x\":51.4749984741211,\"y\":1.49510383605957,\"z\":30.2837543487549},\"rot\":{\"x\":-1.40120263836252E-07,\"y\":269.9912109375,\"z\":-9.32069426085036E-08}},\"6930e1\":{\"lock\":false,\"pos\":{\"x\":51.4738502502441,\"y\":1.49510383605957,\"z\":38.0359230041504},\"rot\":{\"x\":-5.93404536175512E-07,\"y\":269.990600585938,\"z\":3.26015140217351E-07}},\"6a99dd\":{\"lock\":false,\"pos\":{\"x\":47.6119422912598,\"y\":1.49510383605957,\"z\":28.9938526153564},\"rot\":{\"x\":-6.3845357090031E-07,\"y\":269.991668701172,\"z\":1.33551884573535E-06}},\"6eae6f\":{\"lock\":false,\"pos\":{\"x\":43.6958503723145,\"y\":1.49510383605957,\"z\":37.9981651306152},\"rot\":{\"x\":-7.22369293271186E-07,\"y\":269.991455078125,\"z\":2.10639441888816E-07}},\"702b7f\":{\"lock\":false,\"pos\":{\"x\":47.5864143371582,\"y\":1.49510383605957,\"z\":35.4248847961426},\"rot\":{\"x\":-7.47219473851146E-07,\"y\":269.992065429688,\"z\":2.58821074794469E-07}},\"728070\":{\"lock\":false,\"pos\":{\"x\":47.5864143371582,\"y\":1.49510383605957,\"z\":32.833667755127},\"rot\":{\"x\":-8.93703941073909E-07,\"y\":269.993927001953,\"z\":8.17998909496964E-07}},\"747a1a\":{\"lock\":false,\"pos\":{\"x\":32.4973220825195,\"y\":1.49510383605957,\"z\":37.2368354797363},\"rot\":{\"x\":-3.18742820581974E-07,\"y\":269.988159179688,\"z\":1.56076828261575E-06}},\"7b8100\":{\"lock\":false,\"pos\":{\"x\":47.5864143371582,\"y\":1.49510383605957,\"z\":31.5380115509033},\"rot\":{\"x\":-1.05078834167216E-06,\"y\":270.000640869141,\"z\":-2.67960018618396E-07}},\"822ab6\":{\"lock\":false,\"pos\":{\"x\":35.6798439025879,\"y\":1.49510383605957,\"z\":21.3054523468018},\"rot\":{\"x\":-2.30852393201531E-07,\"y\":269.990386962891,\"z\":-8.6973687984937E-07}},\"83355d\":{\"lock\":false,\"pos\":{\"x\":22.7261161804199,\"y\":1.49510383605957,\"z\":28.0904102325439},\"rot\":{\"x\":-2.36577136547567E-07,\"y\":270.001281738281,\"z\":1.53114888234995E-06}},\"8504ab\":{\"lock\":false,\"pos\":{\"x\":29.2347373962402,\"y\":1.49510383605957,\"z\":28.1027050018311},\"rot\":{\"x\":-2.40612905599846E-07,\"y\":270.003204345703,\"z\":1.06802545474238E-07}},\"865252\":{\"lock\":false,\"pos\":{\"x\":26.0011291503906,\"y\":1.49510383605957,\"z\":34.9926414489746},\"rot\":{\"x\":-5.01230488225701E-08,\"y\":270.002197265625,\"z\":1.28692124690133E-06}},\"8bc619\":{\"lock\":false,\"pos\":{\"x\":22.7463302612305,\"y\":1.49510383605957,\"z\":37.2900428771973},\"rot\":{\"x\":-1.17538952792984E-07,\"y\":270.002624511719,\"z\":1.443593419026E-06}},\"8c1ae5\":{\"lock\":false,\"pos\":{\"x\":43.7369422912598,\"y\":1.49510383605957,\"z\":28.9938526153564},\"rot\":{\"x\":-3.42741714121075E-07,\"y\":269.990997314453,\"z\":-1.29478038957132E-07}},\"8dd1fd\":{\"lock\":false,\"pos\":{\"x\":47.5864143371582,\"y\":1.49510383605957,\"z\":36.7205009460449},\"rot\":{\"x\":-5.97715597905335E-07,\"y\":270.011840820313,\"z\":5.49249079995207E-07}},\"8deccc\":{\"lock\":false,\"pos\":{\"x\":38.860782623291,\"y\":1.49510383605957,\"z\":11.9664058685303},\"rot\":{\"x\":-4.13456120895717E-07,\"y\":270.003936767578,\"z\":6.18409190522584E-09}},\"8f0604\":{\"lock\":false,\"pos\":{\"x\":26.0011291503906,\"y\":1.49510383605957,\"z\":28.1300106048584},\"rot\":{\"x\":-1.81611653715663E-07,\"y\":270.001037597656,\"z\":1.51483232002647E-06}},\"93db19\":{\"lock\":false,\"pos\":{\"x\":35.7219352722168,\"y\":1.49510383605957,\"z\":37.2320976257324},\"rot\":{\"x\":-2.57747558407573E-07,\"y\":270.002319335938,\"z\":-6.25931761533138E-07}},\"94d024\":{\"lock\":false,\"pos\":{\"x\":45.6450653076172,\"y\":1.49510383605957,\"z\":36.7210731506348},\"rot\":{\"x\":-3.12470035623846E-07,\"y\":269.990997314453,\"z\":5.82371040280805E-09}},\"96dc11\":{\"lock\":false,\"pos\":{\"x\":43.6958503723145,\"y\":1.49510383605957,\"z\":32.8157196044922},\"rot\":{\"x\":-5.77328307826974E-07,\"y\":270.011932373047,\"z\":1.69720135545504E-06}},\"97cea6\":{\"lock\":false,\"pos\":{\"x\":35.7213401794434,\"y\":1.49510383605957,\"z\":32.6905822753906},\"rot\":{\"x\":-7.1426711656386E-08,\"y\":269.989471435547,\"z\":1.40419263061631E-06}},\"9ab998\":{\"lock\":false,\"pos\":{\"x\":47.6000289916992,\"y\":1.49510383605957,\"z\":30.2778301239014},\"rot\":{\"x\":-1.29889642153103E-07,\"y\":269.984619140625,\"z\":-3.28370134639044E-07}},\"9bff41\":{\"lock\":false,\"pos\":{\"x\":26.0011253356934,\"y\":1.49510383605957,\"z\":39.5676383972168},\"rot\":{\"x\":-3.76795526335627E-07,\"y\":270.002685546875,\"z\":1.71116980141051E-07}},\"9cc9af\":{\"lock\":false,\"pos\":{\"x\":19.6101264953613,\"y\":1.49510383605957,\"z\":32.702751159668},\"rot\":{\"x\":-2.65731756599052E-07,\"y\":270.006042480469,\"z\":3.43847460726465E-07}},\"a05b8d\":{\"lock\":false,\"pos\":{\"x\":16.4209995269775,\"y\":1.3429182767868,\"z\":-76.586799621582},\"rot\":{\"x\":359.979187011719,\"y\":90,\"z\":359.983215332031}},\"a10a31\":{\"lock\":false,\"pos\":{\"x\":51.4852294921875,\"y\":1.49510383605957,\"z\":27.29075050354},\"rot\":{\"x\":-1.35559020009168E-07,\"y\":269.993896484375,\"z\":1.78593083433043E-07}},\"a3752c\":{\"lock\":false,\"pos\":{\"x\":29.192626953125,\"y\":1.49510383605957,\"z\":23.5362110137939},\"rot\":{\"x\":-2.00781954617923E-07,\"y\":270.002075195313,\"z\":1.25560688957194E-06}},\"a55c84\":{\"lock\":false,\"pos\":{\"x\":45.6450691223145,\"y\":1.49510383605957,\"z\":35.425464630127},\"rot\":{\"x\":-6.54337327432586E-07,\"y\":270.022094726563,\"z\":3.35564493525453E-07}},\"a5a5fd\":{\"lock\":false,\"pos\":{\"x\":49.5297660827637,\"y\":1.49510383605957,\"z\":36.7344245910645},\"rot\":{\"x\":-9.43437100886513E-07,\"y\":269.991760253906,\"z\":8.66007667355007E-07}},\"a60082\":{\"lock\":false,\"pos\":{\"x\":47.5864143371582,\"y\":1.49510383605957,\"z\":39.3117332458496},\"rot\":{\"x\":-2.91147642883516E-07,\"y\":269.990905761719,\"z\":-1.95940813796369E-07}},\"a967e3\":{\"lock\":false,\"pos\":{\"x\":30.9186019897461,\"y\":1.50675749778748,\"z\":14.2631511688232},\"rot\":{\"x\":2.09311610888108E-06,\"y\":269.992858886719,\"z\":-1.44188481954188E-06}},\"a9e612\":{\"lock\":false,\"pos\":{\"x\":35.7219352722168,\"y\":1.49510383605957,\"z\":39.519603729248},\"rot\":{\"x\":-4.84245106235903E-07,\"y\":270.00390625,\"z\":3.46177813526083E-07}},\"aa5286\":{\"lock\":false,\"pos\":{\"x\":32.4538269042969,\"y\":1.49510383605957,\"z\":30.374303817749},\"rot\":{\"x\":-3.79274752049241E-07,\"y\":270.002807617188,\"z\":-9.94738115878135E-07}},\"ac8f67\":{\"lock\":false,\"pos\":{\"x\":22.5323600769043,\"y\":1.49510383605957,\"z\":14.2848567962646},\"rot\":{\"x\":-3.39162653517633E-07,\"y\":269.994995117188,\"z\":-2.41920883325975E-08}},\"acc4c9\":{\"lock\":false,\"pos\":{\"x\":25.9722290039063,\"y\":1.49510383605957,\"z\":23.5618076324463},\"rot\":{\"x\":-2.89552758658829E-07,\"y\":269.972381591797,\"z\":2.02809829374928E-07}},\"acc5be\":{\"lock\":false,\"pos\":{\"x\":26.2021636962891,\"y\":1.49510383605957,\"z\":14.2732372283936},\"rot\":{\"x\":6.20732578227035E-07,\"y\":269.986267089844,\"z\":-1.00366960964493E-07}},\"af1d2c\":{\"lock\":false,\"pos\":{\"x\":43.7251777648926,\"y\":1.49510383605957,\"z\":30.2804355621338},\"rot\":{\"x\":2.69674870878589E-07,\"y\":270.016204833984,\"z\":4.35456399827672E-07}},\"b102c3\":{\"lock\":false,\"pos\":{\"x\":32.4973258972168,\"y\":1.49510383605957,\"z\":39.5244331359863},\"rot\":{\"x\":-2.57855731433665E-07,\"y\":269.988372802734,\"z\":-8.44918929487903E-07}},\"b45739\":{\"lock\":false,\"pos\":{\"x\":49.5297737121582,\"y\":1.49510383605957,\"z\":39.3256568908691},\"rot\":{\"x\":-7.59716272114019E-07,\"y\":270.01171875,\"z\":1.1167026059411E-06}},\"b4fc98\":{\"lock\":false,\"pos\":{\"x\":43.6958465576172,\"y\":1.49510383605957,\"z\":39.2937812805176},\"rot\":{\"x\":-7.14923942268797E-07,\"y\":269.991455078125,\"z\":3.85377489919847E-07}},\"b811d0\":{\"lock\":false,\"pos\":{\"x\":19.6101703643799,\"y\":1.49510383605957,\"z\":39.5653648376465},\"rot\":{\"x\":-2.15357246702297E-07,\"y\":270.005981445313,\"z\":1.22894664400519E-06}},\"bb0dc0\":{\"lock\":false,\"pos\":{\"x\":32.4538192749023,\"y\":1.49510383605957,\"z\":34.9493370056152},\"rot\":{\"x\":-2.91399061325137E-07,\"y\":269.988006591797,\"z\":-1.17999684334791E-06}},\"bb684e\":{\"lock\":false,\"pos\":{\"x\":35.6983795166016,\"y\":1.49510383605957,\"z\":11.9664058685303},\"rot\":{\"x\":-3.19270583304387E-07,\"y\":270.011444091797,\"z\":-8.10056633326894E-07}},\"bb9641\":{\"lock\":false,\"pos\":{\"x\":22.7463264465332,\"y\":1.49510383605957,\"z\":32.7150497436523},\"rot\":{\"x\":-1.94134699427195E-07,\"y\":270.002624511719,\"z\":1.26120175991673E-06}},\"be227d\":{\"lock\":false,\"pos\":{\"x\":45.6450691223145,\"y\":1.49510383605957,\"z\":38.0166893005371},\"rot\":{\"x\":-3.63444513595823E-07,\"y\":269.990997314453,\"z\":-1.03239026216784E-08}},\"c04c67\":{\"lock\":false,\"pos\":{\"x\":41.7759590148926,\"y\":1.49510383605957,\"z\":39.2815818786621},\"rot\":{\"x\":-5.56293684894626E-07,\"y\":269.99169921875,\"z\":1.85185768941665E-07}},\"c5fe5b\":{\"lock\":false,\"pos\":{\"x\":49.5297660827637,\"y\":1.49510383605957,\"z\":35.4388084411621},\"rot\":{\"x\":-3.28050759890175E-07,\"y\":270.026000976563,\"z\":9.99741232021734E-08}},\"c7e3cf\":{\"lock\":false,\"pos\":{\"x\":49.5297698974609,\"y\":1.49510383605957,\"z\":34.1431999206543},\"rot\":{\"x\":-1.6777008227109E-07,\"y\":270.012451171875,\"z\":1.76419394648519E-08}},\"c95de1\":{\"lock\":false,\"pos\":{\"x\":51.4738502502441,\"y\":1.49510383605957,\"z\":34.1490745544434},\"rot\":{\"x\":-4.28115583872568E-07,\"y\":270.011352539063,\"z\":4.065944665399E-07}},\"cb11fe\":{\"lock\":false,\"pos\":{\"x\":25.9732475280762,\"y\":1.49510383605957,\"z\":21.2997531890869},\"rot\":{\"x\":-3.7611778225255E-07,\"y\":270.024261474609,\"z\":3.03734765338959E-07}},\"d3d7fb\":{\"lock\":false,\"pos\":{\"x\":51.4738540649414,\"y\":1.49510383605957,\"z\":32.8534622192383},\"rot\":{\"x\":-3.11172726696896E-07,\"y\":269.996459960938,\"z\":-3.05099661090935E-07}},\"d4d2be\":{\"lock\":false,\"pos\":{\"x\":35.6915473937988,\"y\":1.49510383605957,\"z\":23.5767421722412},\"rot\":{\"x\":-1.16598627641906E-07,\"y\":269.990570068359,\"z\":1.06018887890968E-06}},\"d818e1\":{\"lock\":false,\"pos\":{\"x\":22.7240447998047,\"y\":1.49510383605957,\"z\":21.3074531555176},\"rot\":{\"x\":-2.85330912674908E-07,\"y\":270,\"z\":2.90252586410134E-07}},\"d914f0\":{\"lock\":false,\"pos\":{\"x\":32.4302215576172,\"y\":1.49510383605957,\"z\":23.55930519104},\"rot\":{\"x\":-2.31045262921725E-07,\"y\":270.003662109375,\"z\":1.29304987694923E-06}},\"d9a805\":{\"lock\":false,\"pos\":{\"x\":26.0011215209961,\"y\":1.49510383605957,\"z\":37.2801399230957},\"rot\":{\"x\":-2.853058731489E-07,\"y\":270.002288818359,\"z\":1.77822343516709E-07}},\"dc6a2c\":{\"lock\":false,\"pos\":{\"x\":35.6936721801758,\"y\":1.49510383605957,\"z\":16.5435066223145},\"rot\":{\"x\":-3.470796059446E-07,\"y\":270.004791259766,\"z\":1.13933708689729E-06}},\"ddccf9\":{\"lock\":false,\"pos\":{\"x\":29.2783279418945,\"y\":1.49510383605957,\"z\":37.252742767334},\"rot\":{\"x\":-4.05154139571096E-07,\"y\":270.003967285156,\"z\":1.89638583947271E-07}},\"e0bf2d\":{\"lock\":false,\"pos\":{\"x\":29.2120780944824,\"y\":1.49510383605957,\"z\":25.8112850189209},\"rot\":{\"x\":-2.83207242546268E-07,\"y\":270.001983642578,\"z\":-1.01543332675647E-06}},\"e1a0ad\":{\"lock\":false,\"pos\":{\"x\":32.4110412597656,\"y\":1.49510383605957,\"z\":21.3062515258789},\"rot\":{\"x\":-2.0327800598352E-07,\"y\":269.991363525391,\"z\":1.35220273023151E-06}},\"e26ddc\":{\"lock\":false,\"pos\":{\"x\":43.6958503723145,\"y\":1.49510383605957,\"z\":35.4069404602051},\"rot\":{\"x\":-1.72638067397202E-07,\"y\":270.028137207031,\"z\":1.15525915589387E-06}},\"e4377f\":{\"lock\":false,\"pos\":{\"x\":29.2783279418945,\"y\":1.49510383605957,\"z\":39.5402336120605},\"rot\":{\"x\":-2.82611154034385E-07,\"y\":270.003662109375,\"z\":1.53470341501816E-06}},\"e86c65\":{\"lock\":false,\"pos\":{\"x\":32.4538269042969,\"y\":1.49510383605957,\"z\":32.6618461608887},\"rot\":{\"x\":-3.65487323961133E-07,\"y\":270.002685546875,\"z\":2.35590093211613E-07}},\"ebc4d9\":{\"lock\":false,\"pos\":{\"x\":47.5864143371582,\"y\":1.49510383605957,\"z\":38.0161170959473},\"rot\":{\"x\":-2.59648686551373E-07,\"y\":270.00830078125,\"z\":-4.43801866367721E-08}},\"ecedd4\":{\"lock\":false,\"pos\":{\"x\":45.6744422912598,\"y\":1.49510383605957,\"z\":28.9938526153564},\"rot\":{\"x\":-3.1581700454808E-07,\"y\":269.990844726563,\"z\":-8.13925069564903E-08}},\"ef116e\":{\"lock\":false,\"pos\":{\"x\":49.5297698974609,\"y\":1.49510383605957,\"z\":32.8475914001465},\"rot\":{\"x\":-4.13301648904962E-07,\"y\":269.99169921875,\"z\":1.2597951126736E-06}},\"f317ac\":{\"lock\":false,\"pos\":{\"x\":51.4738502502441,\"y\":1.49510383605957,\"z\":36.7402992248535},\"rot\":{\"x\":-7.06679543327482E-07,\"y\":270.011566162109,\"z\":8.78625769473729E-07}},\"fa142f\":{\"lock\":false,\"pos\":{\"x\":43.6958503723145,\"y\":1.49510383605957,\"z\":36.7025489807129},\"rot\":{\"x\":-2.68357865707003E-07,\"y\":270.022399902344,\"z\":-1.39484271244328E-07}}}}",
   "XmlUI": "",
   "ContainedObjects": [
-    {
-      "GUID": "457038",
-      "Name": "Custom_PDF",
-      "Transform": {
-        "posX": 9.893872,
-        "posY": 1.3045938,
-        "posZ": -84.78914,
-        "rotX": 0.0208085477,
-        "rotY": 269.9995,
-        "rotZ": 0.01677102,
-        "scaleX": 4.040626,
-        "scaleY": 1.0,
-        "scaleZ": 4.040626
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomPDF": {
-        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1865048991160398081/441E07886CB8F3A2C4492D85E155E110B14DBC8E/",
-        "PDFPassword": "",
-        "PDFPage": 0,
-        "PDFPageOffset": 0
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "5cf33e",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 22.9711456,
-        "posY": 1.29711759,
-        "posZ": -48.51983,
-        "rotX": 0.0208146889,
-        "rotY": 269.979431,
-        "rotZ": 0.0167635381,
-        "scaleX": 0.6,
-        "scaleY": 1.0,
-        "scaleZ": 0.6
-      },
-      "Nickname": "Celestial Synergy",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 621600,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6216": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160368951/597D4A0B220C83C3A8165E28B932EA7A1EA89533/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160369301/0DD996A44D65C836172CBCEC5738CECAE6863A09/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "af1d2c",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 24.9203587,
-        "posY": 1.29557,
-        "posZ": -56.2253342,
-        "rotX": 0.0208075754,
-        "rotY": 270.003845,
-        "rotZ": 0.01677215,
-        "scaleX": 0.6,
-        "scaleY": 1.0,
-        "scaleZ": 0.6
-      },
-      "Nickname": "Christine Daaé",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 622100,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6221": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160381122/A0C9A62DA44A333D1164E5231442E6FA492B80D1/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160381526/05356EFB440B219F950CEA2C6BAF2AF591BC8683/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "267353",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 26.8577271,
-        "posY": 1.29627371,
-        "posZ": -56.2250061,
-        "rotX": 0.0208077487,
-        "rotY": 270.003143,
-        "rotZ": 0.0167722944,
-        "scaleX": 0.6,
-        "scaleY": 1.0,
-        "scaleZ": 0.6
-      },
-      "Nickname": "Marie Laveau",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 622000,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6220": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160380227/49D508AF32CB8F7C795F2893CD6D0321A8486ADD/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160380582/7A41392F429C482EA18F1711200CBD5EAB861FB0/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "9ab998",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 28.7952156,
-        "posY": 1.29697645,
-        "posZ": -56.2279358,
-        "rotX": 0.02081698,
-        "rotY": 269.9724,
-        "rotZ": 0.0167611875,
-        "scaleX": 0.6,
-        "scaleY": 1.0,
-        "scaleZ": 0.6
-      },
-      "Nickname": "Titania",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 621900,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6219": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160379033/F673BFA470C48B9564E3420FA97A822C1F356BC6/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160379382/69E9D48BD7B9FEA6A9326939CFC57B64E894CAB0/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "4e3ae1",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 30.7327023,
-        "posY": 1.29768181,
-        "posZ": -56.2220039,
-        "rotX": 0.0208147019,
-        "rotY": 269.9793,
-        "rotZ": 0.0167632289,
-        "scaleX": 0.6,
-        "scaleY": 1.0,
-        "scaleZ": 0.6
-      },
-      "Nickname": "Yuasa Toshiko",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 621800,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6218": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160377935/3EDB2D09968631C7FB64E14D7B12A5D45AF3ED9D/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160378234/A65B5D822B3738DF912098A38D41AD790BD23D33/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "66e42b",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 32.6701851,
-        "posY": 1.2983855,
-        "posZ": -56.2220078,
-        "rotX": 0.0208147112,
-        "rotY": 269.9792,
-        "rotZ": 0.0167635959,
-        "scaleX": 0.6,
-        "scaleY": 1.0,
-        "scaleZ": 0.6
-      },
-      "Nickname": "Werethekau",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": false,
-      "Snap": false,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": false,
-      "CardID": 621700,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6217": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160376773/704F05260A7175A83C1E734F6AD6E839E91C353C/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160377077/576BE2A7187623093A9BF629B3DFE929B0C80B68/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
     {
       "GUID": "019d9e",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 3.92140317,
-        "posY": 1.32441914,
-        "posZ": -56.1275,
-        "rotX": 0.0208085086,
-        "rotY": 269.999939,
-        "rotZ": 0.01677138,
+        "posX": 22.7261314,
+        "posY": 1.49510384,
+        "posZ": 30.37811,
+        "rotX": -3.51256126E-08,
+        "rotY": 270.002625,
+        "rotZ": -3.75248874E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -444,11 +85,20 @@
       "Nickname": "Psyche",
       "Description": "The Resilient",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -484,12 +134,12 @@
       "GUID": "01a7a5",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 3.91159964,
-        "posY": 1.32307768,
-        "posZ": -60.698288,
-        "rotX": 0.0208085775,
-        "rotY": 269.9992,
-        "rotZ": 0.016770808,
+        "posX": 22.7163277,
+        "posY": 1.49510384,
+        "posZ": 25.8073215,
+        "rotX": -9.29650454E-08,
+        "rotY": 270.001984,
+        "rotZ": -3.93712526E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -497,11 +147,20 @@
       "Nickname": "Idunn",
       "Description": "The Rejuvenator",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -537,12 +196,12 @@
       "GUID": "04433a",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 3.9136,
-        "posY": 1.32242024,
-        "posZ": -62.9467,
-        "rotX": 0.0208113678,
-        "rotY": 269.990417,
-        "rotZ": 0.0167677775,
+        "posX": 22.7183266,
+        "posY": 1.49510384,
+        "posZ": 23.5589123,
+        "rotX": -7.512021E-08,
+        "rotY": 269.993225,
+        "rotZ": 9.51072E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -550,11 +209,20 @@
       "Nickname": "Christine Daaé",
       "Description": "The Primadonna",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -590,12 +258,12 @@
       "GUID": "08377f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 26.8402538,
-        "posY": 1.29663551,
-        "posZ": -54.96718,
-        "rotX": 0.0208044983,
-        "rotY": 270.015259,
-        "rotZ": 0.0167764165,
+        "posX": 45.64507,
+        "posY": 1.49510384,
+        "posZ": 31.5385914,
+        "rotX": -3.360457E-07,
+        "rotY": 270.0275,
+        "rotZ": 6.320757E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -603,11 +271,19 @@
       "Nickname": "Morrígan",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -643,12 +319,12 @@
       "GUID": "092130",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 20.0669174,
-        "posY": 1.28966177,
-        "posZ": -70.3879547,
-        "rotX": 0.02080532,
-        "rotY": 270.010559,
-        "rotZ": 0.0167750474,
+        "posX": 38.860775,
+        "posY": 1.49510384,
+        "posZ": 14.2539043,
+        "rotX": -1.08457705E-07,
+        "rotY": 270.014526,
+        "rotZ": 2.93208558E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -656,11 +332,19 @@
       "Nickname": "Improvisation",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -696,12 +380,12 @@
       "GUID": "0b0905",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.66904,
-        "posY": 1.29989576,
-        "posZ": -51.0611038,
-        "rotX": 0.02081483,
-        "rotY": 269.978943,
-        "rotZ": 0.0167635866,
+        "posX": 51.47385,
+        "posY": 1.49510384,
+        "posZ": 35.44469,
+        "rotX": -1.630795E-08,
+        "rotY": 269.990845,
+        "rotZ": 4.067212E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -709,11 +393,19 @@
       "Nickname": "Éowyn",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -746,15 +438,139 @@
       "XmlUI": ""
     },
     {
+      "GUID": "143ad5",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 29.2059479,
+        "posY": 1.49510384,
+        "posZ": 21.2758522,
+        "rotX": 3.71932245E-08,
+        "rotY": 270.001862,
+        "rotZ": 9.38558E-09,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Lady Godiva",
+      "Description": "The Noblewoman",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 622700,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6227": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276201554/AEEE1B78988EA993D775165BF6A37734AE3FDFD1/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1610e2",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 19.6101265,
+        "posY": 1.49510384,
+        "posZ": 34.990345,
+        "rotX": -1.51215261E-07,
+        "rotY": 270.006,
+        "rotZ": 2.04887471E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Nyx",
+      "Description": "The Night",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 620300,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6203": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1862799141633194149/9C1BDDDD3CF2EF5A60EE558B32CE9C51880EE07A/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "1da0bd",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 28.7816,
-        "posY": 1.29809892,
-        "posZ": -52.3765259,
-        "rotX": 0.0208089538,
-        "rotY": 269.999756,
-        "rotZ": 0.016770551,
+        "posX": 47.5864143,
+        "posY": 1.49510384,
+        "posZ": 34.1292763,
+        "rotX": -2.60808157E-08,
+        "rotY": 270.0118,
+        "rotZ": 2.48741969E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -762,11 +578,19 @@
       "Nickname": "Lady MacBeth",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -802,12 +626,12 @@
       "GUID": "1dae6f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.9045181,
-        "posY": 1.28851318,
-        "posZ": -70.3879547,
-        "rotX": 0.02080845,
-        "rotY": 270.000183,
-        "rotZ": 0.01677112,
+        "posX": 35.6983757,
+        "posY": 1.49510384,
+        "posZ": 14.253912,
+        "rotX": -9.962713E-08,
+        "rotY": 270.0042,
+        "rotZ": 2.36973236E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -815,11 +639,19 @@
       "Nickname": "Improvisation",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -855,12 +687,12 @@
       "GUID": "201fbe",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 26.8402519,
-        "posY": 1.298911,
-        "posZ": -47.1935,
-        "rotX": 0.0208150335,
-        "rotY": 269.979065,
-        "rotZ": 0.0167632923,
+        "posX": 45.6450653,
+        "posY": 1.49510384,
+        "posZ": 39.3122978,
+        "rotX": -3.00877474E-08,
+        "rotY": 269.991,
+        "rotZ": 2.29231688E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -868,11 +700,19 @@
       "Nickname": "Aphrodite",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -908,12 +748,12 @@
       "GUID": "20afe9",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 10.4299984,
-        "posY": 1.327456,
-        "posZ": -53.8279,
-        "rotX": 0.02081246,
-        "rotY": 269.986633,
-        "rotZ": 0.0167663358,
+        "posX": 29.2347221,
+        "posY": 1.49510384,
+        "posZ": 32.6777458,
+        "rotX": 3.78677356E-08,
+        "rotY": 269.989258,
+        "rotZ": 1.99644532E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -921,11 +761,20 @@
       "Nickname": "Kitsune",
       "Description": "The Trickster",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -958,15 +807,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "267353",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 45.66254,
+        "posY": 1.49510384,
+        "posZ": 30.2807636,
+        "rotX": -1.00366627E-07,
+        "rotY": 270.0154,
+        "rotZ": -1.71320611E-08,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Marie Laveau",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 622000,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6220": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160380227/49D508AF32CB8F7C795F2893CD6D0321A8486ADD/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160380582/7A41392F429C482EA18F1711200CBD5EAB861FB0/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "277df0",
       "Name": "Notecard",
       "Transform": {
-        "posX": 31.3144,
-        "posY": 1.3483125,
-        "posZ": -76.6369,
-        "rotX": 359.9792,
-        "rotY": 90.0,
-        "rotZ": 359.983215,
+        "posX": 50.10819,
+        "posY": 1.55149889,
+        "posZ": 8.004828,
+        "rotX": 3.81701426E-08,
+        "rotY": 90.00008,
+        "rotZ": 1.73607049E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -974,6 +884,11 @@
       "Nickname": "Method Acting Mini Investigator Cards",
       "Description": "1. Copy the mini cards for your roles.\n2. Select all of them in the order you want to the states to be, ctrl+left click them in order. Then right click -> Create States\n3. Swap between the roles using numbers typed while hovering over, or right click -> State.\n4. On the right is an example object.\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 1.0,
         "g": 1.0,
@@ -1001,12 +916,12 @@
       "GUID": "28fa8c",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 26.8402538,
-        "posY": 1.29701471,
-        "posZ": -53.671566,
-        "rotX": 0.0208038818,
-        "rotY": 270.0168,
-        "rotZ": 0.0167767,
+        "posX": 45.64507,
+        "posY": 1.49510384,
+        "posZ": 32.83424,
+        "rotX": -1.48598616E-07,
+        "rotY": 270.029053,
+        "rotZ": 2.2455292E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -1014,11 +929,19 @@
       "Nickname": "Lorelei",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -1054,12 +977,12 @@
       "GUID": "2af612",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.522728,
-        "posY": 1.29066694,
-        "posZ": -82.40809,
-        "rotX": 0.0208140463,
-        "rotY": 269.982452,
-        "rotZ": 0.0167647675,
+        "posX": 51.3166656,
+        "posY": 1.49510384,
+        "posZ": 2.23390079,
+        "rotX": -1.92779567E-07,
+        "rotY": 269.995544,
+        "rotZ": 4.35080153E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -1067,6 +990,11 @@
       "Nickname": "Example Multi-State Investigator Mini",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
@@ -1120,6 +1048,11 @@
           "Nickname": "Lady MacBeth",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1173,6 +1106,11 @@
           "Nickname": "Baba Yaga",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1226,6 +1164,11 @@
           "Nickname": "Ereshkigal",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1279,6 +1222,11 @@
           "Nickname": "Morrígan",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1332,6 +1280,11 @@
           "Nickname": "Annabel Lee",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1385,6 +1338,11 @@
           "Nickname": "Artemis",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1438,6 +1396,11 @@
           "Nickname": "Anne Shirley",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1491,6 +1454,11 @@
           "Nickname": "Kitsune",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1544,6 +1512,11 @@
           "Nickname": "Mary Read",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1597,6 +1570,11 @@
           "Nickname": "Belle",
           "Description": "",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 0.713235259,
             "g": 0.713235259,
@@ -1639,12 +1617,12 @@
       "GUID": "2c10a3",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.196402,
-        "posY": 1.32562,
-        "posZ": -56.0881,
-        "rotX": 0.0208086111,
-        "rotY": 270.000122,
-        "rotZ": 0.01677115,
+        "posX": 26.0011253,
+        "posY": 1.49510384,
+        "posZ": 30.41751,
+        "rotX": -7.189248E-08,
+        "rotY": 270.0028,
+        "rotZ": 4.91347159E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1652,11 +1630,20 @@
       "Nickname": "Bride of Frankenstein",
       "Description": "The Monster Woman",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -1671,11 +1658,11 @@
       "GridProjection": false,
       "HideWhenFaceDown": true,
       "Hands": true,
-      "CardID": 621300,
+      "CardID": 623300,
       "SidewaysCard": false,
       "CustomDeck": {
-        "6213": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160168755/C663E3351A708706F0336C384AB91CB1317E735A/",
+        "6233": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276210216/5CA373258B39CE8C1F2B62F667F7F8F3EAF1962F/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -1692,12 +1679,12 @@
       "GUID": "2cad41",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 3.94159937,
-        "posY": 1.32711923,
-        "posZ": -46.9281,
-        "rotX": 0.020808544,
-        "rotY": 270.0,
-        "rotZ": 0.0167711023,
+        "posX": 22.7463226,
+        "posY": 1.49510384,
+        "posZ": 39.57754,
+        "rotX": 2.87545046E-08,
+        "rotY": 270.002655,
+        "rotZ": -1.50173449E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1705,11 +1692,20 @@
       "Nickname": "Cinderella",
       "Description": "The Maiden",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -1745,12 +1741,12 @@
       "GUID": "2e8dc6",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 13.6491137,
-        "posY": 1.32728124,
-        "posZ": -58.4189,
-        "rotX": 0.0208082888,
-        "rotY": 270.000824,
-        "rotZ": 0.0167716146,
+        "posX": 32.4538345,
+        "posY": 1.49510384,
+        "posZ": 28.0867062,
+        "rotX": 4.68826933E-08,
+        "rotY": 270.003418,
+        "rotZ": 2.256008E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1758,11 +1754,20 @@
       "Nickname": "Jane Eyre",
       "Description": "The Rational",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -1777,11 +1782,11 @@
       "GridProjection": false,
       "HideWhenFaceDown": true,
       "Hands": true,
-      "CardID": 621000,
+      "CardID": 623600,
       "SidewaysCard": false,
       "CustomDeck": {
-        "6210": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160160040/8CC6BC012DAC7550582CD4BCEF2DD03A8A469B0B/",
+        "6236": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276212036/FF7FEF8D682EAD24635C4C21A822F9FADB934289/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -1798,12 +1803,12 @@
       "GUID": "2ec821",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.9171944,
-        "posY": 1.29402876,
-        "posZ": -51.5610733,
-        "rotX": 0.0208086036,
-        "rotY": 270.0001,
-        "rotZ": 0.0167714022,
+        "posX": 35.7219353,
+        "posY": 1.49510384,
+        "posZ": 34.9446,
+        "rotX": 2.47398972E-08,
+        "rotY": 270.0039,
+        "rotZ": -8.333469E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1811,11 +1816,20 @@
       "Nickname": "Annabel Lee",
       "Description": "The Departed",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -1851,12 +1865,12 @@
       "GUID": "354f96",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.9166,
-        "posY": 1.2926991,
-        "posZ": -56.1026,
-        "rotX": 0.0208090562,
-        "rotY": 269.9985,
-        "rotZ": 0.0167706441,
+        "posX": 35.72134,
+        "posY": 1.49510384,
+        "posZ": 30.4030437,
+        "rotX": 1.95630161E-08,
+        "rotY": 270.002319,
+        "rotZ": 1.01778426E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1864,11 +1878,20 @@
       "Nickname": "Éowyn",
       "Description": "The Shieldmaiden",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -1904,12 +1927,12 @@
       "GUID": "372afe",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 30.7249565,
-        "posY": 1.29994643,
-        "posZ": -48.4757538,
-        "rotX": 0.0208044127,
-        "rotY": 270.014526,
-        "rotZ": 0.0167759061,
+        "posX": 49.5297661,
+        "posY": 1.49510384,
+        "posZ": 38.03004,
+        "rotX": -5.95504979E-08,
+        "rotY": 270.026276,
+        "rotZ": 2.36895062E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -1917,11 +1940,19 @@
       "Nickname": "Anne Shirley",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -1957,12 +1988,12 @@
       "GUID": "3d460f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.9166,
-        "posY": 1.2920295,
-        "posZ": -58.3901,
-        "rotX": 0.0208089668,
-        "rotY": 269.9986,
-        "rotZ": 0.0167706218,
+        "posX": 35.72134,
+        "posY": 1.49510384,
+        "posZ": 28.1155453,
+        "rotX": 1.51134572E-07,
+        "rotY": 270.0024,
+        "rotZ": -2.50034219E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1970,11 +2001,20 @@
       "Nickname": "Sigyn",
       "Description": "The Devoted",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2010,12 +2050,12 @@
       "GUID": "3fc00d",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 30.724968,
-        "posY": 1.29805028,
-        "posZ": -54.9538269,
-        "rotX": 0.02081447,
-        "rotY": 269.980469,
-        "rotZ": 0.0167637765,
+        "posX": 49.52978,
+        "posY": 1.49510384,
+        "posZ": 31.551939,
+        "rotX": -2.43051659E-07,
+        "rotY": 269.9925,
+        "rotZ": 3.70210671E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2023,11 +2063,19 @@
       "Nickname": "Pandora",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2060,15 +2108,66 @@
       "XmlUI": ""
     },
     {
+      "GUID": "457038",
+      "Name": "Custom_PDF",
+      "Transform": {
+        "posX": 28.68767,
+        "posY": 1.48149931,
+        "posZ": -0.147399172,
+        "rotX": 1.56753579E-08,
+        "rotY": 269.9995,
+        "rotZ": -2.55088537E-08,
+        "scaleX": 4.040626,
+        "scaleY": 1.0,
+        "scaleZ": 4.040626
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomPDF": {
+        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1865048991160398081/441E07886CB8F3A2C4492D85E155E110B14DBC8E/",
+        "PDFPassword": "",
+        "PDFPage": 0,
+        "PDFPageOffset": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "46aed1",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.19505835,
-        "posY": 1.32427347,
-        "posZ": -60.6867676,
-        "rotX": 0.0208173674,
-        "rotY": 269.969879,
-        "rotZ": 0.01676009,
+        "posX": 25.9997864,
+        "posY": 1.49510384,
+        "posZ": 25.8188419,
+        "rotX": 7.941922E-09,
+        "rotY": 269.972534,
+        "rotZ": 2.105828E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2076,11 +2175,20 @@
       "Nickname": "Lorelei",
       "Description": "The Siren",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2113,15 +2221,137 @@
       "XmlUI": ""
     },
     {
+      "GUID": "4705ae",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 49.5494423,
+        "posY": 1.49510384,
+        "posZ": 28.9938526,
+        "rotX": -6.09375945E-08,
+        "rotY": 270.0,
+        "rotZ": -3.14405384E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Snow White",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 623800,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6238": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276221816/BDC2C9271CB07740F77132D63F43791145FE0EB6/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276222201/28AD4A4555B0EC8C409F0E0E8A15B087BC0B918D/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "4e3ae1",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 49.5375175,
+        "posY": 1.49510384,
+        "posZ": 30.283762,
+        "rotX": 5.074476E-08,
+        "rotY": 269.991455,
+        "rotZ": -3.63706761E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Yuasa Toshiko",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 621800,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6218": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160377935/3EDB2D09968631C7FB64E14D7B12A5D45AF3ED9D/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160378234/A65B5D822B3738DF912098A38D41AD790BD23D33/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "4f6abf",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 10.4300013,
-        "posY": 1.3281256,
-        "posZ": -51.5404,
-        "rotX": 0.0208124239,
-        "rotY": 269.9867,
-        "rotZ": 0.0167662147,
+        "posX": 29.234726,
+        "posY": 1.49510384,
+        "posZ": 34.9652367,
+        "rotX": 7.358154E-08,
+        "rotY": 269.989136,
+        "rotZ": 8.9267E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2129,11 +2359,20 @@
       "Nickname": "Medusa",
       "Description": "The Scorned",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2166,15 +2405,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "50296c",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 51.4868431,
+        "posY": 1.49510384,
+        "posZ": 28.9938526,
+        "rotX": -4.69600181E-08,
+        "rotY": 270.0,
+        "rotZ": -1.83891274E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Huldra",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 623700,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6237": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276220541/F5C5580D30A561A994E4A8F7B1CBED5FF0D775F0/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276220909/96DD8D97DA4822B031C1CB8A12EFD8E8271ECB38/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "50de30",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.9101372,
-        "posY": 1.29136086,
-        "posZ": -60.66659,
-        "rotX": 0.02081228,
-        "rotY": 269.986664,
-        "rotZ": 0.0167663861,
+        "posX": 35.7148781,
+        "posY": 1.49510384,
+        "posZ": 25.8390522,
+        "rotX": 7.713605E-08,
+        "rotY": 269.99054,
+        "rotZ": -1.75350976E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2182,11 +2482,20 @@
       "Nickname": "Kali",
       "Description": "The Retributionist",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2222,12 +2531,12 @@
       "GUID": "538240",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.19639826,
-        "posY": 1.32628965,
-        "posZ": -53.8005,
-        "rotX": 0.020813033,
-        "rotY": 269.984344,
-        "rotZ": 0.0167654641,
+        "posX": 26.00113,
+        "posY": 1.49510384,
+        "posZ": 32.7051468,
+        "rotX": -6.224752E-08,
+        "rotY": 269.986969,
+        "rotZ": 8.430499E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2235,11 +2544,20 @@
       "Nickname": "Morrígan",
       "Description": "The Doombringer",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2254,11 +2572,11 @@
       "GridProjection": false,
       "HideWhenFaceDown": true,
       "Hands": true,
-      "CardID": 613300,
+      "CardID": 623000,
       "SidewaysCard": false,
       "CustomDeck": {
-        "6133": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1690520931870296633/7AD23393ECFA5382690274B89F4F5A07C0F08A5D/",
+        "6230": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276204999/C087A35297476E72124333B1F44FE18D5B2AC778/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -2275,12 +2593,12 @@
       "GUID": "539944",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 0.8054,
-        "posY": 1.32530713,
-        "posZ": -49.2278,
-        "rotX": 0.0208075382,
-        "rotY": 270.003326,
-        "rotZ": 0.0167725328,
+        "posX": 19.6101265,
+        "posY": 1.49510384,
+        "posZ": 37.2778435,
+        "rotX": -1.44213757E-07,
+        "rotY": 270.006,
+        "rotZ": 2.1276847E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2288,11 +2606,20 @@
       "Nickname": "Celestial Synergy",
       "Description": "The Night and The Moon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2328,12 +2655,12 @@
       "GUID": "53cd6f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.66904,
-        "posY": 1.3010335,
-        "posZ": -47.1742554,
-        "rotX": 0.0208087582,
-        "rotY": 269.999939,
-        "rotZ": 0.01677077,
+        "posX": 51.47385,
+        "posY": 1.49510384,
+        "posZ": 39.33154,
+        "rotX": -2.56293333E-07,
+        "rotY": 270.011719,
+        "rotZ": 2.58293738E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2341,11 +2668,19 @@
       "Nickname": "Annabel Lee",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2381,12 +2716,12 @@
       "GUID": "567067",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 24.8910351,
-        "posY": 1.29668069,
-        "posZ": -52.3944778,
-        "rotX": 0.0208136775,
-        "rotY": 269.9837,
-        "rotZ": 0.0167651866,
+        "posX": 43.69585,
+        "posY": 1.49510384,
+        "posZ": 34.1113243,
+        "rotX": 2.04222786E-07,
+        "rotY": 269.996033,
+        "rotZ": -4.397829E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2394,11 +2729,19 @@
       "Nickname": "Persephone",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2434,12 +2777,12 @@
       "GUID": "5887cc",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 10.4299984,
-        "posY": 1.3267864,
-        "posZ": -56.1154,
-        "rotX": 0.0208130442,
-        "rotY": 269.985,
-        "rotZ": 0.0167656559,
+        "posX": 29.234726,
+        "posY": 1.49510384,
+        "posZ": 30.3902073,
+        "rotX": -7.01928649E-09,
+        "rotY": 269.987518,
+        "rotZ": 9.111915E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2447,11 +2790,20 @@
       "Nickname": "Lady MacBeth",
       "Description": "The Ambitious",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2487,12 +2839,12 @@
       "GUID": "59a93c",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.66904,
-        "posY": 1.298758,
-        "posZ": -54.9479561,
-        "rotX": 0.0208092965,
-        "rotY": 269.998657,
-        "rotZ": 0.0167707168,
+        "posX": 51.4738541,
+        "posY": 1.49510384,
+        "posZ": 31.557806,
+        "rotX": 1.73424084E-07,
+        "rotY": 270.01062,
+        "rotZ": -1.31741018E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2500,11 +2852,19 @@
       "Nickname": "Sigyn",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2540,12 +2900,12 @@
       "GUID": "5c93be",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 26.8402538,
-        "posY": 1.297394,
-        "posZ": -52.3759537,
-        "rotX": 0.020814782,
-        "rotY": 269.9793,
-        "rotZ": 0.0167634264,
+        "posX": 45.64507,
+        "posY": 1.49510384,
+        "posZ": 34.12985,
+        "rotX": -1.36486122E-07,
+        "rotY": 269.9916,
+        "rotZ": 2.663924E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2553,11 +2913,19 @@
       "Nickname": "Jorogumo",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2590,15 +2958,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "5cf33e",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 41.77596,
+        "posY": 1.49510384,
+        "posZ": 37.9859734,
+        "rotX": -2.727334E-07,
+        "rotY": 269.99176,
+        "rotZ": 2.86714766E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Celestial Synergy",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 621600,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6216": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160368951/597D4A0B220C83C3A8165E28B932EA7A1EA89533/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160369301/0DD996A44D65C836172CBCEC5738CECAE6863A09/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "5eed1b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 13.6441555,
-        "posY": 1.32661664,
-        "posZ": -60.6834221,
-        "rotX": 0.0208077822,
-        "rotY": 270.001648,
-        "rotZ": 0.016772015,
+        "posX": 32.4488754,
+        "posY": 1.49510384,
+        "posZ": 25.8221836,
+        "rotX": 2.69908562E-09,
+        "rotY": 270.004242,
+        "rotZ": -8.744713E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2606,11 +3035,20 @@
       "Nickname": "Fatima al-Fihri",
       "Description": "The Educator",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2646,12 +3084,12 @@
       "GUID": "610887",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 3.941601,
-        "posY": 1.32578,
-        "posZ": -51.5031,
-        "rotX": 0.0208085757,
-        "rotY": 270.000061,
-        "rotZ": 0.01677094,
+        "posX": 22.74633,
+        "posY": 1.49510384,
+        "posZ": 35.0025444,
+        "rotX": -5.9918E-08,
+        "rotY": 270.0027,
+        "rotZ": 1.86692944E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2659,11 +3097,20 @@
       "Nickname": "Mina Harker",
       "Description": "The Nurturer",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2699,12 +3146,12 @@
       "GUID": "61f8a6",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 24.8910351,
-        "posY": 1.29592216,
-        "posZ": -54.9857063,
-        "rotX": 0.0208088215,
-        "rotY": 269.999756,
-        "rotZ": 0.0167710036,
+        "posX": 43.69585,
+        "posY": 1.49510384,
+        "posZ": 31.5200634,
+        "rotX": -1.7002769E-08,
+        "rotY": 270.012054,
+        "rotZ": -1.74780126E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2712,11 +3159,19 @@
       "Nickname": "Rapunzel",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2749,15 +3204,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "66e42b",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 51.475,
+        "posY": 1.49510384,
+        "posZ": 30.2837543,
+        "rotX": -1.11181556E-07,
+        "rotY": 269.9912,
+        "rotZ": -5.07981E-08,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Werethekau",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 621700,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6217": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160376773/704F05260A7175A83C1E734F6AD6E839E91C353C/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160377077/576BE2A7187623093A9BF629B3DFE929B0C80B68/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "6930e1",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.66904,
-        "posY": 1.30065429,
-        "posZ": -48.46987,
-        "rotX": 0.02081493,
-        "rotY": 269.978821,
-        "rotZ": 0.0167629663,
+        "posX": 51.47385,
+        "posY": 1.49510384,
+        "posZ": 38.035923,
+        "rotX": -2.13222307E-07,
+        "rotY": 269.9906,
+        "rotZ": 7.730947E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2765,11 +3281,19 @@
       "Nickname": "Artemis",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2802,15 +3326,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "6a99dd",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 47.6119423,
+        "posY": 1.49510384,
+        "posZ": 28.9938526,
+        "rotX": -2.541486E-07,
+        "rotY": 269.991669,
+        "rotZ": 4.1320672E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Lady Godiva",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 623900,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6239": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276223152/6799C0405B492F378138712DFAD7C4ABD5BA6E33/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276223454/B71005E427ECCF7E565E0CEE2FF050C5806636C1/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "6eae6f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 24.8910351,
-        "posY": 1.29781842,
-        "posZ": -48.5076332,
-        "rotX": 0.0208146945,
-        "rotY": 269.979156,
-        "rotZ": 0.01676349,
+        "posX": 43.69585,
+        "posY": 1.49510384,
+        "posZ": 37.9981651,
+        "rotX": -1.64366128E-07,
+        "rotY": 269.991455,
+        "rotZ": 1.70877968E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2818,11 +3403,19 @@
       "Nickname": "Cinderella",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2858,12 +3451,12 @@
       "GUID": "702b7f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 28.7816,
-        "posY": 1.29847813,
-        "posZ": -51.08091,
-        "rotX": 0.02081459,
-        "rotY": 269.97995,
-        "rotZ": 0.016763581,
+        "posX": 47.5864143,
+        "posY": 1.49510384,
+        "posZ": 35.4248848,
+        "rotX": 2.21016847E-07,
+        "rotY": 269.992035,
+        "rotZ": -3.401934E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2871,11 +3464,19 @@
       "Nickname": "La Llorona",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2911,12 +3512,12 @@
       "GUID": "728070",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 28.7816,
-        "posY": 1.2977196,
-        "posZ": -53.67214,
-        "rotX": 0.0208140388,
-        "rotY": 269.9817,
-        "rotZ": 0.01676435,
+        "posX": 47.5864143,
+        "posY": 1.49510384,
+        "posZ": 32.8336678,
+        "rotX": 2.26912732E-07,
+        "rotY": 269.993927,
+        "rotZ": -1.01767944E-06,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -2924,11 +3525,19 @@
       "Nickname": "Mary Read",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -2964,12 +3573,12 @@
       "GUID": "747a1a",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 13.6926012,
-        "posY": 1.32997537,
-        "posZ": -49.2688,
-        "rotX": 0.0208126679,
-        "rotY": 269.985626,
-        "rotZ": 0.0167664122,
+        "posX": 32.4973221,
+        "posY": 1.49510384,
+        "posZ": 37.2368355,
+        "rotX": 5.93866361E-08,
+        "rotY": 269.988159,
+        "rotZ": 2.42434965E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2977,11 +3586,20 @@
       "Nickname": "Pandora",
       "Description": "The Innocent",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3017,12 +3635,12 @@
       "GUID": "7b8100",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 28.7816029,
-        "posY": 1.29734039,
-        "posZ": -54.9677544,
-        "rotX": 0.02081204,
-        "rotY": 269.988464,
-        "rotZ": 0.0167669263,
+        "posX": 47.5864143,
+        "posY": 1.49510384,
+        "posZ": 31.5380116,
+        "rotX": -1.86331576E-07,
+        "rotY": 270.0006,
+        "rotZ": 5.22353E-08,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -3030,11 +3648,19 @@
       "Nickname": "Medusa",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3067,15 +3693,77 @@
       "XmlUI": ""
     },
     {
+      "GUID": "822ab6",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 35.6798439,
+        "posY": 1.49510384,
+        "posZ": 21.3054523,
+        "rotX": -6.368429E-08,
+        "rotY": 269.9904,
+        "rotZ": -7.716328E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Huldra",
+      "Description": "The Warden",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 622500,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6225": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276199393/FAC1131C6000AA51F4081BF35CB702BA3C70A937/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "83355d",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 3.92138839,
-        "posY": 1.32374942,
-        "posZ": -58.4152,
-        "rotX": 0.02080896,
-        "rotY": 269.9986,
-        "rotZ": 0.0167706236,
+        "posX": 22.7261162,
+        "posY": 1.49510384,
+        "posZ": 28.09041,
+        "rotX": 1.8918314E-08,
+        "rotY": 270.001282,
+        "rotZ": -1.3668884E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3083,11 +3771,20 @@
       "Nickname": "Berenice",
       "Description": "The Defiled",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3123,12 +3820,12 @@
       "GUID": "8504ab",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 10.4300117,
-        "posY": 1.3261168,
-        "posZ": -58.4029,
-        "rotX": 0.0208084825,
-        "rotY": 270.0006,
-        "rotZ": 0.0167713333,
+        "posX": 29.2347374,
+        "posY": 1.49510384,
+        "posZ": 28.102705,
+        "rotX": -3.15462927E-08,
+        "rotY": 270.0032,
+        "rotZ": -8.836334E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3136,11 +3833,20 @@
       "Nickname": "Carmilla",
       "Description": "The Vampire",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3155,11 +3861,11 @@
       "GridProjection": false,
       "HideWhenFaceDown": true,
       "Hands": true,
-      "CardID": 618700,
+      "CardID": 623200,
       "SidewaysCard": false,
       "CustomDeck": {
-        "6187": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1690521428943419946/3CD3B73DE38C5649FA3E56E5E0D3F0701CEBA9D7/",
+        "6232": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276209055/005FAED68484D0481A346BA8F5C718BAE1419D33/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -3176,12 +3882,12 @@
       "GUID": "865252",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.19640064,
-        "posY": 1.32695925,
-        "posZ": -51.5129967,
-        "rotX": 0.0208087172,
-        "rotY": 269.999634,
-        "rotZ": 0.0167710222,
+        "posX": 26.00113,
+        "posY": 1.49510384,
+        "posZ": 34.99264,
+        "rotX": 1.59968792E-07,
+        "rotY": 270.0022,
+        "rotZ": -1.98495286E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3189,11 +3895,20 @@
       "Nickname": "Baba Yaga",
       "Description": "The Crone",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3229,12 +3944,12 @@
       "GUID": "8bc619",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 3.94160271,
-        "posY": 1.32644963,
-        "posZ": -49.2156,
-        "rotX": 0.0208084378,
-        "rotY": 269.999939,
-        "rotZ": 0.01677113,
+        "posX": 22.74633,
+        "posY": 1.49510384,
+        "posZ": 37.2900429,
+        "rotX": -3.69448183E-09,
+        "rotY": 270.002625,
+        "rotZ": 1.63565979E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3242,11 +3957,20 @@
       "Nickname": "Persephone",
       "Description": "The Subjugated",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3279,15 +4003,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "8c1ae5",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 43.7369423,
+        "posY": 1.49510384,
+        "posZ": 28.9938526,
+        "rotX": 1.76361979E-07,
+        "rotY": 269.991,
+        "rotZ": -4.69868752E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Blanchette",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 624100,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6241": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276225258/138D01414980D16BCC840042C6F50F0DB53C1833/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276225640/083912BC20541B812A63DD83950E381DD01AD1DC/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "8dd1fd",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 28.7816,
-        "posY": 1.29885733,
-        "posZ": -49.7852936,
-        "rotX": 0.0208087843,
-        "rotY": 269.999725,
-        "rotZ": 0.0167710688,
+        "posX": 47.5864143,
+        "posY": 1.49510384,
+        "posZ": 36.7205,
+        "rotX": -1.07790335E-07,
+        "rotY": 270.011841,
+        "rotZ": 1.32383178E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -3295,11 +4080,19 @@
       "Nickname": "Kitsune",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3335,12 +4128,12 @@
       "GUID": "8deccc",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 20.0669212,
-        "posY": 1.28899217,
-        "posZ": -72.67546,
-        "rotX": 0.0208085813,
-        "rotY": 269.999939,
-        "rotZ": 0.01677119,
+        "posX": 38.8607826,
+        "posY": 1.49510384,
+        "posZ": 11.9664059,
+        "rotX": 5.40365122E-08,
+        "rotY": 270.003937,
+        "rotZ": -8.104214E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3348,11 +4141,19 @@
       "Nickname": "Crisis of Identity",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3388,12 +4189,12 @@
       "GUID": "8f0604",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.196402,
-        "posY": 1.32495046,
-        "posZ": -58.3756,
-        "rotX": 0.0208088532,
-        "rotY": 269.998352,
-        "rotZ": 0.0167705081,
+        "posX": 26.00113,
+        "posY": 1.49510384,
+        "posZ": 28.13001,
+        "rotX": -5.09827E-08,
+        "rotY": 270.001038,
+        "rotZ": 1.44261577E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3401,11 +4202,20 @@
       "Nickname": "Jorogumo",
       "Description": "The Seductress",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3420,11 +4230,11 @@
       "GridProjection": false,
       "HideWhenFaceDown": true,
       "Hands": true,
-      "CardID": 613500,
+      "CardID": 624300,
       "SidewaysCard": false,
       "CustomDeck": {
-        "6135": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1690520931870299703/838F89970A03B4A0B16258DA7CCD6AB52FAF9761/",
+        "6243": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2030607302731991545/236E66F32988750AFEC6C9D88C3A156F535F5804/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -3441,12 +4251,12 @@
       "GUID": "93db19",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.9171944,
-        "posY": 1.29469836,
-        "posZ": -49.2735748,
-        "rotX": 0.0208091345,
-        "rotY": 269.9985,
-        "rotZ": 0.0167707242,
+        "posX": 35.7219353,
+        "posY": 1.49510384,
+        "posZ": 37.2320976,
+        "rotX": 1.46426672E-07,
+        "rotY": 270.002319,
+        "rotZ": -1.11159522E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3454,11 +4264,20 @@
       "Nickname": "Freya",
       "Description": "The Warrior",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3494,12 +4313,12 @@
       "GUID": "94d024",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 26.8402538,
-        "posY": 1.29815245,
-        "posZ": -49.7847252,
-        "rotX": 0.0208148025,
-        "rotY": 269.978882,
-        "rotZ": 0.0167633481,
+        "posX": 45.6450653,
+        "posY": 1.49510384,
+        "posZ": 36.7210732,
+        "rotX": 3.50953862E-08,
+        "rotY": 269.991,
+        "rotZ": 7.53299148E-08,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -3507,11 +4326,19 @@
       "Nickname": "Bride of Frankenstein",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3547,12 +4374,12 @@
       "GUID": "96dc11",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 24.8910351,
-        "posY": 1.29630148,
-        "posZ": -53.69009,
-        "rotX": 0.0208089761,
-        "rotY": 269.9996,
-        "rotZ": 0.01677034,
+        "posX": 43.69585,
+        "posY": 1.49510384,
+        "posZ": 32.81572,
+        "rotX": -1.36430231E-07,
+        "rotY": 270.011932,
+        "rotZ": 6.634615E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -3560,11 +4387,19 @@
       "Nickname": "Psyche",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3600,12 +4435,12 @@
       "GUID": "97cea6",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.9166,
-        "posY": 1.2933687,
-        "posZ": -53.8151,
-        "rotX": 0.0208126027,
-        "rotY": 269.9857,
-        "rotZ": 0.0167659968,
+        "posX": 35.72134,
+        "posY": 1.49510384,
+        "posZ": 32.6905823,
+        "rotX": -1.40766545E-08,
+        "rotY": 269.989471,
+        "rotZ": 7.225039E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3613,11 +4448,20 @@
       "Nickname": "Bast",
       "Description": "The Matron",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3650,15 +4494,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "9ab998",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 47.60003,
+        "posY": 1.49510384,
+        "posZ": 30.27783,
+        "rotX": 2.56769368E-07,
+        "rotY": 269.984619,
+        "rotZ": -3.18279945E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Titania",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 621900,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6219": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160379033/F673BFA470C48B9564E3420FA97A822C1F356BC6/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160379382/69E9D48BD7B9FEA6A9326939CFC57B64E894CAB0/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "9bff41",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.196402,
-        "posY": 1.32829845,
-        "posZ": -46.938,
-        "rotX": 0.0208087321,
-        "rotY": 270.000122,
-        "rotZ": 0.0167712346,
+        "posX": 26.0011253,
+        "posY": 1.49510384,
+        "posZ": 39.56764,
+        "rotX": 2.01482067E-07,
+        "rotY": 270.0027,
+        "rotZ": -1.08718318E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3666,11 +4571,20 @@
       "Nickname": "Aphrodite",
       "Description": "The Lover",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3706,12 +4620,12 @@
       "GUID": "9cc9af",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 0.8054002,
-        "posY": 1.32396793,
-        "posZ": -53.8029,
-        "rotX": 0.0208076537,
-        "rotY": 270.003326,
-        "rotZ": 0.0167724,
+        "posX": 19.6101265,
+        "posY": 1.49510384,
+        "posZ": 32.70275,
+        "rotX": 1.38208014E-08,
+        "rotY": 270.006042,
+        "rotZ": -1.48632139E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3719,11 +4633,20 @@
       "Nickname": "Selene",
       "Description": "The Moon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3738,10 +4661,10 @@
       "GridProjection": false,
       "HideWhenFaceDown": true,
       "Hands": true,
-      "CardID": 620300,
+      "CardID": 622400,
       "SidewaysCard": false,
       "CustomDeck": {
-        "6203": {
+        "6224": {
           "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160139170/7E51FFDB43369FCC250AC97C38D20A56B2807710/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
@@ -3759,12 +4682,12 @@
       "GUID": "a10a31",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.6804161,
-        "posY": 1.29751313,
-        "posZ": -59.2150154,
-        "rotX": 0.0208141766,
-        "rotY": 269.981842,
-        "rotZ": 0.0167643167,
+        "posX": 51.48523,
+        "posY": 1.49510384,
+        "posZ": 27.29075,
+        "rotX": -5.32835429E-08,
+        "rotY": 269.9939,
+        "rotZ": -1.18704257E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -3772,11 +4695,19 @@
       "Nickname": "Cassilda",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3812,12 +4743,12 @@
       "GUID": "a3752c",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 10.3879,
-        "posY": 1.32476485,
-        "posZ": -62.9694,
-        "rotX": 0.0208085012,
-        "rotY": 269.999451,
-        "rotZ": 0.0167708267,
+        "posX": 29.192627,
+        "posY": 1.49510384,
+        "posZ": 23.536211,
+        "rotX": -1.84496429E-07,
+        "rotY": 270.002075,
+        "rotZ": -4.2125734E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3825,11 +4756,20 @@
       "Nickname": "Titania",
       "Description": "The Fairy Queen",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3844,11 +4784,11 @@
       "GridProjection": false,
       "HideWhenFaceDown": true,
       "Hands": true,
-      "CardID": 619800,
+      "CardID": 624200,
       "SidewaysCard": false,
       "CustomDeck": {
-        "6198": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160123011/C7FAC9F7B23CB5146A5C7384F1C70FF0E61171CC/",
+        "6242": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2030607302731982265/8E97C5A597EB8DAA77BB6CCD80F8D4466DFB7011/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -3865,12 +4805,12 @@
       "GUID": "a55c84",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 26.8402538,
-        "posY": 1.29777324,
-        "posZ": -51.0803375,
-        "rotX": 0.0208059363,
-        "rotY": 270.01,
-        "rotZ": 0.0167742223,
+        "posX": 45.64507,
+        "posY": 1.49510384,
+        "posZ": 35.4254646,
+        "rotX": 2.37631539E-07,
+        "rotY": 270.0221,
+        "rotZ": -1.12472669E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -3878,11 +4818,19 @@
       "Nickname": "Ereshkigal",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3918,12 +4866,12 @@
       "GUID": "a5a5fd",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 30.7249565,
-        "posY": 1.29956722,
-        "posZ": -49.77137,
-        "rotX": 0.0208145827,
-        "rotY": 269.979767,
-        "rotZ": 0.016763512,
+        "posX": 49.5297661,
+        "posY": 1.49510384,
+        "posZ": 36.7344246,
+        "rotX": -2.77268128E-07,
+        "rotY": 269.99176,
+        "rotZ": 3.12557972E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -3931,11 +4879,19 @@
       "Nickname": "Athena",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -3971,12 +4927,12 @@
       "GUID": "a60082",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 28.7816,
-        "posY": 1.29961586,
-        "posZ": -47.19406,
-        "rotX": 0.0208148826,
-        "rotY": 269.979,
-        "rotZ": 0.0167633463,
+        "posX": 47.5864143,
+        "posY": 1.49510384,
+        "posZ": 39.3117332,
+        "rotX": -3.27418E-07,
+        "rotY": 269.9909,
+        "rotZ": 2.68210925E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -3984,11 +4940,19 @@
       "Nickname": "Carmilla",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4024,12 +4988,12 @@
       "GUID": "a967e3",
       "Name": "Custom_Model_Bag",
       "Transform": {
-        "posX": 12.1245756,
-        "posY": 1.33488059,
-        "posZ": -70.3783,
-        "rotX": 0.0208137836,
-        "rotY": 270.0001,
-        "rotZ": 0.0167806763,
+        "posX": 30.918602,
+        "posY": 1.50675738,
+        "posZ": 14.2631512,
+        "rotX": 3.28375131E-06,
+        "rotY": 269.992859,
+        "rotZ": -1.04142123E-06,
         "scaleX": 0.87500006,
         "scaleY": 0.87500006,
         "scaleZ": 0.87500006
@@ -4037,6 +5001,11 @@
       "Nickname": "Role Deck",
       "Description": "Created by Serendipigans\n---\nSeparate the 11 role cards and place them individually into the bag. \n\nDrag select the roles back into the bag before each time you select.",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 1.0,
         "g": 1.0,
@@ -4090,12 +5059,12 @@
       "GUID": "a9e612",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.9171944,
-        "posY": 1.29536784,
-        "posZ": -46.9860725,
-        "rotX": 0.0208085962,
-        "rotY": 270.000244,
-        "rotZ": 0.0167712737,
+        "posX": 35.7219353,
+        "posY": 1.49510384,
+        "posZ": 39.5196037,
+        "rotX": -2.049779E-08,
+        "rotY": 270.0039,
+        "rotZ": 2.18485035E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4103,11 +5072,20 @@
       "Nickname": "Artemis",
       "Description": "The Huntress",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4143,12 +5121,12 @@
       "GUID": "aa5286",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 13.649106,
-        "posY": 1.32795084,
-        "posZ": -56.1313,
-        "rotX": 0.0208083875,
-        "rotY": 270.0002,
-        "rotZ": 0.0167716853,
+        "posX": 32.4538269,
+        "posY": 1.49510384,
+        "posZ": 30.3743038,
+        "rotX": -1.56631657E-07,
+        "rotY": 270.0028,
+        "rotZ": -2.130795E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4156,11 +5134,20 @@
       "Nickname": "Anne Shirley",
       "Description": "The Idealist",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4196,12 +5183,12 @@
       "GUID": "ac8f67",
       "Name": "Card",
       "Transform": {
-        "posX": 3.73846316,
-        "posY": 1.32018745,
-        "posZ": -70.35708,
-        "rotX": 0.0208132211,
-        "rotY": 269.985535,
-        "rotZ": 0.0167656448,
+        "posX": 22.53236,
+        "posY": 1.49510384,
+        "posZ": 14.2848568,
+        "rotX": 2.2004599E-07,
+        "rotY": 269.995,
+        "rotZ": -6.200886E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -4209,11 +5196,19 @@
       "Nickname": "Lola Hayes",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4249,12 +5244,12 @@
       "GUID": "acc4c9",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.1675,
-        "posY": 1.3236028,
-        "posZ": -62.9438,
-        "rotX": 0.0208173711,
-        "rotY": 269.9696,
-        "rotZ": 0.016760096,
+        "posX": 25.972229,
+        "posY": 1.49510384,
+        "posZ": 23.5618076,
+        "rotX": 8.685574E-08,
+        "rotY": 269.972382,
+        "rotZ": -1.02620071E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4262,11 +5257,20 @@
       "Nickname": "Marie Laveau",
       "Description": "The Occultist",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4302,12 +5306,12 @@
       "GUID": "acc5be",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.408362,
-        "posY": 1.321517,
-        "posZ": -70.36848,
-        "rotX": 0.02081311,
-        "rotY": 269.9856,
-        "rotZ": 0.0167659521,
+        "posX": 26.2021637,
+        "posY": 1.49510384,
+        "posZ": 14.2732372,
+        "rotX": 9.79952048E-08,
+        "rotY": 269.986267,
+        "rotZ": -2.502444E-08,
         "scaleX": 0.782293141,
         "scaleY": 1.0,
         "scaleZ": 0.782293141
@@ -4315,11 +5319,20 @@
       "Nickname": "Lola Hayes",
       "Description": "The Actress",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Investigator",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4352,15 +5365,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "af1d2c",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 43.7251778,
+        "posY": 1.49510384,
+        "posZ": 30.2804356,
+        "rotX": 1.71411742E-07,
+        "rotY": 270.0162,
+        "rotZ": -2.07038028E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Christine Daaé",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 622100,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6221": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160381122/A0C9A62DA44A333D1164E5231442E6FA492B80D1/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160381526/05356EFB440B219F950CEA2C6BAF2AF591BC8683/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "b102c3",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 13.6926012,
-        "posY": 1.33064508,
-        "posZ": -46.9812,
-        "rotX": 0.02081251,
-        "rotY": 269.98584,
-        "rotZ": 0.0167663842,
+        "posX": 32.4973259,
+        "posY": 1.49510384,
+        "posZ": 39.5244331,
+        "rotX": 1.07408731E-07,
+        "rotY": 269.988342,
+        "rotZ": -1.21315409E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4368,11 +5442,20 @@
       "Nickname": "Alice",
       "Description": "The Heroine",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4408,12 +5491,12 @@
       "GUID": "b45739",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 30.724966,
-        "posY": 1.30032575,
-        "posZ": -47.1801376,
-        "rotX": 0.0208088737,
-        "rotY": 270.000061,
-        "rotZ": 0.016770795,
+        "posX": 49.5297737,
+        "posY": 1.49510384,
+        "posZ": 39.3256569,
+        "rotX": -2.90417432E-07,
+        "rotY": 270.011719,
+        "rotZ": 3.04455057E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -4421,11 +5504,19 @@
       "Nickname": "Alice",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4461,12 +5552,12 @@
       "GUID": "b4fc98",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 24.8910351,
-        "posY": 1.29819763,
-        "posZ": -47.21202,
-        "rotX": 0.0208149012,
-        "rotY": 269.979248,
-        "rotZ": 0.0167633984,
+        "posX": 43.6958466,
+        "posY": 1.49510384,
+        "posZ": 39.29378,
+        "rotX": -2.84036616E-07,
+        "rotY": 269.991455,
+        "rotZ": -3.25042357E-08,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -4474,11 +5565,19 @@
       "Nickname": "Berenice",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4514,12 +5613,12 @@
       "GUID": "b811d0",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 0.805443645,
-        "posY": 1.32597673,
-        "posZ": -46.9402771,
-        "rotX": 0.0208074152,
-        "rotY": 270.003326,
-        "rotZ": 0.0167723931,
+        "posX": 19.61017,
+        "posY": 1.49510384,
+        "posZ": 39.5653648,
+        "rotX": 2.45466822E-07,
+        "rotY": 270.005981,
+        "rotZ": -2.86175464E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4527,11 +5626,20 @@
       "Nickname": "Tsarevna Lebed",
       "Description": "The Enchanted",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4567,12 +5675,12 @@
       "GUID": "bb0dc0",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 13.6490984,
-        "posY": 1.32929,
-        "posZ": -51.5563,
-        "rotX": 0.0208127461,
-        "rotY": 269.985382,
-        "rotZ": 0.0167661123,
+        "posX": 32.45382,
+        "posY": 1.49510384,
+        "posZ": 34.949337,
+        "rotX": 2.84858115E-09,
+        "rotY": 269.988,
+        "rotZ": -7.376325E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4580,11 +5688,20 @@
       "Nickname": "Athena",
       "Description": "The Sage",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4620,12 +5737,12 @@
       "GUID": "bb684e",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.90452,
-        "posY": 1.2878437,
-        "posZ": -72.67546,
-        "rotX": 0.02080641,
-        "rotY": 270.0074,
-        "rotZ": 0.0167739,
+        "posX": 35.69838,
+        "posY": 1.49510384,
+        "posZ": 11.9664059,
+        "rotX": 9.93138443E-08,
+        "rotY": 270.011444,
+        "rotZ": -4.19300825E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4633,11 +5750,19 @@
       "Nickname": "Crisis of Identity",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4673,12 +5798,12 @@
       "GUID": "bb9641",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 3.941599,
-        "posY": 1.32511055,
-        "posZ": -53.7906,
-        "rotX": 0.02080845,
-        "rotY": 270.000031,
-        "rotZ": 0.01677106,
+        "posX": 22.7463264,
+        "posY": 1.49510384,
+        "posZ": 32.71505,
+        "rotX": -1.399252E-07,
+        "rotY": 270.002625,
+        "rotZ": 6.74091E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4686,11 +5811,20 @@
       "Nickname": "Rapunzel",
       "Description": "The Damsel",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4726,12 +5860,12 @@
       "GUID": "be227d",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 26.8402538,
-        "posY": 1.29853177,
-        "posZ": -48.48911,
-        "rotX": 0.0208146479,
-        "rotY": 269.979,
-        "rotZ": 0.0167634636,
+        "posX": 45.64507,
+        "posY": 1.49510384,
+        "posZ": 38.01669,
+        "rotX": -3.09477457E-08,
+        "rotY": 269.991,
+        "rotZ": 1.35363734E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -4739,11 +5873,19 @@
       "Nickname": "Baba Yaga",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4779,12 +5921,12 @@
       "GUID": "c04c67",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 22.9711456,
-        "posY": 1.2974968,
-        "posZ": -47.2242165,
-        "rotX": 0.0208147541,
-        "rotY": 269.9795,
-        "rotZ": 0.0167635959,
+        "posX": 41.77596,
+        "posY": 1.49510384,
+        "posZ": 39.28158,
+        "rotX": 1.7173754E-07,
+        "rotY": 269.9917,
+        "rotZ": -5.189621E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -4792,11 +5934,19 @@
       "Nickname": "Tsarevna Lebed",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4832,12 +5982,12 @@
       "GUID": "c5fe5b",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 30.7249565,
-        "posY": 1.299188,
-        "posZ": -51.0669861,
-        "rotX": 0.0208047032,
-        "rotY": 270.014,
-        "rotZ": 0.0167760346,
+        "posX": 49.5297661,
+        "posY": 1.49510384,
+        "posZ": 35.43881,
+        "rotX": 1.32973767E-07,
+        "rotY": 270.026,
+        "rotZ": -4.59795558E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -4845,11 +5995,19 @@
       "Nickname": "Belle",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4885,12 +6043,12 @@
       "GUID": "c7e3cf",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 30.7249565,
-        "posY": 1.29880869,
-        "posZ": -52.3625946,
-        "rotX": 0.0208087731,
-        "rotY": 270.000427,
-        "rotZ": 0.0167713966,
+        "posX": 49.52977,
+        "posY": 1.49510384,
+        "posZ": 34.1432,
+        "rotX": 1.4101829E-08,
+        "rotY": 270.012451,
+        "rotZ": -2.36446382E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -4898,11 +6056,19 @@
       "Nickname": "Fatima al-Fihri",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4938,12 +6104,12 @@
       "GUID": "c95de1",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.66904,
-        "posY": 1.29951656,
-        "posZ": -52.3567238,
-        "rotX": 0.02080897,
-        "rotY": 269.999329,
-        "rotZ": 0.0167707354,
+        "posX": 51.47385,
+        "posY": 1.49510384,
+        "posZ": 34.1490746,
+        "rotX": 2.79102977E-07,
+        "rotY": 270.011353,
+        "rotZ": -4.05602066E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -4951,11 +6117,19 @@
       "Nickname": "Freya",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -4988,15 +6162,77 @@
       "XmlUI": ""
     },
     {
+      "GUID": "cb11fe",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 25.9732475,
+        "posY": 1.49510384,
+        "posZ": 21.2997532,
+        "rotX": 7.98134749E-08,
+        "rotY": 270.024261,
+        "rotZ": -6.73942E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Hecate",
+      "Description": "The Trinity",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 622800,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6228": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276202497/A6F9A9D5513289E66F7BA5C78C51994F12E175C0/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "d3d7fb",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.66904,
-        "posY": 1.29913723,
-        "posZ": -53.65234,
-        "rotX": 0.0208132584,
-        "rotY": 269.984558,
-        "rotZ": 0.0167651922,
+        "posX": 51.4738541,
+        "posY": 1.49510384,
+        "posZ": 32.8534622,
+        "rotX": -1.39555127E-07,
+        "rotY": 269.99646,
+        "rotZ": 2.88252949E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -5004,11 +6240,19 @@
       "Nickname": "Kali",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5044,12 +6288,12 @@
       "GUID": "d4d2be",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.8868,
-        "posY": 1.29069018,
-        "posZ": -62.9289,
-        "rotX": 0.0208123829,
-        "rotY": 269.9867,
-        "rotZ": 0.0167664,
+        "posX": 35.6915474,
+        "posY": 1.49510384,
+        "posZ": 23.5767422,
+        "rotX": 1.13273586E-07,
+        "rotY": 269.99057,
+        "rotZ": -1.62942968E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5057,11 +6301,20 @@
       "Nickname": "Werethekau",
       "Description": "The Protector",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5094,27 +6347,36 @@
       "XmlUI": ""
     },
     {
-      "GUID": "d914f0",
+      "GUID": "d818e1",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 13.6255,
-        "posY": 1.3259474,
-        "posZ": -62.9463,
-        "rotX": 0.02080815,
-        "rotY": 270.000916,
-        "rotZ": 0.01677195,
+        "posX": 22.7240448,
+        "posY": 1.49510384,
+        "posZ": 21.3074532,
+        "rotX": -1.8310881E-07,
+        "rotY": 270.0,
+        "rotZ": 2.3354248E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Yuasa Toshiko",
-      "Description": "The Physicist",
+      "Nickname": "Blanchette",
+      "Description": "The Wayfarer",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5129,11 +6391,73 @@
       "GridProjection": false,
       "HideWhenFaceDown": true,
       "Hands": true,
-      "CardID": 619700,
+      "CardID": 622900,
       "SidewaysCard": false,
       "CustomDeck": {
-        "6197": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1865048991160122166/8E40109B7ADDAE18E30329F0FEC6AC0D267D2134/",
+        "6229": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276204273/C078CA2A4942C2C8ED2217ADD9750C60114A7B70/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "d914f0",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 32.43022,
+        "posY": 1.49510384,
+        "posZ": 23.5593052,
+        "rotX": 1.204525E-07,
+        "rotY": 270.003662,
+        "rotZ": 3.13649129E-09,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Yuasa Toshiko",
+      "Description": "The Physicist",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 623100,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6231": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276206373/6C7C0FA91AE22976DB607A13EF13D23A7BE2201C/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -5150,12 +6474,12 @@
       "GUID": "d9a805",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 7.19639826,
-        "posY": 1.32762885,
-        "posZ": -49.2255,
-        "rotX": 0.02080856,
-        "rotY": 269.9997,
-        "rotZ": 0.0167710371,
+        "posX": 26.0011215,
+        "posY": 1.49510384,
+        "posZ": 37.28014,
+        "rotX": 5.76195518E-08,
+        "rotY": 270.0023,
+        "rotZ": -3.99418667E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5163,11 +6487,20 @@
       "Nickname": "Ereshkigal",
       "Description": "The Judge",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5203,12 +6536,12 @@
       "GUID": "dc6a2c",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 16.8998127,
-        "posY": 1.28918171,
-        "posZ": -68.09832,
-        "rotX": 0.0208082274,
-        "rotY": 270.000824,
-        "rotZ": 0.0167714916,
+        "posX": 35.6936722,
+        "posY": 1.49510384,
+        "posZ": 16.5435066,
+        "rotX": 6.54073347E-08,
+        "rotY": 270.0048,
+        "rotZ": -6.06905459E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5216,11 +6549,20 @@
       "Nickname": "Cassilda",
       "Description": "The Ruler",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5256,12 +6598,12 @@
       "GUID": "ddccf9",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 10.4736061,
-        "posY": 1.328811,
-        "posZ": -49.2529,
-        "rotX": 0.02080825,
-        "rotY": 270.0014,
-        "rotZ": 0.0167717021,
+        "posX": 29.2783279,
+        "posY": 1.49510384,
+        "posZ": 37.2527428,
+        "rotX": 1.601366E-08,
+        "rotY": 270.003967,
+        "rotZ": -1.691645E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5269,11 +6611,20 @@
       "Nickname": "Eris",
       "Description": "The Chaotic",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5309,12 +6660,12 @@
       "GUID": "e0bf2d",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 10.40735,
-        "posY": 1.3254379,
-        "posZ": -60.6943245,
-        "rotX": 0.0208085682,
-        "rotY": 269.999329,
-        "rotZ": 0.0167709365,
+        "posX": 29.2120781,
+        "posY": 1.49510384,
+        "posZ": 25.811285,
+        "rotX": -1.14967044E-07,
+        "rotY": 270.001984,
+        "rotZ": -1.68484846E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5322,11 +6673,20 @@
       "Nickname": "Mary Read",
       "Description": "The Pirate",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5359,15 +6719,77 @@
       "XmlUI": ""
     },
     {
+      "GUID": "e1a0ad",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 32.41104,
+        "posY": 1.49510384,
+        "posZ": 21.3062515,
+        "rotX": -1.736843E-07,
+        "rotY": 269.991364,
+        "rotZ": 7.035274E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Snow White",
+      "Description": "The Fairest",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 622600,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6226": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276200621/0DC74FA5D833225BFEBF7C2F9925AF402E256A0D/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "e26ddc",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 24.8910351,
-        "posY": 1.29705989,
-        "posZ": -51.09886,
-        "rotX": 0.0208040923,
-        "rotY": 270.015869,
-        "rotZ": 0.0167766549,
+        "posX": 43.69585,
+        "posY": 1.49510384,
+        "posZ": 35.40694,
+        "rotX": 2.08198784E-07,
+        "rotY": 270.028137,
+        "rotZ": -6.137428E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -5375,11 +6797,19 @@
       "Nickname": "Mina Harker",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5415,12 +6845,12 @@
       "GUID": "e4377f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 10.4736061,
-        "posY": 1.32948065,
-        "posZ": -46.9654,
-        "rotX": 0.0208082218,
-        "rotY": 270.00116,
-        "rotZ": 0.0167715289,
+        "posX": 29.2783279,
+        "posY": 1.49510384,
+        "posZ": 39.5402336,
+        "rotX": -1.2880183E-07,
+        "rotY": 270.003662,
+        "rotZ": -8.595175E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5428,11 +6858,20 @@
       "Nickname": "La Llorona",
       "Description": "The Grieving",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5468,12 +6907,12 @@
       "GUID": "e86c65",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 13.6491041,
-        "posY": 1.32862043,
-        "posZ": -53.8438,
-        "rotX": 0.02080826,
-        "rotY": 270.000275,
-        "rotZ": 0.01677165,
+        "posX": 32.4538269,
+        "posY": 1.49510384,
+        "posZ": 32.6618462,
+        "rotX": -1.47418326E-08,
+        "rotY": 270.0027,
+        "rotZ": -2.22638121E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5481,11 +6920,20 @@
       "Nickname": "Belle",
       "Description": "The Erudite",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Asset",
+        "PlayerCard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5521,12 +6969,12 @@
       "GUID": "ebc4d9",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 28.7816,
-        "posY": 1.29923666,
-        "posZ": -48.4896774,
-        "rotX": 0.0208096988,
-        "rotY": 269.9964,
-        "rotZ": 0.016769493,
+        "posX": 47.5864143,
+        "posY": 1.49510384,
+        "posZ": 38.0161171,
+        "rotX": 4.73704631E-08,
+        "rotY": 270.0083,
+        "rotZ": -9.317232E-08,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -5534,11 +6982,19 @@
       "Nickname": "Eris",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5571,15 +7027,76 @@
       "XmlUI": ""
     },
     {
+      "GUID": "ecedd4",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 45.6744423,
+        "posY": 1.49510384,
+        "posZ": 28.9938526,
+        "rotX": 7.00704845E-08,
+        "rotY": 269.990845,
+        "rotZ": 3.278938E-07,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "Hecate",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "Minicard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "CardID": 624000,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "6240": {
+          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276224240/211811B351D7CDAC15CC1CBE9FB3AD10658545DB/",
+          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2039608796276224534/DD6FE9BF7A189EE9792971F56603FECF688FF9F7/",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
       "GUID": "ef116e",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 30.7249565,
-        "posY": 1.29842949,
-        "posZ": -53.65821,
-        "rotX": 0.0208146572,
-        "rotY": 269.9796,
-        "rotZ": 0.0167633947,
+        "posX": 49.52977,
+        "posY": 1.49510384,
+        "posZ": 32.84759,
+        "rotX": 2.1594002E-07,
+        "rotY": 269.9917,
+        "rotZ": -6.023801E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -5587,11 +7104,19 @@
       "Nickname": "Jane Eyre",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5627,12 +7152,12 @@
       "GUID": "f317ac",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 32.66904,
-        "posY": 1.300275,
-        "posZ": -49.76549,
-        "rotX": 0.0208088253,
-        "rotY": 269.999817,
-        "rotZ": 0.0167712737,
+        "posX": 51.47385,
+        "posY": 1.49510384,
+        "posZ": 36.7403,
+        "rotX": -4.61320383E-07,
+        "rotY": 270.011566,
+        "rotZ": 3.32987156E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -5640,11 +7165,19 @@
       "Nickname": "Bast",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5680,12 +7213,12 @@
       "GUID": "fa142f",
       "Name": "CardCustom",
       "Transform": {
-        "posX": 24.8910351,
-        "posY": 1.29743922,
-        "posZ": -49.80325,
-        "rotX": 0.0208057091,
-        "rotY": 270.010162,
-        "rotZ": 0.0167744346,
+        "posX": 43.69585,
+        "posY": 1.49510384,
+        "posZ": 36.70255,
+        "rotX": 1.6752999E-07,
+        "rotY": 270.0224,
+        "rotZ": 1.1654285E-07,
         "scaleX": 0.6,
         "scaleY": 1.0,
         "scaleZ": 0.6
@@ -5693,11 +7226,19 @@
       "Nickname": "Idunn",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.713235259,
         "g": 0.713235259,
         "b": 0.713235259
       },
+      "Tags": [
+        "Minicard"
+      ],
       "LayoutGroupSortIndex": 0,
       "Value": 0,
       "Locked": false,
@@ -5718,59 +7259,6 @@
         "6161": {
           "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1690520931873276958/5A42D330AF11849CA2D9E5A6948D99BEE738D303/",
           "BackURL": "http://cloud-3.steamusercontent.com/ugc/1690520931873277544/D75D88D0DAD2B02B124A86AE903DDB814D048BDB/",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "1610e2",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": -25.3817043,
-        "posY": 1.90050375,
-        "posZ": -46.7924347,
-        "rotX": 0.0117110536,
-        "rotY": 270.006836,
-        "rotZ": 0.940494239,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
-      },
-      "Nickname": "Nyx",
-      "Description": "The Night",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 0.713235259,
-        "g": 0.713235259,
-        "b": 0.713235259
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "CardID": 620300,
-      "SidewaysCard": false,
-      "CustomDeck": {
-        "6203": {
-          "FaceURL": "http://cloud-3.steamusercontent.com/ugc/1862799141633194149/9C1BDDDD3CF2EF5A60EE558B32CE9C51880EE07A/",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/1754686449895686846/9A43D862F1AEB048BC349C9E2A1DFC0BE22AA7D5/",
           "NumWidth": 1,
           "NumHeight": 1,
           "BackIsHidden": true,
