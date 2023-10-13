@@ -12,42 +12,74 @@
     {
       "name": "The Dunwich Legacy",
       "url": "campaigns/dunwich_legacy.json",
-      "replace": "2898f6"
+      "replace": "2898f6",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517667666249/B7EB11E1C48A63D3B8AC233FF2DF0BBAD74ECC6E/",
+      "author": "Fantasy Flight Games",
+      "description": "A monstrous presence once terrorized the secluded village of Dunwich, until professors from Miskatonic University, armed with secret knowledge, allegedly defeated the creature..."
     },
     {
       "name": "The Path to Carcosa",
       "url": "campaigns/path_to_carcosa.json",
-      "replace": "aca04c"
+      "replace": "aca04c",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517667645467/CDF71CF96691CEF2E690F71332479ACBA0697864/",
+      "author": "Fantasy Flight Games",
+      "description": "For weeks, the upcoming performance of the King in Yellow has been the talk of the town, but after researching the play's dark history, you are convinced something foul is at work..."
     },
     {
       "name": "The Forgotten Age",
       "url": "campaigns/forgotten_age.json",
-      "replace": "0bcf19"
+      "replace": "0bcf19",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517669830426/AAB750A408E887633F25AFDFB194C50A9A1518DF/",
+      "author": "Fantasy Flight Games",
+      "description": "When renowned archaeologist Alejandro Vela discovered the ruins of an ancient Aztec city, it set into motion a plot that could unravel the very fabric of time itself..."
     },
     {
       "name": "The Circle Undone",
       "url": "campaigns/circle_undone.json",
-      "replace": "63e097"
+      "replace": "63e097",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517669843863/DC0750A38111062909FEDA1BC20685895A574A54/",
+      "author": "Fantasy Flight Games",
+      "description": "While investigating the disappearances of four people from an estate in French Hill, you uncover a grim fate that is meant for the entirety of Arkham..."
     },
     {
       "name": "The Dream-Eaters",
       "url": "campaigns/dream_eaters.json",
-      "replace": "a16a1a"
+      "replace": "a16a1a",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517669849292/9CD4BE220E1DE5294B1BC6301792920D213C98B3/",
+      "author": "Fantasy Flight Games",
+      "description": "After hearing occult author Virgil Gray's account of his experiences in the 'Dreamlands', you too find yourself lost in a hidden realm full of imagination and nightmare..."
     },
     {
       "name": "The Innsmouth Conspiracy",
       "url": "campaigns/innsmouth_conspiracy.json",
-      "replace": "465aab"
+      "replace": "465aab",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1626320664132195050/3888AC3E4F59D039C5F01B7EC72AB63174184381/",
+      "author": "Fantasy Flight Games",
+      "description": "In the shadowy seaport of Innsmouth, strange creatures have been sighted by the reef, and a tangled scheme involving a missing government agent has begun to unravel..."
     },
     {
       "name": "Edge of the Earth",
       "url": "campaigns/edge_of_the_earth.json",
-      "replace": "895eaa"
+      "replace": "895eaa",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1856042908471857208/3B48FFA47FB366932049AD9CD8A3222A8F89FAEB/",
+      "author": "Fantasy Flight Games",
+      "description": "Deep within the icy continent of Antarctica lies a secret; one so ancient and profound, it threatens to tear apart our very understanding of the planet we call home..."
     },
     {
       "name": "The Scarlet Keys",
       "url": "campaigns/the_scarlet_keys.json",
-      "replace": "300fcc"
+      "replace": "300fcc",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2038486699957628515/8202EA3F06FDDD807A34BD6F62FE2E0A0723B8CD/",
+      "author": "Fantasy Flight Games",
+      "description": "Strange disappearances haunt the city of Arkham, with items and people vanishing not just from existence, but from memory and history as well. Only you remember..."
     },
     {
       "name": "Return to The Night of the Zealot",
@@ -61,104 +93,175 @@
     {
       "name": "Return to The Dunwich Legacy",
       "url": "campaigns/return_to_tdl.json",
-      "replace": "ce9130"
+      "replace": "ce9130",
+      "boxsize": "wide",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517667592476/36D86649503A49A36AA97B7B72C6150E4C2BE333/",
+      "author": "Fantasy Flight Games",
+      "description": "A monstrous presence once terrorized the secluded village of Dunwich, until professors from Miskatonic University, armed with secret knowledge, allegedly defeated the creature..."
     },
     {
       "name": "Return to The Path to Carcosa",
       "url": "campaigns/return_to_tptc.json",
-      "replace": "e9889a"
+      "replace": "e9889a",
+      "boxsize": "wide",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517667556656/9638E8CE7F209B50634B202C9EF4B0BDB4993BBB/",
+      "author": "Fantasy Flight Games",
+      "description": "For weeks, the upcoming performance of the King in Yellow has been the talk of the town, but after researching the play's dark history, you are convinced something foul is at work..."
     },
     {
       "name": "Return to The Forgotten Age",
       "url": "campaigns/return_to_tfa.json",
-      "replace": "479ff3"
+      "replace": "479ff3",
+      "boxsize": "wide",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1474319121423613924/490D56D20C6AE0547D67D942513396E8D0584A4A/",
+      "author": "Fantasy Flight Games",
+      "description": "When renowned archaeologist Alejandro Vela discovered the ruins of an ancient Aztec city, it set into motion a plot that could unravel the very fabric of time itself..."
     },
     {
       "name": "Return to The Circle Undone",
       "url": "campaigns/return_to_tcu.json",
-      "replace": "757324"
+      "replace": "757324",
+      "boxsize": "wide",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1697277388086852852/6FD56D74FDDDA5626A3B72E788993EC651AD25E1/",
+      "author": "Fantasy Flight Games",
+      "description": "While investigating the disappearances of four people from an estate in French Hill, you uncover a grim fate that is meant for the entirety of Arkham..."
     }
   ],
   "scenarios": [
     {
       "name": "The Blob that Ate Everything",
       "url": "scenarios/blob_that_ate_everything.json",
-      "replace": "4dee5a"
+      "replace": "4dee5a",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/784129708171644922/CF8E4B744A65B5C7FEAF46C907D8E470A9E2241F/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Carnevale of Horrors",
       "url": "scenarios/carnevale_of_horrors.json",
-      "replace": "23dd51"
+      "replace": "23dd51",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/826883954590151386/AFF80583FAE6A513663D7BA0A36C4EDAC02DCF43/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "The Curse of the Rougarou",
       "url": "scenarios/curse_of_the_rougarou.json",
-      "replace": "db7039"
+      "replace": "db7039",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/826883954590159139/DD8593B1F0B0D531AF8F3A9B6A37568E551B9B03/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "The Guardians of the Abyss",
       "url": "scenarios/guardians_of_the_abyss.json",
-      "replace": "ee987d"
+      "replace": "ee987d",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/826883954590180592/50C4420774777AFE0D3168DA24D0E72941862CC4/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "The Labyrinths of Lunacy",
       "url": "scenarios/labyrinths_of_lunacy.json",
-      "replace": "4c173f"
-    },
-    {
-      "name": "Machinations through Time",
-      "url": "scenarios/machinations_through_time.json",
-      "replace": "3c4f3c"
-    },
-    {
-      "name": "Murder at the Excelsior Hotel",
-      "url": "scenarios/murder_at_the_excelsior_hotel.json",
-      "replace": "01d780"
-    },
-    {
-      "name": "War of the Outer Gods",
-      "url": "scenarios/war_of_the_outer_gods.json",
-      "replace": "fc7674"
+      "replace": "4c173f",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142912455/15B44AE6487546376FD9DED67A1BC9D613163511/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Machinations Through Time",
       "url": "scenarios/machinations_through_time.json",
-      "replace": "3c4f3c"
+      "replace": "3c4f3c",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1849293764609930695/A32186E44882FD6EF5753CCB9D325B4EC6848B5A/",
+      "author": "Fantasy Flight Games",
+      "description": ""
+    },
+    {
+      "name": "Murder at the Excelsior Hotel",
+      "url": "scenarios/murder_at_the_excelsior_hotel.json",
+      "replace": "01d780",
+      "boxsize": "small",
+      "boxart": "https://raw.githubusercontent.com/RobMayer/TTSLibrary/master/advboxes/tuckbox_h_MSH.obj",
+      "author": "Fantasy Flight Games",
+      "description": ""
+    },
+    {
+      "name": "War of the Outer Gods",
+      "url": "scenarios/war_of_the_outer_gods.json",
+      "replace": "fc7674",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1655599785041387976/264E2E1DA532DC374D6E75B19AD4FEDDBEAA22F0/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Fortune and Folly",
       "url": "scenarios/fortune_and_folly.json",
-      "replace": "0dce91"
+      "replace": "0dce91",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2038486699957629658/90632624064547CE896A5236F3F15492FD920D28/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Challenge Scenario: All or Nothing",
       "url": "scenarios/challenge_all_or_nothing.json",
-      "replace": "72ab92"
+      "replace": "72ab92",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1655600953066192972/8A5939900FCA8E2A2772CEDE6A03594A68961C4C/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Challenge Scenario: Bad Blood",
       "url": "scenarios/challenge_bad_blood.json",
-      "replace": "451eaa"
+      "replace": "451eaa",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1655599785039299268/52DB5C3A0E600D6AECB0B851ECF90C5B3D016421/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Challenge Scenario: By the Book",
       "url": "scenarios/challenge_by_the_book.json",
-      "replace": "cc7eb3"
+      "replace": "cc7eb3",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1719794129200879643/47A3BC15C8C8ADB45137A2258B86C1D2DB9C2B03/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Challenge Scenario: Read or Die",
       "url": "scenarios/challenge_read_or_die.json",
-      "replace": "9e73fa"
+      "replace": "9e73fa",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1655599785039304850/852232605656B7DD6577C475A1988491D3378506/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Challenge Scenario: Red Tide Rising",
       "url": "scenarios/challenge_red_tide_rising.json",
-      "replace": "5302f2"
+      "replace": "5302f2",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1849293764610824071/BD70BFDA6DED25221D6DC1BE60C8CE11B165F848/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     },
     {
       "name": "Barkham Horror: The Meddling of Meowlathotep",
       "url": "scenarios/meddling_of_meowlathotep.json",
-      "replace": "d02940"
+      "replace": "d02940",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2038486699957629839/74B187339172F55B05CD212F214F5D31B117FDF0/",
+      "author": "Fantasy Flight Games",
+      "description": ""
     }
   ],
   "extras": [
