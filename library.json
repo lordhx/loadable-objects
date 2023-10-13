@@ -7,7 +7,7 @@
       "boxsize": "big",
       "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517667628371/18438B0A0045038A7099648AA3346DFCAA267C66/",
       "author": "Fantasy Flight Games",
-      "description": "Friday, September 18, 1925. Arkham, Massachusetts. It is the end of a long and abnormally hot summer. The first hints of autumn beckon, but a heavy heat persists, relentless. A silent, unspoken anger grips the town."
+      "description": "Friday, September 18, 1925. Arkham, Massachusetts. There is something wrong with this town, and not a whole lot this old soothsayer can do to stop the slide..."
     },
     {
       "name": "The Dunwich Legacy",
@@ -52,7 +52,11 @@
     {
       "name": "Return to The Night of the Zealot",
       "url": "campaigns/return_to_notz.json",
-      "replace": "56270d"
+      "replace": "56270d",
+      "boxsize": "wide",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517667598054/18C06F0F20D9D4651E6736FB609E2D41F4D1964E/",
+      "author": "Fantasy Flight Games",
+      "description": "Friday, September 18, 1925. Arkham, Massachusetts. There is something wrong with this town, and not a whole lot this old soothsayer can do to stop the slide..."
     },
     {
       "name": "Return to The Dunwich Legacy",
