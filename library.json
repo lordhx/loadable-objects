@@ -275,12 +275,20 @@
     {
       "name": "Fan Investigators: Aespa Investigators",
       "url": "fancreations/investigators_aespa.json",
-      "replace": "ec74df"
+      "replace": "ec74df",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1862816781492027399/65707471C1DAF2E107F9ACDD28B5D65FDABBCE79/",
+      "author": "Mint Tea Fan",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Artifact Expansion",
       "url": "fancreations/investigators_artifact.json",
-      "replace": "2f8332"
+      "replace": "2f8332",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1799728983834465397/5B8C8FFC332DCC1F09FEA1617F0F3446F06821DB/",
+      "author": "Mint Tea Fan",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Bad Batch",
@@ -290,12 +298,20 @@
     {
       "name": "Fan Investigators: Battle Goes On",
       "url": "fancreations/investigators_battle_goes_on.json",
-      "replace": "dd90c5"
+      "replace": "dd90c5",
+      "boxsize": "small",
+      "boxart": "https://i.imgur.com/F4W3qLq.jpg",
+      "author": "The Popest",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Buffy the Vampire Slayer",
       "url": "fancreations/investigators_buffy.json",
-      "replace": "6bf40f"
+      "replace": "6bf40f",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2048620433331970643/2C2D6388AD3BAEC8B9C474B8810CF3E042E5D725/",
+      "author": "AtomicZ",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Cartoon Funtime Investigators",
@@ -305,32 +321,56 @@
     {
       "name": "Fan Investigators: Circus Ex Mortis Investigator Expansion",
       "url": "fancreations/investigators_circus_ex_mortis.json",
-      "replace": "195936"
+      "replace": "195936",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2001337710389944672/AFEE73925C29D5330493528D81D26D499E2ABFCE/",
+      "author": "TheBeard",
+      "description": ""
     },
     {
       "name": "Fan Investigators: City of Secrets",
       "url": "fancreations/investigators_city_of_secrets.json",
-      "replace": "1ee775"
+      "replace": "1ee775",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2055380534214131870/37E74A27D78CFDC8F320B15F02C5379834EA6202/",
+      "author": "aughhhh",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Dead Space Investigators",
       "url": "fancreations/investigators_dead_space.json",
-      "replace": "880860"
+      "replace": "880860",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1898848485543773146/5255CF70ED228D9C98E4C9F4F010577A77B5C46E/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Delta Green Convergence",
       "url": "fancreations/investigators_delta_green_convergence.json",
-      "replace": "84be1d"
+      "replace": "84be1d",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142900469/BDA1068C5A88459AE805540FE05B8092C4F8F392/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Don't Starve",
       "url": "fancreations/investigators_dont_starve.json",
-      "replace": "2e69d0"
+      "replace": "2e69d0",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1646593716898209387/B827263B809A6C8E1042BDF1C8D33E58458C2EF4/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Elspeth Baudin (As Seen in Bad Blood!)",
       "url": "fancreations/investigators_elspeth_baudin.json",
-      "replace": "84c153"
+      "replace": "84c153",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1655599785039299268/52DB5C3A0E600D6AECB0B851ECF90C5B3D016421/",
+      "author": "Donelloth",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Flanfy's Original Gators",
@@ -345,7 +385,11 @@
     {
       "name": "Fan Investigators: Gender Swapped Investigators",
       "url": "fancreations/investigators_gender_swapped.json",
-      "replace": "33272e"
+      "replace": "33272e",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1597044073919531303/A7A92208CADC509C2546E65242ADDC8EF88FEAB8/",
+      "author": "/u/corpboy (Reddit)",
+      "description": ""
     },
     {
       "name": "Fan Investigators: The Ghosts of Onigawa",
@@ -365,32 +409,56 @@
     {
       "name": "Fan Investigators: Idol Thoughts",
       "url": "fancreations/investigators_idol_thoughts.json",
-      "replace": "991ff9"
+      "replace": "991ff9",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1011563111884720834/103D38A8FBBFA64EB66439667F8775B15FC679C9/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Lola Hayes Rework",
       "url": "fancreations/investigators_lola_hayes_rework.json",
-      "replace": "3b81fc"
-    },
-    {
-      "name": "Fan Investigators: Mass Effect",
-      "url": "fancreations/investigators_mass_effect.json",
-      "replace": "b82c6f"
+      "replace": "3b81fc",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1754686449895663371/D5D8A1205E220C2ED2D0CA50705FBADE82C053BF/",
+      "author": "Mint Tea Fan",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Magical Girl Arkham Project",
       "url": "fancreations/investigators_magical_girl.json",
-      "replace": "814e2a"
+      "replace": "814e2a",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
+    },
+    {
+      "name": "Fan Investigators: Mass Effect",
+      "url": "fancreations/investigators_mass_effect.json",
+      "replace": "b82c6f",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Maximillion Pegasus",
       "url": "fancreations/investigators_maximillion_pegasus.json",
-      "replace": "1fb7ce"
+      "replace": "1fb7ce",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Nightmare Town",
       "url": "fancreations/investigators_nightmare_town.json",
-      "replace": "e32a71"
+      "replace": "e32a71",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Night of Vespers",
@@ -400,7 +468,11 @@
     {
       "name": "Fan Investigators: Pokemon: Eldritch Edition",
       "url": "fancreations/investigators_pokemon_eldritch_edition.json",
-      "replace": "1fb7ce"
+      "replace": "1fb7ce",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Poirot Investigator",
@@ -410,12 +482,20 @@
     {
       "name": "Fan Investigators: Rabbit Hole Expansion",
       "url": "fancreations/investigators_rabbit_hole.json",
-      "replace": "b7ff06"
+      "replace": "b7ff06",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: The Red Coterie",
       "url": "fancreations/investigators_red_coterie.json",
-      "replace": "de13e3"
+      "replace": "de13e3",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: The Sands of Memphis",
@@ -425,17 +505,29 @@
     {
       "name": "Fan Investigators: The Shadows of Arkham",
       "url": "fancreations/investigators_shadows_of_arkham.json",
-      "replace": "2e5eef"
+      "replace": "2e5eef",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Signature Replacements",
       "url": "fancreations/investigators_replacements.json",
-      "replace": "b06fd9"
+      "replace": "b06fd9",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Six of Crows Investigator Expansion",
       "url": "fancreations/investigators_six_of_crows.json",
-      "replace": "ac6335"
+      "replace": "ac6335",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Stargate Atlantis: Investigator Expansion",
@@ -445,7 +537,11 @@
     {
       "name": "Fan Investigators: Strange Aeons",
       "url": "fancreations/investigators_strange_aeons.json",
-      "replace": "d78bd2"
+      "replace": "d78bd2",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Streets of New Capenna",
@@ -470,12 +566,20 @@
     {
       "name": "Fan Investigators: Touhou Project",
       "url": "fancreations/investigators_touhou_project.json",
-      "replace": "c5c294"
+      "replace": "c5c294",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Weird West",
       "url": "fancreations/investigators_weird_west.json",
-      "replace": "58ddca"
+      "replace": "58ddca",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Campaign: Alice in Wonderland",
