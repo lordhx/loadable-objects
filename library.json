@@ -958,203 +958,362 @@
     {
       "name": "Fan Scenario: Against the Wendigo",
       "url": "fancreations/scenario_wendigo.json",
-      "replace": "4d5fa0"
+      "replace": "4d5fa0",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142901599/7EE6EF24852C443DF5E92CF9498881E321CEE75A/",
+      "author": "Vinn Quest",
+      "description": "A sequel to the Call Of Cthulhu RPG add-on “Alone Against the Wendigo”. Several months later you explore the wild Hanninah Valley in Canada, looking for the missing students of Dr. Nadelmann’s expedition."
     },
     {
       "name": "Fan Scenario: Arkham Incidents",
       "url": "fancreations/scenario_incidents.json",
-      "replace": "d9c40a"
+      "replace": "d9c40a",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1865053883967763315/27C1F4299B5381DF5A40739696DC4CE6197D2BDC/",
+      "author": "TheBeard",
+      "description": "A set of five standalone scenarios intended to be used as side-stories in campaigns. Each scenario focuses on an existing player ally and gives reward cards that synergize with that ally."
     },
     {
       "name": "Fan Scenario: Blood Spilled in Salem",
       "url": "fancreations/scenario_salem.json",
-      "replace": "4237da"
+      "replace": "4237da",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142918658/204E105211839B1E202E834F4A5C69E8E6A50A28/",
+      "author": "Colin Towle (Shiver02)",
+      "description": "Prepare to investigate the United States' most iconic occult city."
     },
     {
       "name": "Fan Scenario: Bridge of Sighs",
       "url": "fancreations/scenario_bridge_of_sighs.json",
-      "replace": "578e97"
+      "replace": "578e97",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142919243/F3ED3E5B6B8725F536FCDA4FB2D40E1D11725037/",
+      "author": "Ben Cort (Gelband)",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Carnevale of Spiders",
       "url": "fancreations/scenario_carnevale_of_spiders.json",
-      "replace": "e57017"
+      "replace": "e57017",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1474319121422110285/8BA9D8C5CFA6D4E35DFC2077002CB2256DCFB2D7/",
+      "author": "Mattastrophic ",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Collector",
       "url": "fancreations/scenario_the_collector.json",
-      "replace": "9810eb"
+      "replace": "9810eb",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142920786/52ED9B6276539BF3E1F332C363B21B3D7F6960AA/",
+      "author": "Mike Hutchinson (crikeymiles)",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Colour out of Space",
       "url": "fancreations/scenario_color_out_of_space.json",
-      "replace": "5b81ff"
+      "replace": "5b81ff",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142919895/4026718A421BE11AC64320BE9BC2515B364D066E/",
+      "author": "Joe Ehret",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Consternation on the Constellation",
       "url": "fancreations/scenario_consternation_on_the_constellation.json",
-      "replace": "0ec730"
+      "replace": "0ec730",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/762723517666349452/B8551E1479CED3BADEF4AF3B0A727EB7768C0289/",
+      "author": "Mythos Busters",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Curse of Amulotep",
       "url": "fancreations/scenario_the_curse_of_amulotep.json",
-      "replace": "0d7a8d"
+      "replace": "0d7a8d",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142921541/F138D6DF73FB79AC6D1C420869299A481AFA7B90/",
+      "author": "Mike Hutchinson (crikeymiles)",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Cosmic Pantheon",
       "url": "fancreations/scenario_cosmic_pantheon.json",
       "replace": "ec74df",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1844797993644656426/EC19A65BD3119D5FA229F502D65D1D8DAA9E0ECB/",
+      "author": "Mint Tea Fan & hauke",
       "description": "3 alternative factions that can be mix and matched with the 3 existing factions of War of the Outer Gods standalone."
     },
     {
       "name": "Fan Scenario: Darkness Falls",
       "url": "fancreations/scenario_darkness_falls.json",
-      "replace": "c6a612"
+      "replace": "c6a612",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1487830597915523099/252BD2089F9DEF3F337BB8AE681939DE98C1EFA7/",
+      "author": "Justin B",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Delta Green Convergence",
       "url": "fancreations/scenario_delta_green.json",
-      "replace": "ac164e"
+      "replace": "ac164e",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142900469/BDA1068C5A88459AE805540FE05B8092C4F8F392/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Don't Starve",
       "url": "fancreations/scenario_dont_starve.json",
-      "replace": "ffc7ef"
+      "replace": "ffc7ef",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1646593716898209387/B827263B809A6C8E1042BDF1C8D33E58458C2EF4/",
+      "author": "TheBeard",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Facts in the Case of M. Valdemar",
       "url": "fancreations/scenario_valdemar.json",
-      "replace": "238d6f"
+      "replace": "238d6f",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1870695908503531344/DE3BBAD0CF8FCE5B05B8B18B44F049ECF06BCA5A/",
+      "author": "TheBeard",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Fall of the House of Usher",
       "url": "fancreations/scenario_house_of_usher.json",
-      "replace": "42bdd3"
+      "replace": "42bdd3",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1771580824970152646/1C2D909AF92814C33B43D22F0EE1D6B8FD260998/",
+      "author": "TheBeard",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Festival",
       "url": "fancreations/scenario_the_festival.json",
-      "replace": "29d22a"
+      "replace": "29d22a",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142936385/DCE942F9A1172E9C55A36E4593F5CDC71D9BC3AD/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Fortune or Folly - Parallel Rex Murphy Set",
       "url": "fancreations/scenario_fortune_or_folly.json",
-      "replace": "7fa06f"
+      "replace": "7fa06f",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1746802526940892011/A775E42F9014CD75B091D7D060012681E58B906E/",
+      "author": "Davi",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Grand Oak Hotel",
       "url": "fancreations/scenario_grand_oak_hotel.json",
-      "replace": "5ccf55"
+      "replace": "5ccf55",
+      "boxsize": "small",
+      "boxart": "",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Happy's Funhouse",
       "url": "fancreations/scenario_happys_funhouse.json",
-      "replace": "e7d9f8"
+      "replace": "e7d9f8",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142976303/C24C7169FD11E5D151DD2F754D5B9A5563D5DABB/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: In Blackest Pits",
       "url": "fancreations/scenario_in_blackest_pits.json",
-      "replace": "68380c"
+      "replace": "68380c",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1016065907889320438/3DC5DD89D5DB56BE6EFDAC4A96E8063765576EA1/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Invisible Man",
       "url": "fancreations/scenario_the_invisible_man.json",
-      "replace": "17d01a"
+      "replace": "17d01a",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2005838139148126671/D2A8004B560ED3623F3326F3F97B8B181AEC6371/",
+      "author": "TheBeard",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Jenny's Choice",
       "url": "fancreations/scenario_jennys_choice.json",
-      "replace": "a61b48"
+      "replace": "a61b48",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/790858329422808079/1407B0AB89A9DBCFEE07A84A0979829556D84A78/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Knightfall",
       "url": "fancreations/scenario_knightfall.json",
-      "replace": "df62e8"
+      "replace": "df62e8",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142937041/3253F31B9483C3B5D0A98BA7E479E006FBF8D270/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Last Call at Roxie's",
       "url": "fancreations/scenario_last_call_at_roxies.json",
-      "replace": "c6a1ca"
+      "replace": "c6a1ca",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142938527/354E6204BB01AED91EAEB19D99E4D95620F99C56/",
+      "author": "",
+      "description": "An Android Universe crossover adventure"
     },
     {
       "name": "Fan Scenario: The Legend of Sleepy Hollow",
       "url": "fancreations/scenario_sleepy_hollow.json",
-      "replace": "0500f1"
+      "replace": "0500f1",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1617311203420460064/3D20A71D13F484BEEBCF572E827CD38FF3DF57E4/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Masks of Nyarlathotep – New York",
       "url": "fancreations/scenario_masks_of_nyarlathotep.json",
-      "replace": "94a1f8"
+      "replace": "94a1f8",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142939810/7A53406FA1EFA9D556EF559B24A679E566114745/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Miskatonic Mouse",
       "url": "fancreations/scenario_miskatonic_mouse.json",
-      "replace": "6defb8"
+      "replace": "6defb8",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1620690956766119953/F8003A1B5AC39F2D2DABFF6D0AA2168CEC8BFA2C/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Nameless City",
       "url": "fancreations/scenario_the_nameless_city.json",
-      "replace": "9d3083"
+      "replace": "9d3083",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1797477398306699180/7C5363FFCCDCD4A1AF2A0C71B2A7E5F96D5ACCA4/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Nephew Calls",
       "url": "fancreations/scenario_the_nephew_calls.json",
-      "replace": "3ddd12"
+      "replace": "3ddd12",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142940439/EE68DD668C18F8F8C61B0F2BABA6D548B17A6EA7/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Pensher Wyrm",
       "url": "fancreations/scenario_the_pensher_wyrm.json",
-      "replace": "504f38"
+      "replace": "504f38",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142945578/6BA34FBD61F7AD38DE8B2B9E5D5F067406B7CC77/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Red Room",
       "url": "fancreations/scenario_the_red_room.json",
-      "replace": "fa4327"
+      "replace": "fa4327",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142946225/F5A6228957B37E945B425681115D09E7B8543BC6/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Return to the Consternation on the Constellation",
       "url": "fancreations/scenario_return_to_consternation_on_the_constellation.json",
-      "replace": "34ec55"
+      "replace": "34ec55",
+      "boxsize": "small",
+      "boxart": "https://github.com/ArkhamDotCards/returntoconsternationontheconstellation/blob/main/product/enUS/constellation-boxart-difuse.png?raw=true",
+      "author": "Myriad (http://arkham.cards)",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Return to the Wendigo",
       "url": "fancreations/scenario_return_to_the_wendigo.json",
-      "replace": "33f0f3"
+      "replace": "33f0f3",
+      "boxsize": "small",
+      "boxart": "https://github.com/ArkhamDotCards/returntothewendigo/blob/main/product/enUS/wendigo-boxart-difuse.png?raw=true",
+      "author": "Myriad (http://arkham.cards)",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Stolen Baillius",
       "url": "fancreations/scenario_stolen_bacillus.json",
-      "replace": "bfefd4"
+      "replace": "bfefd4",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142943616/2B7B73A110A3EC225C854F85AB009F04859E3806/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Strange Case of Dr. Jekyll and Mr. Hyde",
       "url": "fancreations/scenario_jekyll.json",
-      "replace": "695a4d"
+      "replace": "695a4d",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1845919769156839538/7ED48DF559525AF388EDAABCDEED4EE9D25E872A/",
+      "author": "TheBeard",
+      "description": ""
     },
     {
       "name": "Fan Scenario: Stranger Things",
       "url": "fancreations/scenario_stranger_things.json",
-      "replace": "408301"
+      "replace": "408301",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142948271/A763104B91306431654FBA9E3D88FE0E23CE6E6E/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Svalbard Event",
       "url": "fancreations/scenario_the_svalbard_event.json",
-      "replace": "7bc42b"
+      "replace": "7bc42b",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142948942/FA97D7EF94B715ADD1EEE40831114451FBED200B/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Symphony of Erich Zann",
       "url": "fancreations/scenario_symphony_of_erich_zann.json",
-      "replace": "b7c6be"
+      "replace": "b7c6be",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1254763972105175718/5A09C7E8EBCC79DD9E405FF6F83E49C2C27D5F29/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Thing in the Woods",
       "url": "fancreations/scenario_the_thing_in_the_woods.json",
-      "replace": "c90c49"
+      "replace": "c90c49",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142949442/404A26E158B9EBC1069A5FBA9BA2331CBFD7851B/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Scenario: The Undying",
       "url": "fancreations/scenario_the_undying.json",
-      "replace": "965030"
+      "replace": "965030",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1824531491067739120/4AD2D51DAC6215F2866BB2AD15D47109B432B999/",
+      "author": "",
+      "description": ""
     }
   ]
 }
