@@ -279,7 +279,7 @@
       "boxsize": "small",
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1862816781492027399/65707471C1DAF2E107F9ACDD28B5D65FDABBCE79/",
       "author": "Mint Tea Fan",
-      "description": ""
+      "description": "Investigators inspired by the K-pop girl group Aespa."
     },
     {
       "name": "Fan Investigators: Artifact Expansion",
@@ -288,7 +288,7 @@
       "boxsize": "small",
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1799728983834465397/5B8C8FFC332DCC1F09FEA1617F0F3446F06821DB/",
       "author": "Mint Tea Fan",
-      "description": ""
+      "description": "Sidequest for magical artifacts during any scenario or campaign with new story assets, investigators, and player cards."
     },
     {
       "name": "Fan Investigators: Bad Batch",
@@ -316,7 +316,11 @@
     {
       "name": "Fan Investigators: Cartoon Funtime Investigators",
       "url": "fancreations/investigators_cartoon_funtime.json",
-      "replace": "524fbc"
+      "replace": "524fbc",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1785092789057549667/7230A58735443DF70B24F5BAFD93B4FBBC1B28D7/",
+      "author": "TheBudiez",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Circus Ex Mortis Investigator Expansion",
@@ -342,8 +346,8 @@
       "replace": "880860",
       "boxsize": "small",
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1898848485543773146/5255CF70ED228D9C98E4C9F4F010577A77B5C46E/",
-      "author": "",
-      "description": ""
+      "author": "Kibble",
+      "description": "A set of 5 investigators based on the Dead Space series"
     },
     {
       "name": "Fan Investigators: Delta Green Convergence",
@@ -360,7 +364,7 @@
       "replace": "2e69d0",
       "boxsize": "small",
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1646593716898209387/B827263B809A6C8E1042BDF1C8D33E58458C2EF4/",
-      "author": "",
+      "author": "TheBeard",
       "description": ""
     },
     {
@@ -394,7 +398,11 @@
     {
       "name": "Fan Investigators: The Ghosts of Onigawa",
       "url": "fancreations/investigators_onigawa.json",
-      "replace": "238773"
+      "replace": "238773",
+      "boxsize": "big",
+      "boxart": "https://github.com/ArkhamDotCards/theghostsofonigawa/blob/main/product/onigawa-boxart-investigator-defuse.png?raw=true",
+      "author": "Myriad (http://arkham.cards)",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Girls' Frontline",
@@ -422,33 +430,33 @@
       "boxsize": "small",
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1754686449895663371/D5D8A1205E220C2ED2D0CA50705FBADE82C053BF/",
       "author": "Mint Tea Fan",
-      "description": ""
+      "description": "Lola Hayes reimagined as a method actor. Each round, she chooses a new persona from a customizable roster of famous figures in literature, mythology, and history."
     },
     {
       "name": "Fan Investigators: Magical Girl Arkham Project",
       "url": "fancreations/investigators_magical_girl.json",
       "replace": "814e2a",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
-      "description": ""
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1903353113607751170/B835836D4DB21CA06206BF84EEAAD6B3E6C157CB/",
+      "author": "Flanfy",
+      "description": "~70 investigators for the Arkham Horror LCG from the Magical Girl Raising Project light novel series, written by Asari Endou and illustrated by Marui-no."
     },
     {
       "name": "Fan Investigators: Mass Effect",
       "url": "fancreations/investigators_mass_effect.json",
       "replace": "b82c6f",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
-      "description": ""
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1667985852037525429/FFCBAFD8EF7EFD1127F4482DF01FFD8AE9638B4D/",
+      "author": "Erdjo",
+      "description": "Mass Effect characters come to life in Arkham Horror LCG as playable investigators. The mod includes Shepard and all 19 squad members (but not Morinth)."
     },
     {
       "name": "Fan Investigators: Maximillion Pegasus",
       "url": "fancreations/investigators_maximillion_pegasus.json",
       "replace": "1fb7ce",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1684870715280907223/1E9DE758F089D7F880ADC8CA594F9AA938743F8B/",
+      "author": "Game",
       "description": ""
     },
     {
@@ -456,78 +464,90 @@
       "url": "fancreations/investigators_nightmare_town.json",
       "replace": "e32a71",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
+      "boxart": "https://i.imgur.com/ftafgpa.pnghttps://i.imgur.com/ftafgpa.png",
+      "author": "The Popest",
       "description": ""
     },
     {
       "name": "Fan Investigators: Night of Vespers",
       "url": "fancreations/investigators_vespers.json",
-      "replace": "1ee775"
+      "replace": "1ef775",
+      "boxsize": "small",
+      "boxart": "https://i.imgur.com/SIA4QST.jpghttps://i.imgur.com/SIA4QST.jpg",
+      "author": "aughhhh",
+      "description": "Night of Vespers is a fanmade player card expansion for the Arkham Horror LCG, consisting of 126 new cards for players to use."
     },
     {
       "name": "Fan Investigators: Pokemon: Eldritch Edition",
       "url": "fancreations/investigators_pokemon_eldritch_edition.json",
       "replace": "1fb7ce",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
-      "description": ""
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1597043896926982160/40A0068DAB05395205E184765110430CAADDA2CF/",
+      "author": "Goober",
+      "description": "Pokemon: Eldritch Edition includes a full 6-scenario campaign, 2 side-stories, 5 new investigators and a whole ton of player cards, and rules for adding wild Pokemon to any campaign."
     },
     {
       "name": "Fan Investigators: Poirot Investigator",
       "url": "fancreations/investigators_poirot.json",
-      "replace": "13abab"
+      "replace": "13abab",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1870696131168385409/48A07CF6F003EDDBE863547AC3F0604B45EE14E1/",
+      "author": "TheBeard",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Rabbit Hole Expansion",
       "url": "fancreations/investigators_rabbit_hole.json",
       "replace": "b7ff06",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
-      "description": ""
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1862800022614300553/046FEA88FB8D4DB6BE0AC9898149058EF32BFD0A/",
+      "author": "Mint Tea Fan",
+      "description": "Player cards that are upgrades and downgrades of official Arkham cards."
     },
     {
       "name": "Fan Investigators: The Red Coterie",
       "url": "fancreations/investigators_red_coterie.json",
       "replace": "de13e3",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2062129724651762962/3EE544183397D062C39D90FAE8E6C0DA6BF6320F/",
+      "author": "Mattastrophic",
       "description": ""
     },
     {
-      "name": "Fan Investigators: The Sands of Memphis",
+      "name": "Fan Investigators: The Sands of Memphis Investigator Expansion",
       "url": "fancreations/investigators_memphis.json",
-      "replace": "073201"
+      "replace": "073201",
+      "boxsize": "big",
+      "boxart": "https://i.imgur.com/etJMio6.png",
+      "author": "Myriad (http://arkham.cards)",
+      "description": ""
     },
     {
       "name": "Fan Investigators: The Shadows of Arkham",
       "url": "fancreations/investigators_shadows_of_arkham.json",
       "replace": "2e5eef",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
-      "description": ""
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1697282751257289223/D03666A291CC5705A3656865488583FF4AB762B4/",
+      "author": "Kyo",
+      "description": "Several investigators and player cards"
     },
     {
       "name": "Fan Investigators: Signature Replacements",
       "url": "fancreations/investigators_replacements.json",
       "replace": "b06fd9",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
-      "description": ""
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1754686449895581106/83D855A76FC7568415189A03882317685F6B55EE/",
+      "author": "Mint Tea Fan",
+      "description": "A set of signature replacements for each officially released Arkham investigator."
     },
     {
       "name": "Fan Investigators: Six of Crows Investigator Expansion",
       "url": "fancreations/investigators_six_of_crows.json",
       "replace": "ac6335",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
-      "description": ""
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2040738499780847997/8EB48569F817CB9566D4FB0911C3D0B543B2EA75/",
+      "author": "Mint Tea Fan",
+      "description": "Investigators and player cards from Leigh Bardugo's Grishaverse series."
     },
     {
       "name": "Fan Investigators: Stargate Atlantis: Investigator Expansion",
@@ -539,87 +559,135 @@
       "url": "fancreations/investigators_strange_aeons.json",
       "replace": "d78bd2",
       "boxsize": "small",
-      "boxart": "",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142947772/120E2BA8DF8C4E2AAC9E059FA046CC3A6229ECDF/",
       "author": "",
       "description": ""
     },
     {
       "name": "Fan Investigators: Streets of New Capenna",
       "url": "fancreations/investigators_SNC.json",
-      "replace": "48b4ca"
+      "replace": "48b4ca",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1853807409892957080/8BAF356ADEADE6CF377438200268899C64FA420E/",
+      "author": "Diedie",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Tanya von Degurechaff",
       "url": "fancreations/investigators_tanya_von_degurechaff.json",
-      "replace": "a2a852"
+      "replace": "a2a852",
+      "boxsize": "",
+      "boxart": "",
+      "author": "Flanfy",
+      "description": ""
     },
     {
       "name": "Fan Investigators: Team Fortress 2 Investigators",
       "url": "fancreations/investigators_team_fortress.json",
-      "replace": "ffa5be"
+      "replace": "ffa5be",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1870696131168383945/EFEE83D6005F7AE86D7AB30EEB13553516D17CC7/",
+      "author": "TheBeard",
+      "description": "A set of 10 fan-made investigators based on Team Fortress 2"
     },
     {
       "name": "Fan Investigators: Tintin and Haddock Investigators",
       "url": "fancreations/investigators_tintin_haddock.json",
-      "replace": "662b53"
+      "replace": "662b53",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1870696131168386304/3487BE3FDA8C1798B8DBE3A99A31FBCA793724C1/",
+      "author": "TheBeard",
+      "description": "A pair of fan-made investigators"
     },
     {
       "name": "Fan Investigators: Touhou Project",
       "url": "fancreations/investigators_touhou_project.json",
       "replace": "c5c294",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
-      "description": ""
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1697277697641042816/D60194A8F22DA3032E6C2AC2EE040E6321A2B259/",
+      "author": "CuddlyZombie",
+      "description": "A set of five custom investigators based off the Touhou Project franchise"
     },
     {
       "name": "Fan Investigators: Weird West",
       "url": "fancreations/investigators_weird_west.json",
       "replace": "58ddca",
       "boxsize": "small",
-      "boxart": "",
-      "author": "",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1697276706767572704/331469F5EAD01108E83C7662B9949F4AC3D00313/",
+      "author": "Samirashul",
       "description": ""
-    },
-    {
-      "name": "Fan Campaign: Alice in Wonderland",
-      "url": "fancreations/campaign_alice_in_wonderland.json",
-      "replace": "39916d"
-    },
-    {
-      "name": "Fan Campaign: The Approaching Storm",
-      "url": "fancreations/campaign_approaching_storm.json",
-      "replace": "ab6b9a"
     },
     {
       "name": "Fan Campaign: Ages Unwound",
       "url": "fancreations/campaign_ages_unwound.json",
-      "replace": "f7e5eb"
+      "replace": "f7e5eb",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1811004822724765158/DE184EBA95BF16D06DC2528B30E9058A87C7567E/",
+      "author": "Olivia Juliet",
+      "description": "Timey Wimey Campaign, now with actual dinosaurs! Everyone loves dinosaurs (for some reason)."
+    },
+    {
+      "name": "Fan Campaign: Alice in Wonderland",
+      "url": "fancreations/campaign_alice_in_wonderland.json",
+      "replace": "39916d",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1478823218929917964/80063921C2355FE26816A0E40F88D31F9EF5C4A6/",
+      "author": "TheBeard",
+      "description": "Lewis Carroll in (morbidly) wacky, oft-unhinged campaign form"
+    },
+    {
+      "name": "Fan Campaign: The Approaching Storm",
+      "url": "fancreations/campaign_approaching_storm.json",
+      "replace": "ab6b9a",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142917748/FA44959693A82787BC34D6FA2487911AB24E619B/",
+      "author": "Kristofer Bengtsson",
+      "description": "Your duty is to help Dr. Armitage turns into a deadly game of hide and seek, as one of his colleagues is murdered in front of your very eyes."
     },
     {
       "name": "Fan Campaign: Betrayal at the Mountains of Madness",
       "url": "fancreations/campaign_betrayal_at_mountains.json",
-      "replace": "ef939a"
+      "replace": "ef939a",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1479949766318759506/9BAB9C45ECB33AC5A0F83806B5EF79A6D89C1D31/",
+      "author": "Jaxtrasi",
+      "description": "It is 1935. The world has changed, and so have the investigators of Arkham."
     },
     {
       "name": "Fan Campaign: Bloodborne - City of the Unseen",
       "url": "fancreations/campaign_bloodborne.json",
-      "replace": "24fb2b"
+      "replace": "24fb2b",
+      "boxsize": "big",
+      "boxart": "https://i.imgur.com/WtioCq1.jpg",
+      "author": "aughhhh",
+      "description": "You awaken from an illness to an Arkham transformed, but to discover what has happened to your world, you must first survive the Hunt."
     },
     {
       "name": "Fan Campaign: Call of the Plaguebearer",
       "url": "fancreations/campaign_call_of_the_plaguebearer.json",
-      "replace": "613b64"
+      "replace": "613b64",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1767067672754132384/EBC8D780049D2612C6BC0603BD87E94769C34D19/",
+      "author": "Dr. Jack Science",
+      "description": "When mysterious plague-clouds descend upon the city of Arkham, it's up to a group of investigators to unravel the mysteries..."
     },
     {
       "name": "Fan Campaign: Celtic Rising",
       "url": "fancreations/campaign_celtic_rising.json",
-      "replace": "4d305a"
+      "replace": "4d305a",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1754685726010541421/DC8223A713D02261326877B51FC717A9BAA217B8/",
+      "author": "QggOne",
+      "description": "A Celtic themed 5 part cycle aimed at newer players with a smaller collection."
     },
     {
-      "name": "Fan Campaign: Circus Ex Mortis",
+      "name": "Fan Campaign: Circus Ex Mortis Campaign Expansion",
       "url": "fancreations/campaign_circus_ex_mortis.json",
-      "replace": "93b8cb"
+      "replace": "93b8cb",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2001337710389944099/BC4BADD35E9E87F6BC0BAC93F0FCEB168848AAAC/",
+      "author": "TheBeard",
+      "description": "Welcome to the greatest show of your life! The New Moon Circus visits Arkham with a cruel and insidious plot, concerning ancient prophecy and the coming eclipse!"
     },
     {
       "name": "Fan Campaign: Close Encounters of the LV-426 Kind",
@@ -627,154 +695,265 @@
       "replace": "4f5421"
     },
     {
-      "name": "Fan Campaign: The Color Out of Oz",
-      "url": "fancreations/campaign_color_out_of_oz.json",
-      "replace": "be7d21"
+      "name": "Fan Campaign: The Colour Out of Oz",
+      "url": "fancreations/campaign_colour_out_of_oz.json",
+      "replace": "be7d21",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1972044023032948791/D32BECDAF5C9309577EE0CE585E980F62EFBCEF3/",
+      "author": "TheBeard",
+      "description": "The Colour Out of Space crash lands in the magical land of Oz! Join forces with the stalwart citizens of the fairy country to stop the horrible infection!"
     },
     {
       "name": "Fan Campaign: The Crown of Egil",
       "url": "fancreations/campaign_crown_of_egil.json",
-      "replace": "7458b7"
+      "replace": "7458b7",
+      "boxsize": "small",
+      "boxart": "https://i.imgur.com/Vn2CXra.png",
+      "author": "analyzechris",
+      "description": "Iceland is on the verge of celebrating its 1000th year of independence, but trouble is brewing in Reykjavik."
     },
     {
       "name": "Fan Campaign: Cyclopean Foundations",
       "url": "fancreations/campaign_cyclopean_foundations.json",
-      "replace": "169eb9"
+      "replace": "169eb9",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1746813422552975974/8FB3A4AF2D5A102720F630961A2270572ABA2317/",
+      "author": "TheBeard",
+      "description": "The archetypal campaign, with the archetypal Lovecraftian threat. The campaign masterfully uses its unique mechanic pervasively. The perfect counterpart to Alice in Wonderland's wackiness."
     },
     {
       "name": "Fan Campaign: Dark Matter",
       "url": "fancreations/campaign_dark_matter.json",
-      "replace": "d713f4"
+      "replace": "d713f4",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1699532377258479383/73EBF45477C1D927159E5993D99AD144641037EA/",
+      "author": "Axolotl",
+      "description": "It is 2147, and you have just woken up from cryo-sleep in a seemingly abandoned space ship - a deep space adventure across the solar system to prevent the extinction of the human race..."
     },
     {
       "name": "Fan Campaign: Darkham Horror",
       "url": "fancreations/campaign_darkham_horror.json",
-      "replace": "bc7fa7"
+      "replace": "bc7fa7",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1692775970051821718/827267BBD7EFBAD3EA384A5A04629B2E5BD88EE5/",
+      "author": "Frostmaze",
+      "description": "Darkest Dungeon meets Arkham Horror — a match made in hell! An 8-part campaign set in the Darkest Dungeon universe (along with 5 new investigators and player cards)."
     },
     {
       "name": "Fan Campaign: The Dying Star",
       "url": "fancreations/campaign_dying_star.json",
-      "replace": "bcfff6"
+      "replace": "bcfff6",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142922162/AD09D68EC542F778CCA3A4F5B33E17EF50AFE31B/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Campaign: Essence of Humanity",
       "url": "fancreations/campaign_essence_of_humanity.json",
-      "replace": "691339"
+      "replace": "691339",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1823394900012495167/63C400A27475E745FF94F8837D7A8AECC7F837F4/",
+      "author": "Lucaxiom",
+      "description": " An eight-part campaign with an original premise, set in the same timeframe as official Arkham campaigns."
     },
     {
       "name": "Fan Campaign: Future Reflections",
       "url": "fancreations/campaign_future_reflections.json",
-      "replace": "0f0680"
+      "replace": "0f0680",
+      "boxsize": "big",
+      "boxart": "https://i.imgur.com/T97bYDU.pnghttps://i.imgur.com/T97bYDU.png",
+      "author": "Kodab Games",
+      "description": "This is the first 2 scenarios in the Future Reflections campaign, also includes 5 custom investigators."
     },
     {
       "name": "Fan Campaign: The Ghosts of Onigawa",
       "url": "fancreations/campaign_onigawa.json",
-      "replace": "8daa73"
+      "replace": "8daa73",
+      "boxsize": "big",
+      "boxart": "https://github.com/ArkhamDotCards/theghostsofonigawa/blob/main/product/onigawa-boxart-campaign-defuse.png?raw=true",
+      "author": "Myriad (http://arkham.cards)",
+      "description": ""
     },
     {
       "name": "Fan Campaign: Half-Life",
       "url": "fancreations/campaign_half-life.json",
-      "replace": "b46db2"
+      "replace": "b46db2",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2005838229417815473/BC879D878262BA9FBD9040AE4F952468C3C4C2CC/",
+      "author": "TheBeard",
+      "description": "Chaos sweeps over Arkham as portals and monsters rock the city, but this is only a prelude to the horrific events of an alien-dominated future!"
     },
     {
       "name": "Fan Campaign: Heart of Darkness",
       "url": "fancreations/campaign_heart_of_darkness.json",
-      "replace": "cc95ff"
+      "replace": "cc95ff",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2088037933344388834/4ECD1EA2BEA99E4C49F25B6C3077258791E4A9C4/",
+      "author": "Vinn Quest",
+      "description": "Travel deep into the heart of the Congo and navigate its perilous waters aboard the Roi des Belges to discover the Heart of Darkness."
     },
     {
       "name": "Fan Campaign: Idol Thoughts",
       "url": "fancreations/campaign_idol_thoughts.json",
-      "replace": "2d417b"
+      "replace": "2d417b",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1011563111884720834/103D38A8FBBFA64EB66439667F8775B15FC679C9/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Campaign: Into the Shadowlands",
       "url": "fancreations/campaign_into_the_shadowland.json",
-      "replace": "019847"
+      "replace": "019847",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142946871/EAA18FFE753B1ED020A9F3117E9654B093369D26/",
+      "author": "John H",
+      "description": "Prepare to unravel a new mistery in the Arkham Universe..."
     },
     {
       "name": "Fan Campaign: Jumanji",
       "url": "fancreations/campaign_jumanji.json",
-      "replace": "b46db2"
+      "replace": "b46db2",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1847049778276522891/B0F1D72796E5A43963B6EFA6B7FD870A89B139AF/",
+      "author": "TheBeard",
+      "description": "This is a 4-part mini-campaign for Arkham Horror: The Card Game based on the book by Chris van Allsburg and the 1995 movie adaptation of the book."
     },
     {
       "name": "Fan Campaign: Kaimonogatari",
       "url": "fancreations/campaign_kaimonogatari.json",
-      "replace": "2df25a"
-    },
-    {
-      "name": "Fan Campaign: Kiedy sny Stają się Rzeczywiścią",
-      "url": "fancreations/campaign_kiedy_sny_staj%C4%85_si%C4%99_rzeczywi%C5%9Bci%C4%85.json",
-      "replace": "acdf16"
+      "replace": "2df25a",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1673610640345018565/0AFEB7913AD4F24AA04D2CB7DCD97106F58D33D9/",
+      "author": "toastsushi (Makima)",
+      "description": "8-part fan-made campaign"
     },
     {
       "name": "Fan Campaign: The London Set",
       "url": "fancreations/campaign_london_set.json",
-      "replace": "0f96ac"
+      "replace": "0f96ac",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142939236/70113DAB44263CD5EA5A0913B4325A57B8113A4C/",
+      "author": "Visitor92",
+      "description": "3-part fan-made campaign"
     },
     {
       "name": "Fan Campaign: Machining a Mystery",
       "url": "fancreations/campaign_machining_a_mystery.json",
-      "replace": "79b36d"
+      "replace": "79b36d",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1860561550045252585/5B883A570DB12EF90E66C9AC83D48B64A397F27D/",
+      "author": "PuertoMateo",
+      "description": "A 7-scenario campaign inspired by Shadowrun, Steampunk, and Cyberpunk with a splash of Lovecraft-ian mythos."
     },
     {
       "name": "Fan Campaign: North Country Cycle",
       "url": "fancreations/campaign_north_country_cycle.json",
-      "replace": "aaceca"
+      "replace": "aaceca",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142942211/3504BAF688D57DC30E7E1E2009A0FD4951D3BA58/",
+      "author": "Tim Cox (rushl)",
+      "description": "Primarily focused on lumber, the citizens of Wrotham have lived a peaceful existence. But now, they face a horror beyond their abilities. Can you help?"
     },
     {
       "name": "Fan Campaign: Of Sphinx and Sands",
       "url": "fancreations/campaign_of_sphinx_and_sands.json",
-      "replace": "edb650"
+      "replace": "edb650",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1705159936395227290/3E915F544AB47D63A4B1D05B0412216586EFA34A/",
+      "author": "M M (Mat628)",
+      "description": "You have just received a frenzied call from your good friend, Francis Morgan. He urges you to go to a museum in Beacon Hill in Boston to recover a relic he needs..."
     },
     {
       "name": "Fan Campaign: Ordo Templi Orientis",
       "url": "fancreations/campaign_ordo_templi_orientis.json",
-      "replace": "608bea"
-    },
-    {
-      "name": "Fan Campaign: Parallel Universe",
-      "url": "fancreations/campaign_parallel_universe.json",
-      "replace": "28e0a1"
-    },
-    {
-      "name": "Fan Campaign: Pokemon Eldritch Edition",
-      "url": "fancreations/campaign_pokemon_eldrich_edition.json",
-      "replace": "75fe78"
-    },
-    {
-      "name": "Fan Campaign: The (Unofficial) Return to the Innsmouth Conspiracy",
-      "url": "fancreations/campaign_unofficial_return_to_tic.json",
-      "replace": "bba2b6"
-    },
-    {
-      "name": "Fan Campaign: The Sands of Memphis",
-      "url": "fancreations/campaign_memphis.json",
-      "replace": "2634e3"
-    },
-    {
-      "name": "Fan Campaign: Souls of Darkness",
-      "url": "fancreations/campaign_souls_of_darkness.json",
-      "replace": "a94e6b"
-    },
-    {
-      "name": "Fan Campaign: Strange Aeons",
-      "url": "fancreations/campaign_strange_aeons.json",
-      "replace": "2abdd6"
+      "replace": "608bea",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1017195498765395843/F0F85DBE17C72D5D09BD012DEDBB9E154EB07E7B/",
+      "author": "Mathieu Martin",
+      "description": "The Ordo Templi Orientis is a 4-part campaign."
     },
     {
       "name": "Fan Campaign: The Outsider",
       "url": "fancreations/campaign_outsider.json",
-      "replace": "3c175c"
+      "replace": "3c175c",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142944372/7F67F8FDAD99C9C2A6A6A5E98C548681117D092C/",
+      "author": "Carl Stephens (CapitalBathory)",
+      "description": "A 3-part fan-made campaign"
+    },
+    {
+      "name": "Fan Campaign: Parallel Universe",
+      "url": "fancreations/campaign_parallel_universe.json",
+      "replace": "28e0a1",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142944953/7A5D3A94BF4A7798157C999A3E1CEAAFC3652CAC/",
+      "author": "mvl4d",
+      "description": "A 3-part fan-made campaign"
+    },
+    {
+      "name": "Fan Campaign: Pokemon Eldritch Edition",
+      "url": "fancreations/campaign_pokemon_eldrich_edition.json",
+      "replace": "75fe78",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1597043896926982160/40A0068DAB05395205E184765110430CAADDA2CF/",
+      "author": "Goober",
+      "description": "Pokemon: Eldritch Edition includes a full 6-scenario campaign, 2 side-stories, 5 new investigators and a whole ton of player cards, and rules for adding wild Pokemon to any campaign."
+    },
+    {
+      "name": "Fan Campaign: The (Unofficial) Return to the Innsmouth Conspiracy",
+      "url": "fancreations/campaign_unofficial_return_to_tic.json",
+      "replace": "bba2b6",
+      "boxsize": "wide",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2021606446230436832/9485F353EEE9717261DC545E0AE772A33A9E7E73/",
+      "author": "DerBK",
+      "description": "This is a fan-made expansion that is meant to show what a Return to Innsmouth could've looked like, if it would have been released."
+    },
+    {
+      "name": "Fan Campaign: The Sands of Memphis",
+      "url": "fancreations/campaign_memphis.json",
+      "replace": "2634e3",
+      "boxsize": "big",
+      "boxart": "https://i.imgur.com/uGpKv09.png",
+      "author": "Myriad (http://arkham.cards)",
+      "description": ""
+    },
+    {
+      "name": "Fan Campaign: Souls of Darkness",
+      "url": "fancreations/campaign_souls_of_darkness.json",
+      "replace": "a94e6b",
+      "boxsize": "small",
+      "boxart": "https://i.ibb.co/SrtzMNN/souls-of-darkness.png",
+      "author": "JackOfHearts",
+      "description": "The death of a mysterious collector and the relics of his estate have brought an ancient mystery to Arkham."
+    },
+    {
+      "name": "Fan Campaign: Strange Aeons",
+      "url": "fancreations/campaign_strange_aeons.json",
+      "replace": "2abdd6",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142947772/120E2BA8DF8C4E2AAC9E059FA046CC3A6229ECDF/",
+      "author": "",
+      "description": ""
     },
     {
       "name": "Fan Campaign: The War of the Worlds",
       "url": "fancreations/campaign_war_of_the_world.json",
-      "replace": "19d469"
+      "replace": "19d469",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1461933574036562700/261026F89C2322BF6390608AAB7DE43BEFB6240A/",
+      "author": "TheBeard",
+      "description": "A fanmade 3-part campaign for the Arkham Horror LCG for 1-4 players based on H.G. Wells' The War of the Worlds."
     },
     {
       "name": "Fan Campaign: Winter Winds",
       "url": "fancreations/campaign_winter_winds.json",
-      "replace": "754057"
+      "replace": "754057",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142974098/BF07864708BDE2804C0495637DDD55E85CC883EA/",
+      "author": "Nicholas Kory",
+      "description": "A fanmade 3-part campaign"
     },
     {
       "name": "Fan Scenario: Against the Wendigo",
@@ -824,7 +1003,8 @@
     {
       "name": "Fan Scenario: Cosmic Pantheon",
       "url": "fancreations/scenario_cosmic_pantheon.json",
-      "replace": "ec74df"
+      "replace": "ec74df",
+      "description": "3 alternative factions that can be mix and matched with the 3 existing factions of War of the Outer Gods standalone."
     },
     {
       "name": "Fan Scenario: Darkness Falls",
