@@ -3186,7 +3186,7 @@
               },
               "Nickname": "Unhallowed Land",
               "Description": "Unhallowed.",
-              "GMNotes": "{\n  \"id\": \"81017\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\r\n  \"id\": \"81017\",\r\n  \"type\": \"Location\",\r\n  \"traits\": \"Unhallowed.\",\r\n  \"cycle\": \"Standalone\",\r\n  \"locationFront\": {\r\n    \"icons\": \"SlantedEquals\",\r\n    \"connections\": \"SlantedEquals|Hourglass\"\r\n  },\r\n  \"locationBack\": {\r\n    \"icons\": \"SlantedEquals\",\r\n    \"connections\": \"SlantedEquals|Hourglass\",\r\n    \"victory\": 1,\r\n    \"uses\": [\r\n      {\r\n        \"countPerInvestigator\": 1,\r\n        \"type\": \"Clue\",\r\n        \"token\": \"clue\"\r\n      }\r\n    ]\r\n  }\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3247,7 +3247,7 @@
               },
               "Nickname": "Unhallowed Land",
               "Description": "Unhallowed.",
-              "GMNotes": "{\n  \"id\": \"81018\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\r\n  \"id\": \"81018\",\r\n  \"type\": \"Location\",\r\n  \"traits\": \"Unhallowed.\",\r\n  \"cycle\": \"Standalone\",\r\n  \"locationFront\": {\r\n    \"icons\": \"SlantedEquals\",\r\n    \"connections\": \"SlantedEquals|Hourglass\"\r\n  },\r\n  \"locationBack\": {\r\n    \"icons\": \"SlantedEquals\",\r\n    \"connections\": \"SlantedEquals|Hourglass\"\r\n  }\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
