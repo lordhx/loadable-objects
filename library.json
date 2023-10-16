@@ -1088,15 +1088,6 @@
       "description": "Match wits with Griffin, a murderous chemist who has discovered the secrets of invisibility!"
     },
     {
-      "name": "Fan Scenario: Last Call at Roxie's",
-      "url": "fancreations/scenario_last_call_at_roxies.json",
-      "replace": "c6a1ca",
-      "boxsize": "small",
-      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142938527/354E6204BB01AED91EAEB19D99E4D95620F99C56/",
-      "author": "",
-      "description": "An Android Universe crossover adventure"
-    },
-    {
       "name": "Fan Scenario: The Legend of Sleepy Hollow",
       "url": "fancreations/scenario_sleepy_hollow.json",
       "replace": "0500f1",
