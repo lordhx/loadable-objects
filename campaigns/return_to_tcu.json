@@ -32876,7 +32876,7 @@
                   },
                   "Nickname": "Dark Knowledge (v. II)",
                   "Description": "Act 1",
-                  "GMNotes": "{\n  \"id\": \"05288a\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"05288a\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -33316,7 +33316,7 @@
                   },
                   "Nickname": "Dark Knowledge (v. I)",
                   "Description": "Act 1",
-                  "GMNotes": "{\n  \"id\": \"05286a\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"05286a\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
