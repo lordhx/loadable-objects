@@ -404,7 +404,7 @@
       "description": ""
     },
     {
-      "name": "Fan Investigators: The Ghosts of Onigawa",
+      "name": "Fan Investigators: The Ghosts of Onigawa Investigator Expansion",
       "url": "fancreations/investigators_onigawa.json",
       "replace": "238773",
       "boxsize": "big",
@@ -494,7 +494,7 @@
       "description": "Night of Vespers is a fanmade player card expansion for the Arkham Horror LCG, consisting of 126 new cards for players to use."
     },
     {
-      "name": "Fan Investigators: Pokemon: Eldritch Edition",
+      "name": "Fan Investigators: Pokemon Eldritch Edition Investigator Expansion",
       "url": "fancreations/investigators_pokemon_eldritch_edition.json",
       "replace": "1fb7ce",
       "boxsize": "small",
@@ -782,7 +782,7 @@
       "description": "This is the first 2 scenarios in the Future Reflections campaign, also includes 5 custom investigators."
     },
     {
-      "name": "Fan Campaign: The Ghosts of Onigawa",
+      "name": "Fan Campaign: The Ghosts of Onigawa Campaign Expansion",
       "url": "fancreations/campaign_onigawa.json",
       "replace": "8daa73",
       "boxsize": "big",
@@ -908,7 +908,7 @@
       "description": "A 3-part fan-made campaign"
     },
     {
-      "name": "Fan Campaign: Pokemon Eldritch Edition",
+      "name": "Fan Campaign: Pokemon Eldritch Edition Campaign Expansion",
       "url": "fancreations/campaign_pokemon_eldrich_edition.json",
       "replace": "75fe78",
       "boxsize": "small",
@@ -926,7 +926,7 @@
       "description": "This is a fan-made expansion that is meant to show what a Return to Innsmouth could've looked like, if it would have been released."
     },
     {
-      "name": "Fan Campaign: The Sands of Memphis",
+      "name": "Fan Campaign: The Sands of Memphis Campaign Expansion",
       "url": "fancreations/campaign_memphis.json",
       "replace": "2634e3",
       "boxsize": "big",
