@@ -293,7 +293,11 @@
     {
       "name": "Fan Investigators: Bad Batch",
       "url": "fancreations/investigators_bad_batch.json",
-      "replace": "0a1d16"
+      "replace": "0a1d16",
+      "boxsize": "",
+      "boxart": "",
+      "author": "TastyToast",
+      "description": "A set of 6 investigators based on the Bad Batch (Star Wars). If you have anything to say about them, you can always reach me on discord at TastyToast#2882."
     },
     {
       "name": "Fan Investigators: Battle Goes On",
