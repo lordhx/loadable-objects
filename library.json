@@ -237,6 +237,15 @@
       "description": "Roland is quickly becoming a thorn in Mr. Grey’s side and, if the politician’s underlings don’t deal with him, Mr. Grey will confront Roland himself."
     },
     {
+      "name": "Challenge Scenario: Laid to Rest",
+      "url": "scenarios/challenge_laid_to_rest.json",
+      "replace": "e2dd57",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2115061845788468343/B7611EC7DCD2008B87D6518EBEFF0AD36EFE5B54/",
+      "author": "Fantasy Flight Games",
+      "description": "It was the dead who led you to Arkham. You eke out a living playing your father’s trumpet. The dead get louder when you play. Sometimes they even compliment your music..."
+    },
+    {
       "name": "Challenge Scenario: Read or Die",
       "url": "scenarios/challenge_read_or_die.json",
       "replace": "9e73fa",
