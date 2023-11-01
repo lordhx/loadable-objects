@@ -1007,8 +1007,17 @@
       "replace": "e57017",
       "boxsize": "small",
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1474319121422110285/8BA9D8C5CFA6D4E35DFC2077002CB2256DCFB2D7/",
-      "author": "Mattastrophic ",
+      "author": "Mattastrophic",
       "description": ""
+    },
+    {
+      "name": "Fan Scenario: Code Red at Bleeding Heart",
+      "url": "fancreations/scenario_code_red_at_bleeding_heart.json",
+      "replace": "cddc89",
+      "boxsize": "small",
+      "boxart": "https://github.com/ArkhamDotCards/coderedatbleedingheart/blob/main/product/enUS/coderedatbleedingheart-boxart-diffuse.png?raw=true",
+      "author": "Myriad (http://arkham.cards)",
+      "description": "After receiving some mysterious communications from the decrepit ruins of Bleeding Heart on the outskirts of Arkham, the investigators attempt to investigate the abandoned hospital campus."
     },
     {
       "name": "Fan Scenario: The Colour out of Space",
