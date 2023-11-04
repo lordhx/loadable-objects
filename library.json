@@ -309,6 +309,15 @@
       "description": "A set of 6 investigators based on the Bad Batch (Star Wars). If you have anything to say about them, you can always reach me on discord at TastyToast#2882."
     },
     {
+      "name": "Fan Investigators: Baldur's Gate III",
+      "url": "fancreations/investigators_baldurs_gate_3.json",
+      "replace": "c0e21c",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2117314083163063648/B404BC484394C1B241A97479C3A1FDC8D33ADE2F/",
+      "author": "Mint Tea Fan",
+      "description": "331 Player Cards with 12 New Investigators from Baldur's Gate III by Larian Studios based off the Dungeons and Dragons 5e system. Alpha testing, with large changes to be expected."
+    },
+    {
       "name": "Fan Investigators: Battle Goes On",
       "url": "fancreations/investigators_battle_goes_on.json",
       "replace": "dd90c5",
