@@ -363,6 +363,15 @@
       "description": "This contains ten lore-friendly investigators loosely inspired by the gameplay defining mechanics introduced in the Ravnica: City of Guilds expansion for Magic the Gathering."
     },
     {
+      "name": "Fan Investigators: City of Secrets II",
+      "url": "fancreations/investigators_city_of_secrets_II.json",
+      "replace": "8b4846",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2228779642342349529/63EEF2B5FB78509AC67041711EFBE0AE41709906/",
+      "author": "aughhhh",
+      "description": "This contains ten more lore-friendly investigators loosely inspired by the gameplay defining mechanics introduced in the Ravnica: City of Guilds expansion for Magic the Gathering."
+    },
+    {
       "name": "Fan Investigators: Dead Space Investigators",
       "url": "fancreations/investigators_dead_space.json",
       "replace": "880860",
@@ -1189,6 +1198,15 @@
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1254763972105175718/5A09C7E8EBCC79DD9E405FF6F83E49C2C27D5F29/",
       "author": "Axolotl",
       "description": "Investigators must discover 'The Symphony of Erich Zann' and uncover the mystery behind the disappearance of the titular violist."
+    },
+    {
+      "name": "Fan Scenario: 'Tis The Season'",
+      "url": "fancreations/scenario_tis_the_season.json",
+      "replace": "27e0c6",
+      "boxsize": "small",
+      "boxart": "https://i.ibb.co/hf2YLHM/tis-the-season.jpghttps://i.ibb.co/hf2YLHM/tis-the-season.jpg",
+      "author": "Frying Tonight",
+      "description": "An unnatural shopping fever has struck Arkham in the festive season, and its up to you to find out who or what is responsible. Be good for goodness sake!"
     },
     {
       "name": "Fan Scenario: The Undying",
