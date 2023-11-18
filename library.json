@@ -885,6 +885,15 @@
       "description": "3-part fan-made campaign"
     },
     {
+      "name": "Fan Campaign: Lovecrafter 3077",
+      "url": "fancreations/campaign_lovecrafter_3077.json",
+      "replace": "af9222",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2021595193343607768/9E785393E5B5AA1B6418491CAD6BCEF9EB35B62D/",
+      "author": "RudeRugg",
+      "description": "A heavily cyber-modded femme fatale hires you to uncover the truth behind her sister’s recent death. Are you ready to be undone?"
+    },
+    {
       "name": "Fan Campaign: Machining a Mystery",
       "url": "fancreations/campaign_machining_a_mystery.json",
       "replace": "79b36d",
