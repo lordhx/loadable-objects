@@ -1,8 +1,8 @@
 {
-  "latestVersion": "3.3.0",
+  "latestVersion": "3.4.0",
   "releaseHighlights": [
-    "Added support for 2023-08-30 taboo list",
-    "Added previewed cards from Feast of Hemlock Vale",
-    "Various QoL changes"
+    "Revamped menu for custom content",
+    "Added new parallel investigators",
+    "Added new hotkeys, tools and helpers"
   ]
 }
