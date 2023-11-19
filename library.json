@@ -1164,6 +1164,15 @@
       "description": "When the Happiest Place on Earth shows up outside Arkham, surely nothing sinister could be happening, right?"
     },
     {
+      "name": "Fan Scenario: Mythos Deviations",
+      "url": "fancreations/scenario_mythos_deviations.json",
+      "replace": "b8b362",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2001339086541828858/7DBEB3EAB13A1649AAFA956C28BE64A897006EA4/",
+      "author": "TheBeard",
+      "description": "A set of six fanmade scenarios and six investigators to integrate into the first six official campaigns."
+    },
+    {
       "name": "Fan Scenario: The Nameless City",
       "url": "fancreations/scenario_the_nameless_city.json",
       "replace": "9d3083",
