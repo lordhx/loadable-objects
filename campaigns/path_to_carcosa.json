@@ -719,7 +719,7 @@
               },
               "Nickname": "Secrets Better Left Hidden",
               "Description": "Agenda 3",
-              "GMNotes": "{\n  \"id\": \"03123\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 3,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"03123\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 0, \n  \"doomThresholdPerInvestigator\": 3, \n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -780,7 +780,7 @@
               },
               "Nickname": "Ransacking the Manor",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"03122\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"03122\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 0, \n  \"doomThresholdPerInvestigator\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -841,7 +841,7 @@
               },
               "Nickname": "The Truth is Hidden",
               "Description": "Agenda 1",
-              "GMNotes": "{\n  \"id\": \"03121\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"03121\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 0, \n  \"doomThresholdPerInvestigator\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,

@@ -32451,7 +32451,7 @@
               },
               "Nickname": "Realities Interwoven",
               "Description": "Agenda 3",
-              "GMNotes": "{\n  \"id\": \"06336\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 11,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"06336\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 11, \n  \"doomThresholdPerInvestigator\": 2, \n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -32512,7 +32512,7 @@
               },
               "Nickname": "A Trail of Twists",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"06335\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 9,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"06335\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 9, \n  \"doomThresholdPerInvestigator\": 2, \n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -32573,7 +32573,7 @@
               },
               "Nickname": "The Bridge of Webs",
               "Description": "Agenda 1",
-              "GMNotes": "{\n  \"id\": \"06334\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"06334\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 7, \n  \"doomThresholdPerInvestigator\": 2, \n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
