@@ -3661,7 +3661,7 @@
           },
           "Nickname": "Your Deadline Nears",
           "Description": "Agenda 2",
-          "GMNotes": "{\n  \"id\": \"90034\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 8,\n  \"cycle\": \"Standalone\"\n}",
+          "GMNotes": "{\n  \"id\": \"90034\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
