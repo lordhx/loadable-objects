@@ -3394,7 +3394,7 @@
               },
               "Nickname": "The Temple Warden",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"04056\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 12,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04056\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 12,\n  \"doomThresholdPerInvestigator\": 1, \n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8143,7 +8143,7 @@
               },
               "Nickname": "Eyes in the Dark",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"04212\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 12,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04212\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 12,\n  \"doomThresholdPerInvestigator\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -13906,7 +13906,7 @@
               },
               "Nickname": "The Temple Warden",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"04056\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 12,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04056\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 12, \n  \"doomThresholdPerInvestigator\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -13967,7 +13967,7 @@
               },
               "Nickname": "Something Stirs...",
               "Description": "Agenda 1",
-              "GMNotes": "{\n  \"id\": \"04055\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"04055\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 6,\n  \"doomThresholdPerInvestigator\": 1, \n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
