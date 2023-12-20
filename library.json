@@ -534,6 +534,15 @@
       "description": "Night of Vespers is a fanmade player card expansion for the Arkham Horror LCG, consisting of 126 new cards for players to use."
     },
     {
+      "name": "Fan Investigators: Ordinary Citizens",
+      "url": "fancreations/investigators_ordinary_citizens.json",
+      "replace": "099e93",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2277196591829440473/9D08E367CA8792D5F9E092346C261B2EF8318C9F/",
+      "author": "HatfulBob",
+      "description": "A standard personal investigator expansion with normal fellas & gals as fun investigators to expand any collection! This includes six brand new investigators."
+    },
+    {
       "name": "Fan Investigators: Pokemon Eldritch Edition Investigator Expansion",
       "url": "fancreations/investigators_pokemon_eldritch_edition.json",
       "replace": "1fb7ce",
