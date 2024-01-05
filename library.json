@@ -264,6 +264,15 @@
       "description": "Wendy is dead-set on finding her father. With a Mysterious Photo as your primary tool, Wendy must find her way through the treacherous town of Innsmouth and try to gather information..."
     },
     {
+      "name": "Challenge Scenario: Relics of the Past",
+      "url": "scenarios/challenge_relics_of_the_past.json",
+      "replace": "0d6da1",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2299716459828640802/A224024254ABCFB818F12B50C1E5E0B32060F972/",
+      "author": "Fantasy Flight Games",
+      "description": "To better understand our future, we must first understand our past. Monterey Jack heard of the Miskatonic University's failed expedition to the jungles of Mexico. He packs his bags and makes plans for his own expedition."
+    },
+    {
       "name": "Barkham Horror: The Meddling of Meowlathotep",
       "url": "scenarios/meddling_of_meowlathotep.json",
       "replace": "d02940",
