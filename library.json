@@ -930,6 +930,15 @@
       "description": "A 7-scenario campaign inspired by Shadowrun, Steampunk, and Cyberpunk with a splash of Lovecraft-ian mythos."
     },
     {
+      "name": "Fan Campaign: The Matter of Britain",
+      "url": "fancreations/campaign_the_matter_of_britain.json",
+      "replace": "abaca9",
+      "boxsize": "small",
+      "boxart": "https://i.ibb.co/1GLSncs/title.jpg",
+      "author": "Frying Tonight",
+      "description": "An 8 part campaign for Arkham Horror LCG based on the legend of King Arthur."
+    },
+    {
       "name": "Fan Campaign: North Country Cycle",
       "url": "fancreations/campaign_north_country_cycle.json",
       "replace": "aaceca",
@@ -1099,6 +1108,15 @@
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1844797993644656426/EC19A65BD3119D5FA229F502D65D1D8DAA9E0ECB/",
       "author": "Mint Tea Fan & hauke",
       "description": "3 alternative factions that can be mix and matched with the 3 existing factions of War of the Outer Gods standalone."
+    },
+    {
+      "name": "Fan Scenario: Defense of the Arkham",
+      "url": "fancreations/scenario_dota.json",
+      "replace": "6c624c",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2263686345571716058/8ECAB46AC0E87AED3685E06354E8F26EDD7F8CFD/",
+      "author": "Rei",
+      "description": "Standalone scenario very losely based on MOBAs and DoTA, mostly drawing from it as a source of inspiration."
     },
     {
       "name": "Fan Scenario: Delta Green Convergence",
