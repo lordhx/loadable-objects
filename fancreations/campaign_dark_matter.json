@@ -22896,7 +22896,7 @@
               },
               "Nickname": "Agenda 3",
               "Description": "",
-              "GMNotes": "{\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 3}",
+              "GMNotes": "{\n  \"type\": \"Agenda\", \n  \"victory\": 1, \n  \"class\": \"Mythos\",\n  \"doomThreshold\": 5}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
