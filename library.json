@@ -417,6 +417,15 @@
       "description": ""
     },
     {
+      "name": "Fan Investigators: Erik's Rogues",
+      "url": "fancreations/investigators_flanfy_original_gators.json",
+      "replace": "e4169b",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2004702731853000680/0A438E16959C3D695C4C33AA5312C099CC8938B0/",
+      "author": "Erik T.",
+      "description": "A set of 5 custom Arkham Horror Living Card Game investigators for the rogue class."
+    },
+    {
       "name": "Fan Investigators: Flanfy's Original Gators",
       "url": "fancreations/investigators_flanfy_original_gators.json",
       "replace": "490567",
