@@ -7116,7 +7116,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -7665,7 +7665,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -7970,7 +7970,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -31218,7 +31218,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -31279,7 +31279,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -32255,7 +32255,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -41447,7 +41447,7 @@
               },
               "Nickname": "Lodge Neophyte",
               "Description": "Humanoid. Cultist. Silver Twilight.",
-              "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -41752,7 +41752,7 @@
               },
               "Nickname": "Lodge Neophyte",
               "Description": "Humanoid. Cultist. Silver Twilight.",
-              "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -42240,7 +42240,7 @@
               },
               "Nickname": "Lodge Neophyte",
               "Description": "Humanoid. Cultist. Silver Twilight.",
-              "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -42914,7 +42914,7 @@
           },
           "Nickname": "Senator Nathaniel Rhodes",
           "Description": "Adept Politician",
-          "GMNotes": "{\n  \"id\": \"54025\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+          "GMNotes": "{\r\n  \"id\": \"54025\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\r\n  \"uses\": [\r\n    {\r\n      \"countPerInvestigator\": 1,\r\n      \"type\": \"Clue\",\r\n      \"token\": \"clue\"\r\n    }\r\n  ],\r\n  \"cycle\": \"Standalone\"\r\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -50944,7 +50944,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -51005,7 +51005,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -51066,7 +51066,7 @@
                   },
                   "Nickname": "Lodge Neophyte",
                   "Description": "Humanoid. Cultist. Silver Twilight.",
-                  "GMNotes": "{\n  \"id\": \"05095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\r\n  \"id\": \"05095\",\r\n  \"type\": \"Enemy\",\r\n  \"class\": \"Mythos\",\r\n  \"traits\": \"Humanoid. Cultist. Silver Twilight.\", \r\n  \"uses\": [\r\n    {\r\n      \"count\": 1,\r\n      \"type\": \"Doom\",\r\n      \"token\": \"doom\"\r\n    }\r\n  ],\r\n  \"cycle\": \"The Circle Undone\"\r\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
