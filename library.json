@@ -336,6 +336,15 @@
       "description": "Expansion that is based on a game mode that's recently added to Sanguosha - includes animated cards!"
     },
     {
+      "name": "Fan Investigators: Blood of Drakul Investigator Expansion",
+      "url": "fancreations/investigators_blood_of_drakul.json",
+      "replace": "260b82",
+      "boxsize": "big",
+      "boxart": "https://raw.githubusercontent.com/ArkhamDotCards/thebloodofdrakul/main/product/enUS/drakul-boxart-investigator-defuse-enUS.png",
+      "author": "Myriad (http://arkham.cards)",
+      "description": "This is a little more 'fantastical' than vanilla Arkham typically gets, but obviously there are a lot of good horror tropes to mine from the castlevania/bloodborne milleu and this tries to integrate some of those ideas in an original way."
+    },
+    {
       "name": "Fan Investigators: Buffy the Vampire Slayer",
       "url": "fancreations/investigators_buffy.json",
       "replace": "6bf40f",
@@ -696,6 +705,15 @@
       "description": ""
     },
     {
+      "name": "Fan Investigators: Witcher Horror",
+      "url": "fancreations/investigators_witcher_horror.json",
+      "replace": "af500c",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2365021141226343347/81F13F2784F997606E8D80AF3B3F54EE8F59628B/",
+      "author": "Ubique Sajan",
+      "description": "Custom investigator expansion to Arkham Horror LCG - around 180 card that are based on the Witcher."
+    },
+    {
       "name": "Fan Campaign: Ages Unwound",
       "url": "fancreations/campaign_ages_unwound.json",
       "replace": "f7e5eb",
@@ -739,6 +757,15 @@
       "boxart": "https://i.imgur.com/WtioCq1.jpg",
       "author": "aughhhh",
       "description": "You awaken from an illness to an Arkham transformed, but to discover what has happened to your world, you must first survive the Hunt."
+    },
+    {
+      "name": "Fan Investigators: Blood of Drakul Campaign Expansion",
+      "url": "fancreations/campaign_blood_of_drakul.json",
+      "replace": "993e83",
+      "boxsize": "big",
+      "boxart": "https://github.com/ArkhamDotCards/thebloodofdrakul/blob/main/product/enUS/drakul-boxart-campaign-defuse-enUS.png?raw=true",
+      "author": "Myriad (http://arkham.cards)",
+      "description": "This is a little more 'fantastical' than vanilla Arkham typically gets, but obviously there are a lot of good horror tropes to mine from the castlevania/bloodborne milleu and this tries to integrate some of those ideas in an original way."
     },
     {
       "name": "Fan Campaign: Call of the Plaguebearer",
