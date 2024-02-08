@@ -1,0 +1,45 @@
+{
+  "GUID": "tfohvc",
+  "Name": "Notecard",
+  "Transform": {
+    "posX": 12.25,
+    "posY": 1.55149889,
+    "posZ": -36.014,
+    "rotX": 2.05623127E-08,
+    "rotY": 90.00001,
+    "rotZ": 7.052913E-08,
+    "scaleX": 1.5,
+    "scaleY": 1.0,
+    "scaleZ": 1.5
+  },
+  "Nickname": "The Feast of Hemlock Vale - Campaign",
+  "Description": "\nThe campaign expansion is currently being worked on :)\n\nGive us some time for scanning, straightening, adding metadata and making everything smooth.\n\nComing SOON!",
+  "GMNotes": "",
+  "AltLookAngle": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ColorDiffuse": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0
+  },
+  "LayoutGroupSortIndex": 0,
+  "Value": 0,
+  "Locked": false,
+  "Grid": true,
+  "Snap": true,
+  "IgnoreFoW": false,
+  "MeasureMovement": false,
+  "DragSelectable": true,
+  "Autoraise": true,
+  "Sticky": true,
+  "Tooltip": true,
+  "GridProjection": false,
+  "HideWhenFaceDown": false,
+  "Hands": false,
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": ""
+}
