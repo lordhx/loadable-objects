@@ -320,7 +320,7 @@
     {
       "name": "Fan Investigators: Baldur's Gate III",
       "url": "fancreations/investigators_baldurs_gate_3.json",
-      "replace": "c0e21c",
+      "replace": "0a85ef",
       "boxsize": "small",
       "boxart": "http://cloud-3.steamusercontent.com/ugc/2117314083163063648/B404BC484394C1B241A97479C3A1FDC8D33ADE2F/",
       "author": "Mint Tea Fan",
@@ -505,6 +505,15 @@
       "boxart": "http://cloud-3.steamusercontent.com/ugc/1011563111884720834/103D38A8FBBFA64EB66439667F8775B15FC679C9/",
       "author": "MJGrenier",
       "description": ""
+    },
+    {
+      "name": "Fan Investigators: Kaimonogatari",
+      "url": "fancreations/investigators_kaimonogatari.json",
+      "replace": "954771",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/1644335793265681039/FD6A85925D62077C37F89B6AD082D15D90244D13/",
+      "author": "toastsushi (Makima)",
+      "description": "This expansion contains five investigators from the Monogatari series and more than 100 player cards (there is a related campaign, too!)."
     },
     {
       "name": "Fan Investigators: Lola Hayes Rework",
