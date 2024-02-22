@@ -19256,7 +19256,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The Tower � XVI",
+              "Nickname": "The Tower • XVI",
               "Description": "Circumstances Beyond Your Control",
               "GMNotes": "{\n  \"id\": \"05042\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 4,\n  \"traits\": \"Omen. Tarot.\",\n  \"weakness\": true,\n  \"basicWeaknessCount\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -50446,7 +50446,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Anette�s Coven",
+              "Nickname": "Anette's Coven",
               "Description": "",
               "GMNotes": "",
               "AltLookAngle": {
