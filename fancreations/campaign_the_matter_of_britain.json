@@ -2,12 +2,12 @@
   "GUID": "abaca9",
   "Name": "Custom_Model_Bag",
   "Transform": {
-    "posX": 38.98342,
-    "posY": 1.48554027,
-    "posZ": 10.7414074,
-    "rotX": -1.58904015E-06,
-    "rotY": 270.0,
-    "rotZ": -5.282769E-06,
+    "posX": 39.960598,
+    "posY": 1.48554,
+    "posZ": 9.587294,
+    "rotX": 1.62965748E-07,
+    "rotY": 269.999969,
+    "rotZ": 5.99793459E-09,
     "scaleX": 1.0,
     "scaleY": 0.14,
     "scaleZ": 1.0
@@ -78,9 +78,9 @@
         "posX": 12.2499,
         "posY": 1.4814992,
         "posZ": 19.9863,
-        "rotX": 6.78902E-07,
+        "rotX": 6.573579E-07,
         "rotY": 269.9932,
-        "rotZ": 1.3538785E-07,
+        "rotZ": 1.69165816E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -3975,7 +3975,7 @@
           },
           "Nickname": "Sir Arthur's Office",
           "Description": "",
-          "GMNotes": "{\"TtsZoopGuid\":\"5b02f7ee-1b92-4950-8547-4bb880eb10c6\",\"type\":\"Location\",\"class\":\"Mythos\",\"traits\":\"London\",\"locationFront\":{\"icons\":\"Diamond\",\"connections\":\"Square\",\"uses\":[{\"count\":2,\"countPerInvestigator\":1,\"token\":\"clue\",\"type\":\"Clue\"}]}}\r\n",
+          "GMNotes": "{\"TtsZoopGuid\":\"5b02f7ee-1b92-4950-8547-4bb880eb10c6\",\"type\":\"Location\",\"class\":\"Mythos\",\"traits\":\"London\",\"locationFront\":{\"icons\":\"Diamond\",\"connections\":\"Square\",\"uses\":[{\"count\":2,\"token\":\"clue\",\"type\":\"Clue\"}]},\"id\":\"5b02f7ee-1b92-4950-8547-4bb880eb10c6\"}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -4303,7 +4303,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Scenario",
+          "Nickname": "London Calling",
           "Description": "London Calling",
           "GMNotes": "{\"TtsZoopGuid\":\"dd152e68-a559-4867-a679-938c7a8140b3\",\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"modifier\":-2,\"description\":\"-2. If you fail, place 1 doom on the nearest <t>Fellowship of the Knights of the Round Table</t> enemy.\"},\"Skull\":{\"modifier\":-999,\"description\":\"-X. X is equal to the number of <t>Police</t> enemies in play.\"},\"Tablet\":{\"modifier\":-3,\"description\":\"-3. If Morgan Le Fey is in play, you may spend 1 resource to treat this as 0.\"},\"Elder Thing\":{\"modifier\":-3,\"description\":\"-3. If you fail, and the Black Knight is unengaged, it moves once towards your location.\"}},\"back\":{\"Cultist\":{\"modifier\":-4,\"description\":\"-4. If you fail, place 1 doom on the nearest <t>Fellowship of the Knights of the Round Table</t> enemy.\"},\"Skull\":{\"modifier\":-999,\"description\":\"-X. X is equal to the number of <t>Police</t> enemies in play. If you fail, remember that you have \\\"caused trouble with the police\\\".\"},\"Tablet\":{\"modifier\":-6,\"description\":\"-6. If Morgan Le Fey is in play, you may spend 2 resources to treat this as 0.\"},\"Elder Thing\":{\"modifier\":-5,\"description\":\"-5. If you fail, and the Black Knight is unengaged, it moves once towards your location then makes an immediate attack.\"}}},\"id\":\"dd152e68-a559-4867-a679-938c7a8140b3\"}",
           "AltLookAngle": {
@@ -6815,9 +6815,9 @@
         "posX": 12.251,
         "posY": 1.45653462,
         "posZ": -20.014,
-        "rotX": 3.50645848E-07,
+        "rotX": 3.81094679E-07,
         "rotY": 224.7411,
-        "rotZ": 4.41494223E-07,
+        "rotZ": 4.04937026E-07,
         "scaleX": 2.0,
         "scaleY": 2.0,
         "scaleZ": 2.0
@@ -7370,10 +7370,10 @@
       "Transform": {
         "posX": 12.256,
         "posY": 1.48149908,
-        "posZ": 3.99180079,
-        "rotX": 8.789971E-08,
+        "posZ": 3.99180031,
+        "rotX": -1.23828769E-07,
         "rotY": 270.000061,
-        "rotZ": -4.309957E-07,
+        "rotZ": 2.41097979E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -7438,12 +7438,12 @@
           "GUID": "7e68df",
           "Name": "Bag",
           "Transform": {
-            "posX": 2.09060144,
+            "posX": 2.09060168,
             "posY": 1.397966,
             "posZ": 2.16090131,
-            "rotX": -1.63190873E-06,
+            "rotX": 4.834856E-07,
             "rotY": 89.9931946,
-            "rotZ": -1.22531446E-07,
+            "rotZ": 7.852648E-07,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -7488,12 +7488,12 @@
               "GUID": "6007ec",
               "Name": "Custom_Model_Bag",
               "Transform": {
-                "posX": 1.7022016,
-                "posY": 1.5580368,
-                "posZ": 14.2778063,
-                "rotX": -7.737928E-07,
-                "rotY": 224.998169,
-                "rotZ": -3.73730472E-07,
+                "posX": 1.702203,
+                "posY": 1.55803609,
+                "posZ": 14.2778091,
+                "rotX": 1.86091768E-06,
+                "rotY": 224.998154,
+                "rotZ": -5.65793471E-07,
                 "scaleX": 2.0,
                 "scaleY": 2.0,
                 "scaleZ": 2.0
@@ -7897,795 +7897,6 @@
                   ]
                 },
                 {
-                  "GUID": "e000df",
-                  "Name": "Deck",
-                  "Transform": {
-                    "posX": 11.1152468,
-                    "posY": 3.36931682,
-                    "posZ": -65.63422,
-                    "rotX": 6.318974E-07,
-                    "rotY": 270.000732,
-                    "rotZ": 5.078218E-07,
-                    "scaleX": 1.0,
-                    "scaleY": 1.0,
-                    "scaleZ": 1.0
-                  },
-                  "Nickname": "Knights",
-                  "Description": "",
-                  "GMNotes": "",
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "g": 0.713235259,
-                    "b": 0.713235259
-                  },
-                  "LayoutGroupSortIndex": 0,
-                  "Value": 0,
-                  "Locked": false,
-                  "Grid": true,
-                  "Snap": true,
-                  "IgnoreFoW": false,
-                  "MeasureMovement": false,
-                  "DragSelectable": true,
-                  "Autoraise": true,
-                  "Sticky": true,
-                  "Tooltip": true,
-                  "GridProjection": false,
-                  "HideWhenFaceDown": true,
-                  "Hands": true,
-                  "SidewaysCard": false,
-                  "DeckIDs": [
-                    118000,
-                    118100,
-                    118200,
-                    118300,
-                    118400,
-                    118500,
-                    118600,
-                    118700,
-                    118800,
-                    118900,
-                    119000
-                  ],
-                  "CustomDeck": {
-                    "1180": {
-                      "FaceURL": "https://i.ibb.co/mbdgbjj/0409c9febb82.jpg",
-                      "BackURL": "https://i.ibb.co/1LVYxvb/d3844c745be2.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1181": {
-                      "FaceURL": "https://i.ibb.co/3hSbJcL/464ff6cdd6d5.jpg",
-                      "BackURL": "https://i.ibb.co/4MCt0nK/ed9c7ad024e6.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1182": {
-                      "FaceURL": "https://i.ibb.co/Vx1JsXD/3d4c530994e5.jpg",
-                      "BackURL": "https://i.ibb.co/bF4xHmh/82d8b212cc2f.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1183": {
-                      "FaceURL": "https://i.ibb.co/bzyjwYm/f330734e9e69.jpg",
-                      "BackURL": "https://i.ibb.co/KNBfxQF/d8b2681eb8c5.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1184": {
-                      "FaceURL": "https://i.ibb.co/nDLPF5L/d1b1004830bd.jpg",
-                      "BackURL": "https://i.ibb.co/BB00xD9/c0140ac32d4e.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1185": {
-                      "FaceURL": "https://i.ibb.co/xgH0v3V/81e72e9d8e5b.jpg",
-                      "BackURL": "https://i.ibb.co/x7HTgRq/b83bfde05a57.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1186": {
-                      "FaceURL": "https://i.ibb.co/R47wY8Y/5ca992e77114.jpg",
-                      "BackURL": "https://i.ibb.co/8Nsfn1L/4e981f8bb45e.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1187": {
-                      "FaceURL": "https://i.ibb.co/d23YQjs/3a8ce4350ecd.jpg",
-                      "BackURL": "https://i.ibb.co/mNmcbLB/c9c78c0b4dcd.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1188": {
-                      "FaceURL": "https://i.ibb.co/t4Fkxgd/145d4e7e1061.jpg",
-                      "BackURL": "https://i.ibb.co/qpJRS4k/44968c6133bd.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1189": {
-                      "FaceURL": "https://i.ibb.co/KDHSpD1/e5641b0c85e6.jpg",
-                      "BackURL": "https://i.ibb.co/WBFXhvZ/b91abfd5d069.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    },
-                    "1190": {
-                      "FaceURL": "https://i.ibb.co/r2r79qW/2e1a28fbb36e.jpg",
-                      "BackURL": "https://i.ibb.co/LY9RBn2/50d31c5b5a39.jpg",
-                      "NumWidth": 1,
-                      "NumHeight": 1,
-                      "BackIsHidden": true,
-                      "UniqueBack": true,
-                      "Type": 0
-                    }
-                  },
-                  "LuaScript": "",
-                  "LuaScriptState": "",
-                  "XmlUI": "",
-                  "ContainedObjects": [
-                    {
-                      "GUID": "e000d4",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Aglovale",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"e68387c1-85f7-45b1-98e6-5539a2ba5dab\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"e68387c1-85f7-45b1-98e6-5539a2ba5dab\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118000,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1180": {
-                          "FaceURL": "https://i.ibb.co/KsXTDNq/dc9412728060.jpg",
-                          "BackURL": "https://i.ibb.co/M5sMyyr/426e424f702f.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d5",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Bedivere",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"ed2cfaf6-e6dc-4d10-b2ea-d8fb2533cf52\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"ed2cfaf6-e6dc-4d10-b2ea-d8fb2533cf52\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118100,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1181": {
-                          "FaceURL": "https://i.ibb.co/MNzrxZx/1dfab839c566.jpg",
-                          "BackURL": "https://i.ibb.co/8PK0QFh/e8a3acac4b4b.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d6",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Bors",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"3bd9ff91-9b1a-4137-bb77-d7562118a1e4\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"3bd9ff91-9b1a-4137-bb77-d7562118a1e4\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118200,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1182": {
-                          "FaceURL": "https://i.ibb.co/X22mKjP/1048ea4de002.jpg",
-                          "BackURL": "https://i.ibb.co/SP8G39W/89318aada3fe.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d7",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "\"Sir\" Dagonet",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"871e83fa-e761-496f-a423-f08a6c555b83\",\"type\":\"Asset\",\"victory\":2,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of The Round Table\",\"id\":\"871e83fa-e761-496f-a423-f08a6c555b83\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118300,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1183": {
-                          "FaceURL": "https://i.ibb.co/ZgDGyFT/2f527a3a87d4.jpg",
-                          "BackURL": "https://i.ibb.co/m9p2P18/93da01bada8c.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d8",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Galahad",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"41116997-93b0-468e-8ce3-2dbccc61aacb\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Knight. Of the Round Table\",\"id\":\"41116997-93b0-468e-8ce3-2dbccc61aacb\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118400,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1184": {
-                          "FaceURL": "https://i.ibb.co/54wXw7S/a53a4556bfc3.jpg",
-                          "BackURL": "https://i.ibb.co/19VLv1p/912977142492.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d9",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Gawain",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"9d41b4c4-5962-4282-837d-ede3221273a5\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"9d41b4c4-5962-4282-837d-ede3221273a5\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118500,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1185": {
-                          "FaceURL": "https://i.ibb.co/1LQFyLR/17101f9a5a22.jpg",
-                          "BackURL": "https://i.ibb.co/GM8wXrj/004a791f2f03.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000da",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Hector",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"bad6a3a4-127d-4f89-b3fd-64d0673e45ec\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"bad6a3a4-127d-4f89-b3fd-64d0673e45ec\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118600,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1186": {
-                          "FaceURL": "https://i.ibb.co/gVWPwYG/2ae78ad3c4a7.jpg",
-                          "BackURL": "https://i.ibb.co/F68wnyW/c1b4bcec3ba9.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000db",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Lamorak",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"47b8c90d-8b0d-4abd-a9a9-1ffa95d70333\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"47b8c90d-8b0d-4abd-a9a9-1ffa95d70333\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118700,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1187": {
-                          "FaceURL": "https://i.ibb.co/Lnjq7V1/8d1def612b56.jpg",
-                          "BackURL": "https://i.ibb.co/G0wR5zP/68427c15e69f.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000dc",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Owain",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"7ae7903a-0cd9-4e5e-bb21-3349bbcbe1a6\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"7ae7903a-0cd9-4e5e-bb21-3349bbcbe1a6\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118800,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1188": {
-                          "FaceURL": "https://i.ibb.co/VHKBWpf/5efacc1542eb.jpg",
-                          "BackURL": "https://i.ibb.co/TmChLhB/2a251aae5628.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000dd",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Percival",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"d896cd52-716b-4ea1-a8b6-fe753d1c9c5c\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"d896cd52-716b-4ea1-a8b6-fe753d1c9c5c\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118900,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1189": {
-                          "FaceURL": "https://i.ibb.co/HpSkyps/4291be6c2f53.jpg",
-                          "BackURL": "https://i.ibb.co/wR210cc/2bee1d27c103.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000de",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Urien",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"2a174071-c2f6-425d-8d01-cace2ee3f537\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"2a174071-c2f6-425d-8d01-cace2ee3f537\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 119000,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1190": {
-                          "FaceURL": "https://i.ibb.co/3zx1Jxr/e2ac8651d0f0.jpg",
-                          "BackURL": "https://i.ibb.co/JrCvwcp/cba3cf14f401.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    }
-                  ]
-                },
-                {
                   "GUID": "b5606e",
                   "Name": "Card",
                   "Transform": {
@@ -8745,6 +7956,854 @@
                   "LuaScript": "",
                   "LuaScriptState": "",
                   "XmlUI": ""
+                },
+                {
+                  "GUID": "1a7dff",
+                  "Name": "Deck",
+                  "Transform": {
+                    "posX": 46.03223,
+                    "posY": 3.265414,
+                    "posZ": -54.6631851,
+                    "rotX": 8.17133241E-08,
+                    "rotY": 270.0,
+                    "rotZ": -3.031783E-07,
+                    "scaleX": 1.0,
+                    "scaleY": 1.0,
+                    "scaleZ": 1.0
+                  },
+                  "Nickname": "Round Table",
+                  "Description": "",
+                  "GMNotes": "",
+                  "AltLookAngle": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "ColorDiffuse": {
+                    "r": 0.713235259,
+                    "g": 0.713235259,
+                    "b": 0.713235259
+                  },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
+                  "LayoutGroupSortIndex": 0,
+                  "Value": 0,
+                  "Locked": false,
+                  "Grid": true,
+                  "Snap": true,
+                  "IgnoreFoW": false,
+                  "MeasureMovement": false,
+                  "DragSelectable": true,
+                  "Autoraise": true,
+                  "Sticky": true,
+                  "Tooltip": true,
+                  "GridProjection": false,
+                  "HideWhenFaceDown": true,
+                  "Hands": false,
+                  "SidewaysCard": false,
+                  "DeckIDs": [
+                    101000,
+                    100900,
+                    100800,
+                    100700,
+                    100600,
+                    100500,
+                    100400,
+                    100300,
+                    100200,
+                    100100,
+                    100000
+                  ],
+                  "CustomDeck": {
+                    "1010": {
+                      "FaceURL": "https://i.ibb.co/3zx1Jxr/e2ac8651d0f0.jpg",
+                      "BackURL": "https://i.ibb.co/JrCvwcp/cba3cf14f401.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1009": {
+                      "FaceURL": "https://i.ibb.co/HpSkyps/4291be6c2f53.jpg",
+                      "BackURL": "https://i.ibb.co/wR210cc/2bee1d27c103.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1008": {
+                      "FaceURL": "https://i.ibb.co/VHKBWpf/5efacc1542eb.jpg",
+                      "BackURL": "https://i.ibb.co/TmChLhB/2a251aae5628.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1007": {
+                      "FaceURL": "https://i.ibb.co/Lnjq7V1/8d1def612b56.jpg",
+                      "BackURL": "https://i.ibb.co/G0wR5zP/68427c15e69f.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1006": {
+                      "FaceURL": "https://i.ibb.co/gVWPwYG/2ae78ad3c4a7.jpg",
+                      "BackURL": "https://i.ibb.co/F68wnyW/c1b4bcec3ba9.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1005": {
+                      "FaceURL": "https://i.ibb.co/1LQFyLR/17101f9a5a22.jpg",
+                      "BackURL": "https://i.ibb.co/GM8wXrj/004a791f2f03.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1004": {
+                      "FaceURL": "https://i.ibb.co/54wXw7S/a53a4556bfc3.jpg",
+                      "BackURL": "https://i.ibb.co/19VLv1p/912977142492.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1003": {
+                      "FaceURL": "https://i.ibb.co/ZgDGyFT/2f527a3a87d4.jpg",
+                      "BackURL": "https://i.ibb.co/m9p2P18/93da01bada8c.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1002": {
+                      "FaceURL": "https://i.ibb.co/X22mKjP/1048ea4de002.jpg",
+                      "BackURL": "https://i.ibb.co/SP8G39W/89318aada3fe.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1001": {
+                      "FaceURL": "https://i.ibb.co/MNzrxZx/1dfab839c566.jpg",
+                      "BackURL": "https://i.ibb.co/8PK0QFh/e8a3acac4b4b.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    },
+                    "1000": {
+                      "FaceURL": "https://i.ibb.co/KsXTDNq/dc9412728060.jpg",
+                      "BackURL": "https://i.ibb.co/M5sMyyr/426e424f702f.jpg",
+                      "NumWidth": 1,
+                      "NumHeight": 1,
+                      "BackIsHidden": true,
+                      "UniqueBack": true,
+                      "Type": 0
+                    }
+                  },
+                  "LuaScript": "",
+                  "LuaScriptState": "",
+                  "XmlUI": "",
+                  "ContainedObjects": [
+                    {
+                      "GUID": "e0000b",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.1154633,
+                        "posY": 1.49509847,
+                        "posZ": -34.9252548,
+                        "rotX": 6.762545E-05,
+                        "rotY": 270.007446,
+                        "rotZ": -0.000364309235,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Urien",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"2a174071-c2f6-425d-8d01-cace2ee3f537\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"2a174071-c2f6-425d-8d01-cace2ee3f537\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 101000,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1010": {
+                          "FaceURL": "https://i.ibb.co/3zx1Jxr/e2ac8651d0f0.jpg",
+                          "BackURL": "https://i.ibb.co/JrCvwcp/cba3cf14f401.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e0000a",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.01749,
+                        "posY": 1.5365032,
+                        "posZ": -34.562767,
+                        "rotX": -0.00151175435,
+                        "rotY": 269.998,
+                        "rotZ": -0.004368595,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Percival",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"d896cd52-716b-4ea1-a8b6-fe753d1c9c5c\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"d896cd52-716b-4ea1-a8b6-fe753d1c9c5c\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100900,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1009": {
+                          "FaceURL": "https://i.ibb.co/HpSkyps/4291be6c2f53.jpg",
+                          "BackURL": "https://i.ibb.co/wR210cc/2bee1d27c103.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00009",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.3303528,
+                        "posY": 1.571218,
+                        "posZ": -34.71254,
+                        "rotX": -0.000281721062,
+                        "rotY": 269.998,
+                        "rotZ": -0.000663333747,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Owain",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"7ae7903a-0cd9-4e5e-bb21-3349bbcbe1a6\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"7ae7903a-0cd9-4e5e-bb21-3349bbcbe1a6\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100800,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1008": {
+                          "FaceURL": "https://i.ibb.co/VHKBWpf/5efacc1542eb.jpg",
+                          "BackURL": "https://i.ibb.co/TmChLhB/2a251aae5628.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00008",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.4361725,
+                        "posY": 1.58164525,
+                        "posZ": -35.2861,
+                        "rotX": -0.000722112833,
+                        "rotY": 269.998,
+                        "rotZ": 0.000174994086,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Lamorak",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"47b8c90d-8b0d-4abd-a9a9-1ffa95d70333\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"47b8c90d-8b0d-4abd-a9a9-1ffa95d70333\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100700,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1007": {
+                          "FaceURL": "https://i.ibb.co/Lnjq7V1/8d1def612b56.jpg",
+                          "BackURL": "https://i.ibb.co/G0wR5zP/68427c15e69f.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00007",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.03218,
+                        "posY": 1.590211,
+                        "posZ": -34.7964668,
+                        "rotX": 0.0008320744,
+                        "rotY": 269.998,
+                        "rotZ": -0.00110988633,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Hector",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"bad6a3a4-127d-4f89-b3fd-64d0673e45ec\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"bad6a3a4-127d-4f89-b3fd-64d0673e45ec\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100600,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1006": {
+                          "FaceURL": "https://i.ibb.co/gVWPwYG/2ae78ad3c4a7.jpg",
+                          "BackURL": "https://i.ibb.co/F68wnyW/c1b4bcec3ba9.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00006",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 47.6928177,
+                        "posY": 1.59958208,
+                        "posZ": -34.94562,
+                        "rotX": 0.000351247058,
+                        "rotY": 269.998,
+                        "rotZ": -0.0008115069,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Gawain",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"9d41b4c4-5962-4282-837d-ede3221273a5\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"9d41b4c4-5962-4282-837d-ede3221273a5\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100500,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1005": {
+                          "FaceURL": "https://i.ibb.co/1LQFyLR/17101f9a5a22.jpg",
+                          "BackURL": "https://i.ibb.co/GM8wXrj/004a791f2f03.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00005",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.3868179,
+                        "posY": 1.60922134,
+                        "posZ": -34.8850746,
+                        "rotX": -0.0003364857,
+                        "rotY": 269.998,
+                        "rotZ": -0.000797215,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Galahad",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"41116997-93b0-468e-8ce3-2dbccc61aacb\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"41116997-93b0-468e-8ce3-2dbccc61aacb\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100400,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1004": {
+                          "FaceURL": "https://i.ibb.co/54wXw7S/a53a4556bfc3.jpg",
+                          "BackURL": "https://i.ibb.co/19VLv1p/912977142492.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00004",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.07283,
+                        "posY": 1.620555,
+                        "posZ": -35.325222,
+                        "rotX": 0.0007938665,
+                        "rotY": 269.998,
+                        "rotZ": 0.000119053082,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "\"Sir\" Dagonet",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"871e83fa-e761-496f-a423-f08a6c555b83\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of The Round Table\",\"victory\":2,\"TtsZoopGuid\":\"871e83fa-e761-496f-a423-f08a6c555b83\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100300,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1003": {
+                          "FaceURL": "https://i.ibb.co/ZgDGyFT/2f527a3a87d4.jpg",
+                          "BackURL": "https://i.ibb.co/m9p2P18/93da01bada8c.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00003",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 47.8477669,
+                        "posY": 1.62939262,
+                        "posZ": -34.5444565,
+                        "rotX": 0.001132986,
+                        "rotY": 269.998,
+                        "rotZ": -0.00181039749,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Bors",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"3bd9ff91-9b1a-4137-bb77-d7562118a1e4\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"3bd9ff91-9b1a-4137-bb77-d7562118a1e4\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100200,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1002": {
+                          "FaceURL": "https://i.ibb.co/X22mKjP/1048ea4de002.jpg",
+                          "BackURL": "https://i.ibb.co/SP8G39W/89318aada3fe.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00002",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.15716,
+                        "posY": 1.639569,
+                        "posZ": -34.8276,
+                        "rotX": -9.037033E-05,
+                        "rotY": 269.998,
+                        "rotZ": -0.000310338684,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Bedivere",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"ed2cfaf6-e6dc-4d10-b2ea-d8fb2533cf52\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"ed2cfaf6-e6dc-4d10-b2ea-d8fb2533cf52\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100100,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1001": {
+                          "FaceURL": "https://i.ibb.co/MNzrxZx/1dfab839c566.jpg",
+                          "BackURL": "https://i.ibb.co/8PK0QFh/e8a3acac4b4b.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00001",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 40.34702,
+                        "posY": 1.64982307,
+                        "posZ": -29.3802757,
+                        "rotX": 0.000353155629,
+                        "rotY": 270.0,
+                        "rotZ": -0.000408347521,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Aglovale",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"e68387c1-85f7-45b1-98e6-5539a2ba5dab\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"e68387c1-85f7-45b1-98e6-5539a2ba5dab\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100000,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1000": {
+                          "FaceURL": "https://i.ibb.co/KsXTDNq/dc9412728060.jpg",
+                          "BackURL": "https://i.ibb.co/M5sMyyr/426e424f702f.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    }
+                  ]
                 },
                 {
                   "GUID": "e000a7",
@@ -9479,12 +9538,12 @@
               "GUID": "7bdf18",
               "Name": "Deck",
               "Transform": {
-                "posX": -2.94000244,
+                "posX": -2.94000483,
                 "posY": 1.628001,
-                "posZ": -5.104107,
-                "rotX": -7.406902E-08,
-                "rotY": 269.9972,
-                "rotZ": -2.453575E-10,
+                "posZ": -5.10411167,
+                "rotX": 1.62340044E-07,
+                "rotY": 269.997162,
+                "rotZ": -5.05033171E-08,
                 "scaleX": 0.714955747,
                 "scaleY": 1.0,
                 "scaleZ": 0.714955747
@@ -9941,12 +10000,12 @@
               "GUID": "7033aa",
               "Name": "Custom_Model_Bag",
               "Transform": {
-                "posX": 1.694101,
-                "posY": 1.55803561,
-                "posZ": 14.241107,
-                "rotX": 2.29821865E-07,
-                "rotY": 45.000164,
-                "rotZ": -1.38575706E-06,
+                "posX": 1.69410062,
+                "posY": 1.55803657,
+                "posZ": 14.2411041,
+                "rotX": -2.54145E-06,
+                "rotY": 45.00019,
+                "rotZ": 1.57035765E-06,
                 "scaleX": 2.0,
                 "scaleY": 2.0,
                 "scaleZ": 2.0
@@ -10473,20 +10532,20 @@
                   "XmlUI": ""
                 },
                 {
-                  "GUID": "3c1e15",
+                  "GUID": "dd9632",
                   "Name": "Deck",
                   "Transform": {
-                    "posX": 6.47325945,
-                    "posY": 3.27391553,
-                    "posZ": -57.2516136,
-                    "rotX": 7.630025E-08,
-                    "rotY": 270.0013,
+                    "posX": 26.046381,
+                    "posY": 3.27383685,
+                    "posZ": -56.47283,
+                    "rotX": 3.51169369E-08,
+                    "rotY": 270.0,
                     "rotZ": 180.0,
                     "scaleX": 1.0,
                     "scaleY": 1.0,
                     "scaleZ": 1.0
                   },
-                  "Nickname": "Knights",
+                  "Nickname": "Roumd Table",
                   "Description": "",
                   "GMNotes": "",
                   "AltLookAngle": {
@@ -10499,6 +10558,10 @@
                     "g": 0.713235259,
                     "b": 0.713235259
                   },
+                  "Tags": [
+                    "Asset",
+                    "PlayerCard"
+                  ],
                   "LayoutGroupSortIndex": 0,
                   "Value": 0,
                   "Locked": false,
@@ -10512,115 +10575,115 @@
                   "Tooltip": true,
                   "GridProjection": false,
                   "HideWhenFaceDown": true,
-                  "Hands": true,
+                  "Hands": false,
                   "SidewaysCard": false,
                   "DeckIDs": [
-                    118000,
-                    118100,
-                    118200,
-                    118300,
-                    118400,
-                    118500,
-                    118600,
-                    118700,
-                    118800,
-                    118900,
-                    119000
+                    100000,
+                    100600,
+                    100100,
+                    100400,
+                    100900,
+                    100500,
+                    100800,
+                    100200,
+                    100700,
+                    101000,
+                    100300
                   ],
                   "CustomDeck": {
-                    "1180": {
-                      "FaceURL": "https://i.ibb.co/mbdgbjj/0409c9febb82.jpg",
-                      "BackURL": "https://i.ibb.co/1LVYxvb/d3844c745be2.jpg",
+                    "1000": {
+                      "FaceURL": "https://i.ibb.co/KsXTDNq/dc9412728060.jpg",
+                      "BackURL": "https://i.ibb.co/M5sMyyr/426e424f702f.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1181": {
-                      "FaceURL": "https://i.ibb.co/3hSbJcL/464ff6cdd6d5.jpg",
-                      "BackURL": "https://i.ibb.co/4MCt0nK/ed9c7ad024e6.jpg",
+                    "1006": {
+                      "FaceURL": "https://i.ibb.co/gVWPwYG/2ae78ad3c4a7.jpg",
+                      "BackURL": "https://i.ibb.co/F68wnyW/c1b4bcec3ba9.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1182": {
-                      "FaceURL": "https://i.ibb.co/Vx1JsXD/3d4c530994e5.jpg",
-                      "BackURL": "https://i.ibb.co/bF4xHmh/82d8b212cc2f.jpg",
+                    "1001": {
+                      "FaceURL": "https://i.ibb.co/MNzrxZx/1dfab839c566.jpg",
+                      "BackURL": "https://i.ibb.co/8PK0QFh/e8a3acac4b4b.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1183": {
-                      "FaceURL": "https://i.ibb.co/bzyjwYm/f330734e9e69.jpg",
-                      "BackURL": "https://i.ibb.co/KNBfxQF/d8b2681eb8c5.jpg",
+                    "1004": {
+                      "FaceURL": "https://i.ibb.co/54wXw7S/a53a4556bfc3.jpg",
+                      "BackURL": "https://i.ibb.co/19VLv1p/912977142492.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1184": {
-                      "FaceURL": "https://i.ibb.co/nDLPF5L/d1b1004830bd.jpg",
-                      "BackURL": "https://i.ibb.co/BB00xD9/c0140ac32d4e.jpg",
+                    "1009": {
+                      "FaceURL": "https://i.ibb.co/HpSkyps/4291be6c2f53.jpg",
+                      "BackURL": "https://i.ibb.co/wR210cc/2bee1d27c103.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1185": {
-                      "FaceURL": "https://i.ibb.co/xgH0v3V/81e72e9d8e5b.jpg",
-                      "BackURL": "https://i.ibb.co/x7HTgRq/b83bfde05a57.jpg",
+                    "1005": {
+                      "FaceURL": "https://i.ibb.co/1LQFyLR/17101f9a5a22.jpg",
+                      "BackURL": "https://i.ibb.co/GM8wXrj/004a791f2f03.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1186": {
-                      "FaceURL": "https://i.ibb.co/R47wY8Y/5ca992e77114.jpg",
-                      "BackURL": "https://i.ibb.co/8Nsfn1L/4e981f8bb45e.jpg",
+                    "1008": {
+                      "FaceURL": "https://i.ibb.co/VHKBWpf/5efacc1542eb.jpg",
+                      "BackURL": "https://i.ibb.co/TmChLhB/2a251aae5628.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1187": {
-                      "FaceURL": "https://i.ibb.co/d23YQjs/3a8ce4350ecd.jpg",
-                      "BackURL": "https://i.ibb.co/mNmcbLB/c9c78c0b4dcd.jpg",
+                    "1002": {
+                      "FaceURL": "https://i.ibb.co/X22mKjP/1048ea4de002.jpg",
+                      "BackURL": "https://i.ibb.co/SP8G39W/89318aada3fe.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1188": {
-                      "FaceURL": "https://i.ibb.co/t4Fkxgd/145d4e7e1061.jpg",
-                      "BackURL": "https://i.ibb.co/qpJRS4k/44968c6133bd.jpg",
+                    "1007": {
+                      "FaceURL": "https://i.ibb.co/Lnjq7V1/8d1def612b56.jpg",
+                      "BackURL": "https://i.ibb.co/G0wR5zP/68427c15e69f.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1189": {
-                      "FaceURL": "https://i.ibb.co/KDHSpD1/e5641b0c85e6.jpg",
-                      "BackURL": "https://i.ibb.co/WBFXhvZ/b91abfd5d069.jpg",
+                    "1010": {
+                      "FaceURL": "https://i.ibb.co/3zx1Jxr/e2ac8651d0f0.jpg",
+                      "BackURL": "https://i.ibb.co/JrCvwcp/cba3cf14f401.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
                       "UniqueBack": true,
                       "Type": 0
                     },
-                    "1190": {
-                      "FaceURL": "https://i.ibb.co/r2r79qW/2e1a28fbb36e.jpg",
-                      "BackURL": "https://i.ibb.co/LY9RBn2/50d31c5b5a39.jpg",
+                    "1003": {
+                      "FaceURL": "https://i.ibb.co/ZgDGyFT/2f527a3a87d4.jpg",
+                      "BackURL": "https://i.ibb.co/m9p2P18/93da01bada8c.jpg",
                       "NumWidth": 1,
                       "NumHeight": 1,
                       "BackIsHidden": true,
@@ -10633,26 +10696,31 @@
                   "XmlUI": "",
                   "ContainedObjects": [
                     {
-                      "GUID": "e000d4",
+                      "GUID": "e00001",
                       "Name": "Card",
                       "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
+                        "posX": 40.34702,
+                        "posY": 1.64982307,
+                        "posZ": -29.3802757,
+                        "rotX": 0.000353155629,
                         "rotY": 270.0,
-                        "rotZ": 0.0,
+                        "rotZ": -0.000408347521,
                         "scaleX": 1.0,
                         "scaleY": 1.0,
                         "scaleZ": 1.0
                       },
                       "Nickname": "Sir Aglovale",
                       "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"e68387c1-85f7-45b1-98e6-5539a2ba5dab\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"e68387c1-85f7-45b1-98e6-5539a2ba5dab\"}",
+                      "GMNotes": "{\"id\":\"e68387c1-85f7-45b1-98e6-5539a2ba5dab\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"e68387c1-85f7-45b1-98e6-5539a2ba5dab\"}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
                       },
                       "Tags": [
                         "Asset",
@@ -10672,10 +10740,10 @@
                       "GridProjection": false,
                       "HideWhenFaceDown": true,
                       "Hands": true,
-                      "CardID": 118000,
+                      "CardID": 100000,
                       "SidewaysCard": false,
                       "CustomDeck": {
-                        "1180": {
+                        "1000": {
                           "FaceURL": "https://i.ibb.co/KsXTDNq/dc9412728060.jpg",
                           "BackURL": "https://i.ibb.co/M5sMyyr/426e424f702f.jpg",
                           "NumWidth": 1,
@@ -10690,311 +10758,31 @@
                       "XmlUI": ""
                     },
                     {
-                      "GUID": "e000d5",
+                      "GUID": "e00007",
                       "Name": "Card",
                       "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Bedivere",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"ed2cfaf6-e6dc-4d10-b2ea-d8fb2533cf52\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"ed2cfaf6-e6dc-4d10-b2ea-d8fb2533cf52\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118100,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1181": {
-                          "FaceURL": "https://i.ibb.co/MNzrxZx/1dfab839c566.jpg",
-                          "BackURL": "https://i.ibb.co/8PK0QFh/e8a3acac4b4b.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d6",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Bors",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"3bd9ff91-9b1a-4137-bb77-d7562118a1e4\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"3bd9ff91-9b1a-4137-bb77-d7562118a1e4\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118200,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1182": {
-                          "FaceURL": "https://i.ibb.co/X22mKjP/1048ea4de002.jpg",
-                          "BackURL": "https://i.ibb.co/SP8G39W/89318aada3fe.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d7",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "\"Sir\" Dagonet",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"871e83fa-e761-496f-a423-f08a6c555b83\",\"type\":\"Asset\",\"victory\":2,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of The Round Table\",\"id\":\"871e83fa-e761-496f-a423-f08a6c555b83\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118300,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1183": {
-                          "FaceURL": "https://i.ibb.co/ZgDGyFT/2f527a3a87d4.jpg",
-                          "BackURL": "https://i.ibb.co/m9p2P18/93da01bada8c.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d8",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Galahad",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"41116997-93b0-468e-8ce3-2dbccc61aacb\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Knight. Of the Round Table\",\"id\":\"41116997-93b0-468e-8ce3-2dbccc61aacb\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118400,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1184": {
-                          "FaceURL": "https://i.ibb.co/54wXw7S/a53a4556bfc3.jpg",
-                          "BackURL": "https://i.ibb.co/19VLv1p/912977142492.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000d9",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
-                        "scaleX": 1.0,
-                        "scaleY": 1.0,
-                        "scaleZ": 1.0
-                      },
-                      "Nickname": "Sir Gawain",
-                      "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"9d41b4c4-5962-4282-837d-ede3221273a5\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"9d41b4c4-5962-4282-837d-ede3221273a5\"}",
-                      "AltLookAngle": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                      },
-                      "Tags": [
-                        "Asset",
-                        "PlayerCard"
-                      ],
-                      "LayoutGroupSortIndex": 0,
-                      "Value": 0,
-                      "Locked": false,
-                      "Grid": true,
-                      "Snap": true,
-                      "IgnoreFoW": false,
-                      "MeasureMovement": false,
-                      "DragSelectable": true,
-                      "Autoraise": true,
-                      "Sticky": true,
-                      "Tooltip": true,
-                      "GridProjection": false,
-                      "HideWhenFaceDown": true,
-                      "Hands": true,
-                      "CardID": 118500,
-                      "SidewaysCard": false,
-                      "CustomDeck": {
-                        "1185": {
-                          "FaceURL": "https://i.ibb.co/1LQFyLR/17101f9a5a22.jpg",
-                          "BackURL": "https://i.ibb.co/GM8wXrj/004a791f2f03.jpg",
-                          "NumWidth": 1,
-                          "NumHeight": 1,
-                          "BackIsHidden": true,
-                          "UniqueBack": true,
-                          "Type": 0
-                        }
-                      },
-                      "LuaScript": "",
-                      "LuaScriptState": "",
-                      "XmlUI": ""
-                    },
-                    {
-                      "GUID": "e000da",
-                      "Name": "Card",
-                      "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
+                        "posX": 48.03218,
+                        "posY": 1.590211,
+                        "posZ": -34.7964668,
+                        "rotX": 0.0008320744,
+                        "rotY": 269.998,
+                        "rotZ": -0.00110988633,
                         "scaleX": 1.0,
                         "scaleY": 1.0,
                         "scaleZ": 1.0
                       },
                       "Nickname": "Sir Hector",
                       "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"bad6a3a4-127d-4f89-b3fd-64d0673e45ec\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"bad6a3a4-127d-4f89-b3fd-64d0673e45ec\"}",
+                      "GMNotes": "{\"id\":\"bad6a3a4-127d-4f89-b3fd-64d0673e45ec\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"bad6a3a4-127d-4f89-b3fd-64d0673e45ec\"}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
                       },
                       "Tags": [
                         "Asset",
@@ -11014,10 +10802,10 @@
                       "GridProjection": false,
                       "HideWhenFaceDown": true,
                       "Hands": true,
-                      "CardID": 118600,
+                      "CardID": 100600,
                       "SidewaysCard": false,
                       "CustomDeck": {
-                        "1186": {
+                        "1006": {
                           "FaceURL": "https://i.ibb.co/gVWPwYG/2ae78ad3c4a7.jpg",
                           "BackURL": "https://i.ibb.co/F68wnyW/c1b4bcec3ba9.jpg",
                           "NumWidth": 1,
@@ -11032,26 +10820,31 @@
                       "XmlUI": ""
                     },
                     {
-                      "GUID": "e000db",
+                      "GUID": "e00002",
                       "Name": "Card",
                       "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
+                        "posX": 48.15716,
+                        "posY": 1.639569,
+                        "posZ": -34.8276,
+                        "rotX": -9.037033E-05,
+                        "rotY": 269.998,
+                        "rotZ": -0.000310338684,
                         "scaleX": 1.0,
                         "scaleY": 1.0,
                         "scaleZ": 1.0
                       },
-                      "Nickname": "Sir Lamorak",
+                      "Nickname": "Sir Bedivere",
                       "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"47b8c90d-8b0d-4abd-a9a9-1ffa95d70333\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"47b8c90d-8b0d-4abd-a9a9-1ffa95d70333\"}",
+                      "GMNotes": "{\"id\":\"ed2cfaf6-e6dc-4d10-b2ea-d8fb2533cf52\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"ed2cfaf6-e6dc-4d10-b2ea-d8fb2533cf52\"}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
                       },
                       "Tags": [
                         "Asset",
@@ -11071,12 +10864,12 @@
                       "GridProjection": false,
                       "HideWhenFaceDown": true,
                       "Hands": true,
-                      "CardID": 118700,
+                      "CardID": 100100,
                       "SidewaysCard": false,
                       "CustomDeck": {
-                        "1187": {
-                          "FaceURL": "https://i.ibb.co/Lnjq7V1/8d1def612b56.jpg",
-                          "BackURL": "https://i.ibb.co/G0wR5zP/68427c15e69f.jpg",
+                        "1001": {
+                          "FaceURL": "https://i.ibb.co/MNzrxZx/1dfab839c566.jpg",
+                          "BackURL": "https://i.ibb.co/8PK0QFh/e8a3acac4b4b.jpg",
                           "NumWidth": 1,
                           "NumHeight": 1,
                           "BackIsHidden": true,
@@ -11089,26 +10882,31 @@
                       "XmlUI": ""
                     },
                     {
-                      "GUID": "e000dc",
+                      "GUID": "e00005",
                       "Name": "Card",
                       "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
+                        "posX": 48.3868179,
+                        "posY": 1.60922134,
+                        "posZ": -34.8850746,
+                        "rotX": -0.0003364857,
+                        "rotY": 269.998,
+                        "rotZ": -0.000797215,
                         "scaleX": 1.0,
                         "scaleY": 1.0,
                         "scaleZ": 1.0
                       },
-                      "Nickname": "Sir Owain",
+                      "Nickname": "Sir Galahad",
                       "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"7ae7903a-0cd9-4e5e-bb21-3349bbcbe1a6\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"7ae7903a-0cd9-4e5e-bb21-3349bbcbe1a6\"}",
+                      "GMNotes": "{\"id\":\"41116997-93b0-468e-8ce3-2dbccc61aacb\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"41116997-93b0-468e-8ce3-2dbccc61aacb\"}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
                       },
                       "Tags": [
                         "Asset",
@@ -11128,12 +10926,12 @@
                       "GridProjection": false,
                       "HideWhenFaceDown": true,
                       "Hands": true,
-                      "CardID": 118800,
+                      "CardID": 100400,
                       "SidewaysCard": false,
                       "CustomDeck": {
-                        "1188": {
-                          "FaceURL": "https://i.ibb.co/VHKBWpf/5efacc1542eb.jpg",
-                          "BackURL": "https://i.ibb.co/TmChLhB/2a251aae5628.jpg",
+                        "1004": {
+                          "FaceURL": "https://i.ibb.co/54wXw7S/a53a4556bfc3.jpg",
+                          "BackURL": "https://i.ibb.co/19VLv1p/912977142492.jpg",
                           "NumWidth": 1,
                           "NumHeight": 1,
                           "BackIsHidden": true,
@@ -11146,26 +10944,31 @@
                       "XmlUI": ""
                     },
                     {
-                      "GUID": "e000dd",
+                      "GUID": "e0000a",
                       "Name": "Card",
                       "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
+                        "posX": 48.01749,
+                        "posY": 1.5365032,
+                        "posZ": -34.562767,
+                        "rotX": -0.00151175435,
+                        "rotY": 269.998,
+                        "rotZ": -0.004368595,
                         "scaleX": 1.0,
                         "scaleY": 1.0,
                         "scaleZ": 1.0
                       },
                       "Nickname": "Sir Percival",
                       "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"d896cd52-716b-4ea1-a8b6-fe753d1c9c5c\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"d896cd52-716b-4ea1-a8b6-fe753d1c9c5c\"}",
+                      "GMNotes": "{\"id\":\"d896cd52-716b-4ea1-a8b6-fe753d1c9c5c\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"d896cd52-716b-4ea1-a8b6-fe753d1c9c5c\"}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
                       },
                       "Tags": [
                         "Asset",
@@ -11185,10 +10988,10 @@
                       "GridProjection": false,
                       "HideWhenFaceDown": true,
                       "Hands": true,
-                      "CardID": 118900,
+                      "CardID": 100900,
                       "SidewaysCard": false,
                       "CustomDeck": {
-                        "1189": {
+                        "1009": {
                           "FaceURL": "https://i.ibb.co/HpSkyps/4291be6c2f53.jpg",
                           "BackURL": "https://i.ibb.co/wR210cc/2bee1d27c103.jpg",
                           "NumWidth": 1,
@@ -11203,26 +11006,31 @@
                       "XmlUI": ""
                     },
                     {
-                      "GUID": "e000de",
+                      "GUID": "e00006",
                       "Name": "Card",
                       "Transform": {
-                        "posX": 0.0,
-                        "posY": 0.0,
-                        "posZ": 0.0,
-                        "rotX": 0.0,
-                        "rotY": 270.0,
-                        "rotZ": 0.0,
+                        "posX": 47.6928177,
+                        "posY": 1.59958208,
+                        "posZ": -34.94562,
+                        "rotX": 0.000351247058,
+                        "rotY": 269.998,
+                        "rotZ": -0.0008115069,
                         "scaleX": 1.0,
                         "scaleY": 1.0,
                         "scaleZ": 1.0
                       },
-                      "Nickname": "Sir Urien",
+                      "Nickname": "Sir Gawain",
                       "Description": "",
-                      "GMNotes": "{\"TtsZoopGuid\":\"2a174071-c2f6-425d-8d01-cace2ee3f537\",\"type\":\"Asset\",\"victory\":1,\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"id\":\"2a174071-c2f6-425d-8d01-cace2ee3f537\"}",
+                      "GMNotes": "{\"id\":\"9d41b4c4-5962-4282-837d-ede3221273a5\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"9d41b4c4-5962-4282-837d-ede3221273a5\"}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
                       },
                       "Tags": [
                         "Asset",
@@ -11242,12 +11050,322 @@
                       "GridProjection": false,
                       "HideWhenFaceDown": true,
                       "Hands": true,
-                      "CardID": 119000,
+                      "CardID": 100500,
                       "SidewaysCard": false,
                       "CustomDeck": {
-                        "1190": {
+                        "1005": {
+                          "FaceURL": "https://i.ibb.co/1LQFyLR/17101f9a5a22.jpg",
+                          "BackURL": "https://i.ibb.co/GM8wXrj/004a791f2f03.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00009",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.3303528,
+                        "posY": 1.571218,
+                        "posZ": -34.71254,
+                        "rotX": -0.000281721062,
+                        "rotY": 269.998,
+                        "rotZ": -0.000663333747,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Owain",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"7ae7903a-0cd9-4e5e-bb21-3349bbcbe1a6\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"7ae7903a-0cd9-4e5e-bb21-3349bbcbe1a6\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100800,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1008": {
+                          "FaceURL": "https://i.ibb.co/VHKBWpf/5efacc1542eb.jpg",
+                          "BackURL": "https://i.ibb.co/TmChLhB/2a251aae5628.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00003",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 47.8477669,
+                        "posY": 1.62939262,
+                        "posZ": -34.5444565,
+                        "rotX": 0.001132986,
+                        "rotY": 269.998,
+                        "rotZ": -0.00181039749,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Bors",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"3bd9ff91-9b1a-4137-bb77-d7562118a1e4\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"3bd9ff91-9b1a-4137-bb77-d7562118a1e4\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100200,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1002": {
+                          "FaceURL": "https://i.ibb.co/X22mKjP/1048ea4de002.jpg",
+                          "BackURL": "https://i.ibb.co/SP8G39W/89318aada3fe.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00008",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.4361725,
+                        "posY": 1.58164525,
+                        "posZ": -35.2861,
+                        "rotX": -0.000722112833,
+                        "rotY": 269.998,
+                        "rotZ": 0.000174994086,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Lamorak",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"47b8c90d-8b0d-4abd-a9a9-1ffa95d70333\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"47b8c90d-8b0d-4abd-a9a9-1ffa95d70333\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100700,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1007": {
+                          "FaceURL": "https://i.ibb.co/Lnjq7V1/8d1def612b56.jpg",
+                          "BackURL": "https://i.ibb.co/G0wR5zP/68427c15e69f.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e0000b",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.1154633,
+                        "posY": 1.49509847,
+                        "posZ": -34.9252548,
+                        "rotX": 6.762545E-05,
+                        "rotY": 270.007446,
+                        "rotZ": -0.000364309235,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "Sir Urien",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"2a174071-c2f6-425d-8d01-cace2ee3f537\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of the Round Table\",\"victory\":1,\"TtsZoopGuid\":\"2a174071-c2f6-425d-8d01-cace2ee3f537\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 101000,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1010": {
                           "FaceURL": "https://i.ibb.co/3zx1Jxr/e2ac8651d0f0.jpg",
                           "BackURL": "https://i.ibb.co/JrCvwcp/cba3cf14f401.jpg",
+                          "NumWidth": 1,
+                          "NumHeight": 1,
+                          "BackIsHidden": true,
+                          "UniqueBack": true,
+                          "Type": 0
+                        }
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": ""
+                    },
+                    {
+                      "GUID": "e00004",
+                      "Name": "Card",
+                      "Transform": {
+                        "posX": 48.07283,
+                        "posY": 1.620555,
+                        "posZ": -35.325222,
+                        "rotX": 0.0007938665,
+                        "rotY": 269.998,
+                        "rotZ": 0.000119053082,
+                        "scaleX": 1.0,
+                        "scaleY": 1.0,
+                        "scaleZ": 1.0
+                      },
+                      "Nickname": "\"Sir\" Dagonet",
+                      "Description": "",
+                      "GMNotes": "{\"id\":\"871e83fa-e761-496f-a423-f08a6c555b83\",\"type\":\"Asset\",\"class\":\"Neutral\",\"traits\":\"Arthurian. Knight. Of The Round Table\",\"victory\":2,\"TtsZoopGuid\":\"871e83fa-e761-496f-a423-f08a6c555b83\"}",
+                      "AltLookAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      },
+                      "ColorDiffuse": {
+                        "r": 0.713235259,
+                        "g": 0.713235259,
+                        "b": 0.713235259
+                      },
+                      "Tags": [
+                        "Asset",
+                        "PlayerCard"
+                      ],
+                      "LayoutGroupSortIndex": 0,
+                      "Value": 0,
+                      "Locked": false,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": true,
+                      "Hands": true,
+                      "CardID": 100300,
+                      "SidewaysCard": false,
+                      "CustomDeck": {
+                        "1003": {
+                          "FaceURL": "https://i.ibb.co/ZgDGyFT/2f527a3a87d4.jpg",
+                          "BackURL": "https://i.ibb.co/m9p2P18/93da01bada8c.jpg",
                           "NumWidth": 1,
                           "NumHeight": 1,
                           "BackIsHidden": true,
@@ -11932,12 +12050,12 @@
               "GUID": "9168df",
               "Name": "Deck",
               "Transform": {
-                "posX": -2.937302,
+                "posX": -2.93730164,
                 "posY": 1.628001,
                 "posZ": -5.10400629,
-                "rotX": 1.148167E-07,
-                "rotY": 269.962067,
-                "rotZ": -2.0932843E-08,
+                "rotX": -1.03119731E-07,
+                "rotY": 269.961945,
+                "rotZ": -1.80776016E-08,
                 "scaleX": 0.714955747,
                 "scaleY": 1.0,
                 "scaleZ": 0.714955747
@@ -12344,17 +12462,17 @@
           "GUID": "e0009c",
           "Name": "Card",
           "Transform": {
-            "posX": -3.85011125,
+            "posX": -3.85010815,
             "posY": 1.59660506,
-            "posZ": -10.3883562,
-            "rotX": 4.308502E-08,
-            "rotY": 270.000275,
-            "rotZ": -3.14977164E-08,
+            "posZ": -10.388339,
+            "rotX": 4.715904E-10,
+            "rotY": 270.0003,
+            "rotZ": -3.5816E-08,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Scenario",
+          "Nickname": "A Most Magnificent Court",
           "Description": "A Most Magnificent Court",
           "GMNotes": "{\"TtsZoopGuid\":\"e15857cd-837d-4c83-a42e-737b854e361c\",\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"modifier\":-2,\"description\":\"-2. If you fail and there are less than three copies of Rumours at Court next to the agenda, search the encounter deck and discard pile for a copy of Rumours at Court and put it into play next to the agenda. Shuffle the encounter deck.\"},\"Skull\":{\"modifier\":-1,\"description\":\"-1 ( -3 instead if there is a horror token on your location)\"},\"Tablet\":{\"modifier\":-3,\"description\":\"-3. If you fail and this test was on or against an <t>Arthurian</t> card, take 1 damage or horror.\"}},\"back\":{\"Cultist\":{\"modifier\":-3,\"description\":\"-3. If you fail and there are less than three copies of Rumours at Court next to the agenda, search the encounter deck and discard pile for a copy of Rumours at Court and put it into play next to the agenda. Shuffle the encounter deck.\"},\"Skull\":{\"modifier\":-2,\"description\":\"-2 ( -5 instead if there is a horror token on your location)\"},\"Tablet\":{\"modifier\":-5,\"description\":\"-5. If you fail and this test was on or against an <t>Arthurian</t> card, take 1 damage or horror.\"}}},\"id\":\"e15857cd-837d-4c83-a42e-737b854e361c\"}",
           "AltLookAngle": {
@@ -12407,9 +12525,9 @@
           "Transform": {
             "posX": -23.639986,
             "posY": 1.53360486,
-            "posZ": 15.3004761,
-            "rotX": 2.30481518E-08,
-            "rotY": 270.001038,
+            "posZ": 15.3004541,
+            "rotX": -6.889767E-09,
+            "rotY": 270.001068,
             "rotZ": 180.0,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -12467,11 +12585,11 @@
           "GUID": "e000b4",
           "Name": "Deck",
           "Transform": {
-            "posX": -8.759191,
+            "posX": -8.759196,
             "posY": 1.62794721,
-            "posZ": 0.2528382,
-            "rotX": 1.45568013,
-            "rotY": 270.003937,
+            "posZ": 0.252823263,
+            "rotX": 1.45567834,
+            "rotY": 270.0038,
             "rotZ": 180.0001,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -13189,12 +13307,12 @@
           "GUID": "e1ed99",
           "Name": "Deck",
           "Transform": {
-            "posX": -2.940008,
+            "posX": -2.940006,
             "posY": 1.61355889,
-            "posZ": 0.39300257,
-            "rotX": -1.12024033E-07,
+            "posZ": 0.393002361,
+            "rotX": 4.547244E-08,
             "rotY": 269.9995,
-            "rotZ": 3.75925637E-08,
+            "rotZ": -5.03637736E-08,
             "scaleX": 0.714955747,
             "scaleY": 1.0,
             "scaleZ": 0.714955747
@@ -13386,11 +13504,11 @@
           "GUID": "e734e0",
           "Name": "Deck",
           "Transform": {
-            "posX": -3.92851424,
+            "posX": -3.928507,
             "posY": 1.74353778,
-            "posZ": 5.720046,
-            "rotX": 3.51188959E-07,
-            "rotY": 270.000244,
+            "posZ": 5.72002125,
+            "rotX": 1.52123008E-07,
+            "rotY": 270.000183,
             "rotZ": 180.0,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -15452,9 +15570,9 @@
         "posX": 12.2498,
         "posY": 1.48149908,
         "posZ": -4.014,
-        "rotX": 8.190997E-09,
+        "rotX": -2.71854859E-08,
         "rotY": 270.014465,
-        "rotZ": -1.46069539E-07,
+        "rotZ": -4.59610661E-09,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -15974,8 +16092,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1204": {
-              "FaceURL": "https://i.ibb.co/bm0MMP0/4cb293c7f1a4.jpg",
-              "BackURL": "https://i.ibb.co/6mvWCTc/d7f5f6d9e9b6.jpg",
+              "FaceURL": "https://i.ibb.co/7Gy5ymn/718112b0e61e.jpg",
+              "BackURL": "https://i.ibb.co/pL8FmsM/22a17aee3eb6.jpg",
               "NumWidth": 1,
               "NumHeight": 1,
               "BackIsHidden": true,
@@ -17187,7 +17305,7 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "1222": {
-                  "FaceURL": "https://i.ibb.co/NNwCscL/e41e639e3a98.jpg",
+                  "FaceURL": "https://i.ibb.co/4tY16zq/7979ebe4d364.jpg",
                   "BackURL": "https://i.ibb.co/X3MdyCw/605d3ee3aa24.jpg",
                   "NumWidth": 1,
                   "NumHeight": 1,
@@ -19072,7 +19190,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Scenario",
+          "Nickname": "The Queen of Air and Darkness",
           "Description": "The Queen of Air and Darkness",
           "GMNotes": "{\"TtsZoopGuid\":\"9326881f-d920-49b6-8827-6cd1e7575fa8\",\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"modifier\":-2,\"description\":\"-2. If you fail, move an in-play copy of Close-Knit Community to your location.\"},\"Skull\":{\"modifier\":-1,\"description\":\"-1 for each Aloof enemy in play (Max -5).\"},\"Tablet\":{\"modifier\":-3,\"description\":\"-3. If you fail, increase the difficulty of the next test on or against an <t>Arthurian</t> card this round by 1.\"},\"Elder Thing\":{\"modifier\":-3,\"description\":\"-3. If you fail, move an <t>Arthurian</t> enemy to a connecting location.\"}},\"back\":{\"Cultist\":{\"modifier\":-4,\"description\":\"-4. If you fail, move an in-play copy of Close-Knit Community to your location.\"},\"Skull\":{\"modifier\":-1,\"description\":\"-1 for each Aloof enemy in play.\"},\"Tablet\":{\"modifier\":-5,\"description\":\"-5. If you fail, increase the difficulty of the next test on or against an <t>Arthurian</t> card this round by 2.\"},\"Elder Thing\":{\"modifier\":-5,\"description\":\"-5. Move an <t>Arthurian</t> enemy to a connecting location.\"}}},\"id\":\"9326881f-d920-49b6-8827-6cd1e7575fa8\"}",
           "AltLookAngle": {
@@ -21681,9 +21799,9 @@
         "posX": 12.252,
         "posY": 1.48149908,
         "posZ": 11.9864,
-        "rotX": -1.76090964E-08,
+        "rotX": 8.735431E-09,
         "rotY": 270.008667,
-        "rotZ": -1.86310174E-07,
+        "rotZ": -9.508709E-09,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -24603,14 +24721,14 @@
             "posX": -3.85010123,
             "posY": 1.59660506,
             "posZ": -10.3874054,
-            "rotX": 2.70386327E-08,
+            "rotX": 4.24065156E-08,
             "rotY": 270.000275,
-            "rotZ": 7.878375E-08,
+            "rotZ": 3.81117218E-08,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Scenario",
+          "Nickname": "Lac Diane",
           "Description": "Lac Diane",
           "GMNotes": "{\"TtsZoopGuid\":\"37c77e73-c191-4f46-8bc3-2db86ac7f031\",\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"modifier\":-999,\"description\":\"Reveal another token. If you fail and Marigold is at your location, she immediately engages you.\"},\"Skull\":{\"modifier\":-1,\"description\":\"-1 for every two ritual tokens placed <i>(rounded up) (including those removed from the game).\"},\"Tablet\":{\"modifier\":-2,\"description\":\"-2. If you fail, trigger the Hunter keyword on each <t>Arthurian</t> enemy.\"},\"Elder Thing\":{\"modifier\":-1,\"description\":\"-1. Trigger Marigold's Patrol keyword. You may treat this token as -3 to ignore this effect.\"}},\"back\":{\"Cultist\":{\"modifier\":-999,\"description\":\"Reveal another token. If you fail and Marigold is at your location, she immediately engages you.\"},\"Skull\":{\"modifier\":-1,\"description\":\"-1 for every ritual token placed <i>(including those removed from the game).\"},\"Tablet\":{\"modifier\":-4,\"description\":\"-4. If you fail, trigger the Hunter keyword on each <t>Arthurian</t> enemy.\"},\"Elder Thing\":{\"modifier\":-3,\"description\":\"-3. Trigger Marigold's Patrol keyword. You may treat this token as -5 to ignore this effect.\"}}},\"id\":\"37c77e73-c191-4f46-8bc3-2db86ac7f031\"}",
           "AltLookAngle": {
@@ -24664,7 +24782,7 @@
             "posX": -1.23349988,
             "posY": 1.59660506,
             "posZ": 17.1666069,
-            "rotX": -3.50552476E-09,
+            "rotX": -1.208364E-08,
             "rotY": 269.9993,
             "rotZ": 180.0,
             "scaleX": 1.0,
@@ -24725,8 +24843,8 @@
           "Transform": {
             "posX": -30.2398,
             "posY": 1.53360486,
-            "posZ": 0.000100495134,
-            "rotX": 7.75444562E-08,
+            "posZ": 0.000100495192,
+            "rotX": 7.377229E-08,
             "rotY": 270.000061,
             "rotZ": 180.0,
             "scaleX": 1.0,
@@ -24788,7 +24906,7 @@
             "posX": -26.6552,
             "posY": 1.57944286,
             "posZ": 3.347802,
-            "rotX": -1.36113636E-08,
+            "rotX": 8.78855744E-08,
             "rotY": 269.999481,
             "rotZ": 180.0,
             "scaleX": 1.0,
@@ -25376,9 +25494,9 @@
             "posX": -26.5507,
             "posY": 1.53360486,
             "posZ": -2.36300135,
-            "rotX": -4.92949361E-08,
+            "rotX": -2.39910261E-08,
             "rotY": 270.000061,
-            "rotZ": 1.00800444E-08,
+            "rotZ": -1.75642487E-08,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -27619,9 +27737,9 @@
         "posX": 12.25,
         "posY": 1.48149908,
         "posZ": -36.014,
-        "rotX": 3.831439E-08,
+        "rotX": 1.11914851E-08,
         "rotY": 270.0612,
-        "rotZ": -4.66988332E-08,
+        "rotZ": -6.328434E-08,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -27686,12 +27804,12 @@
           "GUID": "060343",
           "Name": "Deck",
           "Transform": {
-            "posX": -1.16383445,
-            "posY": 1.64277649,
-            "posZ": 0.280044764,
-            "rotX": 1.53047693,
-            "rotY": 269.975952,
-            "rotZ": 0.000212612111,
+            "posX": -1.1638149,
+            "posY": 1.64277637,
+            "posZ": 0.280076176,
+            "rotX": 1.53046155,
+            "rotY": 269.9762,
+            "rotZ": -0.000351399824,
             "scaleX": 0.714680433,
             "scaleY": 1.0,
             "scaleZ": 0.714680433
@@ -27883,12 +28001,12 @@
           "GUID": "1eb16c",
           "Name": "Deck",
           "Transform": {
-            "posX": -8.4659,
-            "posY": 1.6042757,
-            "posZ": 1.66089964,
-            "rotX": 1.65055764,
-            "rotY": 270.014465,
-            "rotZ": 0.000472813234,
+            "posX": -8.465873,
+            "posY": 1.6042763,
+            "posZ": 1.66088355,
+            "rotX": 1.65059316,
+            "rotY": 270.014282,
+            "rotZ": 4.18522723E-05,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -28222,12 +28340,12 @@
           "GUID": "200d87",
           "Name": "Bag",
           "Transform": {
-            "posX": -4.003601,
-            "posY": 1.39796531,
-            "posZ": 14.6026039,
-            "rotX": 5.563078E-06,
-            "rotY": 89.99974,
-            "rotZ": -3.19071E-06,
+            "posX": -4.0036006,
+            "posY": 1.39796674,
+            "posZ": 14.6026049,
+            "rotX": 2.104729E-06,
+            "rotY": 89.99982,
+            "rotZ": 5.954519E-07,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -28594,11 +28712,11 @@
           "GUID": "201d7c",
           "Name": "Card",
           "Transform": {
-            "posX": -23.6398983,
+            "posX": -23.6398964,
             "posY": 1.53360486,
-            "posZ": -7.65020132,
-            "rotX": -5.01185156E-08,
-            "rotY": 270.0006,
+            "posZ": -7.65023041,
+            "rotX": -3.876786E-09,
+            "rotY": 270.000519,
             "rotZ": 180.0,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -28656,12 +28774,12 @@
           "GUID": "2219c7",
           "Name": "Notecard",
           "Transform": {
-            "posX": -22.9194,
-            "posY": 1.58993709,
-            "posZ": 0.126900271,
-            "rotX": -0.000466959726,
-            "rotY": 89.99948,
-            "rotZ": 0.00132317585,
+            "posX": -22.9193954,
+            "posY": 1.58993137,
+            "posZ": 0.1269039,
+            "rotX": -0.0005041826,
+            "rotY": 89.9993744,
+            "rotZ": 0.00144088711,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -28701,12 +28819,12 @@
           "GUID": "2e0cd6",
           "Name": "Deck",
           "Transform": {
-            "posX": -8.495301,
-            "posY": 1.60850608,
-            "posZ": 9.31850052,
-            "rotX": 1.628746,
-            "rotY": 270.025,
-            "rotZ": 0.0007892056,
+            "posX": -8.495272,
+            "posY": 1.60850668,
+            "posZ": 9.31852,
+            "rotX": 1.62878382,
+            "rotY": 270.0246,
+            "rotZ": 7.276024E-05,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -29111,12 +29229,12 @@
           "GUID": "35389b",
           "Name": "Deck",
           "Transform": {
-            "posX": -0.439999819,
+            "posX": -0.4399961,
             "posY": 1.61355889,
-            "posZ": 7.2110014,
-            "rotX": 1.74993637E-08,
-            "rotY": 269.999573,
-            "rotZ": -1.10849442E-07,
+            "posZ": 7.21103,
+            "rotX": 1.1476871E-08,
+            "rotY": 269.999451,
+            "rotZ": 2.22322427E-08,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -29299,12 +29417,12 @@
           "GUID": "4ea0bd",
           "Name": "Deck",
           "Transform": {
-            "posX": -7.681701,
+            "posX": -7.681723,
             "posY": 1.65207124,
-            "posZ": 6.812602,
-            "rotX": 9.051883E-06,
-            "rotY": 269.9952,
-            "rotZ": 1.142868E-06,
+            "posZ": 6.81263,
+            "rotX": 9.138239E-06,
+            "rotY": 269.99527,
+            "rotZ": 9.97082E-07,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -30945,8 +31063,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "1006": {
-                  "FaceURL": "https://i.ibb.co/S5LfqjF/3300151ebaed.jpg",
-                  "BackURL": "https://i.ibb.co/QJvBLSr/54b9ef164a2a.jpg",
+                  "FaceURL": "https://i.ibb.co/zmkqzhp/a409195b9280.jpg",
+                  "BackURL": "https://i.ibb.co/7JzPj48/2f6324a37dda.jpg",
                   "NumWidth": 1,
                   "NumHeight": 1,
                   "BackIsHidden": true,
@@ -31006,7 +31124,7 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "1036": {
-                  "FaceURL": "https://i.ibb.co/cC9cyF4/c7dac6d8ae7b.jpg",
+                  "FaceURL": "https://i.ibb.co/R39VgQy/4f590b09e33c.jpg",
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
                   "NumWidth": 1,
                   "NumHeight": 1,
@@ -31252,7 +31370,7 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "1032": {
-                  "FaceURL": "https://i.ibb.co/48ymK3D/7f0362f89e6d.jpg",
+                  "FaceURL": "https://i.ibb.co/RhnxvSs/48c650fd6e0a.jpg",
                   "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
                   "NumWidth": 1,
                   "NumHeight": 1,
@@ -31332,12 +31450,12 @@
           "GUID": "6afc6c",
           "Name": "Deck",
           "Transform": {
-            "posX": -2.9400003,
+            "posX": -2.94000554,
             "posY": 1.61837292,
-            "posZ": -5.104001,
-            "rotX": -5.513372E-08,
-            "rotY": 269.974976,
-            "rotZ": 3.01635374E-08,
+            "posZ": -5.10402966,
+            "rotX": 1.310023E-07,
+            "rotY": 269.974945,
+            "rotZ": -1.06187656E-07,
             "scaleX": 0.714680433,
             "scaleY": 1.0,
             "scaleZ": 0.714680433
@@ -31380,8 +31498,8 @@
           ],
           "CustomDeck": {
             "2677": {
-              "FaceURL": "https://i.ibb.co/mF760Gv/54a84274c970.jpg",
-              "BackURL": "https://i.ibb.co/P55Fkp8/078da2910810.jpg",
+              "FaceURL": "https://i.ibb.co/3vVg7Mg/024dd3157c1a.jpg",
+              "BackURL": "https://i.ibb.co/VSFXq4p/06eb24f0c9a6.jpg",
               "NumWidth": 1,
               "NumHeight": 1,
               "BackIsHidden": true,
@@ -31389,8 +31507,8 @@
               "Type": 0
             },
             "2678": {
-              "FaceURL": "https://i.ibb.co/hZq2tNQ/80f8bd52fa52.jpg",
-              "BackURL": "https://i.ibb.co/JdKvfTx/f7fd8c858952.jpg",
+              "FaceURL": "https://i.ibb.co/WvvFLCN/5e3ab4d075a0.jpg",
+              "BackURL": "https://i.ibb.co/rf78x9Q/91d29192df5e.jpg",
               "NumWidth": 1,
               "NumHeight": 1,
               "BackIsHidden": true,
@@ -31459,8 +31577,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "1002": {
-                  "FaceURL": "https://i.ibb.co/mF760Gv/54a84274c970.jpg",
-                  "BackURL": "https://i.ibb.co/P55Fkp8/078da2910810.jpg",
+                  "FaceURL": "https://i.ibb.co/3vVg7Mg/024dd3157c1a.jpg",
+                  "BackURL": "https://i.ibb.co/VSFXq4p/06eb24f0c9a6.jpg",
                   "NumWidth": 1,
                   "NumHeight": 1,
                   "BackIsHidden": true,
@@ -31520,8 +31638,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://i.ibb.co/hZq2tNQ/80f8bd52fa52.jpg",
-                  "BackURL": "https://i.ibb.co/JdKvfTx/f7fd8c858952.jpg",
+                  "FaceURL": "https://i.ibb.co/WvvFLCN/5e3ab4d075a0.jpg",
+                  "BackURL": "https://i.ibb.co/rf78x9Q/91d29192df5e.jpg",
                   "NumWidth": 1,
                   "NumHeight": 1,
                   "BackIsHidden": true,
@@ -31537,12 +31655,12 @@
               "GUID": "e00002",
               "Name": "Card",
               "Transform": {
-                "posX": 26.8290043,
-                "posY": 1.57072806,
-                "posZ": -22.3276978,
-                "rotX": 0.000331981864,
-                "rotY": 270.0111,
-                "rotZ": -0.000166616868,
+                "posX": -2.94,
+                "posY": 1.67630517,
+                "posZ": -5.104,
+                "rotX": 0.000125002785,
+                "rotY": 269.974976,
+                "rotZ": -2.881877E-05,
                 "scaleX": 0.714680433,
                 "scaleY": 1.0,
                 "scaleZ": 0.714680433
@@ -31600,12 +31718,12 @@
           "GUID": "7793c8",
           "Name": "Custom_Token",
           "Transform": {
-            "posX": -24.3580914,
-            "posY": 1.70993,
-            "posZ": -2.62510729,
-            "rotX": 0.00473560067,
-            "rotY": 269.986237,
-            "rotZ": -0.003697251,
+            "posX": -24.3581524,
+            "posY": 1.70985687,
+            "posZ": -2.62508917,
+            "rotX": 0.00338610914,
+            "rotY": 269.9865,
+            "rotZ": -0.00130540633,
             "scaleX": 0.225855082,
             "scaleY": 1.0,
             "scaleZ": 0.225855082
@@ -31657,12 +31775,12 @@
           "GUID": "7e493c",
           "Name": "Deck",
           "Transform": {
-            "posX": -7.695601,
+            "posX": -7.69562244,
             "posY": 1.64725721,
-            "posZ": 4.059001,
-            "rotX": 1.29527261E-05,
-            "rotY": 269.988373,
-            "rotZ": 1.36886877E-06,
+            "posZ": 4.05902052,
+            "rotX": 1.297793E-05,
+            "rotY": 269.9883,
+            "rotZ": 1.2058415E-06,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -32306,12 +32424,12 @@
           "GUID": "89591d",
           "Name": "Deck",
           "Transform": {
-            "posX": -0.421099722,
+            "posX": -0.42109555,
             "posY": 1.61355889,
-            "posZ": 4.35280132,
-            "rotX": -6.38334257E-08,
-            "rotY": 269.9997,
-            "rotZ": -2.949083E-08,
+            "posZ": 4.3528204,
+            "rotX": -2.7450497E-08,
+            "rotY": 269.999725,
+            "rotZ": -3.82589E-08,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -32494,12 +32612,12 @@
           "GUID": "914799",
           "Name": "Deck",
           "Transform": {
-            "posX": -3.28798652,
-            "posY": 1.64501488,
-            "posZ": 0.276722074,
-            "rotX": 1.65014207,
-            "rotY": 269.988525,
-            "rotZ": 9.7050266E-05,
+            "posX": -3.28801131,
+            "posY": 1.64503062,
+            "posZ": 0.276716024,
+            "rotX": 1.6486429,
+            "rotY": 269.9881,
+            "rotZ": 1.27051426E-05,
             "scaleX": 0.714680433,
             "scaleY": 1.0,
             "scaleZ": 0.714680433
@@ -32691,12 +32809,12 @@
           "GUID": "95640a",
           "Name": "Deck",
           "Transform": {
-            "posX": -23.640316,
-            "posY": 1.71418238,
-            "posZ": 0.000205677017,
-            "rotX": 0.009130249,
-            "rotY": 270.0003,
-            "rotZ": 179.992,
+            "posX": -23.6404819,
+            "posY": 1.71421778,
+            "posZ": 0.000264614966,
+            "rotX": 0.00770479348,
+            "rotY": 270.000732,
+            "rotZ": 179.993713,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -33251,11 +33369,11 @@
           "GUID": "b6157d",
           "Name": "Deck",
           "Transform": {
-            "posX": -3.92850041,
-            "posY": 1.69058347,
-            "posZ": 5.72020149,
-            "rotX": -1.86578486E-09,
-            "rotY": 270.000061,
+            "posX": -3.92850852,
+            "posY": 1.70502555,
+            "posZ": 5.72023,
+            "rotX": 1.36080036E-10,
+            "rotY": 270.000183,
             "rotZ": 180.0,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -33293,6 +33411,9 @@
           "Hands": false,
           "SidewaysCard": false,
           "DeckIDs": [
+            100000,
+            100200,
+            100100,
             276800,
             276900,
             277000,
@@ -33313,6 +33434,33 @@
             102900
           ],
           "CustomDeck": {
+            "1000": {
+              "FaceURL": "https://i.ibb.co/M2wBn9n/51e7778e9371.jpg",
+              "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            },
+            "1002": {
+              "FaceURL": "https://i.ibb.co/M2wBn9n/51e7778e9371.jpg",
+              "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            },
+            "1001": {
+              "FaceURL": "https://i.ibb.co/M2wBn9n/51e7778e9371.jpg",
+              "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            },
             "2768": {
               "FaceURL": "https://i.ibb.co/JQj8c9S/f6d96c6b7607.jpg",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
@@ -33426,6 +33574,189 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "ContainedObjects": [
+            {
+              "GUID": "9140fc",
+              "Name": "Card",
+              "Transform": {
+                "posX": 32.93171,
+                "posY": 1.59666538,
+                "posZ": -27.1660652,
+                "rotX": 0.00508499658,
+                "rotY": 269.999939,
+                "rotZ": 0.003917258,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0
+              },
+              "Nickname": "Battlefield Plunderer",
+              "Description": "",
+              "GMNotes": "{\"id\":\"d58bd93c-0261-472a-a5e8-086450c1b1fc\",\"type\":\"Enemy\",\"class\":\"Mythos\",\"traits\":\"Humanoid\",\"TtsZoopGuid\":\"d58bd93c-0261-472a-a5e8-086450c1b1fc\"}",
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "g": 0.713235259,
+                "b": 0.713235259
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "LayoutGroupSortIndex": 0,
+              "Value": 0,
+              "Locked": false,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": true,
+              "Hands": true,
+              "CardID": 100000,
+              "SidewaysCard": false,
+              "CustomDeck": {
+                "1000": {
+                  "FaceURL": "https://i.ibb.co/M2wBn9n/51e7778e9371.jpg",
+                  "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "NumWidth": 1,
+                  "NumHeight": 1,
+                  "BackIsHidden": true,
+                  "UniqueBack": false,
+                  "Type": 0
+                }
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": ""
+            },
+            {
+              "GUID": "e00003",
+              "Name": "Card",
+              "Transform": {
+                "posX": 33.14198,
+                "posY": 1.49508011,
+                "posZ": -26.808939,
+                "rotX": 0.000234807245,
+                "rotY": 269.999969,
+                "rotZ": -0.00157473679,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0
+              },
+              "Nickname": "Battlefield Plunderer",
+              "Description": "",
+              "GMNotes": "{\"id\":\"d58bd93c-0261-472a-a5e8-086450c1b1fc\",\"type\":\"Enemy\",\"class\":\"Mythos\",\"traits\":\"Humanoid\",\"TtsZoopGuid\":\"d58bd93c-0261-472a-a5e8-086450c1b1fc\"}",
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "g": 0.713235259,
+                "b": 0.713235259
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "LayoutGroupSortIndex": 0,
+              "Value": 0,
+              "Locked": false,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": true,
+              "Hands": true,
+              "CardID": 100200,
+              "SidewaysCard": false,
+              "CustomDeck": {
+                "1002": {
+                  "FaceURL": "https://i.ibb.co/M2wBn9n/51e7778e9371.jpg",
+                  "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "NumWidth": 1,
+                  "NumHeight": 1,
+                  "BackIsHidden": true,
+                  "UniqueBack": false,
+                  "Type": 0
+                }
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": ""
+            },
+            {
+              "GUID": "e00002",
+              "Name": "Card",
+              "Transform": {
+                "posX": 33.68192,
+                "posY": 1.5450536,
+                "posZ": -26.6996346,
+                "rotX": 0.00105681433,
+                "rotY": 270.0,
+                "rotZ": -0.000275965722,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0
+              },
+              "Nickname": "Battlefield Plunderer",
+              "Description": "",
+              "GMNotes": "{\"id\":\"d58bd93c-0261-472a-a5e8-086450c1b1fc\",\"type\":\"Enemy\",\"class\":\"Mythos\",\"traits\":\"Humanoid\",\"TtsZoopGuid\":\"d58bd93c-0261-472a-a5e8-086450c1b1fc\"}",
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "g": 0.713235259,
+                "b": 0.713235259
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "LayoutGroupSortIndex": 0,
+              "Value": 0,
+              "Locked": false,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": true,
+              "Hands": true,
+              "CardID": 100100,
+              "SidewaysCard": false,
+              "CustomDeck": {
+                "1001": {
+                  "FaceURL": "https://i.ibb.co/M2wBn9n/51e7778e9371.jpg",
+                  "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "NumWidth": 1,
+                  "NumHeight": 1,
+                  "BackIsHidden": true,
+                  "UniqueBack": false,
+                  "Type": 0
+                }
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": ""
+            },
             {
               "GUID": "79ce85",
               "Name": "Card",
@@ -34530,17 +34861,17 @@
           "GUID": "e00001",
           "Name": "Card",
           "Transform": {
-            "posX": -3.85000038,
+            "posX": -3.85000825,
             "posY": 1.59660506,
-            "posZ": -10.3882027,
-            "rotX": -1.95400247E-08,
-            "rotY": 269.975281,
-            "rotZ": -4.32274234E-08,
+            "posZ": -10.3882456,
+            "rotX": -2.28281429E-08,
+            "rotY": 269.975128,
+            "rotZ": 1.13674306E-08,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Scenario",
+          "Nickname": "The Once and Future King",
           "Description": "The Once and Future King",
           "GMNotes": "{\"TtsZoopGuid\":\"f8081940-ae90-4f79-a5e0-7814e76d168c\",\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"modifier\":-3,\"description\":\"-3. If you fail and you are at a <t>Battlefield</t> location take 1 damage. If you fail and you are not at a <t>Battlefield</t> location take 1 horror.\"},\"Skull\":{\"modifier\":-2,\"description\":\"-2 (-4 instead if you are at a <t>Battlefield</t> location).\"},\"Tablet\":{\"modifier\":-3,\"description\":\"-3. If you fail, add 1 damage token to the <t>Battlefield</t> location with the lowest AFV.\"},\"Elder Thing\":{\"modifier\":-3,\"description\":\"-3. If you fail, add 1 horror token to the <t>Battlefield</t> location with the highest MFV.\"}},\"back\":{\"Cultist\":{\"modifier\":-5,\"description\":\"-5. If you fail and you are at a <t>Battlefield</t> location, take 1 damage. If you fail and you are not at a <t>Battlefield</t> location take 1 horror.\"},\"Skull\":{\"modifier\":-3,\"description\":\"-3 (-5 instead if you are at a <t>Battlefield</t> location).\"},\"Tablet\":{\"modifier\":-5,\"description\":\"-5. If you fail, add 1 damage token to the <t>Battlefield</t> location with the lowest AFV.\"},\"Elder Thing\":{\"modifier\":-5,\"description\":\"-5. If you fail, add 1 horror token to the <t>Battlefield</t> location with the highest MFV.\"}}},\"id\":\"f8081940-ae90-4f79-a5e0-7814e76d168c\"}",
           "AltLookAngle": {
@@ -34591,12 +34922,12 @@
           "GUID": "e0000c",
           "Name": "Card",
           "Transform": {
-            "posX": -23.6397972,
-            "posY": 1.53359318,
-            "posZ": -15.3004007,
-            "rotX": 0.000140153483,
-            "rotY": 270.003662,
-            "rotZ": 180.000824,
+            "posX": -23.63978,
+            "posY": 1.53360593,
+            "posZ": -15.3004589,
+            "rotX": -5.629303E-07,
+            "rotY": 270.0043,
+            "rotZ": 179.999939,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -34653,11 +34984,11 @@
           "GUID": "e0000e",
           "Name": "Card",
           "Transform": {
-            "posX": -17.0398979,
+            "posX": -17.0398579,
             "posY": 1.53360486,
-            "posZ": 8.755939E-08,
-            "rotX": 5.236583E-08,
-            "rotY": 270.013641,
+            "posZ": 1.26805787E-06,
+            "rotX": 5.45890622E-08,
+            "rotY": 270.013733,
             "rotZ": 180.0,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -34715,11 +35046,11 @@
           "GUID": "e0000f",
           "Name": "Card",
           "Transform": {
-            "posX": -23.64,
-            "posY": 1.53362644,
-            "posZ": 15.3003035,
-            "rotX": 3.052387E-05,
-            "rotY": 270.001434,
+            "posX": -23.63999,
+            "posY": 1.53362656,
+            "posZ": 15.3003521,
+            "rotX": 3.04968216E-05,
+            "rotY": 270.0019,
             "rotZ": 179.998917,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -34777,11 +35108,11 @@
           "GUID": "e00010",
           "Name": "Card",
           "Transform": {
-            "posX": -23.6398983,
+            "posX": -23.6398754,
             "posY": 1.53360486,
-            "posZ": 7.65020275,
-            "rotX": -5.6079E-08,
-            "rotY": 270.000916,
+            "posZ": 7.650237,
+            "rotX": 9.98410937E-11,
+            "rotY": 270.001251,
             "rotZ": 180.0,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -34839,12 +35170,12 @@
           "GUID": "e00020",
           "Name": "Card",
           "Transform": {
-            "posX": -10.8489962,
+            "posX": -10.8489237,
             "posY": 1.53360486,
-            "posZ": 4.037501,
-            "rotX": -1.85695264E-08,
+            "posZ": 4.03751659,
+            "rotX": 3.43366544E-08,
             "rotY": 270.0099,
-            "rotZ": -1.36629144E-08,
+            "rotZ": -6.08002E-08,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -34900,12 +35231,12 @@
           "GUID": "e00022",
           "Name": "Card",
           "Transform": {
-            "posX": -21.2230988,
-            "posY": 1.55066764,
-            "posZ": -16.3398018,
-            "rotX": 359.362244,
-            "rotY": 269.990051,
-            "rotZ": 179.998962,
+            "posX": -21.2230663,
+            "posY": 1.55080545,
+            "posZ": -16.3398724,
+            "rotX": 359.356323,
+            "rotY": 269.990173,
+            "rotZ": 180.0,
             "scaleX": 1.0,
             "scaleY": 1.0,
             "scaleZ": 1.0
@@ -34961,11 +35292,11 @@
           "GUID": "e00026",
           "Name": "Card",
           "Transform": {
-            "posX": -21.8428,
-            "posY": 1.55655766,
-            "posZ": 16.2103043,
+            "posX": -21.8427677,
+            "posY": 1.55655718,
+            "posZ": 16.2103748,
             "rotX": 359.141144,
-            "rotY": 270.006042,
+            "rotY": 270.00592,
             "rotZ": 179.999878,
             "scaleX": 1.0,
             "scaleY": 1.0,
@@ -35022,12 +35353,12 @@
           "GUID": "ea6b5f",
           "Name": "Custom_Token",
           "Transform": {
-            "posX": -24.3875,
-            "posY": 1.70931828,
-            "posZ": 2.85681438,
-            "rotX": 0.00514787,
-            "rotY": 269.996521,
-            "rotZ": 359.9939,
+            "posX": -24.3875313,
+            "posY": 1.709565,
+            "posZ": 2.85683537,
+            "rotX": 0.000491545361,
+            "rotY": 269.996277,
+            "rotZ": 0.00725791836,
             "scaleX": 0.236185148,
             "scaleY": 1.00000012,
             "scaleZ": 0.236185163
@@ -35101,12 +35432,12 @@
       "GUID": "683f73",
       "Name": "Custom_Model_Bag",
       "Transform": {
-        "posX": 12.2500992,
-        "posY": 1.4814992,
+        "posX": 12.2501,
+        "posY": 1.48149908,
         "posZ": 27.9865,
-        "rotX": 2.966743E-08,
-        "rotY": 269.996826,
-        "rotZ": 3.079416E-08,
+        "rotX": 6.865434E-07,
+        "rotY": 269.9968,
+        "rotZ": -5.400331E-07,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -37267,7 +37598,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Scenario",
+          "Nickname": "The Cave of Fruit Trees",
           "Description": "The Cave of Fruit Trees",
           "GMNotes": "{\"TtsZoopGuid\":\"a46d6858-1ea6-4877-8b87-5d0f1e027cec\",\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Skull\":{\"modifier\":-999,\"description\":\"-X. X is equal to the number of unrevealed locations +1. (Max -5)\"},\"Tablet\":{\"modifier\":-2,\"description\":\"-2. -4 if there is an <t>Arthurian</t> enemy at your location.\"},\"Elder Thing\":{\"modifier\":-2,\"description\":\"-2. If you fail, set your current location to unrevealed.\"}},\"back\":{\"Skull\":{\"modifier\":-999,\"description\":\"-X. X is equal to the number of unrevealed locations +2.\"},\"Tablet\":{\"modifier\":-3,\"description\":\"-3. -6 if there is an <t>Arthurian</t> enemy at your location.\"},\"Elder Thing\":{\"modifier\":-3,\"description\":\"-3. If you fail, move to any revealed location and shuffle your previous location into the Caves deck.\"}}},\"id\":\"a46d6858-1ea6-4877-8b87-5d0f1e027cec\"}",
           "AltLookAngle": {
@@ -40348,9 +40679,9 @@
         "posX": 12.2493,
         "posY": 1.48149908,
         "posZ": -28.0148,
-        "rotX": 3.379523E-08,
+        "rotX": 3.576759E-08,
         "rotY": 270.0612,
-        "rotZ": 2.8922619E-08,
+        "rotZ": 3.151713E-08,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -43650,7 +43981,7 @@
                   ],
                   "CustomDeck": {
                     "1033": {
-                      "FaceURL": "https://i.ibb.co/YPwRR7j/ff50565d3839.jpg",
+                      "FaceURL": "https://i.ibb.co/VYWDLwT/8d91179b8ae4.jpg",
                       "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
                       "NumWidth": 1,
                       "NumHeight": 1,
@@ -43711,7 +44042,7 @@
                       "SidewaysCard": false,
                       "CustomDeck": {
                         "1033": {
-                          "FaceURL": "https://i.ibb.co/YPwRR7j/ff50565d3839.jpg",
+                          "FaceURL": "https://i.ibb.co/VYWDLwT/8d91179b8ae4.jpg",
                           "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
                           "NumWidth": 1,
                           "NumHeight": 1,
@@ -43772,7 +44103,7 @@
                       "SidewaysCard": false,
                       "CustomDeck": {
                         "1033": {
-                          "FaceURL": "https://i.ibb.co/YPwRR7j/ff50565d3839.jpg",
+                          "FaceURL": "https://i.ibb.co/VYWDLwT/8d91179b8ae4.jpg",
                           "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
                           "NumWidth": 1,
                           "NumHeight": 1,
@@ -43833,7 +44164,7 @@
                       "SidewaysCard": false,
                       "CustomDeck": {
                         "1033": {
-                          "FaceURL": "https://i.ibb.co/YPwRR7j/ff50565d3839.jpg",
+                          "FaceURL": "https://i.ibb.co/VYWDLwT/8d91179b8ae4.jpg",
                           "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
                           "NumWidth": 1,
                           "NumHeight": 1,
@@ -43894,7 +44225,7 @@
                       "SidewaysCard": false,
                       "CustomDeck": {
                         "1033": {
-                          "FaceURL": "https://i.ibb.co/YPwRR7j/ff50565d3839.jpg",
+                          "FaceURL": "https://i.ibb.co/VYWDLwT/8d91179b8ae4.jpg",
                           "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
                           "NumWidth": 1,
                           "NumHeight": 1,
@@ -47378,8 +47709,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "1024": {
-                  "FaceURL": "https://i.ibb.co/wcjHG0S/aa992c430af4.jpg",
-                  "BackURL": "https://i.ibb.co/rcHtWY3/e28ee4991855.jpg",
+                  "FaceURL": "https://i.ibb.co/L1bbjgG/1afb9725feea.jpg",
+                  "BackURL": "https://i.ibb.co/BZfCBGJ/7a2b32379d70.jpg",
                   "NumWidth": 1,
                   "NumHeight": 1,
                   "BackIsHidden": true,
@@ -51107,8 +51438,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "1025": {
-                  "FaceURL": "https://i.ibb.co/NKJjGXX/420447c042b8.jpg",
-                  "BackURL": "https://i.ibb.co/4Tt2Vjk/d31d0982bb45.jpg",
+                  "FaceURL": "https://i.ibb.co/GC9GBdF/0f4e39d84cb6.jpg",
+                  "BackURL": "https://i.ibb.co/d6531h6/f86742ffd30a.jpg",
                   "NumWidth": 1,
                   "NumHeight": 1,
                   "BackIsHidden": true,
@@ -51197,7 +51528,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Scenario",
+          "Nickname": "The Ill-Made Knight",
           "Description": "The Ill-Made Knight",
           "GMNotes": "{\"TtsZoopGuid\":\"956ad289-b6a6-4f68-857a-e6a893cceba2\",\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"modifier\":-3,\"description\":\"-3. If you fail, place 1 doom on the nearest <t>Cultist</t> enemy.\"},\"Skull\":{\"modifier\":-2,\"description\":\"-2 for each unique trait of <t>Police, Knight</t> or <t>Cultist</t> amongst enemies at your location.\"},\"Tablet\":{\"modifier\":-2,\"description\":\"-2. Remove 1 damage from an <t>Arthurian</t> card.\"},\"Elder Thing\":{\"modifier\":-4,\"description\":\"-4. If you fail, place 1 of your clues on your location.\"}},\"back\":{\"Cultist\":{\"modifier\":-4,\"description\":\"-4. If you fail, place 1 doom on the nearest <t>Cultist</t> enemy.\"},\"Skull\":{\"modifier\":-3,\"description\":\"-3 for each unique trait of <t>Police, Knight</t> or <t>Cultist</t> amongst enemies at your location.\"},\"Tablet\":{\"modifier\":-4,\"description\":\"-4. Remove 1 damage from an <t>Arthurian</t> card.\"},\"Elder Thing\":{\"modifier\":-6,\"description\":\"-6. If you fail, place 1 of your clues on your location.\"}}},\"id\":\"956ad289-b6a6-4f68-857a-e6a893cceba2\"}",
           "AltLookAngle": {
@@ -56633,9 +56964,9 @@
         "posX": 12.2469,
         "posY": 1.481499,
         "posZ": -12.0158,
-        "rotX": 2.7305056E-08,
+        "rotX": 2.85139663E-08,
         "rotY": 270.0144,
-        "rotZ": -1.89954662E-07,
+        "rotZ": -1.21743691E-08,
         "scaleX": 2.21,
         "scaleY": 0.46,
         "scaleZ": 2.42
@@ -62190,7 +62521,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Scenario",
+          "Nickname": "Prophetiae Merlini",
           "Description": "Prophetiae Merlini",
           "GMNotes": "{\"TtsZoopGuid\":\"48943c9b-1756-484f-b14c-cb190a8b48f9\",\"type\":\"ScenarioReference\",\"class\":\"Mythos\",\"tokens\":{\"front\":{\"Cultist\":{\"modifier\":-2,\"description\":\"-2. If you fail, place 1 doom on the nearest <t>Cultist</t> enemy.\"},\"Skull\":{\"modifier\":-1,\"description\":\"-1 for each story card in the victory display (Max -5).\"},\"Tablet\":{\"modifier\":0,\"description\":\"0. Reveal another token. If you fail and this test was on or against an <t>Arthurian</t> card, place 1 doom on that card.\"},\"Elder Thing\":{\"modifier\":-2,\"description\":\"-2. If this test was printed on a story card, -5.\"}},\"back\":{\"Cultist\":{\"modifier\":-4,\"description\":\"-4. If you fail, place 1 doom on the nearest <t>Cultist</t> enemy.\"},\"Skull\":{\"modifier\":-1,\"description\":\"-1 for each story card in the victory display.\"},\"Tablet\":{\"modifier\":-2,\"description\":\"-2. Reveal another token. If you fail and this test was on or against an <t>Arthurian</t> card, place 1 doom on that card.\"},\"Elder Thing\":{\"modifier\":-5,\"description\":\"-5. If you fail and this test was printed on a story card, lose an action.\"}}},\"id\":\"48943c9b-1756-484f-b14c-cb190a8b48f9\"}",
           "AltLookAngle": {
@@ -63567,12 +63898,12 @@
       "GUID": "dddf97",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": -5.350001,
+        "posX": -5.35000038,
         "posY": 1.58100045,
-        "posZ": 28.6,
-        "rotX": 7.976206E-09,
-        "rotY": 270.0245,
-        "rotZ": -2.04762287E-08,
+        "posZ": 28.5999985,
+        "rotX": -3.40856232E-08,
+        "rotY": 270.024475,
+        "rotZ": -6.392067E-08,
         "scaleX": 3.31565976,
         "scaleY": 1.0,
         "scaleZ": 3.31565976
@@ -63605,7 +63936,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomPDF": {
-        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/2370651275657925500/F0DF1BE8F2F196DE17ACE2701488E5387066FBBD/",
+        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/5951014424045818412/BC895A29ACF64AB22555BB2C9E93146415F6E1BA/",
         "PDFPassword": "",
         "PDFPage": 0,
         "PDFPageOffset": 0
@@ -63621,9 +63952,9 @@
         "posX": -4.2371006,
         "posY": 1.581499,
         "posZ": -30.1801,
-        "rotX": -3.709474E-08,
+        "rotX": -3.47035041E-08,
         "rotY": 269.9996,
-        "rotZ": -1.1367729E-08,
+        "rotZ": -8.39402E-09,
         "scaleX": 5.189041,
         "scaleY": 1.0,
         "scaleZ": 5.189041
