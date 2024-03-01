@@ -82,6 +82,15 @@
       "description": "Strange disappearances haunt the city of Arkham, with items and people vanishing not just from existence, but from memory and history as well. Only you remember..."
     },
     {
+      "name": "The Feast of Hemlock Vale",
+      "url": "campaigns/the_feast_of_hemlock_vale.json",
+      "replace": "c740af",
+      "boxsize": "big",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2342503777949914349/98CA11F8C5250E8F4A1DA877CD496C6FFB87AF0E/",
+      "author": "Fantasy Flight Games",
+      "description": "When renowned botanist Dr. Rosa Marquez receives a strange sample from the secluded and mysterious Hemlock Isle, her instincts tell her that something is amiss. The investigators only have three days to find out what lurks beneath Hemlock Vale before its people meet a terrible fate."
+    },
+    {
       "name": "Return to The Night of the Zealot",
       "url": "campaigns/return_to_notz.json",
       "replace": "56270d",
