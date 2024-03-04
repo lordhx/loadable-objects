@@ -1,8 +1,8 @@
 {
-  "latestVersion": "3.6.0",
+  "latestVersion": "3.7.0",
   "releaseHighlights": [
-    "Added Feast of Hemlock Vale Expansion",
-    "Updated card backs (higher resolution)",
-    "Before starting a new campaign, update!"
+    "Added Feast of Hemlock Vale Campaign",
+    "Updated FoVH and EotE player card scans",
+    "Implemented support for new taboo list"
   ]
 }
