@@ -867,33 +867,6 @@
       "description": "Darkest Dungeon meets Arkham Horror — a match made in hell! An 8-part campaign set in the Darkest Dungeon universe (along with 5 new investigators and player cards)."
     },
     {
-      "name": "Fan Campaign: The Dying Star",
-      "url": "fancreations/campaign_dying_star.json",
-      "replace": "bcfff6",
-      "boxsize": "small",
-      "boxart": "http://cloud-3.steamusercontent.com/ugc/798737729142922162/AD09D68EC542F778CCA3A4F5B33E17EF50AFE31B/",
-      "author": "",
-      "description": ""
-    },
-    {
-      "name": "Fan Campaign: Essence of Humanity",
-      "url": "fancreations/campaign_essence_of_humanity.json",
-      "replace": "691339",
-      "boxsize": "big",
-      "boxart": "http://cloud-3.steamusercontent.com/ugc/1823394900012495167/63C400A27475E745FF94F8837D7A8AECC7F837F4/",
-      "author": "Lucaxiom",
-      "description": "An eight-part campaign with an original premise, set in the same timeframe as official Arkham campaigns."
-    },
-    {
-      "name": "Fan Campaign: Future Reflections",
-      "url": "fancreations/campaign_future_reflections.json",
-      "replace": "0f0680",
-      "boxsize": "big",
-      "boxart": "https://i.imgur.com/T97bYDU.pnghttps://i.imgur.com/T97bYDU.png",
-      "author": "Kodab Games",
-      "description": "This is the first 2 scenarios in the Future Reflections campaign, also includes 5 custom investigators."
-    },
-    {
       "name": "Fan Campaign: The Ghosts of Onigawa Campaign Expansion",
       "url": "fancreations/campaign_onigawa.json",
       "replace": "8daa73",
