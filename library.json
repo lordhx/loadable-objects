@@ -669,6 +669,15 @@
       "description": ""
     },
     {
+      "name": "Fan Investigators: Strawberry Shortcake - Investigator Pack",
+      "url": "fancreations/investigators_strawberry_shortcake.json",
+      "replace": "a12df1",
+      "boxsize": "small",
+      "boxart": "http://cloud-3.steamusercontent.com/ugc/2414563907814512217/BF49DCD8CC60CA46ACA0F4D41637AA4FC243071D/",
+      "author": "Blankiecat",
+      "description": "A couple of investigators based on Strawberry Shortcake - Berry in the big City."
+    },
+    {
       "name": "Fan Investigators: Streets of New Capenna",
       "url": "fancreations/investigators_SNC.json",
       "replace": "48b4ca",
