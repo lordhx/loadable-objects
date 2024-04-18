@@ -5073,7 +5073,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "6092": {
-              "FaceURL": "https://i.ibb.co/tqVcD0x/Arcane-Trickster-1.png",
+              "FaceURL": "https://i.ibb.co/HGxYqmV/Arcane-Trickster-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -6121,7 +6121,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "6041": {
-              "FaceURL": "https://i.ibb.co/y5hd12p/Abjuration-1.png",
+              "FaceURL": "https://i.ibb.co/zr58fjv/Abjuration-School-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -7786,7 +7786,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "6089": {
-              "FaceURL": "https://i.ibb.co/Mk3V5tz/121dfcacfb64.png",
+              "FaceURL": "https://i.ibb.co/c1RCPw3/Rogue-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -12376,7 +12376,7 @@
           },
           "Nickname": "Cunning Action (Dash)",
           "Description": "",
-          "GMNotes": "{\"TtsZoopGuid\":\"5fe75e66-dccc-4153-978e-98a016daa487\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"combatIcons\":1,\"cost\":1,\"level\":1}",
+          "GMNotes": "{\"TtsZoopGuid\":\"5fe75e66-dccc-4153-978e-98a016daa487\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"combatIcons\":1,\"cost\":1,\"level\":2}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -12408,7 +12408,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1049": {
-              "FaceURL": "https://i.ibb.co/JqKP0BV/a7ae6c774ca9.png",
+              "FaceURL": "https://i.ibb.co/cvS2KmC/Cunning-Action-Dash-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -12437,7 +12437,7 @@
           },
           "Nickname": "Cunning Action (Disengage)",
           "Description": "",
-          "GMNotes": "{\"TtsZoopGuid\":\"b2d39a27-e7b5-4a27-b710-8b89e8604228\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"willpowerIcons\":1,\"cost\":1,\"level\":1}",
+          "GMNotes": "{\"TtsZoopGuid\":\"b2d39a27-e7b5-4a27-b710-8b89e8604228\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"willpowerIcons\":1,\"cost\":1,\"level\":2}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -12469,7 +12469,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1050": {
-              "FaceURL": "https://i.ibb.co/nQjS7Z4/8b402d37fa5e.png",
+              "FaceURL": "https://i.ibb.co/s2wkfqV/Cunning-Action-Disengage-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -12498,7 +12498,7 @@
           },
           "Nickname": "Cunning Action (Hide)",
           "Description": "",
-          "GMNotes": "{\"TtsZoopGuid\":\"ce48d1dc-2c05-4d66-958c-63c7c663cb8e\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"intellectIcons\":1,\"cost\":1,\"level\":1}",
+          "GMNotes": "{\"TtsZoopGuid\":\"ce48d1dc-2c05-4d66-958c-63c7c663cb8e\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"intellectIcons\":1,\"cost\":1,\"level\":2}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -12530,7 +12530,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1051": {
-              "FaceURL": "https://i.ibb.co/RT0157w/18446d0771a4.png",
+              "FaceURL": "https://i.ibb.co/4f72cRJ/Cunning-Action-Hide-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -13020,7 +13020,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1059": {
-              "FaceURL": "https://i.ibb.co/Xs6ZSqz/Metamagic-1.png",
+              "FaceURL": "https://i.ibb.co/xsG15Ht/Metamagic-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -19321,7 +19321,7 @@
           },
           "Nickname": "Cunning Action (Dash)",
           "Description": "",
-          "GMNotes": "{\"TtsZoopGuid\":\"5fe75e66-dccc-4153-978e-98a016daa487\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"combatIcons\":1,\"cost\":1,\"level\":1}",
+          "GMNotes": "{\"TtsZoopGuid\":\"5fe75e66-dccc-4153-978e-98a016daa487\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"combatIcons\":1,\"cost\":1,\"level\":2}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -19353,7 +19353,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1049": {
-              "FaceURL": "https://i.ibb.co/JqKP0BV/a7ae6c774ca9.png",
+              "FaceURL": "https://i.ibb.co/cvS2KmC/Cunning-Action-Dash-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -19382,7 +19382,7 @@
           },
           "Nickname": "Cunning Action (Disengage)",
           "Description": "",
-          "GMNotes": "{\"TtsZoopGuid\":\"b2d39a27-e7b5-4a27-b710-8b89e8604228\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"willpowerIcons\":1,\"cost\":1,\"level\":1}",
+          "GMNotes": "{\"TtsZoopGuid\":\"b2d39a27-e7b5-4a27-b710-8b89e8604228\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"willpowerIcons\":1,\"cost\":1,\"level\":2}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -19414,7 +19414,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1050": {
-              "FaceURL": "https://i.ibb.co/nQjS7Z4/8b402d37fa5e.png",
+              "FaceURL": "https://i.ibb.co/s2wkfqV/Cunning-Action-Disengage-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -19443,7 +19443,7 @@
           },
           "Nickname": "Cunning Action (Hide)",
           "Description": "",
-          "GMNotes": "{\"TtsZoopGuid\":\"ce48d1dc-2c05-4d66-958c-63c7c663cb8e\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"intellectIcons\":1,\"cost\":1,\"level\":1}",
+          "GMNotes": "{\"TtsZoopGuid\":\"ce48d1dc-2c05-4d66-958c-63c7c663cb8e\",\"type\":\"Event\",\"class\":\"Seeker|Rogue\",\"traits\":\"Insight. Gambit. Trick\",\"agilityIcons\":2,\"intellectIcons\":1,\"cost\":1,\"level\":2}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -19475,7 +19475,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1051": {
-              "FaceURL": "https://i.ibb.co/RT0157w/18446d0771a4.png",
+              "FaceURL": "https://i.ibb.co/4f72cRJ/Cunning-Action-Hide-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -19965,7 +19965,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "1059": {
-              "FaceURL": "https://i.ibb.co/Xs6ZSqz/Metamagic-1.png",
+              "FaceURL": "https://i.ibb.co/xsG15Ht/Metamagic-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -21191,7 +21191,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "6092": {
-              "FaceURL": "https://i.ibb.co/tqVcD0x/Arcane-Trickster-1.png",
+              "FaceURL": "https://i.ibb.co/HGxYqmV/Arcane-Trickster-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -21994,7 +21994,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "6041": {
-              "FaceURL": "https://i.ibb.co/y5hd12p/Abjuration-1.png",
+              "FaceURL": "https://i.ibb.co/zr58fjv/Abjuration-School-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -22860,7 +22860,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "6089": {
-              "FaceURL": "https://i.ibb.co/Mk3V5tz/121dfcacfb64.png",
+              "FaceURL": "https://i.ibb.co/c1RCPw3/Rogue-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -40656,7 +40656,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "8722": {
-              "FaceURL": "https://i.ibb.co/QHkbnzs/1f33eb5fb47a.png",
+              "FaceURL": "https://i.ibb.co/z4H8VLK/Half-Elf-Versatility-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -47134,7 +47134,7 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "8722": {
-              "FaceURL": "https://i.ibb.co/QHkbnzs/1f33eb5fb47a.png",
+              "FaceURL": "https://i.ibb.co/z4H8VLK/Half-Elf-Versatility-1.png",
               "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
               "NumWidth": 1,
               "NumHeight": 1,
