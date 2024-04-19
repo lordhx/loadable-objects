@@ -52963,7 +52963,7 @@
               },
               "Nickname": "Frostbitten",
               "Description": "Weakness.",
-              "GMNotes": "{\n  \"id\": \"08646\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Injury.\",\n  \"weakness\": true,\n  \"cycle\": \"Edge of the Earth\"\n}",
+              "GMNotes": "{\n  \"id\": \"08646\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Injury.\",\n  \"weakness\": true,\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Damage\",\n      \"token\": \"damage\"\n    }\n  ],\n  \"cycle\": \"Edge of the Earth\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -53024,7 +53024,7 @@
               },
               "Nickname": "Frostbitten",
               "Description": "Weakness.",
-              "GMNotes": "{\n  \"id\": \"08646\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Injury.\",\n  \"weakness\": true,\n  \"cycle\": \"Edge of the Earth\"\n}",
+              "GMNotes": "{\n  \"id\": \"08646\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Injury.\",\n  \"weakness\": true,\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Damage\",\n      \"token\": \"damage\"\n    }\n  ],\n  \"cycle\": \"Edge of the Earth\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -53085,7 +53085,7 @@
               },
               "Nickname": "Frostbitten",
               "Description": "Weakness.",
-              "GMNotes": "{\n  \"id\": \"08646\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Injury.\",\n  \"weakness\": true,\n  \"cycle\": \"Edge of the Earth\"\n}",
+              "GMNotes": "{\n  \"id\": \"08646\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Injury.\",\n  \"weakness\": true,\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Damage\",\n      \"token\": \"damage\"\n    }\n  ],\n  \"cycle\": \"Edge of the Earth\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -53146,7 +53146,7 @@
               },
               "Nickname": "Frostbitten",
               "Description": "Weakness.",
-              "GMNotes": "{\n  \"id\": \"08646\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Injury.\",\n  \"weakness\": true,\n  \"cycle\": \"Edge of the Earth\"\n}",
+              "GMNotes": "{\n  \"id\": \"08646\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Injury.\",\n  \"weakness\": true,\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Damage\",\n      \"token\": \"damage\"\n    }\n  ],\n  \"cycle\": \"Edge of the Earth\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
