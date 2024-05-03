@@ -219,7 +219,7 @@
               },
               "Nickname": "Vengeance Awaits",
               "Description": "Agenda 3",
-              "GMNotes": "{\n  \"id\": \"01145\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 5,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01145\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 5,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -280,7 +280,7 @@
               },
               "Nickname": "The Ritual Begins",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"01144\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 5,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01144\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 5,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -341,7 +341,7 @@
               },
               "Nickname": "The Arkham Woods",
               "Description": "Agenda 1",
-              "GMNotes": "{\n  \"id\": \"01143\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 4,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01143\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 4,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -404,7 +404,7 @@
           },
           "Nickname": "Main Path",
           "Description": "Woods.",
-          "GMNotes": "{\n  \"id\": \"01149\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Square|Plus|ArkhamWoods\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Square|Plus|ArkhamWoods\"\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01149\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Square|Plus|ArkhamWoods\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Square|Plus|ArkhamWoods\"\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -588,7 +588,7 @@
               },
               "Nickname": "Arkham Woods",
               "Description": "Woods.",
-              "GMNotes": "{\n  \"id\": \"01155\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Crescent|ArkhamWoods\",\n    \"connections\": \"Tilde|SlantedEquals|Hourglass\"\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01155\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Crescent|ArkhamWoods\",\n    \"connections\": \"Tilde|SlantedEquals|Hourglass\"\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -650,7 +650,7 @@
               },
               "Nickname": "Arkham Woods",
               "Description": "Woods.",
-              "GMNotes": "{\n  \"id\": \"01154\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"SlantedEquals|ArkhamWoods\",\n    \"connections\": \"Tilde|Tee|Crescent\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01154\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"SlantedEquals|ArkhamWoods\",\n    \"connections\": \"Tilde|Tee|Crescent\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -712,7 +712,7 @@
               },
               "Nickname": "Arkham Woods",
               "Description": "Woods.",
-              "GMNotes": "{\n  \"id\": \"01153\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Hourglass|ArkhamWoods\",\n    \"connections\": \"Tilde|Crescent|Triangle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01153\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Hourglass|ArkhamWoods\",\n    \"connections\": \"Tilde|Crescent|Triangle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -774,7 +774,7 @@
               },
               "Nickname": "Arkham Woods",
               "Description": "Woods.",
-              "GMNotes": "{\n  \"id\": \"01152\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Diamond|ArkhamWoods\",\n    \"connections\": \"Tilde|Triangle|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01152\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Diamond|ArkhamWoods\",\n    \"connections\": \"Tilde|Triangle|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -836,7 +836,7 @@
               },
               "Nickname": "Arkham Woods",
               "Description": "Woods.",
-              "GMNotes": "{\n  \"id\": \"01151\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tee|ArkhamWoods\",\n    \"connections\": \"Tilde|Diamond|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01151\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tee|ArkhamWoods\",\n    \"connections\": \"Tilde|Diamond|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -898,7 +898,7 @@
               },
               "Nickname": "Arkham Woods",
               "Description": "Woods.",
-              "GMNotes": "{\n  \"id\": \"01150\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Triangle|ArkhamWoods\",\n    \"connections\": \"Tilde|Hourglass|Diamond\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01150\",\n  \"type\": \"Location\",\n  \"traits\": \"Woods.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square|ArkhamWoods\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Triangle|ArkhamWoods\",\n    \"connections\": \"Tilde|Hourglass|Diamond\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -1035,7 +1035,7 @@
               },
               "Nickname": "Ghoul Priest",
               "Description": "Humanoid. Monster. Ghoul. Elite.",
-              "GMNotes": "{\n  \"id\": \"01116\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01116\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -1146,7 +1146,7 @@
                   },
                   "Nickname": "Predator or Prey?",
                   "Description": "Agenda 1",
-                  "GMNotes": "{\n  \"id\": \"01121a\",\n  \"type\": \"Agenda\",\n  \"victory\": 2,\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01121a\",\n  \"type\": \"Agenda\",\n  \"victory\": 2,\n  \"doomThreshold\": 6,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -1207,7 +1207,7 @@
                   },
                   "Nickname": "Ruth Turner",
                   "Description": "The Mortician",
-                  "GMNotes": "{\n  \"id\": \"01141\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01141\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -1268,7 +1268,7 @@
                   },
                   "Nickname": "Victoria Devereux",
                   "Description": "The Collector",
-                  "GMNotes": "{\n  \"id\": \"01140\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01140\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -1329,7 +1329,7 @@
                   },
                   "Nickname": "Peter Warren",
                   "Description": "The Occult Professor",
-                  "GMNotes": "{\n  \"id\": \"01139\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01139\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -1390,7 +1390,7 @@
                   },
                   "Nickname": "Herman Collins",
                   "Description": "The Undertaker",
-                  "GMNotes": "{\n  \"id\": \"01138\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01138\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -1451,7 +1451,7 @@
                   },
                   "Nickname": "\"Wolf-Man\" Drew",
                   "Description": "The Cannibal",
-                  "GMNotes": "{\n  \"id\": \"01137\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01137\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -1571,7 +1571,7 @@
               },
               "Nickname": "Umôrdhoth",
               "Description": "The Devourer Below",
-              "GMNotes": "{\n  \"id\": \"01157\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01157\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Elite.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -1632,7 +1632,7 @@
               },
               "Nickname": "Ritual Site",
               "Description": "Cave.",
-              "GMNotes": "{\n  \"id\": \"01156\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Tilde\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01156\",\n  \"type\": \"Location\",\n  \"traits\": \"Cave.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Tilde\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -1758,7 +1758,7 @@
               },
               "Nickname": "Disrupting the Ritual",
               "Description": "Act 3",
-              "GMNotes": "{\n  \"id\": \"01148\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01148\",\n  \"type\": \"Act\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -1819,7 +1819,7 @@
               },
               "Nickname": "Into the Darkness",
               "Description": "Act 2",
-              "GMNotes": "{\n  \"id\": \"01147\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01147\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -1880,7 +1880,7 @@
               },
               "Nickname": "Investigating the Trail",
               "Description": "Act 1",
-              "GMNotes": "{\n  \"id\": \"01146\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01146\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -2056,7 +2056,7 @@
                   },
                   "Nickname": "The Yellow Sign",
                   "Description": "Omen.",
-                  "GMNotes": "{\n  \"id\": \"01176\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01176\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2117,7 +2117,7 @@
                   },
                   "Nickname": "The Yellow Sign",
                   "Description": "Omen.",
-                  "GMNotes": "{\n  \"id\": \"01176\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01176\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2178,7 +2178,7 @@
                   },
                   "Nickname": "Screeching Byakhee",
                   "Description": "Monster. Byakhee.",
-                  "GMNotes": "{\n  \"id\": \"01175\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Byakhee.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01175\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Byakhee.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2239,7 +2239,7 @@
                   },
                   "Nickname": "Screeching Byakhee",
                   "Description": "Monster. Byakhee.",
-                  "GMNotes": "{\n  \"id\": \"01175\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Byakhee.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01175\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Byakhee.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2365,7 +2365,7 @@
                   },
                   "Nickname": "Dreams of R'lyeh",
                   "Description": "Omen.",
-                  "GMNotes": "{\n  \"id\": \"01182\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01182\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2426,7 +2426,7 @@
                   },
                   "Nickname": "Dreams of R'lyeh",
                   "Description": "Omen.",
-                  "GMNotes": "{\n  \"id\": \"01182\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01182\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2487,7 +2487,7 @@
                   },
                   "Nickname": "Young Deep One",
                   "Description": "Humanoid. Monster. Deep One.",
-                  "GMNotes": "{\n  \"id\": \"01181\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Deep One.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01181\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Deep One.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2548,7 +2548,7 @@
                   },
                   "Nickname": "Young Deep One",
                   "Description": "Humanoid. Monster. Deep One.",
-                  "GMNotes": "{\n  \"id\": \"01181\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Deep One.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01181\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Deep One.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2674,7 +2674,7 @@
                   },
                   "Nickname": "Goat Spawn",
                   "Description": "Humanoid. Monster.",
-                  "GMNotes": "{\n  \"id\": \"01180\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01180\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2735,7 +2735,7 @@
                   },
                   "Nickname": "Goat Spawn",
                   "Description": "Humanoid. Monster.",
-                  "GMNotes": "{\n  \"id\": \"01180\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01180\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2796,7 +2796,7 @@
                   },
                   "Nickname": "Goat Spawn",
                   "Description": "Humanoid. Monster.",
-                  "GMNotes": "{\n  \"id\": \"01180\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01180\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2857,7 +2857,7 @@
                   },
                   "Nickname": "Relentless Dark Young",
                   "Description": "Monster. Dark Young.",
-                  "GMNotes": "{\n  \"id\": \"01179\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Dark Young.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01179\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Dark Young.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2983,7 +2983,7 @@
                   },
                   "Nickname": "Offer of Power",
                   "Description": "Pact.",
-                  "GMNotes": "{\n  \"id\": \"01178\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Pact.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01178\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Pact.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3044,7 +3044,7 @@
                   },
                   "Nickname": "Offer of Power",
                   "Description": "Pact.",
-                  "GMNotes": "{\n  \"id\": \"01178\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Pact.\",\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01178\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Pact.\",\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3105,7 +3105,7 @@
                   },
                   "Nickname": "Yithian Observer",
                   "Description": "Monster. Yithian.",
-                  "GMNotes": "{\n  \"id\": \"01177\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Yithian.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01177\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Yithian.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3166,7 +3166,7 @@
                   },
                   "Nickname": "Yithian Observer",
                   "Description": "Monster. Yithian.",
-                  "GMNotes": "{\n  \"id\": \"01177\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Yithian.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+                  "GMNotes": "{\n  \"id\": \"01177\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Yithian.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3373,7 +3373,7 @@
               },
               "Nickname": "Mysterious Chanting",
               "Description": "Hex.",
-              "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3434,7 +3434,7 @@
               },
               "Nickname": "Mysterious Chanting",
               "Description": "Hex.",
-              "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3495,7 +3495,7 @@
               },
               "Nickname": "Wizard of the Order",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"01170\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01170\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3556,7 +3556,7 @@
               },
               "Nickname": "Acolyte",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3617,7 +3617,7 @@
               },
               "Nickname": "Acolyte",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3678,7 +3678,7 @@
               },
               "Nickname": "Acolyte",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3739,7 +3739,7 @@
               },
               "Nickname": "Grasping Hands",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3800,7 +3800,7 @@
               },
               "Nickname": "Grasping Hands",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3861,7 +3861,7 @@
               },
               "Nickname": "Grasping Hands",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3922,7 +3922,7 @@
               },
               "Nickname": "Ravenous Ghoul",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01161\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01161\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -3983,7 +3983,7 @@
               },
               "Nickname": "Ghoul Minion",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4044,7 +4044,7 @@
               },
               "Nickname": "Ghoul Minion",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4105,7 +4105,7 @@
               },
               "Nickname": "Ghoul Minion",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4166,7 +4166,7 @@
               },
               "Nickname": "Dissonant Voices",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01165\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01165\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4227,7 +4227,7 @@
               },
               "Nickname": "Dissonant Voices",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01165\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01165\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4288,7 +4288,7 @@
               },
               "Nickname": "Frozen in Fear",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01164\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01164\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4349,7 +4349,7 @@
               },
               "Nickname": "Frozen in Fear",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01164\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01164\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4410,7 +4410,7 @@
               },
               "Nickname": "Rotting Remains",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4471,7 +4471,7 @@
               },
               "Nickname": "Rotting Remains",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4532,7 +4532,7 @@
               },
               "Nickname": "Rotting Remains",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4593,7 +4593,7 @@
               },
               "Nickname": "Ancient Evils",
               "Description": "Omen.",
-              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4654,7 +4654,7 @@
               },
               "Nickname": "Ancient Evils",
               "Description": "Omen.",
-              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4715,7 +4715,7 @@
               },
               "Nickname": "Ancient Evils",
               "Description": "Omen.",
-              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4776,7 +4776,7 @@
               },
               "Nickname": "Umôrdhoth's Wrath",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"01158\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01158\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4837,7 +4837,7 @@
               },
               "Nickname": "Umôrdhoth's Wrath",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"01158\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01158\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5105,7 +5105,7 @@
           },
           "Nickname": "Study",
           "Description": "",
-          "GMNotes": "{\n  \"id\": \"01111\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01111\",\n  \"type\": \"Location\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -5240,7 +5240,7 @@
               },
               "Nickname": "Lita Chantler",
               "Description": "The Zealot",
-              "GMNotes": "{\n  \"id\": \"01117\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 0,\n  \"traits\": \"Ally.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01117\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 0,\n  \"traits\": \"Ally.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5302,7 +5302,7 @@
               },
               "Nickname": "Parlor",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"01115\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Square\"\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01115\",\n  \"type\": \"Location\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Square\"\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5364,7 +5364,7 @@
               },
               "Nickname": "Cellar",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"01114\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Plus\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01114\",\n  \"type\": \"Location\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Plus\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5426,7 +5426,7 @@
               },
               "Nickname": "Attic",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"01113\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Triangle\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01113\",\n  \"type\": \"Location\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Triangle\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5488,7 +5488,7 @@
               },
               "Nickname": "Hallway",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"01112\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Plus|Diamond\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Plus|Diamond\"\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"01112\",\n  \"type\": \"Location\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Plus|Diamond\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|Plus|Diamond\"\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5550,7 +5550,7 @@
               },
               "Nickname": "Ghoul Priest",
               "Description": "Humanoid. Monster. Ghoul. Elite.",
-              "GMNotes": "{\n  \"id\": \"01116\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01116\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5732,7 +5732,7 @@
               },
               "Nickname": "They're Getting Out!",
               "Description": "Agenda 3",
-              "GMNotes": "{\n  \"id\": \"01107\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 10,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01107\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 10,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5793,7 +5793,7 @@
               },
               "Nickname": "Rise of the Ghouls",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"01106\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01106\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5854,7 +5854,7 @@
               },
               "Nickname": "What's Going On?!",
               "Description": "Agenda 1",
-              "GMNotes": "{\n  \"id\": \"01105\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 3,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01105\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 3,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5979,7 +5979,7 @@
               },
               "Nickname": "What Have You Done?",
               "Description": "Act 3",
-              "GMNotes": "{\n  \"id\": \"01110\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01110\",\n  \"type\": \"Act\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6040,7 +6040,7 @@
               },
               "Nickname": "The Barrier",
               "Description": "Act 2",
-              "GMNotes": "{\n  \"id\": \"01109\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01109\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6101,7 +6101,7 @@
               },
               "Nickname": "Trapped",
               "Description": "Act 1",
-              "GMNotes": "{\n  \"id\": \"01108\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01108\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"clueThresholdPerInvestigator\": 2,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6249,7 +6249,7 @@
               },
               "Nickname": "Obscuring Fog",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01168\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01168\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6310,7 +6310,7 @@
               },
               "Nickname": "Obscuring Fog",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01168\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01168\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6371,7 +6371,7 @@
               },
               "Nickname": "Crypt Chill",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01167\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01167\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6432,7 +6432,7 @@
               },
               "Nickname": "Crypt Chill",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01167\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01167\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6493,7 +6493,7 @@
               },
               "Nickname": "Ancient Evils",
               "Description": "Omen.",
-              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6554,7 +6554,7 @@
               },
               "Nickname": "Ancient Evils",
               "Description": "Omen.",
-              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6615,7 +6615,7 @@
               },
               "Nickname": "Ancient Evils",
               "Description": "Omen.",
-              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01166\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6676,7 +6676,7 @@
               },
               "Nickname": "Dissonant Voices",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01165\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01165\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6737,7 +6737,7 @@
               },
               "Nickname": "Dissonant Voices",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01165\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01165\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6798,7 +6798,7 @@
               },
               "Nickname": "Frozen in Fear",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01164\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01164\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6859,7 +6859,7 @@
               },
               "Nickname": "Frozen in Fear",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01164\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01164\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6920,7 +6920,7 @@
               },
               "Nickname": "Rotting Remains",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6981,7 +6981,7 @@
               },
               "Nickname": "Rotting Remains",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7042,7 +7042,7 @@
               },
               "Nickname": "Rotting Remains",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01163\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7103,7 +7103,7 @@
               },
               "Nickname": "Grasping Hands",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7164,7 +7164,7 @@
               },
               "Nickname": "Grasping Hands",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7225,7 +7225,7 @@
               },
               "Nickname": "Grasping Hands",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01162\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7286,7 +7286,7 @@
               },
               "Nickname": "Ravenous Ghoul",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01161\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01161\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7347,7 +7347,7 @@
               },
               "Nickname": "Ghoul Minion",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7408,7 +7408,7 @@
               },
               "Nickname": "Ghoul Minion",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7469,7 +7469,7 @@
               },
               "Nickname": "Ghoul Minion",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01160\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7530,7 +7530,7 @@
               },
               "Nickname": "Swarm of Rats",
               "Description": "Creature.",
-              "GMNotes": "{\n  \"id\": \"01159\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01159\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7591,7 +7591,7 @@
               },
               "Nickname": "Swarm of Rats",
               "Description": "Creature.",
-              "GMNotes": "{\n  \"id\": \"01159\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01159\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7652,7 +7652,7 @@
               },
               "Nickname": "Swarm of Rats",
               "Description": "Creature.",
-              "GMNotes": "{\n  \"id\": \"01159\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01159\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7713,7 +7713,7 @@
               },
               "Nickname": "Icy Ghoul",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01119\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01119\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7774,7 +7774,7 @@
               },
               "Nickname": "Flesh-Eater",
               "Description": "Humanoid. Monster. Ghoul.",
-              "GMNotes": "{\n  \"id\": \"01118\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01118\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7929,7 +7929,7 @@
           },
           "Nickname": "Southside",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01127\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Diamond|Plus|Circle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Diamond|Plus|Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01127\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Diamond|Plus|Circle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Diamond|Plus|Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -8055,7 +8055,7 @@
               },
               "Nickname": "Ruth Turner",
               "Description": "The Mortician",
-              "GMNotes": "{\n  \"id\": \"01141\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01141\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8116,7 +8116,7 @@
               },
               "Nickname": "Victoria Devereux",
               "Description": "The Collector",
-              "GMNotes": "{\n  \"id\": \"01140\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01140\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8177,7 +8177,7 @@
               },
               "Nickname": "Peter Warren",
               "Description": "The Occult Professor",
-              "GMNotes": "{\n  \"id\": \"01139\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01139\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8238,7 +8238,7 @@
               },
               "Nickname": "Herman Collins",
               "Description": "The Undertaker",
-              "GMNotes": "{\n  \"id\": \"01138\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01138\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8299,7 +8299,7 @@
               },
               "Nickname": "\"Wolf-Man\" Drew",
               "Description": "The Cannibal",
-              "GMNotes": "{\n  \"id\": \"01137\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01137\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"victory\": 1,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8362,7 +8362,7 @@
           },
           "Nickname": "Southside",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01126\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Diamond|Plus|Circle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Diamond|Plus|Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01126\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Diamond|Plus|Circle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Diamond|Plus|Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -8424,7 +8424,7 @@
           },
           "Nickname": "Downtown",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01131\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01131\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -8486,7 +8486,7 @@
           },
           "Nickname": "Miskatonic University",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01129\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Tee|Plus|Circle|Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Diamond\",\n    \"connections\": \"Tee|Plus|Circle|Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01129\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Tee|Plus|Circle|Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Diamond\",\n    \"connections\": \"Tee|Plus|Circle|Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -8628,7 +8628,7 @@
               },
               "Nickname": "Locked Door",
               "Description": "Obstacle.",
-              "GMNotes": "{\n  \"id\": \"01174\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Obstacle.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01174\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Obstacle.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8689,7 +8689,7 @@
               },
               "Nickname": "Locked Door",
               "Description": "Obstacle.",
-              "GMNotes": "{\n  \"id\": \"01174\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Obstacle.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01174\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Obstacle.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8750,7 +8750,7 @@
               },
               "Nickname": "Mysterious Chanting",
               "Description": "Hex.",
-              "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8811,7 +8811,7 @@
               },
               "Nickname": "Mysterious Chanting",
               "Description": "Hex.",
-              "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8872,7 +8872,7 @@
               },
               "Nickname": "Wizard of the Order",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"01170\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01170\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8933,7 +8933,7 @@
               },
               "Nickname": "Acolyte",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8994,7 +8994,7 @@
               },
               "Nickname": "Acolyte",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9055,7 +9055,7 @@
               },
               "Nickname": "Acolyte",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9116,7 +9116,7 @@
               },
               "Nickname": "On Wings of Darkness",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"01173\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01173\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9177,7 +9177,7 @@
               },
               "Nickname": "On Wings of Darkness",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"01173\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01173\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9238,7 +9238,7 @@
               },
               "Nickname": "Hunting Nightgaunt",
               "Description": "Monster. Nightgaunt.",
-              "GMNotes": "{\n  \"id\": \"01172\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Nightgaunt.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01172\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Nightgaunt.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9299,7 +9299,7 @@
               },
               "Nickname": "Hunting Nightgaunt",
               "Description": "Monster. Nightgaunt.",
-              "GMNotes": "{\n  \"id\": \"01172\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Nightgaunt.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01172\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Nightgaunt.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9360,7 +9360,7 @@
               },
               "Nickname": "Obscuring Fog",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01168\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01168\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9421,7 +9421,7 @@
               },
               "Nickname": "Obscuring Fog",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01168\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01168\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9482,7 +9482,7 @@
               },
               "Nickname": "Crypt Chill",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01167\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01167\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9543,7 +9543,7 @@
               },
               "Nickname": "Crypt Chill",
               "Description": "Hazard.",
-              "GMNotes": "{\n  \"id\": \"01167\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01167\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9604,7 +9604,7 @@
               },
               "Nickname": "False Lead",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"01136\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01136\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9665,7 +9665,7 @@
               },
               "Nickname": "False Lead",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"01136\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01136\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9726,7 +9726,7 @@
               },
               "Nickname": "Hunting Shadow",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9787,7 +9787,7 @@
               },
               "Nickname": "Hunting Shadow",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9848,7 +9848,7 @@
               },
               "Nickname": "Hunting Shadow",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -9911,7 +9911,7 @@
           },
           "Nickname": "Your House",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01124\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Circle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01124\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Circle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -9973,7 +9973,7 @@
           },
           "Nickname": "Easttown",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01132\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Circle|Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Circle|Triangle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01132\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Circle|Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Circle|Triangle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -10150,7 +10150,7 @@
           },
           "Nickname": "Rivertown",
           "Description": "Arkham. Central.",
-          "GMNotes": "{\n  \"id\": \"01125\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham. Central.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Crescent|Diamond|Square|Tilde|Hourglass\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Crescent|Diamond|Square|Tilde|Hourglass\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01125\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham. Central.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Crescent|Diamond|Square|Tilde|Hourglass\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Crescent|Diamond|Square|Tilde|Hourglass\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -10269,7 +10269,7 @@
           },
           "Nickname": "Downtown",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01130\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01130\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -10401,7 +10401,7 @@
               },
               "Nickname": "Time is Running Short",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"01122\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 8,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01122\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 8,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10462,7 +10462,7 @@
               },
               "Nickname": "Predator or Prey?",
               "Description": "Agenda 1",
-              "GMNotes": "{\n  \"id\": \"01121a\",\n  \"type\": \"Agenda\",\n  \"victory\": 2,\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01121a\",\n  \"type\": \"Agenda\",\n  \"victory\": 2,\n  \"doomThreshold\": 6,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10525,7 +10525,7 @@
           },
           "Nickname": "Northside",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01134\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Diamond|Triangle\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Tee\",\n    \"connections\": \"Diamond|Triangle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01134\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Diamond|Triangle\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Tee\",\n    \"connections\": \"Diamond|Triangle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -10587,7 +10587,7 @@
           },
           "Nickname": "Graveyard",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01133\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Circle\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01133\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Circle\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -10722,7 +10722,7 @@
               },
               "Nickname": "Ghoul Priest",
               "Description": "Humanoid. Monster. Ghoul. Elite.",
-              "GMNotes": "{\n  \"id\": \"01116\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"01116\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Ghoul. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Core\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10785,7 +10785,7 @@
           },
           "Nickname": "Uncovering the Conspiracy",
           "Description": "Act 1",
-          "GMNotes": "{\n  \"id\": \"01123\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
+          "GMNotes": "{\n  \"id\": \"01123\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Core\"\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -10846,7 +10846,7 @@
           },
           "Nickname": "St. Mary's Hospital",
           "Description": "Arkham.",
-          "GMNotes": "{\n  \"id\": \"01128\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Diamond|Square\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Diamond|Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"01128\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Core\",\n  \"locationFront\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Diamond|Square\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Diamond|Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
