@@ -1,8 +1,8 @@
 {
-  "latestVersion": "3.7.0",
+  "latestVersion": "3.8.0",
   "releaseHighlights": [
-    "Added Feast of Hemlock Vale Campaign",
-    "Updated FoVH and EotE player card scans",
-    "Implemented support for new taboo list"
+    "Added parallel Rex",
+    "Made playmat slot symbols editable",
+    "Addes support for Tekeli-li helper (soon!)"
   ]
 }
