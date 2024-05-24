@@ -786,15 +786,6 @@
       "description": "You awaken from an illness to an Arkham transformed, but to discover what has happened to your world, you must first survive the Hunt."
     },
     {
-      "name": "Fan Campaign: Blood of Drakul Campaign Expansion",
-      "url": "fancreations/campaign_blood_of_drakul.json",
-      "replace": "993e83",
-      "boxsize": "big",
-      "boxart": "https://github.com/ArkhamDotCards/thebloodofdrakul/blob/main/product/enUS/drakul-boxart-campaign-defuse-enUS.png?raw=true",
-      "author": "Myriad (http://arkham.cards)",
-      "description": "This is a little more 'fantastical' than vanilla Arkham typically gets, but obviously there are a lot of good horror tropes to mine from the castlevania/bloodborne milleu and this tries to integrate some of those ideas in an original way."
-    },
-    {
       "name": "Fan Campaign: Call of the Plaguebearer",
       "url": "fancreations/campaign_call_of_the_plaguebearer.json",
       "replace": "613b64",
@@ -1036,15 +1027,6 @@
       "boxart": "http://cloud-3.steamusercontent.com/ugc/2021606446230436832/9485F353EEE9717261DC545E0AE772A33A9E7E73/",
       "author": "DerBK",
       "description": "This is a fan-made expansion that is meant to show what a Return to Innsmouth could've looked like, if it would have been released."
-    },
-    {
-      "name": "Fan Campaign: The Sands of Memphis Campaign Expansion",
-      "url": "fancreations/campaign_memphis.json",
-      "replace": "2634e3",
-      "boxsize": "big",
-      "boxart": "https://i.imgur.com/uGpKv09.png",
-      "author": "Myriad (http://arkham.cards)",
-      "description": ""
     },
     {
       "name": "Fan Campaign: Souls of Darkness",
