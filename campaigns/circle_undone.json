@@ -8163,6 +8163,67 @@
               ]
             },
             {
+              "GUID": "a1eb9b",
+              "Name": "Card",
+              "Transform": {
+                "posX": -27.4475632,
+                "posY": 1.74305177,
+                "posZ": -34.8419075,
+                "rotX": 359.9185,
+                "rotY": 269.974243,
+                "rotZ": 0.0167756584,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0
+              },
+              "Nickname": "The Spectral Watcher",
+              "Description": "You Are Its Prey",
+              "GMNotes": "{\n  \"id\": \"05086\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "g": 0.713235259,
+                "b": 0.713235259
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "LayoutGroupSortIndex": 0,
+              "Value": 0,
+              "Locked": false,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": true,
+              "Hands": true,
+              "CardID": 231801,
+              "SidewaysCard": false,
+              "CustomDeck": {
+                "2318": {
+                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/829135524526809828/AB799C8FFD9024655A9F179CCFF1EE30DE0D3C75/",
+                  "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "NumWidth": 10,
+                  "NumHeight": 7,
+                  "BackIsHidden": true,
+                  "UniqueBack": false,
+                  "Type": 0
+                }
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": ""
+            },
+            {
               "GUID": "28374b",
               "Name": "Deck",
               "Transform": {
@@ -8176,7 +8237,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The Watcher",
+              "Nickname": "The Watcher Encounter Set",
               "Description": "",
               "GMNotes": "",
               "AltLookAngle": {
@@ -8345,67 +8406,6 @@
                   "LuaScript": "",
                   "LuaScriptState": "",
                   "XmlUI": ""
-                },
-                {
-                  "GUID": "a1eb9b",
-                  "Name": "Card",
-                  "Transform": {
-                    "posX": -27.4475632,
-                    "posY": 1.74305177,
-                    "posZ": -34.8419075,
-                    "rotX": 359.9185,
-                    "rotY": 269.974243,
-                    "rotZ": 0.0167756584,
-                    "scaleX": 1.0,
-                    "scaleY": 1.0,
-                    "scaleZ": 1.0
-                  },
-                  "Nickname": "The Spectral Watcher",
-                  "Description": "You Are Its Prey",
-                  "GMNotes": "{\n  \"id\": \"05086\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "g": 0.713235259,
-                    "b": 0.713235259
-                  },
-                  "Tags": [
-                    "ScenarioCard"
-                  ],
-                  "LayoutGroupSortIndex": 0,
-                  "Value": 0,
-                  "Locked": false,
-                  "Grid": true,
-                  "Snap": true,
-                  "IgnoreFoW": false,
-                  "MeasureMovement": false,
-                  "DragSelectable": true,
-                  "Autoraise": true,
-                  "Sticky": true,
-                  "Tooltip": true,
-                  "GridProjection": false,
-                  "HideWhenFaceDown": true,
-                  "Hands": true,
-                  "CardID": 231801,
-                  "SidewaysCard": false,
-                  "CustomDeck": {
-                    "2318": {
-                      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/829135524526809828/AB799C8FFD9024655A9F179CCFF1EE30DE0D3C75/",
-                      "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
-                      "NumWidth": 10,
-                      "NumHeight": 7,
-                      "BackIsHidden": true,
-                      "UniqueBack": false,
-                      "Type": 0
-                    }
-                  },
-                  "LuaScript": "",
-                  "LuaScriptState": "",
-                  "XmlUI": ""
                 }
               ]
             }
@@ -8501,7 +8501,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178g\",\n  \"type\": \"Treachery\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178g\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8562,7 +8562,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8623,7 +8623,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178e\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178e\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8684,7 +8684,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8745,7 +8745,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178k\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178k\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8806,7 +8806,7 @@
               },
               "Nickname": "Heretic",
               "Description": "Monster. Geist. Witch. Spectral. Elite.",
-              "GMNotes": "{\n  \"id\": \"05178i\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "GMNotes": "{\n  \"id\": \"05178i\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Witch. Spectral. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"The Circle Undone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -21324,6 +21324,67 @@
               ]
             },
             {
+              "GUID": "a1eb9b",
+              "Name": "Card",
+              "Transform": {
+                "posX": -27.4475632,
+                "posY": 1.74305177,
+                "posZ": -34.8419075,
+                "rotX": 359.9185,
+                "rotY": 269.974243,
+                "rotZ": 0.0167756584,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0
+              },
+              "Nickname": "The Spectral Watcher",
+              "Description": "You Are Its Prey",
+              "GMNotes": "{\n  \"id\": \"05086\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "g": 0.713235259,
+                "b": 0.713235259
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "LayoutGroupSortIndex": 0,
+              "Value": 0,
+              "Locked": false,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": true,
+              "Hands": true,
+              "CardID": 231801,
+              "SidewaysCard": false,
+              "CustomDeck": {
+                "2318": {
+                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/829135524526809828/AB799C8FFD9024655A9F179CCFF1EE30DE0D3C75/",
+                  "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "NumWidth": 10,
+                  "NumHeight": 7,
+                  "BackIsHidden": true,
+                  "UniqueBack": false,
+                  "Type": 0
+                }
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": ""
+            },
+            {
               "GUID": "28374b",
               "Name": "Deck",
               "Transform": {
@@ -21337,7 +21398,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The Watcher",
+              "Nickname": "The Watcher Encounter Set",
               "Description": "",
               "GMNotes": "",
               "AltLookAngle": {
@@ -21491,67 +21552,6 @@
                   "HideWhenFaceDown": true,
                   "Hands": true,
                   "CardID": 231802,
-                  "SidewaysCard": false,
-                  "CustomDeck": {
-                    "2318": {
-                      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/829135524526809828/AB799C8FFD9024655A9F179CCFF1EE30DE0D3C75/",
-                      "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
-                      "NumWidth": 10,
-                      "NumHeight": 7,
-                      "BackIsHidden": true,
-                      "UniqueBack": false,
-                      "Type": 0
-                    }
-                  },
-                  "LuaScript": "",
-                  "LuaScriptState": "",
-                  "XmlUI": ""
-                },
-                {
-                  "GUID": "a1eb9b",
-                  "Name": "Card",
-                  "Transform": {
-                    "posX": -27.4475632,
-                    "posY": 1.74305177,
-                    "posZ": -34.8419075,
-                    "rotX": 359.9185,
-                    "rotY": 269.974243,
-                    "rotZ": 0.0167756584,
-                    "scaleX": 1.0,
-                    "scaleY": 1.0,
-                    "scaleZ": 1.0
-                  },
-                  "Nickname": "The Spectral Watcher",
-                  "Description": "You Are Its Prey",
-                  "GMNotes": "{\n  \"id\": \"05086\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "g": 0.713235259,
-                    "b": 0.713235259
-                  },
-                  "Tags": [
-                    "ScenarioCard"
-                  ],
-                  "LayoutGroupSortIndex": 0,
-                  "Value": 0,
-                  "Locked": false,
-                  "Grid": true,
-                  "Snap": true,
-                  "IgnoreFoW": false,
-                  "MeasureMovement": false,
-                  "DragSelectable": true,
-                  "Autoraise": true,
-                  "Sticky": true,
-                  "Tooltip": true,
-                  "GridProjection": false,
-                  "HideWhenFaceDown": true,
-                  "Hands": true,
-                  "CardID": 231801,
                   "SidewaysCard": false,
                   "CustomDeck": {
                     "2318": {
@@ -40729,6 +40729,67 @@
               ]
             },
             {
+              "GUID": "c97834",
+              "Name": "Card",
+              "Transform": {
+                "posX": 15.8923817,
+                "posY": 1.72291648,
+                "posZ": -12.6000233,
+                "rotX": 0.022801578,
+                "rotY": 270.024963,
+                "rotZ": -0.00408142665,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "scaleZ": 1.0
+              },
+              "Nickname": "The Spectral Watcher",
+              "Description": "You Are Its Prey",
+              "GMNotes": "{\n  \"id\": \"05086\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
+              "AltLookAngle": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "ColorDiffuse": {
+                "r": 0.713235259,
+                "g": 0.713235259,
+                "b": 0.713235259
+              },
+              "Tags": [
+                "ScenarioCard"
+              ],
+              "LayoutGroupSortIndex": 0,
+              "Value": 0,
+              "Locked": false,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": true,
+              "Hands": true,
+              "CardID": 231801,
+              "SidewaysCard": false,
+              "CustomDeck": {
+                "2318": {
+                  "FaceURL": "http://cloud-3.steamusercontent.com/ugc/829135524526809828/AB799C8FFD9024655A9F179CCFF1EE30DE0D3C75/",
+                  "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "NumWidth": 10,
+                  "NumHeight": 7,
+                  "BackIsHidden": true,
+                  "UniqueBack": false,
+                  "Type": 0
+                }
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": ""
+            },
+            {
               "GUID": "f048cc",
               "Name": "Deck",
               "Transform": {
@@ -40742,7 +40803,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The Watcher",
+              "Nickname": "The Watcher Encounter Set",
               "Description": "",
               "GMNotes": "",
               "AltLookAngle": {
@@ -40896,67 +40957,6 @@
                   "HideWhenFaceDown": true,
                   "Hands": true,
                   "CardID": 231802,
-                  "SidewaysCard": false,
-                  "CustomDeck": {
-                    "2318": {
-                      "FaceURL": "http://cloud-3.steamusercontent.com/ugc/829135524526809828/AB799C8FFD9024655A9F179CCFF1EE30DE0D3C75/",
-                      "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
-                      "NumWidth": 10,
-                      "NumHeight": 7,
-                      "BackIsHidden": true,
-                      "UniqueBack": false,
-                      "Type": 0
-                    }
-                  },
-                  "LuaScript": "",
-                  "LuaScriptState": "",
-                  "XmlUI": ""
-                },
-                {
-                  "GUID": "c97834",
-                  "Name": "Card",
-                  "Transform": {
-                    "posX": 15.8923817,
-                    "posY": 1.72291648,
-                    "posZ": -12.6000233,
-                    "rotX": 0.022801578,
-                    "rotY": 270.024963,
-                    "rotZ": -0.00408142665,
-                    "scaleX": 1.0,
-                    "scaleY": 1.0,
-                    "scaleZ": 1.0
-                  },
-                  "Nickname": "The Spectral Watcher",
-                  "Description": "You Are Its Prey",
-                  "GMNotes": "{\n  \"id\": \"05086\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Spectral. Elite.\",\n  \"cycle\": \"The Circle Undone\"\n}",
-                  "AltLookAngle": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                  },
-                  "ColorDiffuse": {
-                    "r": 0.713235259,
-                    "g": 0.713235259,
-                    "b": 0.713235259
-                  },
-                  "Tags": [
-                    "ScenarioCard"
-                  ],
-                  "LayoutGroupSortIndex": 0,
-                  "Value": 0,
-                  "Locked": false,
-                  "Grid": true,
-                  "Snap": true,
-                  "IgnoreFoW": false,
-                  "MeasureMovement": false,
-                  "DragSelectable": true,
-                  "Autoraise": true,
-                  "Sticky": true,
-                  "Tooltip": true,
-                  "GridProjection": false,
-                  "HideWhenFaceDown": true,
-                  "Hands": true,
-                  "CardID": 231801,
                   "SidewaysCard": false,
                   "CustomDeck": {
                     "2318": {
