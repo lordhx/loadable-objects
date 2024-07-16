@@ -442,7 +442,7 @@
           },
           "Nickname": "The Stakeout",
           "Description": "",
-          "GMNotes": "{\n  \"id\": \"09040-c\"\n}",
+          "GMNotes": "{\n  \"id\": \"88023\"\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -503,7 +503,7 @@
               },
               "Nickname": "The Heist",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"09040-c\",\n  \"traits\": \"\",\n  \"permanent\": false,\n  \"weakness\": false\n}",
+              "GMNotes": "{\n  \"id\": \"88023\",\n  \"traits\": \"\",\n  \"permanent\": false,\n  \"weakness\": false\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -874,7 +874,7 @@
               },
               "Nickname": "Package Delivery",
               "Description": "",
-              "GMNotes": "",
+              "GMNotes": "{\n  \"id\": \"88024\",\n  \"type\": \"Story\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -1977,7 +1977,7 @@
                   },
                   "Nickname": "Fortune's Disfavor",
                   "Description": "",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"88027\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2035,7 +2035,7 @@
                   },
                   "Nickname": "Fortune's Disfavor",
                   "Description": "",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"88026\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2093,7 +2093,7 @@
                   },
                   "Nickname": "Fortune's Disfavor",
                   "Description": "",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"88025\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2405,7 +2405,7 @@
                   },
                   "Nickname": "Security Office",
                   "Description": "Restricted. Casino.",
-                  "GMNotes": "{\n  \"id\": \"02128\",\n  \"type\": \"Location\",\n  \"traits\": \"Restricted. Casino.\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Heart|Hourglass|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Crescent\",\n    \"connections\": \"Heart|Hourglass|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"88017\",\n  \"type\": \"Location\",\n  \"traits\": \"Restricted. Casino.\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Heart|Hourglass|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Crescent\",\n    \"connections\": \"Heart|Hourglass|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2727,7 +2727,7 @@
                   },
                   "Nickname": "Hunter's Hunger",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88053\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88053b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2788,7 +2788,7 @@
                   },
                   "Nickname": "Hunter's Hunger",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88053\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88053a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2849,7 +2849,7 @@
                   },
                   "Nickname": "Grip of the Beyond",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88052\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88052c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2910,7 +2910,7 @@
                   },
                   "Nickname": "Grip of the Beyond",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88052\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88052b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -2971,7 +2971,7 @@
                   },
                   "Nickname": "Grip of the Beyond",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88052\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88052a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3030,9 +3030,9 @@
                     "scaleY": 1.0,
                     "scaleZ": 1.0
                   },
-                  "Nickname": "Dimensional Hypothesis",
+                  "Nickname": "Dimensional Hypnosis",
                   "Description": "Terror.",
-                  "GMNotes": "{\n  \"id\": \"88051\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88051c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3091,9 +3091,9 @@
                     "scaleY": 1.0,
                     "scaleZ": 1.0
                   },
-                  "Nickname": "Dimensional Hypothesis",
+                  "Nickname": "Dimensional Hypnosis",
                   "Description": "Terror.",
-                  "GMNotes": "{\n  \"id\": \"88051\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88051b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3152,9 +3152,9 @@
                     "scaleY": 1.0,
                     "scaleZ": 1.0
                   },
-                  "Nickname": "Dimensional Hypothesis",
+                  "Nickname": "Dimensional Hypnosis",
                   "Description": "Terror.",
-                  "GMNotes": "{\n  \"id\": \"88051\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88051a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3215,7 +3215,7 @@
                   },
                   "Nickname": "Dimensional Displacer",
                   "Description": "Monster. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"88050\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88050b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3276,7 +3276,7 @@
                   },
                   "Nickname": "Dimensional Displacer",
                   "Description": "Monster. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"88050\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88050a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3337,7 +3337,7 @@
                   },
                   "Nickname": "Dimensional Duplicator",
                   "Description": "Monster. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"88049\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88049b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3398,7 +3398,7 @@
                   },
                   "Nickname": "Dimensional Duplicator",
                   "Description": "Monster. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"88049\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88049a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3585,7 +3585,7 @@
                   },
                   "Nickname": "Fortune's Dagger",
                   "Description": "Humanoid. Casino. Cultist.",
-                  "GMNotes": "{\n  \"id\": \"88047\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88047b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3646,7 +3646,7 @@
                   },
                   "Nickname": "Fortune's Dagger",
                   "Description": "Humanoid. Casino. Cultist.",
-                  "GMNotes": "{\n  \"id\": \"88047\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88047a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3707,7 +3707,7 @@
                   },
                   "Nickname": "Fortune's Shield",
                   "Description": "Humanoid. Casino. Cultist.",
-                  "GMNotes": "{\n  \"id\": \"88046\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88046b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -3768,7 +3768,7 @@
                   },
                   "Nickname": "Fortune's Shield",
                   "Description": "Humanoid. Casino. Cultist.",
-                  "GMNotes": "{\n  \"id\": \"88046\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88046a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -4763,7 +4763,7 @@
               },
               "Nickname": "Casino Guard",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88035\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88035c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4824,7 +4824,7 @@
               },
               "Nickname": "Casino Guard",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88035\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88035b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4885,7 +4885,7 @@
               },
               "Nickname": "Casino Guard",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88035\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88035a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5028,7 +5028,7 @@
               },
               "Nickname": "Security Patrol",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88037\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88037a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5089,7 +5089,7 @@
               },
               "Nickname": "Security Patrol",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88037\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88037b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5150,7 +5150,7 @@
               },
               "Nickname": "Security Patrol",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88037\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88037c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5211,7 +5211,7 @@
               },
               "Nickname": "Obsessed Gambler",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"88012\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88042c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5272,7 +5272,7 @@
               },
               "Nickname": "Obsessed Gambler",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"88012\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88042b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5333,7 +5333,7 @@
               },
               "Nickname": "Obsessed Gambler",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"88012\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88042a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5394,7 +5394,7 @@
               },
               "Nickname": "Suspicious Gaze",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88041\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88041c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5455,7 +5455,7 @@
               },
               "Nickname": "Suspicious Gaze",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88041\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88041b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5516,7 +5516,7 @@
               },
               "Nickname": "Suspicious Gaze",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88041\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88041a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5577,7 +5577,7 @@
               },
               "Nickname": "Avarice Calls",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"88040\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88040c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5638,7 +5638,7 @@
               },
               "Nickname": "Avarice Calls",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"88040\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88040b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5699,7 +5699,7 @@
               },
               "Nickname": "Avarice Calls",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"88040\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88040a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5760,7 +5760,7 @@
               },
               "Nickname": "Arcane Spotlight",
               "Description": "Hex. Obstacle.",
-              "GMNotes": "{\n  \"id\": \"88039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88039c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5821,7 +5821,7 @@
               },
               "Nickname": "Arcane Spotlight",
               "Description": "Hex. Obstacle.",
-              "GMNotes": "{\n  \"id\": \"88039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88039b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5882,7 +5882,7 @@
               },
               "Nickname": "Arcane Spotlight",
               "Description": "Hex. Obstacle.",
-              "GMNotes": "{\n  \"id\": \"88039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88039a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5943,7 +5943,7 @@
               },
               "Nickname": "Inconvenient Questioning",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88038\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88038d\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6004,7 +6004,7 @@
               },
               "Nickname": "Inconvenient Questioning",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88038\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88038c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6065,7 +6065,7 @@
               },
               "Nickname": "Inconvenient Questioning",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88038\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88038b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6126,7 +6126,7 @@
               },
               "Nickname": "Inconvenient Questioning",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88038\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88038a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6187,7 +6187,7 @@
               },
               "Nickname": "House Dealer",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88036\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88036b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6248,7 +6248,7 @@
               },
               "Nickname": "House Dealer",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88036\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88036a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -6495,7 +6495,7 @@
           },
           "Nickname": "Abarran Arrigorriagakoa",
           "Description": "Humanoid. Casino. Coterie. Elite.",
-          "GMNotes": "{\n  \"id\": \"88034\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Coterie. Elite.\",\n  \"victory\": 1\n}",
+          "GMNotes": "{\n  \"id\": \"88034a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Coterie. Elite.\",\n  \"victory\": 1\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -6640,7 +6640,7 @@
       },
       "Nickname": "Scenario",
       "Description": "Fortune and Folly",
-      "GMNotes": "{\"type\": \"ScenarioReference\", \"class\": \"Mythos\", \"tokens\": {\"back\": {\"Cultist\": {\"description\": \"Reveal another token. If you fail, raise your alarm level by 1.\", \"modifier\": 0}, \"Elder Thing\": {\"description\": \"-6. You may raise your alarm level by 1 to automatically succeed, instead.\", \"modifier\": -6}, \"Skull\": {\"description\": \"-X. X is your alarm level.\", \"modifier\": -999}, \"Tablet\": {\"description\": \"-4. The nearest enemy moves once toward you.\", \"modifier\": -4}}, \"front\": {\"Cultist\": {\"description\": \"Reveal another token. If you fail, raise your alarm level by 1.\", \"modifier\": 0}, \"Elder Thing\": {\"description\": \"-5. You may raise your alarm level by 1 to automatically succeed, instead.\", \"modifier\": -5}, \"Skull\": {\"description\": \"-X. X is half your alarm level (rounded up).\", \"modifier\": -999}, \"Tablet\": {\"description\": \"-3. If you fail, the nearest enemy moves once toward you.\", \"modifier\": -3}}}, \"id\": \"88001\"}",
+      "GMNotes": "{\"id\": \"88001\", \"type\": \"ScenarioReference\", \"class\": \"Mythos\", \"tokens\": {\"back\": {\"Cultist\": {\"description\": \"Reveal another token. If you fail, raise your alarm level by 1.\", \"modifier\": 0}, \"Elder Thing\": {\"description\": \"-6. You may raise your alarm level by 1 to automatically succeed, instead.\", \"modifier\": -6}, \"Skull\": {\"description\": \"-X. X is your alarm level.\", \"modifier\": -999}, \"Tablet\": {\"description\": \"-4. The nearest enemy moves once toward you.\", \"modifier\": -4}}, \"front\": {\"Cultist\": {\"description\": \"Reveal another token. If you fail, raise your alarm level by 1.\", \"modifier\": 0}, \"Elder Thing\": {\"description\": \"-5. You may raise your alarm level by 1 to automatically succeed, instead.\", \"modifier\": -5}, \"Skull\": {\"description\": \"-X. X is half your alarm level (rounded up).\", \"modifier\": -999}, \"Tablet\": {\"description\": \"-3. If you fail, the nearest enemy moves once toward you.\", \"modifier\": -3}}}, \"id\": \"88001\"}",
       "AltLookAngle": {
         "x": 0.0,
         "y": 0.0,
@@ -6825,7 +6825,7 @@
           },
           "Nickname": "The Heist",
           "Description": "",
-          "GMNotes": "{\n  \"id\": \"09040-c\"\n}",
+          "GMNotes": "{\n  \"id\": \"88023\"\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -6886,7 +6886,7 @@
               },
               "Nickname": "The Stakeout",
               "Description": "",
-              "GMNotes": "{\n  \"id\": \"09040-c\",\n  \"traits\": \"\",\n  \"permanent\": false,\n  \"weakness\": false\n}",
+              "GMNotes": "{\n  \"id\": \"88023\",\n  \"traits\": \"\",\n  \"permanent\": false,\n  \"weakness\": false\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7259,7 +7259,7 @@
               },
               "Nickname": "Security Patrol",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88037\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88037a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7320,7 +7320,7 @@
               },
               "Nickname": "Security Patrol",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88037\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88037b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7381,7 +7381,7 @@
               },
               "Nickname": "Security Patrol",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88037\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88037c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -7765,7 +7765,7 @@
               },
               "Nickname": "Abarran Arrigorriagakoa",
               "Description": "Humanoid. Casino. Coterie. Elite.",
-              "GMNotes": "{\n  \"id\": \"88034\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Coterie. Elite.\",\n  \"victory\": 1\n}",
+              "GMNotes": "{\n  \"id\": \"88034a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Coterie. Elite.\",\n  \"victory\": 1\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8545,7 +8545,7 @@
               },
               "Nickname": "Package Delivery",
               "Description": "",
-              "GMNotes": "null",
+              "GMNotes": "{\n  \"id\": \"88024\",\n  \"type\": \"Story\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8603,7 +8603,7 @@
                   },
                   "Nickname": "If the Uniform Fits...",
                   "Description": "",
-                  "GMNotes": "",
+                  "GMNotes": "{\n  \"id\": \"88024\",\n  \"type\": \"Story\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -8725,7 +8725,7 @@
                   },
                   "Nickname": "Fortune's Disfavor",
                   "Description": "",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"88027\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -8783,7 +8783,7 @@
                   },
                   "Nickname": "Fortune's Disfavor",
                   "Description": "",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"88026\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -8841,7 +8841,7 @@
                   },
                   "Nickname": "Fortune's Disfavor",
                   "Description": "",
-                  "GMNotes": "null",
+                  "GMNotes": "{\n  \"id\": \"88025\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -8973,7 +8973,7 @@
                   },
                   "Nickname": "Hunter's Hunger",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88053\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88053b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9034,7 +9034,7 @@
                   },
                   "Nickname": "Hunter's Hunger",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88053\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88053a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9095,7 +9095,7 @@
                   },
                   "Nickname": "Grip of the Beyond",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88052\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88052c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9156,7 +9156,7 @@
                   },
                   "Nickname": "Grip of the Beyond",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88052\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88052b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9217,7 +9217,7 @@
                   },
                   "Nickname": "Grip of the Beyond",
                   "Description": "Hazard.",
-                  "GMNotes": "{\n  \"id\": \"88052\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88052a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9276,9 +9276,9 @@
                     "scaleY": 1.0,
                     "scaleZ": 1.0
                   },
-                  "Nickname": "Dimensional Hypothesis",
+                  "Nickname": "Dimensional Hypnosis",
                   "Description": "Terror.",
-                  "GMNotes": "{\n  \"id\": \"88051\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88051c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9337,9 +9337,9 @@
                     "scaleY": 1.0,
                     "scaleZ": 1.0
                   },
-                  "Nickname": "Dimensional Hypothesis",
+                  "Nickname": "Dimensional Hypnosis",
                   "Description": "Terror.",
-                  "GMNotes": "{\n  \"id\": \"88051\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88051b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9398,9 +9398,9 @@
                     "scaleY": 1.0,
                     "scaleZ": 1.0
                   },
-                  "Nickname": "Dimensional Hypothesis",
+                  "Nickname": "Dimensional Hypnosis",
                   "Description": "Terror.",
-                  "GMNotes": "{\n  \"id\": \"88051\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88051a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9461,7 +9461,7 @@
                   },
                   "Nickname": "Dimensional Displacer",
                   "Description": "Monster. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"88050\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88050b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9522,7 +9522,7 @@
                   },
                   "Nickname": "Dimensional Displacer",
                   "Description": "Monster. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"88050\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88050a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9583,7 +9583,7 @@
                   },
                   "Nickname": "Dimensional Duplicator",
                   "Description": "Monster. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"88049\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88049b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9644,7 +9644,7 @@
                   },
                   "Nickname": "Dimensional Duplicator",
                   "Description": "Monster. Extradimensional.",
-                  "GMNotes": "{\n  \"id\": \"88049\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88049a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Extradimensional.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9831,7 +9831,7 @@
                   },
                   "Nickname": "Fortune's Dagger",
                   "Description": "Humanoid. Casino. Cultist.",
-                  "GMNotes": "{\n  \"id\": \"88047\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88047b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9892,7 +9892,7 @@
                   },
                   "Nickname": "Fortune's Dagger",
                   "Description": "Humanoid. Casino. Cultist.",
-                  "GMNotes": "{\n  \"id\": \"88047\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88047a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -9953,7 +9953,7 @@
                   },
                   "Nickname": "Fortune's Shield",
                   "Description": "Humanoid. Casino. Cultist.",
-                  "GMNotes": "{\n  \"id\": \"88046\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88046b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -10014,7 +10014,7 @@
                   },
                   "Nickname": "Fortune's Shield",
                   "Description": "Humanoid. Casino. Cultist.",
-                  "GMNotes": "{\n  \"id\": \"88046\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"88046a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino. Cultist.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -10141,7 +10141,7 @@
           },
           "Nickname": "Security Office",
           "Description": "Restricted. Casino.",
-          "GMNotes": "{\n  \"id\": \"02128\",\n  \"type\": \"Location\",\n  \"traits\": \"Restricted. Casino.\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Heart|Hourglass|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Crescent\",\n    \"connections\": \"Heart|Hourglass|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"88017\",\n  \"type\": \"Location\",\n  \"traits\": \"Restricted. Casino.\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Heart|Hourglass|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Crescent\",\n    \"connections\": \"Heart|Hourglass|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -10887,7 +10887,7 @@
               },
               "Nickname": "Casino Guard",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88035\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88035c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -10948,7 +10948,7 @@
               },
               "Nickname": "Casino Guard",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88035\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88035b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11009,7 +11009,7 @@
               },
               "Nickname": "Casino Guard",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88035\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88035a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11149,7 +11149,7 @@
               },
               "Nickname": "Obsessed Gambler",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"88012\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88042c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11210,7 +11210,7 @@
               },
               "Nickname": "Obsessed Gambler",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"88012\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88042b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11271,7 +11271,7 @@
               },
               "Nickname": "Obsessed Gambler",
               "Description": "Terror.",
-              "GMNotes": "{\n  \"id\": \"88012\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88042a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11332,7 +11332,7 @@
               },
               "Nickname": "Suspicious Gaze",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88041\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88041c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11393,7 +11393,7 @@
               },
               "Nickname": "Suspicious Gaze",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88041\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88041b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11454,7 +11454,7 @@
               },
               "Nickname": "Suspicious Gaze",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88041\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88041a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11515,7 +11515,7 @@
               },
               "Nickname": "Avarice Calls",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"88040\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88040c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11576,7 +11576,7 @@
               },
               "Nickname": "Avarice Calls",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"88040\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88040b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11637,7 +11637,7 @@
               },
               "Nickname": "Avarice Calls",
               "Description": "Curse.",
-              "GMNotes": "{\n  \"id\": \"88040\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88040a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Curse.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11698,7 +11698,7 @@
               },
               "Nickname": "Arcane Spotlight",
               "Description": "Hex. Obstacle.",
-              "GMNotes": "{\n  \"id\": \"88039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88039c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11759,7 +11759,7 @@
               },
               "Nickname": "Arcane Spotlight",
               "Description": "Hex. Obstacle.",
-              "GMNotes": "{\n  \"id\": \"88039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88039b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11820,7 +11820,7 @@
               },
               "Nickname": "Arcane Spotlight",
               "Description": "Hex. Obstacle.",
-              "GMNotes": "{\n  \"id\": \"88039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88039a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hex. Obstacle.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11881,7 +11881,7 @@
               },
               "Nickname": "Inconvenient Questioning",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88038\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88038d\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11942,7 +11942,7 @@
               },
               "Nickname": "Inconvenient Questioning",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88038\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88038c\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -12003,7 +12003,7 @@
               },
               "Nickname": "Inconvenient Questioning",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88038\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88038b\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -12064,7 +12064,7 @@
               },
               "Nickname": "Inconvenient Questioning",
               "Description": "Scheme.",
-              "GMNotes": "{\n  \"id\": \"88038\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88038a\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Scheme.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -12125,7 +12125,7 @@
               },
               "Nickname": "House Dealer",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88036\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88036b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -12186,7 +12186,7 @@
               },
               "Nickname": "House Dealer",
               "Description": "Humanoid. Casino.",
-              "GMNotes": "{\n  \"id\": \"88036\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
+              "GMNotes": "{\n  \"id\": \"88036a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Casino.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
