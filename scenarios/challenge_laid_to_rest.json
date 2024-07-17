@@ -3205,7 +3205,7 @@
       },
       "Nickname": "Scenario",
       "Description": "Laid to Rest",
-      "GMNotes": "",
+      "GMNotes": "{\n  \"id\": \"90054\",\n  \"type\": \"ScenarioReference\"\n}",
       "AltLookAngle": {
         "x": 0.0,
         "y": 0.0,
