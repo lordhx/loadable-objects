@@ -741,6 +741,15 @@
       "description": "Custom investigator expansion to Arkham Horror LCG - around 180 card that are based on the Witcher."
     },
     {
+      "name": "Fan Investigators: Limbus Company",
+      "url": "fancreations/investigators_limbus_company.json",
+      "replace": "1b7c90",
+      "boxsize": "big",
+      "boxart": "https://steamusercontent-a.akamaihd.net/ugc/2446089105213561424/1E9B4D28E6BC54A0EE56871552D6161D4F23AA29/",
+      "author": "Nepunyan",
+      "description": "Custom investigators based off a Project Moon game Limbus Company."
+    },
+    {
       "name": "Fan Campaign: Ages Unwound",
       "url": "fancreations/campaign_ages_unwound.json",
       "replace": "f7e5eb",
