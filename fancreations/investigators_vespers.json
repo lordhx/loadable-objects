@@ -117,7 +117,7 @@
       "CustomDeck": {
         "1000": {
           "FaceURL": "https://i.imgur.com/qQffDsn.jpg",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
           "NumWidth": 1,
           "NumHeight": 1,
           "BackIsHidden": true,
@@ -4392,7 +4392,7 @@
       "CustomDeck": {
         "1019": {
           "FaceURL": "https://i.imgur.com/r69KGtA.jpg",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
           "NumWidth": 1,
           "NumHeight": 1,
           "BackIsHidden": true,
@@ -4453,7 +4453,7 @@
       "CustomDeck": {
         "1020": {
           "FaceURL": "https://i.imgur.com/LyH7Fjd.jpg",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
           "NumWidth": 1,
           "NumHeight": 1,
           "BackIsHidden": true,
@@ -5501,7 +5501,7 @@
       "CustomDeck": {
         "1104": {
           "FaceURL": "https://i.imgur.com/SPbFLnb.jpg",
-          "BackURL": "http://cloud-3.steamusercontent.com/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
           "NumWidth": 1,
           "NumHeight": 1,
           "BackIsHidden": true,
@@ -8529,7 +8529,7 @@
       },
       "CustomDecal": {
         "Name": "dunwich_back",
-        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/959719855119695911/931B9829687A20F4DEADB36DA57B7E6D76792231/",
+        "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/959719855119695911/931B9829687A20F4DEADB36DA57B7E6D76792231/",
         "Size": 7.4
       }
     }
