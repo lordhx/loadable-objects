@@ -494,7 +494,7 @@
               },
               "Nickname": "Agony and Despair",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"70004\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"70005\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -4569,7 +4569,7 @@
               },
               "Nickname": "Agony and Despair",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"70004\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"70005\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -8385,7 +8385,7 @@
               },
               "Nickname": "Agony and Despair",
               "Description": "Agenda 2",
-              "GMNotes": "{\n  \"id\": \"70004\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Standalone\"\n}",
+              "GMNotes": "{\n  \"id\": \"70005\",\n  \"type\": \"Agenda\",\n  \"doomThreshold\": 7,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -12892,7 +12892,7 @@
                   },
                   "Nickname": "Chamber of Night",
                   "Description": "Prison.",
-                  "GMNotes": "{\n  \"id\": \"70023\",\n  \"type\": \"Location\",\n  \"traits\": \"Prison.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"70022\",\n  \"type\": \"Location\",\n  \"traits\": \"Prison.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -19134,7 +19134,7 @@
           },
           "Nickname": "Chamber of Night",
           "Description": "Prison.",
-          "GMNotes": "{\n  \"id\": \"70023\",\n  \"type\": \"Location\",\n  \"traits\": \"Prison.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+          "GMNotes": "{\n  \"id\": \"70022\",\n  \"type\": \"Location\",\n  \"traits\": \"Prison.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
             "y": 0.0,
@@ -22340,7 +22340,7 @@
                   },
                   "Nickname": "Chamber of Night",
                   "Description": "Prison.",
-                  "GMNotes": "{\n  \"id\": \"70023\",\n  \"type\": \"Location\",\n  \"traits\": \"Prison.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+                  "GMNotes": "{\n  \"id\": \"70022\",\n  \"type\": \"Location\",\n  \"traits\": \"Prison.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Triangle|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,

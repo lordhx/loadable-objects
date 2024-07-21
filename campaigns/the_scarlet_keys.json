@@ -5072,7 +5072,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09750\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09750b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5196,7 +5196,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09750\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09750a\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5326,7 +5326,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09749\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09749b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5388,7 +5388,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09749\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09749a\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5450,7 +5450,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09748\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09748b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5512,7 +5512,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09748\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09748a\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5574,7 +5574,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09747\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09747c\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5636,7 +5636,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09747\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09747b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -5698,7 +5698,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09747\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09747a\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -11985,7 +11985,7 @@
                       },
                       "Nickname": "Coterie Assassin (B)",
                       "Description": "Humanoid. Coterie.",
-                      "GMNotes": "{\n  \"id\": \"09727\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                      "GMNotes": "{\n  \"id\": \"09727b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -12046,7 +12046,7 @@
                       },
                       "Nickname": "Coterie Assassin (A)",
                       "Description": "Humanoid. Coterie.",
-                      "GMNotes": "{\n  \"id\": \"09727\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                      "GMNotes": "{\n  \"id\": \"09727a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -12107,7 +12107,7 @@
                       },
                       "Nickname": "Coterie Enforcer (B)",
                       "Description": "Humanoid. Coterie.",
-                      "GMNotes": "{\n  \"id\": \"09726\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                      "GMNotes": "{\n  \"id\": \"09726b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -12168,7 +12168,7 @@
                       },
                       "Nickname": "Coterie Enforcer (A)",
                       "Description": "Humanoid. Coterie.",
-                      "GMNotes": "{\n  \"id\": \"09726\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                      "GMNotes": "{\n  \"id\": \"09726a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -12417,7 +12417,7 @@
                       },
                       "Nickname": "Coterie Agent (C)",
                       "Description": "Humanoid. Coterie.",
-                      "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                      "GMNotes": "{\n  \"id\": \"09716c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -12478,7 +12478,7 @@
                       },
                       "Nickname": "Coterie Agent (B)",
                       "Description": "Humanoid. Coterie.",
-                      "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                      "GMNotes": "{\n  \"id\": \"09716b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -12539,7 +12539,7 @@
                       },
                       "Nickname": "Coterie Agent (A)",
                       "Description": "Humanoid. Coterie.",
-                      "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                      "GMNotes": "{\n  \"id\": \"09716a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                       "AltLookAngle": {
                         "x": 0.0,
                         "y": 0.0,
@@ -13027,7 +13027,7 @@
                   },
                   "Nickname": "Coterie Agent (A)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09716a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -13271,7 +13271,7 @@
                   },
                   "Nickname": "Coterie Agent (C)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09716c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -13454,7 +13454,7 @@
                   },
                   "Nickname": "Coterie Enforcer (B)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09726\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09726b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -13698,7 +13698,7 @@
                   },
                   "Nickname": "Coterie Assassin (B)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09727\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09727b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -13759,7 +13759,7 @@
                   },
                   "Nickname": "Coterie Enforcer (A)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09726\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09726a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -14003,7 +14003,7 @@
                   },
                   "Nickname": "Coterie Agent (B)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09716b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -14064,7 +14064,7 @@
                   },
                   "Nickname": "Coterie Assassin (A)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09727\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09727a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -20694,7 +20694,7 @@
               },
               "Nickname": "Sinister Aspirant (C)",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"09586\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\"\n}",
+              "GMNotes": "{\n  \"id\": \"09586c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -22036,7 +22036,7 @@
               },
               "Nickname": "Sinister Aspirant (B)",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"09586\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\"\n}",
+              "GMNotes": "{\n  \"id\": \"09586b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -22097,7 +22097,7 @@
               },
               "Nickname": "Sinister Aspirant (A)",
               "Description": "Humanoid. Cultist.",
-              "GMNotes": "{\n  \"id\": \"09586\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\"\n}",
+              "GMNotes": "{\n  \"id\": \"09586a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -29121,7 +29121,7 @@
                   },
                   "Nickname": "Coterie Agent (C)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09716c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -29182,7 +29182,7 @@
                   },
                   "Nickname": "Coterie Agent (B)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09716b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -29243,7 +29243,7 @@
                   },
                   "Nickname": "Coterie Agent (A)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09716a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -48226,7 +48226,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09750\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09750b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -48288,7 +48288,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09750\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09750a\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -48350,7 +48350,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09749\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09749b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -48412,7 +48412,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09749\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09749a\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -48474,7 +48474,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09748\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09748b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -48536,7 +48536,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09748\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09748a\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -48598,7 +48598,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09747\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09747c\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -48660,7 +48660,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09747\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09747b\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -48722,7 +48722,7 @@
               },
               "Nickname": "City of Remnants",
               "Description": "Otherworld.",
-              "GMNotes": "{\n  \"id\": \"09747\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09747a\",\n  \"type\": \"Location\",\n  \"traits\": \"Otherworld.\",\n  \"locationBack\": {\n    \"icons\": \"\",\n    \"connections\": \"\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -49547,7 +49547,7 @@
               },
               "Nickname": "Buried Miner",
               "Description": "Monster. Geist. Elite.",
-              "GMNotes": "{\r\n  \"id\": \"09675\",\r\n  \"type\": \"Enemy\",\r\n  \"traits\": \"Monster. Geist. Elite.\",\r\n  \"locationFront\": {\r\n    \"victory\": 0,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  },\r\n  \"locationBack\": {\r\n    \"victory\": 1,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  }\r\n}",
+              "GMNotes": "{\r\n  \"id\": \"09675a\",\r\n  \"type\": \"Enemy\",\r\n  \"traits\": \"Monster. Geist. Elite.\",\r\n  \"locationFront\": {\r\n    \"victory\": 0,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  },\r\n  \"locationBack\": {\r\n    \"victory\": 1,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  }\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -49608,7 +49608,7 @@
               },
               "Nickname": "Buried Miner",
               "Description": "Monster. Geist. Elite.",
-              "GMNotes": "{\r\n  \"id\": \"09675\",\r\n  \"type\": \"Enemy\",\r\n  \"traits\": \"Monster. Geist. Elite.\",\r\n  \"locationFront\": {\r\n    \"victory\": 0,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  },\r\n  \"locationBack\": {\r\n    \"victory\": 1,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  }\r\n}",
+              "GMNotes": "{\r\n  \"id\": \"09675c\",\r\n  \"type\": \"Enemy\",\r\n  \"traits\": \"Monster. Geist. Elite.\",\r\n  \"locationFront\": {\r\n    \"victory\": 0,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  },\r\n  \"locationBack\": {\r\n    \"victory\": 1,\r\n    \"icons\": \"\",\r\n    \"connections\": \"\"\r\n  }\r\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -50057,7 +50057,7 @@
               },
               "Nickname": "Slain Foreman",
               "Description": "Monster. Geist. Elite.",
-              "GMNotes": "{\n  \"id\": \"09676\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationFront\": {\n    \"victory\": 0,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09676a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationFront\": {\n    \"victory\": 0,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -50118,7 +50118,7 @@
               },
               "Nickname": "Slain Foreman",
               "Description": "Monster. Geist. Elite.",
-              "GMNotes": "{\n  \"id\": \"09676\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationFront\": {\n    \"victory\": 0,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09676c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationFront\": {\n    \"victory\": 0,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -52752,7 +52752,7 @@
               },
               "Nickname": "Uncanny Shadow",
               "Description": "Monster. Geist. Elite.",
-              "GMNotes": "{\n  \"id\": \"09674\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationFront\": {\n    \"victory\": 0,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09674a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationFront\": {\n    \"victory\": 0,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -52813,7 +52813,7 @@
               },
               "Nickname": "Uncanny Shadow",
               "Description": "Monster. Geist. Elite.",
-              "GMNotes": "{\n  \"id\": \"09674\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationFront\": {\n    \"victory\": 0,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
+              "GMNotes": "{\n  \"id\": \"09674c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"locationFront\": {\n    \"victory\": 0,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"\",\n    \"connections\": \"\"\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -55171,8 +55171,8 @@
                 "scaleZ": 1.0
               },
               "Nickname": "The Beast in a Cowl of Crimson",
-              "Description": "Humanoid. Coterie. Elite.",
-              "GMNotes": "{\n  \"id\": \"09755\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie. Elite.\",\n  \"victory\": 1\n}",
+              "Description": "Ravager in Red",
+              "GMNotes": "{\n  \"id\": \"09655\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie. Elite.\",\n  \"victory\": 1\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -56229,7 +56229,7 @@
                   },
                   "Nickname": "Coterie Enforcer (B)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09726\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09726b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -56290,7 +56290,7 @@
                   },
                   "Nickname": "Coterie Assassin (B)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09727\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09727b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -56412,7 +56412,7 @@
                   },
                   "Nickname": "Coterie Enforcer (A)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09726\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09726a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -56534,7 +56534,7 @@
                   },
                   "Nickname": "Coterie Assassin (A)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09727\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09727a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -58549,8 +58549,8 @@
                 "scaleZ": 1.0
               },
               "Nickname": "The Beast in a Cowl of Crimson",
-              "Description": "Humanoid. Coterie. Elite.",
-              "GMNotes": "{\n  \"id\": \"09755\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie. Elite.\",\n  \"victory\": 1\n}",
+              "Description": "Ravager in Red",
+              "GMNotes": "{\n  \"id\": \"09655\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie. Elite.\",\n  \"victory\": 1\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -60424,7 +60424,7 @@
                   },
                   "Nickname": "Coterie Enforcer (A)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09726\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09726a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -60485,7 +60485,7 @@
                   },
                   "Nickname": "Coterie Enforcer (B)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09726\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09726b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -60668,7 +60668,7 @@
                   },
                   "Nickname": "Coterie Assassin (B)",
                   "Description": "Humanoid. Coterie.",
-                  "GMNotes": "{\n  \"id\": \"09727\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+                  "GMNotes": "{\n  \"id\": \"09727b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
                   "AltLookAngle": {
                     "x": 0.0,
                     "y": 0.0,
@@ -62195,7 +62195,7 @@
               },
               "Nickname": "Coterie Assassin (A)",
               "Description": "Humanoid. Coterie.",
-              "GMNotes": "{\n  \"id\": \"09727\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
+              "GMNotes": "{\n  \"id\": \"09727a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -67406,7 +67406,7 @@
               },
               "Nickname": "Coterie Agent (C)",
               "Description": "Humanoid. Coterie.",
-              "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+              "GMNotes": "{\n  \"id\": \"09716c\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -67467,7 +67467,7 @@
               },
               "Nickname": "Coterie Agent (B)",
               "Description": "Humanoid. Coterie.",
-              "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+              "GMNotes": "{\n  \"id\": \"09716b\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
@@ -67528,7 +67528,7 @@
               },
               "Nickname": "Coterie Agent (A)",
               "Description": "Humanoid. Coterie.",
-              "GMNotes": "{\n  \"id\": \"09716\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
+              "GMNotes": "{\n  \"id\": \"09716a\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Coterie.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"The Scarlet Keys\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
                 "y": 0.0,
