@@ -82,8 +82,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Velma's Diner",
-      "Description": "Arkham.",
+      "Nickname": "Ресторанчик Вельмы",
+      "Description": "Аркхэм.",
       "GMNotes": "{\n  \"id\": \"04141\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"FromEasttown\",\n    \"connections\": \"Crescent\"\n  },\n  \"locationBack\": {\n    \"icons\": \"FromEasttown\",\n    \"connections\": \"Crescent\"\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -117,8 +117,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2355": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777261131/3E6F9DF9591B05CCE2257F910B261776662220BF/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777261683/0D1AA3DD1777795A7A85C5891B15A2EC85BEDBD3/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/lxohi6ocekasjzxmimdmb/7cba9686634f4b3bb9e980f541890942.jpg?rlkey=rqiux28wj2u6wf0v1p4xt86ft&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/zj8w2icukc9kxzwvkrvvh/7f3109398b0c4724bca14d5312a04b5f.jpg?rlkey=6pbb1uizrw4btud8pfpcsxj9s&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -201,8 +201,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Miskatonic University",
-      "Description": "Arkham.",
+      "Nickname": "Мискатоникский университет",
+      "Description": "Аркхэм.",
       "GMNotes": "{\n  \"id\": \"01129\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Tee|Plus|Circle|Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Diamond\",\n    \"connections\": \"Tee|Plus|Circle|Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -236,8 +236,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2323": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377431393/4752E394498B81694A370AA6BB05BC5A4E55FD30/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430450/FDA37585F019D453CF383D975CF1AB631ECF64B7/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yzg16zk3wvx136qmjs7bi/1f6e709bae9c4af6b377ed5003784d41.jpg?rlkey=mp92csv1lwnvne1dix72d5p7q&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/wdn1a5i3q7qh9j6o1j93g/ec8c2c48754e47d1bf541f88e3fa9c2e.jpg?rlkey=967yvt1nglyht3muorqurr070&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -320,8 +320,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "A Walk Down Memory Lane",
-      "Description": "Act 1",
+      "Nickname": "Вспомнить всё",
+      "Description": "",
       "GMNotes": "{\n  \"id\": \"90022\",\n  \"type\": \"Act\",\n  \"cycle\": \"Standalone\"\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -354,8 +354,8 @@
       "SidewaysCard": true,
       "CustomDeck": {
         "2664": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655599785038868372/5C2FC3F391C6D3B287C38B875F83629110163282/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655599785038868958/4F366892FB57AF3841513790E41E15D85E9DC211/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ecmj7unxp66j4bmoqpy7p/62dd1611083647ce9a5e930a559f49d5.jpg?rlkey=7ua6b18x1norkhukx0919yrlz&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/kte70xymasrgebe4s1ms9/4f2770d2d7074246b78a364f422cbe4a.jpg?rlkey=deo9re5uyzrb5ljuvhyksha3i&dl=0",
           "NumWidth": 4,
           "NumHeight": 2,
           "BackIsHidden": true,
@@ -438,8 +438,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Downtown",
-      "Description": "Arkham.",
+      "Nickname": "Даунтаун",
+      "Description": "Аркхэм.",
       "GMNotes": "{\n  \"id\": \"01130\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee|FromDowntown\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Crescent|Tee|FromDowntown\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -473,8 +473,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2323": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377431393/4752E394498B81694A370AA6BB05BC5A4E55FD30/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430450/FDA37585F019D453CF383D975CF1AB631ECF64B7/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yzg16zk3wvx136qmjs7bi/1f6e709bae9c4af6b377ed5003784d41.jpg?rlkey=mp92csv1lwnvne1dix72d5p7q&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/wdn1a5i3q7qh9j6o1j93g/ec8c2c48754e47d1bf541f88e3fa9c2e.jpg?rlkey=967yvt1nglyht3muorqurr070&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -557,8 +557,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Rivertown",
-      "Description": "Arkham. Central.",
+      "Nickname": "Ривертаун",
+      "Description": "Аркхэм. Центр.",
       "GMNotes": "{\n  \"id\": \"01125\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham. Central.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Crescent|Diamond|Square|Tilde|Hourglass\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Crescent|Diamond|Square|Tilde|Hourglass\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -592,8 +592,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2323": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377431393/4752E394498B81694A370AA6BB05BC5A4E55FD30/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430450/FDA37585F019D453CF383D975CF1AB631ECF64B7/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yzg16zk3wvx136qmjs7bi/1f6e709bae9c4af6b377ed5003784d41.jpg?rlkey=mp92csv1lwnvne1dix72d5p7q&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/wdn1a5i3q7qh9j6o1j93g/ec8c2c48754e47d1bf541f88e3fa9c2e.jpg?rlkey=967yvt1nglyht3muorqurr070&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -790,8 +790,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Northside",
-      "Description": "Arkham.",
+      "Nickname": "Нортсайд",
+      "Description": "Аркхэм.",
       "GMNotes": "{\n  \"id\": \"01134\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Diamond|Triangle|FromNorthside\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Tee\",\n    \"connections\": \"Diamond|Triangle|FromNorthside\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -825,8 +825,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2323": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377431393/4752E394498B81694A370AA6BB05BC5A4E55FD30/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430450/FDA37585F019D453CF383D975CF1AB631ECF64B7/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yzg16zk3wvx136qmjs7bi/1f6e709bae9c4af6b377ed5003784d41.jpg?rlkey=mp92csv1lwnvne1dix72d5p7q&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/wdn1a5i3q7qh9j6o1j93g/ec8c2c48754e47d1bf541f88e3fa9c2e.jpg?rlkey=967yvt1nglyht3muorqurr070&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -853,7 +853,7 @@
         "scaleZ": 1.0
       },
       "Nickname": "Scenario",
-      "Description": "Bad Blood",
+      "Description": "Кровная вражда",
       "GMNotes": "{\"type\": \"ScenarioReference\", \"class\": \"Mythos\", \"tokens\": {\"back\": {\"Cultist\": {\"description\": \"-3. Ready Elspeth Baudin and resolve her patrol keyword. If she is engaged with an investigator, she makes an attack.\", \"modifier\": -3}, \"Elder Thing\": {\"description\": \"-8. Agnes Baker may take up to 3 damage to increase your skill value by 2 for each damage taken.\", \"modifier\": -8}, \"Skull\": {\"description\": \"-X. X is 1 more than the number of memories Agnes Baker has collected.\", \"modifier\": -999}, \"Tablet\": {\"description\": \"-5. If you fail and there is a memory at Elspeth Baudin's location, place this token on that location.\", \"modifier\": -5}}, \"front\": {\"Cultist\": {\"description\": \"-2. Ready Elspeth Baudin and resolve her patrol keyword.\", \"modifier\": -2}, \"Elder Thing\": {\"description\": \"-6. Agnes Baker may take up to 3 damage to increase your skill value by 2 for each damage taken.\", \"modifier\": -6}, \"Skull\": {\"description\": \"-X. X is the number of memories Agnes Baker has collected.\", \"modifier\": -999}, \"Tablet\": {\"description\": \"-3. If you fail and there is a memory at Elspeth Baudin's location, place this token on that location.\", \"modifier\": -3}}}, \"id\": \"90020\"}",
       "AltLookAngle": {
         "x": 0.0,
@@ -883,8 +883,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2664": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655599785038868372/5C2FC3F391C6D3B287C38B875F83629110163282/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655599785038868958/4F366892FB57AF3841513790E41E15D85E9DC211/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ecmj7unxp66j4bmoqpy7p/62dd1611083647ce9a5e930a559f49d5.jpg?rlkey=7ua6b18x1norkhukx0919yrlz&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/kte70xymasrgebe4s1ms9/4f2770d2d7074246b78a364f422cbe4a.jpg?rlkey=deo9re5uyzrb5ljuvhyksha3i&dl=0",
           "NumWidth": 4,
           "NumHeight": 2,
           "BackIsHidden": true,
@@ -910,8 +910,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Elspeth Baudin",
-      "Description": "Hyperborean Sorceress",
+      "Nickname": "Элспет Боден",
+      "Description": "Гуманоид. Чародей. Элитная.",
       "GMNotes": "{\n  \"id\": \"90023\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Sorcerer. Elite.\",\n  \"cycle\": \"Standalone\"\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -944,8 +944,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2664": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655599785038868372/5C2FC3F391C6D3B287C38B875F83629110163282/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655599785038868958/4F366892FB57AF3841513790E41E15D85E9DC211/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ecmj7unxp66j4bmoqpy7p/62dd1611083647ce9a5e930a559f49d5.jpg?rlkey=7ua6b18x1norkhukx0919yrlz&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/kte70xymasrgebe4s1ms9/4f2770d2d7074246b78a364f422cbe4a.jpg?rlkey=deo9re5uyzrb5ljuvhyksha3i&dl=0",
           "NumWidth": 4,
           "NumHeight": 2,
           "BackIsHidden": true,
@@ -1028,8 +1028,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Easttown",
-      "Description": "Arkham.",
+      "Nickname": "Исттаун",
+      "Description": "Аркхэм.",
       "GMNotes": "{\n  \"id\": \"01132\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Circle|Triangle|FromEasttown\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Circle|Triangle|FromEasttown\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -1063,8 +1063,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2323": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377431393/4752E394498B81694A370AA6BB05BC5A4E55FD30/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430450/FDA37585F019D453CF383D975CF1AB631ECF64B7/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yzg16zk3wvx136qmjs7bi/1f6e709bae9c4af6b377ed5003784d41.jpg?rlkey=mp92csv1lwnvne1dix72d5p7q&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/wdn1a5i3q7qh9j6o1j93g/ec8c2c48754e47d1bf541f88e3fa9c2e.jpg?rlkey=967yvt1nglyht3muorqurr070&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -1140,8 +1140,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Missing Persons",
-          "Description": "Act 1c",
+          "Nickname": "Пропавшие без вести",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"04126a\",\n  \"type\": \"Location\",\n  \"clueThresholdPerInvestigator\": 1,\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"FromEasttown\",\n    \"connections\": \"Crescent\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1175,8 +1175,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2345": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777202805/81C13FF317351E1956828A006E42B5F958402706/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777204414/069B45DA5FC54E05F7D416CA87A45E9FF478C840/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/l6gi5qnpmyr9ilwozvgu4/9eaa52ac56a74ad5b4597f69ae48e0e5.jpg?rlkey=i4rohgsm11g8riwzm5g2nhr5s&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/570isbtjy7bss3t91mnxe/042eb5dfcc0c49ed8fec8f0891815df4.jpg?rlkey=4a1m48e9sx5zcj1tl85th6h7c&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1202,8 +1202,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Trial of the Huntress",
-          "Description": "Act 1e",
+          "Nickname": "Охотница берёт след",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"04133a\",\n  \"type\": \"Location\",\n  \"clueThresholdPerInvestigator\": 2,\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1237,8 +1237,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2345": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777202805/81C13FF317351E1956828A006E42B5F958402706/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777204414/069B45DA5FC54E05F7D416CA87A45E9FF478C840/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/l6gi5qnpmyr9ilwozvgu4/9eaa52ac56a74ad5b4597f69ae48e0e5.jpg?rlkey=i4rohgsm11g8riwzm5g2nhr5s&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/570isbtjy7bss3t91mnxe/042eb5dfcc0c49ed8fec8f0891815df4.jpg?rlkey=4a1m48e9sx5zcj1tl85th6h7c&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1264,8 +1264,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "At the Station",
-          "Description": "Act 2c",
+          "Nickname": "В участке",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"04128a\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"icons\": \"FromNorthside\",\n    \"connections\": \"Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1299,8 +1299,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2345": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777202805/81C13FF317351E1956828A006E42B5F958402706/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777204414/069B45DA5FC54E05F7D416CA87A45E9FF478C840/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/l6gi5qnpmyr9ilwozvgu4/9eaa52ac56a74ad5b4597f69ae48e0e5.jpg?rlkey=i4rohgsm11g8riwzm5g2nhr5s&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/570isbtjy7bss3t91mnxe/042eb5dfcc0c49ed8fec8f0891815df4.jpg?rlkey=4a1m48e9sx5zcj1tl85th6h7c&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1326,8 +1326,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Relic is Missing!",
-          "Description": "Act 1a",
+          "Nickname": "Реликвия пропала!",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"04117a\",\n  \"type\": \"Location\",\n  \"traits\": \"Miskatonic. Exhibit.\",\n  \"cycle\": \"Standalone\",\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Plus\",\n    \"connections\": \"Diamond\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1361,8 +1361,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2345": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777202805/81C13FF317351E1956828A006E42B5F958402706/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777204414/069B45DA5FC54E05F7D416CA87A45E9FF478C840/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/l6gi5qnpmyr9ilwozvgu4/9eaa52ac56a74ad5b4597f69ae48e0e5.jpg?rlkey=i4rohgsm11g8riwzm5g2nhr5s&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/570isbtjy7bss3t91mnxe/042eb5dfcc0c49ed8fec8f0891815df4.jpg?rlkey=4a1m48e9sx5zcj1tl85th6h7c&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1390,8 +1390,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Hyperborean Blood",
-      "Description": "Agenda 1",
+      "Nickname": "Кровь Гипербореи",
+      "Description": "",
       "GMNotes": "{\n  \"id\": \"90021\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 8,\n  \"cycle\": \"Standalone\"\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -1424,8 +1424,8 @@
       "SidewaysCard": true,
       "CustomDeck": {
         "2665": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655599785038868372/5C2FC3F391C6D3B287C38B875F83629110163282/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655599785038868958/4F366892FB57AF3841513790E41E15D85E9DC211/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ecmj7unxp66j4bmoqpy7p/62dd1611083647ce9a5e930a559f49d5.jpg?rlkey=7ua6b18x1norkhukx0919yrlz&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/kte70xymasrgebe4s1ms9/4f2770d2d7074246b78a364f422cbe4a.jpg?rlkey=deo9re5uyzrb5ljuvhyksha3i&dl=0",
           "NumWidth": 4,
           "NumHeight": 2,
           "BackIsHidden": true,
@@ -1570,8 +1570,8 @@
       ],
       "CustomDeck": {
         "5400": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -1579,8 +1579,8 @@
           "Type": 0
         },
         "2357": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -1606,8 +1606,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Acolyte",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Аколит",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1640,8 +1640,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1667,8 +1667,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Acolyte",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Аколит",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1701,8 +1701,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1728,8 +1728,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Acolyte",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Аколит",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"01169\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"uses\": [\n    {\n      \"count\": 1,\n      \"type\": \"Doom\",\n      \"token\": \"doom\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1762,8 +1762,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1789,8 +1789,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Wizard of the Order",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Орденский волшебник",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"01170\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1823,8 +1823,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1850,8 +1850,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Mysterious Chanting",
-          "Description": "Hex.",
+          "Nickname": "Загадочные песнопения",
+          "Description": "Колдовство.",
           "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1884,8 +1884,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1911,8 +1911,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Mysterious Chanting",
-          "Description": "Hex.",
+          "Nickname": "Загадочные песнопения",
+          "Description": "Колдовство.",
           "GMNotes": "{\n  \"id\": \"01171\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1945,8 +1945,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1972,8 +1972,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Brotherhood Cultist",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Культист Братства",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"04095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2006,8 +2006,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2033,8 +2033,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Brotherhood Cultist",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Культист Братства",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"04095\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2067,8 +2067,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2094,8 +2094,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Shadowed",
-          "Description": "Scheme.",
+          "Nickname": "Слежка",
+          "Description": "Козни.",
           "GMNotes": "{\n  \"id\": \"04096\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Scheme.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2128,8 +2128,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2155,8 +2155,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Shadowed",
-          "Description": "Scheme.",
+          "Nickname": "Слежка",
+          "Description": "Козни.",
           "GMNotes": "{\n  \"id\": \"04096\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Scheme.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2189,8 +2189,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2216,8 +2216,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Words of Power",
-          "Description": "Hex.",
+          "Nickname": "Слова силы",
+          "Description": "Колдовство.",
           "GMNotes": "{\n  \"id\": \"04097\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2250,8 +2250,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2277,8 +2277,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Words of Power",
-          "Description": "Hex.",
+          "Nickname": "Слова силы",
+          "Description": "Колдовство.",
           "GMNotes": "{\n  \"id\": \"04097\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2311,8 +2311,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2338,8 +2338,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Secret Must Be Kept",
-          "Description": "Scheme.",
+          "Nickname": "Тайна не должна быть раскрыта",
+          "Description": "Козни.",
           "GMNotes": "{\n  \"id\": \"04144\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Scheme.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2372,8 +2372,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2399,8 +2399,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Secret Must Be Kept",
-          "Description": "Scheme.",
+          "Nickname": "Тайна не должна быть раскрыта",
+          "Description": "Козни.",
           "GMNotes": "{\n  \"id\": \"04144\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Scheme.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2433,8 +2433,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2460,8 +2460,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Secret Must Be Kept",
-          "Description": "Scheme.",
+          "Nickname": "Тайна не должна быть раскрыта",
+          "Description": "Козни.",
           "GMNotes": "{\n  \"id\": \"04144\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Scheme.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2494,8 +2494,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2521,8 +2521,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Nobody's Home",
-          "Description": "Mystery.",
+          "Nickname": "Никого нет дома",
+          "Description": "Загадка.",
           "GMNotes": "{\n  \"id\": \"04145\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Mystery.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2555,8 +2555,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2582,8 +2582,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Nobody's Home",
-          "Description": "Mystery.",
+          "Nickname": "Никого нет дома",
+          "Description": "Загадка.",
           "GMNotes": "{\n  \"id\": \"04145\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Mystery.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2616,8 +2616,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2643,8 +2643,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Conspiracy of Blood",
-          "Description": "Hex.",
+          "Nickname": "Кровавый заговор",
+          "Description": "Колдовство.",
           "GMNotes": "{\n  \"id\": \"04146\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2677,8 +2677,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2704,8 +2704,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Conspiracy of Blood",
-          "Description": "Hex.",
+          "Nickname": "Кровавый заговор",
+          "Description": "Колдовство.",
           "GMNotes": "{\n  \"id\": \"04146\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2738,8 +2738,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2357": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777497046/3003A76996378249E6AAA4A60D85AE7EE59C1B8B/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s8qamc02566vauc0u6exn/08fc47ede8d04fdd981aec042e66537e.jpg?rlkey=g9mi10bd6zpn8fttmnlvbtp4e&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2765,8 +2765,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Locked Door",
-          "Description": "Obstacle.",
+          "Nickname": "Запертая дверь",
+          "Description": "Преграда.",
           "GMNotes": "{\n  \"id\": \"01174\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Obstacle.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2799,8 +2799,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2826,8 +2826,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Locked Door",
-          "Description": "Obstacle.",
+          "Nickname": "Запертая дверь",
+          "Description": "Преграда.",
           "GMNotes": "{\n  \"id\": \"01174\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Obstacle.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2860,8 +2860,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2887,7 +2887,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "False Lead",
+          "Nickname": "Ложный след",
           "Description": "",
           "GMNotes": "{\n  \"id\": \"01136\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
@@ -2921,8 +2921,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2948,7 +2948,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "False Lead",
+          "Nickname": "Ложный след",
           "Description": "",
           "GMNotes": "{\n  \"id\": \"01136\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
@@ -2982,8 +2982,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3009,8 +3009,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hunting Shadow",
-          "Description": "Curse.",
+          "Nickname": "Преследующая тень",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -3043,8 +3043,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3070,8 +3070,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hunting Shadow",
-          "Description": "Curse.",
+          "Nickname": "Преследующая тень",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -3104,8 +3104,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3131,8 +3131,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hunting Shadow",
-          "Description": "Curse.",
+          "Nickname": "Преследующая тень",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"01135\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -3165,8 +3165,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3192,8 +3192,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hunting Nightgaunt",
-          "Description": "Monster. Nightgaunt.",
+          "Nickname": "Охотящийся ночной призрак",
+          "Description": "Монстр. Ночной призрак.",
           "GMNotes": "{\n  \"id\": \"01172\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Nightgaunt.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -3226,8 +3226,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3253,8 +3253,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hunting Nightgaunt",
-          "Description": "Monster. Nightgaunt.",
+          "Nickname": "Охотящийся ночной призрак",
+          "Description": "Монстр. Ночной призрак.",
           "GMNotes": "{\n  \"id\": \"01172\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Nightgaunt.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -3287,8 +3287,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3314,7 +3314,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "On Wings of Darkness",
+          "Nickname": "На крыльях тьмы",
           "Description": "",
           "GMNotes": "{\n  \"id\": \"01173\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
@@ -3348,8 +3348,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3375,7 +3375,7 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "On Wings of Darkness",
+          "Nickname": "На крыльях тьмы",
           "Description": "",
           "GMNotes": "{\n  \"id\": \"01173\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
@@ -3409,8 +3409,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "5400": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/775106514377430057/E4E5A51434CEF23EF5D04A104F352520304AA550/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/yi88hsj54awqt9jtqq8f1/4ff0b65c75774476b1ef11f04b3678a1.jpg?rlkey=y96i4sk4vqkw92yfzqwzdqmc0&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3438,8 +3438,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Town Hall",
-      "Description": "Arkham.",
+      "Nickname": "Ратуша",
+      "Description": "Аркхэм.",
       "GMNotes": "{\n  \"id\": \"04143\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"FromDowntown\",\n    \"connections\": \"Triangle\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"FromDowntown\",\n    \"connections\": \"Triangle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -3473,8 +3473,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2355": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777261131/3E6F9DF9591B05CCE2257F910B261776662220BF/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777261683/0D1AA3DD1777795A7A85C5891B15A2EC85BEDBD3/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/lxohi6ocekasjzxmimdmb/7cba9686634f4b3bb9e980f541890942.jpg?rlkey=rqiux28wj2u6wf0v1p4xt86ft&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/zj8w2icukc9kxzwvkrvvh/7f3109398b0c4724bca14d5312a04b5f.jpg?rlkey=6pbb1uizrw4btud8pfpcsxj9s&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -3608,8 +3608,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Curiositie Shoppe",
-      "Description": "Arkham.",
+      "Nickname": "Лавка древностей",
+      "Description": "Аркхэм.",
       "GMNotes": "{\n  \"id\": \"04142\",\n  \"type\": \"Location\",\n  \"traits\": \"Arkham.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"FromNorthside\",\n    \"connections\": \"Tee\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"FromNorthside\",\n    \"connections\": \"Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -3643,8 +3643,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2355": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777261131/3E6F9DF9591B05CCE2257F910B261776662220BF/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1467561769777261683/0D1AA3DD1777795A7A85C5891B15A2EC85BEDBD3/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/lxohi6ocekasjzxmimdmb/7cba9686634f4b3bb9e980f541890942.jpg?rlkey=rqiux28wj2u6wf0v1p4xt86ft&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/zj8w2icukc9kxzwvkrvvh/7f3109398b0c4724bca14d5312a04b5f.jpg?rlkey=6pbb1uizrw4btud8pfpcsxj9s&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,

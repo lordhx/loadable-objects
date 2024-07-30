@@ -117,8 +117,8 @@
       ],
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -144,8 +144,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Close All Portals",
-          "Description": "Act 3",
+          "Nickname": "Закрыть все порталы",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86013\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -178,8 +178,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -205,8 +205,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Close the Portal",
-          "Description": "Act 2",
+          "Nickname": "Закрыть портал",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86012\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -239,8 +239,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -266,8 +266,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "War of the Outer Gods",
-          "Description": "Act 1",
+          "Nickname": "Война Внешних богов",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86011\",\n  \"type\": \"Act\",\n  \"clueThresholdPerInvestigator\": 3,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -300,8 +300,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -364,8 +364,8 @@
       ],
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -391,8 +391,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Summoning Nears Completion",
-          "Description": "Agenda 3",
+          "Nickname": "Ритуал почти завершён",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86004\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -425,8 +425,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -452,8 +452,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Summoning Progresses",
-          "Description": "Agenda 2",
+          "Nickname": "Ритуал продолжается",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86003\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -486,8 +486,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -513,8 +513,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Summoning of Silenus",
-          "Description": "Agenda 1",
+          "Nickname": "Ритуал призыва Силенуса",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86002\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -547,8 +547,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -611,8 +611,8 @@
       ],
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -638,8 +638,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Incubation Nears Completion",
-          "Description": "Agenda 3",
+          "Nickname": "Созревание почти завершено",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86007\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -672,8 +672,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -699,8 +699,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Incubation Progresses",
-          "Description": "Agenda 2",
+          "Nickname": "Созревание продолжается",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86006\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -733,8 +733,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -760,8 +760,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Incubation of the Egg",
-          "Description": "Agenda 1",
+          "Nickname": "Созревание яйца",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86005\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -794,8 +794,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -824,7 +824,7 @@
         "scaleZ": 1.0
       },
       "Nickname": "Scenario",
-      "Description": "War of the Outer Gods",
+      "Description": "Война Внешних богов",
       "GMNotes": "{\"type\": \"ScenarioReference\", \"class\": \"Mythos\", \"tokens\": {\"back\": {\"Cultist\": {\"description\": \"-4. Place 1 resource on each Mutated enemy, as a mutation.\", \"modifier\": -4}, \"Elder Thing\": {\"description\": \"-5. Place each committed to this test facedown underneath an Insect enemy, as a swarm card.\", \"modifier\": -5}, \"Skull\": {\"description\": \"-2 for each clue you have.\", \"modifier\": -2}, \"Tablet\": {\"description\": \"-4. Draw the top Hex card in the encounter discard pile.\", \"modifier\": -4}}, \"front\": {\"Cultist\": {\"description\": \"-3. If you fail, place 1 resource on the nearest Mutated enemy, as a mutation.\", \"modifier\": -3}, \"Elder Thing\": {\"description\": \"-4. If you fail, place one card committed to this test facedown underneath an Insect enemy, as a swarm card.\", \"modifier\": -4}, \"Skull\": {\"description\": \"-1 for each clue you have.\", \"modifier\": -1}, \"Tablet\": {\"description\": \"-3. If you fail, draw the top Hex card in the encounter discard pile.\", \"modifier\": -3}}}, \"id\": \"86001\"}",
       "AltLookAngle": {
         "x": 0.0,
@@ -854,8 +854,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -881,8 +881,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Streets of Montréal",
-      "Description": "Montréal.",
+      "Nickname": "Улицы Монреаля",
+      "Description": "Монреаль.",
       "GMNotes": "{\n  \"id\": \"86018\",\n  \"type\": \"Location\",\n  \"traits\": \"Montréal.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Triangle|SlantedEquals|Heart\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Triangle|SlantedEquals|Heart\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -916,8 +916,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -994,8 +994,8 @@
       ],
       "CustomDeck": {
         "2664": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 8,
           "NumHeight": 4,
           "BackIsHidden": true,
@@ -1003,8 +1003,8 @@
           "Type": 0
         },
         "2665": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 8,
           "NumHeight": 4,
           "BackIsHidden": true,
@@ -1030,8 +1030,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Feast of Locusts",
-          "Description": "Hazard.",
+          "Nickname": "Пиршество саранчи",
+          "Description": "Происшествие.",
           "GMNotes": "{\n  \"id\": \"86030\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1064,8 +1064,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1091,8 +1091,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Ravages of War",
-          "Description": "Terror.",
+          "Nickname": "Ужасы войны",
+          "Description": "Жуть.",
           "GMNotes": "{\n  \"id\": \"86032\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1125,8 +1125,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1152,8 +1152,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Death and Decay",
-          "Description": "Hex.",
+          "Nickname": "Смерть и разложение",
+          "Description": "Колдовство.",
           "GMNotes": "{\n  \"id\": \"86026\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1186,8 +1186,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1213,8 +1213,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Bringer of Paradise",
-          "Description": "Humanoid. Mutated.",
+          "Nickname": "Глашатай рая",
+          "Description": "Гуманоид. Мутант.",
           "GMNotes": "{\n  \"id\": \"86044\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Mutated.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1247,8 +1247,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2665": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1274,8 +1274,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Zealot of Paradise",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Фанатик рая",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"86027\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1308,8 +1308,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1335,8 +1335,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "While They Sleep",
-          "Description": "Omen.",
+          "Nickname": "Пока они спят",
+          "Description": "Знамение.",
           "GMNotes": "{\n  \"id\": \"86033\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1369,8 +1369,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1396,8 +1396,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Death and Decay",
-          "Description": "Hex.",
+          "Nickname": "Смерть и разложение",
+          "Description": "Колдовство.",
           "GMNotes": "{\n  \"id\": \"86026\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1430,8 +1430,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1457,8 +1457,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Nihilistic Stargazer",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Астроном-скептик",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"86025\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1491,8 +1491,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1518,8 +1518,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Predator's Call",
-          "Description": "Scheme.",
+          "Nickname": "Зов хищника",
+          "Description": "Козни.",
           "GMNotes": "{\n  \"id\": \"86028\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Scheme.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1552,8 +1552,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1579,8 +1579,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Trylogog",
-          "Description": "Creature. Insect.",
+          "Nickname": "Трилогог",
+          "Description": "Существо. Насекомое.",
           "GMNotes": "{\n  \"id\": \"86049\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature. Insect.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1613,8 +1613,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1640,8 +1640,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Disciple of the Swarm",
-          "Description": "Humanoid. Cultist.",
+          "Nickname": "Адепт роя",
+          "Description": "Гуманоид. Культист.",
           "GMNotes": "{\n  \"id\": \"86029\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1674,8 +1674,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1701,8 +1701,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hellfire",
-          "Description": "Hazard.",
+          "Nickname": "Адский огонь",
+          "Description": "Происшествие.",
           "GMNotes": "{\n  \"id\": \"86031\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1735,8 +1735,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1762,8 +1762,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hellfire",
-          "Description": "Hazard.",
+          "Nickname": "Адский огонь",
+          "Description": "Происшествие.",
           "GMNotes": "{\n  \"id\": \"86031\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1796,8 +1796,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1823,8 +1823,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Feast of Locusts",
-          "Description": "Hazard.",
+          "Nickname": "Пиршество саранчи",
+          "Description": "Происшествие.",
           "GMNotes": "{\n  \"id\": \"86030\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1857,8 +1857,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1884,8 +1884,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hellfire",
-          "Description": "Hazard.",
+          "Nickname": "Адский огонь",
+          "Description": "Происшествие.",
           "GMNotes": "{\n  \"id\": \"86031\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1918,8 +1918,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -1945,8 +1945,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "While They Sleep",
-          "Description": "Omen.",
+          "Nickname": "Пока они спят",
+          "Description": "Знамение.",
           "GMNotes": "{\n  \"id\": \"86033\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Omen.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1979,8 +1979,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -2006,8 +2006,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Ethereal Entity",
-          "Description": "Monster.",
+          "Nickname": "Эфирная сущность",
+          "Description": "Монстр.",
           "GMNotes": "{\n  \"id\": \"86038\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2040,8 +2040,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -2067,8 +2067,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Ravages of War",
-          "Description": "Terror.",
+          "Nickname": "Ужасы войны",
+          "Description": "Жуть.",
           "GMNotes": "{\n  \"id\": \"86032\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2101,8 +2101,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -2128,8 +2128,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Predator's Call",
-          "Description": "Scheme.",
+          "Nickname": "Зов хищника",
+          "Description": "Козни.",
           "GMNotes": "{\n  \"id\": \"86028\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Scheme.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2162,8 +2162,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -2242,8 +2242,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Nihilistic Stargazer",
-      "Description": "Humanoid. Cultist.",
+      "Nickname": "Астроном-скептик",
+      "Description": "Гуманоид. Культист.",
       "GMNotes": "{\n  \"id\": \"86025\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -2276,8 +2276,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2664": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 8,
           "NumHeight": 4,
           "BackIsHidden": true,
@@ -2303,8 +2303,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Zealot of Paradise",
-      "Description": "Humanoid. Cultist.",
+      "Nickname": "Фанатик рая",
+      "Description": "Гуманоид. Культист.",
       "GMNotes": "{\n  \"id\": \"86027\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -2337,8 +2337,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2664": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 8,
           "NumHeight": 4,
           "BackIsHidden": true,
@@ -2364,8 +2364,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Streets of New York City",
-      "Description": "New York City.",
+      "Nickname": "Улицы Нью-Йорка",
+      "Description": "Нью-Йорк.",
       "GMNotes": "{\n  \"id\": \"86021\",\n  \"type\": \"Location\",\n  \"traits\": \"New York City.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle|Apostrophe|Crescent\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Circle\",\n    \"connections\": \"Triangle|Apostrophe|Crescent\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -2399,8 +2399,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -2426,8 +2426,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Chateau Ramezay",
-      "Description": "Montréal.",
+      "Nickname": "Замок Рамези",
+      "Description": "Монреаль.",
       "GMNotes": "{\n  \"id\": \"86019\",\n  \"type\": \"Location\",\n  \"traits\": \"Montréal.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"SlantedEquals\",\n    \"connections\": \"Hourglass|Heart\"\n  },\n  \"locationBack\": {\n    \"icons\": \"SlantedEquals\",\n    \"connections\": \"Hourglass|Heart\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -2461,8 +2461,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -2598,8 +2598,8 @@
           ],
           "CustomDeck": {
             "2663": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -2625,8 +2625,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Enchanted Skull",
-              "Description": "Mask of the Burning Pit",
+              "Nickname": "Зачарованный череп",
+              "Description": "Вещь. Редкая.",
               "GMNotes": "{\n  \"id\": \"86055\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 1,\n  \"traits\": \"Item. Relic.\",\n  \"intellectIcons\": 2,\n  \"wildIcons\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2660,8 +2660,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2663": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -2687,8 +2687,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Blade of Ark'at",
-              "Description": "Shellblade Tribute",
+              "Nickname": "Клинок Арк’ата",
+              "Description": "Вещь. Редкая. Оружие. Рукопашное.",
               "GMNotes": "{\n  \"id\": \"86054\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 1,\n  \"traits\": \"Item. Relic. Weapon. Melee.\",\n  \"combatIcons\": 2,\n  \"wildIcons\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2722,8 +2722,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2663": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -2749,8 +2749,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Dreaded End",
-              "Description": "Gift of the Void",
+              "Nickname": "Кошмарный конец",
+              "Description": "Заклинание.",
               "GMNotes": "{\n  \"id\": \"86053\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 1,\n  \"traits\": \"Spell.\",\n  \"willpowerIcons\": 2,\n  \"wildIcons\": 1,\n  \"uses\": [\n    {\n      \"count\": 3,\n      \"type\": \"Charge\",\n      \"token\": \"resource\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2784,8 +2784,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2663": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -2811,8 +2811,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Pocket Portal",
-              "Description": "Doorway to Another World",
+              "Nickname": "Карманный портал",
+              "Description": "Заклинание.",
               "GMNotes": "{\n  \"id\": \"86052\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 2,\n  \"traits\": \"Spell.\",\n  \"wildIcons\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2846,8 +2846,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2663": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -2873,8 +2873,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Cloak of the Outer Realm",
-              "Description": "Interwoven Distortion",
+              "Nickname": "Покров Внешних пределов",
+              "Description": "Вещь. Редкая. Одежда.",
               "GMNotes": "{\n  \"id\": \"86051\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 1,\n  \"traits\": \"Item. Relic. Clothing.\",\n  \"agilityIcons\": 2,\n  \"wildIcons\": 1,\n  \"uses\": [\n    {\n      \"count\": 4,\n      \"type\": \"Charge\",\n      \"token\": \"resource\"\n    }\n  ],\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2908,8 +2908,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2663": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -2937,8 +2937,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hub Dimension",
-          "Description": "Portal.",
+          "Nickname": "Узел миров",
+          "Description": "Портал.",
           "GMNotes": "{\n  \"id\": \"86024\",\n  \"type\": \"Location\",\n  \"traits\": \"Portal.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -2972,8 +2972,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2318": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -3040,8 +3040,8 @@
           ],
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -3049,8 +3049,8 @@
               "Type": 0
             },
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -3076,8 +3076,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Inevitable End",
-              "Description": "Hex.",
+              "Nickname": "Неизбежный конец",
+              "Description": "Колдовство.",
               "GMNotes": "{\n  \"id\": \"86039\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3110,8 +3110,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3137,8 +3137,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Inevitable End",
-              "Description": "Hex.",
+              "Nickname": "Неизбежный конец",
+              "Description": "Колдовство.",
               "GMNotes": "{\n  \"id\": \"86039\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3171,8 +3171,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3198,8 +3198,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Inevitable End",
-              "Description": "Hex.",
+              "Nickname": "Неизбежный конец",
+              "Description": "Колдовство.",
               "GMNotes": "{\n  \"id\": \"86039\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hex.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3232,8 +3232,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3259,8 +3259,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Ethereal Entity",
-              "Description": "Monster.",
+              "Nickname": "Эфирная сущность",
+              "Description": "Монстр.",
               "GMNotes": "{\n  \"id\": \"86038\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3293,8 +3293,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3320,8 +3320,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Ethereal Entity",
-              "Description": "Monster.",
+              "Nickname": "Эфирная сущность",
+              "Description": "Монстр.",
               "GMNotes": "{\n  \"id\": \"86038\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3354,8 +3354,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3381,8 +3381,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Hune-Stitched Herald",
-              "Description": "Monster.",
+              "Nickname": "Дымчатый вестник",
+              "Description": "Монстр.",
               "GMNotes": "{\n  \"id\": \"86037\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3415,8 +3415,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3442,8 +3442,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The Inescapable Maw",
-              "Description": "Servant of Silenus",
+              "Nickname": "Неотвратимая утроба",
+              "Description": "Гуманоид. Прислужник. Элитный.",
               "GMNotes": "{\n  \"id\": \"86036\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Servitor. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3476,8 +3476,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3503,8 +3503,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Silenus",
-              "Description": "The Empty Sky",
+              "Nickname": "Силенус",
+              "Description": "Древний. Элитный.",
               "GMNotes": "{\n  \"id\": \"86035\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3537,8 +3537,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3564,7 +3564,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Silenus Descends",
+              "Nickname": "Сошествие Силенуса",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"86034\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 9,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -3598,8 +3598,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2319": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
                   "NumWidth": 6,
                   "NumHeight": 5,
                   "BackIsHidden": true,
@@ -3668,8 +3668,8 @@
           ],
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -3677,8 +3677,8 @@
               "Type": 0
             },
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -3704,8 +3704,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Transmogrify",
-              "Description": "Curse.",
+              "Nickname": "Метаморфоза",
+              "Description": "Проклятие.",
               "GMNotes": "{\n  \"id\": \"86050\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3738,8 +3738,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3765,8 +3765,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Transmogrify",
-              "Description": "Curse.",
+              "Nickname": "Метаморфоза",
+              "Description": "Проклятие.",
               "GMNotes": "{\n  \"id\": \"86050\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3799,8 +3799,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3826,8 +3826,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Trylogog",
-              "Description": "Creature. Insect.",
+              "Nickname": "Трилогог",
+              "Description": "Существо. Насекомое.",
               "GMNotes": "{\n  \"id\": \"86049\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature. Insect.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3860,8 +3860,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3887,8 +3887,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Trylogog",
-              "Description": "Creature. Insect.",
+              "Nickname": "Трилогог",
+              "Description": "Существо. Насекомое.",
               "GMNotes": "{\n  \"id\": \"86049\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature. Insect.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3921,8 +3921,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -3948,8 +3948,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Trylogog",
-              "Description": "Creature. Insect.",
+              "Nickname": "Трилогог",
+              "Description": "Существо. Насекомое.",
               "GMNotes": "{\n  \"id\": \"86049\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature. Insect.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3982,8 +3982,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4009,8 +4009,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Trylogog",
-              "Description": "Creature. Insect.",
+              "Nickname": "Трилогог",
+              "Description": "Существо. Насекомое.",
               "GMNotes": "{\n  \"id\": \"86049\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Creature. Insect.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4043,8 +4043,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4070,8 +4070,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Droning Horde",
-              "Description": "Monster. Insect. Servitor. Elite.",
+              "Nickname": "Гудящий рой",
+              "Description": "Монстр. Насекомое. Прислужник. Элитный.",
               "GMNotes": "{\n  \"id\": \"86048\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Insect. Servitor. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4104,8 +4104,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4131,8 +4131,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Ezel-zen-rezl",
-              "Description": "The Lord of Swarms",
+              "Nickname": "Эзель-зен-резль",
+              "Description": "Древний. Элитный.",
               "GMNotes": "{\n  \"id\": \"86047\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient One. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4165,8 +4165,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4192,7 +4192,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Ezel-zen-rezl Emerges",
+              "Nickname": "Явление Эзель-зен-резля",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"86046\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 9,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -4226,8 +4226,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2319": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
                   "NumWidth": 6,
                   "NumHeight": 5,
                   "BackIsHidden": true,
@@ -4296,8 +4296,8 @@
           ],
           "CustomDeck": {
             "2666": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -4305,8 +4305,8 @@
               "Type": 0
             },
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 8,
               "NumHeight": 4,
               "BackIsHidden": true,
@@ -4314,8 +4314,8 @@
               "Type": 0
             },
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -4341,8 +4341,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Hunt Down",
-              "Description": "Hazard.",
+              "Nickname": "Преследование",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"86045\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4375,8 +4375,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4402,8 +4402,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Hunt Down",
-              "Description": "Hazard.",
+              "Nickname": "Преследование",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"86045\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4436,8 +4436,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4463,8 +4463,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Hunt Down",
-              "Description": "Hazard.",
+              "Nickname": "Преследование",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"86045\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4497,8 +4497,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4524,8 +4524,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Bringer of Paradise",
-              "Description": "Humanoid. Mutated.",
+              "Nickname": "Глашатай рая",
+              "Description": "Гуманоид. Мутант.",
               "GMNotes": "{\n  \"id\": \"86044\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Mutated.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4558,8 +4558,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2666": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4585,8 +4585,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Bringer of Paradise",
-              "Description": "Humanoid. Mutated.",
+              "Nickname": "Глашатай рая",
+              "Description": "Гуманоид. Мутант.",
               "GMNotes": "{\n  \"id\": \"86044\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Mutated.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4619,8 +4619,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2666": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4646,8 +4646,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Horrific Shoggoth",
-              "Description": "Monster. Shoggoth. Mutated.",
+              "Nickname": "Ужасный шоггот",
+              "Description": "Монстр. Шоггот. Мутант.",
               "GMNotes": "{\n  \"id\": \"86043\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Shoggoth. Mutated.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4680,8 +4680,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4707,8 +4707,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Vile Broodmaster",
-              "Description": "Grotesque Abomination",
+              "Nickname": "Повелитель отродий",
+              "Description": "Монстр. Прислужник. Мутант. Элитный.",
               "GMNotes": "{\n  \"id\": \"86042\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Servitor. Mutated. Elite.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4741,8 +4741,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4768,8 +4768,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Magh’an Ark’at",
-              "Description": "The Child of Paradise",
+              "Nickname": "Магх’ан Арк’ат",
+              "Description": "Древний. Мутант. Элитный.",
               "GMNotes": "{\n  \"id\": \"86041\",\n  \"type\": \"Enemy\",\n  \"traits\": \"Ancient One. Mutated. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -4802,8 +4802,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2664": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 8,
                   "NumHeight": 4,
                   "BackIsHidden": true,
@@ -4829,7 +4829,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The Egg Hatches",
+              "Nickname": "Яйцо расколото",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"86040\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 9,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -4863,8 +4863,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2319": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
                   "NumWidth": 6,
                   "NumHeight": 5,
                   "BackIsHidden": true,
@@ -4929,8 +4929,8 @@
       ],
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -4956,8 +4956,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Proliferation Nears Completion",
-          "Description": "Agenda 3",
+          "Nickname": "Размножение почти завершено",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86010\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4990,8 +4990,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -5017,8 +5017,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Proliferation Progresses",
-          "Description": "Agenda 2",
+          "Nickname": "Размножение продолжается",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86009\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5051,8 +5051,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -5078,8 +5078,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Proliferation of the Swarm",
-          "Description": "Agenda 1",
+          "Nickname": "Размножение роя",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"86008\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5112,8 +5112,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -5141,8 +5141,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Shrine of Magh’an Ark’at",
-      "Description": "Ritual Site. Montréal.",
+      "Nickname": "Святилище Магх’ан Арк’ата",
+      "Description": "Место ритуала. Монреаль.",
       "GMNotes": "{\n  \"id\": \"86020\",\n  \"type\": \"Location\",\n  \"traits\": \"Ritual Site. Montréal.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Heart\",\n    \"connections\": \"Hourglass|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Heart\",\n    \"connections\": \"Hourglass|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -5176,8 +5176,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -5203,8 +5203,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "The Arcade",
-      "Description": "Providence.",
+      "Nickname": "Аркада",
+      "Description": "Провиденс.",
       "GMNotes": "{\n  \"id\": \"86017\",\n  \"type\": \"Location\",\n  \"traits\": \"Providence.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Star|Tilde\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Star|Tilde\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -5238,8 +5238,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -5265,8 +5265,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Streets of Providence",
-      "Description": "Providence.",
+      "Nickname": "Улицы Провиденса",
+      "Description": "Провиденс.",
       "GMNotes": "{\n  \"id\": \"86015\",\n  \"type\": \"Location\",\n  \"traits\": \"Providence.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Star\",\n    \"connections\": \"Triangle|Tee|Tilde\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Star\",\n    \"connections\": \"Triangle|Tee|Tilde\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -5300,8 +5300,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -5327,8 +5327,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Disciple of the Swarm",
-      "Description": "Humanoid. Cultist.",
+      "Nickname": "Адепт роя",
+      "Description": "Гуманоид. Культист.",
       "GMNotes": "{\n  \"id\": \"86029\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -5361,8 +5361,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2664": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065965648/5A0D88CCA811A490C2FEF2675A397E1CEE010870/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/ljcjxp39u2oqirk4zgol2/b5ddfa3e1c994d6495e27c9439dff162.jpg?rlkey=6e0wggz24ude1dzizr8rfmvc6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 8,
           "NumHeight": 4,
           "BackIsHidden": true,
@@ -5388,8 +5388,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Arkham",
-      "Description": "Ritual Site. Town.",
+      "Nickname": "Аркхэм",
+      "Description": "Место ритуала. Город.",
       "GMNotes": "{\n  \"id\": \"86014\",\n  \"type\": \"Location\",\n  \"traits\": \"Ritual Site. Town.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Circle|Star|Hourglass\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Circle|Star|Hourglass\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -5423,8 +5423,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -5450,8 +5450,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "The Penthouse",
-      "Description": "New York City.",
+      "Nickname": "Пентхаус",
+      "Description": "Нью-Йорк.",
       "GMNotes": "{\n  \"id\": \"86023\",\n  \"type\": \"Location\",\n  \"traits\": \"New York City.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Circle|Apostrophe\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Circle|Apostrophe\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -5485,8 +5485,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -5569,8 +5569,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "The Burning Pit",
-      "Description": "Ritual Site. New York City.",
+      "Nickname": "Пылающий провал",
+      "Description": "Место ритуала. Нью-Йорк.",
       "GMNotes": "{\n  \"id\": \"86022\",\n  \"type\": \"Location\",\n  \"traits\": \"Ritual Site. New York City.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Apostrophe\",\n    \"connections\": \"Circle|Crescent\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Apostrophe\",\n    \"connections\": \"Circle|Crescent\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -5604,8 +5604,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,
@@ -5631,8 +5631,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Athenaeum of the Empty Sky",
-      "Description": "Ritual Site. Providence.",
+      "Nickname": "Атенеум Пустых небес",
+      "Description": "Место ритуала. Провиденс.",
       "GMNotes": "{\n  \"id\": \"86016\",\n  \"type\": \"Location\",\n  \"traits\": \"Ritual Site. Providence.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Star|Tee\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Star|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -5666,8 +5666,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2318": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967247/5DF91FC3666972D2915F2856464EACC3E5F1F5C3/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1655600953065967466/52BDF162F655D678FAAFA2352732BFDBC247CE44/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/s1o2plqfcr6zjpk890oj2/40e59db9322640d0a0410c90eda4f521.jpg?rlkey=r44ur3225sx1lk2wnxxic119u&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/c2s7tw517syeoiv6mmunr/5acc580f11e241beab81671640682ba9.jpg?rlkey=wb8hlc81te2ysaq9sk3sfr96h&dl=0",
           "NumWidth": 6,
           "NumHeight": 5,
           "BackIsHidden": true,

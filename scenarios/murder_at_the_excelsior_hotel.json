@@ -82,8 +82,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Room 225",
-      "Description": "Crime Scene.",
+      "Nickname": "Номер 225",
+      "Description": "Место преступления.",
       "GMNotes": "{\n  \"id\": \"84010\",\n  \"type\": \"Location\",\n  \"traits\": \"Crime Scene.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Square|Triangle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Circle\",\n    \"connections\": \"Square|Triangle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -117,8 +117,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": false,
@@ -144,8 +144,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Suite Balcony",
-      "Description": "Crime Scene.",
+      "Nickname": "Балкон номера",
+      "Description": "Место преступления.",
       "GMNotes": "{\n  \"id\": \"84011\",\n  \"type\": \"Location\",\n  \"traits\": \"Crime Scene.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Circle\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Triangle\",\n    \"connections\": \"Circle\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -179,8 +179,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": false,
@@ -243,8 +243,8 @@
       ],
       "CustomDeck": {
         "5466": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -270,8 +270,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Manager's Key",
-          "Description": "Stained by Blood",
+          "Nickname": "Ключ управляющего",
+          "Description": "Зацепка. Ключ.",
           "GMNotes": "{\n  \"id\": \"84031\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Lead. Key.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -305,8 +305,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -332,8 +332,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Sinister Solution",
-          "Description": "Vile Concoction",
+          "Nickname": "Зловещий эликсир",
+          "Description": "Зацепка. Наука.",
           "GMNotes": "{\n  \"id\": \"84037\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Lead. Science.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -367,8 +367,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -394,8 +394,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Time-Worn Locket",
-          "Description": "Mournful Vision of the Past",
+          "Nickname": "Старый медальон",
+          "Description": "Зацепка. Оберег.",
           "GMNotes": "{\n  \"id\": \"84040\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Lead. Charm.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -429,8 +429,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -456,8 +456,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Alien Device",
-          "Description": "Machinations from Beyond",
+          "Nickname": "Неземное устройство",
+          "Description": "Зацепка. Инопланетная.",
           "GMNotes": "{\n  \"id\": \"84028\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Lead. Extraterrestrial.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -491,8 +491,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -518,8 +518,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Tome of Rituals",
-          "Description": "Blasphemous Volume",
+          "Nickname": "Книга ритуалов",
+          "Description": "Зацепка. Книга.",
           "GMNotes": "{\n  \"id\": \"84034\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Lead. Tome.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -553,8 +553,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -667,8 +667,8 @@
       ],
       "CustomDeck": {
         "2320": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -694,8 +694,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Following Leads",
-          "Description": "Act 2",
+          "Nickname": "По следу!",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"84005\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -728,8 +728,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2320": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -755,8 +755,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "What Happened...?",
-          "Description": "Act 1",
+          "Nickname": "Что случилось?..",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"84004\",\n  \"type\": \"Act\",\n  \"class\": \"Mythos\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -789,8 +789,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2320": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -818,8 +818,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Restaurant",
-      "Description": "Hall.",
+      "Nickname": "Ресторан",
+      "Description": "Зала.",
       "GMNotes": "{\n  \"id\": \"84014\",\n  \"type\": \"Location\",\n  \"traits\": \"Hall.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Square|Tee\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tilde\",\n    \"connections\": \"Square|Tee\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -853,8 +853,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": false,
@@ -995,8 +995,8 @@
           ],
           "CustomDeck": {
             "2320": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1022,7 +1022,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. X)",
+              "Nickname": "Истинный преступник (вариант X)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84052\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 12,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1056,8 +1056,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1083,7 +1083,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. IX)",
+              "Nickname": "Истинный преступник (вариант IX)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84051\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1117,8 +1117,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1144,7 +1144,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. VIII)",
+              "Nickname": "Истинный преступник (вариант VIII)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84050\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1178,8 +1178,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1205,7 +1205,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. VII)",
+              "Nickname": "Истинный преступник (вариант VII)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84049\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 8,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1239,8 +1239,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1266,7 +1266,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. VI)",
+              "Nickname": "Истинный преступник (вариант VI)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84048\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1300,8 +1300,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1327,7 +1327,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. V)",
+              "Nickname": "Истинный преступник (вариант V)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84047\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1361,8 +1361,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1388,7 +1388,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. IV)",
+              "Nickname": "Истинный преступник (вариант IV)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84046\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 14,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1422,8 +1422,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1449,7 +1449,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. III)",
+              "Nickname": "Истинный преступник (вариант III)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84045\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1483,8 +1483,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1510,7 +1510,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. II)",
+              "Nickname": "Истинный преступник (вариант II)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84044\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 8,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1544,8 +1544,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1571,7 +1571,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "The True Culprit (v. I)",
+              "Nickname": "Истинный преступник (вариант I)",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84043\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 6,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
@@ -1605,8 +1605,8 @@
               "SidewaysCard": true,
               "CustomDeck": {
                 "2320": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -1634,8 +1634,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Harvested Brain",
-          "Description": "Ancient. Science.",
+          "Nickname": "Банка с мозгами",
+          "Description": "Древняя. Наука.",
           "GMNotes": "{\n  \"id\": \"84038\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Ancient. Science.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1668,8 +1668,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1695,8 +1695,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Vengeful Specter",
-          "Description": "The First Victim",
+          "Nickname": "Мстительный дух",
+          "Description": "Монстр. Привидение. Элитный.",
           "GMNotes": "{\n  \"id\": \"84041\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Geist. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1729,8 +1729,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1756,8 +1756,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hotel Manager",
-          "Description": "Let the Feast Begin",
+          "Nickname": "Управляющий отелем",
+          "Description": "Монстр. Персонал. Элитный.",
           "GMNotes": "{\n  \"id\": \"84032\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Staff. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1790,8 +1790,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1817,8 +1817,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Dimensional Shambler",
-          "Description": "Monster. Extradimensional. Elite.",
+          "Nickname": "Бродящий меж миров",
+          "Description": "Монстр. Сверхпространственный. Элитный.",
           "GMNotes": "{\n  \"id\": \"84035\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Extradimensional. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1851,8 +1851,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -1878,8 +1878,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Otherworldly Meddler",
-          "Description": "Presence from Beyond the Stars",
+          "Nickname": "Инопланетный агрессор",
+          "Description": "Монстр. Ми-го. Элитный.",
           "GMNotes": "{\n  \"id\": \"84029\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Monster. Mi-Go. Elite.\",\n  \"victory\": 2,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -1912,8 +1912,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2664": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1697276627309509299/3B0E32939EB4599CCE3596975637C90FE4EE1DD6/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/f2vx4m1awkbv1vmscbzyz/722056e8e18a44d38ee897f0f1afeb33.jpg?rlkey=vayf67buup7a1ca80pl9d6fob&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 6,
               "NumHeight": 5,
               "BackIsHidden": true,
@@ -1974,8 +1974,8 @@
           ],
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2001,8 +2001,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Morbid Awareness",
-              "Description": "Hazard.",
+              "Nickname": "Жуткое знание",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"84039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2035,8 +2035,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2062,8 +2062,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Morbid Awareness",
-              "Description": "Hazard.",
+              "Nickname": "Жуткое знание",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"84039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2096,8 +2096,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2123,8 +2123,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Morbid Awareness",
-              "Description": "Hazard.",
+              "Nickname": "Жуткое знание",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"84039\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2157,8 +2157,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2221,8 +2221,8 @@
           ],
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2248,8 +2248,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Chilling Presence",
-              "Description": "Terror.",
+              "Nickname": "Пугающее присутствие",
+              "Description": "Жуть.",
               "GMNotes": "{\n  \"id\": \"84042\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2282,8 +2282,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2309,8 +2309,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Chilling Presence",
-              "Description": "Terror.",
+              "Nickname": "Пугающее присутствие",
+              "Description": "Жуть.",
               "GMNotes": "{\n  \"id\": \"84042\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2343,8 +2343,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2370,8 +2370,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Chilling Presence",
-              "Description": "Terror.",
+              "Nickname": "Пугающее присутствие",
+              "Description": "Жуть.",
               "GMNotes": "{\n  \"id\": \"84042\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2404,8 +2404,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2468,8 +2468,8 @@
           ],
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2495,8 +2495,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Hotel Security",
-              "Description": "Humanoid. Monster. Staff.",
+              "Nickname": "Охранник отеля",
+              "Description": "Гуманоид. Монстр. Персонал.",
               "GMNotes": "{\n  \"id\": \"84033\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Staff.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2529,8 +2529,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2556,8 +2556,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Hotel Security",
-              "Description": "Humanoid. Monster. Staff.",
+              "Nickname": "Охранник отеля",
+              "Description": "Гуманоид. Монстр. Персонал.",
               "GMNotes": "{\n  \"id\": \"84033\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Staff.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2590,8 +2590,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2617,8 +2617,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Hotel Security",
-              "Description": "Humanoid. Monster. Staff.",
+              "Nickname": "Охранник отеля",
+              "Description": "Гуманоид. Монстр. Персонал.",
               "GMNotes": "{\n  \"id\": \"84033\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Monster. Staff.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2651,8 +2651,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2715,8 +2715,8 @@
           ],
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2742,8 +2742,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Cultist of the Enclave",
-              "Description": "Humanoid. Cultist.",
+              "Nickname": "Культистка Анклава",
+              "Description": "Гуманоид. Культист.",
               "GMNotes": "{\n  \"id\": \"84036\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2776,8 +2776,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2803,8 +2803,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Cultist of the Enclave",
-              "Description": "Humanoid. Cultist.",
+              "Nickname": "Культистка Анклава",
+              "Description": "Гуманоид. Культист.",
               "GMNotes": "{\n  \"id\": \"84036\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2837,8 +2837,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2864,8 +2864,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Cultist of the Enclave",
-              "Description": "Humanoid. Cultist.",
+              "Nickname": "Культистка Анклава",
+              "Description": "Гуманоид. Культист.",
               "GMNotes": "{\n  \"id\": \"84036\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Cultist.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -2898,8 +2898,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -2962,8 +2962,8 @@
           ],
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -2989,8 +2989,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Encephalon Signal",
-              "Description": "Hazard.",
+              "Nickname": "Телепатический приказ",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"84030\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3023,8 +3023,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -3050,8 +3050,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Encephalon Signal",
-              "Description": "Hazard.",
+              "Nickname": "Телепатический приказ",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"84030\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3084,8 +3084,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -3111,8 +3111,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Encephalon Signal",
-              "Description": "Hazard.",
+              "Nickname": "Телепатический приказ",
+              "Description": "Происшествие.",
               "GMNotes": "{\n  \"id\": \"84030\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3145,8 +3145,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -3174,8 +3174,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "What Have You Done?",
-          "Description": "Madness.",
+          "Nickname": "Что вы наделали?",
+          "Description": "Безумие.",
           "GMNotes": "{\n  \"id\": \"84007\",\n  \"type\": \"Treachery\",\n  \"class\": \"Neutral\",\n  \"traits\": \"Madness.\",\n  \"weakness\": true,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -3208,8 +3208,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2317": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3270,8 +3270,8 @@
           ],
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3297,8 +3297,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Arkham Officer",
-              "Description": "Humanoid. Police. Innocent.",
+              "Nickname": "Полицейский",
+              "Description": "Гуманоид. Полиция. Невинный.",
               "GMNotes": "{\n  \"id\": \"84009\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Police. Innocent.\",\n  \"victory\": 0,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3331,8 +3331,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -3358,8 +3358,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Arkham Officer",
-              "Description": "Humanoid. Police. Innocent.",
+              "Nickname": "Полицейский",
+              "Description": "Гуманоид. Полиция. Невинный.",
               "GMNotes": "{\n  \"id\": \"84009\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Police. Innocent.\",\n  \"victory\": 0,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3392,8 +3392,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -3419,8 +3419,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Arkham Officer",
-              "Description": "Humanoid. Police. Innocent.",
+              "Nickname": "Полицейский",
+              "Description": "Гуманоид. Полиция. Невинный.",
               "GMNotes": "{\n  \"id\": \"84009\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Police. Innocent.\",\n  \"victory\": 0,\n  \"cycle\": \"Standalone\"\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3453,8 +3453,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2316": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": true,
@@ -3482,8 +3482,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Sergeant Monroe",
-          "Description": "Two Days Until Retirement",
+          "Nickname": "Сержант Монро",
+          "Description": "Союзник. Полиция.",
           "GMNotes": "{\n  \"id\": \"84008\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 5,\n  \"traits\": \"Ally. Police.\",\n  \"willpowerIcons\": 1,\n  \"combatIcons\": 1,\n  \"wildIcons\": 1,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -3517,8 +3517,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2317": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -3581,8 +3581,8 @@
           ],
           "CustomDeck": {
             "2319": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": false,
@@ -3608,8 +3608,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Basement",
-              "Description": "Crime Scene.",
+              "Nickname": "Подвал",
+              "Description": "Место преступления.",
               "GMNotes": "{\n  \"id\": \"84019\",\n  \"type\": \"Location\",\n  \"traits\": \"Crime Scene.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Tee|Crescent\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Hourglass\",\n    \"connections\": \"Tee|Crescent\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3643,8 +3643,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2319": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": false,
@@ -3670,7 +3670,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Office",
+              "Nickname": "Кабинет",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84018\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Crescent\",\n    \"connections\": \"Tee|Hourglass\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Crescent\",\n    \"connections\": \"Tee|Hourglass\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
@@ -3705,8 +3705,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2319": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": false,
@@ -3732,8 +3732,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Room 245",
-              "Description": "Crime Scene.",
+              "Nickname": "Номер 245",
+              "Description": "Место преступления.",
               "GMNotes": "{\n  \"id\": \"84017\",\n  \"type\": \"Location\",\n  \"traits\": \"Crime Scene.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"SlantedEquals\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"SlantedEquals\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3767,8 +3767,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2319": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": false,
@@ -3794,8 +3794,8 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Room 212",
-              "Description": "Crime Scene.",
+              "Nickname": "Номер 212",
+              "Description": "Место преступления.",
               "GMNotes": "{\n  \"id\": \"84016\",\n  \"type\": \"Location\",\n  \"traits\": \"Crime Scene.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Diamond\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Diamond\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 2,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
                 "x": 0.0,
@@ -3829,8 +3829,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2319": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": false,
@@ -3856,7 +3856,7 @@
                 "scaleY": 1.0,
                 "scaleZ": 1.0
               },
-              "Nickname": "Hotel Roof",
+              "Nickname": "Крыша отеля",
               "Description": "",
               "GMNotes": "{\n  \"id\": \"84015\",\n  \"type\": \"Location\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Plus\",\n    \"connections\": \"Square\"\n  },\n  \"locationBack\": {\n    \"victory\": 1,\n    \"icons\": \"Plus\",\n    \"connections\": \"Square\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
               "AltLookAngle": {
@@ -3891,8 +3891,8 @@
               "SidewaysCard": false,
               "CustomDeck": {
                 "2319": {
-                  "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-                  "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+                  "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+                  "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
                   "NumWidth": 10,
                   "NumHeight": 7,
                   "BackIsHidden": false,
@@ -3956,8 +3956,8 @@
       ],
       "CustomDeck": {
         "2320": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -3983,8 +3983,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Special Investigation",
-          "Description": "Agenda 2",
+          "Nickname": "Специальное расследование",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"84003\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 12,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4017,8 +4017,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2320": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4044,8 +4044,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "The Murder",
-          "Description": "Agenda 1",
+          "Nickname": "Убийство",
+          "Description": "",
           "GMNotes": "{\n  \"id\": \"84002\",\n  \"type\": \"Agenda\",\n  \"class\": \"Mythos\",\n  \"doomThreshold\": 3,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4078,8 +4078,8 @@
           "SidewaysCard": true,
           "CustomDeck": {
             "2320": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4107,8 +4107,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Foyer",
-      "Description": "Hall.",
+      "Nickname": "Холл",
+      "Description": "Зала.",
       "GMNotes": "{\n  \"id\": \"84013\",\n  \"type\": \"Location\",\n  \"traits\": \"Hall.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Square|Tilde|Hourglass|Crescent\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Tee\",\n    \"connections\": \"Square|Tilde|Hourglass|Crescent\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -4142,8 +4142,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": false,
@@ -4169,8 +4169,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Second Floor Hall",
-      "Description": "Hall.",
+      "Nickname": "Коридор второго этажа",
+      "Description": "Зала.",
       "GMNotes": "{\n  \"id\": \"84012\",\n  \"type\": \"Location\",\n  \"traits\": \"Hall.\",\n  \"cycle\": \"Standalone\",\n  \"locationFront\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Circle|Tee|Tilde|Plus|Diamond|SlantedEquals\"\n  },\n  \"locationBack\": {\n    \"icons\": \"Square\",\n    \"connections\": \"Circle|Tee|Tilde|Plus|Diamond|SlantedEquals\",\n    \"uses\": [\n      {\n        \"countPerInvestigator\": 1,\n        \"type\": \"Clue\",\n        \"token\": \"clue\"\n      }\n    ]\n  }\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -4204,8 +4204,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": false,
@@ -4232,7 +4232,7 @@
         "scaleZ": 1.0
       },
       "Nickname": "Scenario",
-      "Description": "Murder at the Excelsior Hotel",
+      "Description": "Убийство в отеле «Эксельсиор»",
       "GMNotes": "{\"type\": \"ScenarioReference\", \"class\": \"Mythos\", \"tokens\": {\"back\": {\"Cultist\": {\"description\": \"-2. If there is an Innocent enemy in the victory display, reveal another chaos token.\", \"modifier\": -2}, \"Elder Thing\": {\"description\": \"-3. If you fail, take 1 horror for each Innocent enemy in the victory display.\", \"modifier\": -3}, \"Skull\": {\"description\": \"-X. X is the number of Innocent enemies in play.\", \"modifier\": -999}, \"Tablet\": {\"description\": \"-5. You may place one of your clues on your location to treat this as a -2 instead.\", \"modifier\": -5}}, \"front\": {\"Cultist\": {\"description\": \"-1. If there is an Innocent enemy in the victory display, reveal another chaos token.\", \"modifier\": -1}, \"Elder Thing\": {\"description\": \"-3. If you fail and there is an Innocent enemy in the victory display, take 1 horror.\", \"modifier\": -3}, \"Skull\": {\"description\": \"-X. X is the number of Guest enemies in play.\", \"modifier\": -999}, \"Tablet\": {\"description\": \"-3. You may place one of your clues on your location to treat this as a -1 instead.\", \"modifier\": -3}}}, \"id\": \"84001\"}",
       "AltLookAngle": {
         "x": 0.0,
@@ -4262,8 +4262,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2319": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055042209/FBBBE393755E3F8BAB1A2935E1F691EE8358054D/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055043200/69BE533398A163171710A34F2FC068249B8E2B90/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/waw6xz5dmmjrrv0esd92g/fc965b4b51934ce4b9f1ed8f87567b7f.jpg?rlkey=in5istr8gvzz2u9yaw11y8io6&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/1bobn7pqf0uynfaxnf08t/fe584b9e18534b468411b61be0f4ec64.jpg?rlkey=qci38kb4wcfsohs2xry4xdf67&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": false,
@@ -4346,8 +4346,8 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "Bloodstained Dagger",
-      "Description": "The Murder Weapon",
+      "Nickname": "Окровавленный кинжал",
+      "Description": "Вещь. Оружие. Рукопашное. Проклятое?.",
       "GMNotes": "{\n  \"id\": \"84006\",\n  \"type\": \"Asset\",\n  \"class\": \"Neutral\",\n  \"cost\": 1,\n  \"traits\": \"Item. Weapon. Melee. Cursed.\",\n  \"wildIcons\": 1,\n  \"cycle\": \"Standalone\"\n}",
       "AltLookAngle": {
         "x": 0.0,
@@ -4381,8 +4381,8 @@
       "SidewaysCard": false,
       "CustomDeck": {
         "2741": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940352139/A2D42E7E5C43D045D72CE5CFC907E4F886C8C690/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/w1hgn2kknq00laibv9si6/faebf524162b491c95b5dec469f67a52.jpg?rlkey=12htfnl4nn1edjv90r8nq5sil&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -4462,8 +4462,8 @@
       ],
       "CustomDeck": {
         "5466": {
-          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+          "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+          "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
           "NumWidth": 10,
           "NumHeight": 7,
           "BackIsHidden": true,
@@ -4489,8 +4489,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Mr. Trombly",
-          "Description": "Maddened Concierge",
+          "Nickname": "Мистер Тромбли",
+          "Description": "Гуманоид. Персонал.",
           "GMNotes": "{\n  \"id\": \"84020\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Staff.\",\n  \"victory\": 1,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4523,8 +4523,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4550,8 +4550,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Conspicuous Staff",
-          "Description": "Humanoid. Staff.",
+          "Nickname": "Назойливая прислуга",
+          "Description": "Гуманоид. Персонал.",
           "GMNotes": "{\n  \"id\": \"84021\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Staff.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4584,8 +4584,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4611,8 +4611,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Conspicuous Staff",
-          "Description": "Humanoid. Staff.",
+          "Nickname": "Назойливая прислуга",
+          "Description": "Гуманоид. Персонал.",
           "GMNotes": "{\n  \"id\": \"84021\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Staff.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4645,8 +4645,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4672,8 +4672,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Conspicuous Staff",
-          "Description": "Humanoid. Staff.",
+          "Nickname": "Назойливая прислуга",
+          "Description": "Гуманоид. Персонал.",
           "GMNotes": "{\n  \"id\": \"84021\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Staff.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4706,8 +4706,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4733,8 +4733,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hotel Guest",
-          "Description": "Humanoid. Guest. Innocent.",
+          "Nickname": "Гость отеля",
+          "Description": "Гуманоид. Гость. Невинный.",
           "GMNotes": "{\n  \"id\": \"84022\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Guest. Innocent.\",\n  \"victory\": 0,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4767,8 +4767,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4794,8 +4794,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hotel Guest",
-          "Description": "Humanoid. Guest. Innocent.",
+          "Nickname": "Гость отеля",
+          "Description": "Гуманоид. Гость. Невинный.",
           "GMNotes": "{\n  \"id\": \"84022\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Guest. Innocent.\",\n  \"victory\": 0,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4828,8 +4828,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4855,8 +4855,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hotel Guest",
-          "Description": "Humanoid. Guest. Innocent.",
+          "Nickname": "Гость отеля",
+          "Description": "Гуманоид. Гость. Невинный.",
           "GMNotes": "{\n  \"id\": \"84022\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Guest. Innocent.\",\n  \"victory\": 0,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4889,8 +4889,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4916,8 +4916,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Hotel Guest",
-          "Description": "Humanoid. Guest. Innocent.",
+          "Nickname": "Гость отеля",
+          "Description": "Гуманоид. Гость. Невинный.",
           "GMNotes": "{\n  \"id\": \"84022\",\n  \"type\": \"Enemy\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Humanoid. Guest. Innocent.\",\n  \"victory\": 0,\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -4950,8 +4950,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -4977,8 +4977,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Noxious Fumes",
-          "Description": "Hazard.",
+          "Nickname": "Ядовитый дым",
+          "Description": "Происшествие.",
           "GMNotes": "{\n  \"id\": \"84023\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5011,8 +5011,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5038,8 +5038,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Noxious Fumes",
-          "Description": "Hazard.",
+          "Nickname": "Ядовитый дым",
+          "Description": "Происшествие.",
           "GMNotes": "{\n  \"id\": \"84023\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Hazard.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5072,8 +5072,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5099,8 +5099,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Driven to Madness",
-          "Description": "Curse.",
+          "Nickname": "Буйство",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"84024\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5133,8 +5133,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5160,8 +5160,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Driven to Madness",
-          "Description": "Curse.",
+          "Nickname": "Буйство",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"84024\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5194,8 +5194,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5221,8 +5221,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Driven to Madness",
-          "Description": "Curse.",
+          "Nickname": "Буйство",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"84024\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5255,8 +5255,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5282,8 +5282,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Blood on Your Hands",
-          "Description": "Terror.",
+          "Nickname": "Кровь на ваших руках",
+          "Description": "Жуть.",
           "GMNotes": "{\n  \"id\": \"84025\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5316,8 +5316,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5343,8 +5343,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Blood on Your Hands",
-          "Description": "Terror.",
+          "Nickname": "Кровь на ваших руках",
+          "Description": "Жуть.",
           "GMNotes": "{\n  \"id\": \"84025\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5377,8 +5377,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5404,8 +5404,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Blood on Your Hands",
-          "Description": "Terror.",
+          "Nickname": "Кровь на ваших руках",
+          "Description": "Жуть.",
           "GMNotes": "{\n  \"id\": \"84025\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5438,8 +5438,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5465,8 +5465,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Blood on Your Hands",
-          "Description": "Terror.",
+          "Nickname": "Кровь на ваших руках",
+          "Description": "Жуть.",
           "GMNotes": "{\n  \"id\": \"84025\",\n  \"type\": \"Treachery\",\n  \"traits\": \"Terror.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5499,8 +5499,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5526,8 +5526,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Incriminating Evidence",
-          "Description": "Evidence.",
+          "Nickname": "Разоблачающие доказательства",
+          "Description": "Свидетельство.",
           "GMNotes": "{\n  \"id\": \"84026\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Evidence.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5560,8 +5560,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5587,8 +5587,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Incriminating Evidence",
-          "Description": "Evidence.",
+          "Nickname": "Разоблачающие доказательства",
+          "Description": "Свидетельство.",
           "GMNotes": "{\n  \"id\": \"84026\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Evidence.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5621,8 +5621,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5648,8 +5648,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Violent Outburst",
-          "Description": "Curse.",
+          "Nickname": "Вспышка ярости",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"84027\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5682,8 +5682,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5709,8 +5709,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Violent Outburst",
-          "Description": "Curse.",
+          "Nickname": "Вспышка ярости",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"84027\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5743,8 +5743,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
@@ -5770,8 +5770,8 @@
             "scaleY": 1.0,
             "scaleZ": 1.0
           },
-          "Nickname": "Violent Outburst",
-          "Description": "Curse.",
+          "Nickname": "Вспышка ярости",
+          "Description": "Проклятие.",
           "GMNotes": "{\n  \"id\": \"84027\",\n  \"type\": \"Treachery\",\n  \"class\": \"Mythos\",\n  \"traits\": \"Curse.\",\n  \"cycle\": \"Standalone\"\n}",
           "AltLookAngle": {
             "x": 0.0,
@@ -5804,8 +5804,8 @@
           "SidewaysCard": false,
           "CustomDeck": {
             "2316": {
-              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/778493212055041441/90F035BD69A7C5C6B6F43426DDDA3A09DFCBCBDF/",
-              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2342503777940351785/F64D8EFB75A9E15446D24343DA0A6EEF5B3E43DB/",
+              "FaceURL": "https://dl.dropboxusercontent.com/scl/fi/rwrycpaqb0lqrmldogwvl/c5eb027cf7c1484fae01afc8851fabce.jpg?rlkey=5861z8pvs6fwnib8h309br2gj&dl=0",
+              "BackURL": "https://dl.dropboxusercontent.com/scl/fi/h3r7cgeu1qfiaefma47gm/43207df370d3416da40dc869a53879ed.jpg?rlkey=ueuy23lhi5y69n4orydu22l7w&dl=0",
               "NumWidth": 10,
               "NumHeight": 7,
               "BackIsHidden": true,
